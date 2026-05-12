@@ -221,8 +221,22 @@ final class ICOSPrimaryShellNSSplitView: NSSplitView {
     }
 
     override func drawDivider(in rect: NSRect) {
-        NSColor.clear.setFill()
-        rect.fill()
+        guard ICOSMaterials.showsPlainSeparators else {
+            NSColor.clear.setFill()
+            rect.fill()
+            return
+        }
+
+        let lineWidth = ICOSMaterials.strokeWidth
+        let lineRect = NSRect(
+            x: rect.midX - lineWidth / 2,
+            y: rect.minY,
+            width: lineWidth,
+            height: rect.height
+        )
+
+        NSColor(ICOSMaterials.separator).setFill()
+        lineRect.fill()
     }
 
     func setSidebarVisibility(_ isVisible: Bool) {

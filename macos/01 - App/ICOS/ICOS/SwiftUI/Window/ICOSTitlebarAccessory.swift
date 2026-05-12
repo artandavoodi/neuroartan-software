@@ -13,6 +13,7 @@ struct ICOSTitlebarToggleAccessory: View {
     @State private var isSecondarySidebarVisible = false
     @State private var isBottomPanelVisible = false
     @State private var materialRenderEpoch: UInt = 0
+    @State private var isFullscreen = false
 
     var body: some View {
         HStack(spacing: ICOSWindowTokens.titlebarAccessorySpacing) {
@@ -37,8 +38,18 @@ struct ICOSTitlebarToggleAccessory: View {
         .id(materialRenderEpoch)
         .padding(.trailing, ICOSWindowTokens.titlebarAccessoryTrailingPadding)
         .background(ICOSMaterials.hoverSurface.opacity(ICOSWindowTokens.titlebarAccessoryBackgroundOpacity))
+        .foregroundStyle(resolvedTitlebarForeground)
+        .onAppear {
+            syncFullscreenState()
+        }
         .onReceive(NotificationCenter.default.publisher(for: .icosMaterialAppearanceDidApply)) { _ in
             materialRenderEpoch += 1
+        }
+        .onReceive(NotificationCenter.default.publisher(for: NSWindow.didEnterFullScreenNotification)) { _ in
+            syncFullscreenState()
+        }
+        .onReceive(NotificationCenter.default.publisher(for: NSWindow.didExitFullScreenNotification)) { _ in
+            syncFullscreenState()
         }
         .onReceive(NotificationCenter.default.publisher(for: .icosSidebarVisibilityDidChange)) { notification in
             guard let isVisible = notification.object as? Bool else {
@@ -65,6 +76,19 @@ struct ICOSTitlebarToggleAccessory: View {
 
     // MARK: - Toggle Cluster
 
+    private var resolvedTitlebarForeground: Color {
+        if ICOSMaterials.mode == .light && isFullscreen {
+            return .white
+        }
+
+        return ICOSColors.textPrimary
+    }
+
+    private func syncFullscreenState() {
+        let window = NSApp.keyWindow ?? NSApp.mainWindow
+        isFullscreen = window?.styleMask.contains(.fullScreen) == true
+    }
+
     private func titlebarToggleButton(icon: ICOSIcon, label: String, action: @escaping () -> Void) -> some View {
         Button(action: action) {
             SVGImageView(icon: icon)
@@ -76,10 +100,10 @@ struct ICOSTitlebarToggleAccessory: View {
                     width: ICOSWindowTokens.titlebarButtonSize,
                     height: ICOSWindowTokens.titlebarButtonSize
                 )
+                .foregroundStyle(resolvedTitlebarForeground)
                 .contentShape(RoundedRectangle(cornerRadius: ICOSControlTokens.buttonCornerRadius, style: .continuous))
         }
         .buttonStyle(.plain)
-        .foregroundStyle(ICOSColors.textPrimary)
         .help(label)
     }
 }

@@ -139,6 +139,20 @@ private final class ICOSWindowToolbarDelegate: NSObject, NSToolbarDelegate {
 /// icons pick up updated `ICOSMaterials` / `ICOSColors` immediately.
 private struct ICOSTitlebarToolbarSearchControl: View {
     @State private var materialRenderEpoch: UInt = 0
+    @State private var isFullscreen = false
+
+    private var resolvedSearchForeground: Color {
+        if ICOSMaterials.mode == .light && isFullscreen {
+            return .white
+        }
+
+        return ICOSColors.textPrimary
+    }
+
+    private func syncFullscreenState() {
+        let window = NSApp.keyWindow ?? NSApp.mainWindow
+        isFullscreen = window?.styleMask.contains(.fullScreen) == true
+    }
 
     var body: some View {
         SVGImageView(icon: .search)

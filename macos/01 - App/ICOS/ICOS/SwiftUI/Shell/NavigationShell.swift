@@ -55,6 +55,13 @@ struct NavigationShell: View {
                                     .layoutPriority(1)
 
                                 if shellState.isSecondarySidebarVisible {
+                                    if ICOSMaterials.showsPlainSeparators {
+                                        Rectangle()
+                                            .fill(ICOSMaterials.separator)
+                                            .frame(width: ICOSMaterials.strokeWidth)
+                                            .frame(maxHeight: .infinity)
+                                    }
+
                                     SecondarySidebarPanel(
                                         shellState: shellState,
                                         router: router,

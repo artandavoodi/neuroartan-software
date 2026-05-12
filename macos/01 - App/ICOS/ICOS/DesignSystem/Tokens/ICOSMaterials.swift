@@ -405,24 +405,24 @@ struct ICOSMaterialTheme {
 
     private static func coral(_ contrast: ICOSThemeContrast) -> ICOSMaterialTheme {
         ICOSMaterialTheme(
-            windowBackground: Color(red: 0.118, green: 0.070, blue: 0.058),
-            workspaceBackground: Color(red: 0.776, green: 0.353, blue: 0.263),
-            sidebarBackground: Color(red: 0.653, green: 0.282, blue: 0.220),
-            sidebarGlass: Color.white.opacity(opacity(0.10, contrast)),
-            panelBackground: Color.white.opacity(opacity(0.10, contrast)),
-            panelSurface: Color.white,
-            inspectorBackground: Color(red: 0.653, green: 0.282, blue: 0.220).opacity(opacity(0.96, contrast)),
-            elevatedSurface: Color.white.opacity(opacity(0.12, contrast)),
-            floatingSurface: Color.white.opacity(opacity(0.10, contrast)),
-            hoverSurface: Color.white.opacity(opacity(0.20, contrast)),
-            pressedSurface: Color.white.opacity(opacity(0.26, contrast)),
-            separator: Color.white.opacity(separatorOpacity(0.30, contrast)),
-            softSeparator: Color.white.opacity(separatorOpacity(0.16, contrast)),
-            separatorOpacityBase: separatorOpacity(0.30, contrast),
-            softSeparatorOpacityBase: separatorOpacity(0.16, contrast),
-            textPrimary: Color.white.opacity(textOpacity(0.95, contrast)),
-            textSecondary: Color.white.opacity(textOpacity(0.70, contrast)),
-            textTertiary: Color.white.opacity(textOpacity(0.50, contrast))
+            windowBackground: Color(red: 0.150, green: 0.078, blue: 0.054),
+            workspaceBackground: Color(red: 0.182, green: 0.094, blue: 0.062),
+            sidebarBackground: Color(red: 0.205, green: 0.106, blue: 0.072),
+            sidebarGlass: Color(red: 0.232, green: 0.122, blue: 0.084).opacity(opacity(0.96, contrast)),
+            panelBackground: Color(red: 0.270, green: 0.142, blue: 0.094).opacity(opacity(0.94, contrast)),
+            panelSurface: Color(red: 0.270, green: 0.142, blue: 0.094),
+            inspectorBackground: Color(red: 0.225, green: 0.118, blue: 0.078).opacity(opacity(0.96, contrast)),
+            elevatedSurface: Color(red: 0.332, green: 0.174, blue: 0.112).opacity(opacity(0.88, contrast)),
+            floatingSurface: Color(red: 0.392, green: 0.208, blue: 0.132).opacity(opacity(0.86, contrast)),
+            hoverSurface: Color(red: 0.470, green: 0.252, blue: 0.160).opacity(opacity(0.54, contrast)),
+            pressedSurface: Color(red: 0.545, green: 0.292, blue: 0.186).opacity(opacity(0.62, contrast)),
+            separator: Color.white.opacity(separatorOpacity(0.18, contrast)),
+            softSeparator: Color.white.opacity(separatorOpacity(0.10, contrast)),
+            separatorOpacityBase: separatorOpacity(0.18, contrast),
+            softSeparatorOpacityBase: separatorOpacity(0.10, contrast),
+            textPrimary: Color.white.opacity(textOpacity(0.94, contrast)),
+            textSecondary: Color.white.opacity(textOpacity(0.68, contrast)),
+            textTertiary: Color.white.opacity(textOpacity(0.46, contrast))
         )
     }
 
@@ -556,24 +556,24 @@ struct ICOSMaterialTheme {
 
     private static func lightCoral(_ contrast: ICOSThemeContrast) -> ICOSMaterialTheme {
         ICOSMaterialTheme(
-            windowBackground: Color(red: 0.851, green: 0.788, blue: 0.678),
-            workspaceBackground: Color(red: 0.812, green: 0.753, blue: 0.651),
-            sidebarBackground: Color(red: 0.776, green: 0.353, blue: 0.263),
-            sidebarGlass: Color.white.opacity(opacity(0.10, contrast)),
-            panelBackground: Color(red: 0.776, green: 0.353, blue: 0.263).opacity(opacity(0.96, contrast)),
-            panelSurface: Color(red: 0.776, green: 0.353, blue: 0.263),
-            inspectorBackground: Color(red: 0.776, green: 0.353, blue: 0.263).opacity(opacity(0.96, contrast)),
-            elevatedSurface: Color.white.opacity(opacity(0.10, contrast)),
-            floatingSurface: Color.white.opacity(opacity(0.10, contrast)),
-            hoverSurface: Color.white.opacity(opacity(0.20, contrast)),
-            pressedSurface: Color.white.opacity(opacity(0.26, contrast)),
-            separator: Color.white.opacity(separatorOpacity(0.30, contrast)),
-            softSeparator: Color.white.opacity(separatorOpacity(0.16, contrast)),
-            separatorOpacityBase: separatorOpacity(0.30, contrast),
-            softSeparatorOpacityBase: separatorOpacity(0.16, contrast),
-            textPrimary: Color.white.opacity(textOpacity(0.95, contrast)),
-            textSecondary: Color.white.opacity(textOpacity(0.70, contrast)),
-            textTertiary: Color.white.opacity(textOpacity(0.50, contrast))
+            windowBackground: Color(red: 0.980, green: 0.905, blue: 0.866),
+            workspaceBackground: Color(red: 0.992, green: 0.945, blue: 0.920),
+            sidebarBackground: Color(red: 0.972, green: 0.878, blue: 0.830),
+            sidebarGlass: Color(red: 0.976, green: 0.888, blue: 0.842).opacity(opacity(0.98, contrast)),
+            panelBackground: Color(red: 0.992, green: 0.945, blue: 0.920).opacity(opacity(0.98, contrast)),
+            panelSurface: Color(red: 0.992, green: 0.945, blue: 0.920),
+            inspectorBackground: Color(red: 0.980, green: 0.900, blue: 0.854).opacity(opacity(0.98, contrast)),
+            elevatedSurface: Color(red: 0.960, green: 0.840, blue: 0.790).opacity(opacity(0.86, contrast)),
+            floatingSurface: Color(red: 0.940, green: 0.812, blue: 0.750).opacity(opacity(0.92, contrast)),
+            hoverSurface: Color(red: 0.900, green: 0.760, blue: 0.690).opacity(opacity(0.92, contrast)),
+            pressedSurface: Color(red: 0.858, green: 0.706, blue: 0.628).opacity(opacity(0.96, contrast)),
+            separator: Color.black.opacity(separatorOpacity(0.11, contrast)),
+            softSeparator: Color.black.opacity(separatorOpacity(0.07, contrast)),
+            separatorOpacityBase: separatorOpacity(0.11, contrast),
+            softSeparatorOpacityBase: separatorOpacity(0.07, contrast),
+            textPrimary: Color.black.opacity(textOpacity(0.88, contrast)),
+            textSecondary: Color.black.opacity(textOpacity(0.58, contrast)),
+            textTertiary: Color.black.opacity(textOpacity(0.38, contrast))
         )
     }
 

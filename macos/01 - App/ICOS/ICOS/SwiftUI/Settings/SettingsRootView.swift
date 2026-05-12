@@ -28,6 +28,12 @@ struct SettingsRootView: View {
                     }
                 }
 
+            if ICOSMaterials.showsPlainSeparators {
+                Rectangle()
+                    .fill(ICOSMaterials.separator)
+                    .frame(width: ICOSMaterials.strokeWidth)
+                    .frame(maxHeight: .infinity)
+            }
 
             ICOSScrollView {
                 SettingsDetailView(

@@ -16,7 +16,7 @@ final class ThemeState: ObservableObject {
         }
     }
 
-    @Published var palette: ICOSThemePalette = .company {
+    @Published var palette: ICOSThemePalette = .graphite {
         didSet { saveAndApplyRuntimeTheme() }
     }
 
@@ -194,7 +194,7 @@ final class ThemeState: ObservableObject {
         }
         if let raw = defaults.string(forKey: StorageKey.palette),
            let value = ICOSThemePalette(rawValue: raw) {
-            palette = value
+            palette = value == .company ? .graphite : value
         }
         if let raw = defaults.string(forKey: StorageKey.contrast),
            let value = ICOSThemeContrast(rawValue: raw) {
@@ -305,7 +305,7 @@ extension ThemeMode {
 
 // MARK: - Theme Palette
 
-enum ICOSThemePalette: String, CaseIterable, Identifiable {
+enum ICOSThemePalette: String, Identifiable {
     case company
     case graphite
     case slate
@@ -330,6 +330,12 @@ enum ICOSThemePalette: String, CaseIterable, Identifiable {
         case .coral:
             return "Coral"
         }
+    }
+}
+
+extension ICOSThemePalette: CaseIterable {
+    static var allCases: [ICOSThemePalette] {
+        [.graphite, .slate, .sand, .blue, .coral]
     }
 }
 
