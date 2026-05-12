@@ -1,0 +1,10 @@
+[
+  {
+    "timestamp": 1778177071.3432782,
+    "lesson_id": "8952338f-e347-4929-af92-0bca2a1f8c16",
+    "category": "hallucination",
+    "input": "The model fabricated continuity memory and invented architectural details.",
+    "target": "Require verified continuity retrieval before architectural synthesis.",
+    "alignment_training": true
+  }
+]

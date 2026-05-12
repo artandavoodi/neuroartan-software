@@ -1,0 +1,35 @@
+{
+  "active_goals": [
+    {
+      "title": "Develop sovereign cognitive operating system",
+      "priority": "critical",
+      "category": "architecture",
+      "status": "active",
+      "created_at": 1778170806.387529
+    },
+    {
+      "title": "Expand recursive cognition",
+      "priority": "high",
+      "category": "cognition",
+      "status": "active",
+      "created_at": 1778170806.387719
+    }
+  ],
+  "completed_goals": [],
+  "goal_history": [
+    {
+      "title": "Develop sovereign cognitive operating system",
+      "priority": "critical",
+      "category": "architecture",
+      "status": "active",
+      "created_at": 1778170806.387529
+    },
+    {
+      "title": "Expand recursive cognition",
+      "priority": "high",
+      "category": "cognition",
+      "status": "active",
+      "created_at": 1778170806.387719
+    }
+  ]
+}

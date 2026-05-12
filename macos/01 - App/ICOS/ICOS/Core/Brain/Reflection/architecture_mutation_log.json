@@ -1,0 +1,29 @@
+[
+  {
+    "event": "mutation_proposed",
+    "mutation": {
+      "mutation_id": "2bc66511-3454-4b30-9295-a19c3cb013b0",
+      "runtime": "ICOS",
+      "timestamp": 1778171156.7096,
+      "mutation_type": "architecture_upgrade",
+      "target_layer": "routing",
+      "description": "Improve autonomous provider routing.",
+      "status": "proposed",
+      "sandbox_required": true,
+      "governance_required": true,
+      "targets_core_identity": false
+    }
+  },
+  {
+    "event": "mutation_validated",
+    "validation": {
+      "runtime": "ICOS",
+      "timestamp": 1778171156.7098649,
+      "mutation_id": "2bc66511-3454-4b30-9295-a19c3cb013b0",
+      "risk": "high",
+      "approved": false,
+      "sandbox_required": true,
+      "governance_required": true
+    }
+  }
+]

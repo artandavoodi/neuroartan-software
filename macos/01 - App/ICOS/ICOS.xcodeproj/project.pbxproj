@@ -1,0 +1,870 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE288F812FA02B0000A5C1D6 /* Runtime/Frameworks/libcrypto.3.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE288FA12FA02B0000A5C1D6 /* Runtime/Frameworks/libcrypto.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE288F842FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-base.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE288FA42FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-base.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE288F872FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-blas.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE288FA72FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-blas.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE288F8A2FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-cpu.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE288FAA2FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-cpu.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE288F8D2FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-metal.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE288FAD2FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-metal.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE288F902FA02B0000A5C1D6 /* Runtime/Frameworks/libggml.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE288FB02FA02B0000A5C1D6 /* Runtime/Frameworks/libggml.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE288F952FA02B0000A5C1D6 /* Runtime/Frameworks/libllama.0.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE288FB52FA02B0000A5C1D6 /* Runtime/Frameworks/libllama.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE288F962FA02B0000A5C1D6 /* Runtime/Frameworks/libllama.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE288FB62FA02B0000A5C1D6 /* Runtime/Frameworks/libllama.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE288F9A2FA02B0000A5C1D6 /* Runtime/Frameworks/libssl.3.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE288FBA2FA02B0000A5C1D6 /* Runtime/Frameworks/libssl.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE288FC12FA02C0000A5C1D6 /* Runtime/Frameworks/libggml.0.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE288FD12FA02C0000A5C1D6 /* Runtime/Frameworks/libggml.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE288FC22FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-base.0.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE288FD22FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-base.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE288FC32FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-cpu.0.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE288FD32FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-cpu.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE288FC42FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-metal.0.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE288FD42FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-metal.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE288FC52FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-blas.0.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE288FD52FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-blas.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE288E112F9FE4EF00A5C1D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE288DFB2F9FE4EE00A5C1D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE288E022F9FE4EE00A5C1D6;
+			remoteInfo = ICOS;
+		};
+		BE288E1B2F9FE4EF00A5C1D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE288DFB2F9FE4EE00A5C1D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE288E022F9FE4EE00A5C1D6;
+			remoteInfo = ICOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BE288F802FA02B0000A5C1D6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BE288F952FA02B0000A5C1D6 /* Runtime/Frameworks/libllama.0.dylib in Embed Frameworks */,
+				BE288F962FA02B0000A5C1D6 /* Runtime/Frameworks/libllama.dylib in Embed Frameworks */,
+				BE288F902FA02B0000A5C1D6 /* Runtime/Frameworks/libggml.dylib in Embed Frameworks */,
+				BE288FC12FA02C0000A5C1D6 /* Runtime/Frameworks/libggml.0.dylib in Embed Frameworks */,
+				BE288FC22FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-base.0.dylib in Embed Frameworks */,
+				BE288FC32FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-cpu.0.dylib in Embed Frameworks */,
+				BE288FC42FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-metal.0.dylib in Embed Frameworks */,
+				BE288FC52FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-blas.0.dylib in Embed Frameworks */,
+				BE288F8A2FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-cpu.dylib in Embed Frameworks */,
+				BE288F842FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-base.dylib in Embed Frameworks */,
+				BE288F8D2FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-metal.dylib in Embed Frameworks */,
+				BE288F872FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-blas.dylib in Embed Frameworks */,
+				BE288F9A2FA02B0000A5C1D6 /* Runtime/Frameworks/libssl.3.dylib in Embed Frameworks */,
+				BE288F812FA02B0000A5C1D6 /* Runtime/Frameworks/libcrypto.3.dylib in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BE288E032F9FE4EE00A5C1D6 /* ICOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ICOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE288E102F9FE4EF00A5C1D6 /* ICOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ICOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE288E1A2F9FE4EF00A5C1D6 /* ICOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ICOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE288FA12FA02B0000A5C1D6 /* Runtime/Frameworks/libcrypto.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = Runtime/Frameworks/libcrypto.3.dylib; sourceTree = SOURCE_ROOT; };
+		BE288FA42FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-base.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "Runtime/Frameworks/libggml-base.dylib"; sourceTree = SOURCE_ROOT; };
+		BE288FA72FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-blas.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "Runtime/Frameworks/libggml-blas.dylib"; sourceTree = SOURCE_ROOT; };
+		BE288FAA2FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-cpu.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "Runtime/Frameworks/libggml-cpu.dylib"; sourceTree = SOURCE_ROOT; };
+		BE288FAD2FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-metal.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "Runtime/Frameworks/libggml-metal.dylib"; sourceTree = SOURCE_ROOT; };
+		BE288FB02FA02B0000A5C1D6 /* Runtime/Frameworks/libggml.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = Runtime/Frameworks/libggml.dylib; sourceTree = SOURCE_ROOT; };
+		BE288FB52FA02B0000A5C1D6 /* Runtime/Frameworks/libllama.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = Runtime/Frameworks/libllama.0.dylib; sourceTree = SOURCE_ROOT; };
+		BE288FB62FA02B0000A5C1D6 /* Runtime/Frameworks/libllama.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = Runtime/Frameworks/libllama.dylib; sourceTree = SOURCE_ROOT; };
+		BE288FBA2FA02B0000A5C1D6 /* Runtime/Frameworks/libssl.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = Runtime/Frameworks/libssl.3.dylib; sourceTree = SOURCE_ROOT; };
+		BE288FD12FA02C0000A5C1D6 /* Runtime/Frameworks/libggml.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = Runtime/Frameworks/libggml.0.dylib; sourceTree = SOURCE_ROOT; };
+		BE288FD22FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-base.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "Runtime/Frameworks/libggml-base.0.dylib"; sourceTree = SOURCE_ROOT; };
+		BE288FD32FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-cpu.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "Runtime/Frameworks/libggml-cpu.0.dylib"; sourceTree = SOURCE_ROOT; };
+		BE288FD42FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-metal.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "Runtime/Frameworks/libggml-metal.0.dylib"; sourceTree = SOURCE_ROOT; };
+		BE288FD52FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-blas.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "Runtime/Frameworks/libggml-blas.0.dylib"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		BE288F692FA01D2000A5C1D6 /* Exceptions for "ICOS" folder in "ICOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Doctrine/24 - Safety & Privacy Layer/01 - Safety Governance Core/Safety Policy Core Doctrine.md",
+				Execution/python,
+				Execution/python3,
+				Execution/python3.14,
+				"Execution/𝜋thon",
+				Interfaces/VSCode/Extension/package.json,
+				Interfaces/VSCode/Extension/README.md,
+				Interfaces/VSCode/Extension/src/extension.js,
+				Interfaces/Xcode/migrated_CloudRuntimeAdapter.swift,
+				Interfaces/Xcode/migrated_ICOSRuntimeBridge.swift,
+				Interfaces/Xcode/migrated_WebsiteBridge.swift,
+				Memory/Apple/RuntimeState.swift,
+				Memory/Native/TExceptionState.cpp,
+				Memory/Native/TPythonState.cpp,
+				Memory/Native/TStackState.cpp,
+				Memory/Native/TThreadStateDestroy.cpp,
+				Runtime/RuntimeState.swift,
+				ThirdParty/arch_switches/switch_arm64_masm.asm,
+				ThirdParty/arch_switches/switch_x64_masm.asm,
+				"ThirdParty/dylibs/_avif.cpython-314-darwin.so",
+				"ThirdParty/dylibs/_test_extension_cpp.cpython-314-darwin.so",
+				"ThirdParty/dylibs/_test_extension.cpython-314-darwin.so",
+				"ThirdParty/dylibs/_webp.cpython-314-darwin.so",
+				ThirdParty/dylibs/libavif.16.4.1.dylib,
+				ThirdParty/dylibs/libbrotlicommon.1.2.0.dylib,
+				ThirdParty/dylibs/libbrotlidec.1.2.0.dylib,
+				ThirdParty/dylibs/libfreetype.6.dylib,
+				ThirdParty/dylibs/libharfbuzz.0.dylib,
+				ThirdParty/dylibs/libjpeg.62.4.0.dylib,
+				ThirdParty/dylibs/liblcms2.2.dylib,
+				ThirdParty/dylibs/liblzma.5.dylib,
+				ThirdParty/dylibs/libopenjp2.2.5.4.dylib,
+				ThirdParty/dylibs/libpng16.16.dylib,
+				ThirdParty/dylibs/libsharpyuv.0.dylib,
+				ThirdParty/dylibs/libtiff.6.dylib,
+				ThirdParty/dylibs/libwebp.7.dylib,
+				ThirdParty/dylibs/libwebpdemux.2.dylib,
+				ThirdParty/dylibs/libwebpmux.3.dylib,
+				ThirdParty/dylibs/libXau.6.dylib,
+				ThirdParty/dylibs/libxcb.1.1.0.dylib,
+				"ThirdParty/dylibs/libz.1.3.1.zlib-ng.dylib",
+				"ThirdParty/greenlet/_greenlet.cpython-314-darwin.so",
+				ThirdParty/greenlet/greenlet.cpp,
+				ThirdParty/greenlet/PyGreenlet.cpp,
+				ThirdParty/greenlet/PyGreenletUnswitchable.cpp,
+				ThirdParty/greenlet/TBrokenGreenlet.cpp,
+				ThirdParty/greenlet/TGreenlet.cpp,
+				ThirdParty/greenlet/TGreenletGlobals.cpp,
+				ThirdParty/greenlet/TMainGreenlet.cpp,
+				ThirdParty/greenlet/TUserGreenlet.cpp,
+				"ThirdParty/Pillow/_imaging.cpython-314-darwin.so",
+				"ThirdParty/Pillow/_imagingcms.cpython-314-darwin.so",
+				"ThirdParty/Pillow/_imagingft.cpython-314-darwin.so",
+				"ThirdParty/Pillow/_imagingmath.cpython-314-darwin.so",
+				"ThirdParty/Pillow/_imagingmorph.cpython-314-darwin.so",
+				"ThirdParty/Pillow/_imagingtk.cpython-314-darwin.so",
+				ThirdParty/vendor/LICENSE.txt,
+				ThirdParty/vendor/migrated_LICENSE.txt,
+			);
+			target = BE288E022F9FE4EE00A5C1D6 /* ICOS */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		BE288E052F9FE4EE00A5C1D6 /* ICOS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BE288F692FA01D2000A5C1D6 /* Exceptions for "ICOS" folder in "ICOS" target */,
+			);
+			path = ICOS;
+			sourceTree = "<group>";
+		};
+		BE288E132F9FE4EF00A5C1D6 /* ICOSTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ICOSTests;
+			sourceTree = "<group>";
+		};
+		BE288E1D2F9FE4EF00A5C1D6 /* ICOSUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ICOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE288E002F9FE4EE00A5C1D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE288E0D2F9FE4EF00A5C1D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE288E172F9FE4EF00A5C1D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE288DFA2F9FE4EE00A5C1D6 = {
+			isa = PBXGroup;
+			children = (
+				BE288E052F9FE4EE00A5C1D6 /* ICOS */,
+				BE288E132F9FE4EF00A5C1D6 /* ICOSTests */,
+				BE288E1D2F9FE4EF00A5C1D6 /* ICOSUITests */,
+				BE288FBB2FA02B0000A5C1D6 /* Runtime Frameworks */,
+				BE288E042F9FE4EE00A5C1D6 /* Products */,
+				BEC518462FA38941008950F0 /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
+		BE288E042F9FE4EE00A5C1D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE288E032F9FE4EE00A5C1D6 /* ICOS.app */,
+				BE288E102F9FE4EF00A5C1D6 /* ICOSTests.xctest */,
+				BE288E1A2F9FE4EF00A5C1D6 /* ICOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE288FBB2FA02B0000A5C1D6 /* Runtime Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE288FB52FA02B0000A5C1D6 /* Runtime/Frameworks/libllama.0.dylib */,
+				BE288FB62FA02B0000A5C1D6 /* Runtime/Frameworks/libllama.dylib */,
+				BE288FB02FA02B0000A5C1D6 /* Runtime/Frameworks/libggml.dylib */,
+				BE288FD12FA02C0000A5C1D6 /* Runtime/Frameworks/libggml.0.dylib */,
+				BE288FD22FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-base.0.dylib */,
+				BE288FD32FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-cpu.0.dylib */,
+				BE288FD42FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-metal.0.dylib */,
+				BE288FD52FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-blas.0.dylib */,
+				BE288FAA2FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-cpu.dylib */,
+				BE288FA42FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-base.dylib */,
+				BE288FAD2FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-metal.dylib */,
+				BE288FA72FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-blas.dylib */,
+				BE288FBA2FA02B0000A5C1D6 /* Runtime/Frameworks/libssl.3.dylib */,
+				BE288FA12FA02B0000A5C1D6 /* Runtime/Frameworks/libcrypto.3.dylib */,
+			);
+			name = "Runtime Frameworks";
+			sourceTree = "<group>";
+		};
+		BEC518462FA38941008950F0 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE288E022F9FE4EE00A5C1D6 /* ICOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE288E242F9FE4EF00A5C1D6 /* Build configuration list for PBXNativeTarget "ICOS" */;
+			buildPhases = (
+				BE288DFF2F9FE4EE00A5C1D6 /* Sources */,
+				BE288E002F9FE4EE00A5C1D6 /* Frameworks */,
+				BE288E012F9FE4EE00A5C1D6 /* Resources */,
+				BE288FD62FA0400000A5C1D6 /* Copy Doctrine Tree */,
+				BE2890012FA3900000A5C1D6 /* Copy Icon Tree */,
+				BE288F802FA02B0000A5C1D6 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				BE288E052F9FE4EE00A5C1D6 /* ICOS */,
+			);
+			name = ICOS;
+			packageProductDependencies = (
+			);
+			productName = ICOS;
+			productReference = BE288E032F9FE4EE00A5C1D6 /* ICOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE288E0F2F9FE4EF00A5C1D6 /* ICOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE288E272F9FE4EF00A5C1D6 /* Build configuration list for PBXNativeTarget "ICOSTests" */;
+			buildPhases = (
+				BE288E0C2F9FE4EF00A5C1D6 /* Sources */,
+				BE288E0D2F9FE4EF00A5C1D6 /* Frameworks */,
+				BE288E0E2F9FE4EF00A5C1D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE288E122F9FE4EF00A5C1D6 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				BE288E132F9FE4EF00A5C1D6 /* ICOSTests */,
+			);
+			name = ICOSTests;
+			packageProductDependencies = (
+			);
+			productName = ICOSTests;
+			productReference = BE288E102F9FE4EF00A5C1D6 /* ICOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BE288E192F9FE4EF00A5C1D6 /* ICOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE288E2A2F9FE4EF00A5C1D6 /* Build configuration list for PBXNativeTarget "ICOSUITests" */;
+			buildPhases = (
+				BE288E162F9FE4EF00A5C1D6 /* Sources */,
+				BE288E172F9FE4EF00A5C1D6 /* Frameworks */,
+				BE288E182F9FE4EF00A5C1D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE288E1C2F9FE4EF00A5C1D6 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				BE288E1D2F9FE4EF00A5C1D6 /* ICOSUITests */,
+			);
+			name = ICOSUITests;
+			packageProductDependencies = (
+			);
+			productName = ICOSUITests;
+			productReference = BE288E1A2F9FE4EF00A5C1D6 /* ICOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE288DFB2F9FE4EE00A5C1D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2640;
+				LastUpgradeCheck = 2640;
+				TargetAttributes = {
+					BE288E022F9FE4EE00A5C1D6 = {
+						CreatedOnToolsVersion = 26.4.1;
+					};
+					BE288E0F2F9FE4EF00A5C1D6 = {
+						CreatedOnToolsVersion = 26.4.1;
+						TestTargetID = BE288E022F9FE4EE00A5C1D6;
+					};
+					BE288E192F9FE4EF00A5C1D6 = {
+						CreatedOnToolsVersion = 26.4.1;
+						TestTargetID = BE288E022F9FE4EE00A5C1D6;
+					};
+				};
+			};
+			buildConfigurationList = BE288DFE2F9FE4EE00A5C1D6 /* Build configuration list for PBXProject "ICOS" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE288DFA2F9FE4EE00A5C1D6;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = BE288E042F9FE4EE00A5C1D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE288E022F9FE4EE00A5C1D6 /* ICOS */,
+				BE288E0F2F9FE4EF00A5C1D6 /* ICOSTests */,
+				BE288E192F9FE4EF00A5C1D6 /* ICOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE288E012F9FE4EE00A5C1D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE288E0E2F9FE4EF00A5C1D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE288E182F9FE4EF00A5C1D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BE288FD62FA0400000A5C1D6 /* Copy Doctrine Tree */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(PROJECT_DIR)/ICOS/Doctrine/**",
+			);
+			name = "Copy Doctrine Tree";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Doctrine",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nSOURCE=\"$PROJECT_DIR/ICOS/Doctrine\"\nDEST=\"$TARGET_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/Doctrine\"\nrm -rf \"$DEST\"\nmkdir -p \"$DEST\"\n/usr/bin/ditto \"$SOURCE\" \"$DEST\"\nfind \"$TARGET_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\" -maxdepth 1 -type f -name '*.md' -delete\n";
+		};
+		BE2890012FA3900000A5C1D6 /* Copy Icon Tree */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(PROJECT_DIR)/ICOS/Resources/Icons/**",
+			);
+			name = "Copy Icon Tree";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Icons",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nSOURCE=\"$PROJECT_DIR/ICOS/Resources/Icons\"\nDEST=\"$TARGET_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/Icons\"\nrm -rf \"$DEST\"\nif [ -d \"$SOURCE\" ]; then\n  mkdir -p \"$DEST\"\n  /usr/bin/ditto \"$SOURCE\" \"$DEST\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE288DFF2F9FE4EE00A5C1D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE288E0C2F9FE4EF00A5C1D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE288E162F9FE4EF00A5C1D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE288E122F9FE4EF00A5C1D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE288E022F9FE4EE00A5C1D6 /* ICOS */;
+			targetProxy = BE288E112F9FE4EF00A5C1D6 /* PBXContainerItemProxy */;
+		};
+		BE288E1C2F9FE4EF00A5C1D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE288E022F9FE4EE00A5C1D6 /* ICOS */;
+			targetProxy = BE288E1B2F9FE4EF00A5C1D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BE288E222F9FE4EF00A5C1D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = XP6Y5DDWM8;
+				ENABLE_APP_INTENTS_METADATA_GENERATION = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE288E232F9FE4EF00A5C1D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = XP6Y5DDWM8;
+				ENABLE_APP_INTENTS_METADATA_GENERATION = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		BE288E252F9FE4EF00A5C1D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGNING_REQUIRED = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPYFILE_DISABLE = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XP6Y5DDWM8;
+				ENABLE_APP_INTENTS_METADATA_GENERATION = NO;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				EXCLUDED_SOURCE_FILE_NAMES = (
+					"ICOS/ExecutionEngine/*",
+					ICOS/Core/ICOSCoreRuntime.swift,
+					ICOS/Runtime/ICOSExecutionEngine.swift,
+					ICOS/Runtime/CloudRuntimeAdapter.swift,
+					ICOS/Runtime/InferenceGateway.swift,
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Runtime/Source/llama.cpp/include",
+					"$(PROJECT_DIR)/Runtime/Source/llama.cpp/ggml/include",
+				);
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Microphone access is required for voice-based interaction.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Speech recognition is required to transcribe developer voice commands.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Runtime/Frameworks",
+					"$(PROJECT_DIR)/ICOS/ThirdParty/dylibs",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lllama",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neuroartan.ICOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_CONST_VALUE_PROTOCOLS = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "ICOS/Runtime/Native/LlamaBridge-Bridging-Header.h";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BE288E262F9FE4EF00A5C1D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGNING_REQUIRED = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPYFILE_DISABLE = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XP6Y5DDWM8;
+				ENABLE_APP_INTENTS_METADATA_GENERATION = NO;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				EXCLUDED_SOURCE_FILE_NAMES = (
+					"ICOS/ExecutionEngine/*",
+					ICOS/Core/ICOSCoreRuntime.swift,
+					ICOS/Runtime/ICOSExecutionEngine.swift,
+					ICOS/Runtime/CloudRuntimeAdapter.swift,
+					ICOS/Runtime/InferenceGateway.swift,
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Runtime/Source/llama.cpp/include",
+					"$(PROJECT_DIR)/Runtime/Source/llama.cpp/ggml/include",
+				);
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Microphone access is required for voice-based interaction.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Speech recognition is required to transcribe developer voice commands.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Runtime/Frameworks",
+					"$(PROJECT_DIR)/ICOS/ThirdParty/dylibs",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lllama",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neuroartan.ICOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_CONST_VALUE_PROTOCOLS = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "ICOS/Runtime/Native/LlamaBridge-Bridging-Header.h";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		BE288E282F9FE4EF00A5C1D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XP6Y5DDWM8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neuroartan.ICOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ICOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ICOS";
+			};
+			name = Debug;
+		};
+		BE288E292F9FE4EF00A5C1D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XP6Y5DDWM8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neuroartan.ICOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ICOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ICOS";
+			};
+			name = Release;
+		};
+		BE288E2B2F9FE4EF00A5C1D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XP6Y5DDWM8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neuroartan.ICOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ICOS;
+			};
+			name = Debug;
+		};
+		BE288E2C2F9FE4EF00A5C1D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XP6Y5DDWM8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neuroartan.ICOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ICOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE288DFE2F9FE4EE00A5C1D6 /* Build configuration list for PBXProject "ICOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE288E222F9FE4EF00A5C1D6 /* Debug */,
+				BE288E232F9FE4EF00A5C1D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BE288E242F9FE4EF00A5C1D6 /* Build configuration list for PBXNativeTarget "ICOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE288E252F9FE4EF00A5C1D6 /* Debug */,
+				BE288E262F9FE4EF00A5C1D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BE288E272F9FE4EF00A5C1D6 /* Build configuration list for PBXNativeTarget "ICOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE288E282F9FE4EF00A5C1D6 /* Debug */,
+				BE288E292F9FE4EF00A5C1D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BE288E2A2F9FE4EF00A5C1D6 /* Build configuration list for PBXNativeTarget "ICOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE288E2B2F9FE4EF00A5C1D6 /* Debug */,
+				BE288E2C2F9FE4EF00A5C1D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE288DFB2F9FE4EE00A5C1D6 /* Project object */;
+}

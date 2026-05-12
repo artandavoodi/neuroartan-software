@@ -1,0 +1,11 @@
+{
+  "runtime": "ICOS",
+  "owner": "Core/Brain",
+  "llm_role": "replaceable_processor",
+  "brain_role": "sovereign_cognitive_controller",
+  "direct_brain_command": "talk to the main brain",
+  "bypass_llm_identity": true,
+  "observe_model_outputs": true,
+  "learn_from_model_patterns": true,
+  "preserve_brain_identity": true
+}

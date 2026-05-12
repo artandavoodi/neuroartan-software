@@ -1,0 +1,409 @@
+=== ROOT TREE ===
+/Users/artan/Neuroartan-software/macos/01 - App
+/Users/artan/Neuroartan-software/macos/01 - App/Configuration
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS.xcodeproj
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS.xcodeproj/project.xcworkspace
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS.xcodeproj/project.xcworkspace/xcshareddata
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS.xcodeproj/project.xcworkspace/xcshareddata/swiftpm
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/configuration
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS.xcodeproj/project.xcworkspace/xcuserdata
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS.xcodeproj/project.xcworkspace/xcuserdata/artan.xcuserdatad
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS.xcodeproj/xcuserdata
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS.xcodeproj/xcuserdata/artan.xcuserdatad
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS.xcodeproj/xcuserdata/artan.xcuserdatad/xcschemes
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/App
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Assets.xcassets
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Assets.xcassets/AccentColor.colorset
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Assets.xcassets/AppIcon.appiconset
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Bridge
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Adaptive
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Agents
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Orchestration
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Planning
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/CognitiveEngine
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/CognitiveEngine/Doctrine
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/CognitiveEngine/Governance
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/CognitiveEngine/Tools
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Control
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Core
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DesignSystem
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DesignSystem/Components
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DesignSystem/Controls
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DesignSystem/Icons
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DesignSystem/Icons/core
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DesignSystem/Icons/layers
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DesignSystem/Icons/registry
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DesignSystem/Icons/system
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DesignSystem/Tokens
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DeveloperConsole
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DeveloperConsole/Fragments
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DeveloperConsole/Indicators
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DeveloperConsole/Panels
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DeveloperConsole/Views
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/00 - Index
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/01 - Identity
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/02 - Product
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/03 - Company
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/04 - Founder
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/05 - Model Transparency
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/06 - Memory
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/07 - Response
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/08 - File Referencing
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/09 - Safety
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/10 - Runtime Behavior
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/11 - Prompt Architecture
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/12 - Knowledge Architecture
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/13 - Source Attribution
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/14 - Tool Use
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/15 - Governance
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/16 - Expansion Protocol
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/17 - Execution Intelligence
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/18 - Command System
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/19 - Active Reference System
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/20 - Context Budget System
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/21 - Enforcement Layer
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/22 - External Agent Replication
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/23 - Runtime UX
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/24 - Safety & Privacy Layer
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/24 - Safety & Privacy Layer/00 - Safety Governance Core
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/24 - Safety & Privacy Layer/01 - Safety Governance Core
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/24 - Safety & Privacy Layer/02 - Content Safety Behavior Control
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/24 - Safety & Privacy Layer/03 - Privacy Data Governance
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/24 - Safety & Privacy Layer/04 - Ethical Behavior Control
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/24 - Safety & Privacy Layer/05 - Legal Compliance Layer
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/24 - Safety & Privacy Layer/06 - User Interaction Safety
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/24 - Safety & Privacy Layer/07 - System Integrity FailSafe
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/24 - Safety & Privacy Layer/08 - Safety Orchestration Core
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Engine
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Infrastructure
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Pipelines
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Queues
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Runtime
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Schedulers
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Workers
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ExecutionEngine
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Governance
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Governance/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Institutional
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/CLI
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Continue
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/LMStudio
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/MCP
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Xcode
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/KnowledgeBase
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Legacy
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Legacy/execution_contamination
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Legacy/runtime_duplicates
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Legacy/runtime_duplicates/Providers
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Legacy/runtime_duplicates/interfaces
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Legacy/runtime_duplicates/interfaces/LMStudio
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Legacy/runtime_duplicates/interfaces/cli
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Legacy/runtime_duplicates/interfaces/continue
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Legacy/runtime_duplicates/interfaces/mcp
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Legacy/runtime_duplicates/interfaces/xcode
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Legacy/runtime_duplicates/models
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Legacy/runtime_duplicates/models/cloud
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Legacy/runtime_duplicates/models/lmstudio
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Legacy/runtime_duplicates/models/local
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Legacy/runtime_fragments
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Models
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Models/cloud
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Models/lmstudio
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Models/local
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Persistence
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Platform
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Platform/Sections
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Profile
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Providers
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Providers/Routing
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Providers/cloud
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Providers/lmstudio
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Providers/local
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Adapters
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Cognition
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/MCP
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/MCP/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/advanced
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/core
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/icos_intelligence
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/institutional
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/intelligence
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/interfaces
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/quality
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Contracts
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Core
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Governance
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Learning
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Legacy
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/LocalClient
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Native
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Planning
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Registry
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Verification
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/_migration_backups
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/_migration_backups/Adapters
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/_migration_backups/Adapters/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/_migration_backups/Core
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/_migration_backups/Core/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/_migration_backups/Governance
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/_migration_backups/Governance/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/_migration_backups/Interfaces
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/_migration_backups/Interfaces/Continue
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/_migration_backups/Memory
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/_migration_backups/Memory/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/_migration_backups/Models
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/_migration_backups/Models/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/_migration_backups/Verification
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/_migration_backups/Verification/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/_migration_reports
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/architecture
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/backups
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/backups/20260506_100444
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/backups/20260506_171117
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/backups/20260506_171335
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/memory
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/migration
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/runtime
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/runtime/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Shared
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Sources
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Sources/llama_cpp
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Sources/llama_cpp/migrated_executors
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Sources/llama_cpp/migrated_swift_bridge
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/SwiftUI
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/SwiftUI/App
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/SwiftUI/Behavior
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/SwiftUI/Button
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/SwiftUI/Features
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/SwiftUI/Features/BrowserUse
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/SwiftUI/Features/FileManager
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/SwiftUI/Features/Projects
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/SwiftUI/Features/System
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/SwiftUI/Layout
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/SwiftUI/Navigation
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/SwiftUI/Settings
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/SwiftUI/Shell
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/SwiftUI/System
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/SwiftUI/Theme
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/System
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/System/Layout
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/System/Navigation
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/System/Overlays
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/System/Settings
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/System/Settings/Controls
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/System/Settings/Fragments
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/System/Settings/Models
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/System/Settings/State
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/System/Settings/Views
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/System/Shell
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/System/State
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/System/Theme
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/System/Workspace
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/Pillow
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/Playwright
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/arch_switches
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/browser_runtime
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/browser_stack
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/dylibs
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/greenlet
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/network_stack
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/pip
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/playwright_runtime
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/python_runtime
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/quarantined_execution
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/tracing_stack
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/ui_vendor
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/vendor
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/UX
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/UX/00 - Index
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/UX/01 - Design System
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/UX/02 - Layout Engine
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/UX/03 - Components System
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/UX/04 - Navigation System
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/UX/05 - Screens
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/UX/06 - Fragments
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/UX/07 - Themes
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/UX/08 - Assets
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/UX/09 - Interaction Models
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/UX/10 - Documentation
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/UX/11 - Swift UI Bridge
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/UX/11 - Swift UI Bridge/Component Mapping
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Validation
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/_production_reconstruction
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/_runtime_maturity
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/_sovereign_scan
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/_sovereign_scan/backups
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/_sovereign_scan/backups/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOSTests
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOSUITests
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Frameworks
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Models
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/.devops
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/.devops/nix
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/.gemini
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/.git
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/.git/hooks
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/.git/info
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/.git/logs
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/.git/objects
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/.git/refs
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/.github
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/.github/ISSUE_TEMPLATE
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/.github/actions
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/.github/workflows
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/.pi
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/.pi/gg
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/benches
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/benches/dgx-spark
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/benches/mac-m2-ultra
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/benches/nemotron
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/ci
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/cmake
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/common
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/common/jinja
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/docs
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/docs/android
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/docs/backend
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/docs/development
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/docs/multimodal
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/docs/ops
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/batched
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/batched.swift
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/convert-llama2c-to-ggml
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/debug
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/deprecation-warning
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/diffusion
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/embedding
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/eval-callback
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/gen-docs
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/gguf
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/gguf-hash
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/idle
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/llama.android
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/llama.swiftui
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/lookahead
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/lookup
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/model-conversion
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/parallel
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/passkey
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/retrieval
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/save-load-state
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/simple
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/simple-chat
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/simple-cmake-pkg
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/speculative
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/speculative-simple
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/sycl
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/training
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/ggml
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/ggml/cmake
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/ggml/include
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/ggml/src
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/gguf-py
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/gguf-py/examples
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/gguf-py/gguf
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/gguf-py/tests
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/grammars
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/include
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/licenses
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/media
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/pocs
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/pocs/vdot
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/requirements
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/scripts
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/scripts/apple
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/scripts/hip
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/scripts/jinja
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/scripts/snapdragon
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/src
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/src/models
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tests
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tests/peg-parser
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tests/snapshots
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/batched-bench
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/cli
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/completion
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/cvector-generator
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/export-lora
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/fit-params
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/gguf-split
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/imatrix
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/llama-bench
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/mtmd
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/parser
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/perplexity
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/quantize
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/results
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/rpc
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/server
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/tokenize
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/tts
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/vendor
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/vendor/cpp-httplib
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/vendor/miniaudio
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/vendor/nlohmann
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/vendor/sheredom
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/vendor/stb
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build/Build
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build/Build/Intermediates.noindex
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build/Build/Intermediates.noindex/EagerLinkingTBDs
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build/Build/Intermediates.noindex/ExplicitPrecompiledModules
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build/Build/Intermediates.noindex/ICOS.build
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build/Build/Intermediates.noindex/ICOS.build/Debug
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build/Build/Intermediates.noindex/XCBuildData
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build/Build/Intermediates.noindex/XCBuildData/430102467dc3d7799d08a3ada2246ed8.xcbuilddata
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build/Build/Intermediates.noindex/XCBuildData/455811abb42c9ebd331f4a757003c4de.xcbuilddata
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build/Build/Intermediates.noindex/XCBuildData/4c9128afb96be9c8b1d9ebcc5fd93604.xcbuilddata
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build/Build/Intermediates.noindex/XCBuildData/670713d58f126884c443af003aa90762.xcbuilddata
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build/Build/Intermediates.noindex/XCBuildData/PIFCache
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build/Build/Products
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build/Build/Products/Debug
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build/Build/Products/Debug/ICOS.app
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build/Build/Products/Debug/ICOS.swiftmodule
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build/CompilationCache.noindex
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build/CompilationCache.noindex/generic
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build/CompilationCache.noindex/generic/v1.1
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build/Index.noindex
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build/Index.noindex/DataStore
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build/Index.noindex/DataStore/v5
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build/Index.noindex/DataStore/v5/records
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build/Index.noindex/DataStore/v5/units
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build/Logs
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build/Logs/Build
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build/Logs/Launch
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build/Logs/Localization
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build/Logs/Package
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build/Logs/Test
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build/ModuleCache.noindex
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build/ModuleCache.noindex/2XFPZG3R7ICQ2
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build/ModuleCache.noindex/TRFAPOA7NU8C
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/build/SDKStatCaches.noindex
+/Users/artan/Neuroartan-software/macos/01 - App/Resources
+/Users/artan/Neuroartan-software/macos/01 - App/Sources
+/Users/artan/Neuroartan-software/macos/01 - App/_surgical_architecture

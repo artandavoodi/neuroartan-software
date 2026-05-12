@@ -1,0 +1,19 @@
+{
+  "product": "ICOS",
+  "company": "Neuroartan",
+  "model": "WSDA",
+  "identity": "ICOS",
+  "runtime": "ICOS",
+  "runtime_owner": "Interfaces/Continue",
+  "provider": "LM Studio",
+  "architecture": "Sovereign Cognitive Operating System",
+  "orchestration": {
+    "memory": true,
+    "cognition": true,
+    "execution": true,
+    "providers": true,
+    "runtime": true,
+    "governance": true
+  },
+  "source": "registry"
+}

@@ -1,0 +1,23 @@
+{
+  "safe_to_quarantine_empty_dirs": [
+    "/Users/artan/Neuroartan-software/macos/01 - App/Configuration",
+    "/Users/artan/Neuroartan-software/macos/01 - App/Resources",
+    "/Users/artan/Neuroartan-software/macos/01 - App/Sources"
+  ],
+  "safe_source_numbering_targets": [
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Orchestration",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Infrastructure",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Xcode"
+  ],
+  "do_not_touch": [
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS.xcodeproj",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOSTests",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOSUITests",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime",
+    "ThirdParty",
+    "__pycache__",
+    "_migration_backups",
+    "llama.cpp"
+  ]
+}

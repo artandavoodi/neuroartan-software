@@ -1,0 +1,31 @@
+{
+  "audit_events": [
+    {
+      "runtime": "ICOS",
+      "timestamp": 1778171597.759682,
+      "brain_active": true,
+      "mutation_lineage_events": 1,
+      "sandbox_lineage_events": 1,
+      "recursive_traceability": true,
+      "governance_accountability": true,
+      "continuity_integrity": true
+    }
+  ],
+  "mutation_lineage": [
+    {
+      "mutation_id": "2bc66511-3454-4b30-9295-a19c3cb013b0",
+      "target_layer": "routing",
+      "status": "proposed",
+      "timestamp": 1778171156.7096
+    }
+  ],
+  "sandbox_lineage": [
+    {
+      "sandbox_id": "7f9bb47b-0449-4a06-be70-f5b15ee8a291",
+      "mutation_id": "demo-mutation",
+      "isolated": true,
+      "production_access": false,
+      "timestamp": 1778171471.296663
+    }
+  ]
+}

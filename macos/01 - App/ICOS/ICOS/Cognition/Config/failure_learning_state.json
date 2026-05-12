@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "failures": [
+    {
+      "failure_id": "FAIL-60D4E5914E",
+      "recorded_at": "2026-05-06T21:46:09",
+      "category": "execution",
+      "severity": "high",
+      "severity_score": 4,
+      "event": {
+        "failure_type": "runtime_verification",
+        "severity": "high",
+        "lesson": "Static file edit completed but runtime ownership layer still overrode content.",
+        "event": "Homepage hero text remained unchanged after HTML mutation.",
+        "resolution": "Add runtime/browser verification before confirming completion."
+      },
+      "learned_rule": "Evaluate dependencies before execution sequencing."
+    }
+  ],
+  "pattern_frequency": {
+    "execution": 1
+  },
+  "adaptive_rules": [
+    "Evaluate dependencies before execution sequencing."
+  ],
+  "last_update": "2026-05-06T21:46:09"
+}

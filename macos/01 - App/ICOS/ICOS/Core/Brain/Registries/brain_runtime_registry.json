@@ -1,0 +1,86 @@
+{
+  "runtime": {
+    "name": "ICOS",
+    "architecture": "Sovereign Cognitive Operating System",
+    "runtime_owner": "Core/Brain",
+    "brain_controller": "Core/Brain/Engines/00_icos_brain_controller.py",
+    "active": true
+  },
+  "identity": {
+    "company": "Neuroartan",
+    "system": "ICOS",
+    "active_role": "WSDA",
+    "identity_guard": "Core/Brain/Engines/01_identity_guard.py",
+    "llm_is_processor_only": true
+  },
+  "interfaces": {
+    "continue": {
+      "enabled": true,
+      "path": "Interfaces/Continue"
+    },
+    "cli": {
+      "enabled": false,
+      "path": "Interfaces/CLI"
+    },
+    "app": {
+      "enabled": false,
+      "path": "Interfaces/App"
+    },
+    "voice": {
+      "enabled": false,
+      "path": "Interfaces/Voice"
+    },
+    "web": {
+      "enabled": false,
+      "path": "Interfaces/Web"
+    }
+  },
+  "cognition": {
+    "enabled": true,
+    "root": "Cognition/Engines"
+  },
+  "memory": {
+    "enabled": true,
+    "root": "Memory/Engines"
+  },
+  "governance": {
+    "enabled": true,
+    "root": "Governance/Engines"
+  },
+  "execution": {
+    "enabled": true,
+    "root": "Execution/Engines"
+  },
+  "providers": {
+    "enabled": true,
+    "root": "Providers/Engines",
+    "active_provider": "LMStudio"
+  },
+  "models": {
+    "local": {
+      "enabled": true,
+      "provider": "LMStudio"
+    },
+    "cloud": {
+      "enabled": false
+    }
+  },
+  "brain_layers": {
+    "context_injection": "Core/Brain/Engines/03_context_injection_engine.py",
+    "output_auditor": "Core/Brain/Engines/02_model_output_auditor.py",
+    "learning_loop": "Core/Brain/Engines/04_learning_loop.py",
+    "response_synthesis": "Core/Brain/Engines/05_response_synthesis_engine.py"
+  },
+  "policies": {
+    "preserve_sovereign_identity": true,
+    "prevent_generic_llm_identity": true,
+    "root_fix_only": true,
+    "allow_model_replacement": true
+  },
+  "learning": {
+    "memory_recording": true,
+    "runtime_reflection": true,
+    "output_analysis": true,
+    "token_learning": false
+  }
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "runtime": "ICOS",
+    "timestamp": 1778170481.2783418,
+    "user_input": "What architecture should ICOS use?",
+    "providers_consulted": [
+      "LMStudio",
+      "OpenAI",
+      "Gemini"
+    ],
+    "contradictions_detected": true,
+    "contradictions": [
+      {
+        "provider_a": "LMStudio",
+        "provider_b": "OpenAI",
+        "output_a": "Use modular local cognition.",
+        "output_b": "Use distributed orchestration."
+      },
+      {
+        "provider_a": "LMStudio",
+        "provider_b": "Gemini",
+        "output_a": "Use modular local cognition.",
+        "output_b": "Use adaptive memory routing."
+      },
+      {
+        "provider_a": "OpenAI",
+        "provider_b": "Gemini",
+        "output_a": "Use distributed orchestration.",
+        "output_b": "Use adaptive memory routing."
+      }
+    ],
+    "final_cognition": "Use modular local cognition.",
+    "sovereign_authority": "ICOS_BRAIN"
+  }
+]

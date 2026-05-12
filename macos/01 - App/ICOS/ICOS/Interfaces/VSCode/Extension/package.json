@@ -1,0 +1,26 @@
+{
+  "name": "icos-editor-bridge",
+  "displayName": "ICOS Editor Bridge",
+  "description": "Shares the active VS Code file and workspace with the ICOS native developer runtime.",
+  "version": "0.1.0",
+  "publisher": "neuroartan",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished",
+    "onCommand:icosEditorBridge.publishActiveFile"
+  ],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "icosEditorBridge.publishActiveFile",
+        "title": "ICOS: Publish Active File"
+      }
+    ]
+  }
+}

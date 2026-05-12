@@ -1,0 +1,1269 @@
+.
+├── .vscode
+│   └── settings.json
+├── _architecture_scan
+│   ├── injection_queue
+│   │   └── 01_empty_file_injection_queue.json
+│   ├── numbering_backup
+│   │   ├── __pycache__
+│   │   │   ├── 00___init__.cpython-314.pyc
+│   │   │   ├── 00__browser_context.cpython-314.pyc
+│   │   │   ├── 00__cmd.cpython-314.pyc
+│   │   │   ├── 00__context_manager.cpython-314.pyc
+│   │   │   ├── 00__event_context_manager.cpython-314.pyc
+│   │   │   ├── 00__har_router.cpython-314.pyc
+│   │   │   ├── 00_adapter.cpython-314.pyc
+│   │   │   ├── 00_autonomous_behavioral_reasoning.cpython-314.pyc
+│   │   │   ├── 00_cache.cpython-314.pyc
+│   │   │   ├── 00_cognitive_orchestration_engine.cpython-314.pyc
+│   │   │   ├── 00_command_context.cpython-314.pyc
+│   │   │   ├── 00_controller.cpython-314.pyc
+│   │   │   ├── 00_distributed_context_compression.cpython-314.pyc
+│   │   │   ├── 00_execution_policy_intelligence.cpython-314.pyc
+│   │   │   ├── 00_file_cache.cpython-314.pyc
+│   │   │   ├── 00_filewrapper.cpython-314.pyc
+│   │   │   ├── 00_heuristics.cpython-314.pyc
+│   │   │   ├── 00_icos_mcp_server.cpython-314.pyc
+│   │   │   ├── 00_js_ts_patch_engine.cpython-314.pyc
+│   │   │   ├── 00_language_server_intelligence.cpython-314.pyc
+│   │   │   ├── 00_long_horizon_planner.cpython-314.pyc
+│   │   │   ├── 00_memory_manager.cpython-314.pyc
+│   │   │   ├── 00_model_quality_reasoning.cpython-314.pyc
+│   │   │   ├── 00_patch_planner.cpython-314.pyc
+│   │   │   ├── 00_persistent_identity_graph_engine.cpython-314.pyc
+│   │   │   ├── 00_provider_registry.cpython-314.pyc
+│   │   │   ├── 00_redis_cache.cpython-314.pyc
+│   │   │   ├── 00_repository_reasoning_memory.cpython-314.pyc
+│   │   │   ├── 00_repository_semantic_memory_graph.cpython-314.pyc
+│   │   │   ├── 00_resources.cpython-314.pyc
+│   │   │   ├── 00_retry_engine.cpython-314.pyc
+│   │   │   ├── 00_runtime_adaptive_learning.cpython-314.pyc
+│   │   │   ├── 00_runtime_learning.cpython-314.pyc
+│   │   │   ├── 00_serialize.cpython-314.pyc
+│   │   │   ├── 00_streaming_reasoning_engine.cpython-314.pyc
+│   │   │   ├── 00_test_contextvars.cpython-314.pyc
+│   │   │   ├── 00_tool_permission_governance.cpython-314.pyc
+│   │   │   ├── 00_unified_execution_cognition_loop.cpython-314.pyc
+│   │   │   ├── 00_verification_loop.cpython-314.pyc
+│   │   │   ├── 00_verifier.cpython-314.pyc
+│   │   │   ├── 00_wrapper.cpython-314.pyc
+│   │   │   ├── 01_adaptive_memory_weighting_engine.cpython-314.pyc
+│   │   │   ├── 01_autonomous_repair_engine.cpython-314.pyc
+│   │   │   ├── 01_constitutional_memory_graph.cpython-314.pyc
+│   │   │   ├── 01_icos_core_engine.cpython-314.pyc
+│   │   │   ├── 01_mcp_tool_router.cpython-314.pyc
+│   │   │   ├── 01_runtime_state_store.cpython-314.pyc
+│   │   │   ├── 01_xcode_cli_commands.cpython-314.pyc
+│   │   │   ├── 01_xcode_project_state_store.cpython-314.pyc
+│   │   │   ├── 01_xcode_test_runner.cpython-314.pyc
+│   │   │   ├── 02_document_cognition_engine.cpython-314.pyc
+│   │   │   ├── 02_runtime_learning_loop.cpython-314.pyc
+│   │   │   ├── 02_runtime_session_store.cpython-314.pyc
+│   │   │   ├── 02_semantic_code_understanding_engine.cpython-314.pyc
+│   │   │   ├── 02_stateful_patch_audit.cpython-314.pyc
+│   │   │   ├── 02_xcode_cli_response_renderer.cpython-314.pyc
+│   │   │   ├── 02_xcode_project_scanner.cpython-314.pyc
+│   │   │   ├── 02_xcodeproj_parser.cpython-314.pyc
+│   │   │   ├── 03_icos_execution_context.cpython-314.pyc
+│   │   │   ├── 03_long_horizon_planning_engine.cpython-314.pyc
+│   │   │   ├── 03_runtime_event_log.cpython-314.pyc
+│   │   │   ├── 03_xcode_runtime_verification_state.cpython-314.pyc
+│   │   │   ├── 03_xcode_scheme_resolver.cpython-314.pyc
+│   │   │   ├── 04_multi_agent_orchestration_engine.cpython-314.pyc
+│   │   │   ├── 04_resource_exclusion_planner.cpython-314.pyc
+│   │   │   ├── 05_contextual_emotional_weighting_engine.cpython-314.pyc
+│   │   │   ├── 05_doctrine_retrieval_engine.cpython-314.pyc
+│   │   │   ├── 06_institutional_task_planner.cpython-314.pyc
+│   │   │   ├── 06_pbxproj_ast_mutation_engine.cpython-314.pyc
+│   │   │   ├── 06_recursive_self_optimization_engine.cpython-314.pyc
+│   │   │   ├── 08_dependency_runtime_planner.cpython-314.pyc
+│   │   │   ├── 08_persistent_constitutional_memory_engine.cpython-314.pyc
+│   │   │   ├── 08_xcode_target_membership_inspector.cpython-314.pyc
+│   │   │   ├── 09_failure_learning.cpython-314.pyc
+│   │   │   ├── 10_authority_weighted_doctrine_retrieval.cpython-314.pyc
+│   │   │   ├── 10_shared_multi_agent_memory.cpython-314.pyc
+│   │   │   ├── 11_document_cognition.cpython-314.pyc
+│   │   │   ├── 12_document_id_governance.cpython-314.pyc
+│   │   │   ├── 13_placement_cognition.cpython-314.pyc
+│   │   │   ├── 15_lifecycle_state_engine.cpython-314.pyc
+│   │   │   ├── 17_governance_escalation_engine.cpython-314.pyc
+│   │   │   ├── 18_agent_registry_bridge.cpython-314.pyc
+│   │   │   ├── 19_task_continuity_ledger.cpython-314.pyc
+│   │   │   ├── 20_dependency_resource_scheduler.cpython-314.pyc
+│   │   │   ├── migrated_00___init__.cpython-314.pyc
+│   │   │   ├── migrated_00__context_manager.cpython-314.pyc
+│   │   │   ├── migrated_00_cache.cpython-314.pyc
+│   │   │   ├── migrated_00_memory_manager.cpython-314.pyc
+│   │   │   ├── migrated_00_patch_planner.cpython-314.pyc
+│   │   │   └── migrated_00_retry.cpython-314.pyc
+│   │   ├── .DS_Store
+│   │   ├── 00___init__.py
+│   │   ├── 00__browser_context.py
+│   │   ├── 00__cmd.py
+│   │   ├── 00__context_manager.py
+│   │   ├── 00__event_context_manager.py
+│   │   ├── 00__har_router.py
+│   │   ├── 00_adapter.py
+│   │   ├── 00_autonomous_behavioral_reasoning.py
+│   │   ├── 00_cache.py
+│   │   ├── 00_cognitive_orchestration_engine.py
+│   │   ├── 00_command_context.py
+│   │   ├── 00_controller.py
+│   │   ├── 00_distributed_context_compression.py
+│   │   ├── 00_execution_policy_intelligence.py
+│   │   ├── 00_file_cache.py
+│   │   ├── 00_filewrapper.py
+│   │   ├── 00_heuristics.py
+│   │   ├── 00_icos_mcp_server.py
+│   │   ├── 00_js_ts_patch_engine.py
+│   │   ├── 00_language_server_intelligence.py
+│   │   ├── 00_long_horizon_planner.py
+│   │   ├── 00_memory_manager.py
+│   │   ├── 00_model_quality_reasoning.py
+│   │   ├── 00_patch_planner.py
+│   │   ├── 00_persistent_identity_graph_engine.py
+│   │   ├── 00_provider_registry.py
+│   │   ├── 00_redis_cache.py
+│   │   ├── 00_repository_reasoning_memory.py
+│   │   ├── 00_repository_semantic_memory_graph.py
+│   │   ├── 00_resources.py
+│   │   ├── 00_retry_engine.py
+│   │   ├── 00_runtime_adaptive_learning.py
+│   │   ├── 00_runtime_learning.py
+│   │   ├── 00_serialize.py
+│   │   ├── 00_streaming_reasoning_engine.py
+│   │   ├── 00_test_contextvars.py
+│   │   ├── 00_tool_permission_governance.py
+│   │   ├── 00_unified_execution_cognition_loop.py
+│   │   ├── 00_verification_loop.py
+│   │   ├── 00_verifier.py
+│   │   ├── 00_wrapper.py
+│   │   ├── 01_adaptive_memory_weighting_engine.py
+│   │   ├── 01_autonomous_repair_engine.py
+│   │   ├── 01_constitutional_memory_graph.py
+│   │   ├── 01_icos_core_engine.py
+│   │   ├── 01_mcp_tool_router.py
+│   │   ├── 01_runtime_state_store.py
+│   │   ├── 01_xcode_cli_commands.py
+│   │   ├── 01_xcode_project_state_store.py
+│   │   ├── 01_xcode_test_runner.py
+│   │   ├── 02_document_cognition_engine.py
+│   │   ├── 02_runtime_learning_loop.py
+│   │   ├── 02_runtime_session_store.py
+│   │   ├── 02_semantic_code_understanding_engine.py
+│   │   ├── 02_stateful_patch_audit.py
+│   │   ├── 02_xcode_build_state_store.py
+│   │   ├── 02_xcode_cli_response_renderer.py
+│   │   ├── 02_xcode_project_scanner.py
+│   │   ├── 02_xcodebuild_runner.py
+│   │   ├── 02_xcodeproj_parser.py
+│   │   ├── 03_icos_execution_context.py
+│   │   ├── 03_long_horizon_planning_engine.py
+│   │   ├── 03_runtime_event_log.py
+│   │   ├── 03_xcode_runtime_verification_state.py
+│   │   ├── 03_xcode_scheme_resolver.py
+│   │   ├── 04_multi_agent_orchestration_engine.py
+│   │   ├── 04_resource_exclusion_planner.py
+│   │   ├── 05_contextual_emotional_weighting_engine.py
+│   │   ├── 05_doctrine_retrieval_engine.py
+│   │   ├── 06_institutional_task_planner.py
+│   │   ├── 06_pbxproj_ast_mutation_engine.py
+│   │   ├── 06_recursive_self_optimization_engine.py
+│   │   ├── 07_xcode_build_phase_inspector.py
+│   │   ├── 08_dependency_runtime_planner.py
+│   │   ├── 08_persistent_constitutional_memory_engine.py
+│   │   ├── 08_xcode_target_membership_inspector.py
+│   │   ├── 09_failure_learning.py
+│   │   ├── 10_authority_weighted_doctrine_retrieval.py
+│   │   ├── 10_shared_multi_agent_memory.py
+│   │   ├── 11_document_cognition.py
+│   │   ├── 12_document_id_governance.py
+│   │   ├── 13_placement_cognition.py
+│   │   ├── 15_lifecycle_state_engine.py
+│   │   ├── 17_governance_escalation_engine.py
+│   │   ├── 18_agent_registry_bridge.py
+│   │   ├── 19_task_continuity_ledger.py
+│   │   ├── 20_dependency_resource_scheduler.py
+│   │   ├── migrated_00___init__.py
+│   │   ├── migrated_00__context_manager.py
+│   │   ├── migrated_00_cache.py
+│   │   ├── migrated_00_memory_manager.py
+│   │   ├── migrated_00_patch_planner.py
+│   │   └── migrated_00_retry.py
+│   ├── .DS_Store
+│   ├── 01_empty_files.txt
+│   ├── 02_full_directory_tree.txt
+│   ├── 03_file_inventory.txt
+│   ├── 04_duplicate_basenames.txt
+│   ├── 05_noncanonical_python_numbering.txt
+│   ├── 06_topic_ownership_map.txt
+│   ├── 07_structural_diagnosis.json
+│   ├── 08_filtered_structural_action_map.json
+│   ├── 09_canonical_numbering_map.json
+│   ├── 10_safe_canonical_numbering_map.json
+│   └── 11_numbering_rename_report.json
+├── ios
+├── macos
+│   ├── 01 - App
+│   │   ├── ICOS
+│   │   │   ├── ICOS
+│   │   │   │   ├── Assets.xcassets
+│   │   │   │   │   ├── AccentColor.colorset
+│   │   │   │   │   ├── AppIcon.appiconset
+│   │   │   │   │   └── Contents.json
+│   │   │   │   ├── Cognition
+│   │   │   │   │   ├── Agents
+│   │   │   │   │   ├── Config
+│   │   │   │   │   ├── Docs
+│   │   │   │   │   ├── Emotion
+│   │   │   │   │   ├── Engines
+│   │   │   │   │   ├── Native
+│   │   │   │   │   ├── Optimization
+│   │   │   │   │   ├── Orchestration
+│   │   │   │   │   ├── Planning
+│   │   │   │   │   ├── Reasoning
+│   │   │   │   │   ├── Registries
+│   │   │   │   │   ├── Scripts
+│   │   │   │   │   ├── Semantics
+│   │   │   │   │   └── userAgent.js
+│   │   │   │   ├── CognitiveEngine
+│   │   │   │   │   ├── Doctrine
+│   │   │   │   │   ├── Governance
+│   │   │   │   │   ├── Tools
+│   │   │   │   │   ├── DoctrineContextBuilder.swift
+│   │   │   │   │   ├── DoctrineInterpreter.swift
+│   │   │   │   │   ├── InstructionOrchestrator.swift
+│   │   │   │   │   ├── ResponseShaper.swift
+│   │   │   │   │   └── SystemPromptBuilder.swift
+│   │   │   │   ├── Control
+│   │   │   │   │   └── ICOSExecutionController.swift
+│   │   │   │   ├── Core
+│   │   │   │   │   ├── Brain
+│   │   │   │   │   ├── Config
+│   │   │   │   │   ├── Constants
+│   │   │   │   │   ├── Docs
+│   │   │   │   │   ├── Engines
+│   │   │   │   │   ├── Kernel
+│   │   │   │   │   ├── ModelFoundry
+│   │   │   │   │   ├── Native
+│   │   │   │   │   ├── Registries
+│   │   │   │   │   ├── Scripts
+│   │   │   │   │   ├── State
+│   │   │   │   │   └── ICOSCoreRuntime.swift
+│   │   │   │   ├── DesignSystem
+│   │   │   │   │   ├── Components
+│   │   │   │   │   ├── Controls
+│   │   │   │   │   ├── Icons
+│   │   │   │   │   └── Tokens
+│   │   │   │   ├── Developer
+│   │   │   │   │   ├── Config
+│   │   │   │   │   ├── Diagnostics
+│   │   │   │   │   ├── Docs
+│   │   │   │   │   ├── Engines
+│   │   │   │   │   ├── Inspection
+│   │   │   │   │   ├── Models
+│   │   │   │   │   ├── Native
+│   │   │   │   │   ├── Registries
+│   │   │   │   │   ├── RuntimeArtifacts
+│   │   │   │   │   ├── Scripts
+│   │   │   │   │   ├── Views
+│   │   │   │   │   └── .DS_Store
+│   │   │   │   ├── DeveloperConsole
+│   │   │   │   │   ├── Documentation
+│   │   │   │   │   ├── Fragments
+│   │   │   │   │   ├── Indicators
+│   │   │   │   │   ├── Models
+│   │   │   │   │   ├── Panels
+│   │   │   │   │   ├── Shell
+│   │   │   │   │   ├── Views
+│   │   │   │   │   ├── .DS_Store
+│   │   │   │   │   └── ContentView.swift
+│   │   │   │   ├── Doctrine
+│   │   │   │   │   ├── 00 - Index
+│   │   │   │   │   ├── 01 - Identity
+│   │   │   │   │   ├── 02 - Product
+│   │   │   │   │   ├── 03 - Company
+│   │   │   │   │   ├── 04 - Founder
+│   │   │   │   │   ├── 05 - Model Transparency
+│   │   │   │   │   ├── 06 - Memory
+│   │   │   │   │   ├── 07 - Response
+│   │   │   │   │   ├── 08 - File Referencing
+│   │   │   │   │   ├── 09 - Safety
+│   │   │   │   │   ├── 10 - Runtime Behavior
+│   │   │   │   │   ├── 11 - Prompt Architecture
+│   │   │   │   │   ├── 12 - Knowledge Architecture
+│   │   │   │   │   ├── 13 - Source Attribution
+│   │   │   │   │   ├── 14 - Tool Use
+│   │   │   │   │   ├── 15 - Governance
+│   │   │   │   │   ├── 16 - Expansion Protocol
+│   │   │   │   │   ├── 17 - Execution Intelligence
+│   │   │   │   │   ├── 18 - Command System
+│   │   │   │   │   ├── 19 - Active Reference System
+│   │   │   │   │   ├── 20 - Context Budget System
+│   │   │   │   │   ├── 21 - Enforcement Layer
+│   │   │   │   │   ├── 22 - External Agent Replication
+│   │   │   │   │   ├── 23 - Runtime UX
+│   │   │   │   │   └── 24 - Safety & Privacy Layer
+│   │   │   │   ├── Engine
+│   │   │   │   │   ├── ContextBuilder.swift
+│   │   │   │   │   ├── ExecutionRouter.swift
+│   │   │   │   │   └── PromptAssembler.swift
+│   │   │   │   ├── Execution
+│   │   │   │   │   ├── Artifacts
+│   │   │   │   │   ├── Config
+│   │   │   │   │   ├── Docs
+│   │   │   │   │   ├── Engines
+│   │   │   │   │   ├── Infrastructure
+│   │   │   │   │   ├── Native
+│   │   │   │   │   ├── Patch
+│   │   │   │   │   ├── Pipelines
+│   │   │   │   │   ├── Registries
+│   │   │   │   │   ├── Repair
+│   │   │   │   │   ├── Rollback
+│   │   │   │   │   ├── Scripts
+│   │   │   │   │   ├── Verification
+│   │   │   │   │   ├── Workers
+│   │   │   │   │   ├── python -> python3.14
+│   │   │   │   │   ├── python3 -> python3.14
+│   │   │   │   │   ├── python3.14 -> /opt/homebrew/opt/python@3.14/bin/python3.14
+│   │   │   │   │   └── 𝜋thon -> python3.14
+│   │   │   │   ├── ExecutionEngine
+│   │   │   │   │   └── ExecutionController.swift
+│   │   │   │   ├── Governance
+│   │   │   │   │   ├── Config
+│   │   │   │   │   ├── Docs
+│   │   │   │   │   ├── Engines
+│   │   │   │   │   ├── Native
+│   │   │   │   │   ├── Permissions
+│   │   │   │   │   ├── Policies
+│   │   │   │   │   ├── Registries
+│   │   │   │   │   ├── Risk
+│   │   │   │   │   ├── Scripts
+│   │   │   │   │   └── DoctrineOutputValidator.swift
+│   │   │   │   ├── Institutional
+│   │   │   │   │   ├── Config
+│   │   │   │   │   ├── Docs
+│   │   │   │   │   ├── Engines
+│   │   │   │   │   ├── Native
+│   │   │   │   │   ├── Registries
+│   │   │   │   │   └── Scripts
+│   │   │   │   ├── Interfaces
+│   │   │   │   │   ├── CLI
+│   │   │   │   │   ├── Config
+│   │   │   │   │   ├── Continue
+│   │   │   │   │   ├── Docs
+│   │   │   │   │   ├── Engines
+│   │   │   │   │   ├── LMStudio
+│   │   │   │   │   ├── MCP
+│   │   │   │   │   ├── Mobile
+│   │   │   │   │   ├── Native
+│   │   │   │   │   ├── Registries
+│   │   │   │   │   ├── Scripts
+│   │   │   │   │   ├── VSCode
+│   │   │   │   │   ├── Voice
+│   │   │   │   │   └── Xcode
+│   │   │   │   ├── KnowledgeBase
+│   │   │   │   │   ├── DoctrineDocument.swift
+│   │   │   │   │   └── DoctrineIndex.swift
+│   │   │   │   ├── Memory
+│   │   │   │   │   ├── Apple
+│   │   │   │   │   ├── Config
+│   │   │   │   │   ├── Continuity
+│   │   │   │   │   ├── Docs
+│   │   │   │   │   ├── Engines
+│   │   │   │   │   ├── Identity
+│   │   │   │   │   ├── Native
+│   │   │   │   │   ├── Registries
+│   │   │   │   │   ├── Retrieval
+│   │   │   │   │   ├── Scripts
+│   │   │   │   │   ├── Types
+│   │   │   │   │   └── Weighting
+│   │   │   │   ├── Models
+│   │   │   │   │   ├── Config
+│   │   │   │   │   ├── Docs
+│   │   │   │   │   ├── Engines
+│   │   │   │   │   ├── Metadata
+│   │   │   │   │   ├── Native
+│   │   │   │   │   ├── Registries
+│   │   │   │   │   ├── Scripts
+│   │   │   │   │   ├── cloud
+│   │   │   │   │   ├── lmstudio
+│   │   │   │   │   └── local
+│   │   │   │   ├── Persistence
+│   │   │   │   │   ├── ICOSDatabase.swift
+│   │   │   │   │   └── LocalStorageController.swift
+│   │   │   │   ├── Platform
+│   │   │   │   │   └── Sections
+│   │   │   │   ├── Profile
+│   │   │   │   │   ├── ProfileManager.swift
+│   │   │   │   │   ├── ProfileStore.swift
+│   │   │   │   │   └── UserProfile.swift
+│   │   │   │   ├── Providers
+│   │   │   │   │   ├── Apple
+│   │   │   │   │   ├── Cloud
+│   │   │   │   │   ├── Config
+│   │   │   │   │   ├── Docs
+│   │   │   │   │   ├── Engines
+│   │   │   │   │   ├── LMStudio
+│   │   │   │   │   ├── Local
+│   │   │   │   │   ├── Native
+│   │   │   │   │   ├── Registries
+│   │   │   │   │   ├── Routing
+│   │   │   │   │   └── Scripts
+│   │   │   │   ├── Runtime
+│   │   │   │   │   ├── Bridge
+│   │   │   │   │   ├── Config
+│   │   │   │   │   ├── Core
+│   │   │   │   │   ├── Docs
+│   │   │   │   │   ├── Engines
+│   │   │   │   │   ├── EventBus
+│   │   │   │   │   ├── Native
+│   │   │   │   │   ├── Registries
+│   │   │   │   │   ├── Relinking
+│   │   │   │   │   ├── Sandbox
+│   │   │   │   │   ├── Scripts
+│   │   │   │   │   ├── Session
+│   │   │   │   │   ├── State
+│   │   │   │   │   ├── Synchronization
+│   │   │   │   │   ├── Terminal
+│   │   │   │   │   ├── VoiceCognition
+│   │   │   │   │   └── .DS_Store
+│   │   │   │   ├── Shared
+│   │   │   │   │   ├── Config
+│   │   │   │   │   ├── Docs
+│   │   │   │   │   ├── Engines
+│   │   │   │   │   ├── Native
+│   │   │   │   │   ├── Protocols
+│   │   │   │   │   ├── Registries
+│   │   │   │   │   ├── Scripts
+│   │   │   │   │   ├── Types
+│   │   │   │   │   └── Utilities
+│   │   │   │   ├── Sources
+│   │   │   │   │   ├── Config
+│   │   │   │   │   ├── Docs
+│   │   │   │   │   ├── Engines
+│   │   │   │   │   ├── Native
+│   │   │   │   │   ├── Registries
+│   │   │   │   │   ├── Scripts
+│   │   │   │   │   ├── executors
+│   │   │   │   │   ├── llama_cpp
+│   │   │   │   │   ├── swift_bridge
+│   │   │   │   │   └── .DS_Store
+│   │   │   │   ├── SwiftUI
+│   │   │   │   │   ├── App
+│   │   │   │   │   ├── Behavior
+│   │   │   │   │   ├── Button
+│   │   │   │   │   ├── Features
+│   │   │   │   │   ├── Layout
+│   │   │   │   │   ├── Navigation
+│   │   │   │   │   ├── Settings
+│   │   │   │   │   ├── Shell
+│   │   │   │   │   ├── System
+│   │   │   │   │   ├── Theme
+│   │   │   │   │   ├── Window
+│   │   │   │   │   └── .DS_Store
+│   │   │   │   ├── System
+│   │   │   │   │   ├── Layout
+│   │   │   │   │   ├── Navigation
+│   │   │   │   │   ├── Overlays
+│   │   │   │   │   ├── Runtime
+│   │   │   │   │   ├── Settings
+│   │   │   │   │   ├── Shell
+│   │   │   │   │   ├── State
+│   │   │   │   │   ├── Theme
+│   │   │   │   │   ├── Workspace
+│   │   │   │   │   └── .DS_Store
+│   │   │   │   ├── ThirdParty
+│   │   │   │   │   ├── Pillow
+│   │   │   │   │   ├── Playwright
+│   │   │   │   │   ├── QuarantinedVendorRuntime
+│   │   │   │   │   ├── arch_switches
+│   │   │   │   │   ├── browser_runtime
+│   │   │   │   │   ├── browser_stack
+│   │   │   │   │   ├── dylibs
+│   │   │   │   │   ├── greenlet
+│   │   │   │   │   ├── network_stack
+│   │   │   │   │   ├── pip
+│   │   │   │   │   ├── playwright_runtime
+│   │   │   │   │   ├── quarantined_execution
+│   │   │   │   │   ├── tracing_stack
+│   │   │   │   │   ├── ui_vendor
+│   │   │   │   │   ├── vendor
+│   │   │   │   │   └── .DS_Store
+│   │   │   │   ├── UX
+│   │   │   │   │   ├── 00 - Index
+│   │   │   │   │   ├── 01 - Design System
+│   │   │   │   │   ├── 02 - Layout Engine
+│   │   │   │   │   ├── 03 - Components System
+│   │   │   │   │   ├── 04 - Navigation System
+│   │   │   │   │   ├── 05 - Screens
+│   │   │   │   │   ├── 06 - Fragments
+│   │   │   │   │   ├── 07 - Themes
+│   │   │   │   │   ├── 08 - Assets
+│   │   │   │   │   ├── 09 - Interaction Models
+│   │   │   │   │   └── 10 - Documentation
+│   │   │   │   ├── Validation
+│   │   │   │   │   └── ExecutionValidator.swift
+│   │   │   │   ├── _architecture_alignment
+│   │   │   │   │   ├── 01_website_structure_reference.txt
+│   │   │   │   │   ├── 02_mixed_filetype_directories.txt
+│   │   │   │   │   ├── 03_continue_bridge_broken_references.txt
+│   │   │   │   │   ├── 04_continue_files.txt
+│   │   │   │   │   ├── 05_alignment_direction.json
+│   │   │   │   │   ├── 06_modular_software_architecture_plan.json
+│   │   │   │   │   ├── 07_modularization_execution_report.json
+│   │   │   │   │   ├── 08_filetype_and_numbering_audit.json
+│   │   │   │   │   ├── 09_final_type_separation_report.json
+│   │   │   │   │   ├── 10_final_global_python_numbering_audit.json
+│   │   │   │   │   ├── 11_safe_python_renumber_plan.json
+│   │   │   │   │   └── 12_final_owned_python_numbering_audit.json
+│   │   │   │   ├── _continue_relinking
+│   │   │   │   │   ├── 01_continue_config_tool_inventory.txt
+│   │   │   │   │   ├── 02_continue_references.txt
+│   │   │   │   │   ├── 03_broken_import_candidates.txt
+│   │   │   │   │   ├── 04_continue_audit_summary.json
+│   │   │   │   │   ├── 05_active_continue_audit.json
+│   │   │   │   │   └── 06_numbering_normalization_report.json
+│   │   │   │   ├── _runtime_connection_audit
+│   │   │   │   │   ├── 01_continue_runtime_state.txt
+│   │   │   │   │   ├── 02_engine_inventory.txt
+│   │   │   │   │   ├── 03_identity_memory_psyche.txt
+│   │   │   │   │   ├── 04_import_test.txt
+│   │   │   │   │   └── 05_duplicate_engine_audit.json
+│   │   │   │   ├── _runtime_maturity
+│   │   │   │   │   └── 01_runtime_maturity_scan.txt
+│   │   │   │   ├── .DS_Store
+│   │   │   │   ├── ICOS.entitlements
+│   │   │   │   ├── README.md
+│   │   │   │   ├── _duplicate_backup_resolution_report.json
+│   │   │   │   ├── _empty_file_classification.json
+│   │   │   │   ├── _final_bridge_remnant_cleanup_report.json
+│   │   │   │   ├── _final_empty_folder_classification.json
+│   │   │   │   ├── _owned_icos_operational_audit.json
+│   │   │   │   ├── _python_surgical_normalization_report.json
+│   │   │   │   ├── _remaining_empty_dirs_after_cache_cleanup.txt
+│   │   │   │   ├── _remaining_empty_dirs_after_venv_relocation.txt
+│   │   │   │   ├── _surgical_runtime_classification.json
+│   │   │   │   ├── _surgical_runtime_developer_move_plan.json
+│   │   │   │   ├── _vendor_extraction_plan.json
+│   │   │   │   └── _vendor_quarantine_report.json
+│   │   │   ├── ICOS.xcodeproj
+│   │   │   │   ├── project.xcworkspace
+│   │   │   │   │   ├── xcshareddata
+│   │   │   │   │   ├── xcuserdata
+│   │   │   │   │   └── contents.xcworkspacedata
+│   │   │   │   ├── xcuserdata
+│   │   │   │   │   └── artan.xcuserdatad
+│   │   │   │   ├── project.pbxproj
+│   │   │   │   ├── project.pbxproj.backup
+│   │   │   │   └── project.runtime-backup.pbxproj
+│   │   │   ├── ICOSTests
+│   │   │   │   └── ICOSTests.swift
+│   │   │   ├── ICOSUITests
+│   │   │   │   ├── ICOSUITests.swift
+│   │   │   │   └── ICOSUITestsLaunchTests.swift
+│   │   │   ├── Runtime
+│   │   │   │   ├── Frameworks
+│   │   │   │   │   ├── libcrypto.3.dylib
+│   │   │   │   │   ├── libggml-base.0.10.0.dylib
+│   │   │   │   │   ├── libggml-base.0.dylib
+│   │   │   │   │   ├── libggml-base.dylib
+│   │   │   │   │   ├── libggml-blas.0.10.0.dylib
+│   │   │   │   │   ├── libggml-blas.0.dylib
+│   │   │   │   │   ├── libggml-blas.dylib
+│   │   │   │   │   ├── libggml-cpu.0.10.0.dylib
+│   │   │   │   │   ├── libggml-cpu.0.dylib
+│   │   │   │   │   ├── libggml-cpu.dylib
+│   │   │   │   │   ├── libggml-metal.0.10.0.dylib
+│   │   │   │   │   ├── libggml-metal.0.dylib
+│   │   │   │   │   ├── libggml-metal.dylib
+│   │   │   │   │   ├── libggml.0.10.0.dylib
+│   │   │   │   │   ├── libggml.0.dylib
+│   │   │   │   │   ├── libggml.dylib
+│   │   │   │   │   ├── libllama-common.0.0.8973.dylib
+│   │   │   │   │   ├── libllama-common.0.dylib
+│   │   │   │   │   ├── libllama-common.dylib
+│   │   │   │   │   ├── libllama.0.0.8973.dylib
+│   │   │   │   │   ├── libllama.0.dylib
+│   │   │   │   │   ├── libllama.dylib
+│   │   │   │   │   ├── libmtmd.0.0.8973.dylib
+│   │   │   │   │   ├── libmtmd.0.dylib
+│   │   │   │   │   ├── libmtmd.dylib
+│   │   │   │   │   └── libssl.3.dylib
+│   │   │   │   ├── Models
+│   │   │   │   │   ├── .DS_Store
+│   │   │   │   │   └── icos-base.gguf
+│   │   │   │   ├── Source
+│   │   │   │   │   ├── llama.cpp
+│   │   │   │   │   └── .DS_Store
+│   │   │   │   └── .DS_Store
+│   │   │   ├── build
+│   │   │   │   ├── Build
+│   │   │   │   │   ├── Intermediates.noindex
+│   │   │   │   │   ├── Products
+│   │   │   │   │   └── .DS_Store
+│   │   │   │   ├── CompilationCache.noindex
+│   │   │   │   │   └── generic
+│   │   │   │   ├── Index.noindex
+│   │   │   │   │   └── DataStore
+│   │   │   │   ├── Logs
+│   │   │   │   │   ├── Build
+│   │   │   │   │   ├── Launch
+│   │   │   │   │   ├── Localization
+│   │   │   │   │   ├── Package
+│   │   │   │   │   ├── Test
+│   │   │   │   │   └── .DS_Store
+│   │   │   │   ├── ModuleCache.noindex
+│   │   │   │   │   ├── 2XFPZG3R7ICQ2
+│   │   │   │   │   ├── TRFAPOA7NU8C
+│   │   │   │   │   ├── .DS_Store
+│   │   │   │   │   ├── Accessibility-2AT9BA1BVBHUAFD85ESNZRZHV.pcm
+│   │   │   │   │   ├── Accessibility-7XRMVZCUKQYE5R2V81HIJCZ9I.pcm
+│   │   │   │   │   ├── AppKit-3C9C6VHYGAMV7VNP61F00M18N.pcm
+│   │   │   │   │   ├── AppKit-DYFFBQKQIJSYGJQJK63K00R71.pcm
+│   │   │   │   │   ├── ApplicationServices-7NWECM6SRE6FCTLKS1FCPV7HM.pcm
+│   │   │   │   │   ├── ApplicationServices-CVE3M2ECIOO5LR8G55JNGA5XP.pcm
+│   │   │   │   │   ├── CFNetwork-6U300B4025TR1ZUH9N9NBAAN9.pcm
+│   │   │   │   │   ├── CFNetwork-EH9J3M9KKNLQOPHD6ACPQVCTG.pcm
+│   │   │   │   │   ├── CUPS-B2U83QDUKVYBKD42TREW15687.pcm
+│   │   │   │   │   ├── CUPS-CGEIWEDTMB5VBMIXL7ULETQKK.pcm
+│   │   │   │   │   ├── ColorSync-56EF9FRJJ9VU51YJGWHJ5RSZH.pcm
+│   │   │   │   │   ├── ColorSync-ADLTIF8BKQ9717ABTOUGRM6YC.pcm
+│   │   │   │   │   ├── CoreData-84EO537JS98THXNUDLBSLP3HG.pcm
+│   │   │   │   │   ├── CoreData-NPS8ND70G9IDT1BI87VR5ANR.pcm
+│   │   │   │   │   ├── CoreFoundation-5GZ0H0V4MSYZ7BCIMVPIHGK45.pcm
+│   │   │   │   │   ├── CoreFoundation-8DL5KNWK2MD5X8431FLBVOBOK.pcm
+│   │   │   │   │   ├── CoreGraphics-DBLCFHQAV3BKI92F8PXK9ADW7.pcm
+│   │   │   │   │   ├── CoreGraphics-HOD73RY0IW6NQ10C4V9K1IRK.pcm
+│   │   │   │   │   ├── CoreImage-8L7P32MATNVART0MWF1ZBT7YN.pcm
+│   │   │   │   │   ├── CoreImage-B6M33TVZRZ7JT2MI00A521578.pcm
+│   │   │   │   │   ├── CoreServices-5AGXXUP4QGNR91M01DXZ6WR6O.pcm
+│   │   │   │   │   ├── CoreServices-6IJWH97NURYJ0GXA1M6HJ4YO1.pcm
+│   │   │   │   │   ├── CoreText-BPJVB9GP834U0HM94PN1YYUJ6.pcm
+│   │   │   │   │   ├── CoreText-C070Q8HXE8B91EKE243R1G8I9.pcm
+│   │   │   │   │   ├── CoreTransferable-30SSBS5RPO8F0OT7KVI70THYE.pcm
+│   │   │   │   │   ├── CoreTransferable-A6XV043H856J05EBMZYJ2INU5.pcm
+│   │   │   │   │   ├── CoreVideo-2XOG7ZJZ016JJZAJO2079749D.pcm
+│   │   │   │   │   ├── CoreVideo-60XIEJQAMUUAYT83GMW8NYGN.pcm
+│   │   │   │   │   ├── Darwin-4LZ6EC7BA28FN8VOCC9STAAQG.pcm
+│   │   │   │   │   ├── Darwin-OP4JSCLC91F37RL3JLAU7AE2.pcm
+│   │   │   │   │   ├── DataDetection-34W6H1JYVON5NR8X8DI2EGICF.pcm
+│   │   │   │   │   ├── DataDetection-6F6QMUT5BR0ZT343K87M8G55M.pcm
+│   │   │   │   │   ├── DeveloperToolsSupport-12SQ6LD6HX64I3IUTOLPIAFTL.pcm
+│   │   │   │   │   ├── DeveloperToolsSupport-26S39Z81Z8KW3O4QF22TGKOGS.pcm
+│   │   │   │   │   ├── DiskArbitration-380SZCDREG3S5AS8M92O5XGM3.pcm
+│   │   │   │   │   ├── DiskArbitration-EFO0PVO9PZ9WQCDQ0WXOWAHDW.pcm
+│   │   │   │   │   ├── Dispatch-569FAGUBZ0XQAY0SR0V9B114W.pcm
+│   │   │   │   │   ├── Dispatch-88FGHDZO15UDH2GXBB3LE9W75.pcm
+│   │   │   │   │   ├── Foundation-1WH8Q04B0RKG0FCMU35HIFPPL.pcm
+│   │   │   │   │   ├── Foundation-CDOPOL5GUWI6I8894HMWQL4T2.pcm
+│   │   │   │   │   ├── IOKit-4RHAAAFLF6857CAMXT7WMS84U.pcm
+│   │   │   │   │   ├── IOKit-EU3XD60Y798DTDXN5FJFI0569.pcm
+│   │   │   │   │   ├── IOSurface-F060BQL4HAC0DAHFA6RFU986I.pcm
+│   │   │   │   │   ├── IOSurface-FIBJXWXBFR0629GZVOK4DDLO.pcm
+│   │   │   │   │   ├── ImageIO-43SX0ORI0L8C0WSBPB3VHV1FR.pcm
+│   │   │   │   │   ├── ImageIO-8KIP11F7BF5HTZVKULCXH0TI8.pcm
+│   │   │   │   │   ├── MachO-18TP7BJ6CV4NYTJVTZDBHPK3L.pcm
+│   │   │   │   │   ├── MachO-EMEC5DBO6X2N80ID5GK6BZFXN.pcm
+│   │   │   │   │   ├── Metal-1YJIC1F52NBK0JOU5VFIFCEG.pcm
+│   │   │   │   │   ├── Metal-CMO9WGO72VB2L86MXQZ4GUURF.pcm
+│   │   │   │   │   ├── OSLog-3XB1VMMO0YAA9XGCI1Y2E0Z56.pcm
+│   │   │   │   │   ├── OSLog-POM1Y9N256MIK8B3DPS7PQ43.pcm
+│   │   │   │   │   ├── ObjectiveC-9FAMKV20Z43KK8PTWDIY1QDG8.pcm
+│   │   │   │   │   ├── ObjectiveC-EE5ETDTSVNLFIS1AERUYVU9ZW.pcm
+│   │   │   │   │   ├── OpenGL-3K5JVPGNQU1L5VA4D79PRGS4D.pcm
+│   │   │   │   │   ├── OpenGL-95J33BIRHZ1TAM7KGMK1URVTK.pcm
+│   │   │   │   │   ├── QuartzCore-6YHFSJSBA37VZBLF1KMD9CAC5.pcm
+│   │   │   │   │   ├── QuartzCore-CQKKQYIWW10891PP511NNK49D.pcm
+│   │   │   │   │   ├── Security-5BU2HMIP0VPYWAVCQE3R4YUX3.pcm
+│   │   │   │   │   ├── Security-6ZSP2WZWUD36BQ0ANKIBRX0UW.pcm
+│   │   │   │   │   ├── Session.modulevalidation
+│   │   │   │   │   ├── Spatial-5B0IWF1XZJRYKGQXHP6PGZ0R3.pcm
+│   │   │   │   │   ├── Spatial-AO2IUN4V66P3UGLD348SNY3U.pcm
+│   │   │   │   │   ├── SwiftShims-22KTOLFA1O2LGEGHHFLBNI6ZG.pcm
+│   │   │   │   │   ├── SwiftShims-96J6NHR48PLSSPQ5TC3RQDOJM.pcm
+│   │   │   │   │   ├── SwiftUI-4UQKUUERSP1FGV0EZ3OO34QQV.pcm
+│   │   │   │   │   ├── SwiftUI-BHFAKVDS8NKPHHUCSYZPHYQ13.pcm
+│   │   │   │   │   ├── SwiftUICore-6FWJKM4I69E3MYV4K39R8V5ZT.pcm
+│   │   │   │   │   ├── SwiftUICore-8Y3DY48BLP4BN4953F71D2BYI.pcm
+│   │   │   │   │   ├── Symbols-9R39C758EIJXKMWBRWGIIRR1Y.pcm
+│   │   │   │   │   ├── Symbols-BNZ0C9RQAXE0VVW31MI041SE9.pcm
+│   │   │   │   │   ├── UniformTypeIdentifiers-21WTITBVGUHCO7D4A9SZM4MM6.pcm
+│   │   │   │   │   ├── UniformTypeIdentifiers-9QDDEV86X6D15TT5NM2E2SYTY.pcm
+│   │   │   │   │   ├── XPC-1UP3M97DZ45RSS1J0NK9X9VEX.pcm
+│   │   │   │   │   ├── XPC-F9Q2SEQIVTQ7V2IOW7T1MFGB.pcm
+│   │   │   │   │   ├── _AvailabilityInternal-7MHAEMIGXJXTX9R7EFAI193PD.pcm
+│   │   │   │   │   ├── _AvailabilityInternal-QIGV4D8UF1CW4KB7PWZNRW8Z.pcm
+│   │   │   │   │   ├── _Builtin_float-375MQDSGTRW5ZQND6Z6994S5O.pcm
+│   │   │   │   │   ├── _Builtin_float-D3OEA20MJCEY27QJG28TR8LSM.pcm
+│   │   │   │   │   ├── _Builtin_intrinsics-165IO73QHAVJCPIHUZBAHBNHE.pcm
+│   │   │   │   │   ├── _Builtin_intrinsics-4O2I8SXO6S3KVSFIQXBV8OOGP.pcm
+│   │   │   │   │   ├── _Builtin_inttypes-BJ2HWRWF15KK1W49XU3YST5Y0.pcm
+│   │   │   │   │   ├── _Builtin_inttypes-EDWO5PWDM711E3TSFU5JFO4A2.pcm
+│   │   │   │   │   ├── _Builtin_limits-6KC6NAIL28A6WHLMCA8HVTB90.pcm
+│   │   │   │   │   ├── _Builtin_limits-8WI0384L9LHVW4RBB84GDB5LL.pcm
+│   │   │   │   │   ├── _Builtin_stdarg-4TFGBDHYVSMUJTNPNMWYJVNDF.pcm
+│   │   │   │   │   ├── _Builtin_stdarg-8D9ZY8PIM1K7HL0OPM2CD7CEX.pcm
+│   │   │   │   │   ├── _Builtin_stdatomic-6QXN75ML0PIVE4IDSHRPZYLGV.pcm
+│   │   │   │   │   ├── _Builtin_stdatomic-FWABAQZYQBZ6NLVLQIKTJU8X.pcm
+│   │   │   │   │   ├── _Builtin_stdbool-1LGWY893JYA5YHIHHO6HKDH68.pcm
+│   │   │   │   │   ├── _Builtin_stdbool-52LAF7HBWE139F3ELLZA6R5WK.pcm
+│   │   │   │   │   ├── _Builtin_stddef-CYOQARMAVA17EJ3FDERUIKJM.pcm
+│   │   │   │   │   ├── _Builtin_stddef-EZSGNV44XH44YDRZPIE9M0JVN.pcm
+│   │   │   │   │   ├── _Builtin_stdint-34S1RVV2A42WHA035I0H2PKF3.pcm
+│   │   │   │   │   ├── _Builtin_stdint-5OOGPUMBJM9N5ZFFJSDF9STXZ.pcm
+│   │   │   │   │   ├── _Builtin_tgmath-4ZDY9V3ZW24EJDN5E2NCWGU1N.pcm
+│   │   │   │   │   ├── _Builtin_tgmath-782W99M9DJIB9HU7SSMAQEPWD.pcm
+│   │   │   │   │   ├── _DarwinFoundation1-48WKEI2R1XIRMQWYXPYVNNZDA.pcm
+│   │   │   │   │   ├── _DarwinFoundation1-647B74MCFBNF1TENWHBC6MSP9.pcm
+│   │   │   │   │   ├── _DarwinFoundation2-7UKNHCKDK1ZXTEDE9VS46SDP5.pcm
+│   │   │   │   │   ├── _DarwinFoundation2-DSPOW5MYCOIRAOUZ290WU6HWU.pcm
+│   │   │   │   │   ├── _DarwinFoundation3-245AHJ37SR31ENZUT81Z5NMRS.pcm
+│   │   │   │   │   ├── _DarwinFoundation3-4ENXS4V8LUD1EHNBVPNEDMQOQ.pcm
+│   │   │   │   │   ├── _SwiftConcurrencyShims-68HO3LYVNO7GQ6JL4P6KL7PCK.pcm
+│   │   │   │   │   ├── _SwiftConcurrencyShims-7W0C6RKHPU5JGA206OJ6M1HNZ.pcm
+│   │   │   │   │   ├── launch-BA7L39APWMZSREHH23OBZAMRR.pcm
+│   │   │   │   │   ├── launch-CB7FMKA2L6GOPD6DJKZC1FX9O.pcm
+│   │   │   │   │   ├── libDER-5U6IK8RCRWAHJJ6JS9HM5M3AE.pcm
+│   │   │   │   │   ├── libDER-7K0X5DUOJJTOWQXTRABLMTD72.pcm
+│   │   │   │   │   ├── libkern-4JKHH0TPKEJTQAY1AW5ZBQXPE.pcm
+│   │   │   │   │   ├── libkern-DR6JXB8S1L7VVH00143UPGBRD.pcm
+│   │   │   │   │   ├── modules.timestamp
+│   │   │   │   │   ├── os-5WCPGFJB2RGOGLL9UT2LUJ4QM.pcm
+│   │   │   │   │   ├── os-852ON02XIUW1HI3D10EWF34QJ.pcm
+│   │   │   │   │   ├── os_object-1VEDLL2CABK1SSJN8D35Q7BGQ.pcm
+│   │   │   │   │   ├── os_object-224WP0G9PBRJ5U4WM1ZPFT7B8.pcm
+│   │   │   │   │   ├── os_workgroup-67BFBN1U7GX6Z75ASFMC6MRGX.pcm
+│   │   │   │   │   ├── os_workgroup-9F5DV5Z3AMZCUU2RSYLDWI2RQ.pcm
+│   │   │   │   │   ├── ptrauth-2TYJKGZ13GOLOMX98U2VOFEEL.pcm
+│   │   │   │   │   ├── ptrauth-52RPORL4WFUVAI3W3K7QY3R7C.pcm
+│   │   │   │   │   ├── ptrcheck-57HAVX6IUIB0JI7NFGFJ53VBK.pcm
+│   │   │   │   │   ├── ptrcheck-EYGQYWAWLMQ5ZESR5M3ZMIAPQ.pcm
+│   │   │   │   │   ├── simd-30BR9AQMZO3D5RYI7V4S7R1VT.pcm
+│   │   │   │   │   ├── simd-7ILEEC98LSSSI8BQTESKHBD5J.pcm
+│   │   │   │   │   ├── sys_types-49QB8UA9VU7DMOYNSOPH366MT.pcm
+│   │   │   │   │   └── sys_types-9WENIILLIG8OQLK8QMVE72WPP.pcm
+│   │   │   │   ├── SDKStatCaches.noindex
+│   │   │   │   │   └── macosx26.4-25E251-30f9ca8789b706f8bd3fc906a70d770f.sdkstatcache
+│   │   │   │   ├── .DS_Store
+│   │   │   │   └── info.plist
+│   │   │   ├── .DS_Store
+│   │   │   ├── ICOS README.md
+│   │   │   ├── SYSTEM_ANATOMY.md
+│   │   │   └── default.profraw
+│   │   ├── _surgical_architecture
+│   │   │   ├── 01_tree.txt
+│   │   │   ├── 02_empty_directories.txt
+│   │   │   ├── 03_empty_files.txt
+│   │   │   ├── 04_duplicate_number_prefixes.txt
+│   │   │   ├── 05_app_icos_nesting.txt
+│   │   │   ├── 06_surgical_diagnosis.json
+│   │   │   ├── 07_cache_directories.txt
+│   │   │   ├── 08_clean_source_architecture_audit.json
+│   │   │   ├── 09_safe_action_map.json
+│   │   │   ├── 10_cleanup_and_numbering_plan.json
+│   │   │   ├── 11_python_only_numbering_plan.json
+│   │   │   └── 12_empty_directory_cleanup_report.json
+│   │   ├── .DS_Store
+│   │   └── App README.md
+│   ├── 02 - Architecture
+│   │   ├── CognitiveEngine
+│   │   ├── DeveloperConsole
+│   │   ├── ExecutionEngine
+│   │   ├── FileSystemControl
+│   │   ├── Runtime
+│   │   ├── .DS_Store
+│   │   └── 00 - Architecture README.md
+│   ├── 03 - Runtime
+│   │   ├── MLXProvider
+│   │   ├── ModelRuntimeProvider
+│   │   ├── .DS_Store
+│   │   └── 00 - Runtime README.md
+│   ├── 04 - Developer Console
+│   │   ├── CommandPanel
+│   │   ├── ExecutionPanel
+│   │   ├── FileContextPanel
+│   │   ├── InputPanel
+│   │   ├── SystemStatePanel
+│   │   ├── ValidationPanel
+│   │   ├── .DS_Store
+│   │   └── 00 - Developer Console README.md
+│   ├── 05 - Cognitive Engine
+│   │   ├── ExecutionMemory
+│   │   ├── IntentClassifier
+│   │   ├── PromptPacketController
+│   │   ├── SourceRouter
+│   │   ├── ValidationController
+│   │   ├── .DS_Store
+│   │   └── 00 - Cognitive Engine README.md
+│   ├── 06 - Native Runtime & Model Sovereignty
+│   │   ├── 00 - Index
+│   │   │   └── 01 - Native Runtime Sovereignty Index.md
+│   │   ├── 01 - Model Storage Ownership
+│   │   │   └── 01 - Model Storage Ownership Architecture.md
+│   │   ├── 02 - Ollama Deprecation & Migration
+│   │   │   └── 01 - Ollama Deprecation & Migration Standard.md
+│   │   ├── 03 - Model File Ownership & Storage
+│   │   │   └── 01 - Model File Ownership & Storage Architecture.md
+│   │   ├── 04 - Local Model API Gateway
+│   │   │   └── 01 - Local Model API Gateway Standard.md
+│   │   ├── 05 - Model Adoption & Import
+│   │   │   └── 01 - Model Adoption & Import Protocol.md
+│   │   ├── 06 - Runtime Provider Abstraction
+│   │   │   └── 01 - Runtime Provider Abstraction Standard.md
+│   │   ├── 07 - Native LLM Runtime
+│   │   │   └── 01 - Native LLM Runtime Directive.md
+│   │   └── .DS_Store
+│   ├── 07 - Governance
+│   │   ├── AgentBinding
+│   │   ├── BuildProtocols
+│   │   ├── SafetyRules
+│   │   ├── .DS_Store
+│   │   └── 00 - Governance README.md
+│   ├── 08 - Software Direction
+│   │   ├── 00 - Index & Control
+│   │   │   ├── 00 - Master Control
+│   │   │   │   └── 00 - Software Direction Master Control.md
+│   │   │   ├── 01 - Master Index
+│   │   │   │   └── 01 - Master Index.md
+│   │   │   ├── 02 - Directive Registry
+│   │   │   │   └── 01 - Directive Registry.md
+│   │   │   └── 03 - System Map
+│   │   │       └── 01 - System Map.md
+│   │   ├── 01 - Directives
+│   │   │   ├── 01 - Core Directives
+│   │   │   │   └── 01 - ICOS Core Directive.md
+│   │   │   ├── 02 - UX Directives
+│   │   │   │   └── 01 - UX Directive.md
+│   │   │   ├── 03 - Architecture Directives
+│   │   │   │   └── 01 - Architecture Directive.md
+│   │   │   ├── 04 - AI Behavior Directives
+│   │   │   │   └── 01 - AI Behavior Directive.md
+│   │   │   ├── 05 - Model Registry Directives
+│   │   │   │   └── 01 - Model Registry Directive.md
+│   │   │   ├── 06 - Permission & Privacy Directives
+│   │   │   │   └── 01 - Permission & Privacy Directive.md
+│   │   │   ├── 07 - Session & Memory Directives
+│   │   │   │   └── 01 - Session & Memory Directive.md
+│   │   │   ├── 08 - Profile & Voice Directives
+│   │   │   │   └── 01 - Profile & Voice Directive.md
+│   │   │   ├── 09 - Dashboard & Analytics Directives
+│   │   │   │   └── 01 - Dashboard & Analytics Directive.md
+│   │   │   ├── 10 - Search & Discovery Directives
+│   │   │   │   └── 01 - Search & Discovery Directive.md
+│   │   │   ├── 11 - Website Parity Directives
+│   │   │   │   └── 01 - Website Parity Directive.md
+│   │   │   └── 12 - Agent Build Engine Directives
+│   │   │       ├── 01 - ICOS Agent Build Engine Directive.md
+│   │   │       ├── 02 - ICOS Internal Agent Operating Doctrine.md
+│   │   │       ├── 03 - Agent Self-Sufficiency & Execution Protocol.md
+│   │   │       ├── 04 - Directive-to-Code Translation Standard.md
+│   │   │       ├── 05 - Runtime Agent Governance Model.md
+│   │   │       ├── 06 - Build Autonomy Boundary & Human Override Standard.md
+│   │   │       └── 07 - Agent Context Intake & Product Awareness Standard.md
+│   │   ├── 02 - Roadmap
+│   │   │   ├── 01 - Phases
+│   │   │   │   └── 01 - Product Phases.md
+│   │   │   ├── 02 - Milestones
+│   │   │   │   └── 01 - Milestones.md
+│   │   │   ├── 03 - Active Development
+│   │   │   │   └── 01 - Active Development.md
+│   │   │   ├── 04 - Implementation Sequence
+│   │   │   │   └── 01 - Implementation Sequence.md
+│   │   │   └── 05 - Product Gaps
+│   │   │       └── 01 - Product Gaps.md
+│   │   ├── 03 - System Philosophy
+│   │   │   ├── 01 - ICOS Definition
+│   │   │   │   └── 01 - ICOS Definition.md
+│   │   │   ├── 02 - Cognitive Model
+│   │   │   │   └── 01 - Cognitive Model.md
+│   │   │   ├── 03 - UX Principles
+│   │   │   │   └── 01 - UX Principles.md
+│   │   │   ├── 04 - Interaction Model
+│   │   │   │   └── 01 - Interaction Model.md
+│   │   │   ├── 05 - Product Identity
+│   │   │   │   └── 01 - Product Identity.md
+│   │   │   ├── 06 - Continuity Model
+│   │   │   │   └── 01 - Continuity Model.md
+│   │   │   └── 07 - Safety & Trust Model
+│   │   │       └── 01 - Safety & Trust Model.md
+│   │   ├── 04 - Change Log
+│   │   │   ├── 01 - Directional Changes
+│   │   │   │   └── 01 - Directional Changes.md
+│   │   │   ├── 02 - Structural Changes
+│   │   │   │   └── 01 - Structural Changes.md
+│   │   │   ├── 03 - Behavioral Changes
+│   │   │   │   └── 01 - Behavioral Changes.md
+│   │   │   ├── 04 - Product Direction Changes
+│   │   │   │   └── 01 - Product Direction Changes.md
+│   │   │   └── .DS_Store
+│   │   ├── 05 - Workspace & File System Architecture
+│   │   │   ├── 01 - Workspace Model
+│   │   │   │   └── 01 - Workspace Model.md
+│   │   │   ├── 02 - Directory Binding System
+│   │   │   │   └── 01 - Directory Binding System.md
+│   │   │   ├── 03 - File Interaction Engine
+│   │   │   │   └── 01 - File Interaction Engine.md
+│   │   │   ├── 04 - Local & Cloud Sync Model
+│   │   │   │   └── 01 - Local & Cloud Sync Model.md
+│   │   │   ├── 05 - Agent Native File Awareness Model
+│   │   │   │   └── 01 - Agent Native File Awareness Model.md
+│   │   │   └── 06 - Workspace UI & Panels Model
+│   │   │       └── 01 - Workspace UI & Panels Model.md
+│   │   ├── 06 - Native Runtime & Model Sovereignty
+│   │   │   ├── 01 - Native LLM Runtime
+│   │   │   │   └── 01 - Native LLM Runtime Directive.md
+│   │   │   ├── 02 - Ollama Deprecation & Migration
+│   │   │   │   └── 01 - Ollama Deprecation & Migration Standard.md
+│   │   │   ├── 03 - Model File Ownership & Storage
+│   │   │   │   └── 01 - Model File Ownership & Storage Architecture.md
+│   │   │   ├── 04 - Local Model API Gateway
+│   │   │   │   └── 01 - Local Model API Gateway Standard.md
+│   │   │   ├── 05 - Model Adoption & Import
+│   │   │   │   └── 01 - Model Adoption & Import Protocol.md
+│   │   │   ├── 06 - Profile Model Creation
+│   │   │   │   └── 01 - Profile Model Creation Directive.md
+│   │   │   ├── 07 - Runtime Provider Abstraction
+│   │   │   │   └── 01 - Runtime Provider Abstraction Standard.md
+│   │   │   ├── 08 - Native Inference Engine Roadmap
+│   │   │   │   └── 01 - Native Inference Engine Roadmap.md
+│   │   │   ├── 09 - Agent Coding Conduct
+│   │   │   │   └── 01 - Agent Coding Conduct & Response Alignment Standard.md
+│   │   │   ├── 10 - Directive-Aware Code Generation
+│   │   │   │   └── 01 - Directive-Aware Code Generation Protocol.md
+│   │   │   └── .DS_Store
+│   │   ├── 07 - Unified Intelligence Operating System
+│   │   │   ├── 01 - Core System Identity
+│   │   │   │   └── 01 - ICOS Unified Intelligence Operating System Directive.md
+│   │   │   ├── 02 - Capability Scope
+│   │   │   │   └── 01 - ICOS Capability Scope Architecture.md
+│   │   │   ├── 03 - Unified Workspace Interface
+│   │   │   │   └── 01 - ICOS Unified Workspace Interface Model.md
+│   │   │   ├── 04 - Multitasking & Parallel Execution
+│   │   │   │   └── 01 - ICOS Multitasking & Parallel Execution Model.md
+│   │   │   ├── 05 - Creation & Deployment Pipelines
+│   │   │   │   └── 01 - ICOS Creation & Deployment Pipeline Architecture.md
+│   │   │   ├── 06 - Skills, Plugins & Automations
+│   │   │   │   └── 01 - ICOS Skills, Plugins & Automations Directive.md
+│   │   │   ├── 07 - Computer Use & Device Control
+│   │   │   │   └── 01 - ICOS Computer Use & Device Control Standard.md
+│   │   │   └── 08 - User Education & Prompting Foundations
+│   │   │       └── 01 - ICOS User Education & Prompting Foundations Guide.md
+│   │   ├── 08 - Implementation Architecture
+│   │   │   ├── 01 - Runtime Architecture
+│   │   │   │   └── 01 - ICOS Native Runtime Architecture.md
+│   │   │   ├── 02 - API Gateway Architecture
+│   │   │   │   └── 01 - ICOS API Gateway Implementation Architecture.md
+│   │   │   ├── 03 - Model Registry Architecture
+│   │   │   │   └── 01 - ICOS Model Registry Implementation Architecture.md
+│   │   │   ├── 04 - Session System Architecture
+│   │   │   │   └── 01 - ICOS Session System Implementation Architecture.md
+│   │   │   ├── 05 - Permission System Architecture
+│   │   │   │   └── 01 - ICOS Permission System Implementation Architecture.md
+│   │   │   ├── 06 - Profile System Architecture
+│   │   │   │   └── 01 - ICOS Profile System Implementation Architecture.md
+│   │   │   └── 07 - Dashboard & Analytics Architecture
+│   │   │       └── 01 - ICOS Dashboard & Analytics Implementation Architecture.md
+│   │   ├── 09 - Platform Builder Architecture
+│   │   └── .DS_Store
+│   ├── 09 - Platform Builders
+│   │   ├── 00 - Index
+│   │   │   ├── 01 - Master Index
+│   │   │   │   └── 01 - Platform Builders Master Index.md
+│   │   │   └── 00 - Platform Builders Index.md
+│   │   ├── 01 - Builders
+│   │   │   ├── 01 - Document Builder
+│   │   │   │   └── 00 - Index
+│   │   │   │       └── 01 - Document Builder.md
+│   │   │   ├── 02 - Native Builder
+│   │   │   │   └── 00 - Index
+│   │   │   │       └── 01 - Native Builder.md
+│   │   │   └── 03 - Website Builder
+│   │   │       └── 00 - Index
+│   │   │           └── 01 - Website Builder.md
+│   │   ├── 02 - Core Engine
+│   │   │   ├── 01 - Execution Layer
+│   │   │   │   └── 00 - Index
+│   │   │   │       └── 01 - Platform Execution Binding.md
+│   │   │   ├── 02 - Routing Layer
+│   │   │   │   └── 00 - Index
+│   │   │   │       └── 01 - Execution Routing.md
+│   │   │   └── 03 - Execution Kernel
+│   │   │       └── 00 - Index
+│   │   │           └── 01 - Execution Kernel.md
+│   │   ├── 03 - Runtime Modules
+│   │   │   ├── 01 - Runtime Core
+│   │   │   │   └── 00 - Index
+│   │   │   │       └── 01 - Runtime Core.md
+│   │   │   ├── 02 - Execution Engine
+│   │   │   │   └── 00 - Index
+│   │   │   │       └── 01 - Execution Engine.md
+│   │   │   ├── 03 - Model Interface
+│   │   │   │   └── 00 - Index
+│   │   │   │       └── 01 - Model Interface.md
+│   │   │   ├── 04 - Memory & Context Layer
+│   │   │   │   └── 00 - Index
+│   │   │   │       └── 01 - Memory Context Layer.md
+│   │   │   ├── 05 - Stream Processor
+│   │   │   │   └── 00 - Index
+│   │   │   │       └── 01 - Stream Processor.md
+│   │   │   ├── 06 - Resource Manager
+│   │   │   │   └── 00 - Index
+│   │   │   │       └── 01 - Resource Manager.md
+│   │   │   ├── 07 - Runtime Connector
+│   │   │   │   └── 00 - Index
+│   │   │   │       └── 01 - Runtime Connector.md
+│   │   │   ├── 08 - Event System
+│   │   │   │   └── 00 - Index
+│   │   │   │       └── 01 - Event System.md
+│   │   │   ├── 09 - Runtime Bridge
+│   │   │   │   └── 00 - Index
+│   │   │   │       └── 01 - Runtime Bridge.md
+│   │   │   ├── 10 - Session Bridge
+│   │   │   │   └── 00 - Index
+│   │   │   │       └── 01 - Session Bridge.md
+│   │   │   ├── 11 - Sandbox Isolation
+│   │   │   │   └── 00 - Index
+│   │   │   │       └── 01 - Sandbox Isolation.md
+│   │   │   └── 12 - Stream Handler
+│   │   │       └── 00 - Index
+│   │   │           └── 01 - Stream Handler.md
+│   │   ├── 04 - API Layer
+│   │   │   ├── 01 - Gateway Core
+│   │   │   │   └── 00 - Index
+│   │   │   │       └── 01 - Gateway Core.md
+│   │   │   ├── 02 - Request Router
+│   │   │   │   └── 00 - Index
+│   │   │   │       └── 01 - Request Router.md
+│   │   │   ├── 03 - Response Engine
+│   │   │   │   └── 00 - Index
+│   │   │   │       └── 01 - Response Engine.md
+│   │   │   ├── 04 - Auth & Permissions
+│   │   │   │   └── 00 - Index
+│   │   │   │       └── 01 - Auth & Permissions.md
+│   │   │   ├── 05 - Model Resolver
+│   │   │   │   └── 00 - Index
+│   │   │   │       └── 01 - Model Resolver.md
+│   │   │   ├── 06 - Session Bridge
+│   │   │   │   └── 00 - Index
+│   │   │   │       └── 01 - Session Bridge.md
+│   │   │   ├── 07 - Runtime Connector
+│   │   │   │   └── 00 - Index
+│   │   │   │       └── 01 - Runtime Connector.md
+│   │   │   ├── 08 - Stream Handler
+│   │   │   │   └── 00 - Index
+│   │   │   │       └── 01 - Stream Handler.md
+│   │   │   └── 09 - API Registry
+│   │   │       └── 00 - Index
+│   │   │           └── 01 - API Registry.md
+│   │   ├── 09 - Extensions
+│   │   │   └── VSCode Bridge
+│   │   │       └── 00 - Index
+│   │   │           └── 01 - VSCode Bridge Protocol.md
+│   │   ├── 10 - Execution Wiring
+│   │   │   └── 00 - Index
+│   │   │       └── 01 - Runtime to API Wiring.md
+│   │   ├── 11 - Product Layer
+│   │   │   ├── 00 - Index
+│   │   │   ├── 01 - Documentation
+│   │   │   │   └── 01 - ICOS Product System.md
+│   │   │   └── Web App
+│   │   │       ├── 01 - Auth
+│   │   │       │   └── 00 - Index
+│   │   │       ├── 02 - Dashboard
+│   │   │       │   └── 00 - Index
+│   │   │       ├── 03 - Core
+│   │   │       │   └── 00 - Index
+│   │   │       ├── 04 - UI
+│   │   │       │   └── 00 - Index
+│   │   │       └── codebase
+│   │   │           ├── assets
+│   │   │           ├── bridge
+│   │   │           └── index.html
+│   │   ├── 12 - Model Layer
+│   │   │   ├── 00 - Index
+│   │   │   └── 01 - Documentation
+│   │   │       └── 01 - Model Interface System.md
+│   │   ├── 13 - Deployment Layer
+│   │   │   ├── 00 - Index
+│   │   │   └── 01 - Documentation
+│   │   │       └── 01 - Deployment System.md
+│   │   ├── 14 - Governance Layer
+│   │   │   ├── 00 - Index
+│   │   │   └── 01 - Documentation
+│   │   │       └── 01 - Governance System.md
+│   │   ├── 15 - Execution Tasks
+│   │   │   ├── 00 - Index
+│   │   │   │   └── 01 - Task Registry.md
+│   │   │   └── 01 - Tasks
+│   │   │       ├── 02 - Task 0001.md
+│   │   │       ├── 03 - Task 0002.md
+│   │   │       ├── 04 - Task 0003.md
+│   │   │       ├── 05 - Task 0004.md
+│   │   │       ├── 06 - Task 0005.md
+│   │   │       └── 07 - Task 0006.md
+│   │   └── .DS_Store
+│   ├── _architecture_audit
+│   │   ├── 01_full_directory_tree.txt
+│   │   ├── 02_full_file_inventory.txt
+│   │   ├── 03_runtime_model_scan.txt
+│   │   ├── 04_empty_directories.txt
+│   │   └── 05_production_architecture_audit.json
+│   ├── .DS_Store
+│   └── README.md
+├── venv
+│   ├── bin
+│   │   ├── Activate.ps1
+│   │   ├── activate
+│   │   ├── activate.csh
+│   │   ├── activate.fish
+│   │   ├── normalizer
+│   │   ├── pip
+│   │   ├── pip3
+│   │   ├── pip3.14
+│   │   ├── python -> python3.14
+│   │   ├── python3 -> python3.14
+│   │   ├── python3.14 -> /opt/homebrew/opt/python@3.14/bin/python3.14
+│   │   └── 𝜋thon -> python3.14
+│   ├── include
+│   ├── lib
+│   │   ├── python3.14
+│   │   │   ├── site-packages
+│   │   │   │   ├── certifi
+│   │   │   │   │   ├── __pycache__
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   ├── __main__.py
+│   │   │   │   │   ├── cacert.pem
+│   │   │   │   │   ├── core.py
+│   │   │   │   │   └── py.typed
+│   │   │   │   ├── certifi-2026.4.22.dist-info
+│   │   │   │   │   ├── licenses
+│   │   │   │   │   ├── INSTALLER
+│   │   │   │   │   ├── METADATA
+│   │   │   │   │   ├── RECORD
+│   │   │   │   │   ├── WHEEL
+│   │   │   │   │   └── top_level.txt
+│   │   │   │   ├── charset_normalizer
+│   │   │   │   │   ├── __pycache__
+│   │   │   │   │   ├── cli
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   ├── __main__.py
+│   │   │   │   │   ├── api.py
+│   │   │   │   │   ├── cd.cpython-314-darwin.so
+│   │   │   │   │   ├── cd.py
+│   │   │   │   │   ├── constant.py
+│   │   │   │   │   ├── legacy.py
+│   │   │   │   │   ├── md.cpython-314-darwin.so
+│   │   │   │   │   ├── md.py
+│   │   │   │   │   ├── models.py
+│   │   │   │   │   ├── py.typed
+│   │   │   │   │   ├── utils.py
+│   │   │   │   │   └── version.py
+│   │   │   │   ├── charset_normalizer-3.4.7.dist-info
+│   │   │   │   │   ├── licenses
+│   │   │   │   │   ├── INSTALLER
+│   │   │   │   │   ├── METADATA
+│   │   │   │   │   ├── RECORD
+│   │   │   │   │   ├── WHEEL
+│   │   │   │   │   ├── entry_points.txt
+│   │   │   │   │   └── top_level.txt
+│   │   │   │   ├── idna
+│   │   │   │   │   ├── __pycache__
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   ├── codec.py
+│   │   │   │   │   ├── compat.py
+│   │   │   │   │   ├── core.py
+│   │   │   │   │   ├── idnadata.py
+│   │   │   │   │   ├── intranges.py
+│   │   │   │   │   ├── package_data.py
+│   │   │   │   │   ├── py.typed
+│   │   │   │   │   └── uts46data.py
+│   │   │   │   ├── idna-3.13.dist-info
+│   │   │   │   │   ├── licenses
+│   │   │   │   │   ├── INSTALLER
+│   │   │   │   │   ├── METADATA
+│   │   │   │   │   ├── RECORD
+│   │   │   │   │   └── WHEEL
+│   │   │   │   ├── pip
+│   │   │   │   │   ├── __pycache__
+│   │   │   │   │   ├── _internal
+│   │   │   │   │   ├── _vendor
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   ├── __main__.py
+│   │   │   │   │   ├── __pip-runner__.py
+│   │   │   │   │   └── py.typed
+│   │   │   │   ├── pip-26.1.dist-info
+│   │   │   │   │   ├── licenses
+│   │   │   │   │   ├── INSTALLER
+│   │   │   │   │   ├── METADATA
+│   │   │   │   │   ├── RECORD
+│   │   │   │   │   ├── REQUESTED
+│   │   │   │   │   ├── WHEEL
+│   │   │   │   │   └── entry_points.txt
+│   │   │   │   ├── requests
+│   │   │   │   │   ├── __pycache__
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   ├── __version__.py
+│   │   │   │   │   ├── _internal_utils.py
+│   │   │   │   │   ├── adapters.py
+│   │   │   │   │   ├── api.py
+│   │   │   │   │   ├── auth.py
+│   │   │   │   │   ├── certs.py
+│   │   │   │   │   ├── compat.py
+│   │   │   │   │   ├── cookies.py
+│   │   │   │   │   ├── exceptions.py
+│   │   │   │   │   ├── help.py
+│   │   │   │   │   ├── hooks.py
+│   │   │   │   │   ├── models.py
+│   │   │   │   │   ├── packages.py
+│   │   │   │   │   ├── sessions.py
+│   │   │   │   │   ├── status_codes.py
+│   │   │   │   │   ├── structures.py
+│   │   │   │   │   └── utils.py
+│   │   │   │   ├── requests-2.33.1.dist-info
+│   │   │   │   │   ├── licenses
+│   │   │   │   │   ├── INSTALLER
+│   │   │   │   │   ├── METADATA
+│   │   │   │   │   ├── RECORD
+│   │   │   │   │   ├── REQUESTED
+│   │   │   │   │   ├── WHEEL
+│   │   │   │   │   └── top_level.txt
+│   │   │   │   ├── urllib3
+│   │   │   │   │   ├── __pycache__
+│   │   │   │   │   ├── contrib
+│   │   │   │   │   ├── http2
+│   │   │   │   │   ├── util
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   ├── _base_connection.py
+│   │   │   │   │   ├── _collections.py
+│   │   │   │   │   ├── _request_methods.py
+│   │   │   │   │   ├── _version.py
+│   │   │   │   │   ├── connection.py
+│   │   │   │   │   ├── connectionpool.py
+│   │   │   │   │   ├── exceptions.py
+│   │   │   │   │   ├── fields.py
+│   │   │   │   │   ├── filepost.py
+│   │   │   │   │   ├── poolmanager.py
+│   │   │   │   │   ├── py.typed
+│   │   │   │   │   └── response.py
+│   │   │   │   ├── urllib3-2.6.3.dist-info
+│   │   │   │   │   ├── licenses
+│   │   │   │   │   ├── INSTALLER
+│   │   │   │   │   ├── METADATA
+│   │   │   │   │   ├── RECORD
+│   │   │   │   │   └── WHEEL
+│   │   │   │   └── 81d243bd2c585b0f4821__mypyc.cpython-314-darwin.so
+│   │   │   └── .DS_Store
+│   │   └── .DS_Store
+│   ├── .DS_Store
+│   ├── .gitignore
+│   └── pyvenv.cfg
+├── .DS_Store
+├── README.md
+├── _software_deep_operational_audit.json
+├── build.log
+├── default.profraw
+├── project_map.txt
+└── project_map_full.txt
+
+549 directories, 718 files

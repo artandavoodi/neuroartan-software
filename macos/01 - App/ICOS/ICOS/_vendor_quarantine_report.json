@@ -1,0 +1,113 @@
+{
+  "moved": [
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_EpsImagePlugin.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/QuarantinedVendorRuntime/00_EpsImagePlugin.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/01_GifImagePlugin.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/QuarantinedVendorRuntime/01_GifImagePlugin.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/02_IcnsImagePlugin.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/QuarantinedVendorRuntime/02_IcnsImagePlugin.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/03_Image.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/QuarantinedVendorRuntime/03_Image.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/04_ImageCms.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/QuarantinedVendorRuntime/04_ImageCms.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/05_ImageColor.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/QuarantinedVendorRuntime/05_ImageColor.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/06_ImageDraw.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/QuarantinedVendorRuntime/06_ImageDraw.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/07_ImageFile.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/QuarantinedVendorRuntime/07_ImageFile.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/08_ImageFont.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/QuarantinedVendorRuntime/08_ImageFont.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/09_ImageTk.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/QuarantinedVendorRuntime/09_ImageTk.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/107_subprocess.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/QuarantinedVendorRuntime/107_subprocess.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/10_ImageWin.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/QuarantinedVendorRuntime/10_ImageWin.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/11_McIdasImagePlugin.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/QuarantinedVendorRuntime/11_McIdasImagePlugin.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/121_win32_console.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/QuarantinedVendorRuntime/121_win32_console.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/12_PngImagePlugin.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/QuarantinedVendorRuntime/12_PngImagePlugin.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/13_SpiderImagePlugin.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/QuarantinedVendorRuntime/13_SpiderImagePlugin.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/14_TiffImagePlugin.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/QuarantinedVendorRuntime/14_TiffImagePlugin.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/20_browser.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/QuarantinedVendorRuntime/20_browser.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/21_browser_type.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/QuarantinedVendorRuntime/21_browser_type.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/26_cmdoptions.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/QuarantinedVendorRuntime/26_cmdoptions.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/34_console.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/QuarantinedVendorRuntime/34_console.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/56_json_pipe.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/QuarantinedVendorRuntime/56_json_pipe.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/63_markup.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/QuarantinedVendorRuntime/63_markup.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/64_metadata.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/QuarantinedVendorRuntime/64_metadata.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/66_migrated_00_console.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/QuarantinedVendorRuntime/66_migrated_00_console.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/77_network.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/QuarantinedVendorRuntime/77_network.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/82_pkg_resources.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ThirdParty/QuarantinedVendorRuntime/82_pkg_resources.py"
+    }
+  ],
+  "errors": []
+}

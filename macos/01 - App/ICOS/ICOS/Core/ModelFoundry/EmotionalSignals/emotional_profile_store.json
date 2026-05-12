@@ -1,0 +1,10 @@
+[
+  {
+    "profile_id": "c7262aec-c1f7-4863-a963-c68d0a721de0",
+    "timestamp": 1778177242.242402,
+    "emotion": "anxiety",
+    "confidence": 0.5,
+    "adaptive_weight": "medium",
+    "continuity_binding": true
+  }
+]

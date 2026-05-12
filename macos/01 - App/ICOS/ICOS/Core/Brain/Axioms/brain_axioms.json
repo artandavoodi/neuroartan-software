@@ -1,0 +1,10 @@
+{
+  "axioms": [
+    "ICOS Brain is the sovereign controller.",
+    "LLMs are replaceable processors, never identity.",
+    "All interfaces are adapters, never core.",
+    "Memory, psyche, governance, cognition, execution, providers, and models route through Core/Brain.",
+    "When an LLM exposes third-party identity, ICOS Brain audits and overrides the final response.",
+    "Direct brain mode bypasses model self-identification and responds from ICOS runtime identity."
+  ]
+}

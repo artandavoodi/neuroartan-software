@@ -1,0 +1,631 @@
+.
+├── README.md
+├── _architecture_scan
+│   ├── 01_empty_files.txt
+│   ├── 02_full_directory_tree.txt
+│   ├── 03_file_inventory.txt
+│   ├── 04_duplicate_basenames.txt
+│   ├── 05_noncanonical_python_numbering.txt
+│   ├── 06_topic_ownership_map.txt
+│   ├── 07_structural_diagnosis.json
+│   ├── 08_filtered_structural_action_map.json
+│   ├── 09_canonical_numbering_map.json
+│   ├── 10_safe_canonical_numbering_map.json
+│   ├── 11_numbering_rename_report.json
+│   ├── injection_queue
+│   │   └── 01_empty_file_injection_queue.json
+│   └── numbering_backup
+│       ├── 00___init__.py
+│       ├── 00__browser_context.py
+│       ├── 00__cmd.py
+│       ├── 00__context_manager.py
+│       ├── 00__event_context_manager.py
+│       ├── 00__har_router.py
+│       ├── 00_adapter.py
+│       ├── 00_autonomous_behavioral_reasoning.py
+│       ├── 00_cache.py
+│       ├── 00_cognitive_orchestration_engine.py
+│       ├── 00_command_context.py
+│       ├── 00_controller.py
+│       ├── 00_distributed_context_compression.py
+│       ├── 00_execution_policy_intelligence.py
+│       ├── 00_file_cache.py
+│       ├── 00_filewrapper.py
+│       ├── 00_heuristics.py
+│       ├── 00_icos_mcp_server.py
+│       ├── 00_js_ts_patch_engine.py
+│       ├── 00_language_server_intelligence.py
+│       ├── 00_long_horizon_planner.py
+│       ├── 00_memory_manager.py
+│       ├── 00_model_quality_reasoning.py
+│       ├── 00_patch_planner.py
+│       ├── 00_persistent_identity_graph_engine.py
+│       ├── 00_provider_registry.py
+│       ├── 00_redis_cache.py
+│       ├── 00_repository_reasoning_memory.py
+│       ├── 00_repository_semantic_memory_graph.py
+│       ├── 00_resources.py
+│       ├── 00_retry_engine.py
+│       ├── 00_runtime_adaptive_learning.py
+│       ├── 00_runtime_learning.py
+│       ├── 00_serialize.py
+│       ├── 00_streaming_reasoning_engine.py
+│       ├── 00_test_contextvars.py
+│       ├── 00_tool_permission_governance.py
+│       ├── 00_unified_execution_cognition_loop.py
+│       ├── 00_verification_loop.py
+│       ├── 00_verifier.py
+│       ├── 00_wrapper.py
+│       ├── 01_adaptive_memory_weighting_engine.py
+│       ├── 01_autonomous_repair_engine.py
+│       ├── 01_constitutional_memory_graph.py
+│       ├── 01_icos_core_engine.py
+│       ├── 01_mcp_tool_router.py
+│       ├── 01_runtime_state_store.py
+│       ├── 01_xcode_cli_commands.py
+│       ├── 01_xcode_project_state_store.py
+│       ├── 01_xcode_test_runner.py
+│       ├── 02_document_cognition_engine.py
+│       ├── 02_runtime_learning_loop.py
+│       ├── 02_runtime_session_store.py
+│       ├── 02_semantic_code_understanding_engine.py
+│       ├── 02_stateful_patch_audit.py
+│       ├── 02_xcode_build_state_store.py
+│       ├── 02_xcode_cli_response_renderer.py
+│       ├── 02_xcode_project_scanner.py
+│       ├── 02_xcodebuild_runner.py
+│       ├── 02_xcodeproj_parser.py
+│       ├── 03_icos_execution_context.py
+│       ├── 03_long_horizon_planning_engine.py
+│       ├── 03_runtime_event_log.py
+│       ├── 03_xcode_runtime_verification_state.py
+│       ├── 03_xcode_scheme_resolver.py
+│       ├── 04_multi_agent_orchestration_engine.py
+│       ├── 04_resource_exclusion_planner.py
+│       ├── 05_contextual_emotional_weighting_engine.py
+│       ├── 05_doctrine_retrieval_engine.py
+│       ├── 06_institutional_task_planner.py
+│       ├── 06_pbxproj_ast_mutation_engine.py
+│       ├── 06_recursive_self_optimization_engine.py
+│       ├── 07_xcode_build_phase_inspector.py
+│       ├── 08_dependency_runtime_planner.py
+│       ├── 08_persistent_constitutional_memory_engine.py
+│       ├── 08_xcode_target_membership_inspector.py
+│       ├── 09_failure_learning.py
+│       ├── 10_authority_weighted_doctrine_retrieval.py
+│       ├── 10_shared_multi_agent_memory.py
+│       ├── 11_document_cognition.py
+│       ├── 12_document_id_governance.py
+│       ├── 13_placement_cognition.py
+│       ├── 15_lifecycle_state_engine.py
+│       ├── 17_governance_escalation_engine.py
+│       ├── 18_agent_registry_bridge.py
+│       ├── 19_task_continuity_ledger.py
+│       ├── 20_dependency_resource_scheduler.py
+│       ├── __pycache__
+│       │   ├── 00___init__.cpython-314.pyc
+│       │   ├── 00__browser_context.cpython-314.pyc
+│       │   ├── 00__cmd.cpython-314.pyc
+│       │   ├── 00__context_manager.cpython-314.pyc
+│       │   ├── 00__event_context_manager.cpython-314.pyc
+│       │   ├── 00__har_router.cpython-314.pyc
+│       │   ├── 00_adapter.cpython-314.pyc
+│       │   ├── 00_autonomous_behavioral_reasoning.cpython-314.pyc
+│       │   ├── 00_cache.cpython-314.pyc
+│       │   ├── 00_cognitive_orchestration_engine.cpython-314.pyc
+│       │   ├── 00_command_context.cpython-314.pyc
+│       │   ├── 00_controller.cpython-314.pyc
+│       │   ├── 00_distributed_context_compression.cpython-314.pyc
+│       │   ├── 00_execution_policy_intelligence.cpython-314.pyc
+│       │   ├── 00_file_cache.cpython-314.pyc
+│       │   ├── 00_filewrapper.cpython-314.pyc
+│       │   ├── 00_heuristics.cpython-314.pyc
+│       │   ├── 00_icos_mcp_server.cpython-314.pyc
+│       │   ├── 00_js_ts_patch_engine.cpython-314.pyc
+│       │   ├── 00_language_server_intelligence.cpython-314.pyc
+│       │   ├── 00_long_horizon_planner.cpython-314.pyc
+│       │   ├── 00_memory_manager.cpython-314.pyc
+│       │   ├── 00_model_quality_reasoning.cpython-314.pyc
+│       │   ├── 00_patch_planner.cpython-314.pyc
+│       │   ├── 00_persistent_identity_graph_engine.cpython-314.pyc
+│       │   ├── 00_provider_registry.cpython-314.pyc
+│       │   ├── 00_redis_cache.cpython-314.pyc
+│       │   ├── 00_repository_reasoning_memory.cpython-314.pyc
+│       │   ├── 00_repository_semantic_memory_graph.cpython-314.pyc
+│       │   ├── 00_resources.cpython-314.pyc
+│       │   ├── 00_retry_engine.cpython-314.pyc
+│       │   ├── 00_runtime_adaptive_learning.cpython-314.pyc
+│       │   ├── 00_runtime_learning.cpython-314.pyc
+│       │   ├── 00_serialize.cpython-314.pyc
+│       │   ├── 00_streaming_reasoning_engine.cpython-314.pyc
+│       │   ├── 00_test_contextvars.cpython-314.pyc
+│       │   ├── 00_tool_permission_governance.cpython-314.pyc
+│       │   ├── 00_unified_execution_cognition_loop.cpython-314.pyc
+│       │   ├── 00_verification_loop.cpython-314.pyc
+│       │   ├── 00_verifier.cpython-314.pyc
+│       │   ├── 00_wrapper.cpython-314.pyc
+│       │   ├── 01_adaptive_memory_weighting_engine.cpython-314.pyc
+│       │   ├── 01_autonomous_repair_engine.cpython-314.pyc
+│       │   ├── 01_constitutional_memory_graph.cpython-314.pyc
+│       │   ├── 01_icos_core_engine.cpython-314.pyc
+│       │   ├── 01_mcp_tool_router.cpython-314.pyc
+│       │   ├── 01_runtime_state_store.cpython-314.pyc
+│       │   ├── 01_xcode_cli_commands.cpython-314.pyc
+│       │   ├── 01_xcode_project_state_store.cpython-314.pyc
+│       │   ├── 01_xcode_test_runner.cpython-314.pyc
+│       │   ├── 02_document_cognition_engine.cpython-314.pyc
+│       │   ├── 02_runtime_learning_loop.cpython-314.pyc
+│       │   ├── 02_runtime_session_store.cpython-314.pyc
+│       │   ├── 02_semantic_code_understanding_engine.cpython-314.pyc
+│       │   ├── 02_stateful_patch_audit.cpython-314.pyc
+│       │   ├── 02_xcode_cli_response_renderer.cpython-314.pyc
+│       │   ├── 02_xcode_project_scanner.cpython-314.pyc
+│       │   ├── 02_xcodeproj_parser.cpython-314.pyc
+│       │   ├── 03_icos_execution_context.cpython-314.pyc
+│       │   ├── 03_long_horizon_planning_engine.cpython-314.pyc
+│       │   ├── 03_runtime_event_log.cpython-314.pyc
+│       │   ├── 03_xcode_runtime_verification_state.cpython-314.pyc
+│       │   ├── 03_xcode_scheme_resolver.cpython-314.pyc
+│       │   ├── 04_multi_agent_orchestration_engine.cpython-314.pyc
+│       │   ├── 04_resource_exclusion_planner.cpython-314.pyc
+│       │   ├── 05_contextual_emotional_weighting_engine.cpython-314.pyc
+│       │   ├── 05_doctrine_retrieval_engine.cpython-314.pyc
+│       │   ├── 06_institutional_task_planner.cpython-314.pyc
+│       │   ├── 06_pbxproj_ast_mutation_engine.cpython-314.pyc
+│       │   ├── 06_recursive_self_optimization_engine.cpython-314.pyc
+│       │   ├── 08_dependency_runtime_planner.cpython-314.pyc
+│       │   ├── 08_persistent_constitutional_memory_engine.cpython-314.pyc
+│       │   ├── 08_xcode_target_membership_inspector.cpython-314.pyc
+│       │   ├── 09_failure_learning.cpython-314.pyc
+│       │   ├── 10_authority_weighted_doctrine_retrieval.cpython-314.pyc
+│       │   ├── 10_shared_multi_agent_memory.cpython-314.pyc
+│       │   ├── 11_document_cognition.cpython-314.pyc
+│       │   ├── 12_document_id_governance.cpython-314.pyc
+│       │   ├── 13_placement_cognition.cpython-314.pyc
+│       │   ├── 15_lifecycle_state_engine.cpython-314.pyc
+│       │   ├── 17_governance_escalation_engine.cpython-314.pyc
+│       │   ├── 18_agent_registry_bridge.cpython-314.pyc
+│       │   ├── 19_task_continuity_ledger.cpython-314.pyc
+│       │   ├── 20_dependency_resource_scheduler.cpython-314.pyc
+│       │   ├── migrated_00___init__.cpython-314.pyc
+│       │   ├── migrated_00__context_manager.cpython-314.pyc
+│       │   ├── migrated_00_cache.cpython-314.pyc
+│       │   ├── migrated_00_memory_manager.cpython-314.pyc
+│       │   ├── migrated_00_patch_planner.cpython-314.pyc
+│       │   └── migrated_00_retry.cpython-314.pyc
+│       ├── migrated_00___init__.py
+│       ├── migrated_00__context_manager.py
+│       ├── migrated_00_cache.py
+│       ├── migrated_00_memory_manager.py
+│       ├── migrated_00_patch_planner.py
+│       └── migrated_00_retry.py
+├── _software_deep_operational_audit.json
+├── build.log
+├── default.profraw
+├── ios
+├── macos
+│   ├── 01 - App
+│   │   ├── App README.md
+│   │   ├── ICOS
+│   │   │   ├── ICOS
+│   │   │   │   ├── Assets.xcassets
+│   │   │   │   ├── Cognition
+│   │   │   │   ├── CognitiveEngine
+│   │   │   │   ├── Control
+│   │   │   │   ├── Core
+│   │   │   │   ├── DesignSystem
+│   │   │   │   ├── Developer
+│   │   │   │   ├── DeveloperConsole
+│   │   │   │   ├── Doctrine
+│   │   │   │   ├── Engine
+│   │   │   │   ├── Execution
+│   │   │   │   ├── ExecutionEngine
+│   │   │   │   ├── Governance
+│   │   │   │   ├── ICOS.entitlements
+│   │   │   │   ├── Institutional
+│   │   │   │   ├── Interfaces
+│   │   │   │   ├── KnowledgeBase
+│   │   │   │   ├── Memory
+│   │   │   │   ├── Models
+│   │   │   │   ├── Persistence
+│   │   │   │   ├── Platform
+│   │   │   │   ├── Profile
+│   │   │   │   ├── Providers
+│   │   │   │   ├── README.md
+│   │   │   │   ├── Runtime
+│   │   │   │   ├── Shared
+│   │   │   │   ├── Sources
+│   │   │   │   ├── SwiftUI
+│   │   │   │   ├── System
+│   │   │   │   ├── ThirdParty
+│   │   │   │   ├── UX
+│   │   │   │   ├── Validation
+│   │   │   │   ├── _architecture_alignment
+│   │   │   │   ├── _continue_relinking
+│   │   │   │   ├── _duplicate_backup_resolution_report.json
+│   │   │   │   ├── _empty_file_classification.json
+│   │   │   │   ├── _final_bridge_remnant_cleanup_report.json
+│   │   │   │   ├── _final_empty_folder_classification.json
+│   │   │   │   ├── _owned_icos_operational_audit.json
+│   │   │   │   ├── _python_surgical_normalization_report.json
+│   │   │   │   ├── _remaining_empty_dirs_after_cache_cleanup.txt
+│   │   │   │   ├── _remaining_empty_dirs_after_venv_relocation.txt
+│   │   │   │   ├── _runtime_connection_audit
+│   │   │   │   ├── _runtime_maturity
+│   │   │   │   ├── _surgical_runtime_classification.json
+│   │   │   │   ├── _surgical_runtime_developer_move_plan.json
+│   │   │   │   ├── _vendor_extraction_plan.json
+│   │   │   │   └── _vendor_quarantine_report.json
+│   │   │   ├── ICOS README.md
+│   │   │   ├── ICOS.xcodeproj
+│   │   │   │   ├── project.pbxproj
+│   │   │   │   ├── project.pbxproj.backup
+│   │   │   │   ├── project.runtime-backup.pbxproj
+│   │   │   │   ├── project.xcworkspace
+│   │   │   │   └── xcuserdata
+│   │   │   ├── ICOSTests
+│   │   │   │   └── ICOSTests.swift
+│   │   │   ├── ICOSUITests
+│   │   │   │   ├── ICOSUITests.swift
+│   │   │   │   └── ICOSUITestsLaunchTests.swift
+│   │   │   ├── Runtime
+│   │   │   │   ├── Frameworks
+│   │   │   │   ├── Models
+│   │   │   │   └── Source
+│   │   │   ├── SYSTEM_ANATOMY.md
+│   │   │   ├── build
+│   │   │   │   ├── Build
+│   │   │   │   ├── CompilationCache.noindex
+│   │   │   │   ├── Index.noindex
+│   │   │   │   ├── Logs
+│   │   │   │   ├── ModuleCache.noindex
+│   │   │   │   ├── SDKStatCaches.noindex
+│   │   │   │   └── info.plist
+│   │   │   └── default.profraw
+│   │   └── _surgical_architecture
+│   │       ├── 01_tree.txt
+│   │       ├── 02_empty_directories.txt
+│   │       ├── 03_empty_files.txt
+│   │       ├── 04_duplicate_number_prefixes.txt
+│   │       ├── 05_app_icos_nesting.txt
+│   │       ├── 06_surgical_diagnosis.json
+│   │       ├── 07_cache_directories.txt
+│   │       ├── 08_clean_source_architecture_audit.json
+│   │       ├── 09_safe_action_map.json
+│   │       ├── 10_cleanup_and_numbering_plan.json
+│   │       ├── 11_python_only_numbering_plan.json
+│   │       └── 12_empty_directory_cleanup_report.json
+│   ├── 02 - Architecture
+│   │   ├── 00 - Architecture README.md
+│   │   ├── CognitiveEngine
+│   │   ├── DeveloperConsole
+│   │   ├── ExecutionEngine
+│   │   ├── FileSystemControl
+│   │   └── Runtime
+│   ├── 03 - Runtime
+│   │   ├── 00 - Runtime README.md
+│   │   ├── MLXProvider
+│   │   └── ModelRuntimeProvider
+│   ├── 04 - Developer Console
+│   │   ├── 00 - Developer Console README.md
+│   │   ├── CommandPanel
+│   │   ├── ExecutionPanel
+│   │   ├── FileContextPanel
+│   │   ├── InputPanel
+│   │   ├── SystemStatePanel
+│   │   └── ValidationPanel
+│   ├── 05 - Cognitive Engine
+│   │   ├── 00 - Cognitive Engine README.md
+│   │   ├── ExecutionMemory
+│   │   ├── IntentClassifier
+│   │   ├── PromptPacketController
+│   │   ├── SourceRouter
+│   │   └── ValidationController
+│   ├── 06 - Native Runtime & Model Sovereignty
+│   │   ├── 00 - Index
+│   │   │   └── 01 - Native Runtime Sovereignty Index.md
+│   │   ├── 01 - Model Storage Ownership
+│   │   │   └── 01 - Model Storage Ownership Architecture.md
+│   │   ├── 02 - Ollama Deprecation & Migration
+│   │   │   └── 01 - Ollama Deprecation & Migration Standard.md
+│   │   ├── 03 - Model File Ownership & Storage
+│   │   │   └── 01 - Model File Ownership & Storage Architecture.md
+│   │   ├── 04 - Local Model API Gateway
+│   │   │   └── 01 - Local Model API Gateway Standard.md
+│   │   ├── 05 - Model Adoption & Import
+│   │   │   └── 01 - Model Adoption & Import Protocol.md
+│   │   ├── 06 - Runtime Provider Abstraction
+│   │   │   └── 01 - Runtime Provider Abstraction Standard.md
+│   │   └── 07 - Native LLM Runtime
+│   │       └── 01 - Native LLM Runtime Directive.md
+│   ├── 07 - Governance
+│   │   ├── 00 - Governance README.md
+│   │   ├── AgentBinding
+│   │   ├── BuildProtocols
+│   │   └── SafetyRules
+│   ├── 08 - Software Direction
+│   │   ├── 00 - Index & Control
+│   │   │   ├── 00 - Master Control
+│   │   │   │   └── 00 - Software Direction Master Control.md
+│   │   │   ├── 01 - Master Index
+│   │   │   │   └── 01 - Master Index.md
+│   │   │   ├── 02 - Directive Registry
+│   │   │   │   └── 01 - Directive Registry.md
+│   │   │   └── 03 - System Map
+│   │   │       └── 01 - System Map.md
+│   │   ├── 01 - Directives
+│   │   │   ├── 01 - Core Directives
+│   │   │   │   └── 01 - ICOS Core Directive.md
+│   │   │   ├── 02 - UX Directives
+│   │   │   │   └── 01 - UX Directive.md
+│   │   │   ├── 03 - Architecture Directives
+│   │   │   │   └── 01 - Architecture Directive.md
+│   │   │   ├── 04 - AI Behavior Directives
+│   │   │   │   └── 01 - AI Behavior Directive.md
+│   │   │   ├── 05 - Model Registry Directives
+│   │   │   │   └── 01 - Model Registry Directive.md
+│   │   │   ├── 06 - Permission & Privacy Directives
+│   │   │   │   └── 01 - Permission & Privacy Directive.md
+│   │   │   ├── 07 - Session & Memory Directives
+│   │   │   │   └── 01 - Session & Memory Directive.md
+│   │   │   ├── 08 - Profile & Voice Directives
+│   │   │   │   └── 01 - Profile & Voice Directive.md
+│   │   │   ├── 09 - Dashboard & Analytics Directives
+│   │   │   │   └── 01 - Dashboard & Analytics Directive.md
+│   │   │   ├── 10 - Search & Discovery Directives
+│   │   │   │   └── 01 - Search & Discovery Directive.md
+│   │   │   ├── 11 - Website Parity Directives
+│   │   │   │   └── 01 - Website Parity Directive.md
+│   │   │   └── 12 - Agent Build Engine Directives
+│   │   │       ├── 01 - ICOS Agent Build Engine Directive.md
+│   │   │       ├── 02 - ICOS Internal Agent Operating Doctrine.md
+│   │   │       ├── 03 - Agent Self-Sufficiency & Execution Protocol.md
+│   │   │       ├── 04 - Directive-to-Code Translation Standard.md
+│   │   │       ├── 05 - Runtime Agent Governance Model.md
+│   │   │       ├── 06 - Build Autonomy Boundary & Human Override Standard.md
+│   │   │       └── 07 - Agent Context Intake & Product Awareness Standard.md
+│   │   ├── 02 - Roadmap
+│   │   │   ├── 01 - Phases
+│   │   │   │   └── 01 - Product Phases.md
+│   │   │   ├── 02 - Milestones
+│   │   │   │   └── 01 - Milestones.md
+│   │   │   ├── 03 - Active Development
+│   │   │   │   └── 01 - Active Development.md
+│   │   │   ├── 04 - Implementation Sequence
+│   │   │   │   └── 01 - Implementation Sequence.md
+│   │   │   └── 05 - Product Gaps
+│   │   │       └── 01 - Product Gaps.md
+│   │   ├── 03 - System Philosophy
+│   │   │   ├── 01 - ICOS Definition
+│   │   │   │   └── 01 - ICOS Definition.md
+│   │   │   ├── 02 - Cognitive Model
+│   │   │   │   └── 01 - Cognitive Model.md
+│   │   │   ├── 03 - UX Principles
+│   │   │   │   └── 01 - UX Principles.md
+│   │   │   ├── 04 - Interaction Model
+│   │   │   │   └── 01 - Interaction Model.md
+│   │   │   ├── 05 - Product Identity
+│   │   │   │   └── 01 - Product Identity.md
+│   │   │   ├── 06 - Continuity Model
+│   │   │   │   └── 01 - Continuity Model.md
+│   │   │   └── 07 - Safety & Trust Model
+│   │   │       └── 01 - Safety & Trust Model.md
+│   │   ├── 04 - Change Log
+│   │   │   ├── 01 - Directional Changes
+│   │   │   │   └── 01 - Directional Changes.md
+│   │   │   ├── 02 - Structural Changes
+│   │   │   │   └── 01 - Structural Changes.md
+│   │   │   ├── 03 - Behavioral Changes
+│   │   │   │   └── 01 - Behavioral Changes.md
+│   │   │   └── 04 - Product Direction Changes
+│   │   │       └── 01 - Product Direction Changes.md
+│   │   ├── 05 - Workspace & File System Architecture
+│   │   │   ├── 01 - Workspace Model
+│   │   │   │   └── 01 - Workspace Model.md
+│   │   │   ├── 02 - Directory Binding System
+│   │   │   │   └── 01 - Directory Binding System.md
+│   │   │   ├── 03 - File Interaction Engine
+│   │   │   │   └── 01 - File Interaction Engine.md
+│   │   │   ├── 04 - Local & Cloud Sync Model
+│   │   │   │   └── 01 - Local & Cloud Sync Model.md
+│   │   │   ├── 05 - Agent Native File Awareness Model
+│   │   │   │   └── 01 - Agent Native File Awareness Model.md
+│   │   │   └── 06 - Workspace UI & Panels Model
+│   │   │       └── 01 - Workspace UI & Panels Model.md
+│   │   ├── 06 - Native Runtime & Model Sovereignty
+│   │   │   ├── 01 - Native LLM Runtime
+│   │   │   │   └── 01 - Native LLM Runtime Directive.md
+│   │   │   ├── 02 - Ollama Deprecation & Migration
+│   │   │   │   └── 01 - Ollama Deprecation & Migration Standard.md
+│   │   │   ├── 03 - Model File Ownership & Storage
+│   │   │   │   └── 01 - Model File Ownership & Storage Architecture.md
+│   │   │   ├── 04 - Local Model API Gateway
+│   │   │   │   └── 01 - Local Model API Gateway Standard.md
+│   │   │   ├── 05 - Model Adoption & Import
+│   │   │   │   └── 01 - Model Adoption & Import Protocol.md
+│   │   │   ├── 06 - Profile Model Creation
+│   │   │   │   └── 01 - Profile Model Creation Directive.md
+│   │   │   ├── 07 - Runtime Provider Abstraction
+│   │   │   │   └── 01 - Runtime Provider Abstraction Standard.md
+│   │   │   ├── 08 - Native Inference Engine Roadmap
+│   │   │   │   └── 01 - Native Inference Engine Roadmap.md
+│   │   │   ├── 09 - Agent Coding Conduct
+│   │   │   │   └── 01 - Agent Coding Conduct & Response Alignment Standard.md
+│   │   │   └── 10 - Directive-Aware Code Generation
+│   │   │       └── 01 - Directive-Aware Code Generation Protocol.md
+│   │   ├── 07 - Unified Intelligence Operating System
+│   │   │   ├── 01 - Core System Identity
+│   │   │   │   └── 01 - ICOS Unified Intelligence Operating System Directive.md
+│   │   │   ├── 02 - Capability Scope
+│   │   │   │   └── 01 - ICOS Capability Scope Architecture.md
+│   │   │   ├── 03 - Unified Workspace Interface
+│   │   │   │   └── 01 - ICOS Unified Workspace Interface Model.md
+│   │   │   ├── 04 - Multitasking & Parallel Execution
+│   │   │   │   └── 01 - ICOS Multitasking & Parallel Execution Model.md
+│   │   │   ├── 05 - Creation & Deployment Pipelines
+│   │   │   │   └── 01 - ICOS Creation & Deployment Pipeline Architecture.md
+│   │   │   ├── 06 - Skills, Plugins & Automations
+│   │   │   │   └── 01 - ICOS Skills, Plugins & Automations Directive.md
+│   │   │   ├── 07 - Computer Use & Device Control
+│   │   │   │   └── 01 - ICOS Computer Use & Device Control Standard.md
+│   │   │   └── 08 - User Education & Prompting Foundations
+│   │   │       └── 01 - ICOS User Education & Prompting Foundations Guide.md
+│   │   ├── 08 - Implementation Architecture
+│   │   │   ├── 01 - Runtime Architecture
+│   │   │   │   └── 01 - ICOS Native Runtime Architecture.md
+│   │   │   ├── 02 - API Gateway Architecture
+│   │   │   │   └── 01 - ICOS API Gateway Implementation Architecture.md
+│   │   │   ├── 03 - Model Registry Architecture
+│   │   │   │   └── 01 - ICOS Model Registry Implementation Architecture.md
+│   │   │   ├── 04 - Session System Architecture
+│   │   │   │   └── 01 - ICOS Session System Implementation Architecture.md
+│   │   │   ├── 05 - Permission System Architecture
+│   │   │   │   └── 01 - ICOS Permission System Implementation Architecture.md
+│   │   │   ├── 06 - Profile System Architecture
+│   │   │   │   └── 01 - ICOS Profile System Implementation Architecture.md
+│   │   │   └── 07 - Dashboard & Analytics Architecture
+│   │   │       └── 01 - ICOS Dashboard & Analytics Implementation Architecture.md
+│   │   └── 09 - Platform Builder Architecture
+│   ├── 09 - Platform Builders
+│   │   ├── 00 - Index
+│   │   │   ├── 00 - Platform Builders Index.md
+│   │   │   └── 01 - Master Index
+│   │   │       └── 01 - Platform Builders Master Index.md
+│   │   ├── 01 - Builders
+│   │   │   ├── 01 - Document Builder
+│   │   │   │   └── 00 - Index
+│   │   │   ├── 02 - Native Builder
+│   │   │   │   └── 00 - Index
+│   │   │   └── 03 - Website Builder
+│   │   │       └── 00 - Index
+│   │   ├── 02 - Core Engine
+│   │   │   ├── 01 - Execution Layer
+│   │   │   │   └── 00 - Index
+│   │   │   ├── 02 - Routing Layer
+│   │   │   │   └── 00 - Index
+│   │   │   └── 03 - Execution Kernel
+│   │   │       └── 00 - Index
+│   │   ├── 03 - Runtime Modules
+│   │   │   ├── 01 - Runtime Core
+│   │   │   │   └── 00 - Index
+│   │   │   ├── 02 - Execution Engine
+│   │   │   │   └── 00 - Index
+│   │   │   ├── 03 - Model Interface
+│   │   │   │   └── 00 - Index
+│   │   │   ├── 04 - Memory & Context Layer
+│   │   │   │   └── 00 - Index
+│   │   │   ├── 05 - Stream Processor
+│   │   │   │   └── 00 - Index
+│   │   │   ├── 06 - Resource Manager
+│   │   │   │   └── 00 - Index
+│   │   │   ├── 07 - Runtime Connector
+│   │   │   │   └── 00 - Index
+│   │   │   ├── 08 - Event System
+│   │   │   │   └── 00 - Index
+│   │   │   ├── 09 - Runtime Bridge
+│   │   │   │   └── 00 - Index
+│   │   │   ├── 10 - Session Bridge
+│   │   │   │   └── 00 - Index
+│   │   │   ├── 11 - Sandbox Isolation
+│   │   │   │   └── 00 - Index
+│   │   │   └── 12 - Stream Handler
+│   │   │       └── 00 - Index
+│   │   ├── 04 - API Layer
+│   │   │   ├── 01 - Gateway Core
+│   │   │   │   └── 00 - Index
+│   │   │   ├── 02 - Request Router
+│   │   │   │   └── 00 - Index
+│   │   │   ├── 03 - Response Engine
+│   │   │   │   └── 00 - Index
+│   │   │   ├── 04 - Auth & Permissions
+│   │   │   │   └── 00 - Index
+│   │   │   ├── 05 - Model Resolver
+│   │   │   │   └── 00 - Index
+│   │   │   ├── 06 - Session Bridge
+│   │   │   │   └── 00 - Index
+│   │   │   ├── 07 - Runtime Connector
+│   │   │   │   └── 00 - Index
+│   │   │   ├── 08 - Stream Handler
+│   │   │   │   └── 00 - Index
+│   │   │   └── 09 - API Registry
+│   │   │       └── 00 - Index
+│   │   ├── 09 - Extensions
+│   │   │   └── VSCode Bridge
+│   │   │       └── 00 - Index
+│   │   ├── 10 - Execution Wiring
+│   │   │   └── 00 - Index
+│   │   │       └── 01 - Runtime to API Wiring.md
+│   │   ├── 11 - Product Layer
+│   │   │   ├── 00 - Index
+│   │   │   ├── 01 - Documentation
+│   │   │   │   └── 01 - ICOS Product System.md
+│   │   │   └── Web App
+│   │   │       ├── 01 - Auth
+│   │   │       ├── 02 - Dashboard
+│   │   │       ├── 03 - Core
+│   │   │       ├── 04 - UI
+│   │   │       └── codebase
+│   │   ├── 12 - Model Layer
+│   │   │   ├── 00 - Index
+│   │   │   └── 01 - Documentation
+│   │   │       └── 01 - Model Interface System.md
+│   │   ├── 13 - Deployment Layer
+│   │   │   ├── 00 - Index
+│   │   │   └── 01 - Documentation
+│   │   │       └── 01 - Deployment System.md
+│   │   ├── 14 - Governance Layer
+│   │   │   ├── 00 - Index
+│   │   │   └── 01 - Documentation
+│   │   │       └── 01 - Governance System.md
+│   │   └── 15 - Execution Tasks
+│   │       ├── 00 - Index
+│   │       │   └── 01 - Task Registry.md
+│   │       └── 01 - Tasks
+│   │           ├── 02 - Task 0001.md
+│   │           ├── 03 - Task 0002.md
+│   │           ├── 04 - Task 0003.md
+│   │           ├── 05 - Task 0004.md
+│   │           ├── 06 - Task 0005.md
+│   │           └── 07 - Task 0006.md
+│   ├── README.md
+│   └── _architecture_audit
+│       ├── 01_full_directory_tree.txt
+│       ├── 02_full_file_inventory.txt
+│       ├── 03_runtime_model_scan.txt
+│       ├── 04_empty_directories.txt
+│       └── 05_production_architecture_audit.json
+├── project_map.txt
+└── venv
+    ├── bin
+    │   ├── Activate.ps1
+    │   ├── activate
+    │   ├── activate.csh
+    │   ├── activate.fish
+    │   ├── normalizer
+    │   ├── pip
+    │   ├── pip3
+    │   ├── pip3.14
+    │   ├── python -> python3.14
+    │   ├── python3 -> python3.14
+    │   ├── python3.14 -> /opt/homebrew/opt/python@3.14/bin/python3.14
+    │   └── 𝜋thon -> python3.14
+    ├── include
+    ├── lib
+    │   └── python3.14
+    │       └── site-packages
+    │           ├── 81d243bd2c585b0f4821__mypyc.cpython-314-darwin.so
+    │           ├── certifi
+    │           ├── certifi-2026.4.22.dist-info
+    │           ├── charset_normalizer
+    │           ├── charset_normalizer-3.4.7.dist-info
+    │           ├── idna
+    │           ├── idna-3.13.dist-info
+    │           ├── pip
+    │           ├── pip-26.1.dist-info
+    │           ├── requests
+    │           ├── requests-2.33.1.dist-info
+    │           ├── urllib3
+    │           └── urllib3-2.6.3.dist-info
+    └── pyvenv.cfg
+
+276 directories, 353 files

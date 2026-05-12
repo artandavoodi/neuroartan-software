@@ -1,0 +1,18 @@
+[
+  {
+    "timestamp": 1778176457.219039,
+    "provider": "OpenAI",
+    "input": "I want ICOS to evolve into a sovereign cognition system.",
+    "output": "ICOS architecture roadmap generated.",
+    "emotion": "neutral",
+    "training_candidate": true
+  },
+  {
+    "timestamp": 1778177578.166362,
+    "dataset_id": "c00ca787-3aeb-4792-9cb0-acd293987258",
+    "training_ready": true,
+    "semantic_learning": true,
+    "emotional_learning": true,
+    "alignment_learning": true
+  }
+]

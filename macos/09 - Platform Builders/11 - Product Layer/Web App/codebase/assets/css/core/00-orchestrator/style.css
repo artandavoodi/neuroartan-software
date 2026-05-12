@@ -1,0 +1,15 @@
+/*****************************************/
+/* ICOS WEB APP — STYLE ROOT             */
+/*****************************************/
+
+/* CORE SYSTEM */
+@import "../../core/tokens.css";
+@import "../../core/base.css";
+
+/* COMPONENTS */
+@import "../../components/components.css";
+
+/* LAYERS */
+@import "../../layers/auth.css";
+@import "../../layers/dashboard.css";
+@import "../../layers/ui.css";

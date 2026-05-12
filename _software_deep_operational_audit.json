@@ -1,0 +1,1492 @@
+{
+  "numbering_violations": [
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/idna/intranges.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/idna/package_data.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/idna/compat.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/idna/idnadata.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/idna/core.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/idna/codec.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/idna/uts46data.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/charset_normalizer/md.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/charset_normalizer/version.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/charset_normalizer/legacy.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/charset_normalizer/models.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/charset_normalizer/api.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/charset_normalizer/utils.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/charset_normalizer/constant.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/charset_normalizer/__main__.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/charset_normalizer/cd.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/requests/cookies.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/requests/auth.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/requests/sessions.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/requests/hooks.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/requests/compat.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/requests/models.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/requests/certs.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/requests/status_codes.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/requests/packages.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/requests/__version__.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/requests/api.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/requests/_internal_utils.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/requests/utils.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/requests/exceptions.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/requests/structures.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/requests/help.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/requests/adapters.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/__pip-runner__.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/__main__.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/certifi/core.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/certifi/__main__.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/filepost.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/fields.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/_version.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/_base_connection.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/poolmanager.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/response.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/connection.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/_collections.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/exceptions.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/_request_methods.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/connectionpool.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/util/ssltransport.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/util/util.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/util/proxy.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/util/wait.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/util/request.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/util/timeout.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/util/response.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/util/ssl_.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/util/retry.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/util/url.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/util/connection.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/util/ssl_match_hostname.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/contrib/socks.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/contrib/pyopenssl.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/http2/connection.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/http2/probe.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/contrib/emscripten/fetch.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/contrib/emscripten/request.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/contrib/emscripten/response.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/contrib/emscripten/connection.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/configuration.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/pyproject.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/cache.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/exceptions.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/main.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/self_outdated_check.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/packaging/tags.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/packaging/_musllinux.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/packaging/dependency_groups.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/packaging/metadata.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/packaging/version.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/packaging/direct_url.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/packaging/pylock.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/packaging/_parser.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/packaging/utils.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/packaging/requirements.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/packaging/_structures.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/packaging/markers.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/packaging/errors.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/packaging/_manylinux.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/packaging/_tokenizer.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/packaging/specifiers.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/packaging/_elffile.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/truststore/_openssl.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/truststore/_api.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/truststore/_macos.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/truststore/_ssl_constants.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/truststore/_windows.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/msgpack/exceptions.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/msgpack/fallback.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/msgpack/ext.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/pygments/modeline.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/pygments/console.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/pygments/scanner.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/pygments/formatter.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/pygments/token.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/pygments/style.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/pygments/util.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/pygments/sphinxext.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/pygments/unistring.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/pygments/lexer.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/pygments/regexopt.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/pygments/plugin.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/pygments/filter.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/pygments/__main__.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/distlib/compat.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/distlib/util.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/distlib/resources.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/distlib/scripts.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/distro/distro.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/distro/__main__.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/cachecontrol/serialize.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/cachecontrol/wrapper.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/cachecontrol/controller.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/cachecontrol/filewrapper.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/cachecontrol/heuristics.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/cachecontrol/adapter.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/cachecontrol/cache.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/cachecontrol/_cmd.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/idna/intranges.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/idna/package_data.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/idna/compat.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/idna/idnadata.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/idna/core.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/idna/codec.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/idna/uts46data.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/requests/cookies.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/requests/auth.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/requests/sessions.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/requests/hooks.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/requests/compat.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/requests/models.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/requests/certs.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/requests/status_codes.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/requests/packages.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/requests/__version__.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/requests/api.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/requests/_internal_utils.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/requests/utils.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/requests/exceptions.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/requests/structures.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/requests/help.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/requests/adapters.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/tomli/_types.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/tomli/_parser.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/tomli/_re.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/certifi/core.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/certifi/__main__.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_impl.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/themes.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/screen.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/logging.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/measure.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/tree.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/console.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/live_render.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/_emoji_codes.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/box.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/color.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/_timer.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/_fileno.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/align.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/theme.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/style.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/default_styles.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/_wrap.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/_log_render.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/emoji.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/layout.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/containers.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/_emoji_replace.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/traceback.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/region.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/protocol.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/_loop.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/control.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/filesize.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/_null_file.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/_palettes.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/_pick.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/file_proxy.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/palette.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/markup.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/_ratio.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/repr.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/constrain.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/pretty.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/diagnose.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/columns.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/rule.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/_inspect.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/pager.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/text.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/highlighter.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/_spinners.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/terminal_theme.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/bar.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/live.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/syntax.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/table.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/_export_format.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/progress_bar.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/errors.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/prompt.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/segment.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/ansi.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/progress.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/_stack.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/_windows.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/_cell_widths.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/cells.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/_win32_console.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/panel.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/styled.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/spinner.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/_windows_renderer.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/json.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/padding.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/__main__.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/scope.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/_extension.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/status.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/abc.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/jupyter.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/color_triplet.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/tomli_w/_writer.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/filepost.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/fields.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/_version.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/_base_connection.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/poolmanager.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/response.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/connection.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/_collections.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/exceptions.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/_request_methods.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/connectionpool.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/resolvelib/providers.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/resolvelib/structs.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/resolvelib/reporters.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/platformdirs/macos.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/platformdirs/unix.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/platformdirs/version.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/platformdirs/api.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/platformdirs/android.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/platformdirs/windows.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/platformdirs/__main__.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/resolvelib/resolvers/abstract.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/resolvelib/resolvers/exceptions.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/resolvelib/resolvers/criterion.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/resolvelib/resolvers/resolution.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/util/ssltransport.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/util/util.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/util/proxy.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/util/wait.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/util/request.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/util/timeout.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/util/response.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/util/ssl_.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/util/retry.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/util/url.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/util/connection.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/util/ssl_match_hostname.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/contrib/socks.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/contrib/pyopenssl.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/http2/connection.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/http2/probe.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/contrib/emscripten/fetch.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/contrib/emscripten/request.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/contrib/emscripten/response.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/contrib/emscripten/connection.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/cachecontrol/caches/file_cache.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/cachecontrol/caches/redis_cache.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/pygments/lexers/python.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/pygments/lexers/_mapping.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/pygments/formatters/_mapping.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/pygments/styles/_mapping.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/packaging/licenses/_spdx.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/network/auth.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/network/xmlrpc.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/network/download.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/network/session.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/network/cache.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/network/utils.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/network/lazy_wheel.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/utils/logging.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/utils/misc.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/utils/egg_link.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/utils/compat.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/utils/deprecation.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/utils/pylock.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/utils/subprocess.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/utils/filesystem.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/utils/direct_url_helpers.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/utils/_jaraco_text.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/utils/temp_dir.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/utils/retry.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/utils/appdirs.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/utils/packaging.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/utils/entrypoints.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/utils/filetypes.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/utils/compatibility_tags.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/utils/datetime.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/utils/urls.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/utils/hashes.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/utils/virtualenv.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/utils/_log.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/utils/glibc.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/utils/wheel.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/utils/unpacking.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/models/link.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/models/selection_prefs.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/models/release_control.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/models/direct_url.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/models/index.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/models/target_python.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/models/search_scope.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/models/candidate.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/models/format_control.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/models/installation_report.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/models/scheme.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/models/wheel.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/cli/cmdoptions.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/cli/index_command.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/cli/status_codes.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/cli/parser.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/cli/command_context.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/cli/spinners.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/cli/autocompletion.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/cli/base_command.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/cli/main_parser.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/cli/progress_bars.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/cli/main.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/cli/req_command.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/operations/check.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/operations/freeze.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/operations/prepare.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/req/req_install.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/req/req_set.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/req/req_uninstall.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/req/req_dependency_group.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/req/pep723.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/req/req_file.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/req/constructors.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/resolution/base.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/vcs/git.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/vcs/mercurial.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/vcs/bazaar.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/vcs/versioncontrol.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/vcs/subversion.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/locations/_sysconfig.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/locations/_distutils.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/locations/base.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/index/collector.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/index/sources.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/index/package_finder.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/commands/configuration.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/commands/show.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/commands/list.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/commands/check.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/commands/index.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/commands/completion.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/commands/download.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/commands/cache.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/commands/hash.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/commands/inspect.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/commands/debug.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/commands/uninstall.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/commands/lock.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/commands/freeze.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/commands/search.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/commands/install.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/commands/help.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/commands/wheel.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/metadata/_json.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/metadata/pkg_resources.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/metadata/base.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/distributions/sdist.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/distributions/installed.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/distributions/base.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/distributions/wheel.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/metadata/importlib/_dists.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/metadata/importlib/_compat.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/metadata/importlib/_envs.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/resolution/legacy/resolver.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/resolution/resolvelib/provider.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/resolution/resolvelib/found_candidates.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/resolution/resolvelib/reporter.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/resolution/resolvelib/factory.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/resolution/resolvelib/requirements.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/resolution/resolvelib/resolver.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/resolution/resolvelib/candidates.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/resolution/resolvelib/base.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/operations/install/wheel.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/charset_normalizer/cli/__main__.py",
+    "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/migrated_00_memory_manager.py",
+    "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/migrated_00_patch_planner.py",
+    "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/migrated_00___init__.py",
+    "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/migrated_00_cache.py",
+    "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/migrated_00__context_manager.py",
+    "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/migrated_00_retry.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/convert_lora_to_gguf.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/convert_hf_to_gguf.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/convert_llama_ggml_to_gguf.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/convert_hf_to_gguf_update.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tests/test-tokenizer-0.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tests/test-tokenizer-random.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/json_schema_to_grammar.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/pydantic_models_to_grammar_examples.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/json_schema_pydantic_example.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/server_embd.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/convert_legacy_llama.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/pydantic_models_to_grammar.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/regex_to_grammar.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/scripts/fetch_server_test_models.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/scripts/server-bench.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/scripts/server-test-model.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/scripts/gen-unicode-data.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/scripts/server-test-function-call.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/scripts/tool_bench.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/scripts/get_chat_template.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/scripts/sync_vendor.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/scripts/compare-llama-bench.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/scripts/verify-checksum-models.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/scripts/server-test-parallel-tc.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/scripts/server-test-structured.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/scripts/compare-logprobs.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/scripts/create_ops_docs.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/ggml/src/ggml-virtgpu/regenerate_remoting.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/ggml/src/ggml-opencl/kernels/embed_kernel.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/ggml/src/ggml-cuda/template-instances/generate_cu_files.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/ggml/src/ggml-webgpu/wgsl-shaders/embed_wgsl.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/scripts/jinja/jinja-tester.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/scripts/snapdragon/ggml-hexagon-profile.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/scripts/hip/gcn-cdna-vgpr-check.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/scripts/snapdragon/qdc/run_qdc_jobs.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/scripts/snapdragon/qdc/tests/run_backend_ops_posix.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/scripts/snapdragon/qdc/tests/conftest.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/scripts/snapdragon/qdc/tests/utils.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/scripts/snapdragon/qdc/tests/run_bench_tests_posix.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/model-conversion/scripts/causal/compare-logits.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/model-conversion/scripts/causal/run-org-model.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/model-conversion/scripts/causal/run-casual-gen-embeddings-org.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/model-conversion/scripts/embedding/run-original-model.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/model-conversion/scripts/utils/check-nmse.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/model-conversion/scripts/utils/hf-add-model-to-collection.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/model-conversion/scripts/utils/hf-create-model.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/model-conversion/scripts/utils/inspect-org-model.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/model-conversion/scripts/utils/common.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/model-conversion/scripts/utils/hf-create-collection.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/model-conversion/scripts/utils/hf-upload-gguf-model.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/model-conversion/scripts/utils/semantic_check.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/model-conversion/scripts/utils/compare_tokens.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/gguf-py/gguf/gguf_writer.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/gguf-py/gguf/gguf.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/gguf-py/gguf/vocab.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/gguf-py/gguf/metadata.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/gguf-py/gguf/gguf_reader.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/gguf-py/gguf/tensor_mapping.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/gguf-py/gguf/utility.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/gguf-py/gguf/constants.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/gguf-py/gguf/lazy.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/gguf-py/gguf/quants.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/gguf-py/tests/test_metadata.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/gguf-py/tests/test_quants.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/gguf-py/examples/reader.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/gguf-py/examples/writer.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/gguf-py/gguf/scripts/gguf_convert_endian.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/gguf-py/gguf/scripts/gguf_new_metadata.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/gguf-py/gguf/scripts/gguf_editor_gui.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/gguf-py/gguf/scripts/gguf_dump.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/gguf-py/gguf/scripts/gguf_hash.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/gguf-py/gguf/scripts/gguf_set_metadata.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/tts/tts-outetts.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/tts/convert_pt_to_hf.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/server/bench/bench.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/server/tests/conftest.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/server/tests/utils.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/server/tests/unit/test_infill.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/server/tests/unit/test_basic.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/server/tests/unit/test_security.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/server/tests/unit/test_sleep.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/server/tests/unit/test_router.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/server/tests/unit/test_ctx_shift.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/server/tests/unit/test_speculative.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/server/tests/unit/test_compat_oai_responses.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/server/tests/unit/test_tool_call.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/server/tests/unit/test_vision_api.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/server/tests/unit/test_rerank.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/server/tests/unit/test_embedding.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/server/tests/unit/test_ignore_eos.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/server/tests/unit/test_chat_completion.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/server/tests/unit/test_tokenize.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/server/tests/unit/test_kv_keep_only_active.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/server/tests/unit/test_proxy.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/server/tests/unit/test_slot_save.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/server/tests/unit/test_completion.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/server/tests/unit/test_compat_anthropic.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/server/tests/unit/test_template.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/server/tests/unit/test_lora.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/mtmd/legacy-models/llava_surgery.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/mtmd/legacy-models/glmedge-surgery.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/mtmd/legacy-models/llava_surgery_v2.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/mtmd/legacy-models/minicpmv-surgery.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/mtmd/legacy-models/glmedge-convert-image-encoder-to-gguf.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/mtmd/legacy-models/convert_image_encoder_to_gguf.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/mtmd/legacy-models/minicpmv-convert-image-encoder-to-gguf.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/mtmd/tests/test-deepseek-ocr.py"
+  ],
+  "duplicate_python_names": {
+    "intranges.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/idna/intranges.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/idna/intranges.py"
+    ],
+    "package_data.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/idna/package_data.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/idna/package_data.py"
+    ],
+    "compat.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/idna/compat.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/requests/compat.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/distlib/compat.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/idna/compat.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/requests/compat.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/utils/compat.py"
+    ],
+    "idnadata.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/idna/idnadata.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/idna/idnadata.py"
+    ],
+    "__init__.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/idna/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/charset_normalizer/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/requests/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/certifi/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/util/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/contrib/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/http2/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/contrib/emscripten/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/packaging/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/truststore/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/msgpack/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/pygments/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/distlib/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/distro/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/cachecontrol/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/idna/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/requests/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/tomli/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/certifi/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/tomli_w/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/pkg_resources/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/resolvelib/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/platformdirs/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/resolvelib/resolvers/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/util/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/contrib/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/http2/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/contrib/emscripten/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/cachecontrol/caches/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/pygments/filters/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/pygments/lexers/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/pygments/formatters/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/pygments/styles/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/packaging/licenses/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/network/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/utils/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/models/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/cli/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/operations/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/req/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/resolution/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/vcs/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/locations/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/index/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/commands/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/metadata/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/distributions/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/metadata/importlib/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/resolution/legacy/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/resolution/resolvelib/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/operations/install/__init__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/charset_normalizer/cli/__init__.py",
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00___init__.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/model-conversion/scripts/utils/__init__.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/gguf-py/gguf/__init__.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/gguf-py/tests/__init__.py"
+    ],
+    "core.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/idna/core.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/certifi/core.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/idna/core.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/certifi/core.py"
+    ],
+    "codec.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/idna/codec.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/idna/codec.py"
+    ],
+    "uts46data.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/idna/uts46data.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/idna/uts46data.py"
+    ],
+    "version.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/charset_normalizer/version.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/packaging/version.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/platformdirs/version.py"
+    ],
+    "models.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/charset_normalizer/models.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/requests/models.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/requests/models.py"
+    ],
+    "api.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/charset_normalizer/api.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/requests/api.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/requests/api.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/platformdirs/api.py"
+    ],
+    "utils.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/charset_normalizer/utils.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/requests/utils.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/packaging/utils.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/requests/utils.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/network/utils.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/74_utils.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/scripts/snapdragon/qdc/tests/utils.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/server/tests/utils.py"
+    ],
+    "__main__.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/charset_normalizer/__main__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/__main__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/certifi/__main__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/pygments/__main__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/distro/__main__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/certifi/__main__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/__main__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/platformdirs/__main__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/charset_normalizer/cli/__main__.py"
+    ],
+    "cookies.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/requests/cookies.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/requests/cookies.py"
+    ],
+    "auth.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/requests/auth.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/requests/auth.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/network/auth.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/63_auth.py"
+    ],
+    "sessions.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/requests/sessions.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/requests/sessions.py"
+    ],
+    "hooks.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/requests/hooks.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/requests/hooks.py"
+    ],
+    "certs.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/requests/certs.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/requests/certs.py"
+    ],
+    "status_codes.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/requests/status_codes.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/requests/status_codes.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/cli/status_codes.py"
+    ],
+    "packages.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/requests/packages.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/requests/packages.py"
+    ],
+    "__version__.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/requests/__version__.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/requests/__version__.py"
+    ],
+    "_internal_utils.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/requests/_internal_utils.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/requests/_internal_utils.py"
+    ],
+    "exceptions.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/requests/exceptions.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/exceptions.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/exceptions.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/msgpack/exceptions.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/requests/exceptions.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/exceptions.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/resolvelib/resolvers/exceptions.py"
+    ],
+    "structures.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/requests/structures.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/requests/structures.py"
+    ],
+    "help.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/requests/help.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/requests/help.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/commands/help.py"
+    ],
+    "adapters.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/requests/adapters.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/requests/adapters.py"
+    ],
+    "filepost.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/filepost.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/filepost.py"
+    ],
+    "fields.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/fields.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/fields.py"
+    ],
+    "_version.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/_version.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/_version.py"
+    ],
+    "_base_connection.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/_base_connection.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/_base_connection.py"
+    ],
+    "poolmanager.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/poolmanager.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/poolmanager.py"
+    ],
+    "response.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/response.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/util/response.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/contrib/emscripten/response.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/response.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/util/response.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/contrib/emscripten/response.py"
+    ],
+    "connection.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/connection.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/util/connection.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/http2/connection.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/contrib/emscripten/connection.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/connection.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/util/connection.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/http2/connection.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/contrib/emscripten/connection.py"
+    ],
+    "_collections.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/_collections.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/_collections.py"
+    ],
+    "_request_methods.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/_request_methods.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/_request_methods.py"
+    ],
+    "connectionpool.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/connectionpool.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/connectionpool.py"
+    ],
+    "ssltransport.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/util/ssltransport.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/util/ssltransport.py"
+    ],
+    "util.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/util/util.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/pygments/util.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/distlib/util.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/util/util.py"
+    ],
+    "proxy.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/util/proxy.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/util/proxy.py"
+    ],
+    "wait.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/util/wait.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/util/wait.py"
+    ],
+    "request.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/util/request.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/contrib/emscripten/request.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/util/request.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/contrib/emscripten/request.py"
+    ],
+    "timeout.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/util/timeout.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/util/timeout.py"
+    ],
+    "ssl_.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/util/ssl_.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/util/ssl_.py"
+    ],
+    "retry.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/util/retry.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/util/retry.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/utils/retry.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Engines/10_retry.py"
+    ],
+    "url.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/util/url.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/util/url.py"
+    ],
+    "ssl_match_hostname.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/util/ssl_match_hostname.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/util/ssl_match_hostname.py"
+    ],
+    "socks.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/contrib/socks.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/contrib/socks.py"
+    ],
+    "pyopenssl.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/contrib/pyopenssl.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/contrib/pyopenssl.py"
+    ],
+    "probe.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/http2/probe.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/http2/probe.py"
+    ],
+    "fetch.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/contrib/emscripten/fetch.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/contrib/emscripten/fetch.py"
+    ],
+    "configuration.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/configuration.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/commands/configuration.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/30_configuration.py"
+    ],
+    "cache.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/cache.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/cachecontrol/cache.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/network/cache.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/commands/cache.py",
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00_cache.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/Engines/04_cache.py"
+    ],
+    "main.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/main.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/cli/main.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/68_main.py"
+    ],
+    "dependency_groups.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/packaging/dependency_groups.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/37_dependency_groups.py"
+    ],
+    "metadata.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/packaging/metadata.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/gguf-py/gguf/metadata.py"
+    ],
+    "direct_url.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/packaging/direct_url.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/models/direct_url.py"
+    ],
+    "pylock.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/packaging/pylock.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/utils/pylock.py"
+    ],
+    "_parser.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/packaging/_parser.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/tomli/_parser.py"
+    ],
+    "requirements.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/packaging/requirements.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/resolution/resolvelib/requirements.py"
+    ],
+    "errors.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/packaging/errors.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/errors.py"
+    ],
+    "_windows.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/truststore/_windows.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/_windows.py"
+    ],
+    "console.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/pygments/console.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/console.py"
+    ],
+    "style.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/pygments/style.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/style.py"
+    ],
+    "resources.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/distlib/resources.py",
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00_resources.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Engines/09_resources.py"
+    ],
+    "serialize.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/cachecontrol/serialize.py",
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00_serialize.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/Engines/31_serialize.py"
+    ],
+    "wrapper.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/cachecontrol/wrapper.py",
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00_wrapper.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/Engines/34_wrapper.py"
+    ],
+    "controller.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/cachecontrol/controller.py",
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00_controller.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/Engines/11_controller.py"
+    ],
+    "filewrapper.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/cachecontrol/filewrapper.py",
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00_filewrapper.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/Engines/16_filewrapper.py"
+    ],
+    "heuristics.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/cachecontrol/heuristics.py",
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00_heuristics.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/Engines/17_heuristics.py"
+    ],
+    "adapter.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/cachecontrol/adapter.py",
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00_adapter.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/Engines/00_adapter.py"
+    ],
+    "_cmd.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/cachecontrol/_cmd.py",
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00__cmd.py"
+    ],
+    "logging.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/logging.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/utils/logging.py"
+    ],
+    "providers.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/resolvelib/providers.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/02_providers.py"
+    ],
+    "macos.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/platformdirs/macos.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/62_macos.py"
+    ],
+    "file_cache.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/cachecontrol/caches/file_cache.py",
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00_file_cache.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/Engines/15_file_cache.py"
+    ],
+    "redis_cache.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/cachecontrol/caches/redis_cache.py",
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00_redis_cache.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/Engines/26_redis_cache.py"
+    ],
+    "_mapping.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/pygments/lexers/_mapping.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/pygments/formatters/_mapping.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/pygments/styles/_mapping.py"
+    ],
+    "download.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/network/download.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/commands/download.py"
+    ],
+    "wheel.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/utils/wheel.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/models/wheel.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/commands/wheel.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/distributions/wheel.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/operations/install/wheel.py"
+    ],
+    "index.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/models/index.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/commands/index.py"
+    ],
+    "index_command.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/cli/index_command.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/52_index_command.py"
+    ],
+    "command_context.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/cli/command_context.py",
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00_command_context.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/Engines/07_command_context.py"
+    ],
+    "check.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/operations/check.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/commands/check.py"
+    ],
+    "freeze.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/operations/freeze.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/commands/freeze.py"
+    ],
+    "base.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/resolution/base.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/locations/base.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/metadata/base.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/distributions/base.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/resolution/resolvelib/base.py"
+    ],
+    "inspect.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/commands/inspect.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/53_inspect.py"
+    ],
+    "debug.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/commands/debug.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/35_debug.py"
+    ],
+    "install.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/commands/install.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/54_install.py"
+    ],
+    "resolver.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/resolution/legacy/resolver.py",
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/resolution/resolvelib/resolver.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/70_resolver.py"
+    ],
+    "provider.py": [
+      "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/resolution/resolvelib/provider.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/01_provider.py"
+    ],
+    "authority_weighted_doctrine_retrieval.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/10_authority_weighted_doctrine_retrieval.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/Engines/02_authority_weighted_doctrine_retrieval.py"
+    ],
+    "contextual_emotional_weighting_engine.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/05_contextual_emotional_weighting_engine.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/04_contextual_emotional_weighting_engine.py"
+    ],
+    "provider_registry.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00_provider_registry.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Providers/Engines/02_provider_registry.py"
+    ],
+    "model_quality_reasoning.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00_model_quality_reasoning.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/12_model_quality_reasoning.py"
+    ],
+    "xcode_project_state_store.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/01_xcode_project_state_store.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/Engines/36_xcode_project_state_store.py"
+    ],
+    "dependency_resource_scheduler.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/20_dependency_resource_scheduler.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Engines/02_dependency_resource_scheduler.py"
+    ],
+    "semantic_code_understanding_engine.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/02_semantic_code_understanding_engine.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/23_semantic_code_understanding_engine.py"
+    ],
+    "governance_escalation_engine.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/17_governance_escalation_engine.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Governance/Engines/03_governance_escalation_engine.py"
+    ],
+    "retry_engine.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00_retry_engine.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Engines/11_retry_engine.py"
+    ],
+    "multi_agent_orchestration_engine.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/04_multi_agent_orchestration_engine.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/13_multi_agent_orchestration_engine.py"
+    ],
+    "xcode_project_scanner.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/02_xcode_project_scanner.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Engines/23_xcode_project_scanner.py"
+    ],
+    "language_server_intelligence.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00_language_server_intelligence.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/66_language_server_intelligence.py"
+    ],
+    "memory_manager.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00_memory_manager.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/Engines/22_memory_manager.py"
+    ],
+    "icos_mcp_server.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00_icos_mcp_server.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Engines/05_icos_mcp_server.py"
+    ],
+    "execution_policy_intelligence.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00_execution_policy_intelligence.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Governance/Engines/02_execution_policy_intelligence.py"
+    ],
+    "xcode_cli_response_renderer.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/02_xcode_cli_response_renderer.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Engines/01_xcode_cli_response_renderer.py"
+    ],
+    "persistent_constitutional_memory_engine.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/08_persistent_constitutional_memory_engine.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/Engines/24_persistent_constitutional_memory_engine.py"
+    ],
+    "test_contextvars.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00_test_contextvars.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/Engines/33_test_contextvars.py"
+    ],
+    "document_cognition.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/11_document_cognition.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/06_document_cognition.py"
+    ],
+    "verification_loop.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00_verification_loop.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Governance/Engines/05_verification_loop.py"
+    ],
+    "icos_core_engine.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/01_icos_core_engine.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Engines/04_icos_core_engine.py"
+    ],
+    "agent_registry_bridge.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/18_agent_registry_bridge.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/00_agent_registry_bridge.py"
+    ],
+    "dependency_runtime_planner.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/08_dependency_runtime_planner.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/05_dependency_runtime_planner.py"
+    ],
+    "runtime_adaptive_learning.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00_runtime_adaptive_learning.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/20_runtime_adaptive_learning.py"
+    ],
+    "verifier.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00_verifier.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Governance/Engines/06_verifier.py"
+    ],
+    "long_horizon_planning_engine.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/03_long_horizon_planning_engine.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/11_long_horizon_planning_engine.py"
+    ],
+    "autonomous_repair_engine.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/01_autonomous_repair_engine.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Engines/01_autonomous_repair_engine.py"
+    ],
+    "xcode_target_membership_inspector.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/08_xcode_target_membership_inspector.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Engines/25_xcode_target_membership_inspector.py"
+    ],
+    "xcode_scheme_resolver.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/03_xcode_scheme_resolver.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Engines/24_xcode_scheme_resolver.py"
+    ],
+    "recursive_self_optimization_engine.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/06_recursive_self_optimization_engine.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/17_recursive_self_optimization_engine.py"
+    ],
+    "persistent_identity_graph_engine.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00_persistent_identity_graph_engine.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/Engines/25_persistent_identity_graph_engine.py"
+    ],
+    "runtime_state_store.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/01_runtime_state_store.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/Engines/30_runtime_state_store.py"
+    ],
+    "failure_learning.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/09_failure_learning.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/08_failure_learning.py"
+    ],
+    "task_continuity_ledger.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/19_task_continuity_ledger.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Engines/19_task_continuity_ledger.py"
+    ],
+    "runtime_learning.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00_runtime_learning.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/21_runtime_learning.py"
+    ],
+    "streaming_reasoning_engine.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00_streaming_reasoning_engine.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/25_streaming_reasoning_engine.py"
+    ],
+    "long_horizon_planner.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00_long_horizon_planner.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/10_long_horizon_planner.py"
+    ],
+    "xcode_runtime_verification_state.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/03_xcode_runtime_verification_state.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/Engines/37_xcode_runtime_verification_state.py"
+    ],
+    "xcodeproj_parser.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/02_xcodeproj_parser.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Engines/07_xcodeproj_parser.py"
+    ],
+    "pbxproj_ast_mutation_engine.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/06_pbxproj_ast_mutation_engine.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Engines/08_pbxproj_ast_mutation_engine.py"
+    ],
+    "doctrine_retrieval_engine.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/05_doctrine_retrieval_engine.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/Engines/13_doctrine_retrieval_engine.py"
+    ],
+    "institutional_task_planner.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/06_institutional_task_planner.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/09_institutional_task_planner.py"
+    ],
+    "document_cognition_engine.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/02_document_cognition_engine.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/07_document_cognition_engine.py"
+    ],
+    "resource_exclusion_planner.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/04_resource_exclusion_planner.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/19_resource_exclusion_planner.py"
+    ],
+    "constitutional_memory_graph.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/01_constitutional_memory_graph.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/Engines/08_constitutional_memory_graph.py"
+    ],
+    "runtime_learning_loop.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/02_runtime_learning_loop.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/22_runtime_learning_loop.py"
+    ],
+    "icos_execution_context.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/03_icos_execution_context.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/Engines/18_icos_execution_context.py"
+    ],
+    "repository_semantic_memory_graph.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00_repository_semantic_memory_graph.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/Engines/27_repository_semantic_memory_graph.py"
+    ],
+    "shared_multi_agent_memory.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/10_shared_multi_agent_memory.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/24_shared_multi_agent_memory.py"
+    ],
+    "adaptive_memory_weighting_engine.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/01_adaptive_memory_weighting_engine.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/Engines/01_adaptive_memory_weighting_engine.py"
+    ],
+    "xcode_cli_commands.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/01_xcode_cli_commands.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Engines/00_xcode_cli_commands.py"
+    ],
+    "autonomous_behavioral_reasoning.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00_autonomous_behavioral_reasoning.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/02_autonomous_behavioral_reasoning.py"
+    ],
+    "unified_execution_cognition_loop.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00_unified_execution_cognition_loop.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/26_unified_execution_cognition_loop.py"
+    ],
+    "document_id_governance.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/12_document_id_governance.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Governance/Engines/01_document_id_governance.py"
+    ],
+    "lifecycle_state_engine.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/15_lifecycle_state_engine.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/Engines/21_lifecycle_state_engine.py"
+    ],
+    "mcp_tool_router.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/01_mcp_tool_router.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Providers/Engines/01_mcp_tool_router.py"
+    ],
+    "stateful_patch_audit.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/02_stateful_patch_audit.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/Engines/32_stateful_patch_audit.py"
+    ],
+    "xcode_test_runner.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/01_xcode_test_runner.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Engines/06_xcode_test_runner.py"
+    ],
+    "distributed_context_compression.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00_distributed_context_compression.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/Engines/12_distributed_context_compression.py"
+    ],
+    "runtime_event_log.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/03_runtime_event_log.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/Engines/28_runtime_event_log.py"
+    ],
+    "js_ts_patch_engine.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00_js_ts_patch_engine.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Engines/06_js_ts_patch_engine.py"
+    ],
+    "cognitive_orchestration_engine.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00_cognitive_orchestration_engine.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/03_cognitive_orchestration_engine.py"
+    ],
+    "runtime_session_store.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/02_runtime_session_store.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/Engines/29_runtime_session_store.py"
+    ],
+    "repository_reasoning_memory.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00_repository_reasoning_memory.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/18_repository_reasoning_memory.py"
+    ],
+    "tool_permission_governance.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00_tool_permission_governance.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Governance/Engines/04_tool_permission_governance.py"
+    ],
+    "placement_cognition.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/13_placement_cognition.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/16_placement_cognition.py"
+    ],
+    "patch_planner.py": [
+      "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/00_patch_planner.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Engines/14_patch_planner.py"
+    ],
+    "conftest.py": [
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/scripts/snapdragon/qdc/tests/conftest.py",
+      "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/server/tests/conftest.py"
+    ]
+  },
+  "empty_files": [
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/requests-2.33.1.dist-info/REQUESTED",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/idna/py.typed",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/charset_normalizer/py.typed",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/certifi/py.typed",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip-26.1.dist-info/REQUESTED",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/urllib3/contrib/__init__.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/packaging/py.typed",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/truststore/py.typed",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/distro/py.typed",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/cachecontrol/py.typed",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/idna/py.typed",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/certifi/py.typed",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/py.typed",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/rich/py.typed",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/resolvelib/py.typed",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/platformdirs/py.typed",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_vendor/urllib3/contrib/__init__.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/utils/__init__.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/operations/__init__.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/resolution/__init__.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/resolution/legacy/__init__.py",
+    "/Users/artan/Neuroartan-software/venv/lib/python3.14/site-packages/pip/_internal/resolution/resolvelib/__init__.py",
+    "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/01_xcode_project_state_store.py",
+    "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/02_xcode_cli_response_renderer.py",
+    "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/01_icos_core_engine.py",
+    "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/01_runtime_state_store.py",
+    "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/03_xcode_runtime_verification_state.py",
+    "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/02_xcodeproj_parser.py",
+    "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/03_icos_execution_context.py",
+    "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/01_xcode_cli_commands.py",
+    "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/01_xcode_test_runner.py",
+    "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/03_runtime_event_log.py",
+    "/Users/artan/Neuroartan-software/_architecture_scan/numbering_backup/02_runtime_session_store.py",
+    "/Users/artan/Neuroartan-software/macos/05 - Cognitive Engine/00 - Cognitive Engine README.md",
+    "/Users/artan/Neuroartan-software/macos/02 - Architecture/00 - Architecture README.md",
+    "/Users/artan/Neuroartan-software/macos/04 - Developer Console/00 - Developer Console README.md",
+    "/Users/artan/Neuroartan-software/macos/09 - Platform Builders/00 - Platform Builders README.md",
+    "/Users/artan/Neuroartan-software/macos/07 - Governance/00 - Governance README.md",
+    "/Users/artan/Neuroartan-software/macos/09 - Platform Builders/03 - Runtime Modules/08 - Event System/01 - Event System.md",
+    "/Users/artan/Neuroartan-software/macos/09 - Platform Builders/03 - Runtime Modules/04 - Memory & Context Layer/01 - Memory Context Layer.md",
+    "/Users/artan/Neuroartan-software/macos/09 - Platform Builders/03 - Runtime Modules/05 - Stream Processor/01 - Stream Processor.md",
+    "/Users/artan/Neuroartan-software/macos/09 - Platform Builders/03 - Runtime Modules/06 - Resource Manager/01 - Resource Manager.md",
+    "/Users/artan/Neuroartan-software/macos/09 - Platform Builders/03 - Runtime Modules/10 - Session Bridge/01 - Session Core/01 - Session Core.md",
+    "/Users/artan/Neuroartan-software/macos/09 - Platform Builders/03 - Runtime Modules/12 - Stream Handler/01 - Stream Core/01 - Stream Core.md",
+    "/Users/artan/Neuroartan-software/macos/09 - Platform Builders/03 - Runtime Modules/07 - Runtime Connector/01 - Runtime Connector Core/01 - Runtime Connector Core.md",
+    "/Users/artan/Neuroartan-software/macos/09 - Platform Builders/04 - API Layer/04 - Auth & Permissions/01 - Auth & Permissions.md",
+    "/Users/artan/Neuroartan-software/macos/09 - Platform Builders/04 - API Layer/08 - Stream Handler/01 - Stream Handler.md",
+    "/Users/artan/Neuroartan-software/macos/09 - Platform Builders/04 - API Layer/02 - Request Router/01 - Request Router.md",
+    "/Users/artan/Neuroartan-software/macos/09 - Platform Builders/04 - API Layer/09 - API Registry/01 - API Registry.md",
+    "/Users/artan/Neuroartan-software/macos/09 - Platform Builders/04 - API Layer/05 - Model Resolver/01 - Model Resolver.md",
+    "/Users/artan/Neuroartan-software/macos/09 - Platform Builders/04 - API Layer/06 - Session Bridge/01 - Session Bridge.md",
+    "/Users/artan/Neuroartan-software/macos/06 - Native Runtime & Model Sovereignty/06 - Runtime Provider Abstraction/01 - Runtime Provider Abstraction Standard.md",
+    "/Users/artan/Neuroartan-software/macos/06 - Native Runtime & Model Sovereignty/07 - Native LLM Runtime/01 - Native LLM Runtime Directive.md",
+    "/Users/artan/Neuroartan-software/macos/06 - Native Runtime & Model Sovereignty/05 - Model Adoption & Import/01 - Model Adoption & Import Protocol.md",
+    "/Users/artan/Neuroartan-software/macos/06 - Native Runtime & Model Sovereignty/03 - Model File Ownership & Storage/01 - Model File Ownership & Storage Architecture.md",
+    "/Users/artan/Neuroartan-software/macos/06 - Native Runtime & Model Sovereignty/04 - Local Model API Gateway/01 - Local Model API Gateway Standard.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/default.profraw",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ICOS.entitlements",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/KnowledgeBase/DoctrineIndex.swift",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/KnowledgeBase/DoctrineDocument.swift",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Persistence/ICOSDatabase.swift",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Persistence/LocalStorageController.swift",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/CognitiveEngine/DoctrineInterpreter.swift",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/CognitiveEngine/DoctrineContextBuilder.swift",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/CognitiveEngine/ResponseShaper.swift",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Xcode/migrated_WebsiteBridge.swift",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Engines/00_swift_file_owner_resolver.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Engines/00_xcode_cli_commands.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Engines/04_xcode_adapter.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Engines/06_xcode_test_runner.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Engines/03_swiftui_runtime_verifier.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Engines/07_xcodeproj_parser.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Engines/00_swift_project_adapter.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Engines/00_mcp_response_adapter.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Engines/01_xcode_cli_response_renderer.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Continue/01_continuebridge_to_sovereign_runtime_migration_plan.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Continue/Docs/00_continue_interface_architecture.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/CognitiveEngine/Governance/ResponseGovernanceFilter.swift",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/CognitiveEngine/Governance/ExecutionPolicyEngine.swift",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Docs/01_runtime_sovereign_architecture_map.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Engines/04_icos_core_engine.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Engines/17_simulator_runtime_verifier.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Engines/00_advanced_runtime_adapter.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Engines/13_runtime_dispatch_table.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/24 - Safety & Privacy Layer/08 - Safety Orchestration Core/Safety Orchestration Doctrine.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/24 - Safety & Privacy Layer/08 - Safety Orchestration Core/Global Safety State Model Doctrine.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/24 - Safety & Privacy Layer/08 - Safety Orchestration Core/Risk Aggregation Doctrine.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/24 - Safety & Privacy Layer/05 - Legal Compliance Layer/Restricted Advice Boundary Doctrine.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/24 - Safety & Privacy Layer/05 - Legal Compliance Layer/Liability Prevention Doctrine.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/24 - Safety & Privacy Layer/07 - System Integrity FailSafe/Constraint Precedence Doctrine.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/24 - Safety & Privacy Layer/07 - System Integrity FailSafe/Fail Safe Execution Doctrine.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/24 - Safety & Privacy Layer/06 - User Interaction Safety/Safe Completion Constraint Doctrine.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/24 - Safety & Privacy Layer/04 - Ethical Behavior Control/Neutrality Non Influence Doctrine.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/24 - Safety & Privacy Layer/04 - Ethical Behavior Control/Truthfulness Doctrine.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/System/Settings/Fragments/CloudProviderSection.swift",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/System/Settings/Fragments/LocalModelSection.swift",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/System/Settings/Fragments/RuntimeModeSection.swift",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/System/Settings/Controls/RuntimeModePicker.swift",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/System/Settings/Views/RuntimeSettingsView.swift",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Providers/Apple/ModelRuntimeProvider.swift",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/Apple/ConversationMemory.swift",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/Types/py.typed",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/Engines/29_runtime_session_store.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/Engines/37_xcode_runtime_verification_state.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/Engines/36_xcode_project_state_store.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/Engines/30_runtime_state_store.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/Engines/18_icos_execution_context.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/Engines/28_runtime_event_log.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Core/ModelFoundry/Docs/00_model_foundry_architecture.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Core/ModelFoundry/Safety/model_training_safety_policy.json",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Core/Brain/Memory/brain_memory_store.json",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Core/Brain/Docs/00_brain_architecture.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Core/Brain/Adapters/interface_adapter_registry.json",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Core/Brain/Engines/11_axiom_enforcement_engine.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Core/Brain/Engines/04_learning_loop.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Core/Brain/Engines/10_psyche_runtime_engine.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Core/Brain/Engines/03_context_injection_engine.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Core/Brain/Engines/05_response_synthesis_engine.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Core/Brain/Engines/02_model_output_auditor.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Core/Brain/Engines/13_interface_router.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Core/Brain/Engines/07_llm_boundary_awareness_engine.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Core/Brain/Engines/01_identity_guard.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Core/Brain/Engines/08_model_learning_observer.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Core/Brain/Engines/12_brain_state_controller.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Core/Brain/Engines/09_brain_memory_registry.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DeveloperConsole/Fragments/OutputView.swift",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DeveloperConsole/Fragments/InputField.swift",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DeveloperConsole/Indicators/ThinkingLayerView.swift",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DeveloperConsole/Indicators/ProcessingLayerView.swift",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DeveloperConsole/Indicators/CognitiveLayerIndicator.swift",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DeveloperConsole/Indicators/SearchingLayerView.swift",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DesignSystem/Controls/ICOSTextInput.swift",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DesignSystem/Controls/ICOSToggle.swift",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DesignSystem/Components/ICOSDivider.swift",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DesignSystem/Components/ICOSButton.swift",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DesignSystem/Components/ICOSPanel.swift",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Developer/Diagnostics/_sovereign_scan/07_compile_verification.txt",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/model-conversion/scripts/utils/__init__.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/gguf-py/gguf/py.typed",
+    "/Users/artan/Neuroartan-software/macos/08 - Software Direction/01 - Directives/02 - UX Directives/01 - UX Directive.md",
+    "/Users/artan/Neuroartan-software/macos/08 - Software Direction/01 - Directives/03 - Architecture Directives/01 - Architecture Directive.md",
+    "/Users/artan/Neuroartan-software/macos/08 - Software Direction/01 - Directives/04 - AI Behavior Directives/01 - AI Behavior Directive.md",
+    "/Users/artan/Neuroartan-software/macos/08 - Software Direction/04 - Change Log/02 - Structural Changes/01 - Structural Changes.md",
+    "/Users/artan/Neuroartan-software/macos/08 - Software Direction/04 - Change Log/03 - Behavioral Changes/01 - Behavioral Changes.md",
+    "/Users/artan/Neuroartan-software/macos/08 - Software Direction/02 - Roadmap/01 - Phases/01 - Product Phases.md",
+    "/Users/artan/Neuroartan-software/macos/08 - Software Direction/03 - System Philosophy/02 - Cognitive Model/01 - Cognitive Model.md",
+    "/Users/artan/Neuroartan-software/macos/08 - Software Direction/03 - System Philosophy/01 - ICOS Definition/01 - ICOS Definition.md",
+    "/Users/artan/Neuroartan-software/macos/08 - Software Direction/03 - System Philosophy/04 - Interaction Model/01 - Interaction Model.md",
+    "/Users/artan/Neuroartan-software/macos/08 - Software Direction/03 - System Philosophy/03 - UX Principles/01 - UX Principles.md"
+  ],
+  "readmes": [
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/ci/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/gguf-py/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/grammars/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/convert-llama2c-to-ggml/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/gguf-hash/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/idle/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/eval-callback/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/parallel/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/lookahead/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/passkey/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/model-conversion/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/simple-cmake-pkg/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/batched/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/training/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/embedding/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/lookup/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/diffusion/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/batched.swift/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/simple/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/llama.swiftui/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/retrieval/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/sycl/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/simple-chat/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/speculative/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/speculative-simple/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/deprecation-warning/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/examples/debug/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/common/jinja/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/docs/backend/snapdragon/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/quantize/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/batched-bench/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/cvector-generator/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/mtmd/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/export-lora/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/completion/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/server/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/cli/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/results/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/imatrix/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/perplexity/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/gguf-split/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/fit-params/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/llama-bench/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/tts/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/rpc/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/server/bench/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/server/tests/README.md",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Source/llama.cpp/tools/server/webui/README.md"
+  ],
+  "python_compile_errors": []
+}

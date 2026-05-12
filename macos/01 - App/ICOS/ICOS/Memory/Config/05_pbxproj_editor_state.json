@@ -1,0 +1,79 @@
+{
+  "status": "PBXPROJ_RESOURCE_PHASE_PLAN_READY",
+  "executed_at": "2026-05-06T22:48:36",
+  "project_path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS.xcodeproj",
+  "pbxproj_path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS.xcodeproj/project.pbxproj",
+  "backup_created": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS.xcodeproj/project.pbxproj.backup",
+  "resource_exclusion_count": 7,
+  "resource_exclusions": [
+    {
+      "resource_path": "/Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Products/Debug/ICOS.app/Contents/Resources/wheel.py",
+      "recommended_operation": "remove_from_copy_bundle_resources",
+      "reason": "Python runtime vendor artifact should not be copied into app bundle resources."
+    },
+    {
+      "resource_path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/commands/wheel.py",
+      "recommended_operation": "remove_from_copy_bundle_resources",
+      "reason": "Python runtime vendor artifact should not be copied into app bundle resources."
+    },
+    {
+      "resource_path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/distributions/wheel.py",
+      "recommended_operation": "remove_from_copy_bundle_resources",
+      "reason": "Python runtime vendor artifact should not be copied into app bundle resources."
+    },
+    {
+      "resource_path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/models/wheel.py",
+      "recommended_operation": "remove_from_copy_bundle_resources",
+      "reason": "Python runtime vendor artifact should not be copied into app bundle resources."
+    },
+    {
+      "resource_path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/operations/build/wheel.py",
+      "recommended_operation": "remove_from_copy_bundle_resources",
+      "reason": "Python runtime vendor artifact should not be copied into app bundle resources."
+    },
+    {
+      "resource_path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/operations/install/wheel.py",
+      "recommended_operation": "remove_from_copy_bundle_resources",
+      "reason": "Python runtime vendor artifact should not be copied into app bundle resources."
+    },
+    {
+      "resource_path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/utils/wheel.py",
+      "recommended_operation": "remove_from_copy_bundle_resources",
+      "reason": "Python runtime vendor artifact should not be copied into app bundle resources."
+    }
+  ],
+  "patch_preview": [
+    {
+      "operation": "REMOVE_RESOURCE_REFERENCE",
+      "target": "/Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Products/Debug/ICOS.app/Contents/Resources/wheel.py"
+    },
+    {
+      "operation": "REMOVE_RESOURCE_REFERENCE",
+      "target": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/commands/wheel.py"
+    },
+    {
+      "operation": "REMOVE_RESOURCE_REFERENCE",
+      "target": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/distributions/wheel.py"
+    },
+    {
+      "operation": "REMOVE_RESOURCE_REFERENCE",
+      "target": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/models/wheel.py"
+    },
+    {
+      "operation": "REMOVE_RESOURCE_REFERENCE",
+      "target": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/operations/build/wheel.py"
+    },
+    {
+      "operation": "REMOVE_RESOURCE_REFERENCE",
+      "target": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/operations/install/wheel.py"
+    },
+    {
+      "operation": "REMOVE_RESOURCE_REFERENCE",
+      "target": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/utils/wheel.py"
+    }
+  ],
+  "autonomous_mutation_enabled": false,
+  "mutation_block_reason": "Safe pbxproj AST mutation engine not yet injected.",
+  "required_next_layer": "pbxproj_ast_mutation_engine",
+  "institutional_observation": "ICOS is now capable of preparing safe Xcode resource-phase repair plans."
+}

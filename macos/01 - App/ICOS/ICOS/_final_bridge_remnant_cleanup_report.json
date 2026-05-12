@@ -1,0 +1,19 @@
+{
+  "removed_bridge_remnants": [
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Legacy/runtime_duplicates/interfaces",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Legacy/runtime_duplicates/models",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/MCP",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/advanced/runtime_screenshots",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/core",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/icos_intelligence",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/institutional",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/intelligence",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/interfaces/cli",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/quality",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/adapters/xcode",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/router",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/state",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/UX/11 - Swift UI Bridge"
+  ],
+  "errors": []
+}

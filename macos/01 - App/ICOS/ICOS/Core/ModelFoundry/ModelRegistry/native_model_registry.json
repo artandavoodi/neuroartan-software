@@ -1,0 +1,11 @@
+[
+  {
+    "model_id": "a368cd1f-f221-4a9e-bdec-2aeb0c9f2657",
+    "timestamp": 1778177929.948776,
+    "model_family": "icos-core",
+    "purpose": "general cognition",
+    "parameter_target": "7B-13B",
+    "status": "roadmap_defined",
+    "future_frontier_candidate": false
+  }
+]

@@ -1,0 +1,1522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE288F812FA02B0000A5C1D6 /* Runtime/Frameworks/libcrypto.3.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE288FA12FA02B0000A5C1D6 /* Runtime/Frameworks/libcrypto.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE288F842FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-base.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE288FA42FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-base.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE288F872FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-blas.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE288FA72FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-blas.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE288F8A2FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-cpu.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE288FAA2FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-cpu.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE288F8D2FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-metal.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE288FAD2FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-metal.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE288F902FA02B0000A5C1D6 /* Runtime/Frameworks/libggml.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE288FB02FA02B0000A5C1D6 /* Runtime/Frameworks/libggml.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE288F952FA02B0000A5C1D6 /* Runtime/Frameworks/libllama.0.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE288FB52FA02B0000A5C1D6 /* Runtime/Frameworks/libllama.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE288F962FA02B0000A5C1D6 /* Runtime/Frameworks/libllama.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE288FB62FA02B0000A5C1D6 /* Runtime/Frameworks/libllama.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE288F9A2FA02B0000A5C1D6 /* Runtime/Frameworks/libssl.3.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE288FBA2FA02B0000A5C1D6 /* Runtime/Frameworks/libssl.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE288FC12FA02C0000A5C1D6 /* Runtime/Frameworks/libggml.0.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE288FD12FA02C0000A5C1D6 /* Runtime/Frameworks/libggml.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE288FC22FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-base.0.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE288FD22FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-base.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE288FC32FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-cpu.0.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE288FD32FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-cpu.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE288FC42FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-metal.0.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE288FD42FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-metal.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE288FC52FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-blas.0.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE288FD52FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-blas.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FB7BD638B0EAC13EEBF7C47D /* ICOS/CognitiveEngine/Doctrine/DoctrineCompiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BD638B0EAC13EEBF7C47D /* ICOS/CognitiveEngine/Doctrine/DoctrineCompiler.swift */; };
+		FB8DDB11BC2A6C4E4BBEE358 /* ICOS/CognitiveEngine/Doctrine/DoctrineLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8DDB11BC2A6C4E4BBEE358 /* ICOS/CognitiveEngine/Doctrine/DoctrineLoader.swift */; };
+		FB345E9D25DDA77CC2C3E04D /* ICOS/CognitiveEngine/Doctrine/DoctrineRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA345E9D25DDA77CC2C3E04D /* ICOS/CognitiveEngine/Doctrine/DoctrineRegistry.swift */; };
+		FB7A830A12531D7D9357BCD9 /* ICOS/CognitiveEngine/DoctrineContextBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7A830A12531D7D9357BCD9 /* ICOS/CognitiveEngine/DoctrineContextBuilder.swift */; };
+		FB1700A6BF5194147FA4BCEB /* ICOS/CognitiveEngine/DoctrineInterpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1700A6BF5194147FA4BCEB /* ICOS/CognitiveEngine/DoctrineInterpreter.swift */; };
+		FBB5081D734E9B4B5255D823 /* ICOS/CognitiveEngine/Governance/ExecutionPolicyEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5081D734E9B4B5255D823 /* ICOS/CognitiveEngine/Governance/ExecutionPolicyEngine.swift */; };
+		FB7897C02E4D6C609965350D /* ICOS/CognitiveEngine/Governance/ResponseGovernanceFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7897C02E4D6C609965350D /* ICOS/CognitiveEngine/Governance/ResponseGovernanceFilter.swift */; };
+		FB27B96E8CAC15F504ABD0BE /* ICOS/CognitiveEngine/InstructionOrchestrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27B96E8CAC15F504ABD0BE /* ICOS/CognitiveEngine/InstructionOrchestrator.swift */; };
+		FB4F91E43EA93173A06D1D70 /* ICOS/CognitiveEngine/ResponseShaper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4F91E43EA93173A06D1D70 /* ICOS/CognitiveEngine/ResponseShaper.swift */; };
+		FB303A57284F6D51E32B214B /* ICOS/CognitiveEngine/SystemPromptBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA303A57284F6D51E32B214B /* ICOS/CognitiveEngine/SystemPromptBuilder.swift */; };
+		FBDCD9F8F5D8993A22AC5CAF /* ICOS/CognitiveEngine/Tools/WebSearchTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADCD9F8F5D8993A22AC5CAF /* ICOS/CognitiveEngine/Tools/WebSearchTool.swift */; };
+		FB547380B3080817363F1344 /* ICOS/Control/ICOSExecutionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA547380B3080817363F1344 /* ICOS/Control/ICOSExecutionController.swift */; };
+		FB89BC2FCB4AD9D48BE3930B /* ICOS/Core/ICOSCoreRuntime.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89BC2FCB4AD9D48BE3930B /* ICOS/Core/ICOSCoreRuntime.swift */; };
+		FB3F0BD58E6160F868EA6873 /* ICOS/DesignSystem/Components/Controls/ICOSPickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F0BD58E6160F868EA6873 /* ICOS/DesignSystem/Components/Controls/ICOSPickerRow.swift */; };
+		FBAEE65780FF9A8EE42A3539 /* ICOS/DesignSystem/Components/Controls/ICOSSliderRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAEE65780FF9A8EE42A3539 /* ICOS/DesignSystem/Components/Controls/ICOSSliderRow.swift */; };
+		FB0DFC39C7A072B8C17184FC /* ICOS/DesignSystem/Components/Controls/ICOSToggleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0DFC39C7A072B8C17184FC /* ICOS/DesignSystem/Components/Controls/ICOSToggleRow.swift */; };
+		FB6036CA5DC78DDD6A81069B /* ICOS/DesignSystem/Components/ICOSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6036CA5DC78DDD6A81069B /* ICOS/DesignSystem/Components/ICOSButton.swift */; };
+		FBF4DB5F7EDEB0B798C0FA7B /* ICOS/DesignSystem/Components/ICOSDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF4DB5F7EDEB0B798C0FA7B /* ICOS/DesignSystem/Components/ICOSDivider.swift */; };
+		FBFF2726C6DA8BDEB9CDE34D /* ICOS/DesignSystem/Components/ICOSPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF2726C6DA8BDEB9CDE34D /* ICOS/DesignSystem/Components/ICOSPanel.swift */; };
+		FBBEFF52EC760A338C1ED31C /* ICOS/DesignSystem/Controls/ICOSControlStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABEFF52EC760A338C1ED31C /* ICOS/DesignSystem/Controls/ICOSControlStyles.swift */; };
+		FBBBBB255FC4C6602D33A497 /* ICOS/DesignSystem/Controls/ICOSTextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABBBB255FC4C6602D33A497 /* ICOS/DesignSystem/Controls/ICOSTextInput.swift */; };
+		FBEA3B5096AB69FA4051C453 /* ICOS/DesignSystem/Controls/ICOSToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA3B5096AB69FA4051C453 /* ICOS/DesignSystem/Controls/ICOSToggle.swift */; };
+		FBB58F8D59680391FAA9C1B4 /* ICOS/DesignSystem/Icons/ICOSIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB58F8D59680391FAA9C1B4 /* ICOS/DesignSystem/Icons/ICOSIcon.swift */; };
+		FBA6CE9AA5381790DB7D6C69 /* ICOS/DesignSystem/Icons/IconRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6CE9AA5381790DB7D6C69 /* ICOS/DesignSystem/Icons/IconRegistry.swift */; };
+		FB3AC2F793EAC70F174F6DA1 /* ICOS/DesignSystem/Icons/SVGImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3AC2F793EAC70F174F6DA1 /* ICOS/DesignSystem/Icons/SVGImageView.swift */; };
+		FBB0F00B0CBB38379BD922EF /* ICOS/DesignSystem/Icons/SVGKitRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0F00B0CBB38379BD922EF /* ICOS/DesignSystem/Icons/SVGKitRenderer.swift */; };
+		FB26AFB613B4AAEE3CA647E7 /* ICOS/DesignSystem/Tokens/ICOSColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA26AFB613B4AAEE3CA647E7 /* ICOS/DesignSystem/Tokens/ICOSColors.swift */; };
+		FB8D15C4CD71C769B8610045 /* ICOS/DesignSystem/Tokens/ICOSFontRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D15C4CD71C769B8610045 /* ICOS/DesignSystem/Tokens/ICOSFontRegistry.swift */; };
+		FBB2FB072A2F398348697CDE /* ICOS/DesignSystem/Tokens/ICOSMaterials.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2FB072A2F398348697CDE /* ICOS/DesignSystem/Tokens/ICOSMaterials.swift */; };
+		FB1C17A5CF0D8CB083CEDA97 /* ICOS/DesignSystem/Tokens/ICOSMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C17A5CF0D8CB083CEDA97 /* ICOS/DesignSystem/Tokens/ICOSMotion.swift */; };
+		FBE7BD42D996E995C4D12785 /* ICOS/DesignSystem/Tokens/ICOSSoundTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE7BD42D996E995C4D12785 /* ICOS/DesignSystem/Tokens/ICOSSoundTokens.swift */; };
+		FBF9D848FDD5B23386BA5320 /* ICOS/DesignSystem/Tokens/ICOSSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF9D848FDD5B23386BA5320 /* ICOS/DesignSystem/Tokens/ICOSSpacing.swift */; };
+		FBCF3396C0B274E0BAFD4357 /* ICOS/DesignSystem/Tokens/ICOSThemeColorSeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF3396C0B274E0BAFD4357 /* ICOS/DesignSystem/Tokens/ICOSThemeColorSeed.swift */; };
+		FB96910C91EE5395FE4BF2F8 /* ICOS/DesignSystem/Tokens/ICOSTypography.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA96910C91EE5395FE4BF2F8 /* ICOS/DesignSystem/Tokens/ICOSTypography.swift */; };
+		FB2544BC1B2692898D3E8CEF /* ICOS/Developer/Engines/DeveloperVoiceTranscriptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2544BC1B2692898D3E8CEF /* ICOS/Developer/Engines/DeveloperVoiceTranscriptionService.swift */; };
+		FBF99A87671059F82562269A /* ICOS/Developer/Engines/DeveloperWorkspaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF99A87671059F82562269A /* ICOS/Developer/Engines/DeveloperWorkspaceService.swift */; };
+		FB23D51951375F134F883D12 /* ICOS/Developer/Models/DeveloperModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23D51951375F134F883D12 /* ICOS/Developer/Models/DeveloperModels.swift */; };
+		FBEFF8DA7212EA391724A57D /* ICOS/Developer/Registries/DeveloperToolRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFF8DA7212EA391724A57D /* ICOS/Developer/Registries/DeveloperToolRegistry.swift */; };
+		FB2CCD96110B9B537323D1FD /* ICOS/Developer/Views/DeveloperBuildDeployView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2CCD96110B9B537323D1FD /* ICOS/Developer/Views/DeveloperBuildDeployView.swift */; };
+		FBF00E55D6F99A065275A38D /* ICOS/Developer/Views/DeveloperIntegrationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF00E55D6F99A065275A38D /* ICOS/Developer/Views/DeveloperIntegrationsView.swift */; };
+		FB88877A3074F7E3DEDA22DF /* ICOS/Developer/Views/DeveloperPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA88877A3074F7E3DEDA22DF /* ICOS/Developer/Views/DeveloperPlanView.swift */; };
+		FB55E6E340F95EAF8498B0AC /* ICOS/Developer/Views/DeveloperReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55E6E340F95EAF8498B0AC /* ICOS/Developer/Views/DeveloperReviewView.swift */; };
+		FBE73464C9E9D37D2332D89E /* ICOS/Developer/Views/DeveloperTerminalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE73464C9E9D37D2332D89E /* ICOS/Developer/Views/DeveloperTerminalView.swift */; };
+		FB87BF76A6AFAA2EDAC57CAA /* ICOS/DeveloperConsole/ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA87BF76A6AFAA2EDAC57CAA /* ICOS/DeveloperConsole/ContentView.swift */; };
+		FB920662DD247245105707BF /* ICOS/DeveloperConsole/Fragments/InputBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA920662DD247245105707BF /* ICOS/DeveloperConsole/Fragments/InputBarView.swift */; };
+		FB08211BDAD5847285B2F4AC /* ICOS/DeveloperConsole/Fragments/InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA08211BDAD5847285B2F4AC /* ICOS/DeveloperConsole/Fragments/InputField.swift */; };
+		FB7FA6A502DDF4C4D005AAA4 /* ICOS/DeveloperConsole/Fragments/MessageBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7FA6A502DDF4C4D005AAA4 /* ICOS/DeveloperConsole/Fragments/MessageBubbleView.swift */; };
+		FB70BAFF2A502F23E5CA8A5B /* ICOS/DeveloperConsole/Fragments/OutputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA70BAFF2A502F23E5CA8A5B /* ICOS/DeveloperConsole/Fragments/OutputView.swift */; };
+		FB30BC063C3863A05921996D /* ICOS/DeveloperConsole/Fragments/ThinkingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30BC063C3863A05921996D /* ICOS/DeveloperConsole/Fragments/ThinkingIndicatorView.swift */; };
+		FB0034E55FBB80E750937E47 /* ICOS/DeveloperConsole/Fragments/TypingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0034E55FBB80E750937E47 /* ICOS/DeveloperConsole/Fragments/TypingIndicatorView.swift */; };
+		FBCDE661F1E4520622EA5DB5 /* ICOS/DeveloperConsole/Indicators/CognitiveLayerIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACDE661F1E4520622EA5DB5 /* ICOS/DeveloperConsole/Indicators/CognitiveLayerIndicator.swift */; };
+		FB5B85DC40B326822221DE63 /* ICOS/DeveloperConsole/Indicators/ProcessingLayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5B85DC40B326822221DE63 /* ICOS/DeveloperConsole/Indicators/ProcessingLayerView.swift */; };
+		FBD019FBDBC41AD55AF39E1C /* ICOS/DeveloperConsole/Indicators/SearchingLayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD019FBDBC41AD55AF39E1C /* ICOS/DeveloperConsole/Indicators/SearchingLayerView.swift */; };
+		FBE3C3D31ED69BDEA8FFB18D /* ICOS/DeveloperConsole/Indicators/ThinkingLayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE3C3D31ED69BDEA8FFB18D /* ICOS/DeveloperConsole/Indicators/ThinkingLayerView.swift */; };
+		FB6422F2DA07483A64ACABA1 /* ICOS/DeveloperConsole/Models/DeveloperExtensionAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6422F2DA07483A64ACABA1 /* ICOS/DeveloperConsole/Models/DeveloperExtensionAction.swift */; };
+		FB776FDAAFBF25824B79A9EB /* ICOS/DeveloperConsole/Panels/InputPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA776FDAAFBF25824B79A9EB /* ICOS/DeveloperConsole/Panels/InputPanel.swift */; };
+		FBC65C4754B37A646421EDE6 /* ICOS/DeveloperConsole/Panels/OutputPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC65C4754B37A646421EDE6 /* ICOS/DeveloperConsole/Panels/OutputPanel.swift */; };
+		FBB8E84F2EDBC92E26841D67 /* ICOS/DeveloperConsole/Shell/Composer/DeveloperComposerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB8E84F2EDBC92E26841D67 /* ICOS/DeveloperConsole/Shell/Composer/DeveloperComposerInput.swift */; };
+		FB608D7047639FF3CFA61E09 /* ICOS/DeveloperConsole/Shell/Composer/DeveloperComposerShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA608D7047639FF3CFA61E09 /* ICOS/DeveloperConsole/Shell/Composer/DeveloperComposerShell.swift */; };
+		FBD196481AFE09A08E343037 /* ICOS/DeveloperConsole/Shell/Composer/DeveloperComposerToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD196481AFE09A08E343037 /* ICOS/DeveloperConsole/Shell/Composer/DeveloperComposerToolbar.swift */; };
+		FB4E34A62505ADB7455298EE /* ICOS/DeveloperConsole/Shell/Inspector/DeveloperInspectorShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4E34A62505ADB7455298EE /* ICOS/DeveloperConsole/Shell/Inspector/DeveloperInspectorShell.swift */; };
+		FB7F0F3DFA47F76941AC3987 /* ICOS/DeveloperConsole/Shell/Layout/DeveloperConsoleCenterCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F0F3DFA47F76941AC3987 /* ICOS/DeveloperConsole/Shell/Layout/DeveloperConsoleCenterCanvas.swift */; };
+		FB7D8C1A0EC515112911E250 /* ICOS/DeveloperConsole/Shell/Layout/DeveloperConsoleShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D8C1A0EC515112911E250 /* ICOS/DeveloperConsole/Shell/Layout/DeveloperConsoleShell.swift */; };
+		FB584787D1D2778DB987B8EE /* ICOS/DeveloperConsole/Shell/Sidebar/DeveloperWorkspaceSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA584787D1D2778DB987B8EE /* ICOS/DeveloperConsole/Shell/Sidebar/DeveloperWorkspaceSidebar.swift */; };
+		FB1F9A5A0E5EC7DFD0675F12 /* ICOS/DeveloperConsole/Views/ConsoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1F9A5A0E5EC7DFD0675F12 /* ICOS/DeveloperConsole/Views/ConsoleView.swift */; };
+		FB2E972D03E6F989AB3A8C0D /* ICOS/DeveloperConsole/Views/DeveloperConsoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2E972D03E6F989AB3A8C0D /* ICOS/DeveloperConsole/Views/DeveloperConsoleView.swift */; };
+		FBB2E38E5DBE2D98FD752DFD /* ICOS/Engine/ContextBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2E38E5DBE2D98FD752DFD /* ICOS/Engine/ContextBuilder.swift */; };
+		FB341C10BDB8243C64ED1630 /* ICOS/Engine/ExecutionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA341C10BDB8243C64ED1630 /* ICOS/Engine/ExecutionRouter.swift */; };
+		FB5C8A6EC6BD22DA07350806 /* ICOS/Engine/PromptAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5C8A6EC6BD22DA07350806 /* ICOS/Engine/PromptAssembler.swift */; };
+		FBEE13C7E4CEB5798A63CCA7 /* ICOS/Execution/Patch/Native/PatchEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEE13C7E4CEB5798A63CCA7 /* ICOS/Execution/Patch/Native/PatchEngine.swift */; };
+		FB8E02AFF9EBF9905ABC3B29 /* ICOS/Execution/Rollback/Native/RollbackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8E02AFF9EBF9905ABC3B29 /* ICOS/Execution/Rollback/Native/RollbackManager.swift */; };
+		FBCC9CEA402880E6216CFE64 /* ICOS/ExecutionEngine/ExecutionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC9CEA402880E6216CFE64 /* ICOS/ExecutionEngine/ExecutionController.swift */; };
+		FB3D41C9B30951811E54490D /* ICOS/Governance/DoctrineOutputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3D41C9B30951811E54490D /* ICOS/Governance/DoctrineOutputValidator.swift */; };
+		FB2187A80103A88A544214AD /* ICOS/Interfaces/Xcode/CloudRuntimeAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2187A80103A88A544214AD /* ICOS/Interfaces/Xcode/CloudRuntimeAdapter.swift */; };
+		FBFD40415CA97C35D0AD8A04 /* ICOS/Interfaces/Xcode/migrated_CloudRuntimeAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFD40415CA97C35D0AD8A04 /* ICOS/Interfaces/Xcode/migrated_CloudRuntimeAdapter.swift */; };
+		FB9CE62308A1A80071FB088F /* ICOS/Interfaces/Xcode/migrated_ICOSRuntimeBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9CE62308A1A80071FB088F /* ICOS/Interfaces/Xcode/migrated_ICOSRuntimeBridge.swift */; };
+		FB49EEAA383A50A3F2244D41 /* ICOS/Interfaces/Xcode/migrated_WebsiteBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49EEAA383A50A3F2244D41 /* ICOS/Interfaces/Xcode/migrated_WebsiteBridge.swift */; };
+		FB8321DC39314C6CA876CE5F /* ICOS/KnowledgeBase/DoctrineDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8321DC39314C6CA876CE5F /* ICOS/KnowledgeBase/DoctrineDocument.swift */; };
+		FBA51754F225E691FA5A88F0 /* ICOS/KnowledgeBase/DoctrineIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA51754F225E691FA5A88F0 /* ICOS/KnowledgeBase/DoctrineIndex.swift */; };
+		FBB7A0BE341B80908502DCE9 /* ICOS/Memory/Apple/ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB7A0BE341B80908502DCE9 /* ICOS/Memory/Apple/ChatMessage.swift */; };
+		FB6BA0229AF9F852E2A1A6ED /* ICOS/Memory/Apple/ConversationMemory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6BA0229AF9F852E2A1A6ED /* ICOS/Memory/Apple/ConversationMemory.swift */; };
+		FBB634A3FC47CCA7C7AF0909 /* ICOS/Memory/Apple/MemoryEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB634A3FC47CCA7C7AF0909 /* ICOS/Memory/Apple/MemoryEntry.swift */; };
+		FB74654E9EE551FBF31DEE78 /* ICOS/Memory/Apple/MemoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA74654E9EE551FBF31DEE78 /* ICOS/Memory/Apple/MemoryManager.swift */; };
+		FB104717F91133FCD2E9B34D /* ICOS/Memory/Apple/MemoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA104717F91133FCD2E9B34D /* ICOS/Memory/Apple/MemoryStore.swift */; };
+		FBB581ECB0AF0EAC391DF21F /* ICOS/Memory/Apple/RetrievalIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB581ECB0AF0EAC391DF21F /* ICOS/Memory/Apple/RetrievalIndex.swift */; };
+		FB69F1BEBC2CC820891745FE /* ICOS/Memory/Apple/RuntimeContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69F1BEBC2CC820891745FE /* ICOS/Memory/Apple/RuntimeContext.swift */; };
+		FB33B1C91CC747FA475F8F72 /* ICOS/Memory/Apple/RuntimeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA33B1C91CC747FA475F8F72 /* ICOS/Memory/Apple/RuntimeState.swift */; };
+		FB592B9EE97BB577E6789BC5 /* ICOS/Memory/Apple/SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA592B9EE97BB577E6789BC5 /* ICOS/Memory/Apple/SessionStore.swift */; };
+		FB2E2B752D664CB62509B36C /* ICOS/Persistence/ICOSDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2E2B752D664CB62509B36C /* ICOS/Persistence/ICOSDatabase.swift */; };
+		FBCF1EE14F0A5B1223514CB0 /* ICOS/Persistence/LocalStorageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF1EE14F0A5B1223514CB0 /* ICOS/Persistence/LocalStorageController.swift */; };
+		FB166B7F792B2ACF4A10DD22 /* ICOS/Platform/Sections/CareersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA166B7F792B2ACF4A10DD22 /* ICOS/Platform/Sections/CareersView.swift */; };
+		FB8ABCD502554509B49C316A /* ICOS/Platform/Sections/KnowledgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8ABCD502554509B49C316A /* ICOS/Platform/Sections/KnowledgeView.swift */; };
+		FB34FFCD955F6F9ADA7827DE /* ICOS/Platform/Sections/PlatformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA34FFCD955F6F9ADA7827DE /* ICOS/Platform/Sections/PlatformView.swift */; };
+		FB4F154F3141E079407FE942 /* ICOS/Platform/Sections/UpdatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4F154F3141E079407FE942 /* ICOS/Platform/Sections/UpdatesView.swift */; };
+		FB4CC21A06FAA0F69662FE34 /* ICOS/Profile/ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4CC21A06FAA0F69662FE34 /* ICOS/Profile/ProfileManager.swift */; };
+		FBB5CF97811F636DC71CA3DE /* ICOS/Profile/ProfileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5CF97811F636DC71CA3DE /* ICOS/Profile/ProfileStore.swift */; };
+		FB26F2D5F48C516018B09AA3 /* ICOS/Profile/UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA26F2D5F48C516018B09AA3 /* ICOS/Profile/UserProfile.swift */; };
+		FB8D37D9C3F9641A2163F891 /* ICOS/Providers/Apple/CloudFrontierProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D37D9C3F9641A2163F891 /* ICOS/Providers/Apple/CloudFrontierProvider.swift */; };
+		FBA07B15990127A339631CCC /* ICOS/Providers/Apple/ModelRuntimeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA07B15990127A339631CCC /* ICOS/Providers/Apple/ModelRuntimeProvider.swift */; };
+		FBB4769C64066136447C444C /* ICOS/Providers/Apple/ProviderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB4769C64066136447C444C /* ICOS/Providers/Apple/ProviderRouter.swift */; };
+		FB4E681CAE853D2450114DEC /* ICOS/Runtime/Bridge/Native/ActiveFileBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4E681CAE853D2450114DEC /* ICOS/Runtime/Bridge/Native/ActiveFileBridge.swift */; };
+		FB8BC8406C116C537D42A3F3 /* ICOS/Runtime/Bridge/Native/ExternalEditorBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8BC8406C116C537D42A3F3 /* ICOS/Runtime/Bridge/Native/ExternalEditorBridge.swift */; };
+		FB8598B1D6CCCC199DBA01E0 /* ICOS/Runtime/Core/InferenceGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8598B1D6CCCC199DBA01E0 /* ICOS/Runtime/Core/InferenceGateway.swift */; };
+		FBA0C9AD766864AA0F1955AF /* ICOS/Runtime/Core/LocalRuntimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0C9AD766864AA0F1955AF /* ICOS/Runtime/Core/LocalRuntimeService.swift */; };
+		FBE86E8C506596251D865474 /* ICOS/Runtime/Core/ModelRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE86E8C506596251D865474 /* ICOS/Runtime/Core/ModelRegistry.swift */; };
+		FB9E67D4AA4CF9F62536EA42 /* ICOS/Runtime/Core/RuntimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9E67D4AA4CF9F62536EA42 /* ICOS/Runtime/Core/RuntimeManager.swift */; };
+		FBE171F63B0B2612B7CEAD60 /* ICOS/Runtime/Core/TaskClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE171F63B0B2612B7CEAD60 /* ICOS/Runtime/Core/TaskClassifier.swift */; };
+		FBF72FD461C9BA768816406C /* ICOS/Runtime/EventBus/Native/RuntimeEventBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF72FD461C9BA768816406C /* ICOS/Runtime/EventBus/Native/RuntimeEventBus.swift */; };
+		FBD402AA5934EB6CD656D2D3 /* ICOS/Runtime/Sandbox/Native/PermissionGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD402AA5934EB6CD656D2D3 /* ICOS/Runtime/Sandbox/Native/PermissionGate.swift */; };
+		FBC910A75DE6C79D32C65029 /* ICOS/Runtime/Session/Native/WorkspaceGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC910A75DE6C79D32C65029 /* ICOS/Runtime/Session/Native/WorkspaceGraph.swift */; };
+		FBFB183B04184088D8D73298 /* ICOS/Runtime/Terminal/Native/TerminalBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB183B04184088D8D73298 /* ICOS/Runtime/Terminal/Native/TerminalBridge.swift */; };
+		FB261AD678F637F65E6ABF55 /* ICOS/Runtime/VoiceCognition/Native/VoiceCognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA261AD678F637F65E6ABF55 /* ICOS/Runtime/VoiceCognition/Native/VoiceCognitionService.swift */; };
+		FB6ECF1A6C84B76A0A22CD4B /* ICOS/Runtime/VoiceCognition/Native/VoicePlaybackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6ECF1A6C84B76A0A22CD4B /* ICOS/Runtime/VoiceCognition/Native/VoicePlaybackService.swift */; };
+		FBD3DC468C1E9E7C8FD5C804 /* ICOS/SwiftUI/App/ICOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3DC468C1E9E7C8FD5C804 /* ICOS/SwiftUI/App/ICOSApp.swift */; };
+		FB10961C9B8B684084A73270 /* ICOS/SwiftUI/Behavior/BehaviorEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10961C9B8B684084A73270 /* ICOS/SwiftUI/Behavior/BehaviorEngine.swift */; };
+		FB25F018C78EF32A4D2C94D3 /* ICOS/SwiftUI/Boot/ICOSBootAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA25F018C78EF32A4D2C94D3 /* ICOS/SwiftUI/Boot/ICOSBootAnimationView.swift */; };
+		FBC1176D21C1DB55B4AE8456 /* ICOS/SwiftUI/Boot/ICOSBootGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1176D21C1DB55B4AE8456 /* ICOS/SwiftUI/Boot/ICOSBootGate.swift */; };
+		FB30DBCB6D785FFC79B3AA98 /* ICOS/SwiftUI/Button/ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30DBCB6D785FFC79B3AA98 /* ICOS/SwiftUI/Button/ButtonView.swift */; };
+		FBB101D4342B284F337229C2 /* ICOS/SwiftUI/Components/ICOSActionPrimitives.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB101D4342B284F337229C2 /* ICOS/SwiftUI/Components/ICOSActionPrimitives.swift */; };
+		FBB63919DC0FDCA04699AC5B /* ICOS/SwiftUI/Components/ICOSBrandLockup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB63919DC0FDCA04699AC5B /* ICOS/SwiftUI/Components/ICOSBrandLockup.swift */; };
+		FB5CCEDBE1EF683C14D00835 /* ICOS/SwiftUI/Features/BrowserUse/BrowserUseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5CCEDBE1EF683C14D00835 /* ICOS/SwiftUI/Features/BrowserUse/BrowserUseView.swift */; };
+		FBEA00EED6B274723940620C /* ICOS/SwiftUI/Features/FileManager/FileManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA00EED6B274723940620C /* ICOS/SwiftUI/Features/FileManager/FileManagerView.swift */; };
+		FB30ECA402CDAB82A87171B5 /* ICOS/SwiftUI/Features/Intelligence/IntelligenceModuleCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30ECA402CDAB82A87171B5 /* ICOS/SwiftUI/Features/Intelligence/IntelligenceModuleCatalog.swift */; };
+		FB8B48B49AC524FCFFA8B9B7 /* ICOS/SwiftUI/Features/Intelligence/IntelligenceModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8B48B49AC524FCFFA8B9B7 /* ICOS/SwiftUI/Features/Intelligence/IntelligenceModuleView.swift */; };
+		FB36E677EE08280F54C7D6E7 /* ICOS/SwiftUI/Features/Projects/ProjectManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36E677EE08280F54C7D6E7 /* ICOS/SwiftUI/Features/Projects/ProjectManagerView.swift */; };
+		FB0232E07D048CB78FF014A9 /* ICOS/SwiftUI/Layout/ICOSAdaptivePairLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0232E07D048CB78FF014A9 /* ICOS/SwiftUI/Layout/ICOSAdaptivePairLayout.swift */; };
+		FB7F95CE946389A8343DBBCB /* ICOS/SwiftUI/Layout/ICOSSplitLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F95CE946389A8343DBBCB /* ICOS/SwiftUI/Layout/ICOSSplitLayout.swift */; };
+		FBF5FE0A685DABC88217CF03 /* ICOS/SwiftUI/Layout/ICOSWrappingFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5FE0A685DABC88217CF03 /* ICOS/SwiftUI/Layout/ICOSWrappingFlowLayout.swift */; };
+		FB258E9CE120981C23DA1A42 /* ICOS/SwiftUI/Layout/LayoutEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA258E9CE120981C23DA1A42 /* ICOS/SwiftUI/Layout/LayoutEngine.swift */; };
+		FBDE01F1BBE4544A3050255A /* ICOS/SwiftUI/Navigation/AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE01F1BBE4544A3050255A /* ICOS/SwiftUI/Navigation/AppRouter.swift */; };
+		FBD27CE878FC4BCB537EBBA7 /* ICOS/SwiftUI/Settings/Components/SettingsSectionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD27CE878FC4BCB537EBBA7 /* ICOS/SwiftUI/Settings/Components/SettingsSectionCard.swift */; };
+		FB2A1249313652E00EE5A88F /* ICOS/SwiftUI/Settings/Components/WorktreeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A1249313652E00EE5A88F /* ICOS/SwiftUI/Settings/Components/WorktreeRow.swift */; };
+		FB087E20A34C3CFB70C2E2B3 /* ICOS/SwiftUI/Settings/Panels/AppearanceSettingsPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA087E20A34C3CFB70C2E2B3 /* ICOS/SwiftUI/Settings/Panels/AppearanceSettingsPanel.swift */; };
+		FB2659E1B70AFDAE52874535 /* ICOS/SwiftUI/Settings/Panels/ChatManagementSettingsPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2659E1B70AFDAE52874535 /* ICOS/SwiftUI/Settings/Panels/ChatManagementSettingsPanel.swift */; };
+		FB69781B6C54A1BABB5FA43E /* ICOS/SwiftUI/Settings/Panels/ConfigurationSettingsPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69781B6C54A1BABB5FA43E /* ICOS/SwiftUI/Settings/Panels/ConfigurationSettingsPanel.swift */; };
+		FB1BF8080D83E6C95E2E1390 /* ICOS/SwiftUI/Settings/Panels/ConnectorsSettingsPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1BF8080D83E6C95E2E1390 /* ICOS/SwiftUI/Settings/Panels/ConnectorsSettingsPanel.swift */; };
+		FB695492F951CE0476B0ED25 /* ICOS/SwiftUI/Settings/Panels/EditorBridgeSettingsPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA695492F951CE0476B0ED25 /* ICOS/SwiftUI/Settings/Panels/EditorBridgeSettingsPanel.swift */; };
+		FB9E7FD888CF398851B452EC /* ICOS/SwiftUI/Settings/Panels/EnvironmentSettingsPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9E7FD888CF398851B452EC /* ICOS/SwiftUI/Settings/Panels/EnvironmentSettingsPanel.swift */; };
+		FB451D5A8FB9A921556E86D5 /* ICOS/SwiftUI/Settings/Panels/GeneralSettingsPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA451D5A8FB9A921556E86D5 /* ICOS/SwiftUI/Settings/Panels/GeneralSettingsPanel.swift */; };
+		FB31DB6AA3100206E313B954 /* ICOS/SwiftUI/Settings/Panels/PersonalizationSettingsPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31DB6AA3100206E313B954 /* ICOS/SwiftUI/Settings/Panels/PersonalizationSettingsPanel.swift */; };
+		FB09D768E5FE0D9F9BFE9F90 /* ICOS/SwiftUI/Settings/Panels/VoiceSettingsPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA09D768E5FE0D9F9BFE9F90 /* ICOS/SwiftUI/Settings/Panels/VoiceSettingsPanel.swift */; };
+		FB69E257AB9DC080096A8655 /* ICOS/SwiftUI/Settings/Panels/WorktreeSettingsPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69E257AB9DC080096A8655 /* ICOS/SwiftUI/Settings/Panels/WorktreeSettingsPanel.swift */; };
+		FB413E72A609D252BC589970 /* ICOS/SwiftUI/Settings/SettingsPanels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA413E72A609D252BC589970 /* ICOS/SwiftUI/Settings/SettingsPanels.swift */; };
+		FB407E074B356C174FCEF50B /* ICOS/SwiftUI/Settings/SettingsRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA407E074B356C174FCEF50B /* ICOS/SwiftUI/Settings/SettingsRootView.swift */; };
+		FBAB0A2C1782DB939C2D8536 /* ICOS/SwiftUI/Settings/Support/SettingsProfileTitles.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB0A2C1782DB939C2D8536 /* ICOS/SwiftUI/Settings/Support/SettingsProfileTitles.swift */; };
+		FB662A3F39A25EDC510B1E9E /* ICOS/SwiftUI/Shell/NavigationShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA662A3F39A25EDC510B1E9E /* ICOS/SwiftUI/Shell/NavigationShell.swift */; };
+		FB102AC2C04D84D04A98AD18 /* ICOS/SwiftUI/Shell/RightInspectorPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA102AC2C04D84D04A98AD18 /* ICOS/SwiftUI/Shell/RightInspectorPanel.swift */; };
+		FB5FF7FFD2249CD9DF6C17C8 /* ICOS/SwiftUI/Shell/ShellState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5FF7FFD2249CD9DF6C17C8 /* ICOS/SwiftUI/Shell/ShellState.swift */; };
+		FBD676F5D70A4664C8F26518 /* ICOS/SwiftUI/Shell/SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD676F5D70A4664C8F26518 /* ICOS/SwiftUI/Shell/SidebarView.swift */; };
+		FBAC6D22CD4691D4B2BDC82E /* ICOS/SwiftUI/Shell/TopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC6D22CD4691D4B2BDC82E /* ICOS/SwiftUI/Shell/TopBarView.swift */; };
+		FBFD240E0C734F445282222A /* ICOS/SwiftUI/System/PermissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFD240E0C734F445282222A /* ICOS/SwiftUI/System/PermissionService.swift */; };
+		FB0E4AC32BBFEE495D82CB36 /* ICOS/SwiftUI/System/ProductEntityModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0E4AC32BBFEE495D82CB36 /* ICOS/SwiftUI/System/ProductEntityModels.swift */; };
+		FB6CEBCC159EF98BBA26E800 /* ICOS/SwiftUI/System/SystemServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CEBCC159EF98BBA26E800 /* ICOS/SwiftUI/System/SystemServices.swift */; };
+		FB02F4EAC2F0140AC34A2C3C /* ICOS/SwiftUI/System/UIRootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA02F4EAC2F0140AC34A2C3C /* ICOS/SwiftUI/System/UIRootCoordinator.swift */; };
+		FB57A06071D3567790EF187F /* ICOS/SwiftUI/System/WorkspaceFileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA57A06071D3567790EF187F /* ICOS/SwiftUI/System/WorkspaceFileService.swift */; };
+		FB83E92588709B282DD8B6BB /* ICOS/SwiftUI/Theme/ThemeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83E92588709B282DD8B6BB /* ICOS/SwiftUI/Theme/ThemeEngine.swift */; };
+		FBEECDBCFFA089749CE724C3 /* ICOS/SwiftUI/Window/ICOSTitlebarAccessory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEECDBCFFA089749CE724C3 /* ICOS/SwiftUI/Window/ICOSTitlebarAccessory.swift */; };
+		FBD405FC1CFAD4F4BB71D678 /* ICOS/SwiftUI/Window/ICOSWindowChrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD405FC1CFAD4F4BB71D678 /* ICOS/SwiftUI/Window/ICOSWindowChrome.swift */; };
+		FBEC4C3CE3B1ED08495C68B9 /* ICOS/SwiftUI/Window/ICOSWindowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEC4C3CE3B1ED08495C68B9 /* ICOS/SwiftUI/Window/ICOSWindowCoordinator.swift */; };
+		FB8C3FA2DDB554B5F2C71353 /* ICOS/SwiftUI/Window/ICOSWindowToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C3FA2DDB554B5F2C71353 /* ICOS/SwiftUI/Window/ICOSWindowToolbar.swift */; };
+		FB9276AAA416FD153C5FD8D7 /* ICOS/SwiftUI/Window/WindowAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9276AAA416FD153C5FD8D7 /* ICOS/SwiftUI/Window/WindowAccessor.swift */; };
+		FBB67C01AE4F35640B6B0295 /* ICOS/System/Layout/ICOSContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB67C01AE4F35640B6B0295 /* ICOS/System/Layout/ICOSContainer.swift */; };
+		FB5F04BFE318404B60F9C33A /* ICOS/System/Layout/ICOSLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F04BFE318404B60F9C33A /* ICOS/System/Layout/ICOSLayout.swift */; };
+		FB17B38F860E8C936229E582 /* ICOS/System/Navigation/ICOSRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA17B38F860E8C936229E582 /* ICOS/System/Navigation/ICOSRoute.swift */; };
+		FB1D7E35A8FB6D64458201C7 /* ICOS/System/Navigation/ICOSSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1D7E35A8FB6D64458201C7 /* ICOS/System/Navigation/ICOSSidebar.swift */; };
+		FBC0E187A9301545C3F568A8 /* ICOS/System/Navigation/SidebarComponents/EnvironmentStatusRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC0E187A9301545C3F568A8 /* ICOS/System/Navigation/SidebarComponents/EnvironmentStatusRow.swift */; };
+		FB0FBC7752E97CDD0C921B65 /* ICOS/System/Navigation/SidebarComponents/LeftIconRail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0FBC7752E97CDD0C921B65 /* ICOS/System/Navigation/SidebarComponents/LeftIconRail.swift */; };
+		FB2BE631BF1970CBED31901C /* ICOS/System/Navigation/SidebarComponents/SidebarContentPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE631BF1970CBED31901C /* ICOS/System/Navigation/SidebarComponents/SidebarContentPanel.swift */; };
+		FB09F7482CE37D81ACA04CB6 /* ICOS/System/Navigation/SidebarComponents/SidebarFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA09F7482CE37D81ACA04CB6 /* ICOS/System/Navigation/SidebarComponents/SidebarFooter.swift */; };
+		FBC8D31E695F7B4BFC7F445E /* ICOS/System/Navigation/SidebarComponents/SidebarHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8D31E695F7B4BFC7F445E /* ICOS/System/Navigation/SidebarComponents/SidebarHeader.swift */; };
+		FBEA6657D2ACDB8EA29AD00F /* ICOS/System/Navigation/SidebarComponents/SidebarSearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA6657D2ACDB8EA29AD00F /* ICOS/System/Navigation/SidebarComponents/SidebarSearchField.swift */; };
+		FB86158EC2EC7B172618F791 /* ICOS/System/Navigation/SidebarComponents/SidebarSectionTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA86158EC2EC7B172618F791 /* ICOS/System/Navigation/SidebarComponents/SidebarSectionTitle.swift */; };
+		FB0C7720DFE5488208FC2CE5 /* ICOS/System/Navigation/SidebarComponents/WorkspacePanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0C7720DFE5488208FC2CE5 /* ICOS/System/Navigation/SidebarComponents/WorkspacePanel.swift */; };
+		FB2B461EA6CDA537EF1A88C0 /* ICOS/System/Navigation/SidebarRailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2B461EA6CDA537EF1A88C0 /* ICOS/System/Navigation/SidebarRailButton.swift */; };
+		FB9EBCA049BD90406128E646 /* ICOS/System/Navigation/SidebarRouteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9EBCA049BD90406128E646 /* ICOS/System/Navigation/SidebarRouteRow.swift */; };
+		FB98A930F8D9DE4093343436 /* ICOS/System/Navigation/WorkspaceModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA98A930F8D9DE4093343436 /* ICOS/System/Navigation/WorkspaceModels.swift */; };
+		FBCFABF2B08CA5581B431BB5 /* ICOS/System/Navigation/WorkspaceSeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFABF2B08CA5581B431BB5 /* ICOS/System/Navigation/WorkspaceSeed.swift */; };
+		FB2DA343F97DE4732794CB90 /* ICOS/System/Navigation/WorkspaceTreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2DA343F97DE4732794CB90 /* ICOS/System/Navigation/WorkspaceTreeView.swift */; };
+		FB76911FC416A07DC28F88F1 /* ICOS/System/Overlays/ICOSOverlayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA76911FC416A07DC28F88F1 /* ICOS/System/Overlays/ICOSOverlayManager.swift */; };
+		FBEB6D3439D4A15DB4AB0B61 /* ICOS/System/Runtime/AgentRuntime/AgentRuntimeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB6D3439D4A15DB4AB0B61 /* ICOS/System/Runtime/AgentRuntime/AgentRuntimeModels.swift */; };
+		FB65FA02A28C03208C6B798E /* ICOS/System/Runtime/AgentRuntime/AgentRuntimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA65FA02A28C03208C6B798E /* ICOS/System/Runtime/AgentRuntime/AgentRuntimeService.swift */; };
+		FB0698386CEDDA90EBBA6892 /* ICOS/System/Runtime/DeveloperRuntime/ChatRuntimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0698386CEDDA90EBBA6892 /* ICOS/System/Runtime/DeveloperRuntime/ChatRuntimeView.swift */; };
+		FB6D0C4178310A36802D6AA1 /* ICOS/System/Runtime/DeveloperRuntime/Components/DeveloperRuntimeCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6D0C4178310A36802D6AA1 /* ICOS/System/Runtime/DeveloperRuntime/Components/DeveloperRuntimeCanvas.swift */; };
+		FBFBAD4E2C2F822B778DACE6 /* ICOS/System/Runtime/DeveloperRuntime/Components/DeveloperRuntimeComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFBAD4E2C2F822B778DACE6 /* ICOS/System/Runtime/DeveloperRuntime/Components/DeveloperRuntimeComposer.swift */; };
+		FBE633DC980E0C61968B2CC0 /* ICOS/System/Runtime/DeveloperRuntime/Components/DeveloperRuntimeControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE633DC980E0C61968B2CC0 /* ICOS/System/Runtime/DeveloperRuntime/Components/DeveloperRuntimeControls.swift */; };
+		FBDF8C070F0834F97B77E390 /* ICOS/System/Runtime/DeveloperRuntime/Components/DeveloperRuntimeInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF8C070F0834F97B77E390 /* ICOS/System/Runtime/DeveloperRuntime/Components/DeveloperRuntimeInspector.swift */; };
+		FBEDEE400D66CFC9560168BD /* ICOS/System/Runtime/DeveloperRuntime/Components/DeveloperRuntimeSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEDEE400D66CFC9560168BD /* ICOS/System/Runtime/DeveloperRuntime/Components/DeveloperRuntimeSidebar.swift */; };
+		FBBC011D157CDBDC6002685B /* ICOS/System/Runtime/DeveloperRuntime/DeveloperRuntimeShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABC011D157CDBDC6002685B /* ICOS/System/Runtime/DeveloperRuntime/DeveloperRuntimeShell.swift */; };
+		FB7798705FD9C718EDDC5CDC /* ICOS/System/Runtime/DeveloperRuntime/DiffReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7798705FD9C718EDDC5CDC /* ICOS/System/Runtime/DeveloperRuntime/DiffReviewView.swift */; };
+		FB6E9B577EEAD7C62B8922AA /* ICOS/System/Runtime/DeveloperRuntime/FileEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E9B577EEAD7C62B8922AA /* ICOS/System/Runtime/DeveloperRuntime/FileEditorView.swift */; };
+		FB21D32DF4C8370C69F216AE /* ICOS/System/Runtime/DeveloperRuntime/TerminalRuntimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21D32DF4C8370C69F216AE /* ICOS/System/Runtime/DeveloperRuntime/TerminalRuntimeView.swift */; };
+		FB97F2A2C1929693B01DB010 /* ICOS/System/Runtime/IntelligenceRuntime/AgentGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA97F2A2C1929693B01DB010 /* ICOS/System/Runtime/IntelligenceRuntime/AgentGraphView.swift */; };
+		FBDD37B4A96FC29F42B9308D /* ICOS/System/Runtime/IntelligenceRuntime/IntelligenceRuntimeShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADD37B4A96FC29F42B9308D /* ICOS/System/Runtime/IntelligenceRuntime/IntelligenceRuntimeShell.swift */; };
+		FBFD2B865AFC94EE5F8196B3 /* ICOS/System/Runtime/IntelligenceRuntime/MemoryEngineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFD2B865AFC94EE5F8196B3 /* ICOS/System/Runtime/IntelligenceRuntime/MemoryEngineView.swift */; };
+		FB53824EAB41E7C5AEFF97FA /* ICOS/System/Runtime/OperationsRuntime/DeploymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA53824EAB41E7C5AEFF97FA /* ICOS/System/Runtime/OperationsRuntime/DeploymentView.swift */; };
+		FB21B3DB40A9BD83CABF4FBF /* ICOS/System/Runtime/OperationsRuntime/LogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21B3DB40A9BD83CABF4FBF /* ICOS/System/Runtime/OperationsRuntime/LogsView.swift */; };
+		FB50AC3255017FC51AE94803 /* ICOS/System/Runtime/OperationsRuntime/MonitoringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA50AC3255017FC51AE94803 /* ICOS/System/Runtime/OperationsRuntime/MonitoringView.swift */; };
+		FBB8621C661BDE3371DA60C0 /* ICOS/System/Runtime/OperationsRuntime/OperationsRuntimeShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB8621C661BDE3371DA60C0 /* ICOS/System/Runtime/OperationsRuntime/OperationsRuntimeShell.swift */; };
+		FBF44C3B93CAADCA52A2479D /* ICOS/System/Runtime/OperationsRuntime/TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF44C3B93CAADCA52A2479D /* ICOS/System/Runtime/OperationsRuntime/TasksView.swift */; };
+		FB29DADA44E6BDD1036FE19C /* ICOS/System/Runtime/ProviderRuntime/ConnectorRegistryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA29DADA44E6BDD1036FE19C /* ICOS/System/Runtime/ProviderRuntime/ConnectorRegistryService.swift */; };
+		FB44EA04271FDDDE620F2D03 /* ICOS/System/Runtime/ProviderRuntime/ConnectorRuntimeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA44EA04271FDDDE620F2D03 /* ICOS/System/Runtime/ProviderRuntime/ConnectorRuntimeModels.swift */; };
+		FB4FB3A8097C2F527569861C /* ICOS/System/Runtime/WorkspaceRuntime/WorkspaceRuntimeCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4FB3A8097C2F527569861C /* ICOS/System/Runtime/WorkspaceRuntime/WorkspaceRuntimeCanvas.swift */; };
+		FB34AF7CB0F841140A1CB590 /* ICOS/System/Runtime/WorkspaceRuntime/WorkspaceRuntimeShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA34AF7CB0F841140A1CB590 /* ICOS/System/Runtime/WorkspaceRuntime/WorkspaceRuntimeShell.swift */; };
+		FBECEF2B7BE69EC1BC7FEC4F /* ICOS/System/Runtime/WorkspaceRuntime/WorkspaceRuntimeSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAECEF2B7BE69EC1BC7FEC4F /* ICOS/System/Runtime/WorkspaceRuntime/WorkspaceRuntimeSidebar.swift */; };
+		FB44502D7A5484C547774BA9 /* ICOS/System/Services/SecureCredentialStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA44502D7A5484C547774BA9 /* ICOS/System/Services/SecureCredentialStore.swift */; };
+		FB16A59BBCC4F1059AB11952 /* ICOS/System/Settings/Controls/RuntimeModePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA16A59BBCC4F1059AB11952 /* ICOS/System/Settings/Controls/RuntimeModePicker.swift */; };
+		FB3C800A77673ABEDDC75C6F /* ICOS/System/Settings/Fragments/CloudProviderSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C800A77673ABEDDC75C6F /* ICOS/System/Settings/Fragments/CloudProviderSection.swift */; };
+		FBAA1A553BF70D374023932C /* ICOS/System/Settings/Fragments/LocalModelSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA1A553BF70D374023932C /* ICOS/System/Settings/Fragments/LocalModelSection.swift */; };
+		FB9BA8C8562F8A237F5183CD /* ICOS/System/Settings/Fragments/RuntimeModeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9BA8C8562F8A237F5183CD /* ICOS/System/Settings/Fragments/RuntimeModeSection.swift */; };
+		FBDD6C280BF923C6CB507B33 /* ICOS/System/Settings/Models/RuntimeMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADD6C280BF923C6CB507B33 /* ICOS/System/Settings/Models/RuntimeMode.swift */; };
+		FB0DDF1AAB8B8885452CBABB /* ICOS/System/Settings/State/RuntimeSettingsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0DDF1AAB8B8885452CBABB /* ICOS/System/Settings/State/RuntimeSettingsState.swift */; };
+		FB656FCFB7AD7A12E7BC3A9C /* ICOS/System/Settings/Views/RuntimeSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA656FCFB7AD7A12E7BC3A9C /* ICOS/System/Settings/Views/RuntimeSettingsView.swift */; };
+		FB3858572BA6C6625EE2F0FA /* ICOS/System/Shell/ICOSMainShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3858572BA6C6625EE2F0FA /* ICOS/System/Shell/ICOSMainShell.swift */; };
+		FBF2B6FFE1667D58E7411A78 /* ICOS/System/State/ICOSAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2B6FFE1667D58E7411A78 /* ICOS/System/State/ICOSAppState.swift */; };
+		FBFB91E402620406D84F799E /* ICOS/System/State/MemoryState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB91E402620406D84F799E /* ICOS/System/State/MemoryState.swift */; };
+		FBBC4C6C3B97192FC0EE54F0 /* ICOS/System/State/ProfileState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABC4C6C3B97192FC0EE54F0 /* ICOS/System/State/ProfileState.swift */; };
+		FBC7BA3D6FD107416B54742A /* ICOS/System/State/RuntimeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7BA3D6FD107416B54742A /* ICOS/System/State/RuntimeState.swift */; };
+		FB4BBE59C50C18B4CFBC0037 /* ICOS/System/State/SessionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4BBE59C50C18B4CFBC0037 /* ICOS/System/State/SessionState.swift */; };
+		FB3EA34A8251CDCD41570474 /* ICOS/System/Theme/ThemeMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3EA34A8251CDCD41570474 /* ICOS/System/Theme/ThemeMode.swift */; };
+		FBCD98C105ABD792AC0E705C /* ICOS/System/Theme/ThemeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD98C105ABD792AC0E705C /* ICOS/System/Theme/ThemeProvider.swift */; };
+		FB65591889A3E2401F20EBC6 /* ICOS/System/Theme/ThemeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA65591889A3E2401F20EBC6 /* ICOS/System/Theme/ThemeState.swift */; };
+		FB8AD0B2E836BDA7B6DBE14A /* ICOS/System/Workspace/ICOSWorkspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AD0B2E836BDA7B6DBE14A /* ICOS/System/Workspace/ICOSWorkspace.swift */; };
+		FB65E2AD59CBFDCC4FC90EE0 /* ICOS/ThirdParty/network_stack/StreamingResponseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA65E2AD59CBFDCC4FC90EE0 /* ICOS/ThirdParty/network_stack/StreamingResponseController.swift */; };
+		FBDBEE6E7B164CF0E7539FF5 /* ICOS/Validation/ExecutionValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADBEE6E7B164CF0E7539FF5 /* ICOS/Validation/ExecutionValidator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE288E112F9FE4EF00A5C1D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE288DFB2F9FE4EE00A5C1D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE288E022F9FE4EE00A5C1D6;
+			remoteInfo = ICOS;
+		};
+		BE288E1B2F9FE4EF00A5C1D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE288DFB2F9FE4EE00A5C1D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE288E022F9FE4EE00A5C1D6;
+			remoteInfo = ICOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BE288F802FA02B0000A5C1D6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BE288F952FA02B0000A5C1D6 /* Runtime/Frameworks/libllama.0.dylib in Embed Frameworks */,
+				BE288F962FA02B0000A5C1D6 /* Runtime/Frameworks/libllama.dylib in Embed Frameworks */,
+				BE288F902FA02B0000A5C1D6 /* Runtime/Frameworks/libggml.dylib in Embed Frameworks */,
+				BE288FC12FA02C0000A5C1D6 /* Runtime/Frameworks/libggml.0.dylib in Embed Frameworks */,
+				BE288FC22FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-base.0.dylib in Embed Frameworks */,
+				BE288FC32FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-cpu.0.dylib in Embed Frameworks */,
+				BE288FC42FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-metal.0.dylib in Embed Frameworks */,
+				BE288FC52FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-blas.0.dylib in Embed Frameworks */,
+				BE288F8A2FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-cpu.dylib in Embed Frameworks */,
+				BE288F842FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-base.dylib in Embed Frameworks */,
+				BE288F8D2FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-metal.dylib in Embed Frameworks */,
+				BE288F872FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-blas.dylib in Embed Frameworks */,
+				BE288F9A2FA02B0000A5C1D6 /* Runtime/Frameworks/libssl.3.dylib in Embed Frameworks */,
+				BE288F812FA02B0000A5C1D6 /* Runtime/Frameworks/libcrypto.3.dylib in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BE288E032F9FE4EE00A5C1D6 /* ICOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ICOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE288E102F9FE4EF00A5C1D6 /* ICOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ICOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE288E1A2F9FE4EF00A5C1D6 /* ICOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ICOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE288FA12FA02B0000A5C1D6 /* Runtime/Frameworks/libcrypto.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = Runtime/Frameworks/libcrypto.3.dylib; sourceTree = SOURCE_ROOT; };
+		BE288FA42FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-base.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "Runtime/Frameworks/libggml-base.dylib"; sourceTree = SOURCE_ROOT; };
+		BE288FA72FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-blas.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "Runtime/Frameworks/libggml-blas.dylib"; sourceTree = SOURCE_ROOT; };
+		BE288FAA2FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-cpu.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "Runtime/Frameworks/libggml-cpu.dylib"; sourceTree = SOURCE_ROOT; };
+		BE288FAD2FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-metal.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "Runtime/Frameworks/libggml-metal.dylib"; sourceTree = SOURCE_ROOT; };
+		BE288FB02FA02B0000A5C1D6 /* Runtime/Frameworks/libggml.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = Runtime/Frameworks/libggml.dylib; sourceTree = SOURCE_ROOT; };
+		BE288FB52FA02B0000A5C1D6 /* Runtime/Frameworks/libllama.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = Runtime/Frameworks/libllama.0.dylib; sourceTree = SOURCE_ROOT; };
+		BE288FB62FA02B0000A5C1D6 /* Runtime/Frameworks/libllama.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = Runtime/Frameworks/libllama.dylib; sourceTree = SOURCE_ROOT; };
+		BE288FBA2FA02B0000A5C1D6 /* Runtime/Frameworks/libssl.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = Runtime/Frameworks/libssl.3.dylib; sourceTree = SOURCE_ROOT; };
+		BE288FD12FA02C0000A5C1D6 /* Runtime/Frameworks/libggml.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = Runtime/Frameworks/libggml.0.dylib; sourceTree = SOURCE_ROOT; };
+		BE288FD22FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-base.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "Runtime/Frameworks/libggml-base.0.dylib"; sourceTree = SOURCE_ROOT; };
+		BE288FD32FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-cpu.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "Runtime/Frameworks/libggml-cpu.0.dylib"; sourceTree = SOURCE_ROOT; };
+		BE288FD42FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-metal.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "Runtime/Frameworks/libggml-metal.0.dylib"; sourceTree = SOURCE_ROOT; };
+		BE288FD52FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-blas.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "Runtime/Frameworks/libggml-blas.0.dylib"; sourceTree = SOURCE_ROOT; };
+		FA7BD638B0EAC13EEBF7C47D /* ICOS/CognitiveEngine/Doctrine/DoctrineCompiler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/CognitiveEngine/Doctrine/DoctrineCompiler.swift"; sourceTree = SOURCE_ROOT; };
+		FA8DDB11BC2A6C4E4BBEE358 /* ICOS/CognitiveEngine/Doctrine/DoctrineLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/CognitiveEngine/Doctrine/DoctrineLoader.swift"; sourceTree = SOURCE_ROOT; };
+		FA345E9D25DDA77CC2C3E04D /* ICOS/CognitiveEngine/Doctrine/DoctrineRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/CognitiveEngine/Doctrine/DoctrineRegistry.swift"; sourceTree = SOURCE_ROOT; };
+		FA7A830A12531D7D9357BCD9 /* ICOS/CognitiveEngine/DoctrineContextBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/CognitiveEngine/DoctrineContextBuilder.swift"; sourceTree = SOURCE_ROOT; };
+		FA1700A6BF5194147FA4BCEB /* ICOS/CognitiveEngine/DoctrineInterpreter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/CognitiveEngine/DoctrineInterpreter.swift"; sourceTree = SOURCE_ROOT; };
+		FAB5081D734E9B4B5255D823 /* ICOS/CognitiveEngine/Governance/ExecutionPolicyEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/CognitiveEngine/Governance/ExecutionPolicyEngine.swift"; sourceTree = SOURCE_ROOT; };
+		FA7897C02E4D6C609965350D /* ICOS/CognitiveEngine/Governance/ResponseGovernanceFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/CognitiveEngine/Governance/ResponseGovernanceFilter.swift"; sourceTree = SOURCE_ROOT; };
+		FA27B96E8CAC15F504ABD0BE /* ICOS/CognitiveEngine/InstructionOrchestrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/CognitiveEngine/InstructionOrchestrator.swift"; sourceTree = SOURCE_ROOT; };
+		FA4F91E43EA93173A06D1D70 /* ICOS/CognitiveEngine/ResponseShaper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/CognitiveEngine/ResponseShaper.swift"; sourceTree = SOURCE_ROOT; };
+		FA303A57284F6D51E32B214B /* ICOS/CognitiveEngine/SystemPromptBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/CognitiveEngine/SystemPromptBuilder.swift"; sourceTree = SOURCE_ROOT; };
+		FADCD9F8F5D8993A22AC5CAF /* ICOS/CognitiveEngine/Tools/WebSearchTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/CognitiveEngine/Tools/WebSearchTool.swift"; sourceTree = SOURCE_ROOT; };
+		FA547380B3080817363F1344 /* ICOS/Control/ICOSExecutionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Control/ICOSExecutionController.swift"; sourceTree = SOURCE_ROOT; };
+		FA89BC2FCB4AD9D48BE3930B /* ICOS/Core/ICOSCoreRuntime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Core/ICOSCoreRuntime.swift"; sourceTree = SOURCE_ROOT; };
+		FA3F0BD58E6160F868EA6873 /* ICOS/DesignSystem/Components/Controls/ICOSPickerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DesignSystem/Components/Controls/ICOSPickerRow.swift"; sourceTree = SOURCE_ROOT; };
+		FAAEE65780FF9A8EE42A3539 /* ICOS/DesignSystem/Components/Controls/ICOSSliderRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DesignSystem/Components/Controls/ICOSSliderRow.swift"; sourceTree = SOURCE_ROOT; };
+		FA0DFC39C7A072B8C17184FC /* ICOS/DesignSystem/Components/Controls/ICOSToggleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DesignSystem/Components/Controls/ICOSToggleRow.swift"; sourceTree = SOURCE_ROOT; };
+		FA6036CA5DC78DDD6A81069B /* ICOS/DesignSystem/Components/ICOSButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DesignSystem/Components/ICOSButton.swift"; sourceTree = SOURCE_ROOT; };
+		FAF4DB5F7EDEB0B798C0FA7B /* ICOS/DesignSystem/Components/ICOSDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DesignSystem/Components/ICOSDivider.swift"; sourceTree = SOURCE_ROOT; };
+		FAFF2726C6DA8BDEB9CDE34D /* ICOS/DesignSystem/Components/ICOSPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DesignSystem/Components/ICOSPanel.swift"; sourceTree = SOURCE_ROOT; };
+		FABEFF52EC760A338C1ED31C /* ICOS/DesignSystem/Controls/ICOSControlStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DesignSystem/Controls/ICOSControlStyles.swift"; sourceTree = SOURCE_ROOT; };
+		FABBBB255FC4C6602D33A497 /* ICOS/DesignSystem/Controls/ICOSTextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DesignSystem/Controls/ICOSTextInput.swift"; sourceTree = SOURCE_ROOT; };
+		FAEA3B5096AB69FA4051C453 /* ICOS/DesignSystem/Controls/ICOSToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DesignSystem/Controls/ICOSToggle.swift"; sourceTree = SOURCE_ROOT; };
+		FAB58F8D59680391FAA9C1B4 /* ICOS/DesignSystem/Icons/ICOSIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DesignSystem/Icons/ICOSIcon.swift"; sourceTree = SOURCE_ROOT; };
+		FAA6CE9AA5381790DB7D6C69 /* ICOS/DesignSystem/Icons/IconRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DesignSystem/Icons/IconRegistry.swift"; sourceTree = SOURCE_ROOT; };
+		FA3AC2F793EAC70F174F6DA1 /* ICOS/DesignSystem/Icons/SVGImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DesignSystem/Icons/SVGImageView.swift"; sourceTree = SOURCE_ROOT; };
+		FAB0F00B0CBB38379BD922EF /* ICOS/DesignSystem/Icons/SVGKitRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DesignSystem/Icons/SVGKitRenderer.swift"; sourceTree = SOURCE_ROOT; };
+		FA26AFB613B4AAEE3CA647E7 /* ICOS/DesignSystem/Tokens/ICOSColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DesignSystem/Tokens/ICOSColors.swift"; sourceTree = SOURCE_ROOT; };
+		FA8D15C4CD71C769B8610045 /* ICOS/DesignSystem/Tokens/ICOSFontRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DesignSystem/Tokens/ICOSFontRegistry.swift"; sourceTree = SOURCE_ROOT; };
+		FAB2FB072A2F398348697CDE /* ICOS/DesignSystem/Tokens/ICOSMaterials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DesignSystem/Tokens/ICOSMaterials.swift"; sourceTree = SOURCE_ROOT; };
+		FA1C17A5CF0D8CB083CEDA97 /* ICOS/DesignSystem/Tokens/ICOSMotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DesignSystem/Tokens/ICOSMotion.swift"; sourceTree = SOURCE_ROOT; };
+		FAE7BD42D996E995C4D12785 /* ICOS/DesignSystem/Tokens/ICOSSoundTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DesignSystem/Tokens/ICOSSoundTokens.swift"; sourceTree = SOURCE_ROOT; };
+		FAF9D848FDD5B23386BA5320 /* ICOS/DesignSystem/Tokens/ICOSSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DesignSystem/Tokens/ICOSSpacing.swift"; sourceTree = SOURCE_ROOT; };
+		FACF3396C0B274E0BAFD4357 /* ICOS/DesignSystem/Tokens/ICOSThemeColorSeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DesignSystem/Tokens/ICOSThemeColorSeed.swift"; sourceTree = SOURCE_ROOT; };
+		FA96910C91EE5395FE4BF2F8 /* ICOS/DesignSystem/Tokens/ICOSTypography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DesignSystem/Tokens/ICOSTypography.swift"; sourceTree = SOURCE_ROOT; };
+		FA2544BC1B2692898D3E8CEF /* ICOS/Developer/Engines/DeveloperVoiceTranscriptionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Developer/Engines/DeveloperVoiceTranscriptionService.swift"; sourceTree = SOURCE_ROOT; };
+		FAF99A87671059F82562269A /* ICOS/Developer/Engines/DeveloperWorkspaceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Developer/Engines/DeveloperWorkspaceService.swift"; sourceTree = SOURCE_ROOT; };
+		FA23D51951375F134F883D12 /* ICOS/Developer/Models/DeveloperModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Developer/Models/DeveloperModels.swift"; sourceTree = SOURCE_ROOT; };
+		FAEFF8DA7212EA391724A57D /* ICOS/Developer/Registries/DeveloperToolRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Developer/Registries/DeveloperToolRegistry.swift"; sourceTree = SOURCE_ROOT; };
+		FA2CCD96110B9B537323D1FD /* ICOS/Developer/Views/DeveloperBuildDeployView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Developer/Views/DeveloperBuildDeployView.swift"; sourceTree = SOURCE_ROOT; };
+		FAF00E55D6F99A065275A38D /* ICOS/Developer/Views/DeveloperIntegrationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Developer/Views/DeveloperIntegrationsView.swift"; sourceTree = SOURCE_ROOT; };
+		FA88877A3074F7E3DEDA22DF /* ICOS/Developer/Views/DeveloperPlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Developer/Views/DeveloperPlanView.swift"; sourceTree = SOURCE_ROOT; };
+		FA55E6E340F95EAF8498B0AC /* ICOS/Developer/Views/DeveloperReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Developer/Views/DeveloperReviewView.swift"; sourceTree = SOURCE_ROOT; };
+		FAE73464C9E9D37D2332D89E /* ICOS/Developer/Views/DeveloperTerminalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Developer/Views/DeveloperTerminalView.swift"; sourceTree = SOURCE_ROOT; };
+		FA87BF76A6AFAA2EDAC57CAA /* ICOS/DeveloperConsole/ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DeveloperConsole/ContentView.swift"; sourceTree = SOURCE_ROOT; };
+		FA920662DD247245105707BF /* ICOS/DeveloperConsole/Fragments/InputBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DeveloperConsole/Fragments/InputBarView.swift"; sourceTree = SOURCE_ROOT; };
+		FA08211BDAD5847285B2F4AC /* ICOS/DeveloperConsole/Fragments/InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DeveloperConsole/Fragments/InputField.swift"; sourceTree = SOURCE_ROOT; };
+		FA7FA6A502DDF4C4D005AAA4 /* ICOS/DeveloperConsole/Fragments/MessageBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DeveloperConsole/Fragments/MessageBubbleView.swift"; sourceTree = SOURCE_ROOT; };
+		FA70BAFF2A502F23E5CA8A5B /* ICOS/DeveloperConsole/Fragments/OutputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DeveloperConsole/Fragments/OutputView.swift"; sourceTree = SOURCE_ROOT; };
+		FA30BC063C3863A05921996D /* ICOS/DeveloperConsole/Fragments/ThinkingIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DeveloperConsole/Fragments/ThinkingIndicatorView.swift"; sourceTree = SOURCE_ROOT; };
+		FA0034E55FBB80E750937E47 /* ICOS/DeveloperConsole/Fragments/TypingIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DeveloperConsole/Fragments/TypingIndicatorView.swift"; sourceTree = SOURCE_ROOT; };
+		FACDE661F1E4520622EA5DB5 /* ICOS/DeveloperConsole/Indicators/CognitiveLayerIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DeveloperConsole/Indicators/CognitiveLayerIndicator.swift"; sourceTree = SOURCE_ROOT; };
+		FA5B85DC40B326822221DE63 /* ICOS/DeveloperConsole/Indicators/ProcessingLayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DeveloperConsole/Indicators/ProcessingLayerView.swift"; sourceTree = SOURCE_ROOT; };
+		FAD019FBDBC41AD55AF39E1C /* ICOS/DeveloperConsole/Indicators/SearchingLayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DeveloperConsole/Indicators/SearchingLayerView.swift"; sourceTree = SOURCE_ROOT; };
+		FAE3C3D31ED69BDEA8FFB18D /* ICOS/DeveloperConsole/Indicators/ThinkingLayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DeveloperConsole/Indicators/ThinkingLayerView.swift"; sourceTree = SOURCE_ROOT; };
+		FA6422F2DA07483A64ACABA1 /* ICOS/DeveloperConsole/Models/DeveloperExtensionAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DeveloperConsole/Models/DeveloperExtensionAction.swift"; sourceTree = SOURCE_ROOT; };
+		FA776FDAAFBF25824B79A9EB /* ICOS/DeveloperConsole/Panels/InputPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DeveloperConsole/Panels/InputPanel.swift"; sourceTree = SOURCE_ROOT; };
+		FAC65C4754B37A646421EDE6 /* ICOS/DeveloperConsole/Panels/OutputPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DeveloperConsole/Panels/OutputPanel.swift"; sourceTree = SOURCE_ROOT; };
+		FAB8E84F2EDBC92E26841D67 /* ICOS/DeveloperConsole/Shell/Composer/DeveloperComposerInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DeveloperConsole/Shell/Composer/DeveloperComposerInput.swift"; sourceTree = SOURCE_ROOT; };
+		FA608D7047639FF3CFA61E09 /* ICOS/DeveloperConsole/Shell/Composer/DeveloperComposerShell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DeveloperConsole/Shell/Composer/DeveloperComposerShell.swift"; sourceTree = SOURCE_ROOT; };
+		FAD196481AFE09A08E343037 /* ICOS/DeveloperConsole/Shell/Composer/DeveloperComposerToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DeveloperConsole/Shell/Composer/DeveloperComposerToolbar.swift"; sourceTree = SOURCE_ROOT; };
+		FA4E34A62505ADB7455298EE /* ICOS/DeveloperConsole/Shell/Inspector/DeveloperInspectorShell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DeveloperConsole/Shell/Inspector/DeveloperInspectorShell.swift"; sourceTree = SOURCE_ROOT; };
+		FA7F0F3DFA47F76941AC3987 /* ICOS/DeveloperConsole/Shell/Layout/DeveloperConsoleCenterCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DeveloperConsole/Shell/Layout/DeveloperConsoleCenterCanvas.swift"; sourceTree = SOURCE_ROOT; };
+		FA7D8C1A0EC515112911E250 /* ICOS/DeveloperConsole/Shell/Layout/DeveloperConsoleShell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DeveloperConsole/Shell/Layout/DeveloperConsoleShell.swift"; sourceTree = SOURCE_ROOT; };
+		FA584787D1D2778DB987B8EE /* ICOS/DeveloperConsole/Shell/Sidebar/DeveloperWorkspaceSidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DeveloperConsole/Shell/Sidebar/DeveloperWorkspaceSidebar.swift"; sourceTree = SOURCE_ROOT; };
+		FA1F9A5A0E5EC7DFD0675F12 /* ICOS/DeveloperConsole/Views/ConsoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DeveloperConsole/Views/ConsoleView.swift"; sourceTree = SOURCE_ROOT; };
+		FA2E972D03E6F989AB3A8C0D /* ICOS/DeveloperConsole/Views/DeveloperConsoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/DeveloperConsole/Views/DeveloperConsoleView.swift"; sourceTree = SOURCE_ROOT; };
+		FAB2E38E5DBE2D98FD752DFD /* ICOS/Engine/ContextBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Engine/ContextBuilder.swift"; sourceTree = SOURCE_ROOT; };
+		FA341C10BDB8243C64ED1630 /* ICOS/Engine/ExecutionRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Engine/ExecutionRouter.swift"; sourceTree = SOURCE_ROOT; };
+		FA5C8A6EC6BD22DA07350806 /* ICOS/Engine/PromptAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Engine/PromptAssembler.swift"; sourceTree = SOURCE_ROOT; };
+		FAEE13C7E4CEB5798A63CCA7 /* ICOS/Execution/Patch/Native/PatchEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Execution/Patch/Native/PatchEngine.swift"; sourceTree = SOURCE_ROOT; };
+		FA8E02AFF9EBF9905ABC3B29 /* ICOS/Execution/Rollback/Native/RollbackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Execution/Rollback/Native/RollbackManager.swift"; sourceTree = SOURCE_ROOT; };
+		FACC9CEA402880E6216CFE64 /* ICOS/ExecutionEngine/ExecutionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/ExecutionEngine/ExecutionController.swift"; sourceTree = SOURCE_ROOT; };
+		FA3D41C9B30951811E54490D /* ICOS/Governance/DoctrineOutputValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Governance/DoctrineOutputValidator.swift"; sourceTree = SOURCE_ROOT; };
+		FA2187A80103A88A544214AD /* ICOS/Interfaces/Xcode/CloudRuntimeAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Interfaces/Xcode/CloudRuntimeAdapter.swift"; sourceTree = SOURCE_ROOT; };
+		FAFD40415CA97C35D0AD8A04 /* ICOS/Interfaces/Xcode/migrated_CloudRuntimeAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Interfaces/Xcode/migrated_CloudRuntimeAdapter.swift"; sourceTree = SOURCE_ROOT; };
+		FA9CE62308A1A80071FB088F /* ICOS/Interfaces/Xcode/migrated_ICOSRuntimeBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Interfaces/Xcode/migrated_ICOSRuntimeBridge.swift"; sourceTree = SOURCE_ROOT; };
+		FA49EEAA383A50A3F2244D41 /* ICOS/Interfaces/Xcode/migrated_WebsiteBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Interfaces/Xcode/migrated_WebsiteBridge.swift"; sourceTree = SOURCE_ROOT; };
+		FA8321DC39314C6CA876CE5F /* ICOS/KnowledgeBase/DoctrineDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/KnowledgeBase/DoctrineDocument.swift"; sourceTree = SOURCE_ROOT; };
+		FAA51754F225E691FA5A88F0 /* ICOS/KnowledgeBase/DoctrineIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/KnowledgeBase/DoctrineIndex.swift"; sourceTree = SOURCE_ROOT; };
+		FAB7A0BE341B80908502DCE9 /* ICOS/Memory/Apple/ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Memory/Apple/ChatMessage.swift"; sourceTree = SOURCE_ROOT; };
+		FA6BA0229AF9F852E2A1A6ED /* ICOS/Memory/Apple/ConversationMemory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Memory/Apple/ConversationMemory.swift"; sourceTree = SOURCE_ROOT; };
+		FAB634A3FC47CCA7C7AF0909 /* ICOS/Memory/Apple/MemoryEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Memory/Apple/MemoryEntry.swift"; sourceTree = SOURCE_ROOT; };
+		FA74654E9EE551FBF31DEE78 /* ICOS/Memory/Apple/MemoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Memory/Apple/MemoryManager.swift"; sourceTree = SOURCE_ROOT; };
+		FA104717F91133FCD2E9B34D /* ICOS/Memory/Apple/MemoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Memory/Apple/MemoryStore.swift"; sourceTree = SOURCE_ROOT; };
+		FAB581ECB0AF0EAC391DF21F /* ICOS/Memory/Apple/RetrievalIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Memory/Apple/RetrievalIndex.swift"; sourceTree = SOURCE_ROOT; };
+		FA69F1BEBC2CC820891745FE /* ICOS/Memory/Apple/RuntimeContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Memory/Apple/RuntimeContext.swift"; sourceTree = SOURCE_ROOT; };
+		FA33B1C91CC747FA475F8F72 /* ICOS/Memory/Apple/RuntimeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Memory/Apple/RuntimeState.swift"; sourceTree = SOURCE_ROOT; };
+		FA592B9EE97BB577E6789BC5 /* ICOS/Memory/Apple/SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Memory/Apple/SessionStore.swift"; sourceTree = SOURCE_ROOT; };
+		FA2E2B752D664CB62509B36C /* ICOS/Persistence/ICOSDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Persistence/ICOSDatabase.swift"; sourceTree = SOURCE_ROOT; };
+		FACF1EE14F0A5B1223514CB0 /* ICOS/Persistence/LocalStorageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Persistence/LocalStorageController.swift"; sourceTree = SOURCE_ROOT; };
+		FA166B7F792B2ACF4A10DD22 /* ICOS/Platform/Sections/CareersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Platform/Sections/CareersView.swift"; sourceTree = SOURCE_ROOT; };
+		FA8ABCD502554509B49C316A /* ICOS/Platform/Sections/KnowledgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Platform/Sections/KnowledgeView.swift"; sourceTree = SOURCE_ROOT; };
+		FA34FFCD955F6F9ADA7827DE /* ICOS/Platform/Sections/PlatformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Platform/Sections/PlatformView.swift"; sourceTree = SOURCE_ROOT; };
+		FA4F154F3141E079407FE942 /* ICOS/Platform/Sections/UpdatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Platform/Sections/UpdatesView.swift"; sourceTree = SOURCE_ROOT; };
+		FA4CC21A06FAA0F69662FE34 /* ICOS/Profile/ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Profile/ProfileManager.swift"; sourceTree = SOURCE_ROOT; };
+		FAB5CF97811F636DC71CA3DE /* ICOS/Profile/ProfileStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Profile/ProfileStore.swift"; sourceTree = SOURCE_ROOT; };
+		FA26F2D5F48C516018B09AA3 /* ICOS/Profile/UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Profile/UserProfile.swift"; sourceTree = SOURCE_ROOT; };
+		FA8D37D9C3F9641A2163F891 /* ICOS/Providers/Apple/CloudFrontierProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Providers/Apple/CloudFrontierProvider.swift"; sourceTree = SOURCE_ROOT; };
+		FAA07B15990127A339631CCC /* ICOS/Providers/Apple/ModelRuntimeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Providers/Apple/ModelRuntimeProvider.swift"; sourceTree = SOURCE_ROOT; };
+		FAB4769C64066136447C444C /* ICOS/Providers/Apple/ProviderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Providers/Apple/ProviderRouter.swift"; sourceTree = SOURCE_ROOT; };
+		FA4E681CAE853D2450114DEC /* ICOS/Runtime/Bridge/Native/ActiveFileBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Runtime/Bridge/Native/ActiveFileBridge.swift"; sourceTree = SOURCE_ROOT; };
+		FA8BC8406C116C537D42A3F3 /* ICOS/Runtime/Bridge/Native/ExternalEditorBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Runtime/Bridge/Native/ExternalEditorBridge.swift"; sourceTree = SOURCE_ROOT; };
+		FA8598B1D6CCCC199DBA01E0 /* ICOS/Runtime/Core/InferenceGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Runtime/Core/InferenceGateway.swift"; sourceTree = SOURCE_ROOT; };
+		FAA0C9AD766864AA0F1955AF /* ICOS/Runtime/Core/LocalRuntimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Runtime/Core/LocalRuntimeService.swift"; sourceTree = SOURCE_ROOT; };
+		FAE86E8C506596251D865474 /* ICOS/Runtime/Core/ModelRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Runtime/Core/ModelRegistry.swift"; sourceTree = SOURCE_ROOT; };
+		FA9E67D4AA4CF9F62536EA42 /* ICOS/Runtime/Core/RuntimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Runtime/Core/RuntimeManager.swift"; sourceTree = SOURCE_ROOT; };
+		FAE171F63B0B2612B7CEAD60 /* ICOS/Runtime/Core/TaskClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Runtime/Core/TaskClassifier.swift"; sourceTree = SOURCE_ROOT; };
+		FAF72FD461C9BA768816406C /* ICOS/Runtime/EventBus/Native/RuntimeEventBus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Runtime/EventBus/Native/RuntimeEventBus.swift"; sourceTree = SOURCE_ROOT; };
+		FAD402AA5934EB6CD656D2D3 /* ICOS/Runtime/Sandbox/Native/PermissionGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Runtime/Sandbox/Native/PermissionGate.swift"; sourceTree = SOURCE_ROOT; };
+		FAC910A75DE6C79D32C65029 /* ICOS/Runtime/Session/Native/WorkspaceGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Runtime/Session/Native/WorkspaceGraph.swift"; sourceTree = SOURCE_ROOT; };
+		FAFB183B04184088D8D73298 /* ICOS/Runtime/Terminal/Native/TerminalBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Runtime/Terminal/Native/TerminalBridge.swift"; sourceTree = SOURCE_ROOT; };
+		FA261AD678F637F65E6ABF55 /* ICOS/Runtime/VoiceCognition/Native/VoiceCognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Runtime/VoiceCognition/Native/VoiceCognitionService.swift"; sourceTree = SOURCE_ROOT; };
+		FA6ECF1A6C84B76A0A22CD4B /* ICOS/Runtime/VoiceCognition/Native/VoicePlaybackService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Runtime/VoiceCognition/Native/VoicePlaybackService.swift"; sourceTree = SOURCE_ROOT; };
+		FAD3DC468C1E9E7C8FD5C804 /* ICOS/SwiftUI/App/ICOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/App/ICOSApp.swift"; sourceTree = SOURCE_ROOT; };
+		FA10961C9B8B684084A73270 /* ICOS/SwiftUI/Behavior/BehaviorEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Behavior/BehaviorEngine.swift"; sourceTree = SOURCE_ROOT; };
+		FA25F018C78EF32A4D2C94D3 /* ICOS/SwiftUI/Boot/ICOSBootAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Boot/ICOSBootAnimationView.swift"; sourceTree = SOURCE_ROOT; };
+		FAC1176D21C1DB55B4AE8456 /* ICOS/SwiftUI/Boot/ICOSBootGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Boot/ICOSBootGate.swift"; sourceTree = SOURCE_ROOT; };
+		FA30DBCB6D785FFC79B3AA98 /* ICOS/SwiftUI/Button/ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Button/ButtonView.swift"; sourceTree = SOURCE_ROOT; };
+		FAB101D4342B284F337229C2 /* ICOS/SwiftUI/Components/ICOSActionPrimitives.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Components/ICOSActionPrimitives.swift"; sourceTree = SOURCE_ROOT; };
+		FAB63919DC0FDCA04699AC5B /* ICOS/SwiftUI/Components/ICOSBrandLockup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Components/ICOSBrandLockup.swift"; sourceTree = SOURCE_ROOT; };
+		FA5CCEDBE1EF683C14D00835 /* ICOS/SwiftUI/Features/BrowserUse/BrowserUseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Features/BrowserUse/BrowserUseView.swift"; sourceTree = SOURCE_ROOT; };
+		FAEA00EED6B274723940620C /* ICOS/SwiftUI/Features/FileManager/FileManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Features/FileManager/FileManagerView.swift"; sourceTree = SOURCE_ROOT; };
+		FA30ECA402CDAB82A87171B5 /* ICOS/SwiftUI/Features/Intelligence/IntelligenceModuleCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Features/Intelligence/IntelligenceModuleCatalog.swift"; sourceTree = SOURCE_ROOT; };
+		FA8B48B49AC524FCFFA8B9B7 /* ICOS/SwiftUI/Features/Intelligence/IntelligenceModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Features/Intelligence/IntelligenceModuleView.swift"; sourceTree = SOURCE_ROOT; };
+		FA36E677EE08280F54C7D6E7 /* ICOS/SwiftUI/Features/Projects/ProjectManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Features/Projects/ProjectManagerView.swift"; sourceTree = SOURCE_ROOT; };
+		FA0232E07D048CB78FF014A9 /* ICOS/SwiftUI/Layout/ICOSAdaptivePairLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Layout/ICOSAdaptivePairLayout.swift"; sourceTree = SOURCE_ROOT; };
+		FA7F95CE946389A8343DBBCB /* ICOS/SwiftUI/Layout/ICOSSplitLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Layout/ICOSSplitLayout.swift"; sourceTree = SOURCE_ROOT; };
+		FAF5FE0A685DABC88217CF03 /* ICOS/SwiftUI/Layout/ICOSWrappingFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Layout/ICOSWrappingFlowLayout.swift"; sourceTree = SOURCE_ROOT; };
+		FA258E9CE120981C23DA1A42 /* ICOS/SwiftUI/Layout/LayoutEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Layout/LayoutEngine.swift"; sourceTree = SOURCE_ROOT; };
+		FADE01F1BBE4544A3050255A /* ICOS/SwiftUI/Navigation/AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Navigation/AppRouter.swift"; sourceTree = SOURCE_ROOT; };
+		FAD27CE878FC4BCB537EBBA7 /* ICOS/SwiftUI/Settings/Components/SettingsSectionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Settings/Components/SettingsSectionCard.swift"; sourceTree = SOURCE_ROOT; };
+		FA2A1249313652E00EE5A88F /* ICOS/SwiftUI/Settings/Components/WorktreeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Settings/Components/WorktreeRow.swift"; sourceTree = SOURCE_ROOT; };
+		FA087E20A34C3CFB70C2E2B3 /* ICOS/SwiftUI/Settings/Panels/AppearanceSettingsPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Settings/Panels/AppearanceSettingsPanel.swift"; sourceTree = SOURCE_ROOT; };
+		FA2659E1B70AFDAE52874535 /* ICOS/SwiftUI/Settings/Panels/ChatManagementSettingsPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Settings/Panels/ChatManagementSettingsPanel.swift"; sourceTree = SOURCE_ROOT; };
+		FA69781B6C54A1BABB5FA43E /* ICOS/SwiftUI/Settings/Panels/ConfigurationSettingsPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Settings/Panels/ConfigurationSettingsPanel.swift"; sourceTree = SOURCE_ROOT; };
+		FA1BF8080D83E6C95E2E1390 /* ICOS/SwiftUI/Settings/Panels/ConnectorsSettingsPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Settings/Panels/ConnectorsSettingsPanel.swift"; sourceTree = SOURCE_ROOT; };
+		FA695492F951CE0476B0ED25 /* ICOS/SwiftUI/Settings/Panels/EditorBridgeSettingsPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Settings/Panels/EditorBridgeSettingsPanel.swift"; sourceTree = SOURCE_ROOT; };
+		FA9E7FD888CF398851B452EC /* ICOS/SwiftUI/Settings/Panels/EnvironmentSettingsPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Settings/Panels/EnvironmentSettingsPanel.swift"; sourceTree = SOURCE_ROOT; };
+		FA451D5A8FB9A921556E86D5 /* ICOS/SwiftUI/Settings/Panels/GeneralSettingsPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Settings/Panels/GeneralSettingsPanel.swift"; sourceTree = SOURCE_ROOT; };
+		FA31DB6AA3100206E313B954 /* ICOS/SwiftUI/Settings/Panels/PersonalizationSettingsPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Settings/Panels/PersonalizationSettingsPanel.swift"; sourceTree = SOURCE_ROOT; };
+		FA09D768E5FE0D9F9BFE9F90 /* ICOS/SwiftUI/Settings/Panels/VoiceSettingsPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Settings/Panels/VoiceSettingsPanel.swift"; sourceTree = SOURCE_ROOT; };
+		FA69E257AB9DC080096A8655 /* ICOS/SwiftUI/Settings/Panels/WorktreeSettingsPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Settings/Panels/WorktreeSettingsPanel.swift"; sourceTree = SOURCE_ROOT; };
+		FA413E72A609D252BC589970 /* ICOS/SwiftUI/Settings/SettingsPanels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Settings/SettingsPanels.swift"; sourceTree = SOURCE_ROOT; };
+		FA407E074B356C174FCEF50B /* ICOS/SwiftUI/Settings/SettingsRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Settings/SettingsRootView.swift"; sourceTree = SOURCE_ROOT; };
+		FAAB0A2C1782DB939C2D8536 /* ICOS/SwiftUI/Settings/Support/SettingsProfileTitles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Settings/Support/SettingsProfileTitles.swift"; sourceTree = SOURCE_ROOT; };
+		FA662A3F39A25EDC510B1E9E /* ICOS/SwiftUI/Shell/NavigationShell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Shell/NavigationShell.swift"; sourceTree = SOURCE_ROOT; };
+		FA102AC2C04D84D04A98AD18 /* ICOS/SwiftUI/Shell/RightInspectorPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Shell/RightInspectorPanel.swift"; sourceTree = SOURCE_ROOT; };
+		FA5FF7FFD2249CD9DF6C17C8 /* ICOS/SwiftUI/Shell/ShellState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Shell/ShellState.swift"; sourceTree = SOURCE_ROOT; };
+		FAD676F5D70A4664C8F26518 /* ICOS/SwiftUI/Shell/SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Shell/SidebarView.swift"; sourceTree = SOURCE_ROOT; };
+		FAAC6D22CD4691D4B2BDC82E /* ICOS/SwiftUI/Shell/TopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Shell/TopBarView.swift"; sourceTree = SOURCE_ROOT; };
+		FAFD240E0C734F445282222A /* ICOS/SwiftUI/System/PermissionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/System/PermissionService.swift"; sourceTree = SOURCE_ROOT; };
+		FA0E4AC32BBFEE495D82CB36 /* ICOS/SwiftUI/System/ProductEntityModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/System/ProductEntityModels.swift"; sourceTree = SOURCE_ROOT; };
+		FA6CEBCC159EF98BBA26E800 /* ICOS/SwiftUI/System/SystemServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/System/SystemServices.swift"; sourceTree = SOURCE_ROOT; };
+		FA02F4EAC2F0140AC34A2C3C /* ICOS/SwiftUI/System/UIRootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/System/UIRootCoordinator.swift"; sourceTree = SOURCE_ROOT; };
+		FA57A06071D3567790EF187F /* ICOS/SwiftUI/System/WorkspaceFileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/System/WorkspaceFileService.swift"; sourceTree = SOURCE_ROOT; };
+		FA83E92588709B282DD8B6BB /* ICOS/SwiftUI/Theme/ThemeEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Theme/ThemeEngine.swift"; sourceTree = SOURCE_ROOT; };
+		FAEECDBCFFA089749CE724C3 /* ICOS/SwiftUI/Window/ICOSTitlebarAccessory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Window/ICOSTitlebarAccessory.swift"; sourceTree = SOURCE_ROOT; };
+		FAD405FC1CFAD4F4BB71D678 /* ICOS/SwiftUI/Window/ICOSWindowChrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Window/ICOSWindowChrome.swift"; sourceTree = SOURCE_ROOT; };
+		FAEC4C3CE3B1ED08495C68B9 /* ICOS/SwiftUI/Window/ICOSWindowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Window/ICOSWindowCoordinator.swift"; sourceTree = SOURCE_ROOT; };
+		FA8C3FA2DDB554B5F2C71353 /* ICOS/SwiftUI/Window/ICOSWindowToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Window/ICOSWindowToolbar.swift"; sourceTree = SOURCE_ROOT; };
+		FA9276AAA416FD153C5FD8D7 /* ICOS/SwiftUI/Window/WindowAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/SwiftUI/Window/WindowAccessor.swift"; sourceTree = SOURCE_ROOT; };
+		FAB67C01AE4F35640B6B0295 /* ICOS/System/Layout/ICOSContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Layout/ICOSContainer.swift"; sourceTree = SOURCE_ROOT; };
+		FA5F04BFE318404B60F9C33A /* ICOS/System/Layout/ICOSLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Layout/ICOSLayout.swift"; sourceTree = SOURCE_ROOT; };
+		FA17B38F860E8C936229E582 /* ICOS/System/Navigation/ICOSRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Navigation/ICOSRoute.swift"; sourceTree = SOURCE_ROOT; };
+		FA1D7E35A8FB6D64458201C7 /* ICOS/System/Navigation/ICOSSidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Navigation/ICOSSidebar.swift"; sourceTree = SOURCE_ROOT; };
+		FAC0E187A9301545C3F568A8 /* ICOS/System/Navigation/SidebarComponents/EnvironmentStatusRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Navigation/SidebarComponents/EnvironmentStatusRow.swift"; sourceTree = SOURCE_ROOT; };
+		FA0FBC7752E97CDD0C921B65 /* ICOS/System/Navigation/SidebarComponents/LeftIconRail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Navigation/SidebarComponents/LeftIconRail.swift"; sourceTree = SOURCE_ROOT; };
+		FA2BE631BF1970CBED31901C /* ICOS/System/Navigation/SidebarComponents/SidebarContentPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Navigation/SidebarComponents/SidebarContentPanel.swift"; sourceTree = SOURCE_ROOT; };
+		FA09F7482CE37D81ACA04CB6 /* ICOS/System/Navigation/SidebarComponents/SidebarFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Navigation/SidebarComponents/SidebarFooter.swift"; sourceTree = SOURCE_ROOT; };
+		FAC8D31E695F7B4BFC7F445E /* ICOS/System/Navigation/SidebarComponents/SidebarHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Navigation/SidebarComponents/SidebarHeader.swift"; sourceTree = SOURCE_ROOT; };
+		FAEA6657D2ACDB8EA29AD00F /* ICOS/System/Navigation/SidebarComponents/SidebarSearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Navigation/SidebarComponents/SidebarSearchField.swift"; sourceTree = SOURCE_ROOT; };
+		FA86158EC2EC7B172618F791 /* ICOS/System/Navigation/SidebarComponents/SidebarSectionTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Navigation/SidebarComponents/SidebarSectionTitle.swift"; sourceTree = SOURCE_ROOT; };
+		FA0C7720DFE5488208FC2CE5 /* ICOS/System/Navigation/SidebarComponents/WorkspacePanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Navigation/SidebarComponents/WorkspacePanel.swift"; sourceTree = SOURCE_ROOT; };
+		FA2B461EA6CDA537EF1A88C0 /* ICOS/System/Navigation/SidebarRailButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Navigation/SidebarRailButton.swift"; sourceTree = SOURCE_ROOT; };
+		FA9EBCA049BD90406128E646 /* ICOS/System/Navigation/SidebarRouteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Navigation/SidebarRouteRow.swift"; sourceTree = SOURCE_ROOT; };
+		FA98A930F8D9DE4093343436 /* ICOS/System/Navigation/WorkspaceModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Navigation/WorkspaceModels.swift"; sourceTree = SOURCE_ROOT; };
+		FACFABF2B08CA5581B431BB5 /* ICOS/System/Navigation/WorkspaceSeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Navigation/WorkspaceSeed.swift"; sourceTree = SOURCE_ROOT; };
+		FA2DA343F97DE4732794CB90 /* ICOS/System/Navigation/WorkspaceTreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Navigation/WorkspaceTreeView.swift"; sourceTree = SOURCE_ROOT; };
+		FA76911FC416A07DC28F88F1 /* ICOS/System/Overlays/ICOSOverlayManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Overlays/ICOSOverlayManager.swift"; sourceTree = SOURCE_ROOT; };
+		FAEB6D3439D4A15DB4AB0B61 /* ICOS/System/Runtime/AgentRuntime/AgentRuntimeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Runtime/AgentRuntime/AgentRuntimeModels.swift"; sourceTree = SOURCE_ROOT; };
+		FA65FA02A28C03208C6B798E /* ICOS/System/Runtime/AgentRuntime/AgentRuntimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Runtime/AgentRuntime/AgentRuntimeService.swift"; sourceTree = SOURCE_ROOT; };
+		FA0698386CEDDA90EBBA6892 /* ICOS/System/Runtime/DeveloperRuntime/ChatRuntimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Runtime/DeveloperRuntime/ChatRuntimeView.swift"; sourceTree = SOURCE_ROOT; };
+		FA6D0C4178310A36802D6AA1 /* ICOS/System/Runtime/DeveloperRuntime/Components/DeveloperRuntimeCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Runtime/DeveloperRuntime/Components/DeveloperRuntimeCanvas.swift"; sourceTree = SOURCE_ROOT; };
+		FAFBAD4E2C2F822B778DACE6 /* ICOS/System/Runtime/DeveloperRuntime/Components/DeveloperRuntimeComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Runtime/DeveloperRuntime/Components/DeveloperRuntimeComposer.swift"; sourceTree = SOURCE_ROOT; };
+		FAE633DC980E0C61968B2CC0 /* ICOS/System/Runtime/DeveloperRuntime/Components/DeveloperRuntimeControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Runtime/DeveloperRuntime/Components/DeveloperRuntimeControls.swift"; sourceTree = SOURCE_ROOT; };
+		FADF8C070F0834F97B77E390 /* ICOS/System/Runtime/DeveloperRuntime/Components/DeveloperRuntimeInspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Runtime/DeveloperRuntime/Components/DeveloperRuntimeInspector.swift"; sourceTree = SOURCE_ROOT; };
+		FAEDEE400D66CFC9560168BD /* ICOS/System/Runtime/DeveloperRuntime/Components/DeveloperRuntimeSidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Runtime/DeveloperRuntime/Components/DeveloperRuntimeSidebar.swift"; sourceTree = SOURCE_ROOT; };
+		FABC011D157CDBDC6002685B /* ICOS/System/Runtime/DeveloperRuntime/DeveloperRuntimeShell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Runtime/DeveloperRuntime/DeveloperRuntimeShell.swift"; sourceTree = SOURCE_ROOT; };
+		FA7798705FD9C718EDDC5CDC /* ICOS/System/Runtime/DeveloperRuntime/DiffReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Runtime/DeveloperRuntime/DiffReviewView.swift"; sourceTree = SOURCE_ROOT; };
+		FA6E9B577EEAD7C62B8922AA /* ICOS/System/Runtime/DeveloperRuntime/FileEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Runtime/DeveloperRuntime/FileEditorView.swift"; sourceTree = SOURCE_ROOT; };
+		FA21D32DF4C8370C69F216AE /* ICOS/System/Runtime/DeveloperRuntime/TerminalRuntimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Runtime/DeveloperRuntime/TerminalRuntimeView.swift"; sourceTree = SOURCE_ROOT; };
+		FA97F2A2C1929693B01DB010 /* ICOS/System/Runtime/IntelligenceRuntime/AgentGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Runtime/IntelligenceRuntime/AgentGraphView.swift"; sourceTree = SOURCE_ROOT; };
+		FADD37B4A96FC29F42B9308D /* ICOS/System/Runtime/IntelligenceRuntime/IntelligenceRuntimeShell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Runtime/IntelligenceRuntime/IntelligenceRuntimeShell.swift"; sourceTree = SOURCE_ROOT; };
+		FAFD2B865AFC94EE5F8196B3 /* ICOS/System/Runtime/IntelligenceRuntime/MemoryEngineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Runtime/IntelligenceRuntime/MemoryEngineView.swift"; sourceTree = SOURCE_ROOT; };
+		FA53824EAB41E7C5AEFF97FA /* ICOS/System/Runtime/OperationsRuntime/DeploymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Runtime/OperationsRuntime/DeploymentView.swift"; sourceTree = SOURCE_ROOT; };
+		FA21B3DB40A9BD83CABF4FBF /* ICOS/System/Runtime/OperationsRuntime/LogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Runtime/OperationsRuntime/LogsView.swift"; sourceTree = SOURCE_ROOT; };
+		FA50AC3255017FC51AE94803 /* ICOS/System/Runtime/OperationsRuntime/MonitoringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Runtime/OperationsRuntime/MonitoringView.swift"; sourceTree = SOURCE_ROOT; };
+		FAB8621C661BDE3371DA60C0 /* ICOS/System/Runtime/OperationsRuntime/OperationsRuntimeShell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Runtime/OperationsRuntime/OperationsRuntimeShell.swift"; sourceTree = SOURCE_ROOT; };
+		FAF44C3B93CAADCA52A2479D /* ICOS/System/Runtime/OperationsRuntime/TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Runtime/OperationsRuntime/TasksView.swift"; sourceTree = SOURCE_ROOT; };
+		FA29DADA44E6BDD1036FE19C /* ICOS/System/Runtime/ProviderRuntime/ConnectorRegistryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Runtime/ProviderRuntime/ConnectorRegistryService.swift"; sourceTree = SOURCE_ROOT; };
+		FA44EA04271FDDDE620F2D03 /* ICOS/System/Runtime/ProviderRuntime/ConnectorRuntimeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Runtime/ProviderRuntime/ConnectorRuntimeModels.swift"; sourceTree = SOURCE_ROOT; };
+		FA4FB3A8097C2F527569861C /* ICOS/System/Runtime/WorkspaceRuntime/WorkspaceRuntimeCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Runtime/WorkspaceRuntime/WorkspaceRuntimeCanvas.swift"; sourceTree = SOURCE_ROOT; };
+		FA34AF7CB0F841140A1CB590 /* ICOS/System/Runtime/WorkspaceRuntime/WorkspaceRuntimeShell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Runtime/WorkspaceRuntime/WorkspaceRuntimeShell.swift"; sourceTree = SOURCE_ROOT; };
+		FAECEF2B7BE69EC1BC7FEC4F /* ICOS/System/Runtime/WorkspaceRuntime/WorkspaceRuntimeSidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Runtime/WorkspaceRuntime/WorkspaceRuntimeSidebar.swift"; sourceTree = SOURCE_ROOT; };
+		FA44502D7A5484C547774BA9 /* ICOS/System/Services/SecureCredentialStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Services/SecureCredentialStore.swift"; sourceTree = SOURCE_ROOT; };
+		FA16A59BBCC4F1059AB11952 /* ICOS/System/Settings/Controls/RuntimeModePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Settings/Controls/RuntimeModePicker.swift"; sourceTree = SOURCE_ROOT; };
+		FA3C800A77673ABEDDC75C6F /* ICOS/System/Settings/Fragments/CloudProviderSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Settings/Fragments/CloudProviderSection.swift"; sourceTree = SOURCE_ROOT; };
+		FAAA1A553BF70D374023932C /* ICOS/System/Settings/Fragments/LocalModelSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Settings/Fragments/LocalModelSection.swift"; sourceTree = SOURCE_ROOT; };
+		FA9BA8C8562F8A237F5183CD /* ICOS/System/Settings/Fragments/RuntimeModeSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Settings/Fragments/RuntimeModeSection.swift"; sourceTree = SOURCE_ROOT; };
+		FADD6C280BF923C6CB507B33 /* ICOS/System/Settings/Models/RuntimeMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Settings/Models/RuntimeMode.swift"; sourceTree = SOURCE_ROOT; };
+		FA0DDF1AAB8B8885452CBABB /* ICOS/System/Settings/State/RuntimeSettingsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Settings/State/RuntimeSettingsState.swift"; sourceTree = SOURCE_ROOT; };
+		FA656FCFB7AD7A12E7BC3A9C /* ICOS/System/Settings/Views/RuntimeSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Settings/Views/RuntimeSettingsView.swift"; sourceTree = SOURCE_ROOT; };
+		FA3858572BA6C6625EE2F0FA /* ICOS/System/Shell/ICOSMainShell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Shell/ICOSMainShell.swift"; sourceTree = SOURCE_ROOT; };
+		FAF2B6FFE1667D58E7411A78 /* ICOS/System/State/ICOSAppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/State/ICOSAppState.swift"; sourceTree = SOURCE_ROOT; };
+		FAFB91E402620406D84F799E /* ICOS/System/State/MemoryState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/State/MemoryState.swift"; sourceTree = SOURCE_ROOT; };
+		FABC4C6C3B97192FC0EE54F0 /* ICOS/System/State/ProfileState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/State/ProfileState.swift"; sourceTree = SOURCE_ROOT; };
+		FAC7BA3D6FD107416B54742A /* ICOS/System/State/RuntimeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/State/RuntimeState.swift"; sourceTree = SOURCE_ROOT; };
+		FA4BBE59C50C18B4CFBC0037 /* ICOS/System/State/SessionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/State/SessionState.swift"; sourceTree = SOURCE_ROOT; };
+		FA3EA34A8251CDCD41570474 /* ICOS/System/Theme/ThemeMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Theme/ThemeMode.swift"; sourceTree = SOURCE_ROOT; };
+		FACD98C105ABD792AC0E705C /* ICOS/System/Theme/ThemeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Theme/ThemeProvider.swift"; sourceTree = SOURCE_ROOT; };
+		FA65591889A3E2401F20EBC6 /* ICOS/System/Theme/ThemeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Theme/ThemeState.swift"; sourceTree = SOURCE_ROOT; };
+		FA8AD0B2E836BDA7B6DBE14A /* ICOS/System/Workspace/ICOSWorkspace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/System/Workspace/ICOSWorkspace.swift"; sourceTree = SOURCE_ROOT; };
+		FA65E2AD59CBFDCC4FC90EE0 /* ICOS/ThirdParty/network_stack/StreamingResponseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/ThirdParty/network_stack/StreamingResponseController.swift"; sourceTree = SOURCE_ROOT; };
+		FADBEE6E7B164CF0E7539FF5 /* ICOS/Validation/ExecutionValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ICOS/Validation/ExecutionValidator.swift"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		BE288F692FA01D2000A5C1D6 /* Exceptions for "ICOS" folder in "ICOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Doctrine/24 - Safety & Privacy Layer/01 - Safety Governance Core/Safety Policy Core Doctrine.md",
+				Execution/python,
+				Execution/python3,
+				Execution/python3.14,
+				"Execution/𝜋thon",
+				Interfaces/VSCode/Extension/package.json,
+				Interfaces/VSCode/Extension/README.md,
+				Interfaces/VSCode/Extension/src/extension.js,
+				Interfaces/Xcode/migrated_CloudRuntimeAdapter.swift,
+				Interfaces/Xcode/migrated_ICOSRuntimeBridge.swift,
+				Interfaces/Xcode/migrated_WebsiteBridge.swift,
+				Memory/Apple/RuntimeState.swift,
+				Memory/Native/TExceptionState.cpp,
+				Memory/Native/TPythonState.cpp,
+				Memory/Native/TStackState.cpp,
+				Memory/Native/TThreadStateDestroy.cpp,
+				Runtime/RuntimeState.swift,
+				ThirdParty/arch_switches/switch_arm64_masm.asm,
+				ThirdParty/arch_switches/switch_x64_masm.asm,
+				"ThirdParty/dylibs/_avif.cpython-314-darwin.so",
+				"ThirdParty/dylibs/_test_extension_cpp.cpython-314-darwin.so",
+				"ThirdParty/dylibs/_test_extension.cpython-314-darwin.so",
+				"ThirdParty/dylibs/_webp.cpython-314-darwin.so",
+				ThirdParty/dylibs/libavif.16.4.1.dylib,
+				ThirdParty/dylibs/libbrotlicommon.1.2.0.dylib,
+				ThirdParty/dylibs/libbrotlidec.1.2.0.dylib,
+				ThirdParty/dylibs/libfreetype.6.dylib,
+				ThirdParty/dylibs/libharfbuzz.0.dylib,
+				ThirdParty/dylibs/libjpeg.62.4.0.dylib,
+				ThirdParty/dylibs/liblcms2.2.dylib,
+				ThirdParty/dylibs/liblzma.5.dylib,
+				ThirdParty/dylibs/libopenjp2.2.5.4.dylib,
+				ThirdParty/dylibs/libpng16.16.dylib,
+				ThirdParty/dylibs/libsharpyuv.0.dylib,
+				ThirdParty/dylibs/libtiff.6.dylib,
+				ThirdParty/dylibs/libwebp.7.dylib,
+				ThirdParty/dylibs/libwebpdemux.2.dylib,
+				ThirdParty/dylibs/libwebpmux.3.dylib,
+				ThirdParty/dylibs/libXau.6.dylib,
+				ThirdParty/dylibs/libxcb.1.1.0.dylib,
+				"ThirdParty/dylibs/libz.1.3.1.zlib-ng.dylib",
+				"ThirdParty/greenlet/_greenlet.cpython-314-darwin.so",
+				ThirdParty/greenlet/greenlet.cpp,
+				ThirdParty/greenlet/PyGreenlet.cpp,
+				ThirdParty/greenlet/PyGreenletUnswitchable.cpp,
+				ThirdParty/greenlet/TBrokenGreenlet.cpp,
+				ThirdParty/greenlet/TGreenlet.cpp,
+				ThirdParty/greenlet/TGreenletGlobals.cpp,
+				ThirdParty/greenlet/TMainGreenlet.cpp,
+				ThirdParty/greenlet/TUserGreenlet.cpp,
+				"ThirdParty/Pillow/_imaging.cpython-314-darwin.so",
+				"ThirdParty/Pillow/_imagingcms.cpython-314-darwin.so",
+				"ThirdParty/Pillow/_imagingft.cpython-314-darwin.so",
+				"ThirdParty/Pillow/_imagingmath.cpython-314-darwin.so",
+				"ThirdParty/Pillow/_imagingmorph.cpython-314-darwin.so",
+				"ThirdParty/Pillow/_imagingtk.cpython-314-darwin.so",
+				ThirdParty/vendor/LICENSE.txt,
+				ThirdParty/vendor/migrated_LICENSE.txt,
+			);
+			target = BE288E022F9FE4EE00A5C1D6 /* ICOS */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		BE288E052F9FE4EE00A5C1D6 /* ICOS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BE288F692FA01D2000A5C1D6 /* Exceptions for "ICOS" folder in "ICOS" target */,
+			);
+			path = ICOS;
+			sourceTree = "<group>";
+		};
+		BE288E132F9FE4EF00A5C1D6 /* ICOSTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ICOSTests;
+			sourceTree = "<group>";
+		};
+		BE288E1D2F9FE4EF00A5C1D6 /* ICOSUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ICOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE288E002F9FE4EE00A5C1D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE288E0D2F9FE4EF00A5C1D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE288E172F9FE4EF00A5C1D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE288DFA2F9FE4EE00A5C1D6 = {
+			isa = PBXGroup;
+			children = (
+				BE288E052F9FE4EE00A5C1D6 /* ICOS */,
+				BE288E132F9FE4EF00A5C1D6 /* ICOSTests */,
+				BE288E1D2F9FE4EF00A5C1D6 /* ICOSUITests */,
+				BE288FBB2FA02B0000A5C1D6 /* Runtime Frameworks */,
+				BE288E042F9FE4EE00A5C1D6 /* Products */,
+				BEC518462FA38941008950F0 /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
+		BE288E042F9FE4EE00A5C1D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE288E032F9FE4EE00A5C1D6 /* ICOS.app */,
+				BE288E102F9FE4EF00A5C1D6 /* ICOSTests.xctest */,
+				BE288E1A2F9FE4EF00A5C1D6 /* ICOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE288FBB2FA02B0000A5C1D6 /* Runtime Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE288FB52FA02B0000A5C1D6 /* Runtime/Frameworks/libllama.0.dylib */,
+				BE288FB62FA02B0000A5C1D6 /* Runtime/Frameworks/libllama.dylib */,
+				BE288FB02FA02B0000A5C1D6 /* Runtime/Frameworks/libggml.dylib */,
+				BE288FD12FA02C0000A5C1D6 /* Runtime/Frameworks/libggml.0.dylib */,
+				BE288FD22FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-base.0.dylib */,
+				BE288FD32FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-cpu.0.dylib */,
+				BE288FD42FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-metal.0.dylib */,
+				BE288FD52FA02C0000A5C1D6 /* Runtime/Frameworks/libggml-blas.0.dylib */,
+				BE288FAA2FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-cpu.dylib */,
+				BE288FA42FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-base.dylib */,
+				BE288FAD2FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-metal.dylib */,
+				BE288FA72FA02B0000A5C1D6 /* Runtime/Frameworks/libggml-blas.dylib */,
+				BE288FBA2FA02B0000A5C1D6 /* Runtime/Frameworks/libssl.3.dylib */,
+				BE288FA12FA02B0000A5C1D6 /* Runtime/Frameworks/libcrypto.3.dylib */,
+			);
+			name = "Runtime Frameworks";
+			sourceTree = "<group>";
+		};
+		BEC518462FA38941008950F0 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE288E022F9FE4EE00A5C1D6 /* ICOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE288E242F9FE4EF00A5C1D6 /* Build configuration list for PBXNativeTarget "ICOS" */;
+			buildPhases = (
+				BE288DFF2F9FE4EE00A5C1D6 /* Sources */,
+				BE288E002F9FE4EE00A5C1D6 /* Frameworks */,
+				BE288E012F9FE4EE00A5C1D6 /* Resources */,
+				BE288FD62FA0400000A5C1D6 /* Copy Doctrine Tree */,
+				BE288F802FA02B0000A5C1D6 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				BE288E052F9FE4EE00A5C1D6 /* ICOS */,
+			);
+			name = ICOS;
+			packageProductDependencies = (
+			);
+			productName = ICOS;
+			productReference = BE288E032F9FE4EE00A5C1D6 /* ICOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE288E0F2F9FE4EF00A5C1D6 /* ICOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE288E272F9FE4EF00A5C1D6 /* Build configuration list for PBXNativeTarget "ICOSTests" */;
+			buildPhases = (
+				BE288E0C2F9FE4EF00A5C1D6 /* Sources */,
+				BE288E0D2F9FE4EF00A5C1D6 /* Frameworks */,
+				BE288E0E2F9FE4EF00A5C1D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE288E122F9FE4EF00A5C1D6 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				BE288E132F9FE4EF00A5C1D6 /* ICOSTests */,
+			);
+			name = ICOSTests;
+			packageProductDependencies = (
+			);
+			productName = ICOSTests;
+			productReference = BE288E102F9FE4EF00A5C1D6 /* ICOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BE288E192F9FE4EF00A5C1D6 /* ICOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE288E2A2F9FE4EF00A5C1D6 /* Build configuration list for PBXNativeTarget "ICOSUITests" */;
+			buildPhases = (
+				BE288E162F9FE4EF00A5C1D6 /* Sources */,
+				BE288E172F9FE4EF00A5C1D6 /* Frameworks */,
+				BE288E182F9FE4EF00A5C1D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE288E1C2F9FE4EF00A5C1D6 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				BE288E1D2F9FE4EF00A5C1D6 /* ICOSUITests */,
+			);
+			name = ICOSUITests;
+			packageProductDependencies = (
+			);
+			productName = ICOSUITests;
+			productReference = BE288E1A2F9FE4EF00A5C1D6 /* ICOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE288DFB2F9FE4EE00A5C1D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2640;
+				LastUpgradeCheck = 2640;
+				TargetAttributes = {
+					BE288E022F9FE4EE00A5C1D6 = {
+						CreatedOnToolsVersion = 26.4.1;
+					};
+					BE288E0F2F9FE4EF00A5C1D6 = {
+						CreatedOnToolsVersion = 26.4.1;
+						TestTargetID = BE288E022F9FE4EE00A5C1D6;
+					};
+					BE288E192F9FE4EF00A5C1D6 = {
+						CreatedOnToolsVersion = 26.4.1;
+						TestTargetID = BE288E022F9FE4EE00A5C1D6;
+					};
+				};
+			};
+			buildConfigurationList = BE288DFE2F9FE4EE00A5C1D6 /* Build configuration list for PBXProject "ICOS" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE288DFA2F9FE4EE00A5C1D6;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = BE288E042F9FE4EE00A5C1D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE288E022F9FE4EE00A5C1D6 /* ICOS */,
+				BE288E0F2F9FE4EF00A5C1D6 /* ICOSTests */,
+				BE288E192F9FE4EF00A5C1D6 /* ICOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE288E012F9FE4EE00A5C1D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE288E0E2F9FE4EF00A5C1D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE288E182F9FE4EF00A5C1D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BE288FD62FA0400000A5C1D6 /* Copy Doctrine Tree */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(PROJECT_DIR)/ICOS/Doctrine/**",
+			);
+			name = "Copy Doctrine Tree";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Doctrine",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nSOURCE=\"$PROJECT_DIR/ICOS/Doctrine\"\nDEST=\"$TARGET_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/Doctrine\"\nrm -rf \"$DEST\"\nmkdir -p \"$DEST\"\n/usr/bin/ditto \"$SOURCE\" \"$DEST\"\nfind \"$TARGET_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\" -maxdepth 1 -type f -name '*.md' -delete\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE288DFF2F9FE4EE00A5C1D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB7BD638B0EAC13EEBF7C47D /* ICOS/CognitiveEngine/Doctrine/DoctrineCompiler.swift in Sources */,
+				FB8DDB11BC2A6C4E4BBEE358 /* ICOS/CognitiveEngine/Doctrine/DoctrineLoader.swift in Sources */,
+				FB345E9D25DDA77CC2C3E04D /* ICOS/CognitiveEngine/Doctrine/DoctrineRegistry.swift in Sources */,
+				FB7A830A12531D7D9357BCD9 /* ICOS/CognitiveEngine/DoctrineContextBuilder.swift in Sources */,
+				FB1700A6BF5194147FA4BCEB /* ICOS/CognitiveEngine/DoctrineInterpreter.swift in Sources */,
+				FBB5081D734E9B4B5255D823 /* ICOS/CognitiveEngine/Governance/ExecutionPolicyEngine.swift in Sources */,
+				FB7897C02E4D6C609965350D /* ICOS/CognitiveEngine/Governance/ResponseGovernanceFilter.swift in Sources */,
+				FB27B96E8CAC15F504ABD0BE /* ICOS/CognitiveEngine/InstructionOrchestrator.swift in Sources */,
+				FB4F91E43EA93173A06D1D70 /* ICOS/CognitiveEngine/ResponseShaper.swift in Sources */,
+				FB303A57284F6D51E32B214B /* ICOS/CognitiveEngine/SystemPromptBuilder.swift in Sources */,
+				FBDCD9F8F5D8993A22AC5CAF /* ICOS/CognitiveEngine/Tools/WebSearchTool.swift in Sources */,
+				FB547380B3080817363F1344 /* ICOS/Control/ICOSExecutionController.swift in Sources */,
+				FB89BC2FCB4AD9D48BE3930B /* ICOS/Core/ICOSCoreRuntime.swift in Sources */,
+				FB3F0BD58E6160F868EA6873 /* ICOS/DesignSystem/Components/Controls/ICOSPickerRow.swift in Sources */,
+				FBAEE65780FF9A8EE42A3539 /* ICOS/DesignSystem/Components/Controls/ICOSSliderRow.swift in Sources */,
+				FB0DFC39C7A072B8C17184FC /* ICOS/DesignSystem/Components/Controls/ICOSToggleRow.swift in Sources */,
+				FB6036CA5DC78DDD6A81069B /* ICOS/DesignSystem/Components/ICOSButton.swift in Sources */,
+				FBF4DB5F7EDEB0B798C0FA7B /* ICOS/DesignSystem/Components/ICOSDivider.swift in Sources */,
+				FBFF2726C6DA8BDEB9CDE34D /* ICOS/DesignSystem/Components/ICOSPanel.swift in Sources */,
+				FBBEFF52EC760A338C1ED31C /* ICOS/DesignSystem/Controls/ICOSControlStyles.swift in Sources */,
+				FBBBBB255FC4C6602D33A497 /* ICOS/DesignSystem/Controls/ICOSTextInput.swift in Sources */,
+				FBEA3B5096AB69FA4051C453 /* ICOS/DesignSystem/Controls/ICOSToggle.swift in Sources */,
+				FBB58F8D59680391FAA9C1B4 /* ICOS/DesignSystem/Icons/ICOSIcon.swift in Sources */,
+				FBA6CE9AA5381790DB7D6C69 /* ICOS/DesignSystem/Icons/IconRegistry.swift in Sources */,
+				FB3AC2F793EAC70F174F6DA1 /* ICOS/DesignSystem/Icons/SVGImageView.swift in Sources */,
+				FBB0F00B0CBB38379BD922EF /* ICOS/DesignSystem/Icons/SVGKitRenderer.swift in Sources */,
+				FB26AFB613B4AAEE3CA647E7 /* ICOS/DesignSystem/Tokens/ICOSColors.swift in Sources */,
+				FB8D15C4CD71C769B8610045 /* ICOS/DesignSystem/Tokens/ICOSFontRegistry.swift in Sources */,
+				FBB2FB072A2F398348697CDE /* ICOS/DesignSystem/Tokens/ICOSMaterials.swift in Sources */,
+				FB1C17A5CF0D8CB083CEDA97 /* ICOS/DesignSystem/Tokens/ICOSMotion.swift in Sources */,
+				FBE7BD42D996E995C4D12785 /* ICOS/DesignSystem/Tokens/ICOSSoundTokens.swift in Sources */,
+				FBF9D848FDD5B23386BA5320 /* ICOS/DesignSystem/Tokens/ICOSSpacing.swift in Sources */,
+				FBCF3396C0B274E0BAFD4357 /* ICOS/DesignSystem/Tokens/ICOSThemeColorSeed.swift in Sources */,
+				FB96910C91EE5395FE4BF2F8 /* ICOS/DesignSystem/Tokens/ICOSTypography.swift in Sources */,
+				FB2544BC1B2692898D3E8CEF /* ICOS/Developer/Engines/DeveloperVoiceTranscriptionService.swift in Sources */,
+				FBF99A87671059F82562269A /* ICOS/Developer/Engines/DeveloperWorkspaceService.swift in Sources */,
+				FB23D51951375F134F883D12 /* ICOS/Developer/Models/DeveloperModels.swift in Sources */,
+				FBEFF8DA7212EA391724A57D /* ICOS/Developer/Registries/DeveloperToolRegistry.swift in Sources */,
+				FB2CCD96110B9B537323D1FD /* ICOS/Developer/Views/DeveloperBuildDeployView.swift in Sources */,
+				FBF00E55D6F99A065275A38D /* ICOS/Developer/Views/DeveloperIntegrationsView.swift in Sources */,
+				FB88877A3074F7E3DEDA22DF /* ICOS/Developer/Views/DeveloperPlanView.swift in Sources */,
+				FB55E6E340F95EAF8498B0AC /* ICOS/Developer/Views/DeveloperReviewView.swift in Sources */,
+				FBE73464C9E9D37D2332D89E /* ICOS/Developer/Views/DeveloperTerminalView.swift in Sources */,
+				FB87BF76A6AFAA2EDAC57CAA /* ICOS/DeveloperConsole/ContentView.swift in Sources */,
+				FB920662DD247245105707BF /* ICOS/DeveloperConsole/Fragments/InputBarView.swift in Sources */,
+				FB08211BDAD5847285B2F4AC /* ICOS/DeveloperConsole/Fragments/InputField.swift in Sources */,
+				FB7FA6A502DDF4C4D005AAA4 /* ICOS/DeveloperConsole/Fragments/MessageBubbleView.swift in Sources */,
+				FB70BAFF2A502F23E5CA8A5B /* ICOS/DeveloperConsole/Fragments/OutputView.swift in Sources */,
+				FB30BC063C3863A05921996D /* ICOS/DeveloperConsole/Fragments/ThinkingIndicatorView.swift in Sources */,
+				FB0034E55FBB80E750937E47 /* ICOS/DeveloperConsole/Fragments/TypingIndicatorView.swift in Sources */,
+				FBCDE661F1E4520622EA5DB5 /* ICOS/DeveloperConsole/Indicators/CognitiveLayerIndicator.swift in Sources */,
+				FB5B85DC40B326822221DE63 /* ICOS/DeveloperConsole/Indicators/ProcessingLayerView.swift in Sources */,
+				FBD019FBDBC41AD55AF39E1C /* ICOS/DeveloperConsole/Indicators/SearchingLayerView.swift in Sources */,
+				FBE3C3D31ED69BDEA8FFB18D /* ICOS/DeveloperConsole/Indicators/ThinkingLayerView.swift in Sources */,
+				FB6422F2DA07483A64ACABA1 /* ICOS/DeveloperConsole/Models/DeveloperExtensionAction.swift in Sources */,
+				FB776FDAAFBF25824B79A9EB /* ICOS/DeveloperConsole/Panels/InputPanel.swift in Sources */,
+				FBC65C4754B37A646421EDE6 /* ICOS/DeveloperConsole/Panels/OutputPanel.swift in Sources */,
+				FBB8E84F2EDBC92E26841D67 /* ICOS/DeveloperConsole/Shell/Composer/DeveloperComposerInput.swift in Sources */,
+				FB608D7047639FF3CFA61E09 /* ICOS/DeveloperConsole/Shell/Composer/DeveloperComposerShell.swift in Sources */,
+				FBD196481AFE09A08E343037 /* ICOS/DeveloperConsole/Shell/Composer/DeveloperComposerToolbar.swift in Sources */,
+				FB4E34A62505ADB7455298EE /* ICOS/DeveloperConsole/Shell/Inspector/DeveloperInspectorShell.swift in Sources */,
+				FB7F0F3DFA47F76941AC3987 /* ICOS/DeveloperConsole/Shell/Layout/DeveloperConsoleCenterCanvas.swift in Sources */,
+				FB7D8C1A0EC515112911E250 /* ICOS/DeveloperConsole/Shell/Layout/DeveloperConsoleShell.swift in Sources */,
+				FB584787D1D2778DB987B8EE /* ICOS/DeveloperConsole/Shell/Sidebar/DeveloperWorkspaceSidebar.swift in Sources */,
+				FB1F9A5A0E5EC7DFD0675F12 /* ICOS/DeveloperConsole/Views/ConsoleView.swift in Sources */,
+				FB2E972D03E6F989AB3A8C0D /* ICOS/DeveloperConsole/Views/DeveloperConsoleView.swift in Sources */,
+				FBB2E38E5DBE2D98FD752DFD /* ICOS/Engine/ContextBuilder.swift in Sources */,
+				FB341C10BDB8243C64ED1630 /* ICOS/Engine/ExecutionRouter.swift in Sources */,
+				FB5C8A6EC6BD22DA07350806 /* ICOS/Engine/PromptAssembler.swift in Sources */,
+				FBEE13C7E4CEB5798A63CCA7 /* ICOS/Execution/Patch/Native/PatchEngine.swift in Sources */,
+				FB8E02AFF9EBF9905ABC3B29 /* ICOS/Execution/Rollback/Native/RollbackManager.swift in Sources */,
+				FBCC9CEA402880E6216CFE64 /* ICOS/ExecutionEngine/ExecutionController.swift in Sources */,
+				FB3D41C9B30951811E54490D /* ICOS/Governance/DoctrineOutputValidator.swift in Sources */,
+				FB2187A80103A88A544214AD /* ICOS/Interfaces/Xcode/CloudRuntimeAdapter.swift in Sources */,
+				FBFD40415CA97C35D0AD8A04 /* ICOS/Interfaces/Xcode/migrated_CloudRuntimeAdapter.swift in Sources */,
+				FB9CE62308A1A80071FB088F /* ICOS/Interfaces/Xcode/migrated_ICOSRuntimeBridge.swift in Sources */,
+				FB49EEAA383A50A3F2244D41 /* ICOS/Interfaces/Xcode/migrated_WebsiteBridge.swift in Sources */,
+				FB8321DC39314C6CA876CE5F /* ICOS/KnowledgeBase/DoctrineDocument.swift in Sources */,
+				FBA51754F225E691FA5A88F0 /* ICOS/KnowledgeBase/DoctrineIndex.swift in Sources */,
+				FBB7A0BE341B80908502DCE9 /* ICOS/Memory/Apple/ChatMessage.swift in Sources */,
+				FB6BA0229AF9F852E2A1A6ED /* ICOS/Memory/Apple/ConversationMemory.swift in Sources */,
+				FBB634A3FC47CCA7C7AF0909 /* ICOS/Memory/Apple/MemoryEntry.swift in Sources */,
+				FB74654E9EE551FBF31DEE78 /* ICOS/Memory/Apple/MemoryManager.swift in Sources */,
+				FB104717F91133FCD2E9B34D /* ICOS/Memory/Apple/MemoryStore.swift in Sources */,
+				FBB581ECB0AF0EAC391DF21F /* ICOS/Memory/Apple/RetrievalIndex.swift in Sources */,
+				FB69F1BEBC2CC820891745FE /* ICOS/Memory/Apple/RuntimeContext.swift in Sources */,
+				FB33B1C91CC747FA475F8F72 /* ICOS/Memory/Apple/RuntimeState.swift in Sources */,
+				FB592B9EE97BB577E6789BC5 /* ICOS/Memory/Apple/SessionStore.swift in Sources */,
+				FB2E2B752D664CB62509B36C /* ICOS/Persistence/ICOSDatabase.swift in Sources */,
+				FBCF1EE14F0A5B1223514CB0 /* ICOS/Persistence/LocalStorageController.swift in Sources */,
+				FB166B7F792B2ACF4A10DD22 /* ICOS/Platform/Sections/CareersView.swift in Sources */,
+				FB8ABCD502554509B49C316A /* ICOS/Platform/Sections/KnowledgeView.swift in Sources */,
+				FB34FFCD955F6F9ADA7827DE /* ICOS/Platform/Sections/PlatformView.swift in Sources */,
+				FB4F154F3141E079407FE942 /* ICOS/Platform/Sections/UpdatesView.swift in Sources */,
+				FB4CC21A06FAA0F69662FE34 /* ICOS/Profile/ProfileManager.swift in Sources */,
+				FBB5CF97811F636DC71CA3DE /* ICOS/Profile/ProfileStore.swift in Sources */,
+				FB26F2D5F48C516018B09AA3 /* ICOS/Profile/UserProfile.swift in Sources */,
+				FB8D37D9C3F9641A2163F891 /* ICOS/Providers/Apple/CloudFrontierProvider.swift in Sources */,
+				FBA07B15990127A339631CCC /* ICOS/Providers/Apple/ModelRuntimeProvider.swift in Sources */,
+				FBB4769C64066136447C444C /* ICOS/Providers/Apple/ProviderRouter.swift in Sources */,
+				FB4E681CAE853D2450114DEC /* ICOS/Runtime/Bridge/Native/ActiveFileBridge.swift in Sources */,
+				FB8BC8406C116C537D42A3F3 /* ICOS/Runtime/Bridge/Native/ExternalEditorBridge.swift in Sources */,
+				FB8598B1D6CCCC199DBA01E0 /* ICOS/Runtime/Core/InferenceGateway.swift in Sources */,
+				FBA0C9AD766864AA0F1955AF /* ICOS/Runtime/Core/LocalRuntimeService.swift in Sources */,
+				FBE86E8C506596251D865474 /* ICOS/Runtime/Core/ModelRegistry.swift in Sources */,
+				FB9E67D4AA4CF9F62536EA42 /* ICOS/Runtime/Core/RuntimeManager.swift in Sources */,
+				FBE171F63B0B2612B7CEAD60 /* ICOS/Runtime/Core/TaskClassifier.swift in Sources */,
+				FBF72FD461C9BA768816406C /* ICOS/Runtime/EventBus/Native/RuntimeEventBus.swift in Sources */,
+				FBD402AA5934EB6CD656D2D3 /* ICOS/Runtime/Sandbox/Native/PermissionGate.swift in Sources */,
+				FBC910A75DE6C79D32C65029 /* ICOS/Runtime/Session/Native/WorkspaceGraph.swift in Sources */,
+				FBFB183B04184088D8D73298 /* ICOS/Runtime/Terminal/Native/TerminalBridge.swift in Sources */,
+				FB261AD678F637F65E6ABF55 /* ICOS/Runtime/VoiceCognition/Native/VoiceCognitionService.swift in Sources */,
+				FB6ECF1A6C84B76A0A22CD4B /* ICOS/Runtime/VoiceCognition/Native/VoicePlaybackService.swift in Sources */,
+				FBD3DC468C1E9E7C8FD5C804 /* ICOS/SwiftUI/App/ICOSApp.swift in Sources */,
+				FB10961C9B8B684084A73270 /* ICOS/SwiftUI/Behavior/BehaviorEngine.swift in Sources */,
+				FB25F018C78EF32A4D2C94D3 /* ICOS/SwiftUI/Boot/ICOSBootAnimationView.swift in Sources */,
+				FBC1176D21C1DB55B4AE8456 /* ICOS/SwiftUI/Boot/ICOSBootGate.swift in Sources */,
+				FB30DBCB6D785FFC79B3AA98 /* ICOS/SwiftUI/Button/ButtonView.swift in Sources */,
+				FBB101D4342B284F337229C2 /* ICOS/SwiftUI/Components/ICOSActionPrimitives.swift in Sources */,
+				FBB63919DC0FDCA04699AC5B /* ICOS/SwiftUI/Components/ICOSBrandLockup.swift in Sources */,
+				FB5CCEDBE1EF683C14D00835 /* ICOS/SwiftUI/Features/BrowserUse/BrowserUseView.swift in Sources */,
+				FBEA00EED6B274723940620C /* ICOS/SwiftUI/Features/FileManager/FileManagerView.swift in Sources */,
+				FB30ECA402CDAB82A87171B5 /* ICOS/SwiftUI/Features/Intelligence/IntelligenceModuleCatalog.swift in Sources */,
+				FB8B48B49AC524FCFFA8B9B7 /* ICOS/SwiftUI/Features/Intelligence/IntelligenceModuleView.swift in Sources */,
+				FB36E677EE08280F54C7D6E7 /* ICOS/SwiftUI/Features/Projects/ProjectManagerView.swift in Sources */,
+				FB0232E07D048CB78FF014A9 /* ICOS/SwiftUI/Layout/ICOSAdaptivePairLayout.swift in Sources */,
+				FB7F95CE946389A8343DBBCB /* ICOS/SwiftUI/Layout/ICOSSplitLayout.swift in Sources */,
+				FBF5FE0A685DABC88217CF03 /* ICOS/SwiftUI/Layout/ICOSWrappingFlowLayout.swift in Sources */,
+				FB258E9CE120981C23DA1A42 /* ICOS/SwiftUI/Layout/LayoutEngine.swift in Sources */,
+				FBDE01F1BBE4544A3050255A /* ICOS/SwiftUI/Navigation/AppRouter.swift in Sources */,
+				FBD27CE878FC4BCB537EBBA7 /* ICOS/SwiftUI/Settings/Components/SettingsSectionCard.swift in Sources */,
+				FB2A1249313652E00EE5A88F /* ICOS/SwiftUI/Settings/Components/WorktreeRow.swift in Sources */,
+				FB087E20A34C3CFB70C2E2B3 /* ICOS/SwiftUI/Settings/Panels/AppearanceSettingsPanel.swift in Sources */,
+				FB2659E1B70AFDAE52874535 /* ICOS/SwiftUI/Settings/Panels/ChatManagementSettingsPanel.swift in Sources */,
+				FB69781B6C54A1BABB5FA43E /* ICOS/SwiftUI/Settings/Panels/ConfigurationSettingsPanel.swift in Sources */,
+				FB1BF8080D83E6C95E2E1390 /* ICOS/SwiftUI/Settings/Panels/ConnectorsSettingsPanel.swift in Sources */,
+				FB695492F951CE0476B0ED25 /* ICOS/SwiftUI/Settings/Panels/EditorBridgeSettingsPanel.swift in Sources */,
+				FB9E7FD888CF398851B452EC /* ICOS/SwiftUI/Settings/Panels/EnvironmentSettingsPanel.swift in Sources */,
+				FB451D5A8FB9A921556E86D5 /* ICOS/SwiftUI/Settings/Panels/GeneralSettingsPanel.swift in Sources */,
+				FB31DB6AA3100206E313B954 /* ICOS/SwiftUI/Settings/Panels/PersonalizationSettingsPanel.swift in Sources */,
+				FB09D768E5FE0D9F9BFE9F90 /* ICOS/SwiftUI/Settings/Panels/VoiceSettingsPanel.swift in Sources */,
+				FB69E257AB9DC080096A8655 /* ICOS/SwiftUI/Settings/Panels/WorktreeSettingsPanel.swift in Sources */,
+				FB413E72A609D252BC589970 /* ICOS/SwiftUI/Settings/SettingsPanels.swift in Sources */,
+				FB407E074B356C174FCEF50B /* ICOS/SwiftUI/Settings/SettingsRootView.swift in Sources */,
+				FBAB0A2C1782DB939C2D8536 /* ICOS/SwiftUI/Settings/Support/SettingsProfileTitles.swift in Sources */,
+				FB662A3F39A25EDC510B1E9E /* ICOS/SwiftUI/Shell/NavigationShell.swift in Sources */,
+				FB102AC2C04D84D04A98AD18 /* ICOS/SwiftUI/Shell/RightInspectorPanel.swift in Sources */,
+				FB5FF7FFD2249CD9DF6C17C8 /* ICOS/SwiftUI/Shell/ShellState.swift in Sources */,
+				FBD676F5D70A4664C8F26518 /* ICOS/SwiftUI/Shell/SidebarView.swift in Sources */,
+				FBAC6D22CD4691D4B2BDC82E /* ICOS/SwiftUI/Shell/TopBarView.swift in Sources */,
+				FBFD240E0C734F445282222A /* ICOS/SwiftUI/System/PermissionService.swift in Sources */,
+				FB0E4AC32BBFEE495D82CB36 /* ICOS/SwiftUI/System/ProductEntityModels.swift in Sources */,
+				FB6CEBCC159EF98BBA26E800 /* ICOS/SwiftUI/System/SystemServices.swift in Sources */,
+				FB02F4EAC2F0140AC34A2C3C /* ICOS/SwiftUI/System/UIRootCoordinator.swift in Sources */,
+				FB57A06071D3567790EF187F /* ICOS/SwiftUI/System/WorkspaceFileService.swift in Sources */,
+				FB83E92588709B282DD8B6BB /* ICOS/SwiftUI/Theme/ThemeEngine.swift in Sources */,
+				FBEECDBCFFA089749CE724C3 /* ICOS/SwiftUI/Window/ICOSTitlebarAccessory.swift in Sources */,
+				FBD405FC1CFAD4F4BB71D678 /* ICOS/SwiftUI/Window/ICOSWindowChrome.swift in Sources */,
+				FBEC4C3CE3B1ED08495C68B9 /* ICOS/SwiftUI/Window/ICOSWindowCoordinator.swift in Sources */,
+				FB8C3FA2DDB554B5F2C71353 /* ICOS/SwiftUI/Window/ICOSWindowToolbar.swift in Sources */,
+				FB9276AAA416FD153C5FD8D7 /* ICOS/SwiftUI/Window/WindowAccessor.swift in Sources */,
+				FBB67C01AE4F35640B6B0295 /* ICOS/System/Layout/ICOSContainer.swift in Sources */,
+				FB5F04BFE318404B60F9C33A /* ICOS/System/Layout/ICOSLayout.swift in Sources */,
+				FB17B38F860E8C936229E582 /* ICOS/System/Navigation/ICOSRoute.swift in Sources */,
+				FB1D7E35A8FB6D64458201C7 /* ICOS/System/Navigation/ICOSSidebar.swift in Sources */,
+				FBC0E187A9301545C3F568A8 /* ICOS/System/Navigation/SidebarComponents/EnvironmentStatusRow.swift in Sources */,
+				FB0FBC7752E97CDD0C921B65 /* ICOS/System/Navigation/SidebarComponents/LeftIconRail.swift in Sources */,
+				FB2BE631BF1970CBED31901C /* ICOS/System/Navigation/SidebarComponents/SidebarContentPanel.swift in Sources */,
+				FB09F7482CE37D81ACA04CB6 /* ICOS/System/Navigation/SidebarComponents/SidebarFooter.swift in Sources */,
+				FBC8D31E695F7B4BFC7F445E /* ICOS/System/Navigation/SidebarComponents/SidebarHeader.swift in Sources */,
+				FBEA6657D2ACDB8EA29AD00F /* ICOS/System/Navigation/SidebarComponents/SidebarSearchField.swift in Sources */,
+				FB86158EC2EC7B172618F791 /* ICOS/System/Navigation/SidebarComponents/SidebarSectionTitle.swift in Sources */,
+				FB0C7720DFE5488208FC2CE5 /* ICOS/System/Navigation/SidebarComponents/WorkspacePanel.swift in Sources */,
+				FB2B461EA6CDA537EF1A88C0 /* ICOS/System/Navigation/SidebarRailButton.swift in Sources */,
+				FB9EBCA049BD90406128E646 /* ICOS/System/Navigation/SidebarRouteRow.swift in Sources */,
+				FB98A930F8D9DE4093343436 /* ICOS/System/Navigation/WorkspaceModels.swift in Sources */,
+				FBCFABF2B08CA5581B431BB5 /* ICOS/System/Navigation/WorkspaceSeed.swift in Sources */,
+				FB2DA343F97DE4732794CB90 /* ICOS/System/Navigation/WorkspaceTreeView.swift in Sources */,
+				FB76911FC416A07DC28F88F1 /* ICOS/System/Overlays/ICOSOverlayManager.swift in Sources */,
+				FBEB6D3439D4A15DB4AB0B61 /* ICOS/System/Runtime/AgentRuntime/AgentRuntimeModels.swift in Sources */,
+				FB65FA02A28C03208C6B798E /* ICOS/System/Runtime/AgentRuntime/AgentRuntimeService.swift in Sources */,
+				FB0698386CEDDA90EBBA6892 /* ICOS/System/Runtime/DeveloperRuntime/ChatRuntimeView.swift in Sources */,
+				FB6D0C4178310A36802D6AA1 /* ICOS/System/Runtime/DeveloperRuntime/Components/DeveloperRuntimeCanvas.swift in Sources */,
+				FBFBAD4E2C2F822B778DACE6 /* ICOS/System/Runtime/DeveloperRuntime/Components/DeveloperRuntimeComposer.swift in Sources */,
+				FBE633DC980E0C61968B2CC0 /* ICOS/System/Runtime/DeveloperRuntime/Components/DeveloperRuntimeControls.swift in Sources */,
+				FBDF8C070F0834F97B77E390 /* ICOS/System/Runtime/DeveloperRuntime/Components/DeveloperRuntimeInspector.swift in Sources */,
+				FBEDEE400D66CFC9560168BD /* ICOS/System/Runtime/DeveloperRuntime/Components/DeveloperRuntimeSidebar.swift in Sources */,
+				FBBC011D157CDBDC6002685B /* ICOS/System/Runtime/DeveloperRuntime/DeveloperRuntimeShell.swift in Sources */,
+				FB7798705FD9C718EDDC5CDC /* ICOS/System/Runtime/DeveloperRuntime/DiffReviewView.swift in Sources */,
+				FB6E9B577EEAD7C62B8922AA /* ICOS/System/Runtime/DeveloperRuntime/FileEditorView.swift in Sources */,
+				FB21D32DF4C8370C69F216AE /* ICOS/System/Runtime/DeveloperRuntime/TerminalRuntimeView.swift in Sources */,
+				FB97F2A2C1929693B01DB010 /* ICOS/System/Runtime/IntelligenceRuntime/AgentGraphView.swift in Sources */,
+				FBDD37B4A96FC29F42B9308D /* ICOS/System/Runtime/IntelligenceRuntime/IntelligenceRuntimeShell.swift in Sources */,
+				FBFD2B865AFC94EE5F8196B3 /* ICOS/System/Runtime/IntelligenceRuntime/MemoryEngineView.swift in Sources */,
+				FB53824EAB41E7C5AEFF97FA /* ICOS/System/Runtime/OperationsRuntime/DeploymentView.swift in Sources */,
+				FB21B3DB40A9BD83CABF4FBF /* ICOS/System/Runtime/OperationsRuntime/LogsView.swift in Sources */,
+				FB50AC3255017FC51AE94803 /* ICOS/System/Runtime/OperationsRuntime/MonitoringView.swift in Sources */,
+				FBB8621C661BDE3371DA60C0 /* ICOS/System/Runtime/OperationsRuntime/OperationsRuntimeShell.swift in Sources */,
+				FBF44C3B93CAADCA52A2479D /* ICOS/System/Runtime/OperationsRuntime/TasksView.swift in Sources */,
+				FB29DADA44E6BDD1036FE19C /* ICOS/System/Runtime/ProviderRuntime/ConnectorRegistryService.swift in Sources */,
+				FB44EA04271FDDDE620F2D03 /* ICOS/System/Runtime/ProviderRuntime/ConnectorRuntimeModels.swift in Sources */,
+				FB4FB3A8097C2F527569861C /* ICOS/System/Runtime/WorkspaceRuntime/WorkspaceRuntimeCanvas.swift in Sources */,
+				FB34AF7CB0F841140A1CB590 /* ICOS/System/Runtime/WorkspaceRuntime/WorkspaceRuntimeShell.swift in Sources */,
+				FBECEF2B7BE69EC1BC7FEC4F /* ICOS/System/Runtime/WorkspaceRuntime/WorkspaceRuntimeSidebar.swift in Sources */,
+				FB44502D7A5484C547774BA9 /* ICOS/System/Services/SecureCredentialStore.swift in Sources */,
+				FB16A59BBCC4F1059AB11952 /* ICOS/System/Settings/Controls/RuntimeModePicker.swift in Sources */,
+				FB3C800A77673ABEDDC75C6F /* ICOS/System/Settings/Fragments/CloudProviderSection.swift in Sources */,
+				FBAA1A553BF70D374023932C /* ICOS/System/Settings/Fragments/LocalModelSection.swift in Sources */,
+				FB9BA8C8562F8A237F5183CD /* ICOS/System/Settings/Fragments/RuntimeModeSection.swift in Sources */,
+				FBDD6C280BF923C6CB507B33 /* ICOS/System/Settings/Models/RuntimeMode.swift in Sources */,
+				FB0DDF1AAB8B8885452CBABB /* ICOS/System/Settings/State/RuntimeSettingsState.swift in Sources */,
+				FB656FCFB7AD7A12E7BC3A9C /* ICOS/System/Settings/Views/RuntimeSettingsView.swift in Sources */,
+				FB3858572BA6C6625EE2F0FA /* ICOS/System/Shell/ICOSMainShell.swift in Sources */,
+				FBF2B6FFE1667D58E7411A78 /* ICOS/System/State/ICOSAppState.swift in Sources */,
+				FBFB91E402620406D84F799E /* ICOS/System/State/MemoryState.swift in Sources */,
+				FBBC4C6C3B97192FC0EE54F0 /* ICOS/System/State/ProfileState.swift in Sources */,
+				FBC7BA3D6FD107416B54742A /* ICOS/System/State/RuntimeState.swift in Sources */,
+				FB4BBE59C50C18B4CFBC0037 /* ICOS/System/State/SessionState.swift in Sources */,
+				FB3EA34A8251CDCD41570474 /* ICOS/System/Theme/ThemeMode.swift in Sources */,
+				FBCD98C105ABD792AC0E705C /* ICOS/System/Theme/ThemeProvider.swift in Sources */,
+				FB65591889A3E2401F20EBC6 /* ICOS/System/Theme/ThemeState.swift in Sources */,
+				FB8AD0B2E836BDA7B6DBE14A /* ICOS/System/Workspace/ICOSWorkspace.swift in Sources */,
+				FB65E2AD59CBFDCC4FC90EE0 /* ICOS/ThirdParty/network_stack/StreamingResponseController.swift in Sources */,
+				FBDBEE6E7B164CF0E7539FF5 /* ICOS/Validation/ExecutionValidator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE288E0C2F9FE4EF00A5C1D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE288E162F9FE4EF00A5C1D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE288E122F9FE4EF00A5C1D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE288E022F9FE4EE00A5C1D6 /* ICOS */;
+			targetProxy = BE288E112F9FE4EF00A5C1D6 /* PBXContainerItemProxy */;
+		};
+		BE288E1C2F9FE4EF00A5C1D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE288E022F9FE4EE00A5C1D6 /* ICOS */;
+			targetProxy = BE288E1B2F9FE4EF00A5C1D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BE288E222F9FE4EF00A5C1D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = XP6Y5DDWM8;
+				ENABLE_APP_INTENTS_METADATA_GENERATION = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE288E232F9FE4EF00A5C1D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = XP6Y5DDWM8;
+				ENABLE_APP_INTENTS_METADATA_GENERATION = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		BE288E252F9FE4EF00A5C1D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGNING_REQUIRED = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPYFILE_DISABLE = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XP6Y5DDWM8;
+				ENABLE_APP_INTENTS_METADATA_GENERATION = NO;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				EXCLUDED_SOURCE_FILE_NAMES = (
+					"ICOS/ExecutionEngine/*",
+					ICOS/Core/ICOSCoreRuntime.swift,
+					ICOS/Runtime/ICOSExecutionEngine.swift,
+					ICOS/Runtime/CloudRuntimeAdapter.swift,
+					ICOS/Runtime/InferenceGateway.swift,
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Runtime/Source/llama.cpp/include",
+					"$(PROJECT_DIR)/Runtime/Source/llama.cpp/ggml/include",
+				);
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Microphone access is required for voice-based interaction.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Speech recognition is required to transcribe developer voice commands.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Runtime/Frameworks",
+					"$(PROJECT_DIR)/ICOS/ThirdParty/dylibs",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lllama",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neuroartan.ICOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_CONST_VALUE_PROTOCOLS = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "ICOS/Runtime/Native/LlamaBridge-Bridging-Header.h";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BE288E262F9FE4EF00A5C1D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGNING_REQUIRED = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPYFILE_DISABLE = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XP6Y5DDWM8;
+				ENABLE_APP_INTENTS_METADATA_GENERATION = NO;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				EXCLUDED_SOURCE_FILE_NAMES = (
+					"ICOS/ExecutionEngine/*",
+					ICOS/Core/ICOSCoreRuntime.swift,
+					ICOS/Runtime/ICOSExecutionEngine.swift,
+					ICOS/Runtime/CloudRuntimeAdapter.swift,
+					ICOS/Runtime/InferenceGateway.swift,
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Runtime/Source/llama.cpp/include",
+					"$(PROJECT_DIR)/Runtime/Source/llama.cpp/ggml/include",
+				);
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Microphone access is required for voice-based interaction.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Speech recognition is required to transcribe developer voice commands.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Runtime/Frameworks",
+					"$(PROJECT_DIR)/ICOS/ThirdParty/dylibs",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lllama",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neuroartan.ICOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_CONST_VALUE_PROTOCOLS = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "ICOS/Runtime/Native/LlamaBridge-Bridging-Header.h";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		BE288E282F9FE4EF00A5C1D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XP6Y5DDWM8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neuroartan.ICOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ICOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ICOS";
+			};
+			name = Debug;
+		};
+		BE288E292F9FE4EF00A5C1D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XP6Y5DDWM8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neuroartan.ICOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ICOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ICOS";
+			};
+			name = Release;
+		};
+		BE288E2B2F9FE4EF00A5C1D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XP6Y5DDWM8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neuroartan.ICOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ICOS;
+			};
+			name = Debug;
+		};
+		BE288E2C2F9FE4EF00A5C1D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XP6Y5DDWM8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neuroartan.ICOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ICOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE288DFE2F9FE4EE00A5C1D6 /* Build configuration list for PBXProject "ICOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE288E222F9FE4EF00A5C1D6 /* Debug */,
+				BE288E232F9FE4EF00A5C1D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BE288E242F9FE4EF00A5C1D6 /* Build configuration list for PBXNativeTarget "ICOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE288E252F9FE4EF00A5C1D6 /* Debug */,
+				BE288E262F9FE4EF00A5C1D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BE288E272F9FE4EF00A5C1D6 /* Build configuration list for PBXNativeTarget "ICOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE288E282F9FE4EF00A5C1D6 /* Debug */,
+				BE288E292F9FE4EF00A5C1D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BE288E2A2F9FE4EF00A5C1D6 /* Build configuration list for PBXNativeTarget "ICOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE288E2B2F9FE4EF00A5C1D6 /* Debug */,
+				BE288E2C2F9FE4EF00A5C1D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE288DFB2F9FE4EE00A5C1D6 /* Project object */;
+}

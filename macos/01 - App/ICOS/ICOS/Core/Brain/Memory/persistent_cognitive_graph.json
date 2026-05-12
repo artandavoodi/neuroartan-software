@@ -1,0 +1,35 @@
+{
+  "providers": {
+    "LMStudio": {
+      "usage_count": 1,
+      "last_seen": 1778169836.451408
+    }
+  },
+  "concepts": {},
+  "identity": {
+    "runtime": "ICOS",
+    "brain_active": true,
+    "direct_brain_mode": true,
+    "learning_enabled": true,
+    "memory_enabled": true,
+    "continuity_timestamp": 1778170175.2115421
+  },
+  "reflections": [
+    {
+      "identity_coherence": null,
+      "timestamp": null
+    },
+    {
+      "identity_coherence": false,
+      "timestamp": 1778170004.439072
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ICOS Brain",
+      "target": "LMStudio",
+      "relationship": "processor",
+      "usage_count": 1
+    }
+  ]
+}

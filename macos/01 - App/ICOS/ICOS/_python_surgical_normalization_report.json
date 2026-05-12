@@ -1,0 +1,2011 @@
+{
+  "renamed": [
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/25_agent_registry_bridge.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/00_agent_registry_bridge.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/00_ast_patch_planner.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/01_ast_patch_planner.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/01_autonomous_behavioral_reasoning.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/02_autonomous_behavioral_reasoning.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/02_cognitive_orchestration_engine.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/03_cognitive_orchestration_engine.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/17_contextual_emotional_weighting_engine.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/04_contextual_emotional_weighting_engine.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/20_dependency_runtime_planner.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/05_dependency_runtime_planner.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/23_document_cognition.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/06_document_cognition.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/11_document_cognition_engine.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/07_document_cognition_engine.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/21_failure_learning.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/08_failure_learning.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/18_institutional_task_planner.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/09_institutional_task_planner.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/03_long_horizon_planner.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/10_long_horizon_planner.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/14_long_horizon_planning_engine.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/11_long_horizon_planning_engine.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/04_model_quality_reasoning.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/12_model_quality_reasoning.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/15_multi_agent_orchestration_engine.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/13_multi_agent_orchestration_engine.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/26_patch_planner.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/14_patch_planner.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/05_patch_planner.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/15_patch_planner.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/24_placement_cognition.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/16_placement_cognition.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/19_recursive_self_optimization_engine.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/17_recursive_self_optimization_engine.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/06_repository_reasoning_memory.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/18_repository_reasoning_memory.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/16_resource_exclusion_planner.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/19_resource_exclusion_planner.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/07_runtime_adaptive_learning.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/20_runtime_adaptive_learning.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/08_runtime_learning.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/21_runtime_learning.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/12_runtime_learning_loop.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/22_runtime_learning_loop.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/13_semantic_code_understanding_engine.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/23_semantic_code_understanding_engine.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/22_shared_multi_agent_memory.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/24_shared_multi_agent_memory.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/09_streaming_reasoning_engine.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/25_streaming_reasoning_engine.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/10_unified_execution_cognition_loop.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/26_unified_execution_cognition_loop.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_GifImagePlugin.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/01_GifImagePlugin.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_IcnsImagePlugin.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/02_IcnsImagePlugin.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_Image.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/03_Image.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_ImageCms.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/04_ImageCms.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_ImageColor.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/05_ImageColor.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_ImageDraw.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/06_ImageDraw.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_ImageFile.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/07_ImageFile.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_ImageFont.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/08_ImageFont.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_ImageTk.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/09_ImageTk.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_ImageWin.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/10_ImageWin.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_McIdasImagePlugin.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/11_McIdasImagePlugin.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_PngImagePlugin.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/12_PngImagePlugin.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_SpiderImagePlugin.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/13_SpiderImagePlugin.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_TiffImagePlugin.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/14_TiffImagePlugin.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_abstract.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/15_abstract.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_adapters.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/16_adapters.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_api.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/17_api.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__artifact.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/18_artifact.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_box.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/19_box.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__browser.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/20_browser.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__browser_type.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/21_browser_type.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_build_env.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/22_build_env.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/03_build_error_classifier.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/23_build_error_classifier.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_candidates.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/24_candidates.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_cells.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/25_cells.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_cmdoptions.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/26_cmdoptions.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_collector.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/27_collector.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_color.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/28_color.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__compat.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/29_compat.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_configuration.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/30_configuration.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_connection.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/31_connection.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__connection.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/32_connection.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_connectionpool.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/33_connectionpool.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_console.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/34_console.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_debug.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/35_debug.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_default_styles.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/36_default_styles.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_dependency_groups.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/37_dependency_groups.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_deprecation.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/38_deprecation.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_distro.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/39_distro.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__dists.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/40_dists.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/16_document_creation_protocol.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/41_document_creation_protocol.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__emoji_codes.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/42_emoji_codes.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__envs.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/43_envs.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_factory.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/44_factory.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_fallback.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/45_fallback.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__fetch.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/46_fetch.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_fetch.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/47_fetch.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_found_candidates.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/48_found_candidates.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__frame.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/49_frame.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__generated.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/50_generated.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/02_icos_command_registry.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/51_icos_command_registry.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_index_command.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/52_index_command.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__inspect.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/53_inspect.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_install.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/54_install.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/07_institutional_maturity_index.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/55_institutional_maturity_index.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__json_pipe.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/56_json_pipe.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_link.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/57_link.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_live.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/58_live.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__local_utils.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/59_local_utils.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_logging.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/60_logging.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_long_horizon_engine.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/61_long_horizon_engine.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__macos.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/62_macos.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_markup.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/63_markup.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_metadata.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/64_metadata.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_migrated_00_auth.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/65_migrated_00_auth.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_migrated_00_console.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/66_migrated_00_console.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_migrated_00_execution_intelligence_quality.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/67_migrated_00_execution_intelligence_quality.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_migrated_00__generated.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/68_migrated_00_generated.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_migrated_00_language_server_intelligence.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/69_migrated_00_language_server_intelligence.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_migrated_00___main__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/70_migrated_00_main_.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_migrated_00_ranker.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/71_migrated_00_ranker.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_migrated_00_resolver.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/72_migrated_00_resolver.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_migrated_00_response.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/73_migrated_00_response.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_migrated_00_status_codes.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/74_migrated_00_status_codes.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_migrated_00_utils.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/75_migrated_00_utils.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_models.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/76_models.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__network.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/77_network.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_package_finder.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/78_package_finder.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_packages.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/79_packages.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__page.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/80_page.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/05_pbxproj_resource_phase_editor.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/81_pbxproj_resource_phase_editor.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_pkg_resources.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/82_pkg_resources.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/04_placement_resolver.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/83_placement_resolver.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_prepare.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/84_prepare.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_progress.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/85_progress.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_pyproject.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/86_pyproject.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_python.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/87_python.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_req_install.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/88_req_install.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_request.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/89_request.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__request_methods.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/90_request_methods.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_resolution.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/91_resolution.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_response.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/92_response.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_retry.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/93_retry.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/01_runtime_command_router.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/94_runtime_command_router.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/05_runtime_semantic_classification.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/95_runtime_semantic_classification.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_scripts.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/96_scripts.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_segment.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/97_segment.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_selection_prefs.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/98_selection_prefs.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/22_self_development_engine.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/99_self_development_engine.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_session.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/100_session.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/10_sovereign_runtime_reconstruction_plan.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/101_sovereign_runtime_reconstruction_plan.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_ssl_match_hostname.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/102_ssl_match_hostname.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_ssltransport.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/103_ssltransport.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_status.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/104_status.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/21_strategic_analysis_engine.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/105_strategic_analysis_engine.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_style.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/106_style.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_subprocess.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/107_subprocess.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_syntax.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/108_syntax.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_system_preload.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/109_system_preload.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_table.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/110_table.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_tags.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/111_tags.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_test_greenlet.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/112_test_greenlet.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_test_leaks.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/113_test_leaks.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_test_version.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/114_test_version.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_text.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/115_text.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/23_total_maturity_index.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/116_total_maturity_index.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_tree.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/117_tree.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_typing_extensions.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/118_typing_extensions.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_unpacking.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/119_unpacking.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_wait.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/120_wait.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__win32_console.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/121_win32_console.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__windows.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/122_windows.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Orchestration/14_authority_routing_engine.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Orchestration/00_authority_routing_engine.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Orchestration/00_provider.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Orchestration/01_provider.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Orchestration/00_providers.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Orchestration/02_providers.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/05_adapter.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/00_adapter.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/20_adaptive_memory_weighting_engine.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/01_adaptive_memory_weighting_engine.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/32_authority_weighted_doctrine_retrieval.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/02_authority_weighted_doctrine_retrieval.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/01_browser_context.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/03_browser_context.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/36_cache.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/04_cache.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/06_cache.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/05_cache.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/02_cmd.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/06_cmd.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/21_constitutional_memory_graph.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/08_constitutional_memory_graph.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/03_context_manager.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/09_context_manager.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/35_context_manager.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/10_context_manager.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/08_controller.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/11_controller.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/09_distributed_context_compression.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/12_distributed_context_compression.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/30_doctrine_retrieval_engine.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/13_doctrine_retrieval_engine.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/04_event_context_manager.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/14_event_context_manager.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/10_file_cache.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/15_file_cache.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/11_filewrapper.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/16_filewrapper.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/12_heuristics.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/17_heuristics.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/27_icos_execution_context.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/18_icos_execution_context.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/00_init__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/19_init_.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/34_init__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/20_init_.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/33_lifecycle_state_engine.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/21_lifecycle_state_engine.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/37_memory_manager.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/22_memory_manager.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/13_memory_manager.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/23_memory_manager.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/31_persistent_constitutional_memory_engine.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/24_persistent_constitutional_memory_engine.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/14_persistent_identity_graph_engine.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/25_persistent_identity_graph_engine.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/15_redis_cache.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/26_redis_cache.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/16_repository_semantic_memory_graph.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/27_repository_semantic_memory_graph.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/24_runtime_session_store.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/29_runtime_session_store.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/22_runtime_state_store.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/30_runtime_state_store.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/17_serialize.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/31_serialize.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/25_stateful_patch_audit.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/32_stateful_patch_audit.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/18_test_contextvars.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/33_test_contextvars.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/19_wrapper.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/34_wrapper.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/26_xcode_build_state_store.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/35_xcode_build_state_store.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/23_xcode_project_state_store.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/36_xcode_project_state_store.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/29_xcode_runtime_verification_state.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/37_xcode_runtime_verification_state.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/01_runtime_event_bus.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/00_runtime_event_bus.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/00_runtime_relinking_engine.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/01_runtime_relinking_engine.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/06_autonomous_repair_engine.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_autonomous_repair_engine.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/19_dependency_resource_scheduler.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/01_dependency_resource_scheduler.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_execution_verification_loop.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/02_execution_verification_loop.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/07_icos_core_engine.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/03_icos_core_engine.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/01_icos_mcp_server.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/04_icos_mcp_server.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/02_js_ts_patch_engine.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/05_js_ts_patch_engine.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/03_language_server_intelligence.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/06_language_server_intelligence.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/15_pbxproj_ast_mutation_engine.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/07_pbxproj_ast_mutation_engine.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/04_resources.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/08_resources.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/20_retry.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/09_retry.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/05_retry_engine.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/10_retry_engine.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/18_task_continuity_ledger.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/11_task_continuity_ledger.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/16_xcode_build_phase_inspector.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/12_xcode_build_phase_inspector.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/08_xcode_cli_commands.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/13_xcode_cli_commands.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/10_xcode_cli_response_renderer.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/14_xcode_cli_response_renderer.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/11_xcode_project_scanner.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/15_xcode_project_scanner.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/14_xcode_scheme_resolver.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/16_xcode_scheme_resolver.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/09_xcode_test_runner.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/18_xcode_test_runner.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/12_xcodebuild_runner.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/19_xcodebuild_runner.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/13_xcodeproj_parser.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/20_xcodeproj_parser.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Infrastructure/02_advanced_runtime_adapter.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Infrastructure/00_advanced_runtime_adapter.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Infrastructure/08_runtime_dependency_graph.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Infrastructure/01_runtime_dependency_graph.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Infrastructure/09_runtime_packaging_traversal_inspector.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Infrastructure/03_runtime_packaging_traversal_inspector.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Infrastructure/00_runtime_text_owner_verifier.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Infrastructure/04_runtime_text_owner_verifier.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Infrastructure/01_self_improving_runtime.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Infrastructure/05_self_improving_runtime.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Infrastructure/01_simulator_runtime_verifier.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Infrastructure/06_simulator_runtime_verifier.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Infrastructure/02_swiftui_runtime_verifier.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Infrastructure/07_swiftui_runtime_verifier.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Governance/05_document_id_governance.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Governance/01_document_id_governance.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Governance/01_execution_policy_intelligence.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Governance/02_execution_policy_intelligence.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Governance/06_governance_escalation_engine.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Governance/03_governance_escalation_engine.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Governance/02_tool_permission_governance.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Governance/04_tool_permission_governance.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Governance/03_verification_loop.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Governance/05_verification_loop.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Governance/04_verifier.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Governance/06_verifier.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Providers/02_mcp_tool_router.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Providers/01_mcp_tool_router.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Providers/01_provider_registry.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Providers/02_provider_registry.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Xcode/03_swift_file_owner_resolver.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Xcode/00_swift_file_owner_resolver.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Xcode/01_swift_project_adapter.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Xcode/02_swift_project_adapter.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Xcode/02_swiftui_runtime_verifier.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Xcode/03_swiftui_runtime_verifier.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Xcode/01_xcode_adapter.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Xcode/04_xcode_adapter.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Xcode/migrated_01_xcode_adapter.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Xcode/05_xcode_adapter.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Xcode/01_xcode_test_runner.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Xcode/06_xcode_test_runner.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Xcode/02_xcodeproj_parser.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Xcode/07_xcodeproj_parser.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/MCP/02_mcp_response_adapter.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/MCP/00_mcp_response_adapter.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/MCP/migrated_02_mcp_response_adapter.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/MCP/01_mcp_response_adapter.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/CLI/01_xcode_cli_commands.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/CLI/00_xcode_cli_commands.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/CLI/02_xcode_cli_response_renderer.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/CLI/01_xcode_cli_response_renderer.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Sources/llama_cpp/migrated_04_executor.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Sources/llama_cpp/00_executor.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Sources/llama_cpp/04_executor.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Sources/llama_cpp/01_executor.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Sources/llama_cpp/migrated_00_executor.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Sources/llama_cpp/02_executor.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Sources/llama_cpp/executor.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Sources/llama_cpp/03_executor.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Sources/llama_cpp/00_migrated_04_executor.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Sources/llama_cpp/04_migrated_04_executor.py"
+    }
+  ],
+  "rewritten_imports": [],
+  "removed_empty_bridge_dirs": [
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge"
+  ],
+  "skipped": [],
+  "errors": [
+    {
+      "source": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Xcode/migrated_01_swift_project_adapter.py",
+      "target": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Xcode/01_swift_project_adapter.py",
+      "error": "target already exists"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/10_long_horizon_planner.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/26_unified_execution_cognition_loop.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/02_autonomous_behavioral_reasoning.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/19_resource_exclusion_planner.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/11_long_horizon_planning_engine.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/08_failure_learning.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/25_streaming_reasoning_engine.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/01_ast_patch_planner.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/20_runtime_adaptive_learning.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/09_institutional_task_planner.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/12_model_quality_reasoning.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/05_dependency_runtime_planner.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/03_cognitive_orchestration_engine.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/17_recursive_self_optimization_engine.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/16_placement_cognition.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/15_patch_planner.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/04_contextual_emotional_weighting_engine.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/18_repository_reasoning_memory.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/06_document_cognition.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/07_document_cognition_engine.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/21_runtime_learning.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/00_agent_registry_bridge.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/14_patch_planner.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/22_runtime_learning_loop.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/13_multi_agent_orchestration_engine.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/23_semantic_code_understanding_engine.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/24_shared_multi_agent_memory.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Planning/00_migrated_00_decision_gate.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/24_candidates.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/116_total_maturity_index.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/04_ImageCms.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/82_pkg_resources.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/107_subprocess.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/22_build_env.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/17_api.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/44_factory.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/47_fetch.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/106_style.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/46_fetch.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/69_migrated_00_language_server_intelligence.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/54_install.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/57_link.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/83_placement_resolver.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/120_wait.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/01_GifImagePlugin.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/53_inspect.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/56_json_pipe.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/58_live.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/98_selection_prefs.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/89_request.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/02_IcnsImagePlugin.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/105_strategic_analysis_engine.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/50_generated.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/40_dists.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/60_logging.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/14_TiffImagePlugin.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/20_browser.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/77_network.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/117_tree.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/36_default_styles.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/26_cmdoptions.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/63_markup.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/64_metadata.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/51_icos_command_registry.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/48_found_candidates.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/102_ssl_match_hostname.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/76_models.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_EpsImagePlugin.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/88_req_install.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/16_adapters.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/74_migrated_00_status_codes.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/93_retry.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/25_cells.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/35_debug.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/65_migrated_00_auth.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/62_macos.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/18_artifact.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/05_ImageColor.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/86_pyproject.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/71_migrated_00_ranker.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/09_ImageTk.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/59_local_utils.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/49_frame.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/96_scripts.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/61_long_horizon_engine.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/52_index_command.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/27_collector.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/55_institutional_maturity_index.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/121_win32_console.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/34_console.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/13_SpiderImagePlugin.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/03_Image.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/31_connection.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/108_syntax.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/67_migrated_00_execution_intelligence_quality.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/06_ImageDraw.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/10_ImageWin.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/118_typing_extensions.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/113_test_leaks.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/90_request_methods.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/33_connectionpool.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/12_PngImagePlugin.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/41_document_creation_protocol.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/100_session.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/112_test_greenlet.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/104_status.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/109_system_preload.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/70_migrated_00_main_.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/115_text.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/38_deprecation.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/08_ImageFont.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/119_unpacking.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/80_page.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/81_pbxproj_resource_phase_editor.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/84_prepare.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/91_resolution.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/72_migrated_00_resolver.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/66_migrated_00_console.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/85_progress.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/42_emoji_codes.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/122_windows.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/19_box.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/79_packages.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/68_migrated_00_generated.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/32_connection.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/99_self_development_engine.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/39_distro.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/114_test_version.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/21_browser_type.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/23_build_error_classifier.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/37_dependency_groups.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/110_table.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/94_runtime_command_router.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/95_runtime_semantic_classification.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/28_color.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/75_migrated_00_utils.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/97_segment.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/73_migrated_00_response.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/92_response.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/45_fallback.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/15_abstract.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/87_python.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/07_ImageFile.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/101_sovereign_runtime_reconstruction_plan.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/78_package_finder.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/103_ssltransport.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/111_tags.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/11_McIdasImagePlugin.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/29_compat.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/43_envs.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/30_configuration.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Orchestration/01_provider.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Orchestration/02_providers.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Orchestration/00_authority_routing_engine.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/29_runtime_session_store.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/10_context_manager.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/06_cmd.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/16_filewrapper.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/24_persistent_constitutional_memory_engine.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/07_command_context.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/00_adapter.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/15_file_cache.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/35_xcode_build_state_store.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/26_redis_cache.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/11_controller.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/37_xcode_runtime_verification_state.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/08_constitutional_memory_graph.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/05_cache.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/04_cache.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/36_xcode_project_state_store.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/30_runtime_state_store.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/32_stateful_patch_audit.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/18_icos_execution_context.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/27_repository_semantic_memory_graph.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/34_wrapper.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/22_memory_manager.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/17_heuristics.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/03_browser_context.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/09_context_manager.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/20_init_.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/23_memory_manager.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/01_adaptive_memory_weighting_engine.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/13_doctrine_retrieval_engine.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/28_runtime_event_log.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/19_init_.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/02_authority_weighted_doctrine_retrieval.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/14_event_context_manager.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/33_test_contextvars.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/31_serialize.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/12_distributed_context_compression.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/25_persistent_identity_graph_engine.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory/21_lifecycle_state_engine.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/01_runtime_relinking_engine.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/00_runtime_event_bus.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_autonomous_repair_engine.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/05_js_ts_patch_engine.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/03_icos_core_engine.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/20_xcodeproj_parser.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/02_execution_verification_loop.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/15_xcode_project_scanner.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/10_retry_engine.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/11_task_continuity_ledger.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/06_language_server_intelligence.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/01_dependency_resource_scheduler.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/18_xcode_test_runner.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/04_icos_mcp_server.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/12_xcode_build_phase_inspector.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/07_pbxproj_ast_mutation_engine.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/16_xcode_scheme_resolver.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/17_xcode_target_membership_inspector.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/13_xcode_cli_commands.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/08_resources.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/19_xcodebuild_runner.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/14_xcode_cli_response_renderer.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/09_retry.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Infrastructure/04_runtime_text_owner_verifier.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Infrastructure/06_simulator_runtime_verifier.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Infrastructure/00_advanced_runtime_adapter.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Infrastructure/01_runtime_dependency_graph.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Infrastructure/03_runtime_packaging_traversal_inspector.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Infrastructure/05_self_improving_runtime.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Infrastructure/02_runtime_dispatch_table.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Infrastructure/07_swiftui_runtime_verifier.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Governance/00_closed_verification_loop.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Governance/01_document_id_governance.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Governance/05_verification_loop.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Governance/04_tool_permission_governance.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Governance/03_governance_escalation_engine.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Governance/06_verifier.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Governance/02_execution_policy_intelligence.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Providers/00_har_router.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Providers/02_provider_registry.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Providers/01_mcp_tool_router.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Models/00_model_registry.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Xcode/00_swift_file_owner_resolver.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Xcode/05_xcode_adapter.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Xcode/migrated_01_swift_project_adapter.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Xcode/02_swift_project_adapter.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Xcode/04_xcode_adapter.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Xcode/06_xcode_test_runner.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Xcode/03_swiftui_runtime_verifier.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Xcode/07_xcodeproj_parser.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/MCP/01_mcp_response_adapter.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/MCP/00_mcp_response_adapter.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/CLI/00_xcode_cli_commands.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/CLI/01_xcode_cli_response_renderer.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Sources/llama_cpp/04_migrated_04_executor.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Sources/llama_cpp/00_executor.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Sources/llama_cpp/03_executor.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Sources/llama_cpp/01_executor.py",
+      "error": "invalid group reference 16 at position 1"
+    },
+    {
+      "file": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Sources/llama_cpp/02_executor.py",
+      "error": "invalid group reference 16 at position 1"
+    }
+  ],
+  "remaining_python_numbering_violations": [
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/116_total_maturity_index.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/107_subprocess.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/106_style.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/120_wait.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/105_strategic_analysis_engine.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/117_tree.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/102_ssl_match_hostname.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/121_win32_console.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/108_syntax.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/118_typing_extensions.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/113_test_leaks.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/100_session.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/112_test_greenlet.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/104_status.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/109_system_preload.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/115_text.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/119_unpacking.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/122_windows.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/114_test_version.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/110_table.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/101_sovereign_runtime_reconstruction_plan.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/103_ssltransport.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/111_tags.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Interfaces/Xcode/migrated_01_swift_project_adapter.py"
+  ]
+}

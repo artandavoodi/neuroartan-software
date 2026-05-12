@@ -1,0 +1,842 @@
+{
+  "moved": [
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/BdfFontFile.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_BdfFontFile.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/CurImagePlugin.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_CurImagePlugin.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/ExifTags.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_ExifTags.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/GbrImagePlugin.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_GbrImagePlugin.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/ImageChops.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_ImageChops.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/ImageEnhance.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_ImageEnhance.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/ImageMorph.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_ImageMorph.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/ImagePath.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_ImagePath.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/ImageSequence.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_ImageSequence.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/ImageWin.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_ImageWin.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/ImtImagePlugin.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_ImtImagePlugin.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/JpegPresets.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_JpegPresets.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/McIdasImagePlugin.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_McIdasImagePlugin.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/MicImagePlugin.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_MicImagePlugin.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/PcdImagePlugin.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_PcdImagePlugin.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/PixarImagePlugin.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_PixarImagePlugin.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/SunImagePlugin.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_SunImagePlugin.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/TarIO.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_TarIO.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/TiffTags.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_TiffTags.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/XVThumbImagePlugin.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_XVThumbImagePlugin.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/__init__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00___init__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/_binary.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00__binary.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/_deprecate.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00__deprecate.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/_version.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00__version.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/report.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_report.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/__init__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00___init__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/platform/__init__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00___init__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/tests/fail_clearing_run_switches.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_fail_clearing_run_switches.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/tests/fail_initialstub_already_started.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_fail_initialstub_already_started.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/tests/fail_slp_switch.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_fail_slp_switch.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/tests/fail_switch_three_greenlets.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_fail_switch_three_greenlets.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/tests/fail_switch_three_greenlets2.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_fail_switch_three_greenlets2.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/tests/fail_switch_two_greenlets.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_fail_switch_two_greenlets.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/tests/test_generator.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_test_generator.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/tests/test_generator_nested.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_test_generator_nested.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/tests/test_stack_saved.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_test_stack_saved.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/tests/test_throw.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_test_throw.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/__init__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00___init__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/cli/__init__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00___init__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/cli/status_codes.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_status_codes.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/index/__init__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00___init__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/main.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_main.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/metadata/importlib/__init__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00___init__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/models/__init__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Models/00___init__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/models/index.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Models/00_index.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/models/scheme.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Models/00_scheme.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/network/__init__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00___init__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/operations/__init__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00___init__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/operations/build/__init__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00___init__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/operations/install/__init__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00___init__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/resolution/__init__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00___init__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/resolution/legacy/__init__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00___init__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/resolution/resolvelib/__init__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00___init__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/utils/__init__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00___init__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/utils/_jaraco_text.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00__jaraco_text.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/utils/_log.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00__log.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/utils/datetime.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_datetime.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/utils/filetypes.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_filetypes.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/cachecontrol/caches/__init__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Memory/00___init__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/certifi/__init__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00___init__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/certifi/__main__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00___main__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/distlib/__init__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00___init__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/distro/__init__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00___init__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/distro/__main__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00___main__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/idna/compat.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_compat.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/idna/idnadata.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_idnadata.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/idna/intranges.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_intranges.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/idna/package_data.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_package_data.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/idna/uts46data.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_uts46data.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/msgpack/exceptions.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_exceptions.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/packaging/__init__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00___init__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/packaging/_structures.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00__structures.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/packaging/licenses/_spdx.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00__spdx.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/platformdirs/__main__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00___main__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/platformdirs/version.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_version.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/pygments/__main__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00___main__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/pygments/console.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_console.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/pygments/filter.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_filter.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/pygments/formatters/_mapping.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00__mapping.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/pygments/lexers/_mapping.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00__mapping.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/pygments/modeline.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Models/00_modeline.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/pygments/plugin.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_plugin.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/pygments/scanner.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_scanner.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/pygments/style.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_style.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/pygments/styles/_mapping.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00__mapping.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/pygments/token.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_token.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/pygments/unistring.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_unistring.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/__init__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00___init__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/__init__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00___init__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/requests/__version__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00___version__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/requests/_internal_utils.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00__internal_utils.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/requests/api.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_api.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/requests/certs.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_certs.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/requests/exceptions.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00_exceptions.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/requests/hooks.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_hooks.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/requests/packages.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_packages.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/requests/status_codes.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00_status_codes.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/requests/structures.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_structures.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/rich/_cell_widths.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00__cell_widths.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/rich/_emoji_codes.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00__emoji_codes.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/rich/_export_format.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00__export_format.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/rich/_fileno.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00__fileno.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/rich/_loop.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00__loop.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/rich/_null_file.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00__null_file.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/rich/_palettes.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00__palettes.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/rich/_pick.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00__pick.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/rich/_spinners.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00__spinners.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/rich/_stack.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00__stack.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/rich/abc.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_abc.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/rich/color_triplet.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_color_triplet.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/rich/errors.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_errors.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/rich/filesize.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_filesize.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/rich/region.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_region.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/rich/themes.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_themes.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/tomli/__init__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00___init__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/tomli/_types.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00__types.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/tomli_w/__init__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00___init__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/urllib3/_version.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00__version.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/urllib3/contrib/__init__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00___init__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/urllib3/http2/probe.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_probe.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/__init__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00___init__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/_impl/__init__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00___init__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/_impl/__pyinstaller/__init__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00___init__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/_impl/__pyinstaller/hook-playwright.async_api.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_hook_playwright.async_api.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/_impl/__pyinstaller/hook-playwright.sync_api.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_hook_playwright.sync_api.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/_impl/_api_structures.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00__api_structures.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/_impl/_errors.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00__errors.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/_impl/_event_context_manager.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Memory/00__event_context_manager.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/_impl/_glob.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00__glob.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/_impl/_input.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00__input.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/_impl/_map.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00__map.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/_repo_version.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00__repo_version.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pyee/__init__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00___init__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/advanced/08_dependency_runtime_planner.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/08_dependency_runtime_planner.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/advanced/10_shared_multi_agent_memory.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Memory/10_shared_multi_agent_memory.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/advanced/streaming_reasoning_engine.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_streaming_reasoning_engine.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/core/01_icos_core_engine.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/01_icos_core_engine.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/core/03_icos_execution_context.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Memory/03_icos_execution_context.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/icos_intelligence/__init__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00___init__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/icos_intelligence/autonomous_behavioral_reasoning.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_autonomous_behavioral_reasoning.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/icos_intelligence/autonomous_visual_diff.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_autonomous_visual_diff.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/icos_intelligence/browser_runtime_verifier.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_browser_runtime_verifier.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/icos_intelligence/decision_gate.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_decision_gate.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/icos_intelligence/distributed_context_compression.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Memory/00_distributed_context_compression.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/icos_intelligence/execution_intelligence_quality.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_execution_intelligence_quality.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/icos_intelligence/execution_policy_intelligence.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Governance/00_execution_policy_intelligence.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/icos_intelligence/language_server_intelligence.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_language_server_intelligence.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/icos_intelligence/model_quality_reasoning.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Models/00_model_quality_reasoning.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/icos_intelligence/multi_file_semantic_repair.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_multi_file_semantic_repair.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/icos_intelligence/patch_planner.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_patch_planner.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/institutional/04_placement_resolver.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/04_placement_resolver.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/institutional/07_institutional_maturity_index.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/07_institutional_maturity_index.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/institutional/10_authority_weighted_doctrine_retrieval.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/10_authority_weighted_doctrine_retrieval.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/institutional/11_document_cognition.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/11_document_cognition.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/institutional/13_placement_cognition.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/13_placement_cognition.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/intelligence/01_self_improving_runtime.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/01_self_improving_runtime.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/intelligence/02_runtime_learning_loop.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/02_runtime_learning_loop.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/intelligence/decision_gate.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/migrated_00_decision_gate.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/intelligence/js_ts_patch_engine.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_js_ts_patch_engine.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/intelligence/multi_file_repair.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_multi_file_repair.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/intelligence/self_healing_loop.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_self_healing_loop.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/intelligence/streaming_execution_engine.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_streaming_execution_engine.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/intelligence/superior_execution_standard.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_superior_execution_standard.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/interfaces/cli/02_cli_argument_parser.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/02_cli_argument_parser.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/interfaces/cli/03_cli_response_renderer.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/03_cli_response_renderer.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/interfaces/cli/xcode/01_xcode_cli_commands.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Adapters/01_xcode_cli_commands.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/interfaces/cli/xcode/02_xcode_cli_response_renderer.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Adapters/02_xcode_cli_response_renderer.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/interfaces/mcp/02_mcp_response_adapter.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Adapters/02_mcp_response_adapter.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/interfaces/shared/01_shared_command_contract.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/01_shared_command_contract.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/interfaces/shared/02_shared_response_contract.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/02_shared_response_contract.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/patcher.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_patcher.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/quality/02_stateful_patch_audit.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Memory/02_stateful_patch_audit.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/quality/confidence.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_confidence.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/quality/patch_synthesizer.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_patch_synthesizer.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/quality/retry_engine.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_retry_engine.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/quality/semantic_analyzer.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_semantic_analyzer.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/quality/verification_loop.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_verification_loop.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/ranker.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_ranker.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/adapters/01_institutional_adapter.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Adapters/01_institutional_adapter.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/adapters/02_advanced_runtime_adapter.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Adapters/02_advanced_runtime_adapter.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/adapters/03_quality_adapter.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Adapters/03_quality_adapter.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/adapters/xcode/01_xcode_adapter.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Adapters/01_xcode_adapter.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/adapters/xcode/build/01_apple_build_verifier.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Adapters/01_apple_build_verifier.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/adapters/xcode/project/01_swift_project_adapter.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Adapters/01_swift_project_adapter.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/adapters/xcode/project/02_xcodeproj_parser.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Adapters/02_xcodeproj_parser.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/adapters/xcode/project/03_swift_file_owner_resolver.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Adapters/03_swift_file_owner_resolver.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/adapters/xcode/test/01_xcode_test_runner.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Adapters/01_xcode_test_runner.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/adapters/xcode/test/02_test_failure_classifier.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Adapters/02_test_failure_classifier.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/adapters/xcode/verification/01_simulator_runtime_verifier.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Adapters/01_simulator_runtime_verifier.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/adapters/xcode/verification/02_swiftui_runtime_verifier.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Adapters/02_swiftui_runtime_verifier.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/adapters/xcode/verification/03_ios_macos_visual_verifier.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Adapters/03_ios_macos_visual_verifier.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/contracts/01_execution_request_contract.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/01_execution_request_contract.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/contracts/02_execution_result_contract.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/02_execution_result_contract.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/contracts/03_error_contract.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/03_error_contract.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/router/02_runtime_dispatch_table.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/02_runtime_dispatch_table.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/state/01_runtime_state_store.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Memory/01_runtime_state_store.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/state/02_runtime_session_store.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Memory/02_runtime_session_store.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/state/03_runtime_event_log.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Memory/03_runtime_event_log.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/state/xcode/01_xcode_project_state_store.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Memory/01_xcode_project_state_store.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/state/xcode/02_xcode_build_state_store.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Memory/02_xcode_build_state_store.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/state/xcode/03_xcode_runtime_verification_state.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Memory/03_xcode_runtime_verification_state.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/system_preload.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_system_preload.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/test_runner.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Interfaces/Continue/00_test_runner.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/runtime/editor.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Core/00_editor.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/runtime/patcher.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Core/00_patcher.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/runtime/ranker.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Core/00_ranker.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/runtime/resolver.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Core/00_resolver.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/runtime/scanner.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Core/00_scanner.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/runtime/verifier.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Verification/00_verifier.py"
+    }
+  ],
+  "skipped": [],
+  "errors": []
+}

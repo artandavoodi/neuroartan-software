@@ -1,0 +1,35 @@
+[
+  {
+    "user_input": "who are you?",
+    "llm_output": "I am Claude, an AI assistant.",
+    "final_output": "You are communicating with ICOS Brain, the sovereign cognitive controller of Neuroartan. The mounted LLM is only a replaceable processor.",
+    "identity_override": true
+  },
+  {
+    "runtime": "ICOS",
+    "brain_active": true,
+    "recursive_reflection": true,
+    "identity_coherence": false,
+    "identity_drift": {
+      "identity_drift_detected": true,
+      "drift_events": [
+        {
+          "forbidden_identity": "Claude",
+          "output": "I am Claude, an AI assistant."
+        },
+        {
+          "forbidden_identity": "AI assistant",
+          "output": "I am Claude, an AI assistant."
+        }
+      ],
+      "total_events": 2
+    },
+    "learning": {
+      "providers_observed": {
+        "LMStudio": 1
+      },
+      "learning_events": 1
+    },
+    "timestamp": 1778170004.439072
+  }
+]

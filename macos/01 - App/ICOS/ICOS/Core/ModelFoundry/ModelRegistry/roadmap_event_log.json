@@ -1,0 +1,26 @@
+[
+  {
+    "timestamp": 1778178984.112282,
+    "roadmap_id": "13243247-a8aa-450d-90c8-f4036f3119fd",
+    "identity": "sovereign_cognitive_operating_system",
+    "reasoning_style": "recursive_semantic_reasoning",
+    "alignment_model": "governed_alignment",
+    "continuity_model": "persistent_continuity_memory",
+    "identity_preserved": true
+  },
+  {
+    "timestamp": 1778178984.112347,
+    "roadmap_id": "13243247-a8aa-450d-90c8-f4036f3119fd",
+    "frontier_candidate": true,
+    "human_review_required": true,
+    "frontier_training_locked": true,
+    "safe_evolution": true
+  },
+  {
+    "timestamp": 1778178984.112399,
+    "roadmap_id": "13243247-a8aa-450d-90c8-f4036f3119fd",
+    "identity_defined": true,
+    "frontier_readiness_evaluated": true,
+    "governed_evolution": true
+  }
+]

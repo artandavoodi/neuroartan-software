@@ -1,0 +1,34 @@
+{
+  "runtime": "ICOS",
+  "registry_owner": "Interfaces/Continue",
+  "version": "1.0",
+  "tools": [
+    {
+      "name": "strategic_analysis",
+      "description": "Strategic cognitive analysis engine",
+      "route": "Cognition/Engines/01_strategic_analysis_engine.py",
+      "enabled": true
+    },
+    {
+      "name": "runtime_status",
+      "description": "Runtime state inspection tool",
+      "route": "Runtime/Engines",
+      "enabled": true,
+      "layer": "Runtime"
+    },
+    {
+      "name": "memory_retrieval",
+      "description": "Continuity and retrieval access layer",
+      "route": "Memory/Engines",
+      "enabled": true,
+      "layer": "Memory"
+    },
+    {
+      "name": "provider_router",
+      "description": "Provider orchestration and LM Studio routing",
+      "route": "Providers/Engines",
+      "enabled": true,
+      "layer": "Providers"
+    }
+  ]
+}

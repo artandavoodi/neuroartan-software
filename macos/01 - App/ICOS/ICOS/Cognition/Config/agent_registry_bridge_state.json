@@ -1,0 +1,56 @@
+{
+  "status": "AGENT_REGISTRY_BRIDGE_RESOLVED",
+  "evaluated_at": "2026-05-06T21:37:54",
+  "request": "Build persistent runtime memory governance and constitutional routing system for ICOS sovereign cognition.",
+  "primary_agent": {
+    "id": "CCSOA",
+    "profile": {
+      "name": "Chief Cognitive Systems Officer Agent",
+      "domain": "icos",
+      "authority": "Executive",
+      "capabilities": [
+        "cognition",
+        "runtime",
+        "memory",
+        "architecture"
+      ]
+    }
+  },
+  "collaboration_chain": [
+    {
+      "id": "VGA",
+      "profile": {
+        "name": "Vault Governance Agent",
+        "domain": "governance",
+        "authority": "Departmental",
+        "capabilities": [
+          "metadata",
+          "routing",
+          "document-structure",
+          "governance"
+        ]
+      }
+    },
+    {
+      "id": "CCSOA",
+      "profile": {
+        "name": "Chief Cognitive Systems Officer Agent",
+        "domain": "icos",
+        "authority": "Executive",
+        "capabilities": [
+          "cognition",
+          "runtime",
+          "memory",
+          "architecture"
+        ]
+      }
+    }
+  ],
+  "shared_memory_available": true,
+  "constitutional_routing": {
+    "requires_executive_review": true,
+    "routing_depth": 2,
+    "cross_domain_collaboration": true
+  },
+  "recommended_execution_model": "multi-agent"
+}

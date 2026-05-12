@@ -1,0 +1,15 @@
+[
+  {
+    "runtime": "ICOS",
+    "timestamp": 1778171031.846569,
+    "mutation": {
+      "mutation": "architecture_upgrade",
+      "targets_core_identity": false,
+      "recursive_runtime_change": false
+    },
+    "risk": "low",
+    "approved": false,
+    "sandbox_required": true,
+    "governance_required": true
+  }
+]

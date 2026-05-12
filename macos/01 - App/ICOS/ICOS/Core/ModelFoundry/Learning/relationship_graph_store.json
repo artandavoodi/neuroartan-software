@@ -1,0 +1,38 @@
+[
+  {
+    "source": "cognition",
+    "target": "architecture",
+    "relationship": "semantic_association",
+    "timestamp": 1778176850.853985
+  },
+  {
+    "source": "cognition",
+    "target": "icos",
+    "relationship": "semantic_association",
+    "timestamp": 1778176850.853986
+  },
+  {
+    "source": "architecture",
+    "target": "cognition",
+    "relationship": "semantic_association",
+    "timestamp": 1778176850.853987
+  },
+  {
+    "source": "architecture",
+    "target": "icos",
+    "relationship": "semantic_association",
+    "timestamp": 1778176850.853987
+  },
+  {
+    "source": "icos",
+    "target": "cognition",
+    "relationship": "semantic_association",
+    "timestamp": 1778176850.853987
+  },
+  {
+    "source": "icos",
+    "target": "architecture",
+    "relationship": "semantic_association",
+    "timestamp": 1778176850.8539891
+  }
+]

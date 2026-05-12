@@ -1,0 +1,27 @@
+{
+  "runtime": "continue",
+  "runtime_owner": "Interfaces/Continue",
+  "sovereign_root": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS",
+  "provider": "lmstudio",
+  "provider_runtime": "openai-compatible",
+  "endpoint": "http://localhost:1234/v1",
+  "local_only": true,
+  "sovereign_mode": true,
+  "routes": {
+    "cognition": "Cognition/Engines",
+    "memory": "Memory/Engines",
+    "runtime": "Runtime/Engines",
+    "execution": "Execution/Engines",
+    "governance": "Governance/Engines",
+    "providers": "Providers/Engines",
+    "models": "Models/Engines"
+  },
+  "registries": {
+    "tools": "Interfaces/Continue/Registries/continue_tool_registry.json"
+  },
+  "status": {
+    "config_loaded": true,
+    "tools_required": true,
+    "requires_registry": true
+  }
+}

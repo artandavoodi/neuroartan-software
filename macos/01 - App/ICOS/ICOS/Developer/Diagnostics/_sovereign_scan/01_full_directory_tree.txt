@@ -1,0 +1,414 @@
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/App
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Assets.xcassets
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Assets.xcassets/AccentColor.colorset
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Assets.xcassets/AppIcon.appiconset
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Bridge
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/CognitiveEngine
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/CognitiveEngine/Doctrine
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/CognitiveEngine/Governance
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/CognitiveEngine/Tools
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Control
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Core
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DesignSystem
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DesignSystem/Components
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DesignSystem/Controls
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DesignSystem/Icons
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DesignSystem/Icons/core
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DesignSystem/Icons/layers
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DesignSystem/Icons/registry
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DesignSystem/Icons/system
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DesignSystem/Tokens
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DeveloperConsole
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DeveloperConsole/Fragments
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DeveloperConsole/Indicators
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DeveloperConsole/Panels
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DeveloperConsole/Views
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/00 - Index
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/01 - Identity
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/02 - Product
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/03 - Company
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/04 - Founder
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/05 - Model Transparency
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/06 - Memory
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/07 - Response
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/08 - File Referencing
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/09 - Safety
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/10 - Runtime Behavior
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/11 - Prompt Architecture
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/12 - Knowledge Architecture
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/13 - Source Attribution
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/14 - Tool Use
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/15 - Governance
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/16 - Expansion Protocol
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/17 - Execution Intelligence
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/18 - Command System
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/19 - Active Reference System
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/20 - Context Budget System
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/21 - Enforcement Layer
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/22 - External Agent Replication
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/23 - Runtime UX
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/24 - Safety & Privacy Layer
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/24 - Safety & Privacy Layer/00 - Safety Governance Core
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/24 - Safety & Privacy Layer/01 - Safety Governance Core
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/24 - Safety & Privacy Layer/02 - Content Safety Behavior Control
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/24 - Safety & Privacy Layer/03 - Privacy Data Governance
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/24 - Safety & Privacy Layer/04 - Ethical Behavior Control
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/24 - Safety & Privacy Layer/05 - Legal Compliance Layer
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/24 - Safety & Privacy Layer/06 - User Interaction Safety
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/24 - Safety & Privacy Layer/07 - System Integrity FailSafe
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Doctrine/24 - Safety & Privacy Layer/08 - Safety Orchestration Core
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Engine
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/ExecutionEngine
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/KnowledgeBase
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Memory
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Persistence
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Platform
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Platform/Sections
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Profile
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Adapters
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Cognition
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/MCP
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/MCP/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/bin
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/include
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/include/site
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/include/site/python3.14
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/include/site/python3.14/greenlet
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/.dylibs
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet-3.5.0.dist-info
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet-3.5.0.dist-info/licenses
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/platform
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/platform/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/tests
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/tests/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pillow-12.2.0.dist-info
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pillow-12.2.0.dist-info/licenses
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip-26.1.1.dist-info
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/cachecontrol
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/certifi
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/distlib
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/distro
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/idna
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/msgpack
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/packaging
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/pkg_resources
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/platformdirs
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/pygments
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/pyproject_hooks
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/requests
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/resolvelib
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/rich
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/tomli
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/tomli_w
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/truststore
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/urllib3
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/cli
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/cli/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/commands
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/commands/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/distributions
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/distributions/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/index
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/index/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/locations
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/locations/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/metadata
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/metadata/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/metadata/importlib
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/metadata/importlib/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/models
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/models/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/network
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/network/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/operations
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/operations/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/operations/build
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/operations/build/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/operations/install
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/operations/install/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/req
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/req/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/resolution
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/resolution/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/resolution/legacy
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/resolution/legacy/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/resolution/resolvelib
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/resolution/resolvelib/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/utils
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/utils/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/vcs
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/vcs/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/cachecontrol
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/cachecontrol/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/cachecontrol/caches
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/cachecontrol/caches/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/certifi
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/certifi/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/distlib
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/distlib/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/distro
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/distro/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/idna
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/idna/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/msgpack
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/msgpack/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/packaging
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/packaging/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/packaging/licenses
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/packaging/licenses/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/pkg_resources
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/pkg_resources/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/platformdirs
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/platformdirs/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/pygments
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/pygments/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/pygments/filters
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/pygments/filters/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/pygments/formatters
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/pygments/formatters/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/pygments/lexers
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/pygments/lexers/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/pygments/styles
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/pygments/styles/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/requests
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/requests/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/resolvelib
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/resolvelib/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/resolvelib/resolvers
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/resolvelib/resolvers/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/rich
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/rich/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/tomli
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/tomli/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/tomli_w
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/tomli_w/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/truststore
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/truststore/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/urllib3
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/urllib3/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/urllib3/contrib
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/urllib3/contrib/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/urllib3/contrib/emscripten
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/urllib3/contrib/emscripten/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/urllib3/http2
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/urllib3/http2/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/urllib3/util
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_vendor/urllib3/util/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright-1.59.0.dist-info
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright-1.59.0.dist-info/licenses
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/_impl
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/_impl/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/_impl/__pyinstaller
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/_impl/__pyinstaller/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/async_api
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/async_api/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/bin
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/cli
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/client
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/generated
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/protocol
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/remote
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/server
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/server/android
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/server/bidi
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/server/bidi/third_party
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/server/chromium
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/server/codegen
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/server/dispatchers
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/server/electron
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/server/firefox
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/server/har
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/server/recorder
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/server/registry
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/server/trace
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/server/trace/recorder
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/server/trace/viewer
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/server/utils
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/server/utils/image_tools
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/server/webkit
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/third_party
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/tools
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/tools/backend
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/tools/cli-client
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/tools/cli-client/skill
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/tools/cli-client/skill/references
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/tools/cli-daemon
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/tools/dashboard
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/tools/mcp
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/tools/trace
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/tools/utils
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/tools/utils/mcp
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/utils
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/utils/isomorphic
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/utils/isomorphic/trace
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/utils/isomorphic/trace/versions
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/utilsBundleImpl
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/vite
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/vite/dashboard
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/vite/dashboard/assets
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/vite/htmlReport
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/vite/recorder
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/vite/recorder/assets
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/vite/traceViewer
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/lib/vite/traceViewer/assets
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/driver/package/types
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/sync_api
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/playwright/sync_api/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pyee
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pyee-13.0.1.dist-info
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pyee-13.0.1.dist-info/licenses
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pyee/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/typing_extensions-4.15.0.dist-info
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/typing_extensions-4.15.0.dist-info/licenses
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/advanced
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/advanced/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/advanced/runtime_screenshots
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/advanced/runtime_screenshots/playwright
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/advanced/runtime_visual_diffs
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/core
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/core/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/icos_intelligence
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/icos_intelligence/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/institutional
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/institutional/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/intelligence
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/intelligence/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/interfaces
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/interfaces/cli
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/interfaces/cli/xcode
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/interfaces/mcp
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/interfaces/shared
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/quality
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/quality/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/adapters
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/adapters/xcode
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/adapters/xcode/build
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/adapters/xcode/project
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/adapters/xcode/test
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/adapters/xcode/verification
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/contracts
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/logs
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/router
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/router/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/state
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/runtime/state/xcode
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Contracts
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Core
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Governance
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Learning
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Legacy
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/LocalClient
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Native
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Planning
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Providers
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Registry
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Verification
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/_migration_backups
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/_migration_backups/Adapters
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/_migration_backups/Core
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/_migration_backups/Governance
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/_migration_backups/Interfaces
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/_migration_backups/Interfaces/Continue
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/_migration_backups/Memory
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/_migration_backups/Models
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/_migration_backups/Verification
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/_migration_reports
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/architecture
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/backups
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/backups/20260506_100444
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/backups/20260506_171117
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/backups/20260506_171335
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/interfaces
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/interfaces/LMStudio
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/interfaces/cli
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/interfaces/continue
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/interfaces/mcp
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/interfaces/xcode
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/memory
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/migration
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/models
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/models/cloud
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/models/lmstudio
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/models/local
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/runtime
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/runtime/__pycache__
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/SwiftUI
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/SwiftUI/App
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/SwiftUI/Behavior
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/SwiftUI/Button
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/SwiftUI/Features
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/SwiftUI/Features/BrowserUse
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/SwiftUI/Features/FileManager
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/SwiftUI/Features/Projects
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/SwiftUI/Features/System
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/SwiftUI/Layout
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/SwiftUI/Navigation
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/SwiftUI/Settings
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/SwiftUI/Shell
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/SwiftUI/System
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/SwiftUI/Theme
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/System
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/System/Layout
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/System/Navigation
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/System/Overlays
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/System/Settings
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/System/Settings/Controls
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/System/Settings/Fragments
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/System/Settings/Models
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/System/Settings/State
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/System/Settings/Views
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/System/Shell
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/System/State
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/System/Theme
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/System/Workspace
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/UX
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/UX/00 - Index
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/UX/01 - Design System
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/UX/02 - Layout Engine
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/UX/03 - Components System
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/UX/04 - Navigation System
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/UX/05 - Screens
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/UX/06 - Fragments
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/UX/07 - Themes
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/UX/08 - Assets
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/UX/09 - Interaction Models
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/UX/10 - Documentation
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/UX/11 - Swift UI Bridge
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/UX/11 - Swift UI Bridge/Component Mapping
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Validation
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/_sovereign_scan

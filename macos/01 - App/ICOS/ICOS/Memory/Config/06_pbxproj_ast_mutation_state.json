@@ -1,0 +1,47 @@
+{
+  "status": "PBXPROJ_AST_MUTATION_APPLIED",
+  "executed_at": "2026-05-06T22:51:56",
+  "pbxproj_path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS.xcodeproj/project.pbxproj",
+  "runtime_backup": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS.xcodeproj/project.runtime-backup.pbxproj",
+  "mutation_count": 7,
+  "mutations": [
+    {
+      "resource_path": "/Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Products/Debug/ICOS.app/Contents/Resources/wheel.py",
+      "removed_line_count": 0,
+      "removed_lines_preview": []
+    },
+    {
+      "resource_path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/commands/wheel.py",
+      "removed_line_count": 0,
+      "removed_lines_preview": []
+    },
+    {
+      "resource_path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/distributions/wheel.py",
+      "removed_line_count": 0,
+      "removed_lines_preview": []
+    },
+    {
+      "resource_path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/models/wheel.py",
+      "removed_line_count": 0,
+      "removed_lines_preview": []
+    },
+    {
+      "resource_path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/operations/build/wheel.py",
+      "removed_line_count": 0,
+      "removed_lines_preview": []
+    },
+    {
+      "resource_path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/operations/install/wheel.py",
+      "removed_line_count": 0,
+      "removed_lines_preview": []
+    },
+    {
+      "resource_path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/utils/wheel.py",
+      "removed_line_count": 0,
+      "removed_lines_preview": []
+    }
+  ],
+  "autonomous_repair_complete": true,
+  "next_required_action": "Re-run xcodebuild to verify resource-phase repair.",
+  "institutional_observation": "ICOS performed controlled autonomous pbxproj resource-phase mutation."
+}

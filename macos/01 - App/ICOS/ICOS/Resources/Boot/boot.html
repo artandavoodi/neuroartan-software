@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ICOS Boot</title>
+    <link rel="stylesheet" href="boot.css" />
+  </head>
+  <body>
+    <div class="icos-shell">
+      <div class="icos-viewport">
+        <div class="icos-viewport-content">
+          <canvas id="infinity-canvas" class="viewport-canvas"></canvas>
+          <div id="ui-layer" class="viewport-ui-layer">
+            <div class="brand-lockup" aria-label="Neuroartan Cognitive Runtime">
+              <div class="brand-name">
+                <span class="brand-element">Neuro</span><span class="brand-software">artan</span>
+              </div>
+              <div class="brand-descriptor">
+                <span>ICOS</span><span class="brand-divider"></span><span>Cognitive Runtime</span>
+              </div>
+            </div>
+            <div id="tagline" class="tagline-text"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="boot.js"></script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project "macos/01 - App/ICOS/ICOS.xcodeproj" -scheme ICOS -configuration Debug build
+
+2026-05-08 22:35:43.842 xcodebuild[44292:10159696] [MT] IDERunDestination: Supported platforms for the buildables in the current scheme is empty.
+--- xcodebuild: WARNING: Using the first of multiple matching destinations:
+{ platform:macOS, arch:arm64, id:00008132-001664A83463801C, name:My Mac }
+{ platform:macOS, arch:x86_64, id:00008132-001664A83463801C, name:My Mac }
+{ platform:macOS, name:Any Mac }
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (1 target)
+    Target 'ICOS' in project 'ICOS' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk -x objective-c++ -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 25fb9a2d63f988ac544c5f727741c986
+Build description path: /Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Intermediates.noindex/XCBuildData/25fb9a2d63f988ac544c5f727741c986.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk /Users/artan/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/macosx26.4-25E251-30f9ca8789b706f8bd3fc906a70d770f.sdkstatcache
+    cd /Users/artan/Neuroartan-software/macos/01\ -\ App/ICOS/ICOS.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk -o /Users/artan/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/macosx26.4-25E251-30f9ca8789b706f8bd3fc906a70d770f.sdkstatcache
+
+WriteAuxiliaryFile /Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Intermediates.noindex/ICOS.build/Debug/ICOS.build/Objects-normal/arm64/ICOS.SwiftFileList (in target 'ICOS' from project 'ICOS')
+    cd /Users/artan/Neuroartan-software/macos/01\ -\ App/ICOS
+    write-file /Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Intermediates.noindex/ICOS.build/Debug/ICOS.build/Objects-normal/arm64/ICOS.SwiftFileList
+
+WriteAuxiliaryFile /Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Intermediates.noindex/ICOS.build/Debug/ICOS.build/Objects-normal/arm64/ICOS.LinkFileList (in target 'ICOS' from project 'ICOS')
+    cd /Users/artan/Neuroartan-software/macos/01\ -\ App/ICOS
+    write-file /Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Intermediates.noindex/ICOS.build/Debug/ICOS.build/Objects-normal/arm64/ICOS.LinkFileList
+
+Ld /Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Products/Debug/ICOS.app/Contents/MacOS/__preview.dylib normal (in target 'ICOS' from project 'ICOS')
+    cd /Users/artan/Neuroartan-software/macos/01\ -\ App/ICOS
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-macos26.4 -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk -O0 -L/Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Products/Debug -L/Users/artan/Neuroartan-software/macos/01\ -\ App/ICOS/Runtime/Frameworks -L/Users/artan/Neuroartan-software/macos/01\ -\ App/ICOS/ICOS/ThirdParty/dylibs -F/Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Products/Debug -install_name @rpath/ICOS.debug.dylib -rdynamic -Xlinker -no_deduplicate -Xlinker -debug_variant -Xlinker -dependency_info -Xlinker /Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Intermediates.noindex/ICOS.build/Debug/ICOS.build/Objects-normal/arm64/ICOS_dependency_info.dat -Xlinker -no_adhoc_codesign -o /Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Products/Debug/ICOS.app/Contents/MacOS/__preview.dylib
+
+WriteAuxiliaryFile /Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Intermediates.noindex/ICOS.build/Debug/ICOS.build/Objects-normal/arm64/ICOS.SwiftConstValuesFileList (in target 'ICOS' from project 'ICOS')
+    cd /Users/artan/Neuroartan-software/macos/01\ -\ App/ICOS
+    write-file /Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Intermediates.noindex/ICOS.build/Debug/ICOS.build/Objects-normal/arm64/ICOS.SwiftConstValuesFileList
+
+ProcessInfoPlistFile /Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Products/Debug/ICOS.app/Contents/Info.plist /Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Intermediates.noindex/ICOS.build/Debug/ICOS.build/empty-ICOS.plist (in target 'ICOS' from project 'ICOS')
+    cd /Users/artan/Neuroartan-software/macos/01\ -\ App/ICOS
+    builtin-infoPlistUtility /Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Intermediates.noindex/ICOS.build/Debug/ICOS.build/empty-ICOS.plist -producttype com.apple.product-type.application -genpkginfo /Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Products/Debug/ICOS.app/Contents/PkgInfo -expandbuildsettings -platform macosx -additionalcontentfile /Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Intermediates.noindex/ICOS.build/Debug/ICOS.build/assetcatalog_generated_info.plist -o /Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Products/Debug/ICOS.app/Contents/Info.plist
+
+SwiftDriver ICOS normal arm64 com.apple.xcode.tools.swift.compiler (in target 'ICOS' from project 'ICOS')
+    cd /Users/artan/Neuroartan-software/macos/01\ -\ App/ICOS
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name ICOS -Onone @/Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Intermediates.noindex/ICOS.build/Debug/ICOS.build/Objects-normal/arm64/ICOS.SwiftFileList -DDEBUG -default-isolation\=MainActor -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk -target arm64-apple-macos26.4 -g -module-cache-path /Users/artan/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -profile-coverage-mapping -profile-generate -enable-testing -index-store-path /Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Products/Debug -F /Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Products/Debug -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/artan/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/macosx26.4-25E251-30f9ca8789b706f8bd3fc906a70d770f.sdkstatcache -output-file-map /Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Intermediates.noindex/ICOS.build/Debug/ICOS.build/Objects-normal/arm64/ICOS-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/artan/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/artan/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Intermediates.noindex/ICOS.build/Debug/ICOS.build/Objects-normal/arm64/ICOS.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/artan/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Intermediates.noindex/ICOS.build/Debug/ICOS.build/swift-overrides.hmap -Xcc -iquote -Xcc /Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Intermediates.noindex/ICOS.build/Debug/ICOS.build/ICOS-generated-files.hmap -Xcc -I/Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Intermediates.noindex/ICOS.build/Debug/ICOS.build/ICOS-own-target-headers.hmap -Xcc -I/Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Intermediates.noindex/ICOS.build/Debug/ICOS.build/ICOS-all-target-headers.hmap -Xcc -iquote -Xcc /Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Intermediates.noindex/ICOS.build/Debug/ICOS.build/ICOS-project-headers.hmap -Xcc -I/Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Products/Debug/include -Xcc -I/Users/artan/Neuroartan-software/macos/01\ -\ App/ICOS/Runtime/Source/llama.cpp/include -Xcc -I/Users/artan/Neuroartan-software/macos/01\ -\ App/ICOS/Runtime/Source/llama.cpp/ggml/include -Xcc -I/Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Intermediates.noindex/ICOS.build/Debug/ICOS.build/DerivedSources-normal/arm64 -Xcc -I/Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Intermediates.noindex/ICOS.build/Debug/ICOS.build/DerivedSources/arm64 -Xcc -I/Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Intermediates.noindex/ICOS.build/Debug/ICOS.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Intermediates.noindex/ICOS.build/Debug/ICOS.build/Objects-normal/arm64/ICOS-Swift.h -import-objc-header /Users/artan/Neuroartan-software/macos/01\ -\ App/ICOS/ICOS/Runtime/Native/LlamaBridge-Bridging-Header.h -working-directory /Users/artan/Neuroartan-software/macos/01\ -\ App/ICOS -experimental-emit-module-separately -disable-cmo
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DeveloperConsole/Views/DeveloperConsoleView.swift:562:2: error: consecutive statements on a line must be separated by ';'
+}\n
+ ^
+ ;
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DeveloperConsole/Views/DeveloperConsoleView.swift:562:2: error: expressions are not allowed at the top level
+}\n
+ ^
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DeveloperConsole/Views/DeveloperConsoleView.swift:562:2: error: Consecutive statements on a line must be separated by ';'
+}\n
+ ^
+ ; (in target 'ICOS' from project 'ICOS')
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/DeveloperConsole/Views/DeveloperConsoleView.swift:562:2: error: Expressions are not allowed at the top level
+}\n
+ ^ (in target 'ICOS' from project 'ICOS')
+
+note: Run script build phase 'Copy Doctrine Tree' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'ICOS' from project 'ICOS')
+** BUILD FAILED **
+
+
+The following build commands failed:
+	SwiftDriver ICOS normal arm64 com.apple.xcode.tools.swift.compiler (in target 'ICOS' from project 'ICOS')
+	Building project ICOS with scheme ICOS and configuration Debug
+(2 failures)

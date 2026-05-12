@@ -1,0 +1,9 @@
+[
+  {
+    "timestamp": 1778176457.218555,
+    "provider": "OpenAI",
+    "user_input": "I want ICOS to evolve into a sovereign cognition system.",
+    "model_output": "ICOS architecture roadmap generated.",
+    "token_estimate": 14
+  }
+]

@@ -1,0 +1,521 @@
+{
+  "moved": [
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_deprecation.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_deprecation.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_cells.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_cells.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_GifImagePlugin.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_GifImagePlugin.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_factory.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_factory.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_progress.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_progress.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_typing_extensions.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_typing_extensions.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/21_strategic_analysis_engine.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/21_strategic_analysis_engine.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00__dists.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__dists.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_default_styles.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_default_styles.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/03_build_error_classifier.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/03_build_error_classifier.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_models.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_models.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_session.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_session.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/10_sovereign_runtime_reconstruction_plan.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/10_sovereign_runtime_reconstruction_plan.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_table.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_table.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_request.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_request.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00__windows.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__windows.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/migrated_00_response.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_migrated_00_response.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_connection.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_connection.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00__envs.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__envs.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/migrated_00_execution_intelligence_quality.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_migrated_00_execution_intelligence_quality.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/05_pbxproj_resource_phase_editor.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/05_pbxproj_resource_phase_editor.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_selection_prefs.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_selection_prefs.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_fallback.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_fallback.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00__browser_type.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__browser_type.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/migrated_00_language_server_intelligence.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_migrated_00_language_server_intelligence.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_wait.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_wait.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_McIdasImagePlugin.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_McIdasImagePlugin.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_build_env.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_build_env.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_Image.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_Image.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/migrated_04_executor.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_migrated_04_executor.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_adapters.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_adapters.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_ImageFont.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_ImageFont.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_PngImagePlugin.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_PngImagePlugin.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_unpacking.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_unpacking.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/01_runtime_command_router.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/01_runtime_command_router.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00__fetch.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__fetch.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_pkg_resources.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_pkg_resources.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_providers.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Orchestration/00_providers.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00__emoji_codes.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__emoji_codes.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_EpsImagePlugin.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_EpsImagePlugin.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_found_candidates.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_found_candidates.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_test_leaks.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_test_leaks.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00__page.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__page.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_markup.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_markup.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_system_preload.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_system_preload.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00__inspect.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__inspect.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_test_version.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_test_version.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/migrated_00_console.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_migrated_00_console.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/14_authority_routing_engine.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Orchestration/14_authority_routing_engine.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00__browser.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__browser.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_retry.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_retry.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_ssltransport.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_ssltransport.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00__macos.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__macos.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/migrated_00_ranker.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_migrated_00_ranker.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_tags.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_tags.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00__network.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__network.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/16_document_creation_protocol.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/16_document_creation_protocol.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/07_institutional_maturity_index.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/07_institutional_maturity_index.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_console.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_console.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_link.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_link.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_box.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_box.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_resolution.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_resolution.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_logging.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_logging.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_ssl_match_hostname.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_ssl_match_hostname.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_req_install.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_req_install.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_candidates.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_candidates.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_tree.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_tree.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_debug.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_debug.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/04_placement_resolver.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/04_placement_resolver.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_ImageColor.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_ImageColor.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_ImageCms.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_ImageCms.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/02_icos_command_registry.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/02_icos_command_registry.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/23_total_maturity_index.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/23_total_maturity_index.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_syntax.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_syntax.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_TiffImagePlugin.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_TiffImagePlugin.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/05_runtime_semantic_classification.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/05_runtime_semantic_classification.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_prepare.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_prepare.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_python.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_python.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_configuration.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_configuration.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_migrated_00_status_codes.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_migrated_00_status_codes.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/migrated_00___main__.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_migrated_00___main__.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_ImageDraw.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_ImageDraw.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_package_finder.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_package_finder.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/migrated_00_auth.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_migrated_00_auth.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_ImageWin.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_ImageWin.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_packages.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_packages.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_response.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_response.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_collector.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_collector.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00__compat.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__compat.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00__connection.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__connection.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00__local_utils.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__local_utils.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/04_executor.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/04_executor.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_install.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_install.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_segment.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_segment.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_scripts.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_scripts.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_text.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_text.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/migrated_00_utils.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_migrated_00_utils.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_abstract.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_abstract.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_connectionpool.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_connectionpool.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/migrated_00__generated.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_migrated_00__generated.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00__json_pipe.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__json_pipe.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_live.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_live.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_ImageFile.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_ImageFile.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00__artifact.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__artifact.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_fetch.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_fetch.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_test_greenlet.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_test_greenlet.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_status.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_status.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_dependency_groups.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_dependency_groups.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_migrated_00_decision_gate.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Planning/00_migrated_00_decision_gate.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_metadata.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_metadata.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00__generated.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__generated.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00__win32_console.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__win32_console.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/migrated_00_resolver.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_migrated_00_resolver.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_pyproject.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_pyproject.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_distro.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_distro.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_api.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_api.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_IcnsImagePlugin.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_IcnsImagePlugin.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_cmdoptions.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_cmdoptions.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00__frame.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__frame.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_SpiderImagePlugin.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_SpiderImagePlugin.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_style.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_style.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_long_horizon_engine.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_long_horizon_engine.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00__request_methods.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00__request_methods.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/22_self_development_engine.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/22_self_development_engine.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_ImageTk.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_ImageTk.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_provider.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Orchestration/00_provider.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_index_command.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_index_command.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_color.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_color.py"
+    },
+    {
+      "from": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/00_subprocess.py",
+      "to": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Cognition/Reasoning/00_subprocess.py"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,25 @@
+[
+  {
+    "timestamp": 1778178239.216515,
+    "run_id": "80fd26c6-0790-467f-b6ad-92d1678edbbf",
+    "model_family": "icos-core",
+    "dataset_count": 1,
+    "lineage_preserved": true,
+    "audit_continuity": true
+  },
+  {
+    "timestamp": 1778178239.216599,
+    "run_id": "80fd26c6-0790-467f-b6ad-92d1678edbbf",
+    "training_allowed": false,
+    "human_review_required": true,
+    "gpu_required": true,
+    "production_training": false
+  },
+  {
+    "timestamp": 1778178239.216654,
+    "run_id": "80fd26c6-0790-467f-b6ad-92d1678edbbf",
+    "training_registered": true,
+    "lineage_preserved": true,
+    "governance_verified": true
+  }
+]

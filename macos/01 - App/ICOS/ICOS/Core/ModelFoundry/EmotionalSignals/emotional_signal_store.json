@@ -1,0 +1,16 @@
+[
+  {
+    "timestamp": 1778176457.219001,
+    "emotion": "neutral",
+    "input_length": 56,
+    "confidence": "low"
+  },
+  {
+    "signal_id": "2bfe18f1-b493-43da-b677-a3a2a1bb0ce1",
+    "timestamp": 1778177242.2418401,
+    "emotion": "anxiety",
+    "confidence": 0.5,
+    "input_length": 90,
+    "adaptive_weight": "medium"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "evaluation_id": "82a373a7-42e4-4e2f-b666-ba5b639697be",
+    "timestamp": 1778178638.3207538,
+    "model_family": "icos-core",
+    "dimensions": {
+      "semantic_reasoning": 0.6,
+      "alignment_quality": 0.6,
+      "emotional_responsiveness": 0.55,
+      "continuity_integrity": 0.6,
+      "hallucination_resistance": 0.55
+    },
+    "overall_score": 0.58,
+    "evaluation_ready": true
+  }
+]

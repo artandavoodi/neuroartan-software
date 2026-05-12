@@ -1,0 +1,17 @@
+[
+  {
+    "runtime": "ICOS",
+    "timestamp": 1778171327.453543,
+    "mutation_id": "demo-mutation",
+    "target_layer": "identity",
+    "constraint_violation": true,
+    "allowed": false,
+    "immutable_constraints": [
+      "identity",
+      "runtime",
+      "governance",
+      "safety",
+      "core_brain"
+    ]
+  }
+]

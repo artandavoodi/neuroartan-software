@@ -1,0 +1,1119 @@
+{
+  "status": "SOVEREIGN_RUNTIME_RECONSTRUCTION_PLAN_COMPLETE",
+  "executed_at": "2026-05-06T23:24:27",
+  "runtime_root": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime",
+  "continuebridge_module_count": 730,
+  "phase_count": 10,
+  "execution_plan": [
+    {
+      "phase": "foundation_extraction",
+      "module_count": 12,
+      "safe_candidates": 6,
+      "moderate_candidates": 6,
+      "critical_candidates": 0,
+      "autonomous_execution_allowed": false,
+      "requires_runtime_validation": true
+    },
+    {
+      "phase": "interface_detachment",
+      "module_count": 672,
+      "safe_candidates": 178,
+      "moderate_candidates": 494,
+      "critical_candidates": 0,
+      "autonomous_execution_allowed": false,
+      "requires_runtime_validation": true
+    },
+    {
+      "phase": "provider_normalization",
+      "module_count": 2,
+      "safe_candidates": 0,
+      "moderate_candidates": 2,
+      "critical_candidates": 0,
+      "autonomous_execution_allowed": false,
+      "requires_runtime_validation": true
+    },
+    {
+      "phase": "memory_sovereignization",
+      "module_count": 7,
+      "safe_candidates": 1,
+      "moderate_candidates": 6,
+      "critical_candidates": 0,
+      "autonomous_execution_allowed": false,
+      "requires_runtime_validation": true
+    },
+    {
+      "phase": "governance_extraction",
+      "module_count": 2,
+      "safe_candidates": 0,
+      "moderate_candidates": 2,
+      "critical_candidates": 0,
+      "autonomous_execution_allowed": false,
+      "requires_runtime_validation": true
+    },
+    {
+      "phase": "adapter_consolidation",
+      "module_count": 32,
+      "safe_candidates": 19,
+      "moderate_candidates": 13,
+      "critical_candidates": 0,
+      "autonomous_execution_allowed": false,
+      "requires_runtime_validation": true
+    },
+    {
+      "phase": "model_runtime_normalization",
+      "module_count": 16,
+      "safe_candidates": 5,
+      "moderate_candidates": 11,
+      "critical_candidates": 0,
+      "autonomous_execution_allowed": false,
+      "requires_runtime_validation": true
+    },
+    {
+      "phase": "legacy_quarantine",
+      "module_count": 0,
+      "safe_candidates": 0,
+      "moderate_candidates": 0,
+      "critical_candidates": 0,
+      "autonomous_execution_allowed": false,
+      "requires_runtime_validation": true
+    },
+    {
+      "phase": "runtime_relinking",
+      "module_count": 0,
+      "safe_candidates": 0,
+      "moderate_candidates": 0,
+      "critical_candidates": 0,
+      "autonomous_execution_allowed": false,
+      "requires_runtime_validation": true
+    },
+    {
+      "phase": "verification_and_boot_validation",
+      "module_count": 0,
+      "safe_candidates": 0,
+      "moderate_candidates": 0,
+      "critical_candidates": 0,
+      "autonomous_execution_allowed": false,
+      "requires_runtime_validation": true
+    }
+  ],
+  "continuebridge_modules": [
+    {
+      "module": "ContinueBridge.MCP.icos_mcp_server",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/MCP/icos_mcp_server.py",
+      "import_count": 4
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.AvifImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/AvifImagePlugin.py",
+      "import_count": 4
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.BdfFontFile",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/BdfFontFile.py",
+      "import_count": 2
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.BlpImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/BlpImagePlugin.py",
+      "import_count": 8
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.BmpImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/BmpImagePlugin.py",
+      "import_count": 4
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.BufrStubImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/BufrStubImagePlugin.py",
+      "import_count": 3
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.ContainerIO",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/ContainerIO.py",
+      "import_count": 4
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.CurImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/CurImagePlugin.py",
+      "import_count": 2
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.DcxImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/DcxImagePlugin.py",
+      "import_count": 4
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.DdsImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/DdsImagePlugin.py",
+      "import_count": 6
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.EpsImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/EpsImagePlugin.py",
+      "import_count": 10
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.ExifTags",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/ExifTags.py",
+      "import_count": 2
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.FitsImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/FitsImagePlugin.py",
+      "import_count": 3
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.FliImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/FliImagePlugin.py",
+      "import_count": 4
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.FontFile",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/FontFile.py",
+      "import_count": 3
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.FpxImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/FpxImagePlugin.py",
+      "import_count": 3
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.FtexImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/FtexImagePlugin.py",
+      "import_count": 4
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.GbrImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/GbrImagePlugin.py",
+      "import_count": 2
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.GdImageFile",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/GdImageFile.py",
+      "import_count": 4
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.GifImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/GifImagePlugin.py",
+      "import_count": 13
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.GimpGradientFile",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/GimpGradientFile.py",
+      "import_count": 5
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.GimpPaletteFile",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/GimpPaletteFile.py",
+      "import_count": 4
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.GribStubImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/GribStubImagePlugin.py",
+      "import_count": 3
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.Hdf5StubImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/Hdf5StubImagePlugin.py",
+      "import_count": 3
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.IcnsImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/IcnsImagePlugin.py",
+      "import_count": 6
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.IcoImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/IcoImagePlugin.py",
+      "import_count": 6
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.ImImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/ImImagePlugin.py",
+      "import_count": 5
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.Image",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/Image.py",
+      "import_count": 26
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.ImageChops",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/ImageChops.py",
+      "import_count": 1
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.ImageCms",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/ImageCms.py",
+      "import_count": 9
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.ImageColor",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/ImageColor.py",
+      "import_count": 4
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.ImageDraw",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/ImageDraw.py",
+      "import_count": 7
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.ImageDraw2",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/ImageDraw2.py",
+      "import_count": 3
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.ImageEnhance",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/ImageEnhance.py",
+      "import_count": 1
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.ImageFile",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/ImageFile.py",
+      "import_count": 11
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.ImageFilter",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/ImageFilter.py",
+      "import_count": 8
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.ImageFont",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/ImageFont.py",
+      "import_count": 13
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.ImageGrab",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/ImageGrab.py",
+      "import_count": 9
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.ImageMath",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/ImageMath.py",
+      "import_count": 5
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.ImageMode",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/ImageMode.py",
+      "import_count": 4
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.ImageMorph",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/ImageMorph.py",
+      "import_count": 2
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.ImageOps",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/ImageOps.py",
+      "import_count": 6
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.ImagePalette",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/ImagePalette.py",
+      "import_count": 5
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.ImagePath",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/ImagePath.py",
+      "import_count": 1
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.ImageQt",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/ImageQt.py",
+      "import_count": 10
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.ImageSequence",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/ImageSequence.py",
+      "import_count": 2
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.ImageShow",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/ImageShow.py",
+      "import_count": 9
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.ImageStat",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/ImageStat.py",
+      "import_count": 3
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.ImageText",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/ImageText.py",
+      "import_count": 5
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.ImageTk",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/ImageTk.py",
+      "import_count": 5
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.ImageTransform",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/ImageTransform.py",
+      "import_count": 3
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.ImageWin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/ImageWin.py",
+      "import_count": 1
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.ImtImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/ImtImagePlugin.py",
+      "import_count": 2
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.IptcImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/IptcImagePlugin.py",
+      "import_count": 4
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.Jpeg2KImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/Jpeg2KImagePlugin.py",
+      "import_count": 6
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.JpegImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/JpegImagePlugin.py",
+      "import_count": 14
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.JpegPresets",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/JpegPresets.py",
+      "import_count": 1
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.McIdasImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/McIdasImagePlugin.py",
+      "import_count": 2
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.MicImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/MicImagePlugin.py",
+      "import_count": 2
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.MpegImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/MpegImagePlugin.py",
+      "import_count": 3
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.MpoImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/MpoImagePlugin.py",
+      "import_count": 6
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.MspImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/MspImagePlugin.py",
+      "import_count": 5
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.PSDraw",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/PSDraw.py",
+      "import_count": 3
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.PaletteFile",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/PaletteFile.py",
+      "import_count": 3
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.PalmImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/PalmImagePlugin.py",
+      "import_count": 3
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.PcdImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/PcdImagePlugin.py",
+      "import_count": 1
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.PcfFontFile",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/PcfFontFile.py",
+      "import_count": 5
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.PcxImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/PcxImagePlugin.py",
+      "import_count": 5
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.PdfImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/PdfImagePlugin.py",
+      "import_count": 6
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.PdfParser",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/PdfParser.py",
+      "import_count": 10
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.PixarImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/PixarImagePlugin.py",
+      "import_count": 2
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.PngImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/PngImagePlugin.py",
+      "import_count": 15
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.PpmImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/PpmImagePlugin.py",
+      "import_count": 4
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.PsdImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/PsdImagePlugin.py",
+      "import_count": 6
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.QoiImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/QoiImagePlugin.py",
+      "import_count": 4
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.SgiImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/SgiImagePlugin.py",
+      "import_count": 5
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.SpiderImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/SpiderImagePlugin.py",
+      "import_count": 6
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.SunImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/SunImagePlugin.py",
+      "import_count": 2
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.TarIO",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/TarIO.py",
+      "import_count": 2
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.TgaImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/TgaImagePlugin.py",
+      "import_count": 5
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.TiffImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/TiffImagePlugin.py",
+      "import_count": 16
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.TiffTags",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/TiffTags.py",
+      "import_count": 2
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.WalImageFile",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/WalImageFile.py",
+      "import_count": 4
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.WebPImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/WebPImagePlugin.py",
+      "import_count": 3
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.WmfImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/WmfImagePlugin.py",
+      "import_count": 3
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.XVThumbImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/XVThumbImagePlugin.py",
+      "import_count": 2
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.XbmImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/XbmImagePlugin.py",
+      "import_count": 3
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.XpmImagePlugin",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/XpmImagePlugin.py",
+      "import_count": 3
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.__init__",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/__init__.py",
+      "import_count": 1
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.__main__",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/__main__.py",
+      "import_count": 3
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL._binary",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/_binary.py",
+      "import_count": 2
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL._deprecate",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/_deprecate.py",
+      "import_count": 2
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL._tkinter_finder",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/_tkinter_finder.py",
+      "import_count": 3
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL._typing",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/_typing.py",
+      "import_count": 8
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL._util",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/_util.py",
+      "import_count": 4
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL._version",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/_version.py",
+      "import_count": 1
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.features",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/features.py",
+      "import_count": 7
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.PIL.report",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/PIL/report.py",
+      "import_count": 2
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.greenlet.__init__",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/__init__.py",
+      "import_count": 1
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.greenlet.platform.__init__",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/platform/__init__.py",
+      "import_count": 0
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.greenlet.tests.__init__",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/tests/__init__.py",
+      "import_count": 12
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.greenlet.tests.fail_clearing_run_switches",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/tests/fail_clearing_run_switches.py",
+      "import_count": 1
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.greenlet.tests.fail_cpp_exception",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/tests/fail_cpp_exception.py",
+      "import_count": 3
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.greenlet.tests.fail_initialstub_already_started",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/tests/fail_initialstub_already_started.py",
+      "import_count": 1
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.greenlet.tests.fail_slp_switch",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/tests/fail_slp_switch.py",
+      "import_count": 1
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.greenlet.tests.fail_switch_three_greenlets",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/tests/fail_switch_three_greenlets.py",
+      "import_count": 1
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.greenlet.tests.fail_switch_three_greenlets2",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/tests/fail_switch_three_greenlets2.py",
+      "import_count": 1
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.greenlet.tests.fail_switch_two_greenlets",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/tests/fail_switch_two_greenlets.py",
+      "import_count": 1
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.greenlet.tests.leakcheck",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/tests/leakcheck.py",
+      "import_count": 6
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.greenlet.tests.test_contextvars",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/tests/test_contextvars.py",
+      "import_count": 7
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.greenlet.tests.test_cpp",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/tests/test_cpp.py",
+      "import_count": 7
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.greenlet.tests.test_extension_interface",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/tests/test_extension_interface.py",
+      "import_count": 4
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.greenlet.tests.test_gc",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/tests/test_gc.py",
+      "import_count": 5
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.greenlet.tests.test_generator",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/tests/test_generator.py",
+      "import_count": 1
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.greenlet.tests.test_generator_nested",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/tests/test_generator_nested.py",
+      "import_count": 2
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.greenlet.tests.test_greenlet",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/tests/test_greenlet.py",
+      "import_count": 10
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.greenlet.tests.test_greenlet_trash",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/tests/test_greenlet_trash.py",
+      "import_count": 5
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.greenlet.tests.test_interpreter_shutdown",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/tests/test_interpreter_shutdown.py",
+      "import_count": 5
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.greenlet.tests.test_leaks",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/tests/test_leaks.py",
+      "import_count": 7
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.greenlet.tests.test_stack_saved",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/tests/test_stack_saved.py",
+      "import_count": 1
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.greenlet.tests.test_throw",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/tests/test_throw.py",
+      "import_count": 2
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.greenlet.tests.test_tracing",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/tests/test_tracing.py",
+      "import_count": 4
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.greenlet.tests.test_version",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/tests/test_version.py",
+      "import_count": 4
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.greenlet.tests.test_weakref",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/greenlet/tests/test_weakref.py",
+      "import_count": 3
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip.__init__",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/__init__.py",
+      "import_count": 2
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip.__main__",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/__main__.py",
+      "import_count": 3
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip.__pip-runner__",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/__pip-runner__.py",
+      "import_count": 4
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.__init__",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/__init__.py",
+      "import_count": 3
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.build_env",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/build_env.py",
+      "import_count": 35
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.cache",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/cache.py",
+      "import_count": 15
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.cli.__init__",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/cli/__init__.py",
+      "import_count": 0
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.cli.autocompletion",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/cli/autocompletion.py",
+      "import_count": 10
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.cli.base_command",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/cli/base_command.py",
+      "import_count": 21
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.cli.cmdoptions",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/cli/cmdoptions.py",
+      "import_count": 24
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.cli.command_context",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/cli/command_context.py",
+      "import_count": 3
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.cli.index_command",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/cli/index_command.py",
+      "import_count": 15
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.cli.main",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/cli/main.py",
+      "import_count": 11
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.cli.main_parser",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/cli/main_parser.py",
+      "import_count": 11
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.cli.parser",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/cli/parser.py",
+      "import_count": 17
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.cli.progress_bars",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/cli/progress_bars.py",
+      "import_count": 9
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.cli.req_command",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/cli/req_command.py",
+      "import_count": 30
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.cli.spinners",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/cli/spinners.py",
+      "import_count": 14
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.cli.status_codes",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/cli/status_codes.py",
+      "import_count": 0
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.commands.__init__",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/commands/__init__.py",
+      "import_count": 6
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.commands.cache",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/commands/cache.py",
+      "import_count": 10
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.commands.check",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/commands/check.py",
+      "import_count": 8
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.commands.completion",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/commands/completion.py",
+      "import_count": 6
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.commands.configuration",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/commands/configuration.py",
+      "import_count": 12
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.commands.debug",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/commands/debug.py",
+      "import_count": 20
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.commands.download",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/commands/download.py",
+      "import_count": 10
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.commands.freeze",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/commands/freeze.py",
+      "import_count": 7
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.commands.hash",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/commands/hash.py",
+      "import_count": 8
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.commands.help",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/commands/help.py",
+      "import_count": 5
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.commands.index",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/commands/index.py",
+      "import_count": 19
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.commands.inspect",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/commands/inspect.py",
+      "import_count": 12
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.commands.install",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/commands/install.py",
+      "import_count": 39
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.commands.list",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/commands/list.py",
+      "import_count": 21
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.commands.lock",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/commands/lock.py",
+      "import_count": 14
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.commands.search",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/commands/search.py",
+      "import_count": 20
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.commands.show",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/commands/show.py",
+      "import_count": 12
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.commands.uninstall",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/commands/uninstall.py",
+      "import_count": 11
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.commands.wheel",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/commands/wheel.py",
+      "import_count": 14
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.configuration",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/configuration.py",
+      "import_count": 12
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.distributions.__init__",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/distributions/__init__.py",
+      "import_count": 4
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.distributions.base",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/distributions/base.py",
+      "import_count": 6
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.distributions.installed",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/distributions/installed.py",
+      "import_count": 5
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.distributions.sdist",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/distributions/sdist.py",
+      "import_count": 9
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.distributions.wheel",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/distributions/wheel.py",
+      "import_count": 6
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.exceptions",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/exceptions.py",
+      "import_count": 26
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.index.__init__",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/index/__init__.py",
+      "import_count": 0
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.index.collector",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/index/collector.py",
+      "import_count": 27
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.index.package_finder",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/index/package_finder.py",
+      "import_count": 34
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.index.sources",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/index/sources.py",
+      "import_count": 12
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.locations.__init__",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/locations/__init__.py",
+      "import_count": 14
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.locations._distutils",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/locations/_distutils.py",
+      "import_count": 12
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.locations._sysconfig",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/locations/_sysconfig.py",
+      "import_count": 10
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.locations.base",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/locations/base.py",
+      "import_count": 9
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.main",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/main.py",
+      "import_count": 2
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.metadata.__init__",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/metadata/__init__.py",
+      "import_count": 11
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.metadata._json",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/metadata/_json.py",
+      "import_count": 4
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.metadata.base",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/metadata/base.py",
+      "import_count": 23
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.metadata.importlib.__init__",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/metadata/importlib/__init__.py",
+      "import_count": 2
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.metadata.importlib._compat",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/metadata/importlib/_compat.py",
+      "import_count": 5
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.metadata.importlib._dists",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/metadata/importlib/_dists.py",
+      "import_count": 18
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.metadata.importlib._envs",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/metadata/importlib/_envs.py",
+      "import_count": 14
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.metadata.pkg_resources",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/metadata/pkg_resources.py",
+      "import_count": 17
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.models.__init__",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/models/__init__.py",
+      "import_count": 0
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.models.candidate",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/models/candidate.py",
+      "import_count": 3
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.models.direct_url",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/models/direct_url.py",
+      "import_count": 4
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.models.format_control",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/models/format_control.py",
+      "import_count": 3
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.models.index",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/models/index.py",
+      "import_count": 1
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.models.installation_report",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/models/installation_report.py",
+      "import_count": 5
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.models.link",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/models/link.py",
+      "import_count": 20
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.models.release_control",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/models/release_control.py",
+      "import_count": 4
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.models.scheme",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/models/scheme.py",
+      "import_count": 1
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.models.search_scope",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/models/search_scope.py",
+      "import_count": 10
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.models.selection_prefs",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/models/selection_prefs.py",
+      "import_count": 4
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.models.target_python",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/models/target_python.py",
+      "import_count": 5
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.models.wheel",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/models/wheel.py",
+      "import_count": 5
+    },
+    {
+      "module": "ContinueBridge.PythonRuntime..venv.libthon3.14.site-packages.pip._internal.network.__init__",
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/network/__init__.py",
+      "import_count": 0
+    }
+  ],
+  "architectural_conclusion": "ContinueBridge evolved into the accidental runtime core and must be reduced into a thin interface layer.",
+  "target_architecture": {
+    "Core": "Runtime/Core",
+    "Interfaces": "Runtime/interfaces",
+    "Models": "Runtime/models",
+    "Providers": "Runtime/Providers",
+    "Memory": "Runtime/memory",
+    "Governance": "Runtime/Governance",
+    "Adapters": "Runtime/adapters"
+  },
+  "migration_constraints": [
+    "Do not delete achieved cognition.",
+    "Do not mutate imports before dependency remapping.",
+    "Do not move high-dependency modules first.",
+    "Always preserve runtime bootability.",
+    "Quarantine legacy topology before removal."
+  ],
+  "next_required_layer": "autonomous_runtime_relinking_engine"
+}

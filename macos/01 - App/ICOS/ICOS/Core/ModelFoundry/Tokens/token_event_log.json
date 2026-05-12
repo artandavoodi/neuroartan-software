@@ -1,0 +1,20 @@
+[
+  {
+    "timestamp": 1778176457.2189472,
+    "provider": "OpenAI",
+    "token_estimate": 14,
+    "semantic_density": "medium",
+    "learning_value": "high"
+  },
+  {
+    "event_id": "65974883-0a80-43fa-a578-f1768d9c7a28",
+    "timestamp": 1778176663.082316,
+    "provider": "OpenAI",
+    "token_estimate": 16,
+    "semantic_density": "low",
+    "learning_value": "low",
+    "emotional_context": "neutral",
+    "input_length": 66,
+    "output_length": 43
+  }
+]

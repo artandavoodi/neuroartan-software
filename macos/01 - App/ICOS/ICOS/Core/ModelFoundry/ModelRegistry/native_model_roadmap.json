@@ -1,0 +1,21 @@
+[
+  {
+    "roadmap_id": "13243247-a8aa-450d-90c8-f4036f3119fd",
+    "timestamp": 1778178984.112073,
+    "model_family": "icos-frontier",
+    "runtime_type": "frontier_sovereign_runtime",
+    "cognition_doctrine": {
+      "identity": "sovereign_cognitive_operating_system",
+      "reasoning_style": "recursive_semantic_reasoning",
+      "alignment_model": "governed_alignment",
+      "emotional_architecture": "emotion_bound_cognition",
+      "continuity_model": "persistent_continuity_memory",
+      "long_horizon_goal": "frontier_sovereign_intelligence"
+    },
+    "evaluation_count": 1,
+    "training_runs": 2,
+    "distillation_phases": 1,
+    "frontier_candidate": true,
+    "governed_identity": true
+  }
+]

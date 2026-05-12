@@ -1,0 +1,20 @@
+[
+  {
+    "dataset_id": "c00ca787-3aeb-4792-9cb0-acd293987258",
+    "timestamp": 1778177578.16624,
+    "semantic_concepts": [
+      "cognition",
+      "architecture",
+      "icos"
+    ],
+    "semantic_density": "medium",
+    "emotion": "anxiety",
+    "emotion_confidence": 0.5,
+    "failure_category": "hallucination",
+    "alignment_training": true,
+    "token_estimate": 16,
+    "learning_value": "low",
+    "relationship_graph_size": 6,
+    "training_ready": true
+  }
+]

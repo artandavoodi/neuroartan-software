@@ -1,0 +1,5 @@
+{
+  "adaptive_rules": [
+    "Evaluate dependencies before execution sequencing."
+  ]
+}

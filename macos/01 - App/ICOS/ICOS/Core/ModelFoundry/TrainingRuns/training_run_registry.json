@@ -1,0 +1,21 @@
+[
+  {
+    "run_id": "305610af-ed9c-4338-92e1-de34d5fec6e8",
+    "timestamp": 1778177929.948708,
+    "model_family": "icos-core",
+    "dataset_count": 1,
+    "parameter_target": "7B-13B",
+    "status": "pending_governance"
+  },
+  {
+    "run_id": "80fd26c6-0790-467f-b6ad-92d1678edbbf",
+    "timestamp": 1778178239.216388,
+    "model_family": "icos-core",
+    "training_type": "semantic_alignment_training",
+    "dataset_count": 1,
+    "governance_required": true,
+    "gpu_required": true,
+    "training_allowed": false,
+    "status": "registered"
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "brain_active": true,
+  "direct_brain_mode": true,
+  "last_mounted_model": "LMStudio",
+  "learning_enabled": true,
+  "memory_enabled": true,
+  "psyche_enabled": true,
+  "axiom_enforcement_enabled": true,
+  "last_route": {
+    "runtime": "ICOS",
+    "timestamp": 1778170329.277876,
+    "interface": "Continue",
+    "task_type": "engineering",
+    "selected_provider": "LMStudio",
+    "activated_engines": [
+      "provider_arbitration",
+      "memory",
+      "execution",
+      "governance"
+    ],
+    "brain_active": true,
+    "direct_brain_mode": false,
+    "continuity_graph_active": true,
+    "learning_events": 1
+  }
+}

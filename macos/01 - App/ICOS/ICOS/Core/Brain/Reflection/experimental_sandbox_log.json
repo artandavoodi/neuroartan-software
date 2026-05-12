@@ -1,0 +1,28 @@
+[
+  {
+    "event": "sandbox_created",
+    "sandbox": {
+      "sandbox_id": "7f9bb47b-0449-4a06-be70-f5b15ee8a291",
+      "runtime": "ICOS_SANDBOX",
+      "timestamp": 1778171471.296663,
+      "mutation_id": "demo-mutation",
+      "description": "Experimental routing mutation simulation.",
+      "isolated": true,
+      "production_access": false,
+      "status": "active"
+    }
+  },
+  {
+    "event": "sandbox_simulation",
+    "simulation": {
+      "runtime": "ICOS_SANDBOX",
+      "timestamp": 1778171471.29686,
+      "sandbox_id": "7f9bb47b-0449-4a06-be70-f5b15ee8a291",
+      "simulation_result": "stable",
+      "recursive_instability": false,
+      "identity_integrity": true,
+      "production_contamination": false,
+      "governance_preserved": true
+    }
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "timestamp": 1778176663.082488,
+    "event_id": "65974883-0a80-43fa-a578-f1768d9c7a28",
+    "provider": "OpenAI",
+    "learning_candidate": true,
+    "semantic_density": "low",
+    "learning_value": "low"
+  },
+  {
+    "timestamp": 1778176850.854075,
+    "memory_id": "ff4f1729-63a9-4e0b-8c0b-238206eb4979",
+    "relationship_count": 6,
+    "emotion": "neutral",
+    "concepts": [
+      "cognition",
+      "architecture",
+      "icos"
+    ],
+    "learning_completed": true
+  },
+  {
+    "timestamp": 1778177071.343366,
+    "lesson_id": "8952338f-e347-4929-af92-0bca2a1f8c16",
+    "category": "hallucination",
+    "dataset_generated": true,
+    "future_alignment": true
+  },
+  {
+    "timestamp": 1778177242.2426271,
+    "signal_id": "2bfe18f1-b493-43da-b677-a3a2a1bb0ce1",
+    "emotion": "anxiety",
+    "confidence": 0.5,
+    "adaptive_learning": true
+  }
+]

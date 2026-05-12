@@ -1,0 +1,6 @@
+venv/
+macos/01 - App/ICOS/build/
+macos/01 - App/ICOS/Runtime/Source/llama.cpp/
+macos/01 - App/ICOS/MigrationArchives/
+*.DS_Store
+*.profraw

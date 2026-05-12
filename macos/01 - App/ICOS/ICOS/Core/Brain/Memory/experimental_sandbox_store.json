@@ -1,0 +1,15 @@
+{
+  "active_sandboxes": [
+    {
+      "sandbox_id": "7f9bb47b-0449-4a06-be70-f5b15ee8a291",
+      "runtime": "ICOS_SANDBOX",
+      "timestamp": 1778171471.296663,
+      "mutation_id": "demo-mutation",
+      "description": "Experimental routing mutation simulation.",
+      "isolated": true,
+      "production_access": false,
+      "status": "active"
+    }
+  ],
+  "completed_sandboxes": []
+}

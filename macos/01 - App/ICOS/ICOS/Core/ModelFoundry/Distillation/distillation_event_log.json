@@ -1,0 +1,10 @@
+[
+  {
+    "timestamp": 1778177929.9488242,
+    "phase_id": "e0da2639-1b70-407e-8363-3f791afcc3c0",
+    "model_family": "icos-core",
+    "distillation_planned": true,
+    "training_registered": true,
+    "roadmap_registered": true
+  }
+]

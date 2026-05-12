@@ -1,0 +1,13 @@
+=== ICOS NESTING / OUTER APP OWNERSHIP ===
+/Users/artan/Neuroartan-software/macos/01 - App/Configuration
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Execution/Runtime
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Models
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Sources
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Frameworks
+/Users/artan/Neuroartan-software/macos/01 - App/ICOS/Runtime/Models
+/Users/artan/Neuroartan-software/macos/01 - App/Resources
+/Users/artan/Neuroartan-software/macos/01 - App/Sources

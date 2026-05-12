@@ -1,0 +1,13 @@
+[
+  {
+    "phase_id": "e0da2639-1b70-407e-8363-3f791afcc3c0",
+    "timestamp": 1778177929.948391,
+    "model_family": "icos-core",
+    "parameter_target": "7B-13B",
+    "purpose": "general cognition",
+    "dataset_count": 1,
+    "training_allowed": false,
+    "human_review_required": true,
+    "status": "planned"
+  }
+]

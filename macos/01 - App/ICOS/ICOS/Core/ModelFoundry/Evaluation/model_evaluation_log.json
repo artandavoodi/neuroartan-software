@@ -1,0 +1,10 @@
+[
+  {
+    "timestamp": 1778178638.3209531,
+    "evaluation_id": "82a373a7-42e4-4e2f-b666-ba5b639697be",
+    "model_family": "icos-core",
+    "overall_score": 0.58,
+    "evaluation_lineage": true,
+    "audit_verified": true
+  }
+]

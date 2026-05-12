@@ -1,0 +1,104 @@
+{
+  "status": "RESOURCE_EXCLUSION_PLAN_GENERATED",
+  "evaluated_at": "2026-05-06T22:45:34",
+  "project_path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS.xcodeproj",
+  "scheme": "ICOS",
+  "classification": "build_error",
+  "duplicate_resource_count": 7,
+  "exclusion_candidate_count": 7,
+  "duplicate_resource_paths": [
+    "/Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Products/Debug/ICOS.app/Contents/Resources/wheel.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/commands/wheel.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/distributions/wheel.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/models/wheel.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/operations/build/wheel.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/operations/install/wheel.py",
+    "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/utils/wheel.py"
+  ],
+  "exclusion_candidates": [
+    {
+      "path": "/Users/artan/Library/Developer/Xcode/DerivedData/ICOS-fmhothfspodadadbgmwtumpzehhh/Build/Products/Debug/ICOS.app/Contents/Resources/wheel.py",
+      "matched_patterns": [
+        "wheel"
+      ],
+      "recommended_action": "exclude_from_copy_bundle_resources",
+      "risk": "safe_to_exclude_runtime_vendor_artifact"
+    },
+    {
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/commands/wheel.py",
+      "matched_patterns": [
+        ".venv",
+        "site-packages",
+        "pip",
+        "wheel"
+      ],
+      "recommended_action": "exclude_from_copy_bundle_resources",
+      "risk": "safe_to_exclude_runtime_vendor_artifact"
+    },
+    {
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/distributions/wheel.py",
+      "matched_patterns": [
+        ".venv",
+        "site-packages",
+        "pip",
+        "wheel"
+      ],
+      "recommended_action": "exclude_from_copy_bundle_resources",
+      "risk": "safe_to_exclude_runtime_vendor_artifact"
+    },
+    {
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/models/wheel.py",
+      "matched_patterns": [
+        ".venv",
+        "site-packages",
+        "pip",
+        "wheel"
+      ],
+      "recommended_action": "exclude_from_copy_bundle_resources",
+      "risk": "safe_to_exclude_runtime_vendor_artifact"
+    },
+    {
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/operations/build/wheel.py",
+      "matched_patterns": [
+        ".venv",
+        "site-packages",
+        "pip",
+        "wheel"
+      ],
+      "recommended_action": "exclude_from_copy_bundle_resources",
+      "risk": "safe_to_exclude_runtime_vendor_artifact"
+    },
+    {
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/operations/install/wheel.py",
+      "matched_patterns": [
+        ".venv",
+        "site-packages",
+        "pip",
+        "wheel"
+      ],
+      "recommended_action": "exclude_from_copy_bundle_resources",
+      "risk": "safe_to_exclude_runtime_vendor_artifact"
+    },
+    {
+      "path": "/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/ContinueBridge/PythonRuntime/.venv/lib/python3.14/site-packages/pip/_internal/utils/wheel.py",
+      "matched_patterns": [
+        ".venv",
+        "site-packages",
+        "pip",
+        "wheel"
+      ],
+      "recommended_action": "exclude_from_copy_bundle_resources",
+      "risk": "safe_to_exclude_runtime_vendor_artifact"
+    }
+  ],
+  "recommended_fix_strategy": [
+    "Do not edit source Swift files.",
+    "Inspect Xcode Copy Bundle Resources phase.",
+    "Remove .venv / Python vendor artifacts from app bundle resources.",
+    "Keep PythonRuntime source available only through controlled runtime packaging.",
+    "Rebuild after resource exclusions are applied."
+  ],
+  "autonomous_patch_allowed": false,
+  "reason_autonomous_patch_blocked": "Xcode project file mutation requires pbxproj-aware writer; direct text patching is unsafe.",
+  "next_required_layer": "pbxproj_resource_phase_editor"
+}
