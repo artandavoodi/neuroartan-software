@@ -94,4 +94,5 @@ extension Notification.Name {
     static let icosSettingsSidebarTitlebarAlignmentDidChange = Notification.Name("ICOS.SettingsSidebarTitlebarAlignmentDidChange")
     static let icosTitlebarNavigateBack = Notification.Name("ICOS.TitlebarNavigateBack")
     static let icosTitlebarNavigateForward = Notification.Name("ICOS.TitlebarNavigateForward")
+    static let icosMaterialAppearanceDidApply = Notification.Name("ICOS.MaterialAppearanceDidApply")
 }

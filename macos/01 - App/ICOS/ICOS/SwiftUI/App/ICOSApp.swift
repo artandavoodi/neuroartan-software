@@ -32,39 +32,51 @@ struct ICOSApp: App {
 
                 } else {
 
-                    ICOSBootGate {
-                        coordinator.rootView()
-                    }
-                        .environmentObject(themeState)
-                        .preferredColorScheme(themeState.colorScheme)
-                        .environment(\.icosThemeDensity, themeState.density)
-                        .environment(\.icosTypographyScale, themeState.typographyScale)
-                        .onChange(of: themeState.mode) { _, _ in
-                            themeState.saveAndApplyRuntimeTheme()
-                        }
-                        .onChange(of: themeState.palette) { _, _ in
-                            themeState.saveAndApplyRuntimeTheme()
-                        }
-                        .onChange(of: themeState.contrast) { _, _ in
-                            themeState.saveAndApplyRuntimeTheme()
-                        }
-                        .onChange(of: themeState.density) { _, _ in
-                            themeState.saveAndApplyRuntimeTheme()
-                        }
-                        .onChange(of: themeState.typographyScale) { _, _ in
-                            themeState.saveAndApplyRuntimeTheme()
-                        }
-                        .onAppear {
-                            themeState.applyRuntimeTheme()
-                        }
-                        .background(
-                            WindowAccessor { window in
-                                windowCoordinator.register(window: window)
-                            }
-                        )
+                    ICOSAppRootView(
+                        coordinator: coordinator,
+                        themeState: themeState,
+                        windowCoordinator: windowCoordinator
+                    )
                 }
             }
             .frame(minWidth: 1120, minHeight: 720)
         }
+    }
+}
+
+// MARK: - Root theme + window chrome
+
+/// Binds SwiftUI refresh to `ThemeState.runtimeSignature` so static `ICOSMaterials` consumers redraw
+/// immediately (same contract as `ThemeProvider`). Tracks system appearance when mode is `.system`.
+private struct ICOSAppRootView: View {
+    @ObservedObject var coordinator: UIRootCoordinator
+    @ObservedObject var themeState: ThemeState
+    @ObservedObject var windowCoordinator: ICOSWindowCoordinator
+    @Environment(\.colorScheme) private var systemColorScheme
+
+    var body: some View {
+        ICOSBootGate {
+            coordinator.rootView()
+        }
+        .environmentObject(themeState)
+        .preferredColorScheme(themeState.colorScheme)
+        .environment(\.icosThemeDensity, themeState.density)
+        .environment(\.icosTypographyScale, themeState.typographyScale)
+        .id(themeState.runtimeSignature)
+        .onAppear {
+            themeState.updateSystemColorScheme(systemColorScheme)
+            themeState.applyRuntimeTheme()
+        }
+        .onChange(of: themeState.runtimeSignature) { _, _ in
+            ICOSWindowChrome.applyMaterialIdentityTransitionChromePolicy()
+        }
+        .onChange(of: systemColorScheme) { _, newValue in
+            themeState.updateSystemColorScheme(newValue)
+        }
+        .background(
+            WindowAccessor { window in
+                windowCoordinator.register(window: window)
+            }
+        )
     }
 }

@@ -31,6 +31,12 @@ struct ICOSBootGate<Content: View>: View {
                 .zIndex(1)
             }
         }
+        .onAppear {
+            ICOSWindowChrome.setShellBootAnimationComplete(isBootComplete)
+        }
+        .onChange(of: isBootComplete) { _, newValue in
+            ICOSWindowChrome.setShellBootAnimationComplete(newValue)
+        }
     }
 }
 

@@ -1,4 +1,5 @@
 import SwiftUI
+import Combine
 
 // MARK: - ICOS Titlebar Navigation Host View
 
@@ -9,12 +10,17 @@ struct ICOSTitlebarNavigationHostView: View {
     @State private var isTitlebarNavigationVisible = false
     @State private var settingsSidebarRightEdgeX: CGFloat = 0
     @State private var titlebarHostLeadingX: CGFloat = 0
+    @State private var materialRenderEpoch: UInt = 0
 
     var body: some View {
         Group {
             if isTitlebarNavigationVisible, let titlebarNavigationTitle {
                 titlebarNavigationCluster(title: titlebarNavigationTitle)
             }
+        }
+        .id(materialRenderEpoch)
+        .onReceive(NotificationCenter.default.publisher(for: .icosMaterialAppearanceDidApply)) { _ in
+            materialRenderEpoch += 1
         }
         .offset(x: settingsSidebarRightEdgeX - titlebarHostLeadingX)
         .background {

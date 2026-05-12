@@ -56,4 +56,11 @@ public final class ThemeEngine: ObservableObject {
     public func toggleTheme() {
         isDarkMode.toggle()
     }
+
+    /// Aligns legacy `ThemeEngine.Colors` consumers with `ICOSMaterials.mode` after `ThemeState` updates.
+    @MainActor
+    public func syncFromICOSMaterials() {
+        isDarkMode = ICOSMaterials.mode != .light
+        objectWillChange.send()
+    }
 }

@@ -1,4 +1,5 @@
 import AppKit
+import Combine
 import SwiftUI
 
 // MARK: - ICOS Window Toolbar
@@ -6,7 +7,7 @@ import SwiftUI
 /// Native AppKit toolbar owner for Finder/Xcode-style titlebar integration.
 /// This owner must not replace, hide, or custom-draw native Apple window controls.
 enum ICOSWindowToolbar {
-    private static let delegate = ICOSWindowToolbarDelegate()
+    fileprivate static let delegate = ICOSWindowToolbarDelegate()
 
     static func build() -> NSToolbar {
         let toolbar = NSToolbar(identifier: NSToolbar.Identifier("ICOSWindowToolbar"))
@@ -20,6 +21,12 @@ enum ICOSWindowToolbar {
 
         return toolbar
     }
+
+    /// Applies visibility to the search + navigation hosting views once the delegate has created them.
+    @MainActor
+    static func setSupplementaryToolbarItemViewsHidden(_ hidden: Bool) {
+        delegate.setSupplementaryToolbarItemViewsHidden(hidden)
+    }
 }
 
 // MARK: - Toolbar Item Identifiers
@@ -31,8 +38,17 @@ private extension NSToolbarItem.Identifier {
 
 // MARK: - ICOS Window Toolbar Delegate
 
+@MainActor
 private final class ICOSWindowToolbarDelegate: NSObject, NSToolbarDelegate {
 
+    private weak var navigationItemView: NSView?
+    private weak var searchItemView: NSView?
+
+    @MainActor
+    fileprivate func setSupplementaryToolbarItemViewsHidden(_ hidden: Bool) {
+        navigationItemView?.isHidden = hidden
+        searchItemView?.isHidden = hidden
+    }
 
     func toolbarDefaultItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Identifier] {
         [
@@ -87,6 +103,8 @@ private final class ICOSWindowToolbarDelegate: NSObject, NSToolbarDelegate {
         hostingView.layer?.isOpaque = false
 
         item.view = hostingView
+        navigationItemView = hostingView
+        ICOSWindowChrome.supplementaryChromeViewsDidInstall()
         return item
     }
 
@@ -95,22 +113,10 @@ private final class ICOSWindowToolbarDelegate: NSObject, NSToolbarDelegate {
         item.label = "Search"
         item.paletteLabel = "Search"
         item.toolTip = "Search"
-        item.target = self
-        item.action = #selector(toggleSearch)
         item.isBordered = false
 
         let button = NSHostingView(
-            rootView: SVGImageView(icon: .search)
-                .frame(
-                    width: ICOSWindowTokens.titlebarButtonIconSize,
-                    height: ICOSWindowTokens.titlebarButtonIconSize
-                )
-                .contentShape(Rectangle())
-                .onTapGesture { [weak self] in
-                    self?.toggleSearch()
-                }
-                .foregroundStyle(.primary)
-                .help("Search")
+            rootView: ICOSTitlebarToolbarSearchControl()
         )
         button.frame.size = NSSize(
             width: ICOSWindowTokens.titlebarButtonSize,
@@ -121,13 +127,34 @@ private final class ICOSWindowToolbarDelegate: NSObject, NSToolbarDelegate {
         button.layer?.isOpaque = false
 
         item.view = button
+        searchItemView = button
+        ICOSWindowChrome.supplementaryChromeViewsDidInstall()
         return item
     }
+}
 
-    @objc private func toggleSearch() {
-        NotificationCenter.default.post(
-            name: .icosToggleSearch,
-            object: nil
-        )
+// MARK: - Titlebar search (toolbar)
+
+/// Hosted outside the main SwiftUI tree; re-renders on `icosMaterialAppearanceDidApply` so template
+/// icons pick up updated `ICOSMaterials` / `ICOSColors` immediately.
+private struct ICOSTitlebarToolbarSearchControl: View {
+    @State private var materialRenderEpoch: UInt = 0
+
+    var body: some View {
+        SVGImageView(icon: .search)
+            .frame(
+                width: ICOSWindowTokens.titlebarButtonIconSize,
+                height: ICOSWindowTokens.titlebarButtonIconSize
+            )
+            .contentShape(Rectangle())
+            .onTapGesture {
+                NotificationCenter.default.post(name: .icosToggleSearch, object: nil)
+            }
+            .foregroundStyle(ICOSColors.textPrimary)
+            .help("Search")
+            .id(materialRenderEpoch)
+            .onReceive(NotificationCenter.default.publisher(for: .icosMaterialAppearanceDidApply)) { _ in
+                materialRenderEpoch += 1
+            }
     }
 }

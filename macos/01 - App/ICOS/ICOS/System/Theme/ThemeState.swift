@@ -1,3 +1,4 @@
+import Foundation
 import SwiftUI
 import Combine
 
@@ -74,10 +75,8 @@ final class ThemeState: ObservableObject {
 
     var colorScheme: ColorScheme? {
         switch mode {
-        case .default:
-            return .dark
-        case .system:
-            return nil
+        case .default, .system:
+            return systemColorScheme
         case .light:
             return .light
         case .dark:
@@ -89,7 +88,7 @@ final class ThemeState: ObservableObject {
 
     var runtimeSignature: String {
         [
-            mode.runtimeID,
+            resolvedRuntimeMode.runtimeID,
             (mode == .default ? ICOSThemePalette.company.rawValue : palette.rawValue),
             customHexColor,
             backgroundHexColor,
@@ -103,13 +102,21 @@ final class ThemeState: ObservableObject {
     }
 
     private var resolvedRuntimeMode: ThemeMode {
-        guard mode == .system else { return mode }
-        return systemColorScheme == .light ? .light : .dark
+        switch mode {
+        case .default, .system:
+            return systemColorScheme == .light ? .light : .dark
+        case .light:
+            return .light
+        case .dark:
+            return .dark
+        case .custom:
+            return systemColorScheme == .light ? .light : .dark
+        }
     }
 
     func updateSystemColorScheme(_ colorScheme: ColorScheme) {
         systemColorScheme = colorScheme
-        guard mode == .system else { return }
+        guard mode == .system || mode == .default else { return }
         applyRuntimeTheme()
         objectWillChange.send()
     }
@@ -124,12 +131,19 @@ final class ThemeState: ObservableObject {
     func applyRuntimeTheme() {
         ICOSMaterials.mode = resolvedRuntimeMode
         ICOSMaterials.palette = mode == .default ? .company : palette
-        ICOSMaterials.customSeed = customThemeSeed
+        ICOSMaterials.customSeed = mode == .custom ? customThemeSeed : .coral
         ICOSMaterials.backgroundSeed = mode == .custom ? backgroundThemeSeed : nil
         ICOSMaterials.surfaceSeed = mode == .custom ? surfaceThemeSeed : nil
         ICOSMaterials.contrast = contrast
         ICOSMaterials.surfaceLayerMode = surfaceLayerMode
         ICOSMaterials.strokeContrastMode = strokeContrastMode
+        ThemeEngine.shared.syncFromICOSMaterials()
+        if !isRestoringTheme {
+            NotificationCenter.default.post(
+                name: .icosMaterialAppearanceDidApply,
+                object: runtimeSignature
+            )
+        }
     }
 
     func saveAndApplyRuntimeTheme() {

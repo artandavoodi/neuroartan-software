@@ -1,0 +1,38 @@
+---
+description: No hacks, workarounds, or overlay fixes — root ownership and continuity
+alwaysApply: true
+---
+
+# No hacks or workarounds
+
+## Requirement
+
+- Do **not** ship temporary hacks, brittle shortcuts, or “just make it work” overlays that hide the real problem.
+- Fix at the **canonical owner** of the behavior: the layer that actually defines the contract, API, or state machine.
+- Preserve **governance and continuity** (doctrine, runtime lineage, numbering ownership) instead of bolting parallel paths.
+
+## Prefer
+
+- Identify why the bug or gap exists; change the smallest correct surface at the right layer.
+- One clear code path rather than special cases that only paper over symptoms.
+- If scope is unclear, **narrow the change** and document the ownership decision in the PR/commit message — do not add a second unofficial system.
+
+## Avoid
+
+```swift
+// ❌ BAD — behavior-only shim that duplicates real policy
+if isLegacyPath { return hardcodedFallback }
+
+// ✅ GOOD — fix routing/settings/contract so the real path is correct
+```
+
+```typescript
+// ❌ BAD — swallow errors to silence CI
+catch { return null }
+
+// ✅ GOOD — handle, log, or rethrow with a typed error at the boundary that owns I/O
+```
+
+## When blocked
+
+If a proper fix needs design or cross-layer agreement, **stop and say so** with a short options list — do not land a workaround “for now” unless the user explicitly asks for an explicitly scoped, reversible interim with a tracked follow-up.

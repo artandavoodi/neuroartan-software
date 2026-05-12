@@ -1,4 +1,5 @@
 import AppKit
+import Combine
 import SwiftUI
 
 // MARK: - ICOS Titlebar Toggle Accessory
@@ -11,6 +12,7 @@ struct ICOSTitlebarToggleAccessory: View {
     @State private var isSidebarVisible = true
     @State private var isSecondarySidebarVisible = false
     @State private var isBottomPanelVisible = false
+    @State private var materialRenderEpoch: UInt = 0
 
     var body: some View {
         HStack(spacing: ICOSWindowTokens.titlebarAccessorySpacing) {
@@ -32,8 +34,12 @@ struct ICOSTitlebarToggleAccessory: View {
                 action: onToggleSecondarySidebar
             )
         }
+        .id(materialRenderEpoch)
         .padding(.trailing, ICOSWindowTokens.titlebarAccessoryTrailingPadding)
         .background(ICOSMaterials.hoverSurface.opacity(ICOSWindowTokens.titlebarAccessoryBackgroundOpacity))
+        .onReceive(NotificationCenter.default.publisher(for: .icosMaterialAppearanceDidApply)) { _ in
+            materialRenderEpoch += 1
+        }
         .onReceive(NotificationCenter.default.publisher(for: .icosSidebarVisibilityDidChange)) { notification in
             guard let isVisible = notification.object as? Bool else {
                 return
@@ -90,9 +96,17 @@ struct ICOSTitlebarNavigationState {
 // MARK: - ICOS Titlebar Accessory Host
 
 enum ICOSTitlebarAccessoryHost {
+
+    private static weak var toggleAccessoryHostingView: NSView?
+
     static func install(window: NSWindow) {
         removeExistingAccessories(from: window)
         installToggleAccessory(in: window)
+    }
+
+    @MainActor
+    static func setToggleAccessoryHostingViewHidden(_ hidden: Bool) {
+        toggleAccessoryHostingView?.isHidden = hidden
     }
 
     // MARK: - Toggle Accessory
@@ -133,7 +147,9 @@ enum ICOSTitlebarAccessoryHost {
         )
 
         accessory.view = hostingView
+        toggleAccessoryHostingView = hostingView
         window.addTitlebarAccessoryViewController(accessory)
+        ICOSWindowChrome.supplementaryChromeViewsDidInstall()
     }
 
     // MARK: - Cleanup
@@ -144,6 +160,9 @@ enum ICOSTitlebarAccessoryHost {
             let identifier = accessory.identifier?.rawValue ?? ""
 
             if identifier == "ICOSTitlebarUnifiedAccessory" || identifier == "ICOSTitlebarNavigationAccessory" || identifier == "ICOSTitlebarToggleAccessory" || identifier == "ICOSTitlebarAccessory" {
+                if identifier == "ICOSTitlebarToggleAccessory" {
+                    toggleAccessoryHostingView = nil
+                }
                 window.removeTitlebarAccessoryViewController(at: index)
             }
         }

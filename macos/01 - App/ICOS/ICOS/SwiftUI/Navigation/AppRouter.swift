@@ -276,7 +276,6 @@ public final class AppRouter: ObservableObject {
 struct RouterView: View {
     @ObservedObject private var router: AppRouter
     @ObservedObject private var appState: ICOSAppState
-    @EnvironmentObject var themeEngine: ThemeEngine
     @EnvironmentObject var behaviorEngine: BehaviorEngine
 
     init(router: AppRouter, appState: ICOSAppState) {
@@ -289,7 +288,7 @@ struct RouterView: View {
             NavigationShell(router: router, appState: appState)
             behaviorEngine.overlayView
         }
-        .background(ThemeEngine.Colors.background)
+        .background(ICOSColors.background)
         .onReceive(NotificationCenter.default.publisher(for: .icosTitlebarNavigateBack)) { _ in
             router.goBack()
         }
@@ -297,17 +296,6 @@ struct RouterView: View {
             router.goForward()
         }
         .onReceive(NotificationCenter.default.publisher(for: .icosTitlebarNavigationRefreshRequested)) { _ in
-            NotificationCenter.default.post(
-                name: .icosTitlebarNavigationStateDidChange,
-                object: ICOSTitlebarNavigationState(
-                    title: router.currentDisplayTitle,
-                    canNavigateBack: router.canNavigateBack,
-                    canNavigateForward: router.canNavigateForward,
-                    isVisible: router.isTitlebarNavigationVisible
-                )
-            )
-        }
-        .onAppear {
             NotificationCenter.default.post(
                 name: .icosTitlebarNavigationStateDidChange,
                 object: ICOSTitlebarNavigationState(
