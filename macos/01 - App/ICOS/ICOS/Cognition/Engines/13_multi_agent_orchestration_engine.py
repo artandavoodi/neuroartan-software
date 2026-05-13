@@ -26,7 +26,6 @@ from datetime import datetime
 from enum import Enum
 from typing import Any, Dict, List, Optional
 
-
 class AgentRole(str, Enum):
     COGNITION = "cognition"
     MEMORY = "memory"
@@ -36,14 +35,12 @@ class AgentRole(str, Enum):
     REPAIR = "repair"
     ANALYSIS = "analysis"
 
-
 class AgentStatus(str, Enum):
     IDLE = "idle"
     ACTIVE = "active"
     BLOCKED = "blocked"
     SYNCHRONIZING = "synchronizing"
     FAILED = "failed"
-
 
 @dataclass
 class RuntimeAgent:
@@ -54,7 +51,6 @@ class RuntimeAgent:
     capabilities: List[str] = field(default_factory=list)
     metadata: Dict[str, Any] = field(default_factory=dict)
 
-
 @dataclass
 class AgentTask:
     task_id: str
@@ -63,7 +59,6 @@ class AgentTask:
     dependencies: List[str] = field(default_factory=list)
     created_at: datetime = field(default_factory=datetime.utcnow)
     metadata: Dict[str, Any] = field(default_factory=dict)
-
 
 class MultiAgentOrchestrationEngine:
     """
@@ -191,7 +186,6 @@ class MultiAgentOrchestrationEngine:
                 for task in self.tasks.values()
             ],
         }
-
 
 if __name__ == "__main__":
     engine = MultiAgentOrchestrationEngine()

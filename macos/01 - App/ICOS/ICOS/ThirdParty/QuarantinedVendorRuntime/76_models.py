@@ -82,7 +82,6 @@ DEFAULT_REDIRECT_LIMIT = 30
 CONTENT_CHUNK_SIZE = 10 * 1024
 ITER_CHUNK_SIZE = 512
 
-
 class RequestEncodingMixin:
     @property
     def path_url(self):
@@ -204,7 +203,6 @@ class RequestEncodingMixin:
 
         return body, content_type
 
-
 class RequestHooksMixin:
     def register_hook(self, event, hook):
         """Properly register a hook."""
@@ -227,7 +225,6 @@ class RequestHooksMixin:
             return True
         except ValueError:
             return False
-
 
 class Request(RequestHooksMixin):
     """A user-created :class:`Request <Request>` object.
@@ -310,7 +307,6 @@ class Request(RequestHooksMixin):
             hooks=self.hooks,
         )
         return p
-
 
 class PreparedRequest(RequestEncodingMixin, RequestHooksMixin):
     """The fully mutable :class:`PreparedRequest <PreparedRequest>` object,
@@ -637,7 +633,6 @@ class PreparedRequest(RequestEncodingMixin, RequestHooksMixin):
         hooks = hooks or []
         for event in hooks:
             self.register_hook(event, hooks[event])
-
 
 class Response:
     """The :class:`Response <Response>` object, which contains a

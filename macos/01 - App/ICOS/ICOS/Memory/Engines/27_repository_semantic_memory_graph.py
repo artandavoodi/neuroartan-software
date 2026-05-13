@@ -35,10 +35,8 @@ TEXT_SUFFIXES = {
     ".json"
 }
 
-
 def ignored(path: Path):
     return any(part in IGNORE for part in path.parts)
-
 
 def classify(path: Path):
     s = str(path).lower()
@@ -60,13 +58,11 @@ def classify(path: Path):
 
     return "general"
 
-
 def safe_read(path: Path):
     try:
         return path.read_text(errors="ignore")
     except Exception:
         return ""
-
 
 def resolve_relative(base: Path, ref: str):
     if ref.startswith(("http://", "https://", "#")):
@@ -85,7 +81,6 @@ def resolve_relative(base: Path, ref: str):
 
     return None
 
-
 def extract_imports(path: Path, content: str):
     imports = []
 
@@ -97,7 +92,6 @@ def extract_imports(path: Path, content: str):
                 imports.append(resolved)
 
     return sorted(set(imports))
-
 
 def build_graph():
     nodes = []
@@ -154,7 +148,6 @@ def build_graph():
     print("Graph:", GRAPH_FILE)
 
     return GRAPH_FILE
-
 
 if __name__ == "__main__":
     print(build_graph())

@@ -52,7 +52,6 @@ _PyCode_GetTLBCArray(PyCodeObject *co)
 #define Py_TAG_DEFERRED (1)
 #endif
 
-
 static const _PyStackRef PyStackRef_NULL = { .bits = Py_TAG_DEFERRED};
 #define PyStackRef_IsNull(stackref) ((stackref).bits == PyStackRef_NULL.bits)
 
@@ -69,7 +68,6 @@ static inline PyCodeObject *_PyFrame_GetCode(_PyInterpreterFrame *f) {
     assert(PyCode_Check(executable));
     return (PyCodeObject *)executable;
 }
-
 
 static inline _Py_CODEUNIT *
 _PyFrame_GetBytecode(_PyInterpreterFrame *f)

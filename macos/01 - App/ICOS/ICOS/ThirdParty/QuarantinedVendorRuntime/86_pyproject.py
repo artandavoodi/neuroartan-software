@@ -14,19 +14,15 @@ from pip._internal.exceptions import (
 from pip._internal.utils.compat import tomllib
 from pip._internal.utils.packaging import get_requirement
 
-
 def _is_list_of_str(obj: Any) -> bool:
     return isinstance(obj, list) and all(isinstance(item, str) for item in obj)
-
 
 def make_pyproject_path(unpacked_source_directory: str) -> str:
     return os.path.join(unpacked_source_directory, "pyproject.toml")
 
-
 BuildSystemDetails = namedtuple(
     "BuildSystemDetails", ["requires", "backend", "check", "backend_path"]
 )
-
 
 def load_pyproject_toml(
     pyproject_toml: str, setup_py: str, req_name: str

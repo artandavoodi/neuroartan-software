@@ -96,7 +96,6 @@ def load_governance():
         "module": module,
     }
 
-
 RUNTIME_ENGINES = ROOT / "Runtime" / "Engines"
 
 ROUTER_CANDIDATES = sorted(
@@ -114,8 +113,6 @@ if not ROUTER_CANDIDATES:
     )
 
 ROUTER_PATH = ROUTER_CANDIDATES[0]
-
-
 
 def load_router():
     spec = importlib.util.spec_from_file_location(
@@ -159,10 +156,8 @@ def load_router():
         "execute_command": execute_command_fn,
     }
 
-
 ROUTER = load_router()
 GOVERNANCE = load_governance()
-
 
 class MCPToolRouter:
     def __init__(self):
@@ -318,9 +313,7 @@ class MCPToolRouter:
             "governance": governance_state,
         }
 
-
 MCP_ROUTER = MCPToolRouter()
-
 
 if __name__ == "__main__":
     print(json.dumps(

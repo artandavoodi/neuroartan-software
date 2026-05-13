@@ -91,7 +91,6 @@ PythonState::PythonState()
 #endif
 }
 
-
 inline void PythonState::may_switch_away() noexcept
 {
 #if GREENLET_PY311
@@ -299,7 +298,6 @@ void PythonState::operator>>(PyThreadState *const tstate) noexcept
         Py_CLEAR(this->delete_later);
     }
 
-
   #elif GREENLET_PY312
     tstate->trash.delete_nesting = this->trash_delete_nesting;
   #else // not 3.12
@@ -483,7 +481,6 @@ void PythonState::did_finish(PyThreadState* tstate) noexcept
     this->datastack_top = nullptr;
 #endif
 }
-
 
 }; // namespace greenlet
 

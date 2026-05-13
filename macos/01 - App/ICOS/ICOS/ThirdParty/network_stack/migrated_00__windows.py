@@ -1,7 +1,6 @@
 import sys
 from dataclasses import dataclass
 
-
 @dataclass
 class WindowsConsoleFeatures:
     """Windows features available."""
@@ -10,7 +9,6 @@ class WindowsConsoleFeatures:
     """The console supports VT codes."""
     truecolor: bool = False
     """The console supports truecolor."""
-
 
 try:
     import ctypes
@@ -59,7 +57,6 @@ else:
             )
         features = WindowsConsoleFeatures(vt=vt, truecolor=truecolor)
         return features
-
 
 if __name__ == "__main__":
     import platform

@@ -24,7 +24,6 @@ logger = logging.getLogger(__name__)
 
 IndexCandidateInfo = tuple[_BaseVersion, Callable[[], Optional[Candidate]]]
 
-
 def _iter_built(infos: Iterator[IndexCandidateInfo]) -> Iterator[Candidate]:
     """Iterator for ``FoundCandidates``.
 
@@ -55,7 +54,6 @@ def _iter_built(infos: Iterator[IndexCandidateInfo]) -> Iterator[Candidate]:
             yield candidate
             versions_found.add(version)
 
-
 def _iter_built_with_prepended(
     installed: Candidate, infos: Iterator[IndexCandidateInfo]
 ) -> Iterator[Candidate]:
@@ -76,7 +74,6 @@ def _iter_built_with_prepended(
             continue
         yield candidate
         versions_found.add(version)
-
 
 def _iter_built_with_inserted(
     installed: Candidate, infos: Iterator[IndexCandidateInfo]
@@ -108,7 +105,6 @@ def _iter_built_with_inserted(
     # If the installed candidate is older than all other candidates.
     if installed.version not in versions_found:
         yield installed
-
 
 class FoundCandidates(Sequence[Candidate]):
     """A lazy sequence to provide candidates to the resolver.

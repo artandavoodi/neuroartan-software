@@ -29,7 +29,6 @@ from ._binary import si32le as _long
 
 _handler = None
 
-
 def register_handler(handler: ImageFile.StubHandler | None) -> None:
     """
     Install application-specific WMF image handler.
@@ -38,7 +37,6 @@ def register_handler(handler: ImageFile.StubHandler | None) -> None:
     """
     global _handler
     _handler = handler
-
 
 if hasattr(Image.core, "drawwmf"):
     # install default handler (windows only)
@@ -66,14 +64,11 @@ if hasattr(Image.core, "drawwmf"):
 # --------------------------------------------------------------------
 # Read WMF file
 
-
 def _accept(prefix: bytes) -> bool:
     return prefix.startswith((b"\xd7\xcd\xc6\x9a\x00\x00", b"\x01\x00\x00\x00"))
 
-
 ##
 # Image plugin for Windows metafiles.
-
 
 class WmfStubImageFile(ImageFile.StubImageFile):
     format = "WMF"
@@ -164,18 +159,15 @@ class WmfStubImageFile(ImageFile.StubImageFile):
             )
         return super().load()
 
-
 def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     if _handler is None or not hasattr(_handler, "save"):
         msg = "WMF save handler not installed"
         raise OSError(msg)
     _handler.save(im, fp, filename)
 
-
 #
 # --------------------------------------------------------------------
 # Registry stuff
-
 
 Image.register_open(WmfStubImageFile.format, WmfStubImageFile, _accept)
 Image.register_save(WmfStubImageFile.format, _save)

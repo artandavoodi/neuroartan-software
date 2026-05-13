@@ -4,20 +4,20 @@ struct InputPanel: View {
     init(appState: ICOSAppState) {
         self._appState = ObservedObject(wrappedValue: appState)
     }
-    
+
     @ObservedObject var appState: ICOSAppState
     @State private var inputText: String = ""
-    
+
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             Text("Input")
                 .font(.system(size: ICOSInputPanelTokens.titleFontSize, weight: .semibold))
                 .foregroundStyle(ICOSColors.textPrimary)
                 .padding(ICOSInputPanelTokens.titlePadding)
-            
+
             Divider()
                 .background(ICOSMaterials.separator)
-            
+
             TextEditor(text: $inputText)
                 .font(.system(size: ICOSInputPanelTokens.editorFontSize, weight: .regular))
                 .foregroundStyle(ICOSColors.textPrimary)
@@ -25,10 +25,10 @@ struct InputPanel: View {
                 .padding(ICOSInputPanelTokens.editorPadding)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .background(ICOSMaterials.panelBackground)
-            
+
             Divider()
                 .background(ICOSMaterials.separator)
-            
+
             ICOSButton("Execute", icon: .arrowUp, role: .primary) {
                 print("EXECUTE CLICKED")
                 Task {

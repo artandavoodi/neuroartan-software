@@ -36,14 +36,11 @@ del dark, light, x
 
 codes["white"] = codes["bold"]
 
-
 def reset_color():
     return codes["reset"]
 
-
 def colorize(color_key, text):
     return codes[color_key] + text + codes["reset"]
-
 
 def ansiformat(attr, text):
     """

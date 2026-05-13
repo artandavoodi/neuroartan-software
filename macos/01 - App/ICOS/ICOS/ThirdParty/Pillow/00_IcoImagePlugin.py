@@ -53,7 +53,6 @@ from ._binary import o32le as o32
 
 _MAGIC = b"\0\0\1\0"
 
-
 def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     fp.write(_MAGIC)  # (2+2)
     bmp = im.encoderinfo.get("bitmap_format") == "bmp"
@@ -130,10 +129,8 @@ def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
         offset = offset + bytes_len
         fp.seek(current)
 
-
 def _accept(prefix: bytes) -> bool:
     return prefix.startswith(_MAGIC)
-
 
 class IconHeader(NamedTuple):
     width: int
@@ -147,7 +144,6 @@ class IconHeader(NamedTuple):
     dim: tuple[int, int]
     square: int
     color_depth: int
-
 
 class IcoFile:
     def __init__(self, buf: IO[bytes]) -> None:
@@ -310,10 +306,8 @@ class IcoFile:
 
         return im
 
-
 ##
 # Image plugin for Windows Icon files.
-
 
 class IcoImageFile(ImageFile.ImageFile):
     """
@@ -384,10 +378,8 @@ class IcoImageFile(ImageFile.ImageFile):
         # just does all the decode at the end.
         pass
 
-
 #
 # --------------------------------------------------------------------
-
 
 Image.register_open(IcoImageFile.format, IcoImageFile, _accept)
 Image.register_save(IcoImageFile.format, _save)

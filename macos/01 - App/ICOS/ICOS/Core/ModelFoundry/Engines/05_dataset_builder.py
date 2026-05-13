@@ -8,7 +8,6 @@ import json
 import time
 import uuid
 
-
 # ============================================================
 # Sovereign Root
 # ============================================================
@@ -58,7 +57,6 @@ FAILURE_LESSON_STORE = (
 EMOTIONAL_SIGNAL_STORE = (
     EMOTION_ROOT / "emotional_signal_store.json"
 )
-
 
 # ============================================================
 # Dataset Builder
@@ -123,7 +121,6 @@ class DatasetBuilder:
             fallback=[]
         )
 
-
     # ========================================================
     # JSON Loading
     # ========================================================
@@ -147,7 +144,6 @@ class DatasetBuilder:
 
         except Exception:
             return fallback
-
 
     # ========================================================
     # Unified Dataset Entry
@@ -214,7 +210,6 @@ class DatasetBuilder:
 
         return entry
 
-
     # ========================================================
     # Dataset Synthesis
     # ========================================================
@@ -258,7 +253,6 @@ class DatasetBuilder:
             "manifest_entry": manifest_entry,
         }
 
-
     # ========================================================
     # Runtime Status
     # ========================================================
@@ -285,7 +279,6 @@ class DatasetBuilder:
                 self.emotional_signals
             ),
         }
-
 
 # ============================================================
 # Runtime Entry

@@ -41,7 +41,6 @@ var __export = (target, all) => {for (var name in all) target[name] = all[name];
 var __toESM = mod => ({ ...mod, 'default': mod });
 var __toCommonJS = mod => ({ ...mod, __esModule: true });
 
-
 // packages/injected/src/webSocketMock.ts
 var webSocketMock_exports = {};
 __export(webSocketMock_exports, {

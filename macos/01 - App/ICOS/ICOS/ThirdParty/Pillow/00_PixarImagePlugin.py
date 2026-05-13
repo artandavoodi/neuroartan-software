@@ -26,14 +26,11 @@ from ._binary import i16le as i16
 #
 # helpers
 
-
 def _accept(prefix: bytes) -> bool:
     return prefix.startswith(b"\200\350\000\000")
 
-
 ##
 # Image plugin for PIXAR raster images.
-
 
 class PixarImageFile(ImageFile.ImageFile):
     format = "PIXAR"
@@ -62,7 +59,6 @@ class PixarImageFile(ImageFile.ImageFile):
 
         # create tile descriptor (assuming "dumped")
         self.tile = [ImageFile._Tile("raw", (0, 0) + self.size, 1024, self.mode)]
-
 
 #
 # --------------------------------------------------------------------

@@ -27,5 +27,4 @@ namespace greenlet {
     };
 };
 
-
 #endif /* GREENLET_THREAD_SUPPORT_HPP */

@@ -63,16 +63,13 @@ except ImportError:
     def SOCKSProxyManager(*args, **kwargs):
         raise InvalidSchema("Missing dependencies for SOCKS support.")
 
-
 if typing.TYPE_CHECKING:
     from .models import PreparedRequest
-
 
 DEFAULT_POOLBLOCK = False
 DEFAULT_POOLSIZE = 10
 DEFAULT_RETRIES = 0
 DEFAULT_POOL_TIMEOUT = None
-
 
 def _urllib3_request_context(
     request: "PreparedRequest",
@@ -110,7 +107,6 @@ def _urllib3_request_context(
     }
     return host_params, pool_kwargs
 
-
 class BaseAdapter:
     """The Base Transport Adapter"""
 
@@ -139,7 +135,6 @@ class BaseAdapter:
     def close(self):
         """Cleans up adapter specific items."""
         raise NotImplementedError
-
 
 class HTTPAdapter(BaseAdapter):
     """The built-in HTTP Adapter for urllib3.

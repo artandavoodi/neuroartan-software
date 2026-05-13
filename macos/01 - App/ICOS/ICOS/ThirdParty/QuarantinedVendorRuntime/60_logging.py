@@ -14,7 +14,6 @@ from .highlighter import Highlighter, ReprHighlighter
 from .text import Text
 from .traceback import Traceback
 
-
 class RichHandler(Handler):
     """A logging handler that renders output with Rich. The time / level / message and file are displayed in columns.
     The level is color coded, and the message is syntax highlighted.
@@ -237,7 +236,6 @@ class RichHandler(Handler):
             link_path=record.pathname if self.enable_link_path else None,
         )
         return log_renderable
-
 
 if __name__ == "__main__":  # pragma: no cover
     from time import sleep

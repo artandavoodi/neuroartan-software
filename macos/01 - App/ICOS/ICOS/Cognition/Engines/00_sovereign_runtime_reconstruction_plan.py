@@ -47,7 +47,6 @@ PHASES = [
     "verification_and_boot_validation"
 ]
 
-
 class SovereignRuntimeReconstructionPlanner:
     def __init__(self):
         self.executed_at = datetime.now().isoformat(timespec="seconds")
@@ -234,9 +233,7 @@ class SovereignRuntimeReconstructionPlanner:
 
         return report
 
-
 PLANNER = SovereignRuntimeReconstructionPlanner()
-
 
 if __name__ == "__main__":
     result = PLANNER.execute()

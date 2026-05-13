@@ -6,13 +6,13 @@ struct ConsoleView: View {
     init(appState: ICOSAppState) {
         self._appState = ObservedObject(wrappedValue: appState)
     }
-    
+
     @ObservedObject var appState: ICOSAppState
     @ObservedObject private var runtimeSettings = RuntimeSettingsState.shared
     @EnvironmentObject private var services: SystemServices
     @State private var inputText: String = ""
     @State private var webSearchEnabled = false
-    
+
     var body: some View {
         VStack(spacing: 0) {
             HStack(spacing: ICOSSpacing.md) {
@@ -51,7 +51,7 @@ struct ConsoleView: View {
                             MessageBubbleView(message: message)
                                 .id(message.id)
                         }
-                        
+
                         if shouldShowThinkingIndicator() {
                             ThinkingIndicatorView()
                         }
@@ -172,16 +172,16 @@ struct ConsoleView: View {
     }
 
     // MARK: - Send
-    
+
     private func send() {
         let trimmed = inputText.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !trimmed.isEmpty else { return }
         guard !appState.activeSession.isResponding else { return }
-        
+
         appState.activeSession.submit(trimmed)
-        
+
         inputText = ""
-        
+
         let payload = sessionRoutedInput(for: trimmed)
 
         Task {
@@ -214,7 +214,7 @@ struct ConsoleView: View {
             voice.startRecording()
         }
     }
-    
+
     private func shouldShowThinkingIndicator() -> Bool {
         appState.activeSession.isResponding
     }

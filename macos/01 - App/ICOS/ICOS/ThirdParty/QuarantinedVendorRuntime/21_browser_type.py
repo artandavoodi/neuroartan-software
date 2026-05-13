@@ -51,7 +51,6 @@ from playwright._impl._waiter import throw_on_timeout
 if TYPE_CHECKING:
     from playwright._impl._playwright import Playwright
 
-
 class BrowserType(ChannelOwner):
     def __init__(
         self, parent: ChannelOwner, type: str, guid: str, initializer: Dict
@@ -345,7 +344,6 @@ class BrowserType(ChannelOwner):
         params.pop("recordHarUrlFilter", None)
         params.pop("recordHarMode", None)
         params.pop("recordHarContent", None)
-
 
 def normalize_launch_params(params: Dict) -> None:
     if "env" in params:

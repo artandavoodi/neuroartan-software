@@ -65,8 +65,6 @@ FRONTMATTER_TEMPLATE = {
 
 DOCUMENT_ID_PATTERN = re.compile(r'document_id:\s*["\']?([^"\'\n]+)', re.I)
 
-
-
 def existing_document_ids():
     ids = set()
 
@@ -83,8 +81,6 @@ def existing_document_ids():
 
     return ids
 
-
-
 def generate_document_id(category):
     existing = existing_document_ids()
 
@@ -100,8 +96,6 @@ def generate_document_id(category):
 
         number += 1
 
-
-
 def resolve_document_type(title, purpose):
     combined = f"{title} {purpose}".lower()
 
@@ -112,15 +106,11 @@ def resolve_document_type(title, purpose):
 
     return max(scores, key=scores.get)
 
-
-
 def determine_placement(document_type):
     return DOCUMENT_TYPES.get(document_type, {}).get(
         "placement",
         "Operations"
     )
-
-
 
 def create_protocol(title, purpose):
     document_type = resolve_document_type(title, purpose)
@@ -161,7 +151,6 @@ def create_protocol(title, purpose):
             "END OF DOCUMENT"
         ]
     }
-
 
 if __name__ == "__main__":
     import sys

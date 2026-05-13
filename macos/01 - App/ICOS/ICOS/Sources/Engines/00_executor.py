@@ -43,7 +43,6 @@ def inject_execution_policy():
 
     print(policy)
 
-
 def inject_streaming_pipeline():
     print("\n=== STREAM PIPELINE ===")
 
@@ -57,7 +56,6 @@ def inject_streaming_pipeline():
         "MEMORY_UPDATE"
     ])
 
-
 def inject_long_horizon_plan():
     print("\n=== LONG HORIZON PLAN ===")
 
@@ -68,14 +66,12 @@ def inject_long_horizon_plan():
     print(plan["goal"])
     print(plan["status"])
 
-
 def inject_semantic_repository_graph():
     print("\n=== SEMANTIC GRAPH ===")
 
     graph_path = repository_semantic_memory_graph.build_graph()
 
     print(graph_path)
-
 
 def inject_language_intelligence():
     print("\n=== LANGUAGE INTELLIGENCE ===")
@@ -84,7 +80,6 @@ def inject_language_intelligence():
 
     print("Files:", intelligence["file_count"])
     print("Symbols:", intelligence["symbol_count"])
-
 
 def inject_runtime_verification():
     print("\n=== RUNTIME VERIFICATION ===")
@@ -98,14 +93,12 @@ def inject_runtime_verification():
     if playwright:
         print(playwright["status"])
 
-
 def inject_visual_diff():
     print("\n=== VISUAL DIFF ===")
 
     result = autonomous_visual_diff.visual_diff()
 
     print(result["status"])
-
 
 def inject_reasoning_memory(event_type, payload):
     print("\n=== REASONING MEMORY ===")

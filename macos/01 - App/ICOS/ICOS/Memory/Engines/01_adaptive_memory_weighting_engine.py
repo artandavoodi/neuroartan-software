@@ -26,13 +26,11 @@ from datetime import datetime
 from enum import Enum
 from typing import Any, Dict, List, Optional
 
-
 class MemoryPriority(str, Enum):
     LOW = "low"
     NORMAL = "normal"
     HIGH = "high"
     CRITICAL = "critical"
-
 
 @dataclass
 class WeightedMemory:
@@ -48,7 +46,6 @@ class WeightedMemory:
     priority: MemoryPriority = MemoryPriority.NORMAL
     created_at: datetime = field(default_factory=datetime.utcnow)
     metadata: Dict[str, Any] = field(default_factory=dict)
-
 
 class AdaptiveMemoryWeightingEngine:
     """
@@ -181,7 +178,6 @@ class AdaptiveMemoryWeightingEngine:
                 for memory in self.memories.values()
             ],
         }
-
 
 if __name__ == "__main__":
     engine = AdaptiveMemoryWeightingEngine()

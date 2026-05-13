@@ -64,7 +64,6 @@ related:
   - "macos/01 - App/ICOS/ICOS/Doctrine/19 - Active Reference System/03 - Scan Authority Doctrine.md"
   - "macos/01 - App/ICOS/ICOS/Doctrine/17 - Execution Intelligence/04 - Halt on Uncertainty Doctrine.md"
 
-
 tags:
   - "icos"
   - "path"
@@ -202,11 +201,11 @@ This doctrine must be included in every prompt before inference.
 
 ## Document Control & Validation
 
-GSA PROTOCOL STATUS: Approved  
-GSA APPROVAL: true  
-DOCUMENT STATUS: Active — Path Verification Doctrine  
-VISIBILITY: Internal  
-PUBLISH TO WEBSITE: No  
+GSA PROTOCOL STATUS: Approved
+GSA APPROVAL: true
+DOCUMENT STATUS: Active — Path Verification Doctrine
+VISIBILITY: Internal
+PUBLISH TO WEBSITE: No
 VERSION: 1.0
 
 ---

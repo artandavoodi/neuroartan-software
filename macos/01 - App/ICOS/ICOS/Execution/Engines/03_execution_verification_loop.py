@@ -26,13 +26,11 @@ from datetime import datetime
 from enum import Enum
 from typing import Any, Dict, List, Optional
 
-
 class VerificationStatus(str, Enum):
     PENDING = "pending"
     VERIFIED = "verified"
     FAILED = "failed"
     REPAIR_REQUIRED = "repair_required"
-
 
 @dataclass
 class VerificationResult:
@@ -42,7 +40,6 @@ class VerificationResult:
     timestamp: datetime = field(default_factory=datetime.utcnow)
     issues: List[str] = field(default_factory=list)
     metadata: Dict[str, Any] = field(default_factory=dict)
-
 
 class ExecutionVerificationLoop:
     """
@@ -168,7 +165,6 @@ class ExecutionVerificationLoop:
                 for result in self.results.values()
             ],
         }
-
 
 if __name__ == "__main__":
     verifier = ExecutionVerificationLoop()

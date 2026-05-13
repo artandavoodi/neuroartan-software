@@ -29,8 +29,6 @@ SUSPICIOUS_PATTERNS = [
     "PythonRuntime"
 ]
 
-
-
 def load_json(path: Path, fallback):
     if not path.exists():
         return fallback
@@ -40,12 +38,9 @@ def load_json(path: Path, fallback):
     except Exception:
         return fallback
 
-
-
 def save_json(path: Path, data):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, indent=2))
-
 
 class XcodeTargetMembershipInspector:
     def __init__(self):
@@ -171,9 +166,7 @@ class XcodeTargetMembershipInspector:
 
         return report
 
-
 INSPECTOR = XcodeTargetMembershipInspector()
-
 
 if __name__ == "__main__":
     print(json.dumps(

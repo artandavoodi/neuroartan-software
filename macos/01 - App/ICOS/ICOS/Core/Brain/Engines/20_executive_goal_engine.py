@@ -7,7 +7,6 @@ from typing import Any
 import json
 import time
 
-
 # ============================================================
 # Sovereign Root
 # ============================================================
@@ -40,7 +39,6 @@ EXECUTION_LOG = (
 LEARNING_LOG = (
     LEARNING_ROOT / "model_learning_log.json"
 )
-
 
 # ============================================================
 # Executive Goal Engine
@@ -89,7 +87,6 @@ class ExecutiveGoalEngine:
             fallback=[]
         )
 
-
     # ========================================================
     # JSON Loading
     # ========================================================
@@ -107,7 +104,6 @@ class ExecutiveGoalEngine:
             return json.loads(path.read_text())
         except Exception:
             return fallback
-
 
     # ========================================================
     # Goal Registration
@@ -145,7 +141,6 @@ class ExecutiveGoalEngine:
 
         return goal
 
-
     # ========================================================
     # Goal Prioritization
     # ========================================================
@@ -173,7 +168,6 @@ class ExecutiveGoalEngine:
         )
 
         return goals
-
 
     # ========================================================
     # Strategic Reflection
@@ -213,7 +207,6 @@ class ExecutiveGoalEngine:
         )
 
         return reflection
-
 
 # ============================================================
 # Runtime Entry

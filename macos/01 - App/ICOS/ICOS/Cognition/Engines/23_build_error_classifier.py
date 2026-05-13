@@ -55,7 +55,6 @@ FAILURE_PATTERNS = {
     }
 }
 
-
 class BuildErrorClassifier:
     def __init__(self):
         self.classified_at = datetime.now().isoformat(timespec="seconds")
@@ -158,9 +157,7 @@ class BuildErrorClassifier:
 
         return report
 
-
 CLASSIFIER = BuildErrorClassifier()
-
 
 if __name__ == "__main__":
     print(json.dumps(

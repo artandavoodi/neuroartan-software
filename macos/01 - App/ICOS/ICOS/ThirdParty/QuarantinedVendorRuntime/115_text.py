@@ -35,14 +35,12 @@ if TYPE_CHECKING:  # pragma: no cover
 DEFAULT_JUSTIFY: "JustifyMethod" = "default"
 DEFAULT_OVERFLOW: "OverflowMethod" = "fold"
 
-
 _re_whitespace = re.compile(r"\s+$")
 
 TextType = Union[str, "Text"]
 """A plain string or a :class:`Text` instance."""
 
 GetStyleCallable = Callable[[str], Optional[StyleType]]
-
 
 class Span(NamedTuple):
     """A marked up region in some text."""
@@ -113,7 +111,6 @@ class Span(NamedTuple):
             return Span(start, end + cells, style)
         else:
             return self
-
 
 class Text(JupyterMixin):
     """Text with color / style.
@@ -1331,7 +1328,6 @@ class Text(JupyterMixin):
 
         new_text = text.blank_copy("\n").join(new_lines)
         return new_text
-
 
 if __name__ == "__main__":  # pragma: no cover
     from pip._vendor.rich.console import Console

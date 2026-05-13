@@ -66,7 +66,6 @@ related:
   - "macos/01 - App/ICOS/ICOS/Doctrine/17 - Execution Intelligence/04 - Halt on Uncertainty Doctrine.md"
   - "macos/01 - App/ICOS/ICOS/Doctrine/18 - Command System/03 - Command Enforcement Doctrine.md"
 
-
 tags:
   - "icos"
   - "enforcement"
@@ -214,11 +213,11 @@ This doctrine must be included in every prompt before inference.
 
 ## Document Control & Validation
 
-GSA PROTOCOL STATUS: Approved  
-GSA APPROVAL: true  
-DOCUMENT STATUS: Active — No Overlay Doctrine  
-VISIBILITY: Internal  
-PUBLISH TO WEBSITE: No  
+GSA PROTOCOL STATUS: Approved
+GSA APPROVAL: true
+DOCUMENT STATUS: Active — No Overlay Doctrine
+VISIBILITY: Internal
+PUBLISH TO WEBSITE: No
 VERSION: 1.1
 
 ---

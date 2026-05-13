@@ -18,14 +18,12 @@ except ImportError:
 DECODE_CODEC_CHOICE = "auto"
 DEFAULT_MAX_THREADS = 0
 
-
 def get_codec_version(codec_name: str) -> str | None:
     versions = _avif.codec_versions()
     for version in versions.split(", "):
         if version.split(" [")[0] == codec_name:
             return version.split(":")[-1].split(" ")[0]
     return None
-
 
 def _accept(prefix: bytes) -> bool | str:
     if prefix[4:8] != b"ftyp":
@@ -52,7 +50,6 @@ def _accept(prefix: bytes) -> bool | str:
         return True
     return False
 
-
 def _get_default_max_threads() -> int:
     if DEFAULT_MAX_THREADS:
         return DEFAULT_MAX_THREADS
@@ -60,7 +57,6 @@ def _get_default_max_threads() -> int:
         return len(os.sched_getaffinity(0))
     else:
         return os.cpu_count() or 1
-
 
 class AvifImageFile(ImageFile.ImageFile):
     format = "AVIF"
@@ -139,10 +135,8 @@ class AvifImageFile(ImageFile.ImageFile):
     def tell(self) -> int:
         return self.__frame
 
-
 def _save_all(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     _save(im, fp, filename, save_all=True)
-
 
 def _save(
     im: Image.Image, fp: IO[bytes], filename: str | bytes, save_all: bool = False
@@ -283,7 +277,6 @@ def _save(
         raise OSError(msg)
 
     fp.write(data)
-
 
 Image.register_open(AvifImageFile.format, AvifImageFile, _accept)
 if SUPPORTED:

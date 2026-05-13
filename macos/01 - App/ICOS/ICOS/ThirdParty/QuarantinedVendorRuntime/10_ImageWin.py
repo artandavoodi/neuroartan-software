@@ -20,7 +20,6 @@ from __future__ import annotations
 
 from . import Image
 
-
 class HDC:
     """
     Wraps an HDC integer. The resulting object can be passed to the
@@ -34,7 +33,6 @@ class HDC:
     def __int__(self) -> int:
         return self.dc
 
-
 class HWND:
     """
     Wraps an HWND integer. The resulting object can be passed to the
@@ -47,7 +45,6 @@ class HWND:
 
     def __int__(self) -> int:
         return self.wnd
-
 
 class Dib:
     """
@@ -200,7 +197,6 @@ class Dib:
         """
         return self.image.tobytes()
 
-
 class Window:
     """Create a Window with the given title size."""
 
@@ -231,7 +227,6 @@ class Window:
 
     def mainloop(self) -> None:
         Image.core.eventloop()
-
 
 class ImageWindow(Window):
     """Create an image window which displays the given image."""

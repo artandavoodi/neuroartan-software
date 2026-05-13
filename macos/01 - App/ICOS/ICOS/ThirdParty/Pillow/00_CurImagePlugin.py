@@ -24,14 +24,11 @@ from ._binary import i32le as i32
 #
 # --------------------------------------------------------------------
 
-
 def _accept(prefix: bytes) -> bool:
     return prefix.startswith(b"\0\0\2\0")
 
-
 ##
 # Image plugin for Windows Cursor files.
-
 
 class CurImageFile(BmpImagePlugin.BmpImageFile):
     format = "CUR"
@@ -65,7 +62,6 @@ class CurImageFile(BmpImagePlugin.BmpImageFile):
         # patch up the bitmap height
         self._size = self.size[0], self.size[1] // 2
         self.tile = [self.tile[0]._replace(extents=(0, 0) + self.size)]
-
 
 #
 # --------------------------------------------------------------------

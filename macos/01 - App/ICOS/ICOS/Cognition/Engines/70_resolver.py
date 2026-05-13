@@ -34,9 +34,7 @@ if TYPE_CHECKING:
 
     Result = RLResult[Requirement, Candidate, str]
 
-
 logger = logging.getLogger(__name__)
-
 
 class Resolver(BaseResolver):
     _allowed_strategies = {"eager", "only-if-needed", "to-satisfy-only"}
@@ -214,7 +212,6 @@ class Resolver(BaseResolver):
         )
         return [ireq for _, ireq in sorted_items]
 
-
 def get_topological_weights(
     graph: DirectedGraph[str | None], requirement_keys: set[str]
 ) -> dict[str | None, int]:
@@ -316,7 +313,6 @@ def get_topological_weights(
     # Now give back all the weights, choosing the largest ones from what we
     # accumulated.
     return {node: max(wgts) for (node, wgts) in weights.items()}
-
 
 def _req_set_item_sorter(
     item: tuple[str, InstallRequirement],

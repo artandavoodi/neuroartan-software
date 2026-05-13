@@ -13,8 +13,6 @@ DEFAULT_STATE = {
     "dependencies": {}
 }
 
-
-
 def load_ledger():
     if not LEDGER.exists():
         return DEFAULT_STATE.copy()
@@ -24,19 +22,13 @@ def load_ledger():
     except Exception:
         return DEFAULT_STATE.copy()
 
-
-
 def save_ledger(data):
     LEDGER.write_text(json.dumps(data, indent=2))
-
-
 
 def generate_task_id(title):
     digest = hashlib.sha1(title.encode()).hexdigest()[:8]
 
     return f"TASK-{datetime.now().year}-{digest.upper()}"
-
-
 
 def create_task(
     title,
@@ -82,8 +74,6 @@ def create_task(
         "task": task
     }
 
-
-
 def complete_task(task_id):
     ledger = load_ledger()
 
@@ -117,8 +107,6 @@ def complete_task(task_id):
         "completed_task": completed_task
     }
 
-
-
 def register_session(session_name, summary):
     ledger = load_ledger()
 
@@ -137,8 +125,6 @@ def register_session(session_name, summary):
         "session": session
     }
 
-
-
 def continuity_report():
     ledger = load_ledger()
 
@@ -151,7 +137,6 @@ def continuity_report():
         "recent_sessions": ledger["sessions"][-5:],
         "dependency_graph_size": len(ledger["dependencies"])
     }
-
 
 if __name__ == "__main__":
     import sys

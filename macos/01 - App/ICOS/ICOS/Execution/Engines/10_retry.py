@@ -10,7 +10,6 @@ if TYPE_CHECKING:
     T = TypeVar("T")
     P = ParamSpec("P")
 
-
 def retry(
     wait: float, stop_after_delay: float
 ) -> Callable[[Callable[P, T]], Callable[P, T]]:

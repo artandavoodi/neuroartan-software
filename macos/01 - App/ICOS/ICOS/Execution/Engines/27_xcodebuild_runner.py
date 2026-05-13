@@ -21,7 +21,6 @@ DEFAULT_DERIVED_DATA = (
     / "DerivedData"
 )
 
-
 class XcodeBuildRunner:
     def __init__(self):
         self.executed_at = datetime.now().isoformat(timespec="seconds")
@@ -199,9 +198,7 @@ class XcodeBuildRunner:
             json.dumps(existing, indent=2)
         )
 
-
 RUNNER = XcodeBuildRunner()
-
 
 if __name__ == "__main__":
     result = RUNNER.execute(

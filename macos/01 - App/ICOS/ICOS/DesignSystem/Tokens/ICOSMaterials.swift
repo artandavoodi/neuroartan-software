@@ -585,7 +585,6 @@ struct ICOSMaterialTheme {
         )
     }
 
-
     // MARK: - Contrast Helpers
 
     private static func opacity(_ value: Double, _ contrast: ICOSThemeContrast) -> Double {

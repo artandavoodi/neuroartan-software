@@ -12,7 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
 import datetime
 import pathlib
 import typing
@@ -89,7 +88,6 @@ from playwright._impl._selectors import Selectors as SelectorsImpl
 from playwright._impl._tracing import Tracing as TracingImpl
 from playwright._impl._video import Video as VideoImpl
 from playwright._impl._web_error import WebError as WebErrorImpl
-
 
 class Request(AsyncBase):
 
@@ -421,9 +419,7 @@ class Request(AsyncBase):
 
         return mapping.from_maybe_impl(await self._impl_obj.header_value(name=name))
 
-
 mapping.register(RequestImpl, Request)
-
 
 class Response(AsyncBase):
 
@@ -670,9 +666,7 @@ class Response(AsyncBase):
 
         return mapping.from_maybe_impl(await self._impl_obj.json())
 
-
 mapping.register(ResponseImpl, Response)
-
 
 class Route(AsyncBase):
 
@@ -1007,9 +1001,7 @@ class Route(AsyncBase):
             )
         )
 
-
 mapping.register(RouteImpl, Route)
-
 
 class WebSocket(AsyncBase):
 
@@ -1200,9 +1192,7 @@ class WebSocket(AsyncBase):
 
         return mapping.from_maybe_impl(self._impl_obj.is_closed())
 
-
 mapping.register(WebSocketImpl, WebSocket)
-
 
 class WebSocketRoute(AsyncBase):
 
@@ -1327,9 +1317,7 @@ class WebSocketRoute(AsyncBase):
             self._impl_obj.on_close(handler=self._wrap_handler(handler))
         )
 
-
 mapping.register(WebSocketRouteImpl, WebSocketRoute)
-
 
 class Keyboard(AsyncBase):
 
@@ -1491,9 +1479,7 @@ class Keyboard(AsyncBase):
 
         return mapping.from_maybe_impl(await self._impl_obj.press(key=key, delay=delay))
 
-
 mapping.register(KeyboardImpl, Keyboard)
-
 
 class Mouse(AsyncBase):
 
@@ -1644,9 +1630,7 @@ class Mouse(AsyncBase):
             await self._impl_obj.wheel(deltaX=delta_x, deltaY=delta_y)
         )
 
-
 mapping.register(MouseImpl, Mouse)
-
 
 class Touchscreen(AsyncBase):
 
@@ -1667,9 +1651,7 @@ class Touchscreen(AsyncBase):
 
         return mapping.from_maybe_impl(await self._impl_obj.tap(x=x, y=y))
 
-
 mapping.register(TouchscreenImpl, Touchscreen)
-
 
 class JSHandle(AsyncBase):
 
@@ -1823,9 +1805,7 @@ class JSHandle(AsyncBase):
 
         return mapping.from_maybe_impl(await self._impl_obj.json_value())
 
-
 mapping.register(JSHandleImpl, JSHandle)
-
 
 class ElementHandle(JSHandle):
 
@@ -3150,9 +3130,7 @@ class ElementHandle(JSHandle):
             )
         )
 
-
 mapping.register(ElementHandleImpl, ElementHandle)
-
 
 class FileChooser(AsyncBase):
 
@@ -3227,9 +3205,7 @@ class FileChooser(AsyncBase):
             )
         )
 
-
 mapping.register(FileChooserImpl, FileChooser)
-
 
 class Frame(AsyncBase):
 
@@ -5988,9 +5964,7 @@ class Frame(AsyncBase):
             )
         )
 
-
 mapping.register(FrameImpl, Frame)
-
 
 class FrameLocator(AsyncBase):
 
@@ -6597,9 +6571,7 @@ class FrameLocator(AsyncBase):
 
         return mapping.from_impl(self._impl_obj.nth(index=index))
 
-
 mapping.register(FrameLocatorImpl, FrameLocator)
-
 
 class Worker(AsyncBase):
 
@@ -6777,9 +6749,7 @@ class Worker(AsyncBase):
             ).future
         )
 
-
 mapping.register(WorkerImpl, Worker)
-
 
 class Selectors(AsyncBase):
 
@@ -6875,9 +6845,7 @@ class Selectors(AsyncBase):
             self._impl_obj.set_test_id_attribute(attributeName=attribute_name)
         )
 
-
 mapping.register(SelectorsImpl, Selectors)
-
 
 class Clock(AsyncBase):
 
@@ -7050,9 +7018,7 @@ class Clock(AsyncBase):
 
         return mapping.from_maybe_impl(await self._impl_obj.set_system_time(time=time))
 
-
 mapping.register(ClockImpl, Clock)
-
 
 class ConsoleMessage(AsyncBase):
 
@@ -7159,9 +7125,7 @@ class ConsoleMessage(AsyncBase):
         """
         return mapping.from_impl_nullable(self._impl_obj.worker)
 
-
 mapping.register(ConsoleMessageImpl, ConsoleMessage)
-
 
 class Debugger(AsyncBase):
 
@@ -7268,9 +7232,7 @@ class Debugger(AsyncBase):
 
         return mapping.from_maybe_impl(await self._impl_obj.run_to(location=location))
 
-
 mapping.register(DebuggerImpl, Debugger)
-
 
 class Dialog(AsyncBase):
 
@@ -7345,9 +7307,7 @@ class Dialog(AsyncBase):
 
         return mapping.from_maybe_impl(await self._impl_obj.dismiss())
 
-
 mapping.register(DialogImpl, Dialog)
-
 
 class Download(AsyncBase):
 
@@ -7455,9 +7415,7 @@ class Download(AsyncBase):
 
         return mapping.from_maybe_impl(await self._impl_obj.cancel())
 
-
 mapping.register(DownloadImpl, Download)
-
 
 class Screencast(AsyncBase):
 
@@ -7606,9 +7564,7 @@ class Screencast(AsyncBase):
 
         return mapping.from_maybe_impl(await self._impl_obj.hide_overlays())
 
-
 mapping.register(ScreencastImpl, Screencast)
-
 
 class Video(AsyncBase):
 
@@ -7647,9 +7603,7 @@ class Video(AsyncBase):
 
         return mapping.from_maybe_impl(await self._impl_obj.delete())
 
-
 mapping.register(VideoImpl, Video)
-
 
 class Page(AsyncContextManager):
 
@@ -12771,9 +12725,7 @@ class Page(AsyncContextManager):
 
         return mapping.from_maybe_impl(await self._impl_obj.cancel_pick_locator())
 
-
 mapping.register(PageImpl, Page)
-
 
 class WebError(AsyncBase):
 
@@ -12801,9 +12753,7 @@ class WebError(AsyncBase):
         """
         return mapping.from_impl(self._impl_obj.error)
 
-
 mapping.register(WebErrorImpl, WebError)
-
 
 class BrowserContext(AsyncContextManager):
 
@@ -14157,9 +14107,7 @@ class BrowserContext(AsyncContextManager):
 
         return mapping.from_impl(await self._impl_obj.new_cdp_session(page=page))
 
-
 mapping.register(BrowserContextImpl, BrowserContext)
-
 
 class CDPSession(AsyncBase):
 
@@ -14245,9 +14193,7 @@ class CDPSession(AsyncBase):
 
         return mapping.from_maybe_impl(await self._impl_obj.detach())
 
-
 mapping.register(CDPSessionImpl, CDPSession)
-
 
 class Browser(AsyncContextManager):
 
@@ -14564,7 +14510,6 @@ class Browser(AsyncContextManager):
             **NOTE** When using WebKit on macOS, accessing `localhost` will not pick up client certificates. You can make it
             work by replacing `localhost` with `local.playwright`.
 
-
         Returns
         -------
         BrowserContext
@@ -14799,7 +14744,6 @@ class Browser(AsyncContextManager):
             **NOTE** When using WebKit on macOS, accessing `localhost` will not pick up client certificates. You can make it
             work by replacing `localhost` with `local.playwright`.
 
-
         Returns
         -------
         Page
@@ -14990,9 +14934,7 @@ class Browser(AsyncContextManager):
 
         return mapping.from_maybe_impl(await self._impl_obj.stop_tracing())
 
-
 mapping.register(BrowserImpl, Browser)
-
 
 class BrowserType(AsyncBase):
 
@@ -15432,7 +15374,6 @@ class BrowserType(AsyncBase):
             **NOTE** When using WebKit on macOS, accessing `localhost` will not pick up client certificates. You can make it
             work by replacing `localhost` with `local.playwright`.
 
-
         Returns
         -------
         BrowserContext
@@ -15612,9 +15553,7 @@ class BrowserType(AsyncBase):
             )
         )
 
-
 mapping.register(BrowserTypeImpl, BrowserType)
-
 
 class Playwright(AsyncBase):
 
@@ -15738,9 +15677,7 @@ class Playwright(AsyncBase):
 
         return mapping.from_maybe_impl(await self._impl_obj.stop())
 
-
 mapping.register(PlaywrightImpl, Playwright)
-
 
 class Tracing(AsyncBase):
 
@@ -15922,9 +15859,7 @@ class Tracing(AsyncBase):
 
         return mapping.from_maybe_impl(await self._impl_obj.group_end())
 
-
 mapping.register(TracingImpl, Tracing)
-
 
 class Locator(AsyncBase):
 
@@ -18705,9 +18640,7 @@ class Locator(AsyncBase):
 
         return mapping.from_maybe_impl(await self._impl_obj.highlight())
 
-
 mapping.register(LocatorImpl, Locator)
-
 
 class APIResponse(AsyncBase):
 
@@ -18830,9 +18763,7 @@ class APIResponse(AsyncBase):
 
         return mapping.from_maybe_impl(await self._impl_obj.dispose())
 
-
 mapping.register(APIResponseImpl, APIResponse)
-
 
 class APIRequestContext(AsyncBase):
 
@@ -19508,9 +19439,7 @@ class APIRequestContext(AsyncBase):
             await self._impl_obj.storage_state(path=path, indexedDB=indexed_db)
         )
 
-
 mapping.register(APIRequestContextImpl, APIRequestContext)
-
 
 class APIRequest(AsyncBase):
 
@@ -19611,9 +19540,7 @@ class APIRequest(AsyncBase):
             )
         )
 
-
 mapping.register(APIRequestImpl, APIRequest)
-
 
 class PageAssertions(AsyncBase):
 
@@ -19745,9 +19672,7 @@ class PageAssertions(AsyncBase):
             )
         )
 
-
 mapping.register(PageAssertionsImpl, PageAssertions)
-
 
 class LocatorAssertions(AsyncBase):
 
@@ -21608,9 +21533,7 @@ class LocatorAssertions(AsyncBase):
             )
         )
 
-
 mapping.register(LocatorAssertionsImpl, LocatorAssertions)
-
 
 class APIResponseAssertions(AsyncBase):
 
@@ -21640,6 +21563,5 @@ class APIResponseAssertions(AsyncBase):
         __tracebackhide__ = True
 
         return mapping.from_maybe_impl(await self._impl_obj.not_to_be_ok())
-
 
 mapping.register(APIResponseAssertionsImpl, APIResponseAssertions)

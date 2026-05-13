@@ -12,7 +12,6 @@
 
 namespace greenlet {
 
-
 typedef void (*ThreadStateDestructor)(ThreadState* const);
 
 // Only one of these, auto created per thread as a thread_local.
@@ -97,8 +96,6 @@ public:
     }
 
 };
-
-
 
 }; // namespace greenlet
 

@@ -68,7 +68,6 @@ from pip._internal.wheel_builder import build
 
 logger = getLogger(__name__)
 
-
 _IMPORT_AUDIT_HOOK_INSTALLED = False
 _MISSING_MODULES: set[str] = set()
 
@@ -80,13 +79,11 @@ _EAGER_IMPORTS: tuple[str, ...] = (
     "pip._vendor.rich._windows_renderer",
 )
 
-
 # Imports of standard library modules are always safe: they cannot be
 # shadowed by a distribution pip has just installed.
 _STDLIB_MODULE_NAMES: frozenset[str] = frozenset(sys.stdlib_module_names) | frozenset(
     sys.builtin_module_names
 )
-
 
 def _prevent_import_hook(name: str, args: tuple[Any, ...]) -> None:
     if name != "import":
@@ -105,7 +102,6 @@ def _prevent_import_hook(name: str, args: tuple[Any, ...]) -> None:
         stacklevel=3,
     )
 
-
 def _eagerly_import_modules() -> None:
     """Import modules pip uses lazily so the audit hook ignores them later."""
     for module in _EAGER_IMPORTS:
@@ -115,7 +111,6 @@ def _eagerly_import_modules() -> None:
             # Record the module as missing so the hook can raise ImportError
             # instead of trying to import it again.
             _MISSING_MODULES.add(module)
-
 
 def _prevent_further_imports() -> None:
     """Install an audit hook that warns on unexpected imports after pip install starts.
@@ -130,14 +125,12 @@ def _prevent_further_imports() -> None:
     _IMPORT_AUDIT_HOOK_INSTALLED = True
     sys.addaudithook(_prevent_import_hook)
 
-
 def _arg_refers_to_pip(arg: str) -> bool:
     try:
         req = Requirement(arg)
     except InvalidRequirement:
         return False
     return canonicalize_name(req.name) == "pip"
-
 
 class InstallCommand(RequirementCommand):
     """
@@ -717,7 +710,6 @@ class InstallCommand(RequirementCommand):
 
         logger.critical("\n".join(parts))
 
-
 def installed_packages_summary(
     installed: list[InstallationResult], env: BaseEnvironment
 ) -> str:
@@ -741,7 +733,6 @@ def installed_packages_summary(
         return ""
     return f"Successfully installed {' '.join(summary)}"
 
-
 def get_lib_location_guesses(
     user: bool = False,
     home: str | None = None,
@@ -759,13 +750,11 @@ def get_lib_location_guesses(
     )
     return [scheme.purelib, scheme.platlib]
 
-
 def site_packages_writable(root: str | None, isolated: bool) -> bool:
     return all(
         test_writable_dir(d)
         for d in set(get_lib_location_guesses(root=root, isolated=isolated))
     )
-
 
 def decide_user_install(
     use_user_site: bool | None,
@@ -834,7 +823,6 @@ def decide_user_install(
         "is not writeable"
     )
     return True
-
 
 def create_os_error_message(
     error: OSError, show_traceback: bool, using_user_site: bool

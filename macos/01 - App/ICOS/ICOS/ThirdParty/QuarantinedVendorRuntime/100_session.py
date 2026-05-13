@@ -53,15 +53,12 @@ if TYPE_CHECKING:
     from pip._vendor.urllib3 import ProxyManager
     from pip._vendor.urllib3.poolmanager import PoolManager
 
-
 logger = logging.getLogger(__name__)
 
 SecureOrigin = tuple[str, str, Optional[Union[int, str]]]
 
-
 # Ignore warning raised when using --trusted-host.
 warnings.filterwarnings("ignore", category=InsecureRequestWarning)
-
 
 SECURE_ORIGINS: list[SecureOrigin] = [
     # protocol, hostname, port
@@ -74,7 +71,6 @@ SECURE_ORIGINS: list[SecureOrigin] = [
     # ssh is always secure.
     ("ssh", "*", "*"),
 ]
-
 
 # These are environment variables present when running under various
 # CI systems.  For each variable, some CI systems that use the variable
@@ -94,7 +90,6 @@ CI_ENVIRONMENT_VARIABLES = (
     "PIP_IS_CI",
 )
 
-
 def looks_like_ci() -> bool:
     """
     Return whether it looks like pip is running under CI.
@@ -103,7 +98,6 @@ def looks_like_ci() -> bool:
     # because some CI systems mimic a tty (e.g. Travis CI).  Thus that
     # method doesn't provide definitive information in either direction.
     return any(name in os.environ for name in CI_ENVIRONMENT_VARIABLES)
-
 
 @functools.lru_cache(maxsize=1)
 def user_agent() -> str:
@@ -206,7 +200,6 @@ def user_agent() -> str:
         json=json.dumps(data, separators=(",", ":"), sort_keys=True),
     )
 
-
 class LocalFSAdapter(BaseAdapter):
     def send(
         self,
@@ -251,7 +244,6 @@ class LocalFSAdapter(BaseAdapter):
     def close(self) -> None:
         pass
 
-
 class _SSLContextAdapterMixin:
     """Mixin to add the ``ssl_context`` constructor argument to HTTP adapters.
 
@@ -292,14 +284,11 @@ class _SSLContextAdapterMixin:
             proxy_kwargs.setdefault("ssl_context", self._ssl_context)
         return super().proxy_manager_for(proxy, **proxy_kwargs)  # type: ignore[misc, no-any-return]
 
-
 class HTTPAdapter(_SSLContextAdapterMixin, _BaseHTTPAdapter):
     pass
 
-
 class CacheControlAdapter(_SSLContextAdapterMixin, _BaseCacheControlAdapter):
     pass
-
 
 class InsecureHTTPAdapter(HTTPAdapter):
     def cert_verify(
@@ -311,7 +300,6 @@ class InsecureHTTPAdapter(HTTPAdapter):
     ) -> None:
         super().cert_verify(conn=conn, url=url, verify=False, cert=cert)
 
-
 class InsecureCacheControlAdapter(CacheControlAdapter):
     def cert_verify(
         self,
@@ -321,7 +309,6 @@ class InsecureCacheControlAdapter(CacheControlAdapter):
         cert: str | tuple[str, str] | None,
     ) -> None:
         super().cert_verify(conn=conn, url=url, verify=False, cert=cert)
-
 
 class PipSession(requests.Session):
     timeout: int | None = None

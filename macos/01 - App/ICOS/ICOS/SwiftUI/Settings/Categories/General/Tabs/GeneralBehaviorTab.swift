@@ -1,9 +1,11 @@
 import SwiftUI
 
-// MARK: - General Behavior Tab
+// MARK: - Behavior Tab
 
 struct GeneralBehaviorTab: View {
+    @ObservedObject private var runtimeSettings = RuntimeSettingsState.shared
+
     var body: some View {
-        EmptyView()
+        RuntimeModeSection(runtimeSettings: runtimeSettings)
     }
 }

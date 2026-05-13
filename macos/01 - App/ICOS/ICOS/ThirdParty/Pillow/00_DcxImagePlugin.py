@@ -29,14 +29,11 @@ from .PcxImagePlugin import PcxImageFile
 
 MAGIC = 0x3ADE68B1  # QUIZ: what's this value, then?
 
-
 def _accept(prefix: bytes) -> bool:
     return len(prefix) >= 4 and i32(prefix) == MAGIC
 
-
 ##
 # Image plugin for the Intel DCX format.
-
 
 class DcxImageFile(PcxImageFile):
     format = "DCX"
@@ -77,7 +74,6 @@ class DcxImageFile(PcxImageFile):
 
     def tell(self) -> int:
         return self.frame
-
 
 Image.register_open(DcxImageFile.format, DcxImageFile, _accept)
 

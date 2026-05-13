@@ -90,6 +90,14 @@ struct SecondarySidebarPanel: View {
                 metric("Execution", shellState.workExecutionMode)
             }
 
+        case .voice, .permissions, .privacy, .accessibility, .dashboard, .storageBackup, .security:
+            secondarySidebarCard(router.currentRoute.title, icon: router.currentRoute.icon) {
+                metric("Route", router.currentRoute.title)
+                metric("Category", router.currentRoute.title)
+                metric("Execution", shellState.workExecutionMode)
+                metric("Status", "Active")
+            }
+
         case .chat:
             secondarySidebarCard("Intelligence", icon: .response) {
                 metric("Route", router.currentRoute.title)
@@ -223,7 +231,7 @@ struct SecondarySidebarPanel: View {
             .foregroundStyle(ICOSSidebarColors.textSecondary)
             .frame(maxWidth: .infinity, alignment: .leading)
     }
-    
+
     // MARK: - Scaling
 
     private func scaled(_ value: CGFloat) -> CGFloat {

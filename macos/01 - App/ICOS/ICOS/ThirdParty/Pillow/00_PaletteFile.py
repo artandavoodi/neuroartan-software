@@ -18,7 +18,6 @@ from typing import IO
 
 from ._binary import o8
 
-
 class PaletteFile:
     """File handler for Teragon-style palette files."""
 

@@ -64,7 +64,6 @@ related:
   - "macos/01 - App/ICOS/ICOS/Doctrine/18 - Command System/01 - Command Protocol Doctrine.md"
   - "macos/01 - App/ICOS/ICOS/Doctrine/21 - Enforcement Layer/01 - No Overlay Doctrine.md"
 
-
 tags:
   - "icos"
   - "offline"
@@ -206,11 +205,11 @@ This doctrine must be included in every prompt before inference.
 
 ## Document Control & Validation
 
-GSA PROTOCOL STATUS: Approved  
-GSA APPROVAL: true  
-DOCUMENT STATUS: Active — Offline Agent Execution Doctrine  
-VISIBILITY: Internal  
-PUBLISH TO WEBSITE: No  
+GSA PROTOCOL STATUS: Approved
+GSA APPROVAL: true
+DOCUMENT STATUS: Active — Offline Agent Execution Doctrine
+VISIBILITY: Internal
+PUBLISH TO WEBSITE: No
 VERSION: 1.0
 
 ---

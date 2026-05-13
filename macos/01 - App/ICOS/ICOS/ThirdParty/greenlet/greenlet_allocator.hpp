@@ -7,7 +7,6 @@
 #include "greenlet_compiler_compat.hpp"
 #include "greenlet_cpython_compat.hpp"
 
-
 namespace greenlet
 {
     // This allocator is stateless; all instances are identical.

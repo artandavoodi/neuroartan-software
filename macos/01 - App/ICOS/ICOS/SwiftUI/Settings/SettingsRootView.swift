@@ -84,7 +84,20 @@ struct SettingsCategoryView: View {
     @Environment(\.icosTypographyScale) private var typographyScale
 
     private var categories: [AppRouter.Route] {
-        AppRouter.Route.allCases.filter(\.isSettingsCategory)
+        [
+            .general,
+            .appearance,
+            .voice,
+            .permissions,
+            .privacy,
+            .accessibility,
+            .configuration,
+            .connectors,
+            .personalization,
+            .dashboard,
+            .storageBackup,
+            .security,
+        ]
     }
 
     var body: some View {
@@ -120,8 +133,6 @@ struct SettingsCategoryView: View {
             )
         )
     }
-
-    // MARK: - Category Row
 
     private func settingsCategoryRow(_ category: AppRouter.Route) -> some View {
         let isActive = router.selectedSettingsCategory == category
@@ -169,8 +180,6 @@ struct SettingsCategoryView: View {
         .buttonStyle(.plain)
         .animation(.easeOut(duration: ICOSMotion.sidebarStateDuration), value: isActive)
     }
-
-    // MARK: - Profile Header
 
     private var settingsProfileHeader: some View {
         let profile = profileManager.activeProfile
@@ -222,43 +231,36 @@ struct SettingsDetailView: View {
         VStack(alignment: .leading, spacing: scaled(ICOSSpacing.lg)) {
             switch category {
             case .general:
-                GeneralSettingsPanel(shellState: shellState, runtimeSettings: services.runtimeSettings)
+                GeneralSettingsPanel(shellState: shellState, runtimeSettings: RuntimeSettingsState.shared)
             case .appearance:
                 AppearanceSettingsPanel(shellState: shellState)
-            case .configuration:
-                ConfigurationSettingsPanel(runtimeSettings: services.runtimeSettings)
+            case .voice:
+                VoiceSettingsView()
+            case .permissions:
+                PermissionsSettingsView()
+            case .privacy:
+                PrivacySettingsView()
+            case .accessibility:
+                AccessibilitySettingsView()
+            case .configuration, .environment, .worktree, .browserUse, .chatManagement:
+                ConfigurationSettingsView(shellState: shellState)
             case .connectors:
-                ConnectorsSettingsPanel(service: services.connectorRegistryService)
+                ConnectorsSettingsView()
             case .personalization:
-                PersonalizationSettingsPanel()
-            case .environment:
-                EnvironmentSettingsPanel(shellState: shellState)
-            case .worktree:
-                WorktreeSettingsPanel(shellState: shellState)
-            case .browserUse:
-                BrowserUseView(shellState: shellState)
-            case .chatManagement:
-                ChatManagementSettingsPanel(appState: services.appState)
-            case .projects:
-                ProjectManagerView(viewModel: services.projectManager, shellState: shellState)
-            case .files:
-                FileManagerView()
-            case .recents, .shared, .archive,
-                 .intelligenceDashboard, .sessions, .providers, .connections, .terminalRuntime, .knowledgeBase,
-                 .kanban, .automationJobs, .usage, .mail, .messaging, .skills, .diagnostics, .voiceRuntime,
-                 .desktopRuntime:
-                EmptyView()
-            case .chat, .developer, .continuity, .settings:
-                EmptyView()
+                PersonalizationSettingsView()
+            case .dashboard:
+                DashboardSettingsView()
+            case .storageBackup:
+                StorageBackupSettingsView()
+            case .security:
+                SecuritySettingsView()
+            default:
+                GeneralSettingsPanel(shellState: shellState, runtimeSettings: RuntimeSettingsState.shared)
             }
         }
     }
 
     private func scaled(_ value: CGFloat) -> CGFloat {
         value * density.spacingScale
-    }
-
-    private func scaledFont(_ value: CGFloat) -> CGFloat {
-        value * typographyScale
     }
 }

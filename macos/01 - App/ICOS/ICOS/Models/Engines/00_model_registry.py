@@ -26,7 +26,6 @@ from enum import Enum
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-
 class ModelFormat(str, Enum):
     GGUF = "gguf"
     SAFETENSORS = "safetensors"
@@ -34,14 +33,12 @@ class ModelFormat(str, Enum):
     MLX = "mlx"
     REMOTE = "remote"
 
-
 class ModelRuntime(str, Enum):
     LLAMA_CPP = "llama.cpp"
     LM_STUDIO = "lm_studio"
     VLLM = "vllm"
     TRANSFORMERS = "transformers"
     REMOTE_PROVIDER = "remote_provider"
-
 
 @dataclass
 class ModelCapability:
@@ -51,7 +48,6 @@ class ModelCapability:
     supports_reasoning: bool = False
     supports_code: bool = False
     max_context_window: Optional[int] = None
-
 
 @dataclass
 class RegisteredModel:
@@ -66,7 +62,6 @@ class RegisteredModel:
     capability: ModelCapability = field(
         default_factory=ModelCapability
     )
-
 
 class SovereignModelRegistry:
     """
@@ -199,7 +194,6 @@ class SovereignModelRegistry:
             ],
             "default_model": self.default_model,
         }
-
 
 if __name__ == "__main__":
     registry = SovereignModelRegistry()

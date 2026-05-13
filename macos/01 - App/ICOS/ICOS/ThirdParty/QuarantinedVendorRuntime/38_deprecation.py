@@ -14,13 +14,10 @@ from pip import __version__ as current_version  # NOTE: tests patch this name.
 
 DEPRECATION_MSG_PREFIX = "DEPRECATION: "
 
-
 class PipDeprecationWarning(Warning):
     include_source: bool = False
 
-
 _original_showwarning: Any = None
-
 
 # Warnings <-> Logging Integration
 def _showwarning(
@@ -45,7 +42,6 @@ def _showwarning(
     else:
         _original_showwarning(message, category, filename, lineno, file, line)
 
-
 def install_warning_logger() -> None:
     # Enable our Deprecation Warnings
     warnings.simplefilter("default", PipDeprecationWarning, append=True)
@@ -55,7 +51,6 @@ def install_warning_logger() -> None:
     if _original_showwarning is None:
         _original_showwarning = warnings.showwarning
         warnings.showwarning = _showwarning
-
 
 def deprecated(
     *,

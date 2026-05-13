@@ -22,7 +22,6 @@ from playwright._impl._errors import TargetClosedError
 from playwright._impl._helper import Error, ParsedMessagePayload
 from playwright._impl._transport import Transport
 
-
 class JsonPipeTransport(AsyncIOEventEmitter, Transport):
     def __init__(
         self,

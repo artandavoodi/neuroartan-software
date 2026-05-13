@@ -6,7 +6,6 @@ from functools import partial
 
 __all__ = ["wait_for_read", "wait_for_write"]
 
-
 # How should we wait on sockets?
 #
 # There are two types of APIs you can use for waiting on sockets: the fancy
@@ -28,7 +27,6 @@ __all__ = ["wait_for_read", "wait_for_write"]
 #
 # So: on Windows we use select(), and everywhere else we use poll(). We also
 # fall back to select() in case poll() is somehow broken or missing.
-
 
 def select_wait_for_socket(
     sock: socket.socket,
@@ -52,7 +50,6 @@ def select_wait_for_socket(
     fn = partial(select.select, rcheck, wcheck, wcheck)
     rready, wready, xready = fn(timeout)
     return bool(rready or wready or xready)
-
 
 def poll_wait_for_socket(
     sock: socket.socket,
@@ -78,7 +75,6 @@ def poll_wait_for_socket(
 
     return bool(do_poll(timeout))
 
-
 def _have_working_poll() -> bool:
     # Apparently some systems have a select.poll that fails as soon as you try
     # to use it, either due to strange configuration or broken monkeypatching
@@ -90,7 +86,6 @@ def _have_working_poll() -> bool:
         return False
     else:
         return True
-
 
 def wait_for_socket(
     sock: socket.socket,
@@ -109,13 +104,11 @@ def wait_for_socket(
         wait_for_socket = select_wait_for_socket
     return wait_for_socket(sock, read, write, timeout)
 
-
 def wait_for_read(sock: socket.socket, timeout: float | None = None) -> bool:
     """Waits for reading to be available on a given socket.
     Returns True if the socket is readable, or False if the timeout expired.
     """
     return wait_for_socket(sock, read=True, timeout=timeout)
-
 
 def wait_for_write(sock: socket.socket, timeout: float | None = None) -> bool:
     """Waits for writing to be available on a given socket.

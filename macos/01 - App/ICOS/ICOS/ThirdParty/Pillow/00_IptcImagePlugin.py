@@ -25,19 +25,15 @@ from ._binary import i32be as i32
 
 COMPRESSION = {1: "raw", 5: "jpeg"}
 
-
 #
 # Helpers
-
 
 def _i(c: bytes) -> int:
     return i32((b"\0\0\0\0" + c)[-4:])
 
-
 ##
 # Image plugin for IPTC/NAA datastreams.  To read IPTC/NAA fields
 # from TIFF and JPEG files, use the <b>getiptcinfo</b> function.
-
 
 class IptcImageFile(ImageFile.ImageFile):
     format = "IPTC"
@@ -165,11 +161,9 @@ class IptcImageFile(ImageFile.ImageFile):
             self.tile = []
         return ImageFile.ImageFile.load(self)
 
-
 Image.register_open(IptcImageFile.format, IptcImageFile)
 
 Image.register_extension(IptcImageFile.format, ".iim")
-
 
 def getiptcinfo(
     im: ImageFile.ImageFile,

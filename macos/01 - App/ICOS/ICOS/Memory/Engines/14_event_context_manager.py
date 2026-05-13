@@ -17,7 +17,6 @@ from typing import Any, Generic, TypeVar
 
 T = TypeVar("T")
 
-
 class EventContextManagerImpl(Generic[T]):
     def __init__(self, future: asyncio.Future) -> None:
         self._future: asyncio.Future = future

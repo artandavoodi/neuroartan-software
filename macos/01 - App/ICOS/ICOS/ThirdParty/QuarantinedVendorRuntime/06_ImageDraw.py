@@ -57,7 +57,6 @@ Application code should use the <b>Draw</b> factory, instead of
 directly.
 """
 
-
 class ImageDraw:
     font: (
         ImageFont.ImageFont | ImageFont.FreeTypeFont | ImageFont.TransposedFont | None
@@ -799,7 +798,6 @@ class ImageDraw:
             font_size=font_size,
         )
 
-
 def Draw(im: Image.Image, mode: str | None = None) -> ImageDraw:
     """
     A simple 2D drawing interface for PIL images.
@@ -816,7 +814,6 @@ def Draw(im: Image.Image, mode: str | None = None) -> ImageDraw:
     except AttributeError:
         return ImageDraw(im, mode)
 
-
 def getdraw(im: Image.Image | None = None) -> tuple[ImageDraw2.Draw | None, ModuleType]:
     """
     :param im: The image to draw in.
@@ -826,7 +823,6 @@ def getdraw(im: Image.Image | None = None) -> tuple[ImageDraw2.Draw | None, Modu
 
     draw = ImageDraw2.Draw(im) if im is not None else None
     return draw, ImageDraw2
-
 
 def floodfill(
     image: Image.Image,
@@ -891,7 +887,6 @@ def floodfill(
                         new_edge.add((s, t))
         full_edge = edge  # discard pixels processed
         edge = new_edge
-
 
 def _compute_regular_polygon_vertices(
     bounding_circle: Sequence[Sequence[float] | float], n_sides: int, rotation: float
@@ -1021,7 +1016,6 @@ def _compute_regular_polygon_vertices(
 
     # 4. Compute Vertices
     return [_compute_polygon_vertex(angle) for angle in angles]
-
 
 def _color_diff(
     color1: float | tuple[int, ...], color2: float | tuple[int, ...]

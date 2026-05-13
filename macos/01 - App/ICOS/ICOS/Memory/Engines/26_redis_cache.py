@@ -3,7 +3,6 @@
 # SPDX-License-Identifier: Apache-2.0
 from __future__ import annotations
 
-
 from datetime import datetime, timezone
 from typing import TYPE_CHECKING
 
@@ -11,7 +10,6 @@ from pip._vendor.cachecontrol.cache import BaseCache
 
 if TYPE_CHECKING:
     from redis import Redis
-
 
 class RedisCache(BaseCache):
     def __init__(self, conn: Redis[bytes]) -> None:

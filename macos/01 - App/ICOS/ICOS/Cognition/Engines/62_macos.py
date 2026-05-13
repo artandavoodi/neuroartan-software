@@ -27,7 +27,6 @@ if _mac_version_info < (10, 8):
 
 _is_macos_version_10_14_or_later = _mac_version_info >= (10, 14)
 
-
 def _load_cdll(name: str, macos10_16_path: str) -> CDLL:
     """Loads a CDLL by name, falling back to known path on 10.16+"""
     try:
@@ -43,7 +42,6 @@ def _load_cdll(name: str, macos10_16_path: str) -> CDLL:
         return CDLL(path, use_errno=True)
     except OSError:
         raise ImportError(f"The library {name} failed to load") from None
-
 
 Security = _load_cdll(
     "Security", "/System/Library/Frameworks/Security.framework/Security"
@@ -219,7 +217,6 @@ if _is_macos_version_10_14_or_later:
     except AttributeError as e:
         raise ImportError(f"Error initializing ctypes: {e}") from None
 
-
 def _handle_osstatus(result: OSStatus, _: typing.Any, args: typing.Any) -> typing.Any:
     """
     Raises an error if the OSStatus value is non-zero.
@@ -272,13 +269,11 @@ def _handle_osstatus(result: OSStatus, _: typing.Any, args: typing.Any) -> typin
 
     raise ssl.SSLError(message)
 
-
 Security.SecTrustCreateWithCertificates.errcheck = _handle_osstatus  # type: ignore[assignment]
 Security.SecTrustSetAnchorCertificates.errcheck = _handle_osstatus  # type: ignore[assignment]
 Security.SecTrustSetAnchorCertificatesOnly.errcheck = _handle_osstatus  # type: ignore[assignment]
 Security.SecTrustGetTrustResult.errcheck = _handle_osstatus  # type: ignore[assignment]
 Security.SecTrustEvaluate.errcheck = _handle_osstatus  # type: ignore[assignment]
-
 
 class CFConst:
     """CoreFoundation constants"""
@@ -290,12 +285,10 @@ class CFConst:
     errSecCertificateExpired = -67818
     errSecNotTrusted = -67843
 
-
 def _bytes_to_cf_data_ref(value: bytes) -> CFDataRef:  # type: ignore[valid-type]
     return CoreFoundation.CFDataCreate(  # type: ignore[no-any-return]
         CoreFoundation.kCFAllocatorDefault, value, len(value)
     )
-
 
 def _bytes_to_cf_string(value: bytes) -> CFString:
     """
@@ -309,7 +302,6 @@ def _bytes_to_cf_string(value: bytes) -> CFString:
         CFConst.kCFStringEncodingUTF8,
     )
     return cf_str  # type: ignore[no-any-return]
-
 
 def _cf_string_ref_to_str(cf_string_ref: CFStringRef) -> str | None:  # type: ignore[valid-type]
     """
@@ -332,7 +324,6 @@ def _cf_string_ref_to_str(cf_string_ref: CFStringRef) -> str | None:  # type: ig
     if string is not None:
         string = string.decode("utf-8")
     return string  # type: ignore[no-any-return]
-
 
 def _der_certs_to_cf_cert_array(certs: list[bytes]) -> CFMutableArrayRef:  # type: ignore[valid-type]
     """Builds a CFArray of SecCertificateRefs from a list of DER-encoded certificates.
@@ -363,7 +354,6 @@ def _der_certs_to_cf_cert_array(certs: list[bytes]) -> CFMutableArrayRef:  # typ
 
     return cf_array  # type: ignore[no-any-return]
 
-
 @contextlib.contextmanager
 def _configure_context(ctx: ssl.SSLContext) -> typing.Iterator[None]:
     check_hostname = ctx.check_hostname
@@ -375,7 +365,6 @@ def _configure_context(ctx: ssl.SSLContext) -> typing.Iterator[None]:
     finally:
         ctx.check_hostname = check_hostname
         _set_ssl_context_verify_mode(ctx, verify_mode)
-
 
 def _verify_peercerts_impl(
     ssl_context: ssl.SSLContext,
@@ -465,7 +454,6 @@ def _verify_peercerts_impl(
         if trust:
             CoreFoundation.CFRelease(trust)
 
-
 def _verify_peercerts_impl_macos_10_13(
     ssl_context: ssl.SSLContext, sec_trust_ref: typing.Any
 ) -> None:
@@ -508,7 +496,6 @@ def _verify_peercerts_impl_macos_10_13(
         err.verify_message = error_message
         err.verify_code = sec_trust_result_type_as_int
         raise err
-
 
 def _verify_peercerts_impl_macos_10_14(
     ssl_context: ssl.SSLContext, sec_trust_ref: typing.Any

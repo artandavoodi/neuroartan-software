@@ -28,7 +28,6 @@ if typing.TYPE_CHECKING:
 
 log = logging.getLogger(__name__)
 
-
 # Data structure for representing the metadata of requests that result in a retry.
 class RequestHistory(typing.NamedTuple):
     method: str | None
@@ -36,7 +35,6 @@ class RequestHistory(typing.NamedTuple):
     error: Exception | None
     status: int | None
     redirect_location: str | None
-
 
 class Retry:
     """Retry configuration.
@@ -543,7 +541,6 @@ class Retry:
             f"{type(self).__name__}(total={self.total}, connect={self.connect}, "
             f"read={self.read}, redirect={self.redirect}, status={self.status})"
         )
-
 
 # For backwards compatibility (equivalent to pre-v1.9):
 Retry.DEFAULT = Retry(3)

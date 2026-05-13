@@ -8,7 +8,6 @@ import json
 import time
 import uuid
 
-
 # ============================================================
 # Sovereign Root
 # ============================================================
@@ -50,7 +49,6 @@ TRAINING_RUN_REGISTRY = (
 MODEL_TRAINING_SAFETY_POLICY = (
     SAFETY_ROOT / "model_training_safety_policy.json"
 )
-
 
 # ============================================================
 # Native Model Roadmap Engine
@@ -124,7 +122,6 @@ class NativeModelRoadmapEngine:
             }
         )
 
-
     # ========================================================
     # JSON Loading
     # ========================================================
@@ -148,7 +145,6 @@ class NativeModelRoadmapEngine:
 
         except Exception:
             return fallback
-
 
     # ========================================================
     # Roadmap Definition
@@ -194,7 +190,6 @@ class NativeModelRoadmapEngine:
         )
 
         return roadmap
-
 
     # ========================================================
     # Sovereign Identity
@@ -242,7 +237,6 @@ class NativeModelRoadmapEngine:
 
         return identity
 
-
     # ========================================================
     # Frontier Readiness
     # ========================================================
@@ -285,7 +279,6 @@ class NativeModelRoadmapEngine:
         )
 
         return readiness
-
 
     # ========================================================
     # Roadmap Learning Cycle
@@ -335,7 +328,6 @@ class NativeModelRoadmapEngine:
             "event": event,
         }
 
-
     # ========================================================
     # Runtime Status
     # ========================================================
@@ -355,7 +347,6 @@ class NativeModelRoadmapEngine:
                 self.distillation_plan
             ),
         }
-
 
 # ============================================================
 # Runtime Entry

@@ -18,14 +18,12 @@ if typing.TYPE_CHECKING:
 
 log = logging.getLogger(__name__)
 
-
 @dataclass
 class EmscriptenResponse:
     status_code: int
     headers: dict[str, str]
     body: IOBase | bytes
     request: EmscriptenRequest
-
 
 class EmscriptenHttpResponseWrapper(BaseHTTPResponse):
     def __init__(

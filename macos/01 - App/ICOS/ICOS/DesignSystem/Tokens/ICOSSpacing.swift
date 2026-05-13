@@ -64,7 +64,6 @@ enum ICOSBrowserUseTokens {
     static let resultURLLineLimit: Int = 1
 }
 
-
 // MARK: - Panel Tokens
 
 enum ICOSPanelTokens {
@@ -590,7 +589,6 @@ enum ICOSDeveloperInspectorTokens {
     static let dividerHeight: CGFloat = 1
     static let dividerBottomPadding: CGFloat = 14
 }
-
 
 // MARK: - Developer Top Bar Tokens
 

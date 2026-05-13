@@ -18,7 +18,6 @@ if TYPE_CHECKING:
 else:
     Result = collections.namedtuple("Result", ["mapping", "graph", "criteria"])
 
-
 class AbstractResolver(Generic[RT, CT, KT]):
     """The thing that performs the actual resolution work."""
 

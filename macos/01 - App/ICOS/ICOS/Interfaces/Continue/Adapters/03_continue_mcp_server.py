@@ -32,9 +32,7 @@ def find_runtime_path() -> Path | None:
 
     return None
 
-
 RUNTIME_PATH = find_runtime_path()
-
 
 def load_runtime_router():
     if RUNTIME_PATH is None:
@@ -58,7 +56,6 @@ def load_runtime_router():
 
     return module
 
-
 RUNTIME_ROUTER = load_runtime_router()
 
 LOCAL_WORKSPACE_ROOTS = [
@@ -67,14 +64,12 @@ LOCAL_WORKSPACE_ROOTS = [
     Path("/Users/artan/Neuroartan-software"),
 ]
 
-
 def _is_within_local_workspace(file_path: Path) -> bool:
     resolved = file_path.expanduser().resolve(strict=False)
     return any(
         str(resolved).startswith(str(root.expanduser().resolve(strict=False)))
         for root in LOCAL_WORKSPACE_ROOTS
     )
-
 
 def resolve_local_path(raw_path: str) -> Path:
     candidate = Path(raw_path).expanduser()
@@ -158,7 +153,6 @@ def whoami():
 def echo(message: str):
     return {"echo": message}
 
-
 @mcp.tool()
 def classify_intent(request_text: str, path: str = ""):
     if RUNTIME_ROUTER is None or isinstance(RUNTIME_ROUTER, dict):
@@ -172,7 +166,6 @@ def classify_intent(request_text: str, path: str = ""):
         command="classify_intent",
         payload=payload,
     )
-
 
 @mcp.tool()
 def analyze_request(request_text: str, path: str = ""):
@@ -188,7 +181,6 @@ def analyze_request(request_text: str, path: str = ""):
         payload=payload,
     )
 
-
 @mcp.tool()
 def read_file(path: str):
     if RUNTIME_ROUTER is None or isinstance(RUNTIME_ROUTER, dict):
@@ -198,7 +190,6 @@ def read_file(path: str):
         command="read_file",
         payload={"path": path},
     )
-
 
 @mcp.tool()
 def local_search(query: str, path: str = "", request_text: str = ""):
@@ -216,8 +207,6 @@ def local_search(query: str, path: str = "", request_text: str = ""):
         payload=payload,
     )
 
-
-
 @mcp.tool()
 def grep_search(pattern: str, path: str = ""):
     if RUNTIME_ROUTER is None or isinstance(RUNTIME_ROUTER, dict):
@@ -231,7 +220,6 @@ def grep_search(pattern: str, path: str = ""):
         command="grep_search",
         payload=payload,
     )
-
 
 @mcp.tool()
 def find_owner_chain(query: str, path: str = ""):
@@ -247,7 +235,6 @@ def find_owner_chain(query: str, path: str = ""):
         payload=payload,
     )
 
-
 @mcp.tool()
 def replace_text(path: str, old_text: str, new_text: str, count: int = 1):
     return replace_text_verified(
@@ -258,7 +245,6 @@ def replace_text(path: str, old_text: str, new_text: str, count: int = 1):
         dry_run=False,
         request_text="",
     )
-
 
 @mcp.tool()
 def replace_text_verified(path: str, old_text: str, new_text: str, count: int = 0, dry_run: bool = False, request_text: str = ""):
@@ -277,7 +263,6 @@ def replace_text_verified(path: str, old_text: str, new_text: str, count: int = 
         },
     )
 
-
 @mcp.tool()
 def workflow_status():
     if RUNTIME_ROUTER is None or isinstance(RUNTIME_ROUTER, dict):
@@ -285,14 +270,12 @@ def workflow_status():
 
     return RUNTIME_ROUTER.execute_command(command="workflow_status", payload={})
 
-
 @mcp.tool()
 def validate_topology():
     if RUNTIME_ROUTER is None or isinstance(RUNTIME_ROUTER, dict):
         return {"status": "runtime_router_unavailable"}
 
     return RUNTIME_ROUTER.execute_command(command="validate_topology", payload={})
-
 
 @mcp.tool()
 def scan_stale_paths():

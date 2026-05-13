@@ -8,7 +8,6 @@ import json
 import time
 import uuid
 
-
 # ============================================================
 # Sovereign Root
 # ============================================================
@@ -36,7 +35,6 @@ LEARNING_EVENT_STORE = (
 FAILURE_DATASET_STORE = (
     DATASET_ROOT / "failure_dataset_store.json"
 )
-
 
 # ============================================================
 # Failure Lesson Extractor
@@ -76,7 +74,6 @@ class FailureLessonExtractor:
             fallback=[]
         )
 
-
     # ========================================================
     # JSON Loading
     # ========================================================
@@ -100,7 +97,6 @@ class FailureLessonExtractor:
 
         except Exception:
             return fallback
-
 
     # ========================================================
     # Failure Classification
@@ -143,7 +139,6 @@ class FailureLessonExtractor:
 
         return "general_failure"
 
-
     # ========================================================
     # Lesson Extraction
     # ========================================================
@@ -179,7 +174,6 @@ class FailureLessonExtractor:
 
         return lesson
 
-
     # ========================================================
     # Failure Dataset Generation
     # ========================================================
@@ -212,7 +206,6 @@ class FailureLessonExtractor:
         )
 
         return dataset_entry
-
 
     # ========================================================
     # Failure Learning Cycle
@@ -267,7 +260,6 @@ class FailureLessonExtractor:
             "dataset": dataset,
             "event": event,
         }
-
 
 # ============================================================
 # Runtime Entry

@@ -15,21 +15,17 @@ __all__ = [
     "resolve_dependency_groups",
 ]
 
-
 def __dir__() -> list[str]:
     return __all__
-
 
 # -----------
 # Error Types
 # -----------
 
-
 class DuplicateGroupNames(ValueError):
     """
     The same dependency groups were defined twice, with different non-normalized names.
     """
-
 
 class CyclicDependencyGroup(ValueError):
     """
@@ -50,7 +46,6 @@ class CyclicDependencyGroup(ValueError):
             f"{requested_group}: {reason}"
         )
 
-
 # in the PEP 735 spec, the tables in dependency group lists were described as
 # "Dependency Object Specifiers", but the only defined type of object was a
 # "Dependency Group Include" -- hence the naming of this error as "Object"
@@ -60,11 +55,9 @@ class InvalidDependencyGroupObject(ValueError):
     format.
     """
 
-
 # ------------------------
 # Object Model & Interface
 # ------------------------
-
 
 class DependencyGroupInclude:
     __slots__ = ("include_group",)
@@ -79,7 +72,6 @@ class DependencyGroupInclude:
 
     def __repr__(self) -> str:
         return f"{self.__class__.__name__}({self.include_group!r})"
-
 
 class DependencyGroupResolver:
     """
@@ -246,11 +238,9 @@ class DependencyGroupResolver:
         self._parsed_groups[group] = tuple(elements)
         return self._parsed_groups[group]
 
-
 # --------------------
 # Functional Interface
 # --------------------
-
 
 def resolve_dependency_groups(
     dependency_groups: Mapping[str, Sequence[str | Mapping[str, str]]], /, *groups: str
@@ -265,18 +255,14 @@ def resolve_dependency_groups(
     resolver = DependencyGroupResolver(dependency_groups)
     return tuple(str(r) for group in groups for r in resolver.resolve(group))
 
-
 # ----------------
 # internal helpers
 # ----------------
 
-
 _NORMALIZE_PATTERN = re.compile(r"[-_.]+")
-
 
 def _normalize_name(name: str) -> str:
     return _NORMALIZE_PATTERN.sub("-", name).lower()
-
 
 def _normalize_group_names(
     dependency_groups: Mapping[str, Sequence[str | Mapping[str, str]]],

@@ -32,7 +32,6 @@ from .base import get_major_minor_version
 
 logger = logging.getLogger(__name__)
 
-
 def distutils_scheme(
     dist_name: str,
     user: bool = False,
@@ -112,7 +111,6 @@ def distutils_scheme(
 
     return scheme
 
-
 def get_scheme(
     dist_name: str,
     user: bool = False,
@@ -147,7 +145,6 @@ def get_scheme(
         data=scheme["data"],
     )
 
-
 def get_bin_prefix() -> str:
     # XXX: In old virtualenv versions, sys.prefix can contain '..' components,
     # so we need to call normpath to eliminate them.
@@ -164,10 +161,8 @@ def get_bin_prefix() -> str:
         return "/usr/local/bin"
     return os.path.join(prefix, "bin")
 
-
 def get_purelib() -> str:
     return get_python_lib(plat_specific=False)
-
 
 def get_platlib() -> str:
     return get_python_lib(plat_specific=True)

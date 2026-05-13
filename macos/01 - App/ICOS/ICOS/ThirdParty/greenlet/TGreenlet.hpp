@@ -433,7 +433,6 @@ namespace greenlet
          */
         inline void deactivate_and_free();
 
-
         // Called when some thread wants to deallocate a greenlet
         // object.
         // The thread may or may not be the same thread the greenlet
@@ -453,7 +452,6 @@ namespace greenlet
         // important to the bytecode eval loop, they're superfluous for
         // introspection purposes.
         void expose_frames();
-
 
         // TODO: Figure out how to make these non-public.
         inline void slp_restore_state() noexcept;
@@ -487,10 +485,8 @@ namespace greenlet
         virtual const OwnedObject& run() const = 0;
         virtual void run(const refs::BorrowedObject nrun) = 0;
 
-
         virtual int tp_traverse(visitproc visit, void* arg);
         virtual int tp_clear();
-
 
         // Return the thread state that the greenlet is running in, or
         // null if the greenlet is not running or the thread is known
@@ -591,7 +587,6 @@ namespace greenlet
         };
 
     protected:
-
 
         /**
            Perform a stack switch into this greenlet.
@@ -777,7 +772,6 @@ public:
         MainGreenlet(refs::BorrowedMainGreenlet::PyType*, ThreadState*);
         virtual ~MainGreenlet();
 
-
         virtual const OwnedObject& run() const;
         virtual void run(const refs::BorrowedObject nrun);
 
@@ -833,10 +827,8 @@ public:
         return results;
     }
 
-
     static OwnedObject
     g_handle_exit(const OwnedObject& greenlet_result);
-
 
     template<typename T>
     void operator<<(const PyThreadState *const lhs, T& rhs)

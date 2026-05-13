@@ -21,14 +21,11 @@ import struct
 
 from . import Image, ImageFile
 
-
 def _accept(prefix: bytes) -> bool:
     return prefix.startswith(b"\x00\x00\x00\x00\x00\x00\x00\x04")
 
-
 ##
 # Image plugin for McIdas area images.
-
 
 class McIdasImageFile(ImageFile.ImageFile):
     format = "MCIDAS"
@@ -68,7 +65,6 @@ class McIdasImageFile(ImageFile.ImageFile):
         self.tile = [
             ImageFile._Tile("raw", (0, 0) + self.size, offset, (rawmode, stride, 1))
         ]
-
 
 # --------------------------------------------------------------------
 # registry

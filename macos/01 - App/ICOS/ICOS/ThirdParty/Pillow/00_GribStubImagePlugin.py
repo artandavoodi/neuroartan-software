@@ -17,7 +17,6 @@ from . import Image, ImageFile
 
 _handler = None
 
-
 def register_handler(handler: ImageFile.StubHandler | None) -> None:
     """
     Install application-specific GRIB image handler.
@@ -27,14 +26,11 @@ def register_handler(handler: ImageFile.StubHandler | None) -> None:
     global _handler
     _handler = handler
 
-
 # --------------------------------------------------------------------
 # Image adapter
 
-
 def _accept(prefix: bytes) -> bool:
     return len(prefix) >= 8 and prefix.startswith(b"GRIB") and prefix[7] == 1
-
 
 class GribStubImageFile(ImageFile.StubImageFile):
     format = "GRIB"
@@ -55,13 +51,11 @@ class GribStubImageFile(ImageFile.StubImageFile):
     def _load(self) -> ImageFile.StubHandler | None:
         return _handler
 
-
 def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     if _handler is None or not hasattr(_handler, "save"):
         msg = "GRIB save handler not installed"
         raise OSError(msg)
     _handler.save(im, fp, filename)
-
 
 # --------------------------------------------------------------------
 # Registry

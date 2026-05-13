@@ -32,7 +32,6 @@ EXCLUSION_PATTERNS = [
     "egg-info"
 ]
 
-
 def load_json(path: Path, fallback):
     if not path.exists():
         return fallback
@@ -42,13 +41,9 @@ def load_json(path: Path, fallback):
     except Exception:
         return fallback
 
-
-
 def save_json(path: Path, data):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, indent=2))
-
-
 
 def latest_build_failure():
     builds = load_json(BUILD_STATE, [])
@@ -63,8 +58,6 @@ def latest_build_failure():
 
     return failures[-1]
 
-
-
 def extract_duplicate_resource_paths(output: str) -> List[str]:
     produced = re.findall(
         r"produce '([^']+)'",
@@ -77,8 +70,6 @@ def extract_duplicate_resource_paths(output: str) -> List[str]:
     )
 
     return sorted(set(produced + sources))
-
-
 
 def classify_exclusions(paths: List[str]) -> List[Dict[str, Any]]:
     candidates = []
@@ -100,8 +91,6 @@ def classify_exclusions(paths: List[str]) -> List[Dict[str, Any]]:
             })
 
     return candidates
-
-
 
 def generate_resource_exclusion_plan() -> Dict[str, Any]:
     failure = latest_build_failure()
@@ -147,7 +136,6 @@ def generate_resource_exclusion_plan() -> Dict[str, Any]:
     save_json(PLAN_STATE, plan)
 
     return plan
-
 
 if __name__ == "__main__":
     print(json.dumps(

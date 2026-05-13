@@ -64,7 +64,6 @@ related:
   - "macos/01 - App/ICOS/ICOS/Doctrine/19 - Active Reference System/01 - Active Reference Resolution Doctrine.md"
   - "macos/01 - App/ICOS/ICOS/Doctrine/17 - Execution Intelligence/01 - Execution Loop Doctrine.md"
 
-
 tags:
   - "icos"
   - "ownership"
@@ -207,11 +206,11 @@ This doctrine must be included in every prompt before inference.
 
 ## Document Control & Validation
 
-GSA PROTOCOL STATUS: Approved  
-GSA APPROVAL: true  
-DOCUMENT STATUS: Active — Ownership Detection Doctrine  
-VISIBILITY: Internal  
-PUBLISH TO WEBSITE: No  
+GSA PROTOCOL STATUS: Approved
+GSA APPROVAL: true
+DOCUMENT STATUS: Active — Ownership Detection Doctrine
+VISIBILITY: Internal
+PUBLISH TO WEBSITE: No
 VERSION: 1.0
 
 ---

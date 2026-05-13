@@ -26,14 +26,12 @@ from enum import Enum
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-
 class CodeEntityType(str, Enum):
     FILE = "file"
     CLASS = "class"
     FUNCTION = "function"
     MODULE = "module"
     RUNTIME_LAYER = "runtime_layer"
-
 
 @dataclass
 class SemanticCodeEntity:
@@ -44,7 +42,6 @@ class SemanticCodeEntity:
     relationships: List[str] = field(default_factory=list)
     metadata: Dict[str, Any] = field(default_factory=dict)
 
-
 @dataclass
 class SemanticAnalysis:
     analysis_id: str
@@ -53,7 +50,6 @@ class SemanticAnalysis:
     dependencies: List[str] = field(default_factory=list)
     risks: List[str] = field(default_factory=list)
     recommendations: List[str] = field(default_factory=list)
-
 
 class SemanticCodeUnderstandingEngine:
     """
@@ -187,7 +183,6 @@ class SemanticCodeUnderstandingEngine:
                 for analysis in self.analyses.values()
             ],
         }
-
 
 if __name__ == "__main__":
     engine = SemanticCodeUnderstandingEngine()

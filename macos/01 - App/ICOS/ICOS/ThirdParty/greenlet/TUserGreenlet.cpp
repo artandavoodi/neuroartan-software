@@ -17,7 +17,6 @@
 
 #include "TThreadStateDestroy.cpp"
 
-
 namespace greenlet {
 using greenlet::refs::BorrowedMainGreenlet;
 greenlet::PythonAllocator<UserGreenlet> UserGreenlet::allocator;
@@ -27,13 +26,11 @@ void* UserGreenlet::operator new(size_t UNUSED(count))
     return allocator.allocate(1);
 }
 
-
 void UserGreenlet::operator delete(void* ptr)
 {
     return allocator.deallocate(static_cast<UserGreenlet*>(ptr),
                                 1);
 }
-
 
 UserGreenlet::UserGreenlet(PyGreenlet* p, BorrowedGreenlet the_parent)
     : Greenlet(p), _parent(the_parent)
@@ -49,13 +46,11 @@ UserGreenlet::~UserGreenlet()
     this->tp_clear();
 }
 
-
 const BorrowedMainGreenlet
 UserGreenlet::main_greenlet() const
 {
     return this->_main_greenlet;
 }
-
 
 BorrowedMainGreenlet
 UserGreenlet::find_main_greenlet_in_lineage() const
@@ -73,7 +68,6 @@ UserGreenlet::find_main_greenlet_in_lineage() const
 
     return this->_parent->find_main_greenlet_in_lineage();
 }
-
 
 /**
  * CAUTION: This will allocate memory and may trigger garbage
@@ -106,7 +100,6 @@ UserGreenlet::thread_state() const noexcept
     }
     return this->_main_greenlet->thread_state();
 }
-
 
 bool
 UserGreenlet::was_running_in_dead_thread() const noexcept
@@ -222,8 +215,6 @@ UserGreenlet::g_switch()
     return err.the_new_current_greenlet->g_switch_finish(err);
 }
 
-
-
 Greenlet::switchstack_result_t
 UserGreenlet::g_initialstub(void* mark)
 {
@@ -247,7 +238,6 @@ UserGreenlet::g_initialstub(void* mark)
         run = this->self().PyRequireAttr(mod_globs->str_run);
         /* restore saved exception */
         saved.PyErrRestore();
-
 
         /* recheck that it's safe to switch in case greenlet reparented anywhere above */
         this->check_switch_allowed();
@@ -360,7 +350,6 @@ UserGreenlet::g_initialstub(void* mark)
         Py_FatalError("greenlet: inner_bootstrap returned with no exception.\n");
     }
 
-
     // In contrast, notice that we're keeping the origin greenlet
     // around as an owned reference; we need it to call the trace
     // function for the switch back into the parent. It was only
@@ -385,7 +374,6 @@ UserGreenlet::g_initialstub(void* mark)
 
     return err;
 }
-
 
 void
 UserGreenlet::inner_bootstrap(PyGreenlet* origin_greenlet, PyObject* run)
@@ -427,7 +415,6 @@ UserGreenlet::inner_bootstrap(PyGreenlet* origin_greenlet, PyObject* run)
     // code when we don't want to?
     // CAUTION: This may run arbitrary Python code.
     this->_run_callable.CLEAR();
-
 
     // The first switch we need to manually call the trace
     // function here instead of in g_switch_finish, because we
@@ -538,7 +525,6 @@ UserGreenlet::inner_bootstrap(PyGreenlet* origin_greenlet, PyObject* run)
     /* jump back to parent */
     this->stack_state.set_inactive(); /* dead */
 
-
     // TODO: Can we decref some things here? Release our main greenlet
     // and maybe parent?
     for (Greenlet* parent = this->_parent;
@@ -634,7 +620,6 @@ UserGreenlet::belongs_to_thread(const ThreadState* thread_state) const
 {
     return Greenlet::belongs_to_thread(thread_state) && this->_main_greenlet == thread_state->borrow_main_greenlet();
 }
-
 
 int
 UserGreenlet::tp_traverse(visitproc visit, void* arg)

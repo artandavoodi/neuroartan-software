@@ -98,12 +98,10 @@ for i in ["32S"]:
 for j in range(2, 33):
     OPEN[f"L*{j} image"] = ("F", f"F;{j}")
 
-
 # --------------------------------------------------------------------
 # Read IM directory
 
 split = re.compile(rb"^([A-Za-z][^:]*):[ \t]*(.*)[ \t]*$")
-
 
 def number(s: Any) -> float:
     try:
@@ -111,10 +109,8 @@ def number(s: Any) -> float:
     except ValueError:
         return float(s)
 
-
 ##
 # Image plugin for the IFUNC IM file format.
-
 
 class ImImageFile(ImageFile.ImageFile):
     format = "IM"
@@ -314,11 +310,9 @@ class ImImageFile(ImageFile.ImageFile):
     def tell(self) -> int:
         return self.frame
 
-
 #
 # --------------------------------------------------------------------
 # Save IM files
-
 
 SAVE = {
     # mode: (im type, raw mode)
@@ -338,7 +332,6 @@ SAVE = {
     "CMYK": ("CMYK", "CMYK;L"),
     "YCbCr": ("YCC", "YCbCr;L"),
 }
-
 
 def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     try:
@@ -378,11 +371,9 @@ def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
         im, fp, [ImageFile._Tile("raw", (0, 0) + im.size, 0, (rawmode, 0, -1))]
     )
 
-
 #
 # --------------------------------------------------------------------
 # Registry
-
 
 Image.register_open(ImImageFile.format, ImImageFile)
 Image.register_save(ImImageFile.format, _save)

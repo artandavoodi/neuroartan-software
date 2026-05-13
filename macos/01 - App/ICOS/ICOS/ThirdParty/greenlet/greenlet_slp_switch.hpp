@@ -42,12 +42,10 @@ thread_local greenlet::Greenlet* switching_thread_state = nullptr;
 static greenlet::Greenlet* volatile switching_thread_state = nullptr;
 #endif
 
-
 extern "C" {
 static int GREENLET_NOINLINE(slp_save_state_trampoline)(char* stackref);
 static void GREENLET_NOINLINE(slp_restore_state_trampoline)();
 }
-
 
 #define SLP_SAVE_STATE(stackref, stsizediff) \
 do {                                                    \
@@ -73,8 +71,6 @@ extern "C" {
 #    error \
         "greenlet needs to be ported to this platform, or taught how to detect your compiler properly."
 #endif /* !STACK_MAGIC */
-
-
 
 #ifdef EXTERNAL_ASM
 /* CCP addition: Make these functions, to be called from assembler.

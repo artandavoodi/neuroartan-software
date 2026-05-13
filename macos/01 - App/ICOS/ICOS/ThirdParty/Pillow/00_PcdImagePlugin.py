@@ -22,7 +22,6 @@ from . import Image, ImageFile
 # image from the file; higher resolutions are encoded in a proprietary
 # encoding.
 
-
 class PcdImageFile(ImageFile.ImageFile):
     format = "PCD"
     format_description = "Kodak PhotoCD"
@@ -58,7 +57,6 @@ class PcdImageFile(ImageFile.ImageFile):
         if self.tile_post_rotate:
             # Handle rotated PCDs
             self.im = self.rotate(self.tile_post_rotate, expand=True).im
-
 
 #
 # registry

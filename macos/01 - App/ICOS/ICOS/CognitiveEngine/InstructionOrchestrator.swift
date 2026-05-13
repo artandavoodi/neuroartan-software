@@ -3,36 +3,36 @@ import Foundation
 // MARK: - Instruction Orchestrator (RR-002)
 
 final class InstructionOrchestrator {
-    
+
     private let executionController = ICOSExecutionController.shared
     private let webSearchTool = WebSearchTool()
     private let responseShaper = ResponseShaper()
-    
+
     func process(input: String, appState: ICOSAppState) async {
-        
+
         // Step 1: Normalize Input
         let normalized = normalize(input)
-        
+
         // Step 3: Web search decision
         var enrichedInput = normalized
-        
+
         if needsWebSearch(normalized) {
             let results = await webSearchTool.search(query: normalized)
-            
+
             if !results.isEmpty {
                 let formatted = results.map { r in
                     "- \(r.title): \(r.snippet)"
                 }.joined(separator: "\n")
-                
+
                 enrichedInput = normalized + "\n\nWeb Context:\n" + formatted
             }
         }
-        
+
         // Step 4: Execute through the single execution controller.
         do {
             let rawResponse = try await executionController.execute(input: enrichedInput)
             let response = responseShaper.shape(rawResponse, for: normalized)
-            
+
             // Step 5: Commit assistant response to active session
             await MainActor.run {
                 appState.activeSession.appendAssistant(response)
@@ -48,13 +48,13 @@ final class InstructionOrchestrator {
             }
         }
     }
-    
+
     // MARK: - Normalization
-    
+
     private func normalize(_ input: String) -> String {
         input.trimmingCharacters(in: .whitespacesAndNewlines)
     }
-    
+
     private func needsWebSearch(_ input: String) -> Bool {
         let lower = input.lowercased()
         let localMarkers = [

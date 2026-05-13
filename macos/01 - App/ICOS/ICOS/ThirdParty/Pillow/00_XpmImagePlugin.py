@@ -23,14 +23,11 @@ from ._binary import o8
 # XPM header
 xpm_head = re.compile(b'"([0-9]*) ([0-9]*) ([0-9]*) ([0-9]*)')
 
-
 def _accept(prefix: bytes) -> bool:
     return prefix.startswith(b"/* XPM */")
 
-
 ##
 # Image plugin for X11 pixel maps.
-
 
 class XpmImageFile(ImageFile.ImageFile):
     format = "XPM"
@@ -114,7 +111,6 @@ class XpmImageFile(ImageFile.ImageFile):
 
         return b"".join(s)
 
-
 class XpmDecoder(ImageFile.PyDecoder):
     _pulls_fd = True
 
@@ -144,10 +140,8 @@ class XpmDecoder(ImageFile.PyDecoder):
         self.set_as_raw(bytes(data))
         return -1, 0
 
-
 #
 # Registry
-
 
 Image.register_open(XpmImageFile.format, XpmImageFile, _accept)
 Image.register_decoder("xpm", XpmDecoder)

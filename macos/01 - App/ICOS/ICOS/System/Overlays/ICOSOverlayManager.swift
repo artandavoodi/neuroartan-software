@@ -4,13 +4,13 @@ import Combine
 // MARK: - Overlay Manager
 
 final class ICOSOverlayManager: ObservableObject {
-    
+
     @Published var activeOverlay: ICOSOverlay? = nil
-    
+
     func present(_ overlay: ICOSOverlay) {
         activeOverlay = overlay
     }
-    
+
     func dismiss() {
         activeOverlay = nil
     }
@@ -22,7 +22,7 @@ enum ICOSOverlay: Identifiable {
     case commandPalette
     case settings
     case modal(message: String)
-    
+
     var id: String {
         switch self {
         case .commandPalette: return "commandPalette"
@@ -36,20 +36,20 @@ enum ICOSOverlay: Identifiable {
 
 struct ICOSOverlayContainer: View {
     @EnvironmentObject var overlayManager: ICOSOverlayManager
-    
+
     var body: some View {
         ZStack {
             if let overlay = overlayManager.activeOverlay {
                 ICOSMaterials.overlayScrim.opacity(ICOSOverlayTokens.scrimOpacity)
                     .ignoresSafeArea()
                     .onTapGesture { overlayManager.dismiss() }
-                
+
                 overlayView(overlay)
             }
         }
         .animation(.easeInOut(duration: ICOSShellTokens.shellVisibilityAnimationDuration), value: overlayManager.activeOverlay != nil)
     }
-    
+
     @ViewBuilder
     private func overlayView(_ overlay: ICOSOverlay) -> some View {
         switch overlay {

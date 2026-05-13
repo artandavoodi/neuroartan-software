@@ -16,7 +16,6 @@ RE_TAGS = re.compile(
 
 RE_HANDLER = re.compile(r"^([\w.]*?)(\(.*?\))?$")
 
-
 class Tag(NamedTuple):
     """A tag in console markup."""
 
@@ -39,11 +38,9 @@ class Tag(NamedTuple):
             else f"[{self.name}={self.parameters}]"
         )
 
-
 _ReStringMatch = Match[str]  # regex match object
 _ReSubCallable = Callable[[_ReStringMatch], str]  # Callable invoked by re.sub
 _EscapeSubMethod = Callable[[_ReSubCallable, str], str]  # Sub method of a compiled re
-
 
 def escape(
     markup: str,
@@ -68,7 +65,6 @@ def escape(
         return markup + "\\"
 
     return markup
-
 
 def _parse(markup: str) -> Iterable[Tuple[int, Optional[str], Optional[Tag]]]:
     """Parse markup in to an iterable of tuples of (position, text, tag).
@@ -102,7 +98,6 @@ def _parse(markup: str) -> Iterable[Tuple[int, Optional[str], Optional[Tag]]]:
     if position < len(markup):
         yield position, markup[position:], None
 
-
 def render(
     markup: str,
     style: Union[str, Style] = "",
@@ -116,7 +111,6 @@ def render(
         style: (Union[str, Style]): The style to use.
         emoji (bool, optional): Also render emoji code. Defaults to True.
         emoji_variant (str, optional): Optional emoji variant, either "text" or "emoji". Defaults to None.
-
 
     Raises:
         MarkupError: If there is a syntax error in the markup.
@@ -229,7 +223,6 @@ def render(
 
     text.spans = sorted(spans[::-1], key=attrgetter("start"))
     return text
-
 
 if __name__ == "__main__":  # pragma: no cover
     MARKUP = [

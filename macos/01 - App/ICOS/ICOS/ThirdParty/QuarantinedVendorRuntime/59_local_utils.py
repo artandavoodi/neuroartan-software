@@ -19,7 +19,6 @@ from playwright._impl._api_structures import HeadersArray
 from playwright._impl._connection import ChannelOwner, StackFrame
 from playwright._impl._helper import HarLookupResult, locals_to_params
 
-
 class LocalUtils(ChannelOwner):
     def __init__(
         self, parent: ChannelOwner, type: str, guid: str, initializer: Dict
@@ -82,7 +81,6 @@ class LocalUtils(ChannelOwner):
                 }
             },
         )
-
 
 def parse_device_descriptor(dict: Dict) -> Dict:
     return {

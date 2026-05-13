@@ -44,7 +44,6 @@ BaseCandidate = Union[
 # Avoid conflicting with the PyPI package "Python".
 REQUIRES_PYTHON_IDENTIFIER = cast(NormalizedName, "<Python from Requires-Python>")
 
-
 def as_base_candidate(candidate: Candidate) -> BaseCandidate | None:
     """The runtime version of BaseCandidate."""
     base_candidate_classes = (
@@ -55,7 +54,6 @@ def as_base_candidate(candidate: Candidate) -> BaseCandidate | None:
     if isinstance(candidate, base_candidate_classes):
         return candidate
     return None
-
 
 def make_install_req_from_link(
     link: Link,
@@ -86,7 +84,6 @@ def make_install_req_from_link(
     ireq.extras = template.extras
     return ireq
 
-
 def make_install_req_from_editable(
     link: Link, template: InstallRequirement
 ) -> InstallRequirement:
@@ -108,7 +105,6 @@ def make_install_req_from_editable(
     ireq.extras = template.extras
     return ireq
 
-
 def _make_install_req_from_dist(
     dist: BaseDistribution, template: InstallRequirement
 ) -> InstallRequirement:
@@ -129,7 +125,6 @@ def _make_install_req_from_dist(
     )
     ireq.satisfied_by = dist
     return ireq
-
 
 class _InstallRequirementBackedCandidate(Candidate):
     """A candidate backed by an ``InstallRequirement``.
@@ -279,7 +274,6 @@ class _InstallRequirementBackedCandidate(Candidate):
     def get_install_requirement(self) -> InstallRequirement | None:
         return self._ireq
 
-
 class LinkCandidate(_InstallRequirementBackedCandidate):
     is_editable = False
 
@@ -336,7 +330,6 @@ class LinkCandidate(_InstallRequirementBackedCandidate):
         preparer = self._factory.preparer
         return preparer.prepare_linked_requirement(self._ireq, parallel_builds=True)
 
-
 class EditableCandidate(_InstallRequirementBackedCandidate):
     is_editable = True
 
@@ -359,7 +352,6 @@ class EditableCandidate(_InstallRequirementBackedCandidate):
 
     def _prepare_distribution(self) -> BaseDistribution:
         return self._factory.preparer.prepare_editable_requirement(self._ireq)
-
 
 class AlreadyInstalledCandidate(Candidate):
     is_installed = True
@@ -430,7 +422,6 @@ class AlreadyInstalledCandidate(Candidate):
 
     def get_install_requirement(self) -> InstallRequirement | None:
         return None
-
 
 class ExtrasCandidate(Candidate):
     """A candidate that has 'extras', indicating additional dependencies.
@@ -554,7 +545,6 @@ class ExtrasCandidate(Candidate):
         # depend on the base candidate, and we'll get the
         # install requirement from that.
         return None
-
 
 class RequiresPythonCandidate(Candidate):
     is_installed = False

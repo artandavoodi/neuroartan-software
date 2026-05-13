@@ -44,7 +44,6 @@ from ._util import DeferredError
 
 TYPE_CHECKING = False
 
-
 def isInt(f: Any) -> int:
     try:
         i = int(f)
@@ -55,15 +54,12 @@ def isInt(f: Any) -> int:
     except (ValueError, OverflowError):
         return 0
 
-
 iforms = [1, 3, -11, -12, -21, -22]
-
 
 # There is no magic number to identify Spider files, so just check a
 # series of header locations to see if they have reasonable values.
 # Returns no. of bytes in the header, if it is a valid Spider header,
 # otherwise returns 0
-
 
 def isSpiderHeader(t: tuple[float, ...]) -> int:
     h = (99,) + t  # add 1 value so can use spider header index start=1
@@ -84,7 +80,6 @@ def isSpiderHeader(t: tuple[float, ...]) -> int:
     # looks like a valid header
     return labbyt
 
-
 def isSpiderImage(filename: str) -> int:
     with open(filename, "rb") as fp:
         f = fp.read(92)  # read 23 * 4 bytes
@@ -94,7 +89,6 @@ def isSpiderImage(filename: str) -> int:
         t = struct.unpack("<23f", f)  # little-endian
         hdrlen = isSpiderHeader(t)
     return hdrlen
-
 
 class SpiderImageFile(ImageFile.ImageFile):
     format = "SPIDER"
@@ -209,10 +203,8 @@ class SpiderImageFile(ImageFile.ImageFile):
 
         return ImageTk.PhotoImage(self.convert2byte(), palette=256)
 
-
 # --------------------------------------------------------------------
 # Image series
-
 
 # given a list of filenames, return a list of images
 def loadImageSeries(filelist: list[str] | None = None) -> list[Image.Image] | None:
@@ -237,10 +229,8 @@ def loadImageSeries(filelist: list[str] | None = None) -> list[Image.Image] | No
         byte_imgs.append(byte_im)
     return byte_imgs
 
-
 # --------------------------------------------------------------------
 # For saving images in Spider format
-
 
 def makeSpiderHeader(im: Image.Image) -> list[bytes]:
     nsam, nrow = im.size
@@ -271,7 +261,6 @@ def makeSpiderHeader(im: Image.Image) -> list[bytes]:
     # pack binary data into a string
     return [struct.pack("f", v) for v in hdr]
 
-
 def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     if im.mode != "F":
         im = im.convert("F")
@@ -287,7 +276,6 @@ def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     rawmode = "F;32NF"  # 32-bit native floating point
     ImageFile._save(im, fp, [ImageFile._Tile("raw", (0, 0) + im.size, 0, rawmode)])
 
-
 def _save_spider(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     # get the filename extension and register it with Image
     if filename_ext := os.path.splitext(filename)[1]:
@@ -295,9 +283,7 @@ def _save_spider(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
         Image.register_extension(SpiderImageFile.format, ext)
     _save(im, fp, filename)
 
-
 # --------------------------------------------------------------------
-
 
 Image.register_open(SpiderImageFile.format, SpiderImageFile)
 Image.register_save(SpiderImageFile.format, _save_spider)

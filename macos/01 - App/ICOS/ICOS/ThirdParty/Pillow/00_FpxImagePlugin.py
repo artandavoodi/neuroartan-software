@@ -36,18 +36,14 @@ MODES = {
     (0x00038000, 0x00038001, 0x00038002, 0x00037FFE): ("RGBA", "RGBA"),
 }
 
-
 #
 # --------------------------------------------------------------------
-
 
 def _accept(prefix: bytes) -> bool:
     return prefix.startswith(olefile.MAGIC)
 
-
 ##
 # Image plugin for the FlashPix images.
-
 
 class FpxImageFile(ImageFile.ImageFile):
     format = "FPX"
@@ -248,10 +244,8 @@ class FpxImageFile(ImageFile.ImageFile):
         self.ole.close()
         super().__exit__()
 
-
 #
 # --------------------------------------------------------------------
-
 
 Image.register_open(FpxImageFile.format, FpxImageFile, _accept)
 

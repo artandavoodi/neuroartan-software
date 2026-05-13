@@ -7,7 +7,6 @@ from typing import Any
 import json
 import time
 
-
 # ============================================================
 # Sovereign Root
 # ============================================================
@@ -71,7 +70,6 @@ NATIVE_MODEL_REGISTRY = (
 MODEL_TRAINING_SAFETY_POLICY = (
     SAFETY_ROOT / "model_training_safety_policy.json"
 )
-
 
 # ============================================================
 # Model Foundry Controller
@@ -152,7 +150,6 @@ class ModelFoundryController:
             }
         )
 
-
     # ========================================================
     # JSON Loading
     # ========================================================
@@ -176,7 +173,6 @@ class ModelFoundryController:
 
         except Exception:
             return fallback
-
 
     # ========================================================
     # Interaction Ingestion
@@ -210,7 +206,6 @@ class ModelFoundryController:
 
         return interaction
 
-
     # ========================================================
     # Token Intelligence
     # ========================================================
@@ -240,7 +235,6 @@ class ModelFoundryController:
         )
 
         return token_event
-
 
     # ========================================================
     # Emotional Signal Mapping
@@ -294,7 +288,6 @@ class ModelFoundryController:
 
         return signal
 
-
     # ========================================================
     # Dataset Evolution
     # ========================================================
@@ -325,7 +318,6 @@ class ModelFoundryController:
 
         return dataset_entry
 
-
     # ========================================================
     # Runtime Overview
     # ========================================================
@@ -348,7 +340,6 @@ class ModelFoundryController:
                 True,
             ),
         }
-
 
 # ============================================================
 # Runtime Entry

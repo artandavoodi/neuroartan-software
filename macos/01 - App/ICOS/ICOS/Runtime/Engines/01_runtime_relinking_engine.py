@@ -30,13 +30,11 @@ import os
 import re
 import subprocess
 
-
 class RelinkStatus(str, Enum):
     PENDING = "pending"
     VALID = "valid"
     BROKEN = "broken"
     REPAIRED = "repaired"
-
 
 @dataclass
 class RuntimeReference:
@@ -45,7 +43,6 @@ class RuntimeReference:
     target: str
     status: RelinkStatus = RelinkStatus.PENDING
     metadata: Dict[str, Any] = field(default_factory=dict)
-
 
 class RuntimeRelinkingEngine:
     """
@@ -1088,7 +1085,6 @@ class RuntimeRelinkingEngine:
             ],
         }
 
-
 #
 # ============================================================
 # Compatibility Runtime Layer
@@ -1100,10 +1096,8 @@ runtime_router = RuntimeRelinkingEngine(
     root_path=RUNTIME_ROOT
 )
 
-
 def router_summary() -> Dict[str, Any]:
     return runtime_router.router_summary()
-
 
 def execute_command(
     command: str,
@@ -1113,7 +1107,6 @@ def execute_command(
         command=command,
         payload=payload,
     )
-
 
 def runtime_status() -> Dict[str, Any]:
     return {

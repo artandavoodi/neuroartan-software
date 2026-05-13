@@ -62,7 +62,6 @@ log = logging.getLogger(__name__)
 
 _TYPE_TIMEOUT = typing.Union[Timeout, float, _TYPE_DEFAULT, None]
 
-
 # Pool objects
 class ConnectionPool:
     """
@@ -112,10 +111,8 @@ class ConnectionPool:
         Close all pooled connections and disable the pool.
         """
 
-
 # This is taken from http://hg.python.org/cpython/file/7aaba721ebc0/Lib/socket.py#l252
 _blocking_errnos = {errno.EAGAIN, errno.EWOULDBLOCK}
-
 
 class HTTPConnectionPool(ConnectionPool, RequestMethods):
     """
@@ -959,7 +956,6 @@ class HTTPConnectionPool(ConnectionPool, RequestMethods):
 
         return response
 
-
 class HTTPSConnectionPool(HTTPConnectionPool):
     """
     Same as :class:`.HTTPConnectionPool`, but HTTPS.
@@ -1104,7 +1100,6 @@ class HTTPSConnectionPool(HTTPConnectionPool):
                 InsecureRequestWarning,
             )
 
-
 def connection_from_url(url: str, **kw: typing.Any) -> HTTPConnectionPool:
     """
     Given a url, return an :class:`.ConnectionPool` instance of its host.
@@ -1133,14 +1128,11 @@ def connection_from_url(url: str, **kw: typing.Any) -> HTTPConnectionPool:
     else:
         return HTTPConnectionPool(host, port=port, **kw)  # type: ignore[arg-type]
 
-
 @typing.overload
 def _normalize_host(host: None, scheme: str | None) -> None: ...
 
-
 @typing.overload
 def _normalize_host(host: str, scheme: str | None) -> str: ...
-
 
 def _normalize_host(host: str | None, scheme: str | None) -> str | None:
     """
@@ -1159,13 +1151,11 @@ def _normalize_host(host: str | None, scheme: str | None) -> str | None:
         host = host[1:-1]
     return host
 
-
 def _url_from_pool(
     pool: HTTPConnectionPool | HTTPSConnectionPool, path: str | None = None
 ) -> str:
     """Returns the URL from a given connection pool. This is mainly used for testing and logging."""
     return Url(scheme=pool.scheme, host=pool.host, port=pool.port, path=path).url
-
 
 def _close_pool_connections(pool: queue.LifoQueue[typing.Any]) -> None:
     """Drains a queue of connections and closes each one."""

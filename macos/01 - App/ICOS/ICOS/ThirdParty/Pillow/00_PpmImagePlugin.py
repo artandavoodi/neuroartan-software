@@ -45,14 +45,11 @@ MODES = {
     b"PyCMYK": "CMYK",
 }
 
-
 def _accept(prefix: bytes) -> bool:
     return len(prefix) >= 2 and prefix.startswith(b"P") and prefix[1] in b"0123456fy"
 
-
 ##
 # Image plugin for PBM, PGM, and PPM images.
-
 
 class PpmImageFile(ImageFile.ImageFile):
     format = "PPM"
@@ -155,10 +152,8 @@ class PpmImageFile(ImageFile.ImageFile):
             ImageFile._Tile(decoder_name, (0, 0) + self.size, self.fp.tell(), args)
         ]
 
-
 #
 # --------------------------------------------------------------------
-
 
 class PpmPlainDecoder(ImageFile.PyDecoder):
     _pulls_fd = True
@@ -296,7 +291,6 @@ class PpmPlainDecoder(ImageFile.PyDecoder):
         self.set_as_raw(bytes(data), rawmode)
         return -1, 0
 
-
 class PpmDecoder(ImageFile.PyDecoder):
     _pulls_fd = True
 
@@ -325,10 +319,8 @@ class PpmDecoder(ImageFile.PyDecoder):
         self.set_as_raw(bytes(data), rawmode)
         return -1, 0
 
-
 #
 # --------------------------------------------------------------------
-
 
 def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     if im.mode == "1":
@@ -359,10 +351,8 @@ def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
         im, fp, [ImageFile._Tile("raw", (0, 0) + im.size, 0, (rawmode, 0, row_order))]
     )
 
-
 #
 # --------------------------------------------------------------------
-
 
 Image.register_open(PpmImageFile.format, PpmImageFile, _accept)
 Image.register_save(PpmImageFile.format, _save)

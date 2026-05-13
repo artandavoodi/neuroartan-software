@@ -5,7 +5,6 @@
 The Python slot functions for TGreenlet.
  */
 
-
 #define PY_SSIZE_T_CLEAN
 #include <Python.h>
 #include "structmember.h" // PyMemberDef
@@ -16,7 +15,6 @@ The Python slot functions for TGreenlet.
 // #include "TUserGreenlet.cpp"
 // #include "TMainGreenlet.cpp"
 // #include "TBrokenGreenlet.cpp"
-
 
 #include "greenlet_refs.hpp"
 #include "greenlet_slp_switch.hpp"
@@ -49,7 +47,6 @@ using greenlet::ThreadState;
 using greenlet::PythonState;
 using greenlet::refs::PyCriticalObjectSection;
 
-
 static PyGreenlet*
 green_new(PyTypeObject* type, PyObject* UNUSED(args), PyObject* UNUSED(kwds))
 {
@@ -68,7 +65,6 @@ green_new(PyTypeObject* type, PyObject* UNUSED(args), PyObject* UNUSED(kwds))
     }
     return o;
 }
-
 
 // green_init is used in the tp_init slot. So it's important that
 // it can be called directly from CPython. Thus, we don't use
@@ -102,8 +98,6 @@ green_init(PyGreenlet* self, PyObject* args, PyObject* kwargs)
     }
     return 0;
 }
-
-
 
 static int
 green_traverse(PyGreenlet* self, visitproc visit, void* arg)
@@ -168,7 +162,6 @@ green_is_gc(PyObject* _self)
     }
     return result;
 }
-
 
 static int
 green_clear(PyGreenlet* self)
@@ -299,7 +292,6 @@ _green_dealloc_kill_started_non_main_greenlet(BorrowedGreenlet self)
     return 1;
 }
 
-
 static void
 green_dealloc(PyGreenlet* self)
 {
@@ -330,8 +322,6 @@ green_dealloc(PyGreenlet* self)
     Py_TYPE(self)->tp_free((PyObject*)self);
 }
 
-
-
 static OwnedObject
 internal_green_throw(BorrowedGreenlet self, PyErrPieces& err_pieces)
 {
@@ -346,8 +336,6 @@ internal_green_throw(BorrowedGreenlet self, PyErrPieces& err_pieces)
 
     return single_result(self->g_switch());
 }
-
-
 
 PyDoc_STRVAR(
     green_switch_doc,
@@ -393,7 +381,6 @@ green_switch(PyGreenlet* self, PyObject* args, PyObject* kwargs)
         return nullptr;
     }
 #endif
-
 
     using greenlet::SwitchingArgs;
     SwitchingArgs switch_args(OwnedObject::owning(args), OwnedObject::owning(kwargs));
@@ -564,7 +551,6 @@ _green_not_dead(BorrowedGreenlet self)
     return self->active() || !self->started();
 }
 
-
 static PyObject*
 green_getdead(PyGreenlet* self, void* UNUSED(context))
 {
@@ -583,7 +569,6 @@ green_get_stack_saved(PyGreenlet* self, void* UNUSED(context))
     return PyLong_FromSsize_t(self->pimpl->stack_saved());
 }
 
-
 static PyObject*
 green_getrun(PyGreenlet* self, void* UNUSED(context))
 {
@@ -596,7 +581,6 @@ green_getrun(PyGreenlet* self, void* UNUSED(context))
         return nullptr;
     }
 }
-
 
 static int
 green_setrun(PyGreenlet* self, PyObject* nrun, void* UNUSED(context))
@@ -618,7 +602,6 @@ green_getparent(PyGreenlet* self, void* UNUSED(context))
     return BorrowedGreenlet(self)->parent().acquire_or_None();
 }
 
-
 static int
 green_setparent(PyGreenlet* self, PyObject* nparent, void* UNUSED(context))
 {
@@ -631,7 +614,6 @@ green_setparent(PyGreenlet* self, PyObject* nparent, void* UNUSED(context))
     }
     return 0;
 }
-
 
 static PyObject*
 green_getcontext(const PyGreenlet* self, void* UNUSED(context))
@@ -660,7 +642,6 @@ green_setcontext(PyGreenlet* self, PyObject* nctx, void* UNUSED(context))
     }
 }
 
-
 static PyObject*
 green_getframe(PyGreenlet* self, void* UNUSED(context))
 {
@@ -668,7 +649,6 @@ green_getframe(PyGreenlet* self, void* UNUSED(context))
     const PythonState::OwnedFrame& top_frame = BorrowedGreenlet(self)->top_frame();
     return top_frame.acquire_or_None();
 }
-
 
 static PyObject*
 green_getstate(PyGreenlet* self)
@@ -744,7 +724,6 @@ green_repr(PyGreenlet* _self)
     return result;
 }
 
-
 static PyMethodDef green_methods[] = {
     {
       .ml_name="switch",
@@ -780,7 +759,6 @@ static PyMemberDef green_members[] = {
 static PyNumberMethods green_as_number = {
   .nb_bool=(inquiry)green_bool,
 };
-
 
 PyTypeObject PyGreenlet_Type = {
     .ob_base=PyVarObject_HEAD_INIT(NULL, 0)

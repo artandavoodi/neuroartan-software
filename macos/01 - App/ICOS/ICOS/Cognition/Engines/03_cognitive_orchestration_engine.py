@@ -26,7 +26,6 @@ from dataclasses import dataclass, field
 from enum import Enum
 from typing import Any, Dict, List, Optional
 
-
 class CognitiveState(str, Enum):
     IDLE = "idle"
     SCANNING = "scanning"
@@ -37,7 +36,6 @@ class CognitiveState(str, Enum):
     REPAIRING = "repairing"
     LEARNING = "learning"
 
-
 @dataclass
 class CognitiveTask:
     task_id: str
@@ -46,7 +44,6 @@ class CognitiveTask:
     constraints: List[str] = field(default_factory=list)
     priority: int = 0
 
-
 @dataclass
 class CognitivePlan:
     plan_id: str
@@ -54,7 +51,6 @@ class CognitivePlan:
     steps: List[str] = field(default_factory=list)
     verification_required: bool = True
     runtime_targets: List[str] = field(default_factory=list)
-
 
 class SovereignCognitiveOrchestrationEngine:
     """
@@ -169,7 +165,6 @@ class SovereignCognitiveOrchestrationEngine:
 
     def reset_state(self) -> None:
         self.state = CognitiveState.IDLE
-
 
 if __name__ == "__main__":
     engine = SovereignCognitiveOrchestrationEngine()

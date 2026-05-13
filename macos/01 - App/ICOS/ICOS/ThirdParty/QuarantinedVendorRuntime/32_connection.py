@@ -49,7 +49,6 @@ if TYPE_CHECKING:
 
 TimeoutCalculator = Optional[Callable[[Optional[float]], float]]
 
-
 class Channel(AsyncIOEventEmitter):
     def __init__(self, connection: "Connection", object: "ChannelOwner") -> None:
         super().__init__()
@@ -143,7 +142,6 @@ class Channel(AsyncIOEventEmitter):
         key = next(iter(result))
         return result[key]
 
-
 class ChannelOwner(AsyncIOEventEmitter):
     def __init__(
         self,
@@ -216,7 +214,6 @@ class ChannelOwner(AsyncIOEventEmitter):
         if not self.listeners(event):
             self._update_subscription(event, False)
 
-
 class ProtocolCallback:
     def __init__(self, loop: asyncio.AbstractEventLoop, no_reply: bool = False) -> None:
         self.stack_trace: traceback.StackSummary
@@ -241,7 +238,6 @@ class ProtocolCallback:
                 )
             )
 
-
 class RootChannelOwner(ChannelOwner):
     def __init__(self, connection: "Connection") -> None:
         super().__init__(connection, "Root", "", {})
@@ -256,7 +252,6 @@ class RootChannelOwner(ChannelOwner):
                 },
             )
         )
-
 
 class Connection(EventEmitter):
     def __init__(
@@ -578,14 +573,11 @@ class Connection(EventEmitter):
         finally:
             self._api_zone.set(None)
 
-
 def from_channel(channel: Channel) -> Any:
     return channel._object
 
-
 def from_nullable_channel(channel: Optional[Channel]) -> Optional[Any]:
     return channel._object if channel else None
-
 
 class StackFrame(TypedDict):
     file: str
@@ -593,12 +585,10 @@ class StackFrame(TypedDict):
     column: int
     function: Optional[str]
 
-
 class ParsedStackTrace(TypedDict):
     frames: List[StackFrame]
     apiName: Optional[str]
     title: Optional[str]
-
 
 def _extract_stack_trace_information_from_stack(
     st: List[inspect.FrameInfo], is_internal: bool, title: str = None
@@ -644,7 +634,6 @@ def _extract_stack_trace_information_from_stack(
         "title": title,
     }
 
-
 def _augment_params(
     params: Optional[Dict],
     timeout_calculator: Optional[Callable[[Optional[float]], float]],
@@ -655,7 +644,6 @@ def _augment_params(
         params["timeout"] = timeout_calculator(params.get("timeout"))
     return _filter_none(params)
 
-
 def _filter_none(d: Mapping) -> Dict:
     result = {}
     for k, v in d.items():
@@ -663,7 +651,6 @@ def _filter_none(d: Mapping) -> Dict:
             continue
         result[k] = _filter_none(v) if isinstance(v, dict) else v
     return result
-
 
 def format_call_log(log: Optional[List[str]]) -> str:
     if not log:

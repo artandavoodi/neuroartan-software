@@ -108,7 +108,6 @@ if TYPE_CHECKING:  # pragma: no cover
     from playwright._impl._locator import FrameLocator, Locator
     from playwright._impl._network import WebSocket
 
-
 class LocatorHandler:
     locator: "Locator"
     handler: Union[Callable[["Locator"], Any], Callable[..., Any]]
@@ -126,7 +125,6 @@ class LocatorHandler:
         if arg_count == 0:
             return self._handler()
         return self._handler(self.locator)
-
 
 class Page(ChannelOwner):
     Events = SimpleNamespace(
@@ -1477,7 +1475,6 @@ class Page(ChannelOwner):
     async def cancel_pick_locator(self) -> None:
         await self._channel.send("cancelPickLocator", None, {})
 
-
 class Worker(ChannelOwner):
     Events = SimpleNamespace(Close="close", Console="console")
 
@@ -1555,7 +1552,6 @@ class Worker(ChannelOwner):
         waiter.wait_for_event(self, event, predicate)
         return EventContextManagerImpl(waiter.result())
 
-
 class BindingCall(ChannelOwner):
     def __init__(
         self, parent: ChannelOwner, type: str, guid: str, initializer: Dict
@@ -1584,14 +1580,12 @@ class BindingCall(ChannelOwner):
                 )
             )
 
-
 def trim_url(param: Union[URLMatchRequest, URLMatchResponse]) -> Optional[str]:
     if isinstance(param, re.Pattern):
         return trim_end(param.pattern)
     if isinstance(param, str):
         return trim_end(param)
     return None
-
 
 def trim_end(s: str) -> str:
     if len(s) > 50:

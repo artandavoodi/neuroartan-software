@@ -68,13 +68,11 @@ if TYPE_CHECKING:  # pragma: no cover
     from playwright._impl._frame import Frame
     from playwright._impl._page import Page, Worker
 
-
 class FallbackOverrideParameters(TypedDict, total=False):
     url: Optional[str]
     method: Optional[str]
     headers: Optional[Dict[str, str]]
     postData: Optional[Union[str, bytes]]
-
 
 class SerializedFallbackOverrides:
     def __init__(self) -> None:
@@ -83,14 +81,12 @@ class SerializedFallbackOverrides:
         self.headers: Optional[Dict[str, str]] = None
         self.post_data_buffer: Optional[bytes] = None
 
-
 def serialize_headers(headers: Dict[str, str]) -> HeadersArray:
     return [
         {"name": name, "value": value}
         for name, value in headers.items()
         if value is not None
     ]
-
 
 async def to_client_certificates_protocol(
     clientCertificates: Optional[List[ClientCertificate]],
@@ -124,7 +120,6 @@ async def to_client_certificates_protocol(
             ).decode()
         out.append(out_record)
     return out
-
 
 class Request(ChannelOwner):
     def __init__(
@@ -333,7 +328,6 @@ class Request(ChannelOwner):
         if not frame:
             return None
         return cast("Frame", frame)._page
-
 
 class Route(ChannelOwner):
     def __init__(
@@ -564,7 +558,6 @@ class Route(ChannelOwner):
         if target_closed_future.done():
             await asyncio.gather(fut, return_exceptions=True)
 
-
 def _create_task_and_ignore_exception(
     loop: asyncio.AbstractEventLoop, coro: Coroutine
 ) -> None:
@@ -575,7 +568,6 @@ def _create_task_and_ignore_exception(
             pass
 
     loop.create_task(_ignore_exception())
-
 
 class ServerWebSocketRoute:
     def __init__(self, ws: "WebSocketRoute"):
@@ -627,7 +619,6 @@ class ServerWebSocketRoute:
                     {"message": base64.b64encode(message).decode(), "isBase64": True},
                 ),
             )
-
 
 class WebSocketRoute(ChannelOwner):
     def __init__(
@@ -753,7 +744,6 @@ class WebSocketRoute(ChannelOwner):
         except Exception:
             pass
 
-
 class WebSocketRouteHandler:
     def __init__(
         self,
@@ -796,7 +786,6 @@ class WebSocketRouteHandler:
         if asyncio.iscoroutine(coro_or_future):
             await coro_or_future
         await websocket_route._after_handle()
-
 
 class Response(ChannelOwner):
     def __init__(
@@ -931,7 +920,6 @@ class Response(ChannelOwner):
     def frame(self) -> "Frame":
         return self._request.frame
 
-
 class WebSocket(ChannelOwner):
     Events = SimpleNamespace(
         Close="close",
@@ -1015,7 +1003,6 @@ class WebSocket(ChannelOwner):
     def _on_close(self) -> None:
         self._is_closed = True
         self.emit(WebSocket.Events.Close, self)
-
 
 class RawHeaders:
     def __init__(self, headers: HeadersArray) -> None:

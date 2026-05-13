@@ -6,7 +6,6 @@
 
 namespace greenlet {
 
-
 ExceptionState::ExceptionState()
 {
     this->clear();
@@ -55,7 +54,6 @@ void ExceptionState::tp_clear() noexcept
     Py_CLEAR(this->exc_state.exc_traceback);
 #endif
 }
-
 
 }; // namespace greenlet
 

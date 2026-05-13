@@ -20,14 +20,11 @@ from __future__ import annotations
 from . import Image, ImageFile, ImagePalette
 from ._binary import i32be as i32
 
-
 def _accept(prefix: bytes) -> bool:
     return len(prefix) >= 4 and i32(prefix) == 0x59A66A95
 
-
 ##
 # Image plugin for Sun raster files.
-
 
 class SunImageFile(ImageFile.ImageFile):
     format = "SUN"
@@ -135,10 +132,8 @@ class SunImageFile(ImageFile.ImageFile):
             msg = "Unsupported Sun Raster file type"
             raise SyntaxError(msg)
 
-
 #
 # registry
-
 
 Image.register_open(SunImageFile.format, SunImageFile, _accept)
 

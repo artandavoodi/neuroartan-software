@@ -7,7 +7,6 @@ from typing import Any
 import json
 import sys
 
-
 # ============================================================
 # Sovereign Root
 # ============================================================
@@ -57,7 +56,6 @@ REFLECTION_LOG = (
     REFLECTION_ROOT / "runtime_reflection_log.json"
 )
 
-
 # ============================================================
 # Direct Brain Interface
 # ============================================================
@@ -95,7 +93,6 @@ class DirectBrainInterface:
             BRAIN_MEMORY
         )
 
-
     # ========================================================
     # JSON Loading
     # ========================================================
@@ -108,7 +105,6 @@ class DirectBrainInterface:
             return json.loads(path.read_text())
         except Exception:
             return {}
-
 
     # ========================================================
     # Brain State
@@ -126,7 +122,6 @@ class DirectBrainInterface:
             )
         )
 
-
     def deactivate_direct_brain_mode(self) -> None:
         self.brain_state[
             "direct_brain_mode"
@@ -138,7 +133,6 @@ class DirectBrainInterface:
                 indent=2,
             )
         )
-
 
     # ========================================================
     # Runtime Identity
@@ -161,7 +155,6 @@ class DirectBrainInterface:
             ),
         }
 
-
     # ========================================================
     # Boundary Awareness
     # ========================================================
@@ -182,7 +175,6 @@ class DirectBrainInterface:
 
         return False
 
-
     # ========================================================
     # Response Override
     # ========================================================
@@ -199,7 +191,6 @@ class DirectBrainInterface:
             )
 
         return response
-
 
     # ========================================================
     # Reflection Logging
@@ -238,7 +229,6 @@ class DirectBrainInterface:
             )
         )
 
-
     # ========================================================
     # Direct Brain Communication
     # ========================================================
@@ -269,7 +259,6 @@ class DirectBrainInterface:
             "final_output": final_output,
             "brain_active": True,
         }
-
 
 # ============================================================
 # Runtime Entry

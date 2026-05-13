@@ -36,7 +36,6 @@ def g2_run(arg):
     results.append(('g2 from parent', parent))
     return 'g2 done'
 
-
 greenlet.settrace(tracefunc)
 
 g1 = greenlet.greenlet(g1_run)

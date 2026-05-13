@@ -34,7 +34,6 @@ if TYPE_CHECKING:
 
 _OPTIMISTIC_BACKJUMPING_RATIO: float = 0.1
 
-
 def _build_result(state: State[RT, CT, KT]) -> Result[RT, CT, KT]:
     mapping = state.mapping
     all_keys: dict[int, KT | None] = {id(v): k for k, v in mapping.items()}
@@ -63,7 +62,6 @@ def _build_result(state: State[RT, CT, KT]) -> Result[RT, CT, KT]:
         graph=graph,
         criteria=state.criteria,
     )
-
 
 class Resolution(Generic[RT, CT, KT]):
     """Stateful resolution object.
@@ -559,7 +557,6 @@ class Resolution(Generic[RT, CT, KT]):
 
         raise ResolutionTooDeep(max_rounds)
 
-
 class Resolver(AbstractResolver[RT, CT, KT]):
     """The thing that performs the actual resolution work."""
 
@@ -600,7 +597,6 @@ class Resolver(AbstractResolver[RT, CT, KT]):
         resolution = Resolution(self.provider, self.reporter)
         state = resolution.resolve(requirements, max_rounds=max_rounds)
         return _build_result(state)
-
 
 def _has_route_to_root(
     criteria: Mapping[KT, Criterion[RT, CT]],

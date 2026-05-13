@@ -37,7 +37,6 @@ struct MessageBubbleView: View {
         .id(message.id)
     }
 
-
     // MARK: - Bubble
 
     private var bubble: some View {

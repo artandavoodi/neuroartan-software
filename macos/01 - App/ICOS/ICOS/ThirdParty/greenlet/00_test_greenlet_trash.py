@@ -28,7 +28,6 @@ implementation (like most of the rest of this package):
 
 import unittest
 
-
 class TestTrashCanReEnter(unittest.TestCase):
 
     def test_it(self):
@@ -140,7 +139,6 @@ class TestTrashCanReEnter(unittest.TestCase):
                 if greenlet.getcurrent() is not main:
                     Dealloc.DESTROYED_BG += 1
 
-
         def background_greenlet():
             # We direct through a second function, instead of
             # directly calling ``make_some()``, so that we have complete
@@ -158,7 +156,6 @@ class TestTrashCanReEnter(unittest.TestCase):
                 t = (Dealloc(i), t)
                 i -= 1
             return t
-
 
         some = make_some()
         self.assertEqual(Dealloc.CREATED, OBJECTS_PER_CONTAINER)
@@ -189,7 +186,6 @@ class TestTrashCanReEnter(unittest.TestCase):
 
         import gc
         gc.collect()
-
 
 if __name__ == '__main__':
     unittest.main()

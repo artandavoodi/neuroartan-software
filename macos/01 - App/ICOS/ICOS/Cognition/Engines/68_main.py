@@ -14,7 +14,6 @@ from pip._vendor.rich.syntax import Syntax
 from pip._vendor.rich.table import Table
 from pip._vendor.rich.text import Text
 
-
 class ColorBox:
     def __rich_console__(
         self, console: Console, options: ConsoleOptions
@@ -34,7 +33,6 @@ class ColorBox:
         self, console: "Console", options: ConsoleOptions
     ) -> Measurement:
         return Measurement(1, options.max_width)
-
 
 def make_test_card() -> Table:
     """Get a renderable that demonstrates a number of features."""
@@ -204,7 +202,6 @@ Supports much of the *markdown* __syntax__!
         """Progress bars, columns, styled logging handler, tracebacks, etc...""",
     )
     return table
-
 
 if __name__ == "__main__":  # pragma: no cover
     from pip._vendor.rich.panel import Panel

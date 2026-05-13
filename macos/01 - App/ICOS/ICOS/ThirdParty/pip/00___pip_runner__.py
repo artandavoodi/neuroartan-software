@@ -11,10 +11,8 @@ import sys
 # Copied from pyproject.toml
 PYTHON_REQUIRES = (3, 10)
 
-
 def version_str(version):  # type: ignore
     return ".".join(str(v) for v in version)
-
 
 if sys.version_info[:2] < PYTHON_REQUIRES:
     raise SystemExit(
@@ -32,7 +30,6 @@ from os.path import dirname  # noqa: E402
 
 PIP_SOURCES_ROOT = dirname(dirname(__file__))
 
-
 class PipImportRedirectingFinder:
     @classmethod
     def find_spec(self, fullname, path=None, target=None):  # type: ignore
@@ -42,7 +39,6 @@ class PipImportRedirectingFinder:
         spec = PathFinder.find_spec(fullname, [PIP_SOURCES_ROOT], target)
         assert spec, (PIP_SOURCES_ROOT, fullname)
         return spec
-
 
 sys.meta_path.insert(0, PipImportRedirectingFinder())
 

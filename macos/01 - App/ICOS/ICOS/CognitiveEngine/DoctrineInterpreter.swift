@@ -19,7 +19,6 @@ final class DoctrineInterpreter {
         let executionMode: String
     }
 
-
     // ========================================================
     // Canonical Doctrine
     // ========================================================
@@ -32,7 +31,6 @@ final class DoctrineInterpreter {
         continuityModel: "persistent_continuity_memory",
         executionMode: "human_supervised_recursive_runtime"
     )
-
 
     // ========================================================
     // Runtime Interpretation
@@ -71,7 +69,6 @@ final class DoctrineInterpreter {
         ]
     }
 
-
     // ========================================================
     // Emotional Interpretation
     // ========================================================
@@ -101,7 +98,6 @@ final class DoctrineInterpreter {
         return "neutral"
     }
 
-
     // ========================================================
     // Governance Detection
     // ========================================================
@@ -125,7 +121,6 @@ final class DoctrineInterpreter {
         }
     }
 
-
     // ========================================================
     // Continuity Detection
     // ========================================================
@@ -147,7 +142,6 @@ final class DoctrineInterpreter {
             input.contains($0)
         }
     }
-
 
     // ========================================================
     // Runtime Health

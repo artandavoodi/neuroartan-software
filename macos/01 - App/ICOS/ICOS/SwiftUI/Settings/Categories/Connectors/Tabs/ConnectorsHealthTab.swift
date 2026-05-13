@@ -1,9 +1,20 @@
 import SwiftUI
 
-// MARK: - Connectors Health Tab
+// MARK: - Health Tab
 
 struct ConnectorsHealthTab: View {
     var body: some View {
-        EmptyView()
+        SettingsSectionCard(
+            title: "Health",
+            subtitle: "Connector status and diagnostics."
+        ) {
+            VStack(alignment: .leading, spacing: ICOSSpacing.sm) {
+                Text("Health")
+                    .font(ICOSSidebarTokens.itemTitleFont)
+                    .foregroundStyle(ICOSSidebarColors.textPrimary)
+                    .font(.system(size: ICOSControlTokens.profileMetaFontSize, weight: .medium))
+                    .foregroundStyle(ICOSSidebarColors.textSecondary)
+            }
+        }
     }
 }

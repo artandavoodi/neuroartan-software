@@ -54,7 +54,6 @@ if TYPE_CHECKING:
     from . import _imaging
     from ._typing import Buffer
 
-
 class LoadingStrategy(IntEnum):
     """.. versionadded:: 9.1.0"""
 
@@ -62,22 +61,18 @@ class LoadingStrategy(IntEnum):
     RGB_AFTER_DIFFERENT_PALETTE_ONLY = 1
     RGB_ALWAYS = 2
 
-
 #: .. versionadded:: 9.1.0
 LOADING_STRATEGY = LoadingStrategy.RGB_AFTER_FIRST
 
 # --------------------------------------------------------------------
 # Identify/read GIF files
 
-
 def _accept(prefix: bytes) -> bool:
     return prefix.startswith((b"GIF87a", b"GIF89a"))
-
 
 ##
 # Image plugin for GIF images.  This plugin supports both GIF87 and
 # GIF89 images.
-
 
 class GifImageFile(ImageFile.ImageFile):
     format = "GIF"
@@ -505,13 +500,10 @@ class GifImageFile(ImageFile.ImageFile):
     def tell(self) -> int:
         return self.__frame
 
-
 # --------------------------------------------------------------------
 # Write GIF files
 
-
 RAWMODE = {"1": "L", "L": "L", "P": "P"}
-
 
 def _normalize_mode(im: Image.Image) -> Image.Image:
     """
@@ -538,9 +530,7 @@ def _normalize_mode(im: Image.Image) -> Image.Image:
         return im
     return im.convert("L")
 
-
 _Palette = bytes | bytearray | list[int] | ImagePalette.ImagePalette
-
 
 def _normalize_palette(
     im: Image.Image, palette: _Palette | None, info: dict[str, Any]
@@ -612,7 +602,6 @@ def _normalize_palette(
     im.palette.palette = source_palette
     return im
 
-
 def _write_single_frame(
     im: Image.Image,
     fp: IO[bytes],
@@ -640,7 +629,6 @@ def _write_single_frame(
 
     fp.write(b"\0")  # end of image data
 
-
 def _getbbox(
     base_im: Image.Image, im_frame: Image.Image
 ) -> tuple[Image.Image, tuple[int, int, int, int] | None]:
@@ -653,12 +641,10 @@ def _getbbox(
     delta = ImageChops.subtract_modulo(im_frame, base_im)
     return delta, delta.getbbox(alpha_only=False)
 
-
 class _Frame(NamedTuple):
     im: Image.Image
     bbox: tuple[int, int, int, int] | None
     encoderinfo: dict[str, Any]
-
 
 def _write_multiple_frames(
     im: Image.Image, fp: IO[bytes], palette: _Palette | None
@@ -789,10 +775,8 @@ def _write_multiple_frames(
         _write_frame_data(fp, im_frame, offset, frame_data.encoderinfo)
     return True
 
-
 def _save_all(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     _save(im, fp, filename, save_all=True)
-
 
 def _save(
     im: Image.Image, fp: IO[bytes], filename: str | bytes, save_all: bool = False
@@ -812,7 +796,6 @@ def _save(
     if hasattr(fp, "flush"):
         fp.flush()
 
-
 def get_interlace(im: Image.Image) -> int:
     interlace = im.encoderinfo.get("interlace", 1)
 
@@ -821,7 +804,6 @@ def get_interlace(im: Image.Image) -> int:
         interlace = 0
 
     return interlace
-
 
 def _write_local_header(
     fp: IO[bytes], im: Image.Image, offset: tuple[int, int], flags: int
@@ -872,7 +854,6 @@ def _write_local_header(
         fp.write(_get_header_palette(palette_bytes))
     fp.write(o8(8))  # bits
 
-
 def _save_netpbm(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     # Unused by default.
     # To use, uncomment the register_save call at the end of the file.
@@ -920,11 +901,9 @@ def _save_netpbm(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
         except OSError:
             pass
 
-
 # Force optimization so that we can test performance against
 # cases where it took lots of memory and time previously.
 _FORCE_OPTIMIZE = False
-
 
 def _get_optimize(im: Image.Image, info: dict[str, Any]) -> list[int] | None:
     """
@@ -979,7 +958,6 @@ def _get_optimize(im: Image.Image, info: dict[str, Any]) -> list[int] | None:
                 return used_palette_colors
     return None
 
-
 def _get_color_table_size(palette_bytes: bytes) -> int:
     # calculate the palette size for the header
     if not palette_bytes:
@@ -988,7 +966,6 @@ def _get_color_table_size(palette_bytes: bytes) -> int:
         return 1
     else:
         return math.ceil(math.log(len(palette_bytes) // 3, 2)) - 1
-
 
 def _get_header_palette(palette_bytes: bytes) -> bytes:
     """
@@ -1007,7 +984,6 @@ def _get_header_palette(palette_bytes: bytes) -> bytes:
         palette_bytes += o8(0) * 3 * actual_target_size_diff
     return palette_bytes
 
-
 def _get_palette_bytes(im: Image.Image) -> bytes:
     """
     Gets the palette for inclusion in the gif header
@@ -1022,7 +998,6 @@ def _get_palette_bytes(im: Image.Image) -> bytes:
     if im.palette.mode == "RGBA":
         palette = b"".join(palette[i * 4 : i * 4 + 3] for i in range(len(palette) // 3))
     return palette
-
 
 def _get_background(
     im: Image.Image,
@@ -1049,7 +1024,6 @@ def _get_background(
         else:
             background = info_background
     return background
-
 
 def _get_global_header(im: Image.Image, info: dict[str, Any]) -> list[bytes]:
     """Return a list of strings representing a GIF header"""
@@ -1112,7 +1086,6 @@ def _get_global_header(im: Image.Image, info: dict[str, Any]) -> list[bytes]:
         header.append(comment_block)
     return header
 
-
 def _write_frame_data(
     fp: IO[bytes],
     im_frame: Image.Image,
@@ -1135,10 +1108,8 @@ def _write_frame_data(
     finally:
         del im_frame.encoderinfo
 
-
 # --------------------------------------------------------------------
 # Legacy GIF utilities
-
 
 def getheader(
     im: Image.Image, palette: _Palette | None = None, info: dict[str, Any] | None = None
@@ -1168,7 +1139,6 @@ def getheader(
     header = _get_global_header(im, info)
 
     return header, used_palette_colors
-
 
 def getdata(
     im: Image.Image, offset: tuple[int, int] = (0, 0), **params: Any
@@ -1205,7 +1175,6 @@ def getdata(
     _write_frame_data(fp, im, offset, params)
 
     return fp.data
-
 
 # --------------------------------------------------------------------
 # Registry

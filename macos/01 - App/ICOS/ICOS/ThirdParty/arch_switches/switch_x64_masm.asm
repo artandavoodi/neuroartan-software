@@ -3,11 +3,9 @@
 ; Kristjan Valur Jonsson, sept 2005
 ;
 
-
 ;prototypes for our calls
 slp_save_state_asm PROTO
 slp_restore_state_asm PROTO
-
 
 pushxmm MACRO reg
     sub rsp, 16
@@ -27,7 +25,6 @@ ENDM
 popreg MACRO reg
     pop reg
 ENDM
-
 
 .code
 slp_switch PROC FRAME

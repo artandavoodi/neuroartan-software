@@ -24,7 +24,6 @@ from typing import Callable, Dict, Optional, Union
 from playwright._impl._driver import compute_driver_executable, get_driver_env
 from playwright._impl._helper import ParsedMessagePayload
 
-
 # Sourced from: https://github.com/pytest-dev/pytest/blob/da01ee0a4bb0af780167ecd228ab3ad249511302/src/_pytest/faulthandler.py#L69-L77
 def _get_stderr_fileno() -> Optional[int]:
     try:
@@ -43,7 +42,6 @@ def _get_stderr_fileno() -> Optional[int]:
         if not hasattr(sys, "__stderr__") or not sys.__stderr__:
             return None
         return sys.__stderr__.fileno()
-
 
 class Transport(ABC):
     def __init__(self, loop: asyncio.AbstractEventLoop) -> None:
@@ -86,7 +84,6 @@ class Transport(ABC):
         if "DEBUGP" in os.environ:  # pragma: no cover
             print("\x1b[33mRECV>\x1b[0m", json.dumps(obj, indent=2))
         return obj
-
 
 class PipeTransport(Transport):
     def __init__(self, loop: asyncio.AbstractEventLoop) -> None:

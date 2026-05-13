@@ -25,7 +25,6 @@ if typing.TYPE_CHECKING:
 
 T = typing.TypeVar("T")
 
-
 __all__ = [
     "ExceptionGroup",  # Keep this for a bit (makes mypy happy w/ 26.0 compat)
     "InvalidMetadata",
@@ -36,10 +35,8 @@ __all__ = [
     "parse_email",
 ]
 
-
 def __dir__() -> list[str]:
     return __all__
-
 
 class InvalidMetadata(ValueError):
     """A metadata field contains invalid data."""
@@ -50,7 +47,6 @@ class InvalidMetadata(ValueError):
     def __init__(self, field: str, message: str) -> None:
         self.field = field
         super().__init__(message)
-
 
 # The RawMetadata class attempts to make as few assumptions about the underlying
 # serialization formats as possible. The idea is that as long as a serialization
@@ -131,7 +127,6 @@ class RawMetadata(TypedDict, total=False):
     import_names: list[str]
     import_namespaces: list[str]
 
-
 # 'keywords' is special as it's a string in the core metadata spec, but we
 # represent it as a list.
 _STRING_FIELDS = {
@@ -174,11 +169,9 @@ _DICT_FIELDS = {
     "project_urls",
 }
 
-
 def _parse_keywords(data: str) -> list[str]:
     """Split a string of comma-separated keywords into a list of keywords."""
     return [k.strip() for k in data.split(",")]
-
 
 def _parse_project_urls(data: list[str]) -> dict[str, str]:
     """Parse a list of label/URL string pairings separated by a comma."""
@@ -218,7 +211,6 @@ def _parse_project_urls(data: list[str]) -> dict[str, str]:
 
     return urls
 
-
 def _get_payload(msg: email.message.Message, source: bytes | str) -> str:
     """Get the body of the message."""
     # If our source is a str, then our caller has managed encodings for us,
@@ -236,7 +228,6 @@ def _get_payload(msg: email.message.Message, source: bytes | str) -> str:
             return bpayload.decode("utf8", "strict")
         except UnicodeDecodeError as exc:
             raise ValueError("payload in an invalid encoding") from exc
-
 
 # The various parse_FORMAT functions here are intended to be as lenient as
 # possible in their parsing, while still returning a correctly typed
@@ -286,7 +277,6 @@ _EMAIL_TO_RAW_MAPPING = {
 }
 _RAW_TO_EMAIL_MAPPING = {raw: email for email, raw in _EMAIL_TO_RAW_MAPPING.items()}
 
-
 # This class is for writing RFC822 messages
 class RFC822Policy(email.policy.EmailPolicy):
     """
@@ -302,7 +292,6 @@ class RFC822Policy(email.policy.EmailPolicy):
         size = len(name) + 2
         value = value.replace("\n", "\n" + " " * size)
         return (name, value)
-
 
 # This class is for writing RFC822 messages
 class RFC822Message(email.message.EmailMessage):
@@ -324,7 +313,6 @@ class RFC822Message(email.message.EmailMessage):
         This handles unicode encoding.
         """
         return self.as_string(unixfrom, policy=policy).encode("utf-8")
-
 
 def parse_email(data: bytes | str) -> tuple[RawMetadata, dict[str, list[str]]]:
     """Parse a distribution's metadata stored as email headers (e.g. from ``METADATA``).
@@ -506,16 +494,13 @@ def parse_email(data: bytes | str) -> tuple[RawMetadata, dict[str, list[str]]]:
     # names.
     return cast("RawMetadata", raw), unparsed
 
-
 _NOT_FOUND = object()
-
 
 # Keep the two values in sync.
 _VALID_METADATA_VERSIONS = ["1.0", "1.1", "1.2", "2.1", "2.2", "2.3", "2.4", "2.5"]
 _MetadataVersion = Literal["1.0", "1.1", "1.2", "2.1", "2.2", "2.3", "2.4", "2.5"]
 
 _REQUIRED_ATTRS = frozenset(["metadata_version", "name", "version"])
-
 
 class _Validator(Generic[T]):
     """Validate a metadata field.
@@ -752,7 +737,6 @@ class _Validator(Generic[T]):
         return value
 
     _process_import_namespaces = _process_import_names
-
 
 class Metadata:
     """Representation of distribution metadata.

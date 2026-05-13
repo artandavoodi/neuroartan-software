@@ -26,7 +26,6 @@ from datetime import datetime
 from enum import Enum
 from typing import Any, Dict, List, Optional
 
-
 class PlanningStatus(str, Enum):
     PENDING = "pending"
     ACTIVE = "active"
@@ -34,13 +33,11 @@ class PlanningStatus(str, Enum):
     BLOCKED = "blocked"
     REFINED = "refined"
 
-
 class HorizonScale(str, Enum):
     SHORT = "short"
     MEDIUM = "medium"
     LONG = "long"
     STRATEGIC = "strategic"
-
 
 @dataclass
 class PlanningObjective:
@@ -52,7 +49,6 @@ class PlanningObjective:
     future_states: List[str] = field(default_factory=list)
     metadata: Dict[str, Any] = field(default_factory=dict)
 
-
 @dataclass
 class StrategicPlan:
     plan_id: str
@@ -62,7 +58,6 @@ class StrategicPlan:
     estimated_complexity: float = 0.0
     created_at: datetime = field(default_factory=datetime.utcnow)
     metadata: Dict[str, Any] = field(default_factory=dict)
-
 
 class LongHorizonPlanningEngine:
     """
@@ -210,7 +205,6 @@ class LongHorizonPlanningEngine:
                 for plan in self.plans.values()
             ],
         }
-
 
 if __name__ == "__main__":
     engine = LongHorizonPlanningEngine()

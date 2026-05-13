@@ -19,7 +19,6 @@ void* BrokenGreenlet::operator new(size_t UNUSED(count))
     return allocator.allocate(1);
 }
 
-
 void BrokenGreenlet::operator delete(void* ptr)
 {
     return allocator.deallocate(static_cast<BrokenGreenlet*>(ptr),

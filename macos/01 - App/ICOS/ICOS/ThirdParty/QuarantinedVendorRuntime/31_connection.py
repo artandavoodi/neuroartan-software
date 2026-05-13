@@ -37,7 +37,6 @@ except (ImportError, AttributeError):
     class BaseSSLError(BaseException):  # type: ignore[no-redef]
         pass
 
-
 from ._base_connection import _TYPE_BODY
 from ._base_connection import ProxyConfig as ProxyConfig
 from ._base_connection import _ResponseOptions as _ResponseOptions
@@ -67,7 +66,6 @@ from .util.url import Url
 ConnectionError = ConnectionError
 BrokenPipeError = BrokenPipeError
 
-
 log = logging.getLogger(__name__)
 
 port_by_scheme = {"http": 80, "https": 443}
@@ -77,7 +75,6 @@ port_by_scheme = {"http": 80, "https": 443}
 RECENT_DATE = datetime.date(2025, 1, 1)
 
 _CONTAINS_CONTROL_CHAR_RE = re.compile(r"[^-!#$%&'*+.^_`|~0-9a-zA-Z]")
-
 
 class HTTPConnection(_HTTPConnection):
     """
@@ -599,7 +596,6 @@ class HTTPConnection(_HTTPConnection):
         )
         return response
 
-
 class HTTPSConnection(HTTPConnection):
     """
     Many of the parameters to this constructor are passed to the underlying SSL
@@ -887,7 +883,6 @@ class HTTPSConnection(HTTPConnection):
         self.proxy_is_verified = sock_and_verified.is_verified
         return sock_and_verified.socket  # type: ignore[return-value]
 
-
 class _WrappedAndVerifiedSocket(typing.NamedTuple):
     """
     Wrapped socket and whether the connection is
@@ -896,7 +891,6 @@ class _WrappedAndVerifiedSocket(typing.NamedTuple):
 
     socket: ssl.SSLSocket | SSLTransport
     is_verified: bool
-
 
 def _ssl_wrap_socket_and_match_hostname(
     sock: socket.socket,
@@ -1022,7 +1016,6 @@ def _ssl_wrap_socket_and_match_hostname(
         ssl_sock.close()
         raise
 
-
 def _match_hostname(
     cert: _TYPE_PEER_CERT_RET_DICT | None,
     asserted_hostname: str,
@@ -1048,7 +1041,6 @@ def _match_hostname(
         e._peer_cert = cert  # type: ignore[attr-defined]
         raise
 
-
 def _wrap_proxy_error(err: Exception, proxy_scheme: str | None) -> ProxyError:
     # Look for the phrase 'wrong version number', if found
     # then we should warn the user that we're very sure that
@@ -1073,21 +1065,16 @@ def _wrap_proxy_error(err: Exception, proxy_scheme: str | None) -> ProxyError:
     new_err.__cause__ = err
     return new_err
 
-
 def _get_default_user_agent() -> str:
     return f"python-urllib3/{__version__}"
-
 
 class DummyConnection:
     """Used to detect a failed ConnectionCls import."""
 
-
 if not ssl:
     HTTPSConnection = DummyConnection  # type: ignore[misc, assignment] # noqa: F811
 
-
 VerifiedHTTPSConnection = HTTPSConnection
-
 
 def _url_from_connection(
     conn: HTTPConnection | HTTPSConnection, path: str | None = None

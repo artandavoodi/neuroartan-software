@@ -27,7 +27,6 @@ CATEGORY_PREFIX = {
     "software": "SFT"
 }
 
-
 def extract_document_ids() -> List[Dict[str, str]]:
     records: List[Dict[str, str]] = []
 
@@ -49,8 +48,6 @@ def extract_document_ids() -> List[Dict[str, str]]:
 
     return records
 
-
-
 def find_duplicate_ids(ids: Iterable[str]) -> List[str]:
     seen: Set[str] = set()
     dupes: List[str] = []
@@ -63,8 +60,6 @@ def find_duplicate_ids(ids: Iterable[str]) -> List[str]:
 
     return dupes
 
-
-
 def classify_domain(path: str) -> str:
     lowered = path.lower()
 
@@ -73,8 +68,6 @@ def classify_domain(path: str) -> str:
             return domain
 
     return "operations"
-
-
 
 def generate_next_document_id(domain: str) -> str:
     existing = {
@@ -95,8 +88,6 @@ def generate_next_document_id(domain: str) -> str:
             return candidate
 
         number += 1
-
-
 
 def audit_document_ids() -> Dict:
     records = extract_document_ids()
@@ -134,7 +125,6 @@ def audit_document_ids() -> Dict:
             for domain in CATEGORY_PREFIX
         }
     }
-
 
 if __name__ == "__main__":
     print(json.dumps(

@@ -77,11 +77,9 @@ Dict of known error codes returned from :meth:`.PyDecoder.decode`,
 :meth:`.PyEncoder.encode_to_file`.
 """
 
-
 #
 # --------------------------------------------------------------------
 # Helpers
-
 
 def _get_oserror(error: int, *, encoder: bool) -> OSError:
     try:
@@ -93,11 +91,9 @@ def _get_oserror(error: int, *, encoder: bool) -> OSError:
     msg += f" when {'writing' if encoder else 'reading'} image file"
     return OSError(msg)
 
-
 def _tilesort(t: _Tile) -> int:
     # sort on offset
     return t[2]
-
 
 class _Tile(NamedTuple):
     codec_name: str
@@ -105,11 +101,9 @@ class _Tile(NamedTuple):
     offset: int = 0
     args: tuple[Any, ...] | str | None = None
 
-
 #
 # --------------------------------------------------------------------
 # ImageFile base class
-
 
 class ImageFile(Image.Image):
     """Base class for image file format handlers."""
@@ -467,7 +461,6 @@ class ImageFile(Image.Image):
 
         return self.tell() != frame
 
-
 class StubHandler(abc.ABC):
     def open(self, im: StubImageFile) -> None:
         pass
@@ -475,7 +468,6 @@ class StubHandler(abc.ABC):
     @abc.abstractmethod
     def load(self, im: StubImageFile) -> Image.Image:
         pass
-
 
 class StubImageFile(ImageFile, metaclass=abc.ABCMeta):
     """
@@ -505,7 +497,6 @@ class StubImageFile(ImageFile, metaclass=abc.ABCMeta):
     def _load(self) -> StubHandler | None:
         """(Hook) Find actual image loader."""
         pass
-
 
 class Parser:
     """
@@ -637,9 +628,7 @@ class Parser:
                     self.image.load()
         return self.image
 
-
 # --------------------------------------------------------------------
-
 
 def _save(im: Image.Image, fp: IO[bytes], tile: list[_Tile], bufsize: int = 0) -> None:
     """Helper to save image based on tile list
@@ -667,7 +656,6 @@ def _save(im: Image.Image, fp: IO[bytes], tile: list[_Tile], bufsize: int = 0) -
         _encode_tile(im, fp, tile, bufsize, None, exc)
     if hasattr(fp, "flush"):
         fp.flush()
-
 
 def _encode_tile(
     im: Image.Image,
@@ -703,7 +691,6 @@ def _encode_tile(
         finally:
             encoder.cleanup()
 
-
 def _safe_read(fp: IO[bytes], size: int) -> bytes:
     """
     Reads large blocks in a safe way.  Unlike fp.read(n), this function
@@ -738,7 +725,6 @@ def _safe_read(fp: IO[bytes], size: int) -> bytes:
         raise OSError(msg)
     return b"".join(blocks)
 
-
 class PyCodecState:
     def __init__(self) -> None:
         self.xsize = 0
@@ -748,7 +734,6 @@ class PyCodecState:
 
     def extents(self) -> tuple[int, int, int, int]:
         return self.xoff, self.yoff, self.xoff + self.xsize, self.yoff + self.ysize
-
 
 class PyCodec:
     fd: IO[bytes] | None
@@ -821,7 +806,6 @@ class PyCodec:
             msg = "Size must be positive"
             raise ValueError(msg)
 
-
 class PyDecoder(PyCodec):
     """
     Python implementation of a format decoder. Override this class and
@@ -874,7 +858,6 @@ class PyDecoder(PyCodec):
         if s[1] != 0:
             msg = "cannot decode image data"
             raise ValueError(msg)
-
 
 class PyEncoder(PyCodec):
     """

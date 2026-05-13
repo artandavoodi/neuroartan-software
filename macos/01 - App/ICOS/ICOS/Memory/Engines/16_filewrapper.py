@@ -11,7 +11,6 @@ if TYPE_CHECKING:
     from collections.abc import Buffer
     from http.client import HTTPResponse
 
-
 class CallbackFileWrapper:
     """
     Small wrapper around a fp object which will tee everything read into a

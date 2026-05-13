@@ -34,7 +34,6 @@ from ._compat import (
     parse_name_and_version_from_info_directory,
 )
 
-
 class WheelDistribution(importlib.metadata.Distribution):
     """An ``importlib.metadata.Distribution`` read from a wheel.
 
@@ -97,7 +96,6 @@ class WheelDistribution(importlib.metadata.Distribution):
         # This method doesn't make sense for our in-memory wheel, but the API
         # requires us to define it.
         raise NotImplementedError
-
 
 class Distribution(BaseDistribution):
     def __init__(

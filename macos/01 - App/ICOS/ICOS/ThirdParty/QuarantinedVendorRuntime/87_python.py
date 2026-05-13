@@ -21,7 +21,6 @@ __all__ = ['PythonLexer', 'PythonConsoleLexer', 'PythonTracebackLexer',
            'Python2Lexer', 'Python2TracebackLexer',
            'CythonLexer', 'DgLexer', 'NumPyLexer']
 
-
 class PythonLexer(RegexLexer):
     """
     For Python source code (version 3.x).
@@ -409,9 +408,7 @@ class PythonLexer(RegexLexer):
         return shebang_matches(text, r'pythonw?(3(\.\d)?)?') or \
             'import ' in text[:1000]
 
-
 Python3Lexer = PythonLexer
-
 
 class Python2Lexer(RegexLexer):
     """
@@ -635,7 +632,6 @@ class Python2Lexer(RegexLexer):
     def analyse_text(text):
         return shebang_matches(text, r'pythonw?2(\.\d)?')
 
-
 class _PythonConsoleLexerBase(RegexLexer):
     name = 'Python console session'
     aliases = ['pycon', 'python-console']
@@ -671,7 +667,6 @@ class _PythonConsoleLexerBase(RegexLexer):
             (r'.*\n', Other.Traceback),
         ],
     }
-
 
 class PythonConsoleLexer(DelegatingLexer):
     """
@@ -720,7 +715,6 @@ class PythonConsoleLexer(DelegatingLexer):
             def __init__(self, **options):
                 super().__init__(pylexer, _PythonConsoleLexerBase, Other.Code, **options)
         super().__init__(tblexer, _ReplaceInnerCode, Other.Traceback, **options)
-
 
 class PythonTracebackLexer(RegexLexer):
     """
@@ -775,9 +769,7 @@ class PythonTracebackLexer(RegexLexer):
         ],
     }
 
-
 Python3TracebackLexer = PythonTracebackLexer
-
 
 class Python2TracebackLexer(RegexLexer):
     """
@@ -825,7 +817,6 @@ class Python2TracebackLexer(RegexLexer):
             default('#pop'),
         ],
     }
-
 
 class CythonLexer(RegexLexer):
     """
@@ -1005,7 +996,6 @@ class CythonLexer(RegexLexer):
         ],
     }
 
-
 class DgLexer(RegexLexer):
     """
     Lexer for dg,
@@ -1103,7 +1093,6 @@ class DgLexer(RegexLexer):
             (r"'''", String, '#pop')
         ],
     }
-
 
 class NumPyLexer(PythonLexer):
     """

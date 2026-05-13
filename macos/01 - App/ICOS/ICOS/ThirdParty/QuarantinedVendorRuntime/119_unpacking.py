@@ -23,7 +23,6 @@ from pip._internal.utils.misc import ensure_dir
 
 logger = logging.getLogger(__name__)
 
-
 SUPPORTED_EXTENSIONS = ZIP_EXTENSIONS + TAR_EXTENSIONS
 
 try:
@@ -41,13 +40,11 @@ try:
 except ImportError:
     logger.debug("lzma module is not available")
 
-
 def current_umask() -> int:
     """Get the current umask which involves having to set it temporarily."""
     mask = os.umask(0)
     os.umask(mask)
     return mask
-
 
 def split_leading_dir(path: str) -> list[str]:
     path = path.lstrip("/").lstrip("\\")
@@ -59,7 +56,6 @@ def split_leading_dir(path: str) -> list[str]:
         return path.split("\\", 1)
     else:
         return [path, ""]
-
 
 def has_leading_dir(paths: Iterable[str]) -> bool:
     """Returns true if all the paths have the same leading path name
@@ -75,7 +71,6 @@ def has_leading_dir(paths: Iterable[str]) -> bool:
             return False
     return True
 
-
 def is_within_directory(directory: str, target: str) -> bool:
     """
     Return true if the absolute path of target is within the directory
@@ -86,10 +81,8 @@ def is_within_directory(directory: str, target: str) -> bool:
     prefix = os.path.commonpath([abs_directory, abs_target])
     return prefix == abs_directory
 
-
 def _get_default_mode_plus_executable() -> int:
     return 0o777 & ~current_umask() | 0o111
-
 
 def set_extracted_file_to_default_mode_plus_executable(path: str) -> None:
     """
@@ -98,13 +91,11 @@ def set_extracted_file_to_default_mode_plus_executable(path: str) -> None:
     """
     os.chmod(path, _get_default_mode_plus_executable())
 
-
 def zip_item_is_executable(info: ZipInfo) -> bool:
     mode = info.external_attr >> 16
     # if mode and regular file and any execute permissions for
     # user/group/world?
     return bool(mode and stat.S_ISREG(mode) and mode & 0o111)
-
 
 def unzip_file(filename: str, location: str, flatten: bool = True) -> None:
     """
@@ -150,7 +141,6 @@ def unzip_file(filename: str, location: str, flatten: bool = True) -> None:
                         set_extracted_file_to_default_mode_plus_executable(fn)
     finally:
         zipfp.close()
-
 
 def untar_file(filename: str, location: str) -> None:
     """
@@ -247,7 +237,6 @@ def untar_file(filename: str, location: str) -> None:
     finally:
         tar.close()
 
-
 def is_symlink_target_in_tar(tar: tarfile.TarFile, tarinfo: tarfile.TarInfo) -> bool:
     """Check if the file pointed to by the symbolic link is in the tar archive"""
     linkname = os.path.join(os.path.dirname(tarinfo.name), tarinfo.linkname)
@@ -260,7 +249,6 @@ def is_symlink_target_in_tar(tar: tarfile.TarFile, tarinfo: tarfile.TarInfo) -> 
         return True
     except KeyError:
         return False
-
 
 def _untar_without_filter(
     filename: str,
@@ -329,7 +317,6 @@ def _untar_without_filter(
             # member have any execute permissions for user/group/world?
             if member.mode & 0o111:
                 set_extracted_file_to_default_mode_plus_executable(path)
-
 
 def unpack_file(
     filename: str,

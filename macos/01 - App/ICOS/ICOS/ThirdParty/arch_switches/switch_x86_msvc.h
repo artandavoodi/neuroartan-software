@@ -123,7 +123,6 @@ https://github.com/stackless-dev/stackless/blob/main-slp/Stackless/platf/switch_
  */
 #define GREENLET_NEEDS_EXCEPTION_STATE_SAVED
 
-
 typedef struct _GExceptionRegistration {
     struct _GExceptionRegistration* prev;
     void* handler_f;
@@ -141,7 +140,6 @@ slp_set_exception_state(const void *const seh_state)
     GExceptionRegistration* current_seh_state = (GExceptionRegistration*)__readfsdword(FIELD_OFFSET(NT_TIB, ExceptionList));
     current_seh_state->prev = (GExceptionRegistration*)seh_state;
 }
-
 
 static GExceptionRegistration*
 x86_slp_get_third_oldest_handler()
@@ -165,7 +163,6 @@ x86_slp_get_third_oldest_handler()
     }
     return a ? a : (b ? b : c);
 }
-
 
 static void*
 slp_get_exception_state()
@@ -213,7 +210,6 @@ slp_switch(void)
 #pragma optimize("", on)
 #pragma warning(default:4731)
 #pragma warning(default:4733) /* disable warning about modifying FS[0] */
-
 
 #endif
 
@@ -319,8 +315,5 @@ GreenletVectorHandler(PEXCEPTION_POINTERS ExceptionInfo)
 
     return EXCEPTION_CONTINUE_SEARCH;
 }
-
-
-
 
 #endif

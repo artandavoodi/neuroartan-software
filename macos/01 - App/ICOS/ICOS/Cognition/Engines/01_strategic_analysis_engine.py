@@ -41,8 +41,6 @@ STRATEGIC_SIGNALS = {
     ]
 }
 
-
-
 def load_json(path, fallback):
     if not path.exists():
         return fallback
@@ -51,8 +49,6 @@ def load_json(path, fallback):
         return json.loads(path.read_text())
     except Exception:
         return fallback
-
-
 
 def classify_task(task):
     combined = f"{task.get('title', '')} {task.get('project', '')}".lower()
@@ -67,14 +63,10 @@ def classify_task(task):
 
     return max(matches, key=matches.get)
 
-
-
 def evaluate_priority(task):
     priority = task.get("priority", "medium")
 
     return PRIORITY_WEIGHTS.get(priority, 3)
-
-
 
 def strategic_risk_analysis(tasks):
     risks = []
@@ -102,8 +94,6 @@ def strategic_risk_analysis(tasks):
 
     return risks
 
-
-
 def generate_recommendations(tasks):
     recommendations = []
 
@@ -123,8 +113,6 @@ def generate_recommendations(tasks):
         )
 
     return recommendations
-
-
 
 def strategic_analysis():
     ledger = load_json(LEDGER, {
@@ -173,7 +161,6 @@ def strategic_analysis():
             "Multi-agent cognition mesh"
         ]
     }
-
 
 if __name__ == "__main__":
     print(json.dumps(

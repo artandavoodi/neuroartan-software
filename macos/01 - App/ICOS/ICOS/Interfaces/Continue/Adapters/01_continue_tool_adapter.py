@@ -6,7 +6,6 @@ from pathlib import Path
 from typing import Any
 import json
 
-
 # ============================================================
 # Runtime Paths
 # ============================================================
@@ -15,7 +14,6 @@ ROOT = Path(__file__).resolve().parents[3]
 
 CONTINUE_ROOT = ROOT / "Interfaces" / "Continue"
 REGISTRY_ROOT = CONTINUE_ROOT / "Registries"
-
 
 # ============================================================
 # Continue Tool Adapter
@@ -42,7 +40,6 @@ class ContinueToolAdapter:
             "tools": []
         }
 
-
     # ========================================================
     # Registry Loading
     # ========================================================
@@ -58,7 +55,6 @@ class ContinueToolAdapter:
 
         return self.registry
 
-
     # ========================================================
     # Registry Persistence
     # ========================================================
@@ -67,7 +63,6 @@ class ContinueToolAdapter:
         self.registry_path.write_text(
             json.dumps(self.registry, indent=2)
         )
-
 
     # ========================================================
     # Tool Registration
@@ -108,7 +103,6 @@ class ContinueToolAdapter:
 
         return tool_record
 
-
     # ========================================================
     # Tool Lookup
     # ========================================================
@@ -122,7 +116,6 @@ class ContinueToolAdapter:
 
         return None
 
-
     # ========================================================
     # Tool Inventory
     # ========================================================
@@ -131,7 +124,6 @@ class ContinueToolAdapter:
         self.load_registry()
 
         return self.registry.get("tools", [])
-
 
     # ========================================================
     # Runtime Status
@@ -145,7 +137,6 @@ class ContinueToolAdapter:
             "registry": str(self.registry_path),
             "tool_count": len(self.registry.get("tools", [])),
         }
-
 
 # ============================================================
 # Runtime Entry

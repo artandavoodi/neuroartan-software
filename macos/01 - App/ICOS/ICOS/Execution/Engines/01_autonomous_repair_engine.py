@@ -26,20 +26,17 @@ from datetime import datetime
 from enum import Enum
 from typing import Any, Dict, List, Optional
 
-
 class RepairStatus(str, Enum):
     PENDING = "pending"
     DIAGNOSED = "diagnosed"
     REPAIRED = "repaired"
     FAILED = "failed"
 
-
 class RepairSeverity(str, Enum):
     LOW = "low"
     MEDIUM = "medium"
     HIGH = "high"
     CRITICAL = "critical"
-
 
 @dataclass
 class RuntimeFailure:
@@ -50,7 +47,6 @@ class RuntimeFailure:
     details: Dict[str, Any] = field(default_factory=dict)
     timestamp: datetime = field(default_factory=datetime.utcnow)
 
-
 @dataclass
 class RepairOperation:
     repair_id: str
@@ -59,7 +55,6 @@ class RepairOperation:
     action: str
     status: RepairStatus = RepairStatus.PENDING
     metadata: Dict[str, Any] = field(default_factory=dict)
-
 
 class AutonomousRepairEngine:
     """
@@ -191,7 +186,6 @@ class AutonomousRepairEngine:
                 for repair in self.repairs.values()
             ],
         }
-
 
 if __name__ == "__main__":
     engine = AutonomousRepairEngine()

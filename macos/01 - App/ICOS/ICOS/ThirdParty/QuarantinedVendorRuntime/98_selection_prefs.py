@@ -5,7 +5,6 @@ from dataclasses import dataclass
 from pip._internal.models.format_control import FormatControl
 from pip._internal.models.release_control import ReleaseControl
 
-
 @dataclass(slots=True)
 class SelectionPreferences:
     """

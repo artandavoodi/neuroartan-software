@@ -61,11 +61,9 @@ from . import Image, ImageFile
 
 MAGIC = b"FTEX"
 
-
 class Format(IntEnum):
     DXT1 = 0
     UNCOMPRESSED = 1
-
 
 class FtexImageFile(ImageFile.ImageFile):
     format = "FTEX"
@@ -106,10 +104,8 @@ class FtexImageFile(ImageFile.ImageFile):
     def load_seek(self, pos: int) -> None:
         pass
 
-
 def _accept(prefix: bytes) -> bool:
     return prefix.startswith(MAGIC)
-
 
 Image.register_open(FtexImageFile.format, FtexImageFile, _accept)
 Image.register_extensions(FtexImageFile.format, [".ftc", ".ftu"])

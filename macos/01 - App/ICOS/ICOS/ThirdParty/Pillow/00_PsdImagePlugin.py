@@ -42,18 +42,14 @@ MODES = {
     (9, 8): ("LAB", 3),
 }
 
-
 # --------------------------------------------------------------------.
 # read PSD images
-
 
 def _accept(prefix: bytes) -> bool:
     return prefix.startswith(b"8BPS")
 
-
 ##
 # Image plugin for Photoshop images.
-
 
 class PsdImageFile(ImageFile.ImageFile):
     format = "PSD"
@@ -188,7 +184,6 @@ class PsdImageFile(ImageFile.ImageFile):
         # return layer number (0=image, 1..max=layers)
         return self.frame
 
-
 def _layerinfo(
     fp: IO[bytes], ct_bytes: int
 ) -> list[tuple[str, str, tuple[int, int, int, int], list[ImageFile._Tile]]]:
@@ -279,7 +274,6 @@ def _layerinfo(
 
     return layerinfo
 
-
 def _maketile(
     file: IO[bytes], mode: str, bbox: tuple[int, int, int, int], channels: int
 ) -> list[ImageFile._Tile]:
@@ -325,10 +319,8 @@ def _maketile(
 
     return tiles
 
-
 # --------------------------------------------------------------------
 # registry
-
 
 Image.register_open(PsdImageFile.format, PsdImageFile, _accept)
 

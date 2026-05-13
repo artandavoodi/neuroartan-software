@@ -62,9 +62,7 @@ logger = logging.getLogger(__name__)
 
 is_cid = re.compile(rb"\w\w\w\w").match
 
-
 _MAGIC = b"\211PNG\r\n\032\n"
-
 
 _MODES = {
     # supported bits/color combinations, and corresponding modes/rawmodes
@@ -90,7 +88,6 @@ _MODES = {
     (16, 6): ("RGBA", "RGBA;16B"),
 }
 
-
 _simple_palette = re.compile(b"^\xff*\x00\xff*$")
 
 MAX_TEXT_CHUNK = ImageFile.SAFEBLOCK
@@ -104,7 +101,6 @@ MAX_TEXT_MEMORY = 64 * MAX_TEXT_CHUNK
 Set the maximum total text chunk size.
 See :ref:`Text in PNG File Format<png-text>`.
 """
-
 
 # APNG frame disposal modes
 class Disposal(IntEnum):
@@ -126,7 +122,6 @@ class Disposal(IntEnum):
     See :ref:`Saving APNG sequences<apng-saving>`.
     """
 
-
 # APNG frame blend modes
 class Blend(IntEnum):
     OP_SOURCE = 0
@@ -141,7 +136,6 @@ class Blend(IntEnum):
     See :ref:`Saving APNG sequences<apng-saving>`.
     """
 
-
 def _safe_zlib_decompress(s: bytes) -> bytes:
     dobj = zlib.decompressobj()
     plaintext = dobj.decompress(s, MAX_TEXT_CHUNK)
@@ -150,14 +144,11 @@ def _safe_zlib_decompress(s: bytes) -> bytes:
         raise ValueError(msg)
     return plaintext
 
-
 def _crc32(data: bytes, seed: int = 0) -> int:
     return zlib.crc32(data, seed) & 0xFFFFFFFF
 
-
 # --------------------------------------------------------------------
 # Support classes.  Suitable for PNG and related formats like MNG etc.
-
 
 class ChunkStream:
     def __init__(self, fp: IO[bytes]) -> None:
@@ -252,7 +243,6 @@ class ChunkStream:
 
         return cids
 
-
 class iTXt(str):
     """
     Subclass of string to allow iTXt chunks to look like strings while
@@ -278,7 +268,6 @@ class iTXt(str):
         self.lang = lang
         self.tkey = tkey
         return self
-
 
 class PngInfo:
     """
@@ -371,16 +360,13 @@ class PngInfo:
         else:
             self.add(b"tEXt", key + b"\0" + value)
 
-
 # --------------------------------------------------------------------
 # PNG image stream (IHDR/IEND)
-
 
 class _RewindState(NamedTuple):
     info: dict[str | tuple[int, int], Any]
     tile: list[ImageFile._Tile]
     seq_num: int | None
-
 
 class PngStream(ChunkStream):
     def __init__(self, fp: IO[bytes]) -> None:
@@ -742,18 +728,14 @@ class PngStream(ChunkStream):
         self._seq_num = seq
         return self.chunk_IDAT(pos + 4, length - 4)
 
-
 # --------------------------------------------------------------------
 # PNG reader
-
 
 def _accept(prefix: bytes) -> bool:
     return prefix.startswith(_MAGIC)
 
-
 ##
 # Image plugin for PNG images.
-
 
 class PngImageFile(ImageFile.ImageFile):
     format = "PNG"
@@ -1097,7 +1079,6 @@ class PngImageFile(ImageFile.ImageFile):
 
         return super().getexif()
 
-
 # --------------------------------------------------------------------
 # PNG writer
 
@@ -1120,7 +1101,6 @@ _OUTMODES = {
     "RGBA": ("RGBA", b"\x08", b"\x06"),
 }
 
-
 def putchunk(fp: IO[bytes], cid: bytes, *data: bytes) -> None:
     """Write a PNG chunk (including CRC field)"""
 
@@ -1131,7 +1111,6 @@ def putchunk(fp: IO[bytes], cid: bytes, *data: bytes) -> None:
     crc = _crc32(byte_data, _crc32(cid))
     fp.write(o32(crc))
 
-
 class _idat:
     # wrap output from the encoder in IDAT chunks
 
@@ -1141,7 +1120,6 @@ class _idat:
 
     def write(self, data: bytes) -> None:
         self.chunk(self.fp, b"IDAT", data)
-
 
 class _fdat:
     # wrap encoder output in fdAT chunks
@@ -1155,7 +1133,6 @@ class _fdat:
         self.chunk(self.fp, b"fdAT", o32(self.seq_num), data)
         self.seq_num += 1
 
-
 def _apply_encoderinfo(im: Image.Image, encoderinfo: dict[str, Any]) -> None:
     im.encoderconfig = (
         encoderinfo.get("optimize", False),
@@ -1164,12 +1141,10 @@ def _apply_encoderinfo(im: Image.Image, encoderinfo: dict[str, Any]) -> None:
         encoderinfo.get("dictionary", b""),
     )
 
-
 class _Frame(NamedTuple):
     im: Image.Image
     bbox: tuple[int, int, int, int] | None
     encoderinfo: dict[str, Any]
-
 
 def _write_multiple_frames(
     im: Image.Image,
@@ -1317,10 +1292,8 @@ def _write_multiple_frames(
             seq_num = fdat_chunks.seq_num
     return None
 
-
 def _save_all(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     _save(im, fp, filename, save_all=True)
-
 
 def _save(
     im: Image.Image,
@@ -1524,10 +1497,8 @@ def _save(
     if hasattr(fp, "flush"):
         fp.flush()
 
-
 # --------------------------------------------------------------------
 # PNG chunk converter
-
 
 def getchunks(im: Image.Image, **params: Any) -> list[tuple[bytes, bytes, bytes]]:
     """Return a list of PNG chunks representing this image."""
@@ -1549,7 +1520,6 @@ def getchunks(im: Image.Image, **params: Any) -> list[tuple[bytes, bytes, bytes]
         del im.encoderinfo
 
     return chunks
-
 
 # --------------------------------------------------------------------
 # Registry

@@ -39,7 +39,6 @@ if TYPE_CHECKING:
 # --------------------------------------------------------------------
 # Check for Tkinter interface hooks
 
-
 def _get_image_from_kw(kw: dict[str, Any]) -> ImageFile.ImageFile | None:
     source = None
     if "file" in kw:
@@ -49,7 +48,6 @@ def _get_image_from_kw(kw: dict[str, Any]) -> ImageFile.ImageFile | None:
     if not source:
         return None
     return Image.open(source)
-
 
 def _pyimagingtkcall(
     command: str, photo: PhotoImage | tkinter.PhotoImage, ptr: CapsuleType
@@ -65,10 +63,8 @@ def _pyimagingtkcall(
         _imagingtk.tkinit(tk.interpaddr())
         tk.call(command, photo, repr(ptr))
 
-
 # --------------------------------------------------------------------
 # PhotoImage
-
 
 class PhotoImage:
     """
@@ -187,10 +183,8 @@ class PhotoImage:
 
         _pyimagingtkcall("PyImagingPhoto", self.__photo, ptr)
 
-
 # --------------------------------------------------------------------
 # BitmapImage
-
 
 class BitmapImage:
     """
@@ -255,7 +249,6 @@ class BitmapImage:
         :return: A Tkinter bitmap image identifier (a string).
         """
         return str(self.__photo)
-
 
 def getimage(photo: PhotoImage) -> Image.Image:
     """Copies the contents of a PhotoImage to a PIL image memory."""

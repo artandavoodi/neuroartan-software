@@ -27,7 +27,6 @@ HEADERS: dict[str, str] = {"Accept-Encoding": "identity"}
 
 DOWNLOAD_CHUNK_SIZE = 256 * 1024
 
-
 def raise_for_status(resp: Response) -> None:
     http_error_msg = ""
     if isinstance(resp.reason, bytes):
@@ -54,7 +53,6 @@ def raise_for_status(resp: Response) -> None:
 
     if http_error_msg:
         raise NetworkConnectionError(http_error_msg, response=resp)
-
 
 def response_chunks(
     response: Response, chunk_size: int = DOWNLOAD_CHUNK_SIZE

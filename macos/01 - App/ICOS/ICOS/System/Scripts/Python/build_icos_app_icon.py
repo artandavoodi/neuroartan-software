@@ -20,7 +20,6 @@ HIGHLIGHT_PEAK_ALPHA = 38
 SHADOW_HEIGHT_FRAC = 0.10
 SHADOW_PEAK_ALPHA = 28
 
-
 def make_squircle_mask(size: int) -> Image.Image:
     big = size * SUPERSAMPLE
     mask = Image.new("L", (big, big), 0)
@@ -31,7 +30,6 @@ def make_squircle_mask(size: int) -> Image.Image:
     )
     return mask.resize((size, size), Image.LANCZOS)
 
-
 def vertical_l_column(height: int, alpha_at_y) -> Image.Image:
     column = Image.new("L", (1, height))
     pixels = column.load()
@@ -39,7 +37,6 @@ def vertical_l_column(height: int, alpha_at_y) -> Image.Image:
         t = y / (height - 1) if height > 1 else 0.0
         pixels[0, y] = max(0, min(255, int(round(alpha_at_y(t)))))
     return column
-
 
 def main(src_path: pathlib.Path, out_path: pathlib.Path) -> None:
     if not src_path.exists():
@@ -97,7 +94,6 @@ def main(src_path: pathlib.Path, out_path: pathlib.Path) -> None:
     out_path.parent.mkdir(parents=True, exist_ok=True)
     canvas.save(out_path, format="PNG", optimize=True)
     print(f"Wrote {out_path} ({out_path.stat().st_size // 1024} KB)")
-
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:

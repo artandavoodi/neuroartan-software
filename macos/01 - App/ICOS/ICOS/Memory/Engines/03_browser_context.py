@@ -86,7 +86,6 @@ from playwright._impl._web_error import WebError
 if TYPE_CHECKING:  # pragma: no cover
     from playwright._impl._browser import Browser
 
-
 class BrowserContext(ChannelOwner):
     Events = SimpleNamespace(
         # Deprecated in v1.56, never emitted anymore.

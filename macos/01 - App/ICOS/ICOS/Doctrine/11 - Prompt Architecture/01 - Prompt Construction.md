@@ -199,11 +199,11 @@ This doctrine must be applied before every inference.
 
 ## Document Control & Validation
 
-GSA PROTOCOL STATUS: Approved  
-GSA APPROVAL: true  
-DOCUMENT STATUS: Active — Prompt Architecture Doctrine  
-VISIBILITY: Internal  
-PUBLISH TO WEBSITE: No  
+GSA PROTOCOL STATUS: Approved
+GSA APPROVAL: true
+DOCUMENT STATUS: Active — Prompt Architecture Doctrine
+VISIBILITY: Internal
+PUBLISH TO WEBSITE: No
 VERSION: 1.0
 
 ---

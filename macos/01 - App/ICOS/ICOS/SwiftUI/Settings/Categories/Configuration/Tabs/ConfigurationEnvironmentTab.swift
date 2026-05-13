@@ -1,9 +1,11 @@
 import SwiftUI
 
-// MARK: - Configuration Environment Tab
+// MARK: - Environment Tab
 
 struct ConfigurationEnvironmentTab: View {
+    let shellState: ShellState
+
     var body: some View {
-        EmptyView()
+        EnvironmentSettingsPanel(shellState: shellState)
     }
 }

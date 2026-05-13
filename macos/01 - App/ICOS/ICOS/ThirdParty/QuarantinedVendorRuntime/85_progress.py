@@ -57,9 +57,7 @@ ProgressType = TypeVar("ProgressType")
 
 GetTimeCallable = Callable[[], float]
 
-
 _I = typing.TypeVar("_I", TextIO, BinaryIO)
-
 
 class _TrackThread(Thread):
     """A thread to periodically update progress."""
@@ -99,7 +97,6 @@ class _TrackThread(Thread):
     ) -> None:
         self.done.set()
         self.join()
-
 
 def track(
     sequence: Iterable[ProgressType],
@@ -177,7 +174,6 @@ def track(
             description=description,
             update_period=update_period,
         )
-
 
 class _Reader(RawIOBase, BinaryIO):
     """A reader that tracks progress while it's being read from."""
@@ -281,7 +277,6 @@ class _Reader(RawIOBase, BinaryIO):
     def writelines(self, lines: Iterable[Any]) -> None:
         raise UnsupportedOperation("writelines")
 
-
 class _ReadContext(ContextManager[_I], Generic[_I]):
     """A utility class to handle a context for both a reader and a progress."""
 
@@ -301,7 +296,6 @@ class _ReadContext(ContextManager[_I], Generic[_I]):
     ) -> None:
         self.progress.stop()
         self.reader.__exit__(exc_type, exc_val, exc_tb)
-
 
 def wrap_file(
     file: BinaryIO,
@@ -367,7 +361,6 @@ def wrap_file(
     reader = progress.wrap_file(file, total=total, description=description)
     return _ReadContext(progress, reader)
 
-
 @typing.overload
 def open(
     file: Union[str, "PathLike[str]", bytes],
@@ -392,7 +385,6 @@ def open(
 ) -> ContextManager[TextIO]:
     pass
 
-
 @typing.overload
 def open(
     file: Union[str, "PathLike[str]", bytes],
@@ -416,7 +408,6 @@ def open(
     disable: bool = False,
 ) -> ContextManager[BinaryIO]:
     pass
-
 
 def open(
     file: Union[str, "PathLike[str]", bytes],
@@ -503,7 +494,6 @@ def open(
     )
     return _ReadContext(progress, reader)  # type: ignore[return-value, type-var]
 
-
 class ProgressColumn(ABC):
     """Base class for a widget to use in progress display."""
 
@@ -545,7 +535,6 @@ class ProgressColumn(ABC):
     def render(self, task: "Task") -> RenderableType:
         """Should return a renderable object."""
 
-
 class RenderableColumn(ProgressColumn):
     """A column to insert an arbitrary column.
 
@@ -561,7 +550,6 @@ class RenderableColumn(ProgressColumn):
 
     def render(self, task: "Task") -> RenderableType:
         return self.renderable
-
 
 class SpinnerColumn(ProgressColumn):
     """A column with a 'spinner' animation.
@@ -612,7 +600,6 @@ class SpinnerColumn(ProgressColumn):
         )
         return text
 
-
 class TextColumn(ProgressColumn):
     """A column containing text."""
 
@@ -641,7 +628,6 @@ class TextColumn(ProgressColumn):
         if self.highlighter:
             self.highlighter.highlight(text)
         return text
-
 
 class BarColumn(ProgressColumn):
     """Renders a visual progress bar.
@@ -684,7 +670,6 @@ class BarColumn(ProgressColumn):
             pulse_style=self.pulse_style,
         )
 
-
 class TimeElapsedColumn(ProgressColumn):
     """Renders time elapsed."""
 
@@ -695,7 +680,6 @@ class TimeElapsedColumn(ProgressColumn):
             return Text("-:--:--", style="progress.elapsed")
         delta = timedelta(seconds=max(0, int(elapsed)))
         return Text(str(delta), style="progress.elapsed")
-
 
 class TaskProgressColumn(TextColumn):
     """Show task progress as a percentage.
@@ -768,7 +752,6 @@ class TaskProgressColumn(TextColumn):
             self.highlighter.highlight(text)
         return text
 
-
 class TimeRemainingColumn(ProgressColumn):
     """Renders estimated time remaining.
 
@@ -816,7 +799,6 @@ class TimeRemainingColumn(ProgressColumn):
 
         return Text(formatted, style=style)
 
-
 class FileSizeColumn(ProgressColumn):
     """Renders completed filesize."""
 
@@ -825,7 +807,6 @@ class FileSizeColumn(ProgressColumn):
         data_size = filesize.decimal(int(task.completed))
         return Text(data_size, style="progress.filesize")
 
-
 class TotalFileSizeColumn(ProgressColumn):
     """Renders total filesize."""
 
@@ -833,7 +814,6 @@ class TotalFileSizeColumn(ProgressColumn):
         """Show data completed."""
         data_size = filesize.decimal(int(task.total)) if task.total is not None else ""
         return Text(data_size, style="progress.filesize.total")
-
 
 class MofNCompleteColumn(ProgressColumn):
     """Renders completed count/total, e.g. '  10/1000'.
@@ -860,7 +840,6 @@ class MofNCompleteColumn(ProgressColumn):
             f"{completed:{total_width}d}{self.separator}{total}",
             style="progress.download",
         )
-
 
 class DownloadColumn(ProgressColumn):
     """Renders file size downloaded and total, e.g. '0.5/2.3 GB'.
@@ -910,7 +889,6 @@ class DownloadColumn(ProgressColumn):
         download_text = Text(download_status, style="progress.download")
         return download_text
 
-
 class TransferSpeedColumn(ProgressColumn):
     """Renders human readable transfer speed."""
 
@@ -922,7 +900,6 @@ class TransferSpeedColumn(ProgressColumn):
         data_speed = filesize.decimal(int(speed))
         return Text(f"{data_speed}/s", style="progress.data.speed")
 
-
 class ProgressSample(NamedTuple):
     """Sample of progress for a given time."""
 
@@ -930,7 +907,6 @@ class ProgressSample(NamedTuple):
     """Timestamp of sample."""
     completed: float
     """Number of steps completed."""
-
 
 @dataclass
 class Task:
@@ -1056,7 +1032,6 @@ class Task:
         self._progress.clear()
         self.finished_time = None
         self.finished_speed = None
-
 
 class Progress(JupyterMixin):
     """Renders an auto-updating progress bar(s).
@@ -1648,7 +1623,6 @@ class Progress(JupyterMixin):
         """
         with self._lock:
             del self._tasks[task_id]
-
 
 if __name__ == "__main__":  # pragma: no coverage
     import random

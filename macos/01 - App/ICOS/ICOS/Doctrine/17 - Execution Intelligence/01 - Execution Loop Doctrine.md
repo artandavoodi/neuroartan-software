@@ -64,7 +64,6 @@ related:
   - "macos/01 - App/ICOS/ICOS/Doctrine/17 - Execution Intelligence/03 - Verification Classification Doctrine.md"
   - "macos/01 - App/ICOS/ICOS/Doctrine/10 - Runtime Behavior/01 - Runtime Contract.md"
 
-
 tags:
   - "icos"
   - "execution"
@@ -224,11 +223,11 @@ This doctrine must be included in every prompt before inference.
 
 ## Document Control & Validation
 
-GSA PROTOCOL STATUS: Approved  
-GSA APPROVAL: true  
-DOCUMENT STATUS: Active — Execution Loop Doctrine  
-VISIBILITY: Internal  
-PUBLISH TO WEBSITE: No  
+GSA PROTOCOL STATUS: Approved
+GSA APPROVAL: true
+DOCUMENT STATUS: Active — Execution Loop Doctrine
+VISIBILITY: Internal
+PUBLISH TO WEBSITE: No
 VERSION: 1.0
 
 ---

@@ -34,13 +34,11 @@ from ._binary import i32le as i32
 
 # --------------------------------------------------------------------
 
-
 split = re.compile(r"^%%([^:]*):[ \t]*(.*)[ \t]*$")
 field = re.compile(r"^%[%!\w]([^:]*)[ \t]*$")
 
 gs_binary: str | bool | None = None
 gs_windows_binary = None
-
 
 def has_ghostscript() -> bool:
     global gs_binary, gs_windows_binary
@@ -63,7 +61,6 @@ def has_ghostscript() -> bool:
             except OSError:
                 gs_binary = False
     return gs_binary is not False
-
 
 def Ghostscript(
     tile: list[ImageFile._Tile],
@@ -168,17 +165,14 @@ def Ghostscript(
         except OSError:
             pass
 
-
 def _accept(prefix: bytes) -> bool:
     return prefix.startswith(b"%!PS") or (
         len(prefix) >= 4 and i32(prefix) == 0xC6D3D0C5
     )
 
-
 ##
 # Image plugin for Encapsulated PostScript. This plugin supports only
 # a few variants of this format.
-
 
 class EpsImageFile(ImageFile.ImageFile):
     """EPS File Parser for the Python Imaging Library"""
@@ -416,9 +410,7 @@ class EpsImageFile(ImageFile.ImageFile):
         # use our custom load method by defining this method.
         pass
 
-
 # --------------------------------------------------------------------
-
 
 def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes, eps: int = 1) -> None:
     """EPS Writer for the Python Imaging Library."""
@@ -468,9 +460,7 @@ def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes, eps: int = 1) -
     if hasattr(fp, "flush"):
         fp.flush()
 
-
 # --------------------------------------------------------------------
-
 
 Image.register_open(EpsImageFile.format, EpsImageFile, _accept)
 

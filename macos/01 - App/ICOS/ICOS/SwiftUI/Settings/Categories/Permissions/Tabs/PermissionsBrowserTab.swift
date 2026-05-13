@@ -1,9 +1,20 @@
 import SwiftUI
 
-// MARK: - Permissions Browser Tab
+// MARK: - Browser Tab
 
 struct PermissionsBrowserTab: View {
     var body: some View {
-        EmptyView()
+        SettingsSectionCard(
+            title: "Browser",
+            subtitle: "Browser permission scope."
+        ) {
+            VStack(alignment: .leading, spacing: ICOSSpacing.sm) {
+                Text("Browser")
+                    .font(ICOSSidebarTokens.itemTitleFont)
+                    .foregroundStyle(ICOSSidebarColors.textPrimary)
+                    .font(.system(size: ICOSControlTokens.profileMetaFontSize, weight: .medium))
+                    .foregroundStyle(ICOSSidebarColors.textSecondary)
+            }
+        }
     }
 }

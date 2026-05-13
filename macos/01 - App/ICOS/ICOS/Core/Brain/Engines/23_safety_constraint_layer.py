@@ -7,7 +7,6 @@ from typing import Any
 import json
 import time
 
-
 # ============================================================
 # Sovereign Root
 # ============================================================
@@ -36,7 +35,6 @@ CONSTRAINT_LOG = (
 MUTATION_STORE = (
     MEMORY_ROOT / "architecture_mutation_store.json"
 )
-
 
 # ============================================================
 # Safety Constraint Layer
@@ -84,7 +82,6 @@ class SafetyConstraintLayer:
             fallback={}
         )
 
-
     # ========================================================
     # JSON Loading
     # ========================================================
@@ -102,7 +99,6 @@ class SafetyConstraintLayer:
             return json.loads(path.read_text())
         except Exception:
             return fallback
-
 
     # ========================================================
     # Constraint Enforcement
@@ -145,7 +141,6 @@ class SafetyConstraintLayer:
 
         return result
 
-
     # ========================================================
     # Runtime Integrity
     # ========================================================
@@ -173,7 +168,6 @@ class SafetyConstraintLayer:
             "runtime_integrity": len(blocked) == 0,
             "safety_constraints_active": True,
         }
-
 
 # ============================================================
 # Runtime Entry

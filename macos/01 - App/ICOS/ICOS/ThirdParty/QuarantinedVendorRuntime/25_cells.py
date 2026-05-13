@@ -29,7 +29,6 @@ _SINGLE_CELLS = frozenset(
 # characters are single-cell, otherwise False
 _is_single_cell_widths: Callable[[str], bool] = _SINGLE_CELLS.issuperset
 
-
 @lru_cache(4096)
 def cached_cell_len(text: str) -> int:
     """Get the number of cells required to display text.
@@ -47,7 +46,6 @@ def cached_cell_len(text: str) -> int:
         return len(text)
     return sum(map(get_character_cell_size, text))
 
-
 def cell_len(text: str, _cell_len: Callable[[str], int] = cached_cell_len) -> int:
     """Get the number of cells required to display text.
 
@@ -62,7 +60,6 @@ def cell_len(text: str, _cell_len: Callable[[str], int] = cached_cell_len) -> in
     if _is_single_cell_widths(text):
         return len(text)
     return sum(map(get_character_cell_size, text))
-
 
 @lru_cache(maxsize=4096)
 def get_character_cell_size(character: str) -> int:
@@ -91,7 +88,6 @@ def get_character_cell_size(character: str) -> int:
             break
         index = (lower_bound + upper_bound) // 2
     return 1
-
 
 def set_cell_size(text: str, total: int) -> str:
     """Set the length of a string to fit within given number of cells."""
@@ -126,7 +122,6 @@ def set_cell_size(text: str, total: int) -> str:
             end = pos
         else:
             start = pos
-
 
 def chop_cells(
     text: str,
@@ -163,7 +158,6 @@ def chop_cells(
             total_width += cell_width
 
     return ["".join(line) for line in lines]
-
 
 if __name__ == "__main__":  # pragma: no cover
     print(get_character_cell_size("😽"))

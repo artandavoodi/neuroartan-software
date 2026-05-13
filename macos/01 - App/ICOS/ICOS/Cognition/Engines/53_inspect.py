@@ -11,12 +11,10 @@ from .pretty import Pretty
 from .table import Table
 from .text import Text, TextType
 
-
 def _first_paragraph(doc: str) -> str:
     """Get the first paragraph from a docstring."""
     paragraph, _, _ = doc.partition("\n\n")
     return paragraph
-
 
 class Inspect(JupyterMixin):
     """A renderable to inspect any Python Object.
@@ -232,7 +230,6 @@ class Inspect(JupyterMixin):
             docs = _first_paragraph(docs)
         return escape_control_codes(docs)
 
-
 def get_object_types_mro(obj: Union[object, Type[Any]]) -> Tuple[type, ...]:
     """Returns the MRO of an object's class, or of the object itself if it's a class."""
     if not hasattr(obj, "__mro__"):
@@ -240,7 +237,6 @@ def get_object_types_mro(obj: Union[object, Type[Any]]) -> Tuple[type, ...]:
         # some types of classes, such as the ones that use abc.ABCMeta.
         obj = type(obj)
     return getattr(obj, "__mro__", ())
-
 
 def get_object_types_mro_as_strings(obj: object) -> Collection[str]:
     """
@@ -253,7 +249,6 @@ def get_object_types_mro_as_strings(obj: object) -> Collection[str]:
         f'{getattr(type_, "__module__", "")}.{getattr(type_, "__qualname__", "")}'
         for type_ in get_object_types_mro(obj)
     ]
-
 
 def is_object_one_of_types(
     obj: object, fully_qualified_types_names: Collection[str]

@@ -14,7 +14,6 @@ PLAYWRIGHT_SCREENSHOT_DIR.mkdir(parents=True, exist_ok=True)
 
 DEV_SERVER_URL = "http://127.0.0.1:8891"
 
-
 def run_command(command, cwd=None):
     try:
         result = subprocess.run(
@@ -37,7 +36,6 @@ def run_command(command, cwd=None):
             "error": str(e)
         }
 
-
 def verify_dev_server():
     try:
         response = urlopen(DEV_SERVER_URL, timeout=2)
@@ -56,7 +54,6 @@ def verify_dev_server():
             "error": str(e)
         }
 
-
 def capture_screenshot(name="runtime_capture"):
     timestamp = int(time.time())
 
@@ -73,7 +70,6 @@ def capture_screenshot(name="runtime_capture"):
         "path": str(target),
         "details": result
     }
-
 
 def playwright_capture(url=DEV_SERVER_URL):
     try:
@@ -119,7 +115,6 @@ def playwright_capture(url=DEV_SERVER_URL):
             "error": str(e)
         }
 
-
 def verify_runtime():
     server = verify_dev_server()
     screenshot = capture_screenshot("homepage_runtime")
@@ -144,7 +139,6 @@ def verify_runtime():
             "dom_runtime_verification": True,
         }
     }
-
 
 if __name__ == "__main__":
     print(json.dumps(verify_runtime(), indent=2))

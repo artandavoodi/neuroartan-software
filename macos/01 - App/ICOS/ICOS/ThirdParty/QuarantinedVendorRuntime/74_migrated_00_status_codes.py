@@ -105,7 +105,6 @@ _codes = {
 
 codes = LookupDict(name="status_codes")
 
-
 def _init():
     for code, titles in _codes.items():
         for title in titles:
@@ -123,6 +122,5 @@ def _init():
         if __doc__ is not None
         else None
     )
-
 
 _init()

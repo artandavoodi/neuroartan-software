@@ -203,7 +203,6 @@ struct DeveloperConsoleTopBar: View {
     }
 }
 
-
 // MARK: - Developer Review Panel
 
 struct DeveloperPatchReviewPanel: View {

@@ -1,9 +1,11 @@
 import SwiftUI
 
-// MARK: - Configuration Worktree Tab
+// MARK: - Worktree Tab
 
 struct ConfigurationWorktreeTab: View {
+    let shellState: ShellState
+
     var body: some View {
-        EmptyView()
+        WorktreeSettingsPanel(shellState: shellState)
     }
 }

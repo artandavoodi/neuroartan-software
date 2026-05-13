@@ -50,14 +50,11 @@ BIT2MODE = {
 
 USE_RAW_ALPHA = False
 
-
 def _accept(prefix: bytes) -> bool:
     return prefix.startswith(b"BM")
 
-
 def _dib_accept(prefix: bytes) -> bool:
     return i32(prefix) in [12, 40, 52, 56, 64, 108, 124]
-
 
 # =============================================================================
 # Image plugin for the Windows BMP format.
@@ -320,7 +317,6 @@ class BmpImageFile(ImageFile.ImageFile):
         # load bitmap information (offset=raster info)
         self._bitmap(offset=offset)
 
-
 class BmpRleDecoder(ImageFile.PyDecoder):
     _pulls_fd = True
 
@@ -393,7 +389,6 @@ class BmpRleDecoder(ImageFile.PyDecoder):
         self.set_as_raw(bytes(data), rawmode, (0, self.args[-1]))
         return -1, 0
 
-
 # =============================================================================
 # Image plugin for the DIB format (BMP alias)
 # =============================================================================
@@ -404,11 +399,9 @@ class DibImageFile(BmpImageFile):
     def _open(self) -> None:
         self._bitmap()
 
-
 #
 # --------------------------------------------------------------------
 # Write BMP file
-
 
 SAVE = {
     "1": ("1", 1, 2),
@@ -418,10 +411,8 @@ SAVE = {
     "RGBA": ("BGRA", 32, 0),
 }
 
-
 def _dib_save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     _save(im, fp, filename, False)
-
 
 def _save(
     im: Image.Image, fp: IO[bytes], filename: str | bytes, bitmap_header: bool = True
@@ -491,11 +482,9 @@ def _save(
         im, fp, [ImageFile._Tile("raw", (0, 0) + im.size, 0, (rawmode, stride, -1))]
     )
 
-
 #
 # --------------------------------------------------------------------
 # Registry
-
 
 Image.register_open(BmpImageFile.format, BmpImageFile, _accept)
 Image.register_save(BmpImageFile.format, _save)

@@ -17,7 +17,6 @@ if TYPE_CHECKING:
     class Preference(Protocol):
         def __lt__(self, __other: Any) -> bool: ...
 
-
 class AbstractProvider(Generic[RT, CT, KT]):
     """Delegate class to provide the required interface for the resolver."""
 

@@ -4,7 +4,6 @@ from typing import TypeVar
 
 _T = TypeVar("_T", covariant=True)
 
-
 class CommandContextMixIn:
     def __init__(self) -> None:
         super().__init__()

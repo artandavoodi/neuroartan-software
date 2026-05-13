@@ -29,7 +29,6 @@ if TYPE_CHECKING:
     from collections.abc import Callable, Iterable
     from typing import AbstractSet
 
-
 __all__ = [
     "INTERPRETER_SHORT_NAMES",
     "AppleVersion",
@@ -50,10 +49,8 @@ __all__ = [
     "sys_tags",
 ]
 
-
 def __dir__() -> list[str]:
     return __all__
-
 
 logger = logging.getLogger(__name__)
 
@@ -69,21 +66,17 @@ INTERPRETER_SHORT_NAMES: dict[str, str] = {
     "jython": "jy",
 }
 
-
 # This function can be unit tested without reloading the module
 # (Unlike _32_BIT_INTERPRETER)
 def _compute_32_bit_interpreter() -> bool:
     return struct.calcsize("P") == 4
 
-
 _32_BIT_INTERPRETER = _compute_32_bit_interpreter()
-
 
 class UnsortedTagsError(ValueError):
     """
     Raised when a tag component is not in sorted order per PEP 425.
     """
-
 
 class Tag:
     """
@@ -199,7 +192,6 @@ class Tag:
                 return
         raise TypeError(f"Cannot restore Tag from {state!r}")
 
-
 def parse_tag(tag: str, *, validate_order: bool = False) -> frozenset[Tag]:
     """
     Parses the provided tag (e.g. `py3-none-any`) into a frozenset of
@@ -236,7 +228,6 @@ def parse_tag(tag: str, *, validate_order: bool = False) -> frozenset[Tag]:
                 tags.add(Tag(interpreter, abi, platform_))
     return frozenset(tags)
 
-
 def _get_config_var(name: str, warn: bool = False) -> int | str | None:
     value: int | str | None = sysconfig.get_config_var(name)
     if value is None and warn:
@@ -245,10 +236,8 @@ def _get_config_var(name: str, warn: bool = False) -> int | str | None:
         )
     return value
 
-
 def _normalize_string(string: str) -> str:
     return string.replace(".", "_").replace("-", "_").replace(" ", "_")
-
 
 def _is_threaded_cpython(abis: list[str]) -> bool:
     """
@@ -265,7 +254,6 @@ def _is_threaded_cpython(abis: list[str]) -> bool:
     abiflags = m.group(1)
     return "t" in abiflags
 
-
 def _abi3_applies(python_version: PythonVersion, threading: bool) -> bool:
     """
     Determine if the Python version supports abi3.
@@ -274,7 +262,6 @@ def _abi3_applies(python_version: PythonVersion, threading: bool) -> bool:
     builds do not support abi3.
     """
     return len(python_version) > 1 and tuple(python_version) >= (3, 2) and not threading
-
 
 def _abi3t_applies(python_version: PythonVersion, threading: bool) -> bool:
     """
@@ -287,7 +274,6 @@ def _abi3t_applies(python_version: PythonVersion, threading: bool) -> bool:
 
     """
     return len(python_version) > 1 and tuple(python_version) >= (3, 2) and threading
-
 
 def _cpython_abis(py_version: PythonVersion, warn: bool = False) -> list[str]:
     py_version = tuple(py_version)  # To allow for version comparison.
@@ -320,7 +306,6 @@ def _cpython_abis(py_version: PythonVersion, warn: bool = False) -> list[str]:
         abis.append(f"cp{version}{threading}")
     abis.insert(0, f"cp{version}{threading}{debug}{pymalloc}{ucs4}")
     return abis
-
 
 def cpython_tags(
     python_version: PythonVersion | None = None,
@@ -400,7 +385,6 @@ def cpython_tags(
                     # versions, so allow things like ("cp37", "abi3t", "platform")
                     yield Tag(interpreter, "abi3t", platform_)
 
-
 def _generic_abi() -> list[str]:
     """
     Return the ABI tag based on EXT_SUFFIX.
@@ -440,7 +424,6 @@ def _generic_abi() -> list[str]:
     else:
         return []
     return [_normalize_string(abi)]
-
 
 def generic_tags(
     interpreter: str | None = None,
@@ -482,7 +465,6 @@ def generic_tags(
         for platform_ in platforms:
             yield Tag(interpreter, abi, platform_)
 
-
 def _py_interpreter_range(py_version: PythonVersion) -> Iterator[str]:
     """
     Yields Python versions in descending order.
@@ -496,7 +478,6 @@ def _py_interpreter_range(py_version: PythonVersion) -> Iterator[str]:
     if len(py_version) > 1:
         for minor in range(py_version[1] - 1, -1, -1):
             yield f"py{_version_nodot((py_version[0], minor))}"
-
 
 def compatible_tags(
     python_version: PythonVersion | None = None,
@@ -532,7 +513,6 @@ def compatible_tags(
     for version in _py_interpreter_range(python_version):
         yield Tag(version, "none", "any")
 
-
 def _mac_arch(arch: str, is_32bit: bool = _32_BIT_INTERPRETER) -> str:
     if not is_32bit:
         return arch
@@ -541,7 +521,6 @@ def _mac_arch(arch: str, is_32bit: bool = _32_BIT_INTERPRETER) -> str:
         return "ppc"
 
     return "i386"
-
 
 def _mac_binary_formats(version: AppleVersion, cpu_arch: str) -> list[str]:
     formats = [cpu_arch]
@@ -573,7 +552,6 @@ def _mac_binary_formats(version: AppleVersion, cpu_arch: str) -> list[str]:
         formats.append("universal")
 
     return formats
-
 
 def mac_platforms(
     version: AppleVersion | None = None, arch: str | None = None
@@ -663,7 +641,6 @@ def mac_platforms(
                 binary_format = "universal2"
                 yield f"macosx_{major_version}_{minor_version}_{binary_format}"
 
-
 def ios_platforms(
     version: AppleVersion | None = None, multiarch: str | None = None
 ) -> Iterator[str]:
@@ -725,7 +702,6 @@ def ios_platforms(
                 major=major, minor=minor, multiarch=multiarch
             )
 
-
 def android_platforms(
     api_level: int | None = None, abi: str | None = None
 ) -> Iterator[str]:
@@ -762,7 +738,6 @@ def android_platforms(
     for ver in range(api_level, min_api_level - 1, -1):
         yield f"android_{ver}_{abi}"
 
-
 def _linux_platforms(is_32bit: bool = _32_BIT_INTERPRETER) -> Iterator[str]:
     linux = _normalize_string(sysconfig.get_platform())
     if not linux.startswith("linux_"):
@@ -781,7 +756,6 @@ def _linux_platforms(is_32bit: bool = _32_BIT_INTERPRETER) -> Iterator[str]:
     for arch in archs:
         yield f"linux_{arch}"
 
-
 def _emscripten_platforms() -> Iterator[str]:
     pyemscripten_platform_version = sysconfig.get_config_var(
         "PYEMSCRIPTEN_PLATFORM_VERSION"
@@ -790,10 +764,8 @@ def _emscripten_platforms() -> Iterator[str]:
         yield f"pyemscripten_{pyemscripten_platform_version}_wasm32"
     yield from _generic_platforms()
 
-
 def _generic_platforms() -> Iterator[str]:
     yield _normalize_string(sysconfig.get_platform())
-
 
 def platform_tags() -> Iterator[str]:
     """
@@ -812,7 +784,6 @@ def platform_tags() -> Iterator[str]:
     else:
         return _generic_platforms()
 
-
 def interpreter_name() -> str:
     """
     Returns the name of the running interpreter.
@@ -825,7 +796,6 @@ def interpreter_name() -> str:
     name = sys.implementation.name
     return INTERPRETER_SHORT_NAMES.get(name) or name
 
-
 def interpreter_version(*, warn: bool = False) -> str:
     """
     Returns the running interpreter's version.
@@ -837,10 +807,8 @@ def interpreter_version(*, warn: bool = False) -> str:
     version = _get_config_var("py_version_nodot", warn=warn)
     return str(version) if version else _version_nodot(sys.version_info[:2])
 
-
 def _version_nodot(version: PythonVersion) -> str:
     return "".join(map(str, version))
-
 
 def sys_tags(*, warn: bool = False) -> Iterator[Tag]:
     """
@@ -884,7 +852,6 @@ def sys_tags(*, warn: bool = False) -> Iterator[Tag]:
     else:
         interp = None
     yield from compatible_tags(interpreter=interp)
-
 
 def create_compatible_tags_selector(
     tags: Iterable[Tag],

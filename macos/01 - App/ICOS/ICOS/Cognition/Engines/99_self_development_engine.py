@@ -39,8 +39,6 @@ SELF_DEVELOPMENT_PRIORITIES = [
     }
 ]
 
-
-
 def load_json(path, fallback):
     if not path.exists():
         return fallback
@@ -50,12 +48,8 @@ def load_json(path, fallback):
     except Exception:
         return fallback
 
-
-
 def save_json(path, data):
     path.write_text(json.dumps(data, indent=2))
-
-
 
 def evaluate_current_state():
     ledger = load_json(LEDGER, {
@@ -73,16 +67,12 @@ def evaluate_current_state():
         "strategic_engine_exists": STRATEGIC_ENGINE.exists()
     }
 
-
-
 def determine_next_priority(active_titles):
     for priority in SELF_DEVELOPMENT_PRIORITIES:
         if priority["title"] not in active_titles:
             return priority
 
     return SELF_DEVELOPMENT_PRIORITIES[-1]
-
-
 
 def generate_self_development_plan():
     state = evaluate_current_state()
@@ -119,7 +109,6 @@ def generate_self_development_plan():
     save_json(SELF_DEV_PLAN, plan)
 
     return plan
-
 
 if __name__ == "__main__":
     print(json.dumps(

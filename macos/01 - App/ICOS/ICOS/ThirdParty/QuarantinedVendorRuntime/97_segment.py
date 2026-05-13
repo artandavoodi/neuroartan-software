@@ -31,7 +31,6 @@ if TYPE_CHECKING:
 
 log = getLogger("rich")
 
-
 class ControlType(IntEnum):
     """Non-printable control codes which typically translate to ANSI codes."""
 
@@ -52,13 +51,11 @@ class ControlType(IntEnum):
     ERASE_IN_LINE = 15
     SET_WINDOW_TITLE = 16
 
-
 ControlCode = Union[
     Tuple[ControlType],
     Tuple[ControlType, Union[int, str]],
     Tuple[ControlType, int, int],
 ]
-
 
 @rich_repr()
 class Segment(NamedTuple):
@@ -667,7 +664,6 @@ class Segment(NamedTuple):
 
         yield segments_copy()
 
-
 class Segments:
     """A simple renderable to render an iterable of segments. This class may be useful if
     you want to print segments outside of a __rich_console__ method.
@@ -692,7 +688,6 @@ class Segments:
         else:
             yield from self.segments
 
-
 class SegmentLines:
     def __init__(self, lines: Iterable[List[Segment]], new_lines: bool = False) -> None:
         """A simple renderable containing a number of lines of segments. May be used as an intermediate
@@ -716,7 +711,6 @@ class SegmentLines:
         else:
             for line in self.lines:
                 yield from line
-
 
 if __name__ == "__main__":  # pragma: no cover
     from pip._vendor.rich.console import Console

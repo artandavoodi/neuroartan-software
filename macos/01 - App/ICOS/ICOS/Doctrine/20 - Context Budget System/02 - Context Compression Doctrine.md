@@ -64,7 +64,6 @@ related:
   - "macos/01 - App/ICOS/ICOS/Doctrine/20 - Context Budget System/03 - Context Carryover Doctrine.md"
   - "macos/01 - App/ICOS/ICOS/Doctrine/11 - Prompt Architecture/02 - Context Injection Order.md"
 
-
 tags:
   - "icos"
   - "context"
@@ -193,11 +192,11 @@ This doctrine must be included in every prompt before inference.
 
 ## Document Control & Validation
 
-GSA PROTOCOL STATUS: Approved  
-GSA APPROVAL: true  
-DOCUMENT STATUS: Active — Context Compression Doctrine  
-VISIBILITY: Internal  
-PUBLISH TO WEBSITE: No  
+GSA PROTOCOL STATUS: Approved
+GSA APPROVAL: true
+DOCUMENT STATUS: Active — Context Compression Doctrine
+VISIBILITY: Internal
+PUBLISH TO WEBSITE: No
 VERSION: 1.0
 
 ---

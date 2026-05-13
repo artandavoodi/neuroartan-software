@@ -5,14 +5,14 @@ import Combine
 
 @MainActor
 final class SessionState: ObservableObject {
-    
+
     // MARK: - Session Identity
-    
+
     let sessionID: UUID
     let createdAt: Date
-    
+
     // MARK: - Chat Messages
-    
+
     @Published var messages: [ChatMessage] = [] {
         didSet { persist() }
     }
@@ -48,30 +48,30 @@ final class SessionState: ObservableObject {
             persist()
         }
     }
-    
+
     // MARK: - Derived Output
-    
+
     var currentOutput: String {
         return messages.last(where: { $0.role == .assistant })?.content ?? ""
     }
-    
+
     // MARK: - User Messages
-    
+
     func appendUser(_ text: String) {
         let message = ChatMessage(role: .user, content: text)
         messages.append(message)
         isResponding = true
     }
-    
+
     // MARK: - System Messages
-    
+
     func appendSystem(_ text: String) {
         let message = ChatMessage(role: .system, content: text)
         messages.append(message)
     }
-    
+
     // MARK: - Assistant Messages
-    
+
     func appendAssistant(_ text: String) {
         var cleaned = text
 
@@ -104,9 +104,9 @@ final class SessionState: ObservableObject {
         messages.append(message)
         isResponding = false
     }
-    
+
     // MARK: - Submission
-    
+
     func submit(_ text: String) {
         let trimmed = text.trimmingCharacters(in: .whitespacesAndNewlines)
 
@@ -122,7 +122,7 @@ final class SessionState: ObservableObject {
     }
 
     // MARK: - Persistence
-    
+
     private func persist() {
         store.saveActiveSession(
             PersistedSession(

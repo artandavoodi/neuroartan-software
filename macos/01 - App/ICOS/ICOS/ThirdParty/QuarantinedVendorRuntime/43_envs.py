@@ -24,7 +24,6 @@ from ._dists import Distribution
 
 logger = logging.getLogger(__name__)
 
-
 def _looks_like_wheel(location: str) -> bool:
     if not location.endswith(WHEEL_EXTENSION):
         return False
@@ -35,7 +34,6 @@ def _looks_like_wheel(location: str) -> bool:
     except InvalidWheelFilename:
         return False
     return zipfile.is_zipfile(location)
-
 
 class _DistributionFinder:
     """Finder to locate distributions.
@@ -111,7 +109,6 @@ class _DistributionFinder:
             target_location = str(path.joinpath(target_rel))
             for dist, info_location in self._find_impl(target_location):
                 yield Distribution(dist, info_location, path)
-
 
 class Environment(BaseEnvironment):
     def __init__(self, paths: Sequence[str]) -> None:

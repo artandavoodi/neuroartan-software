@@ -21,7 +21,6 @@ from ._typing import SupportsRead
 #
 # Bitstream parser
 
-
 class BitStream:
     def __init__(self, fp: SupportsRead[bytes]) -> None:
         self.fp = fp
@@ -48,15 +47,12 @@ class BitStream:
         self.bits = self.bits - bits
         return v
 
-
 def _accept(prefix: bytes) -> bool:
     return prefix.startswith(b"\x00\x00\x01\xb3")
-
 
 ##
 # Image plugin for MPEG streams.  This plugin can identify a stream,
 # but it cannot read it.
-
 
 class MpegImageFile(ImageFile.ImageFile):
     format = "MPEG"
@@ -72,7 +68,6 @@ class MpegImageFile(ImageFile.ImageFile):
 
         self._mode = "RGB"
         self._size = s.read(12), s.read(12)
-
 
 # --------------------------------------------------------------------
 # Registry stuff

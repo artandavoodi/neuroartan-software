@@ -3,14 +3,14 @@ import SwiftUI
 // MARK: - Typing Indicator View (RR-007)
 
 struct TypingIndicatorView: View {
-    
+
     @State private var animate: Bool = false
     @ObservedObject var appState: ICOSAppState
-    
+
     private var isActive: Bool {
         false
     }
-    
+
     var body: some View {
         Group {
             if isActive {
@@ -38,7 +38,7 @@ struct TypingIndicatorView: View {
                             lineWidth: ICOSMaterials.softStrokeWidth
                         )
                     }
-                    
+
                     Spacer()
                 }
                 .padding(.horizontal, ICOSDeveloperCanvasTokens.typingIndicatorHorizontalPadding)
@@ -48,9 +48,9 @@ struct TypingIndicatorView: View {
             }
         }
     }
-    
+
     // MARK: - Dot
-    
+
     private func dot(delay: Double) -> some View {
         Circle()
             .fill(ICOSSidebarColors.textSecondary.opacity(ICOSDeveloperCanvasTokens.thinkingDotOpacity))

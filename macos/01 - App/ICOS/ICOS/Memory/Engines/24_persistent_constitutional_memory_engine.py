@@ -15,7 +15,6 @@ GRAPH_PATH = Path(__file__).with_name(
     "constitutional_memory_graph.json"
 )
 
-
 @dataclass
 class MemoryEvent:
     key: str
@@ -25,7 +24,6 @@ class MemoryEvent:
     timestamp: str = ""
     tags: Optional[List[str]] = None
     source: str = "ICOS"
-
 
 class PersistentConstitutionalMemoryEngine:
     def __init__(
@@ -232,9 +230,7 @@ class PersistentConstitutionalMemoryEngine:
             "last_update": self.state.get("last_update")
         }
 
-
 ENGINE = PersistentConstitutionalMemoryEngine()
-
 
 if __name__ == "__main__":
     sample = ENGINE.record(

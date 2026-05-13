@@ -120,7 +120,6 @@ ANSI_DARK: Dict[TokenType, Style] = {
 RICH_SYNTAX_THEMES = {"ansi_light": ANSI_LIGHT, "ansi_dark": ANSI_DARK}
 NUMBERS_COLUMN_DEFAULT_PADDING = 2
 
-
 class SyntaxTheme(ABC):
     """Base class for a syntax theme."""
 
@@ -133,7 +132,6 @@ class SyntaxTheme(ABC):
     def get_background_style(self) -> Style:
         """Get the background color."""
         raise NotImplementedError  # pragma: no cover
-
 
 class PygmentsSyntaxTheme(SyntaxTheme):
     """Syntax theme that delegates to Pygments theme."""
@@ -176,7 +174,6 @@ class PygmentsSyntaxTheme(SyntaxTheme):
     def get_background_style(self) -> Style:
         return self._background_style
 
-
 class ANSISyntaxTheme(SyntaxTheme):
     """Syntax theme to use standard colors."""
 
@@ -209,9 +206,7 @@ class ANSISyntaxTheme(SyntaxTheme):
     def get_background_style(self) -> Style:
         return self._background_style
 
-
 SyntaxPosition = Tuple[int, int]
-
 
 class _SyntaxHighlightRange(NamedTuple):
     """
@@ -225,7 +220,6 @@ class _SyntaxHighlightRange(NamedTuple):
     end: SyntaxPosition
     style_before: bool = False
 
-
 class PaddingProperty:
     """Descriptor to get and set padding."""
 
@@ -235,7 +229,6 @@ class PaddingProperty:
 
     def __set__(self, obj: Syntax, padding: PaddingDimensions) -> None:
         obj._padding = Padding.unpack(padding)
-
 
 class Syntax(JupyterMixin):
     """Construct a Syntax object to render syntax highlighted code.
@@ -837,7 +830,6 @@ class Syntax(JupyterMixin):
         processed_code = processed_code.expandtabs(self.tab_size)
         return ends_on_nl, processed_code
 
-
 def _get_code_index_for_syntax_position(
     newlines_offsets: Sequence[int], position: SyntaxPosition
 ) -> Optional[int]:
@@ -863,7 +855,6 @@ def _get_code_index_for_syntax_position(
     # If `column_index` is out of range: let's silently clamp it:
     column_index = min(line_length, column_index)
     return newlines_offsets[line_index] + column_index
-
 
 if __name__ == "__main__":  # pragma: no cover
     import argparse

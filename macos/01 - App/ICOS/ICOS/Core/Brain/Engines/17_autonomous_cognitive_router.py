@@ -7,7 +7,6 @@ from typing import Any
 import json
 import time
 
-
 # ============================================================
 # Sovereign Root
 # ============================================================
@@ -36,7 +35,6 @@ COGNITIVE_GRAPH = (
 LEARNING_LOG = (
     LEARNING_ROOT / "model_learning_log.json"
 )
-
 
 # ============================================================
 # Autonomous Cognitive Router
@@ -77,7 +75,6 @@ class AutonomousCognitiveRouter:
             fallback=[]
         )
 
-
     # ========================================================
     # JSON Loading
     # ========================================================
@@ -95,7 +92,6 @@ class AutonomousCognitiveRouter:
             return json.loads(path.read_text())
         except Exception:
             return fallback
-
 
     # ========================================================
     # Task Classification
@@ -143,7 +139,6 @@ class AutonomousCognitiveRouter:
 
         return "general"
 
-
     # ========================================================
     # Engine Routing
     # ========================================================
@@ -187,7 +182,6 @@ class AutonomousCognitiveRouter:
 
         return routes.get(task_type, routes["general"])
 
-
     # ========================================================
     # Provider Selection
     # ========================================================
@@ -216,7 +210,6 @@ class AutonomousCognitiveRouter:
             "active_provider",
             "LMStudio"
         )
-
 
     # ========================================================
     # Autonomous Routing
@@ -272,7 +265,6 @@ class AutonomousCognitiveRouter:
         )
 
         return route
-
 
 # ============================================================
 # Runtime Entry

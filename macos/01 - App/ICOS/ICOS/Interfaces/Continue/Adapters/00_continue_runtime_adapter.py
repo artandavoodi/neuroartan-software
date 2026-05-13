@@ -6,7 +6,6 @@ from pathlib import Path
 from typing import Any
 import json
 
-
 # ============================================================
 # Runtime Paths
 # ============================================================
@@ -16,7 +15,6 @@ ROOT = Path(__file__).resolve().parents[3]
 CONTINUE_ROOT = ROOT / "Interfaces" / "Continue"
 CONFIG_ROOT = CONTINUE_ROOT / "Config"
 REGISTRY_ROOT = CONTINUE_ROOT / "Registries"
-
 
 # ============================================================
 # Continue Runtime Adapter
@@ -48,7 +46,6 @@ class ContinueRuntimeAdapter:
             "registry_loaded": False,
         }
 
-
     # ========================================================
     # Runtime Initialization
     # ========================================================
@@ -60,7 +57,6 @@ class ContinueRuntimeAdapter:
         self.runtime_state["initialized"] = True
 
         return self.runtime_state
-
 
     # ========================================================
     # Configuration
@@ -88,7 +84,6 @@ class ContinueRuntimeAdapter:
 
         return self.runtime_config
 
-
     # ========================================================
     # Registry
     # ========================================================
@@ -114,7 +109,6 @@ class ContinueRuntimeAdapter:
 
         return self.tool_registry
 
-
     # ========================================================
     # Runtime Status
     # ========================================================
@@ -129,7 +123,6 @@ class ContinueRuntimeAdapter:
             "tool_count": len(self.tool_registry.get("tools", [])),
             "root": str(ROOT),
         }
-
 
 # ============================================================
 # Runtime Entry

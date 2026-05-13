@@ -73,11 +73,23 @@ public final class AppRouter: ObservableObject {
         case voiceRuntime
         case desktopRuntime
 
+        // MARK: - Settings Categories
+
         case general
         case appearance
+        case voice
+        case permissions
+        case privacy
+        case accessibility
         case configuration
         case connectors
         case personalization
+        case dashboard
+        case storageBackup
+        case security
+
+        // MARK: - Configuration Subroutes
+
         case environment
         case worktree
         case browserUse
@@ -93,9 +105,16 @@ public final class AppRouter: ObservableObject {
             case .settings: return "System"
             case .general: return "General"
             case .appearance: return "Appearance"
+            case .voice: return "Voice"
+            case .permissions: return "Permissions"
+            case .privacy: return "Privacy"
+            case .accessibility: return "Accessibility"
             case .configuration: return "Configuration"
             case .connectors: return "Connectors"
             case .personalization: return "Personalization"
+            case .dashboard: return "Dashboard"
+            case .storageBackup: return "Storage & Backup"
+            case .security: return "Security"
             case .environment: return "Environment"
             case .worktree: return "Worktree"
             case .browserUse: return "Browser Use"
@@ -131,9 +150,16 @@ public final class AppRouter: ObservableObject {
             case .settings: return .settings
             case .general: return .home
             case .appearance: return .appearance
+            case .voice: return .voice
+            case .permissions: return .key
+            case .privacy: return .cloud
+            case .accessibility: return .customize
             case .configuration: return .configuration
             case .connectors: return .integration
             case .personalization: return .personalization
+            case .dashboard: return .analytics
+            case .storageBackup: return .workspaceArchive
+            case .security: return .key
             case .environment: return .environment
             case .worktree: return .worktree
             case .browserUse: return .browserUse
@@ -163,12 +189,13 @@ public final class AppRouter: ObservableObject {
 
         var isSettingsCategory: Bool {
             switch self {
-            case .general, .appearance, .configuration, .connectors, .personalization, .environment, .worktree, .browserUse, .chatManagement:
+            case .general, .appearance, .voice, .permissions, .privacy, .accessibility,
+                 .configuration, .connectors, .personalization, .dashboard, .storageBackup, .security:
                 return true
             case .chat, .developer, .continuity, .settings, .projects, .files, .recents, .shared, .archive,
                  .intelligenceDashboard, .sessions, .providers, .connections, .terminalRuntime, .knowledgeBase,
                  .kanban, .automationJobs, .usage, .mail, .messaging, .skills, .diagnostics, .voiceRuntime,
-                 .desktopRuntime:
+                 .desktopRuntime, .environment, .worktree, .browserUse, .chatManagement:
                 return false
             }
         }

@@ -98,9 +98,9 @@ ICOS requires both.
 
 ## Binding Rules
 
-OS → Legal / Privacy / Interaction Safety  
-Runtime → Integrity / Refusal / Input Safety  
-Execution Engine → Safety Policy Core / Unified Safety Engine  
+OS → Legal / Privacy / Interaction Safety
+Runtime → Integrity / Refusal / Input Safety
+Execution Engine → Safety Policy Core / Unified Safety Engine
 
 ---
 

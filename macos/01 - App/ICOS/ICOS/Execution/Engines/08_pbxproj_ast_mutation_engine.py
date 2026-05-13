@@ -20,8 +20,6 @@ MUTATION_STATE = (
     / "06_pbxproj_ast_mutation_state.json"
 )
 
-
-
 def load_json(path: Path, fallback):
     if not path.exists():
         return fallback
@@ -31,12 +29,9 @@ def load_json(path: Path, fallback):
     except Exception:
         return fallback
 
-
-
 def save_json(path: Path, data):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, indent=2))
-
 
 class PBXProjASTMutationEngine:
     def __init__(self):
@@ -166,9 +161,7 @@ class PBXProjASTMutationEngine:
 
         return report
 
-
 ENGINE = PBXProjASTMutationEngine()
-
 
 if __name__ == "__main__":
     print(json.dumps(

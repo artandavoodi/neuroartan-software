@@ -15,10 +15,8 @@ from ._binary import i32be as i32
 from ._binary import o8
 from ._binary import o32be as o32
 
-
 def _accept(prefix: bytes) -> bool:
     return prefix.startswith(b"qoif")
-
 
 class QoiImageFile(ImageFile.ImageFile):
     format = "QOI"
@@ -37,7 +35,6 @@ class QoiImageFile(ImageFile.ImageFile):
 
         self.fp.seek(1, os.SEEK_CUR)  # colorspace
         self.tile = [ImageFile._Tile("qoi", (0, 0) + self._size, self.fp.tell())]
-
 
 class QoiDecoder(ImageFile.PyDecoder):
     _pulls_fd = True
@@ -113,7 +110,6 @@ class QoiDecoder(ImageFile.PyDecoder):
         self.set_as_raw(data)
         return -1, 0
 
-
 def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     if im.mode == "RGB":
         channels = 3
@@ -132,7 +128,6 @@ def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     fp.write(o8(colorspace))
 
     ImageFile._save(im, fp, [ImageFile._Tile("qoi", (0, 0) + im.size)])
-
 
 class QoiEncoder(ImageFile.PyEncoder):
     _pushes_fd = True
@@ -225,7 +220,6 @@ class QoiEncoder(ImageFile.PyEncoder):
         data += bytes((0, 0, 0, 0, 0, 0, 0, 1))  # padding
 
         return len(data), 0, data
-
 
 Image.register_open(QoiImageFile.format, QoiImageFile, _accept)
 Image.register_decoder("qoi", QoiDecoder)

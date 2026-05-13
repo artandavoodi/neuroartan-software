@@ -56,7 +56,6 @@ from playwright._impl._page import Page
 if TYPE_CHECKING:  # pragma: no cover
     from playwright._impl._browser_type import BrowserType
 
-
 class Browser(ChannelOwner):
     Events = SimpleNamespace(
         Disconnected="disconnected",

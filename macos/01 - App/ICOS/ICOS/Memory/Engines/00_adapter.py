@@ -22,7 +22,6 @@ if TYPE_CHECKING:
     from pip._vendor.cachecontrol.heuristics import BaseHeuristic
     from pip._vendor.cachecontrol.serialize import Serializer
 
-
 class CacheControlAdapter(HTTPAdapter):
     invalidating_methods = {"PUT", "PATCH", "DELETE"}
 

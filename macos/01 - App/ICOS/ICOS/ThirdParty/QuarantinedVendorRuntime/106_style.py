@@ -54,7 +54,6 @@ _deprecated_ansicolors = {
 }
 ansicolors = set(_ansimap)
 
-
 class StyleMeta(type):
 
     def __new__(mcs, name, bases, dct):
@@ -165,7 +164,6 @@ class StyleMeta(type):
 
     def __len__(cls):
         return len(cls._styles)
-
 
 class Style(metaclass=StyleMeta):
 

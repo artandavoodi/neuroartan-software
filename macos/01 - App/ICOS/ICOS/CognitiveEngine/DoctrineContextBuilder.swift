@@ -13,7 +13,6 @@ final class DoctrineContextBuilder {
     private let interpreter = DoctrineInterpreter()
     private let storage = LocalStorageController.shared
 
-
     // ========================================================
     // Runtime Context
     // ========================================================
@@ -27,7 +26,6 @@ final class DoctrineContextBuilder {
         let continuityRecords: Int
         let timestamp: Date
     }
-
 
     // ========================================================
     // Context Construction
@@ -69,7 +67,6 @@ final class DoctrineContextBuilder {
         )
     }
 
-
     // ========================================================
     // Context Serialization
     // ========================================================
@@ -91,7 +88,6 @@ final class DoctrineContextBuilder {
             return "{}"
         }
     }
-
 
     // ========================================================
     // Context Summary
@@ -117,7 +113,6 @@ final class DoctrineContextBuilder {
             "timestamp": context.timestamp.timeIntervalSince1970
         ]
     }
-
 
     // ========================================================
     // Runtime Health

@@ -67,7 +67,6 @@ SUCCESS_EOF = -2
 ERROR_TIMEOUT = -3
 ERROR_EXCEPTION = -4
 
-
 class _RequestError(Exception):
     def __init__(
         self,
@@ -81,18 +80,14 @@ class _RequestError(Exception):
         self.message = message
         super().__init__(self.message)
 
-
 class _StreamingError(_RequestError):
     pass
-
 
 class _TimeoutError(_RequestError):
     pass
 
-
 def _obj_from_dict(dict_val: dict[str, Any]) -> JsProxy:
     return to_js(dict_val, dict_converter=js.Object.fromEntries)
-
 
 class _ReadStream(io.RawIOBase):
     def __init__(
@@ -196,7 +191,6 @@ class _ReadStream(io.RawIOBase):
         self.read_pos += ret_length
         return ret_length
 
-
 class _StreamingFetcher:
     def __init__(self) -> None:
         # make web-worker and data buffer on startup
@@ -297,7 +291,6 @@ class _StreamingFetcher:
                 request=request,
                 response=None,
             )
-
 
 class _JSPIReadStream(io.RawIOBase):
     """
@@ -405,15 +398,12 @@ class _JSPIReadStream(io.RawIOBase):
             self.current_buffer = None
         return ret_length
 
-
 # check if we are in a worker or not
 def is_in_browser_main_thread() -> bool:
     return hasattr(js, "window") and hasattr(js, "self") and js.self == js.window
 
-
 def is_cross_origin_isolated() -> bool:
     return hasattr(js, "crossOriginIsolated") and js.crossOriginIsolated
-
 
 def is_in_node() -> bool:
     return (
@@ -423,10 +413,8 @@ def is_in_node() -> bool:
         and js.process.release.name == "node"
     )
 
-
 def is_worker_available() -> bool:
     return hasattr(js, "Worker") and hasattr(js, "Blob")
-
 
 _fetcher: _StreamingFetcher | None = None
 
@@ -438,13 +426,11 @@ if is_worker_available() and (
 else:
     _fetcher = None
 
-
 NODE_JSPI_ERROR = (
     "urllib3 only works in Node.js with pyodide.runPythonAsync"
     " and requires the flag --experimental-wasm-stack-switching in "
     " versions of node <24."
 )
-
 
 def send_streaming_request(request: EmscriptenRequest) -> EmscriptenResponse | None:
     if has_jspi():
@@ -462,9 +448,7 @@ def send_streaming_request(request: EmscriptenRequest) -> EmscriptenResponse | N
         _show_streaming_warning()
         return None
 
-
 _SHOWN_TIMEOUT_WARNING = False
-
 
 def _show_timeout_warning() -> None:
     global _SHOWN_TIMEOUT_WARNING
@@ -473,9 +457,7 @@ def _show_timeout_warning() -> None:
         message = "Warning: Timeout is not available on main browser thread"
         js.console.warn(message)
 
-
 _SHOWN_STREAMING_WARNING = False
-
 
 def _show_streaming_warning() -> None:
     global _SHOWN_STREAMING_WARNING
@@ -494,7 +476,6 @@ is working, you need to call: 'await urllib3.contrib.emscripten.fetch.wait_for_s
         from js import console
 
         console.warn(message)
-
 
 def send_request(request: EmscriptenRequest) -> EmscriptenResponse:
     if has_jspi():
@@ -543,7 +524,6 @@ def send_request(request: EmscriptenRequest) -> EmscriptenResponse:
         else:
             # general http error
             raise _RequestError(err.message, request=request)
-
 
 def send_jspi_request(
     request: EmscriptenRequest, streaming: bool
@@ -622,7 +602,6 @@ def send_jspi_request(
     response.body = body
     return response
 
-
 def _run_sync_with_timeout(
     promise: Any,
     timeout: float,
@@ -676,7 +655,6 @@ def _run_sync_with_timeout(
         if timer_id is not None:
             js.clearTimeout(timer_id)
 
-
 def has_jspi() -> bool:
     """
     Return true if jspi can be used.
@@ -695,7 +673,6 @@ def has_jspi() -> bool:
     except ImportError:
         return False
 
-
 def _is_node_js() -> bool:
     """
     Check if we are in Node.js.
@@ -710,13 +687,11 @@ def _is_node_js() -> bool:
         and js.process.release.name == "node"
     )
 
-
 def streaming_ready() -> bool | None:
     if _fetcher:
         return _fetcher.streaming_ready
     else:
         return None  # no fetcher, return None to signify that
-
 
 async def wait_for_streaming_ready() -> bool:
     if _fetcher:

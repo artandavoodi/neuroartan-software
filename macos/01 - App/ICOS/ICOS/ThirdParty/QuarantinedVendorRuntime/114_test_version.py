@@ -31,7 +31,6 @@ class VersionTests(NonLeakingTestCase):
         except AssertionError as e:
             self.skipTest("Unable to find setup.py; must be out of tree. " + str(e))
 
-
         invoke_setup = "%s %s --version" % (sys.executable, setup_py)
         with os.popen(invoke_setup) as f:
             sversion = f.read().strip()

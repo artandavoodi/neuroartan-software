@@ -170,7 +170,6 @@ private:
         delete state; // Deleting this runs the destructor, DECREFs the main greenlet.
     }
 
-
     static int AddPendingCall(int (*func)(void*), void* arg)
     {
         // If the interpreter is in the middle of finalizing, we can't
@@ -193,10 +192,6 @@ private:
         }
         return Py_AddPendingCall(func, arg);
     }
-
-
-
-
 
 };
 };

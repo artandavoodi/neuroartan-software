@@ -187,7 +187,6 @@ struct NavigationShell: View {
         }
     }
 
-
     private func setPrimarySidebarVisible(_ isVisible: Bool) {
         isSidebarVisible = isVisible
         NotificationCenter.default.post(
@@ -241,6 +240,27 @@ struct NavigationShell: View {
 
         case .settings:
             SettingsRootView(router: router, shellState: shellState)
+
+        case .voice:
+            VoiceSettingsView()
+
+        case .permissions:
+            PermissionsSettingsView()
+
+        case .privacy:
+            PrivacySettingsView()
+
+        case .accessibility:
+            AccessibilitySettingsView()
+
+        case .dashboard:
+            DashboardSettingsView()
+
+        case .storageBackup:
+            StorageBackupSettingsView()
+
+        case .security:
+            SecuritySettingsView()
 
         case .projects:
             ProjectManagerView(viewModel: services.projectManager, shellState: shellState)
@@ -296,7 +316,6 @@ struct NavigationShell: View {
         }
     }
 }
-
 
 // MARK: - ICOS Spotlight Search Overlay
 

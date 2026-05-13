@@ -24,7 +24,6 @@ SUPPORTED_SOURCE_TYPES = [
     ".metal"
 ]
 
-
 class XcodeProjectScanner:
     def __init__(self):
         self.scanned_at = datetime.now().isoformat(timespec="seconds")
@@ -127,9 +126,7 @@ class XcodeProjectScanner:
 
         return report
 
-
 SCANNER = XcodeProjectScanner()
-
 
 if __name__ == "__main__":
     result = SCANNER.scan(

@@ -7,7 +7,6 @@ from typing import Any
 import json
 import time
 
-
 # ============================================================
 # Sovereign Root
 # ============================================================
@@ -36,7 +35,6 @@ GOVERNOR_LOG = (
 SAFETY_POLICY = (
     POLICY_ROOT / "self_modification_policy.json"
 )
-
 
 # ============================================================
 # Self Modification Governor
@@ -81,7 +79,6 @@ class SelfModificationGovernor:
             }
         )
 
-
     # ========================================================
     # JSON Loading
     # ========================================================
@@ -99,7 +96,6 @@ class SelfModificationGovernor:
             return json.loads(path.read_text())
         except Exception:
             return fallback
-
 
     # ========================================================
     # Proposal Inspection
@@ -153,7 +149,6 @@ class SelfModificationGovernor:
 
         return result
 
-
     # ========================================================
     # Runtime Status
     # ========================================================
@@ -180,7 +175,6 @@ class SelfModificationGovernor:
                 False,
             ),
         }
-
 
 # ============================================================
 # Runtime Entry

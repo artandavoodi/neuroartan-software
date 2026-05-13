@@ -16,10 +16,8 @@ if typing.TYPE_CHECKING:
 
 __version__ = "3.5.0.1"
 
-
 class CertificateError(ValueError):
     pass
-
 
 def _dnsname_match(
     dn: typing.Any, hostname: str, max_wildcards: int = 1
@@ -76,7 +74,6 @@ def _dnsname_match(
     pat = re.compile(r"\A" + r"\.".join(pats) + r"\Z", re.IGNORECASE)
     return pat.match(hostname)
 
-
 def _ipaddress_match(ipname: str, host_ip: IPv4Address | IPv6Address) -> bool:
     """Exact matching of IP addresses.
 
@@ -90,7 +87,6 @@ def _ipaddress_match(ipname: str, host_ip: IPv4Address | IPv6Address) -> bool:
     # Divergence from upstream: ipaddress can't handle byte str
     ip = ipaddress.ip_address(ipname.rstrip())
     return bool(ip.packed == host_ip.packed)
-
 
 def match_hostname(
     cert: _TYPE_PEER_CERT_RET_DICT | None,

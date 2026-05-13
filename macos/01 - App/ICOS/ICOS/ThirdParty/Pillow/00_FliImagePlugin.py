@@ -27,7 +27,6 @@ from ._util import DeferredError
 #
 # decoder
 
-
 def _accept(prefix: bytes) -> bool:
     return (
         len(prefix) >= 16
@@ -35,11 +34,9 @@ def _accept(prefix: bytes) -> bool:
         and i16(prefix, 14) in [0, 3]  # flags
     )
 
-
 ##
 # Image plugin for the FLI/FLC animation format.  Use the <b>seek</b>
 # method to load individual frames.
-
 
 class FliImageFile(ImageFile.ImageFile):
     format = "FLI"
@@ -174,7 +171,6 @@ class FliImageFile(ImageFile.ImageFile):
 
     def tell(self) -> int:
         return self.__frame
-
 
 #
 # registry

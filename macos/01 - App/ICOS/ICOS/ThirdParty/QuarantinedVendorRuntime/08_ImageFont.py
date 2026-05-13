@@ -46,21 +46,17 @@ if TYPE_CHECKING:
     from ._imaging import ImagingFont
     from ._imagingft import Font
 
-
 class Axis(TypedDict):
     minimum: int | None
     default: int | None
     maximum: int | None
     name: bytes | None
 
-
 class Layout(IntEnum):
     BASIC = 0
     RAQM = 1
 
-
 MAX_STRING_LENGTH = 1_000_000
-
 
 core: ModuleType | DeferredError
 try:
@@ -68,12 +64,10 @@ try:
 except ImportError as ex:
     core = DeferredError.new(ex)
 
-
 def _string_length_check(text: str | bytes | bytearray) -> None:
     if MAX_STRING_LENGTH is not None and len(text) > MAX_STRING_LENGTH:
         msg = "too many characters in string"
         raise ValueError(msg)
-
 
 # FIXME: add support for pilfont2 format (see FontFile.py)
 
@@ -89,7 +83,6 @@ def _string_length_check(text: str | bytes | bytearray) -> None:
 # relative to the character position.  Then move the character
 # position according to dx, dy.
 # --------------------------------------------------------------------
-
 
 class ImageFont:
     """PIL font wrapper"""
@@ -209,11 +202,9 @@ class ImageFont:
         width, height = self.font.getsize(text)
         return width
 
-
 ##
 # Wrapper for FreeType fonts.  Application code should use the
 # <b>truetype</b> factory function to create font objects.
-
 
 class FreeTypeFont:
     """FreeType font wrapper (requires _imagingft service)"""
@@ -722,7 +713,6 @@ class FreeTypeFont:
         """
         self.font.setvaraxes(axes)
 
-
 class TransposedFont:
     """Wrapper for writing rotated or mirrored text"""
 
@@ -768,7 +758,6 @@ class TransposedFont:
             raise ValueError(msg)
         return self.font.getlength(text, *args, **kwargs)
 
-
 def load(filename: str) -> ImageFont:
     """
     Load a font file. This function loads a font object from the given
@@ -782,7 +771,6 @@ def load(filename: str) -> ImageFont:
     f = ImageFont()
     f._load_pilfont(filename)
     return f
-
 
 def truetype(
     font: StrOrBytesPath | BinaryIO,
@@ -915,7 +903,6 @@ def truetype(
             return freetype(first_font_with_a_different_extension)
         raise
 
-
 def load_path(filename: str | bytes) -> ImageFont:
     """
     Load font file. Same as :py:func:`~PIL.ImageFont.load`, but searches for a
@@ -937,7 +924,6 @@ def load_path(filename: str | bytes) -> ImageFont:
         msg += f', did you mean ImageFont.load("{filename}") instead?'
 
     raise OSError(msg)
-
 
 def load_default_imagefont() -> ImageFont:
     f = ImageFont()
@@ -1063,7 +1049,6 @@ w7IkEbzhVQAAAABJRU5ErkJggg==
 """))),
     )
     return f
-
 
 def load_default(size: float | None = None) -> FreeTypeFont | ImageFont:
     """If FreeType support is available, load a version of Aileron Regular,

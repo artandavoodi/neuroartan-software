@@ -53,12 +53,10 @@ if TYPE_CHECKING:
 
 __all__ = ["FormatControl", "BestCandidateResult", "PackageFinder"]
 
-
 logger = getLogger(__name__)
 
 BuildTag = Union[tuple[()], tuple[int, str]]
 CandidateSortingKey = tuple[int, int, int, _BaseVersion, Optional[int], BuildTag]
-
 
 def _check_link_requires_python(
     link: Link,
@@ -106,7 +104,6 @@ def _check_link_requires_python(
 
     return True
 
-
 class LinkType(enum.Enum):
     candidate = enum.auto()
     different_project = enum.auto()
@@ -117,7 +114,6 @@ class LinkType(enum.Enum):
     requires_python_mismatch = enum.auto()
     upload_too_late = enum.auto()
     upload_time_missing = enum.auto()
-
 
 class LinkEvaluator:
     """
@@ -296,7 +292,6 @@ class LinkEvaluator:
 
         return (LinkType.candidate, version)
 
-
 def filter_unallowed_hashes(
     candidates: list[InstallationCandidate],
     hashes: Hashes | None,
@@ -370,7 +365,6 @@ def filter_unallowed_hashes(
 
     return filtered
 
-
 @dataclass
 class CandidatePreferences:
     """
@@ -380,7 +374,6 @@ class CandidatePreferences:
 
     prefer_binary: bool = False
     release_control: ReleaseControl | None = None
-
 
 @dataclass(frozen=True)
 class BestCandidateResult:
@@ -406,7 +399,6 @@ class BestCandidateResult:
             assert not self.applicable_candidates
         else:
             assert self.best_candidate in self.applicable_candidates
-
 
 class CandidateEvaluator:
     """
@@ -609,7 +601,6 @@ class CandidateEvaluator:
             applicable_candidates=applicable_candidates,
             best_candidate=best_candidate,
         )
-
 
 class PackageFinder:
     """This finds packages.
@@ -1068,7 +1059,6 @@ class PackageFinder:
         )
         raise BestVersionAlreadyInstalled
 
-
 def _find_name_version_sep(fragment: str, canonical_name: str) -> int:
     """Find the separator's index based on the package's canonical name.
 
@@ -1093,7 +1083,6 @@ def _find_name_version_sep(fragment: str, canonical_name: str) -> int:
         if canonicalize_name(fragment[:i]) == canonical_name:
             return i
     raise ValueError(f"{fragment} does not match {canonical_name}")
-
 
 def _extract_version_from_fragment(fragment: str, canonical_name: str) -> str | None:
     """Parse the version string from a <package>+<version> filename

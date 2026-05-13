@@ -28,7 +28,6 @@ if TYPE_CHECKING:  # pragma: no cover
     from playwright._impl._network import Route
     from playwright._impl._page import Page
 
-
 class HarRouter:
     def __init__(
         self,

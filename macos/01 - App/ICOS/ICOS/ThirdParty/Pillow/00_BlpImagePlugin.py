@@ -40,26 +40,21 @@ from typing import IO
 
 from . import Image, ImageFile
 
-
 class Format(IntEnum):
     JPEG = 0
-
 
 class Encoding(IntEnum):
     UNCOMPRESSED = 1
     DXT = 2
     UNCOMPRESSED_RAW_BGRA = 3
 
-
 class AlphaEncoding(IntEnum):
     DXT1 = 0
     DXT3 = 1
     DXT5 = 7
 
-
 def unpack_565(i: int) -> tuple[int, int, int]:
     return ((i >> 11) & 0x1F) << 3, ((i >> 5) & 0x3F) << 2, (i & 0x1F) << 3
-
 
 def decode_dxt1(
     data: bytes, alpha: bool = False
@@ -117,7 +112,6 @@ def decode_dxt1(
 
     return ret
 
-
 def decode_dxt3(data: bytes) -> tuple[bytearray, bytearray, bytearray, bytearray]:
     """
     input: one "row" of data (i.e. will produce 4*width pixels)
@@ -169,7 +163,6 @@ def decode_dxt3(data: bytes) -> tuple[bytearray, bytearray, bytearray, bytearray
                 ret[j].extend([r, g, b, a])
 
     return ret
-
 
 def decode_dxt5(data: bytes) -> tuple[bytearray, bytearray, bytearray, bytearray]:
     """
@@ -240,14 +233,11 @@ def decode_dxt5(data: bytes) -> tuple[bytearray, bytearray, bytearray, bytearray
 
     return ret
 
-
 class BLPFormatError(NotImplementedError):
     pass
 
-
 def _accept(prefix: bytes) -> bool:
     return prefix.startswith((b"BLP1", b"BLP2"))
-
 
 class BlpImageFile(ImageFile.ImageFile):
     """
@@ -290,7 +280,6 @@ class BlpImageFile(ImageFile.ImageFile):
 
         self._mode = "RGBA" if alpha else "RGB"
         self.tile = [ImageFile._Tile(decoder, (0, 0) + self.size, offset, args)]
-
 
 class _BLPBaseDecoder(abc.ABC, ImageFile.PyDecoder):
     _pulls_fd = True
@@ -343,7 +332,6 @@ class _BLPBaseDecoder(abc.ABC, ImageFile.PyDecoder):
             data.extend(d)
         return data
 
-
 class BLP1Decoder(_BLPBaseDecoder):
     def _load(self) -> None:
         self._compression, self._encoding, alpha = self.args
@@ -379,7 +367,6 @@ class BLP1Decoder(_BLPBaseDecoder):
             assert isinstance(args, tuple)
             image.tile = [image.tile[0]._replace(args=(args[0], "CMYK"))]
         self.set_as_raw(image.convert("RGB").tobytes(), "BGR")
-
 
 class BLP2Decoder(_BLPBaseDecoder):
     def _load(self) -> None:
@@ -428,7 +415,6 @@ class BLP2Decoder(_BLPBaseDecoder):
 
         self.set_as_raw(data)
 
-
 class BLPEncoder(ImageFile.PyEncoder):
     _pushes_fd = True
 
@@ -461,7 +447,6 @@ class BLPEncoder(ImageFile.PyEncoder):
 
         return len(data), 0, data
 
-
 def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     if im.mode != "P":
         msg = "Unsupported BLP image mode"
@@ -487,7 +472,6 @@ def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
         fp.write(struct.pack("<i", 0))
 
     ImageFile._save(im, fp, [ImageFile._Tile("BLP", (0, 0) + im.size, 0, im.mode)])
-
 
 Image.register_open(BlpImageFile.format, BlpImageFile, _accept)
 Image.register_extension(BlpImageFile.format, ".blp")

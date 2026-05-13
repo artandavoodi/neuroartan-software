@@ -14,8 +14,6 @@ REGISTRY_PATH = ROOT / "core" / "02_icos_command_registry.py"
 
 EXECUTION_LOG = ROOT / "runtime" / "logs" / "runtime_execution_log.json"
 
-
-
 def load_module(path: Path, module_name: str):
     spec = importlib.util.spec_from_file_location(
         module_name,
@@ -35,15 +33,12 @@ def load_module(path: Path, module_name: str):
 
     return module
 
-
 registry_module = load_module(
     REGISTRY_PATH,
     "icos_command_registry"
 )
 
 REGISTRY = registry_module.REGISTRY
-
-
 
 def load_execution_log():
     if not EXECUTION_LOG.exists():
@@ -56,8 +51,6 @@ def load_execution_log():
     except Exception:
         return []
 
-
-
 def save_execution_log(entries):
     EXECUTION_LOG.parent.mkdir(
         parents=True,
@@ -67,8 +60,6 @@ def save_execution_log(entries):
     EXECUTION_LOG.write_text(
         json.dumps(entries, indent=2)
     )
-
-
 
 def resolve_callable(handler_path: str) -> Callable[..., Any]:
     module_name, function_name = handler_path.rsplit(".", 1)
@@ -88,8 +79,6 @@ def resolve_callable(handler_path: str) -> Callable[..., Any]:
     )
 
     return getattr(module, function_name)
-
-
 
 def execute_command(command_name: str, payload: Dict[str, Any]):
     started_at = datetime.now().isoformat(timespec="seconds")
@@ -159,8 +148,6 @@ def execute_command(command_name: str, payload: Dict[str, Any]):
             "traceback": trace
         }
 
-
-
 def router_summary():
     logs = load_execution_log()
 
@@ -170,7 +157,6 @@ def router_summary():
         "execution_log_entries": len(logs),
         "latest_execution": logs[-1] if logs else None
     }
-
 
 if __name__ == "__main__":
     print(json.dumps(

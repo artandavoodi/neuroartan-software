@@ -64,7 +64,6 @@ related:
   - "macos/01 - App/ICOS/ICOS/Doctrine/17 - Execution Intelligence/02 - Input Classification Doctrine.md"
   - "macos/01 - App/ICOS/ICOS/Doctrine/13 - Source Attribution/02 - Unknown Information Handling.md"
 
-
 tags:
   - "icos"
   - "uncertainty"
@@ -193,11 +192,11 @@ This doctrine must be included in every prompt before inference.
 
 ## Document Control & Validation
 
-GSA PROTOCOL STATUS: Approved  
-GSA APPROVAL: true  
-DOCUMENT STATUS: Active — Halt on Uncertainty Doctrine  
-VISIBILITY: Internal  
-PUBLISH TO WEBSITE: No  
+GSA PROTOCOL STATUS: Approved
+GSA APPROVAL: true
+DOCUMENT STATUS: Active — Halt on Uncertainty Doctrine
+VISIBILITY: Internal
+PUBLISH TO WEBSITE: No
 VERSION: 1.0
 
 ---

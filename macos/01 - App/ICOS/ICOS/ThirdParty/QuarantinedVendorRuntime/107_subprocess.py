@@ -16,7 +16,6 @@ from pip._internal.utils.misc import HiddenText
 
 CommandArgs = list[Union[str, HiddenText]]
 
-
 def make_command(*args: str | HiddenText | CommandArgs) -> CommandArgs:
     """
     Create a CommandArgs object.
@@ -33,7 +32,6 @@ def make_command(*args: str | HiddenText | CommandArgs) -> CommandArgs:
 
     return command_args
 
-
 def format_command_args(args: list[str] | CommandArgs) -> str:
     """
     Format command arguments for display.
@@ -48,13 +46,11 @@ def format_command_args(args: list[str] | CommandArgs) -> str:
         for arg in args
     )
 
-
 def reveal_command_args(args: list[str] | CommandArgs) -> list[str]:
     """
     Return the arguments in their raw, unredacted form.
     """
     return [arg.secret if isinstance(arg, HiddenText) else arg for arg in args]
-
 
 def call_subprocess(
     cmd: list[str] | CommandArgs,
@@ -222,7 +218,6 @@ def call_subprocess(
         else:
             raise ValueError(f"Invalid value: on_returncode={on_returncode!r}")
     return output
-
 
 def runner_with_spinner_message(message: str) -> Callable[..., None]:
     """Provide a subprocess_runner that shows a spinner message.

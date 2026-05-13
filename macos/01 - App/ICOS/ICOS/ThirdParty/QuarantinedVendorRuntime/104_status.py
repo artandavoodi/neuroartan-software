@@ -7,7 +7,6 @@ from .live import Live
 from .spinner import Spinner
 from .style import StyleType
 
-
 class Status(JupyterMixin):
     """Displays a status indicator with a 'spinner' animation.
 
@@ -104,7 +103,6 @@ class Status(JupyterMixin):
         exc_tb: Optional[TracebackType],
     ) -> None:
         self.stop()
-
 
 if __name__ == "__main__":  # pragma: no cover
     from time import sleep

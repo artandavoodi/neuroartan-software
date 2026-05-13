@@ -15,10 +15,8 @@ import math
 
 from . import Image, ImageFile
 
-
 def _accept(prefix: bytes) -> bool:
     return prefix.startswith(b"SIMPLE")
-
 
 class FitsImageFile(ImageFile.ImageFile):
     format = "FITS"
@@ -122,7 +120,6 @@ class FitsImageFile(ImageFile.ImageFile):
             args = (number_of_bits,)
         return decoder_name, offset, args
 
-
 class FitsGzipDecoder(ImageFile.PyDecoder):
     _pulls_fd = True
 
@@ -142,7 +139,6 @@ class FitsGzipDecoder(ImageFile.PyDecoder):
                 rows.append(row)
         self.set_as_raw(bytes([pixel for row in rows[::-1] for pixel in row]))
         return -1, 0
-
 
 # --------------------------------------------------------------------
 # Registry

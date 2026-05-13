@@ -5,7 +5,6 @@ from datetime import datetime
 from typing import Callable, Dict, List, Optional, Any
 import json
 
-
 @dataclass
 class ICOSCommand:
     name: str
@@ -17,7 +16,6 @@ class ICOSCommand:
     requires_verification: bool = False
     requires_governance_review: bool = False
     enabled: bool = True
-
 
 class ICOSCommandRegistry:
     def __init__(self) -> None:
@@ -108,9 +106,7 @@ class ICOSCommandRegistry:
             }
         }
 
-
 REGISTRY = ICOSCommandRegistry()
-
 
 REGISTRY.register(
     ICOSCommand(
@@ -129,7 +125,6 @@ REGISTRY.register(
     )
 )
 
-
 REGISTRY.register(
     ICOSCommand(
         name="institutional.document.create",
@@ -146,7 +141,6 @@ REGISTRY.register(
         requires_governance_review=True
     )
 )
-
 
 REGISTRY.register(
     ICOSCommand(
@@ -165,7 +159,6 @@ REGISTRY.register(
     )
 )
 
-
 REGISTRY.register(
     ICOSCommand(
         name="runtime.failure.learn",
@@ -182,7 +175,6 @@ REGISTRY.register(
         requires_governance_review=False
     )
 )
-
 
 if __name__ == "__main__":
     print(json.dumps(

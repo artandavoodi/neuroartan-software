@@ -64,7 +64,6 @@ related:
   - "macos/01 - App/ICOS/ICOS/Doctrine/17 - Execution Intelligence/03 - Verification Classification Doctrine.md"
   - "macos/01 - App/ICOS/ICOS/Doctrine/21 - Enforcement Layer/01 - No Overlay Doctrine.md"
 
-
 tags:
   - "icos"
   - "failure"
@@ -241,11 +240,11 @@ This doctrine must be included in every prompt before inference.
 
 ## Document Control & Validation
 
-GSA PROTOCOL STATUS: Approved  
-GSA APPROVAL: true  
-DOCUMENT STATUS: Active — Failure Classification Doctrine  
-VISIBILITY: Internal  
-PUBLISH TO WEBSITE: No  
+GSA PROTOCOL STATUS: Approved
+GSA APPROVAL: true
+DOCUMENT STATUS: Active — Failure Classification Doctrine
+VISIBILITY: Internal
+PUBLISH TO WEBSITE: No
 VERSION: 1.0
 
 ---

@@ -25,7 +25,6 @@ from ._binary import o32le as o32
 # Magic ("DDS ")
 DDS_MAGIC = 0x20534444
 
-
 # DDS flags
 class DDSD(IntFlag):
     CAPS = 0x1
@@ -37,13 +36,11 @@ class DDSD(IntFlag):
     LINEARSIZE = 0x80000
     DEPTH = 0x800000
 
-
 # DDS caps
 class DDSCAPS(IntFlag):
     COMPLEX = 0x8
     TEXTURE = 0x1000
     MIPMAP = 0x400000
-
 
 class DDSCAPS2(IntFlag):
     CUBEMAP = 0x200
@@ -55,7 +52,6 @@ class DDSCAPS2(IntFlag):
     CUBEMAP_NEGATIVEZ = 0x8000
     VOLUME = 0x200000
 
-
 # Pixel Format
 class DDPF(IntFlag):
     ALPHAPIXELS = 0x1
@@ -64,7 +60,6 @@ class DDPF(IntFlag):
     PALETTEINDEXED8 = 0x20
     RGB = 0x40
     LUMINANCE = 0x20000
-
 
 # dxgiformat.h
 class DXGI_FORMAT(IntEnum):
@@ -190,7 +185,6 @@ class DXGI_FORMAT(IntEnum):
     SAMPLER_FEEDBACK_MIN_MIP_OPAQUE = 189
     SAMPLER_FEEDBACK_MIP_REGION_USED_OPAQUE = 190
 
-
 class D3DFMT(IntEnum):
     UNKNOWN = 0
     R8G8B8 = 20
@@ -266,7 +260,6 @@ class D3DFMT(IntEnum):
     ATI2 = i32(b"ATI2")
     MULTI2_ARGB8 = i32(b"MET1")
 
-
 # Backward compatibility layer
 module = sys.modules[__name__]
 for item in DDSD:
@@ -325,7 +318,6 @@ DXGI_FORMAT_BC6H_SF16 = DXGI_FORMAT.BC6H_SF16
 DXGI_FORMAT_BC7_TYPELESS = DXGI_FORMAT.BC7_TYPELESS
 DXGI_FORMAT_BC7_UNORM = DXGI_FORMAT.BC7_UNORM
 DXGI_FORMAT_BC7_UNORM_SRGB = DXGI_FORMAT.BC7_UNORM_SRGB
-
 
 class DdsImageFile(ImageFile.ImageFile):
     format = "DDS"
@@ -484,7 +476,6 @@ class DdsImageFile(ImageFile.ImageFile):
     def load_seek(self, pos: int) -> None:
         pass
 
-
 class DdsRgbDecoder(ImageFile.PyDecoder):
     _pulls_fd = True
 
@@ -520,7 +511,6 @@ class DdsRgbDecoder(ImageFile.PyDecoder):
                 )
         self.set_as_raw(data)
         return -1, 0
-
 
 def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     if im.mode not in ("RGB", "RGBA", "L", "LA"):
@@ -614,10 +604,8 @@ def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
         )
     ImageFile._save(im, fp, [ImageFile._Tile(codec_name, (0, 0) + im.size, 0, args)])
 
-
 def _accept(prefix: bytes) -> bool:
     return prefix.startswith(b"DDS ")
-
 
 Image.register_open(DdsImageFile.format, DdsImageFile, _accept)
 Image.register_decoder("dds_rgb", DdsRgbDecoder)

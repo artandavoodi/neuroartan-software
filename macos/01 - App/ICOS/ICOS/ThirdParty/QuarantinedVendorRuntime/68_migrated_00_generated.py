@@ -12,7 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
 import datetime
 import pathlib
 import typing
@@ -89,7 +88,6 @@ from playwright._impl._sync_base import (
 from playwright._impl._tracing import Tracing as TracingImpl
 from playwright._impl._video import Video as VideoImpl
 from playwright._impl._web_error import WebError as WebErrorImpl
-
 
 class Request(SyncBase):
 
@@ -423,9 +421,7 @@ class Request(SyncBase):
             self._sync(self._impl_obj.header_value(name=name))
         )
 
-
 mapping.register(RequestImpl, Request)
-
 
 class Response(SyncBase):
 
@@ -676,9 +672,7 @@ class Response(SyncBase):
 
         return mapping.from_maybe_impl(self._sync(self._impl_obj.json()))
 
-
 mapping.register(ResponseImpl, Response)
-
 
 class Route(SyncBase):
 
@@ -1023,9 +1017,7 @@ class Route(SyncBase):
             )
         )
 
-
 mapping.register(RouteImpl, Route)
-
 
 class WebSocket(SyncBase):
 
@@ -1196,9 +1188,7 @@ class WebSocket(SyncBase):
 
         return mapping.from_maybe_impl(self._impl_obj.is_closed())
 
-
 mapping.register(WebSocketImpl, WebSocket)
-
 
 class WebSocketRoute(SyncBase):
 
@@ -1323,9 +1313,7 @@ class WebSocketRoute(SyncBase):
             self._impl_obj.on_close(handler=self._wrap_handler(handler))
         )
 
-
 mapping.register(WebSocketRouteImpl, WebSocketRoute)
-
 
 class Keyboard(SyncBase):
 
@@ -1491,9 +1479,7 @@ class Keyboard(SyncBase):
             self._sync(self._impl_obj.press(key=key, delay=delay))
         )
 
-
 mapping.register(KeyboardImpl, Keyboard)
-
 
 class Mouse(SyncBase):
 
@@ -1646,9 +1632,7 @@ class Mouse(SyncBase):
             self._sync(self._impl_obj.wheel(deltaX=delta_x, deltaY=delta_y))
         )
 
-
 mapping.register(MouseImpl, Mouse)
-
 
 class Touchscreen(SyncBase):
 
@@ -1669,9 +1653,7 @@ class Touchscreen(SyncBase):
 
         return mapping.from_maybe_impl(self._sync(self._impl_obj.tap(x=x, y=y)))
 
-
 mapping.register(TouchscreenImpl, Touchscreen)
-
 
 class JSHandle(SyncBase):
 
@@ -1827,9 +1809,7 @@ class JSHandle(SyncBase):
 
         return mapping.from_maybe_impl(self._sync(self._impl_obj.json_value()))
 
-
 mapping.register(JSHandleImpl, JSHandle)
-
 
 class ElementHandle(JSHandle):
 
@@ -3194,9 +3174,7 @@ class ElementHandle(JSHandle):
             )
         )
 
-
 mapping.register(ElementHandleImpl, ElementHandle)
-
 
 class FileChooser(SyncBase):
 
@@ -3275,9 +3253,7 @@ class FileChooser(SyncBase):
             )
         )
 
-
 mapping.register(FileChooserImpl, FileChooser)
-
 
 class Frame(SyncBase):
 
@@ -6094,9 +6070,7 @@ class Frame(SyncBase):
             )
         )
 
-
 mapping.register(FrameImpl, Frame)
-
 
 class FrameLocator(SyncBase):
 
@@ -6703,9 +6677,7 @@ class FrameLocator(SyncBase):
 
         return mapping.from_impl(self._impl_obj.nth(index=index))
 
-
 mapping.register(FrameLocatorImpl, FrameLocator)
-
 
 class Worker(SyncBase):
 
@@ -6865,9 +6837,7 @@ class Worker(SyncBase):
             ).future,
         )
 
-
 mapping.register(WorkerImpl, Worker)
-
 
 class Selectors(SyncBase):
 
@@ -6961,9 +6931,7 @@ class Selectors(SyncBase):
             self._impl_obj.set_test_id_attribute(attributeName=attribute_name)
         )
 
-
 mapping.register(SelectorsImpl, Selectors)
-
 
 class Clock(SyncBase):
 
@@ -7140,9 +7108,7 @@ class Clock(SyncBase):
             self._sync(self._impl_obj.set_system_time(time=time))
         )
 
-
 mapping.register(ClockImpl, Clock)
-
 
 class ConsoleMessage(SyncBase):
 
@@ -7249,9 +7215,7 @@ class ConsoleMessage(SyncBase):
         """
         return mapping.from_impl_nullable(self._impl_obj.worker)
 
-
 mapping.register(ConsoleMessageImpl, ConsoleMessage)
-
 
 class Debugger(SyncBase):
 
@@ -7340,9 +7304,7 @@ class Debugger(SyncBase):
             self._sync(self._impl_obj.run_to(location=location))
         )
 
-
 mapping.register(DebuggerImpl, Debugger)
-
 
 class Dialog(SyncBase):
 
@@ -7417,9 +7379,7 @@ class Dialog(SyncBase):
 
         return mapping.from_maybe_impl(self._sync(self._impl_obj.dismiss()))
 
-
 mapping.register(DialogImpl, Dialog)
-
 
 class Download(SyncBase):
 
@@ -7527,9 +7487,7 @@ class Download(SyncBase):
 
         return mapping.from_maybe_impl(self._sync(self._impl_obj.cancel()))
 
-
 mapping.register(DownloadImpl, Download)
-
 
 class Screencast(SyncBase):
 
@@ -7684,9 +7642,7 @@ class Screencast(SyncBase):
 
         return mapping.from_maybe_impl(self._sync(self._impl_obj.hide_overlays()))
 
-
 mapping.register(ScreencastImpl, Screencast)
-
 
 class Video(SyncBase):
 
@@ -7725,9 +7681,7 @@ class Video(SyncBase):
 
         return mapping.from_maybe_impl(self._sync(self._impl_obj.delete()))
 
-
 mapping.register(VideoImpl, Video)
-
 
 class Page(SyncContextManager):
 
@@ -12835,9 +12789,7 @@ class Page(SyncContextManager):
 
         return mapping.from_maybe_impl(self._sync(self._impl_obj.cancel_pick_locator()))
 
-
 mapping.register(PageImpl, Page)
-
 
 class WebError(SyncBase):
 
@@ -12865,9 +12817,7 @@ class WebError(SyncBase):
         """
         return mapping.from_impl(self._impl_obj.error)
 
-
 mapping.register(WebErrorImpl, WebError)
-
 
 class BrowserContext(SyncContextManager):
 
@@ -14166,9 +14116,7 @@ class BrowserContext(SyncContextManager):
 
         return mapping.from_impl(self._sync(self._impl_obj.new_cdp_session(page=page)))
 
-
 mapping.register(BrowserContextImpl, BrowserContext)
-
 
 class CDPSession(SyncBase):
 
@@ -14232,9 +14180,7 @@ class CDPSession(SyncBase):
 
         return mapping.from_maybe_impl(self._sync(self._impl_obj.detach()))
 
-
 mapping.register(CDPSessionImpl, CDPSession)
-
 
 class Browser(SyncContextManager):
 
@@ -14531,7 +14477,6 @@ class Browser(SyncContextManager):
             **NOTE** When using WebKit on macOS, accessing `localhost` will not pick up client certificates. You can make it
             work by replacing `localhost` with `local.playwright`.
 
-
         Returns
         -------
         BrowserContext
@@ -14768,7 +14713,6 @@ class Browser(SyncContextManager):
             **NOTE** When using WebKit on macOS, accessing `localhost` will not pick up client certificates. You can make it
             work by replacing `localhost` with `local.playwright`.
 
-
         Returns
         -------
         Page
@@ -14965,9 +14909,7 @@ class Browser(SyncContextManager):
 
         return mapping.from_maybe_impl(self._sync(self._impl_obj.stop_tracing()))
 
-
 mapping.register(BrowserImpl, Browser)
-
 
 class BrowserType(SyncBase):
 
@@ -15409,7 +15351,6 @@ class BrowserType(SyncBase):
             **NOTE** When using WebKit on macOS, accessing `localhost` will not pick up client certificates. You can make it
             work by replacing `localhost` with `local.playwright`.
 
-
         Returns
         -------
         BrowserContext
@@ -15595,9 +15536,7 @@ class BrowserType(SyncBase):
             )
         )
 
-
 mapping.register(BrowserTypeImpl, BrowserType)
-
 
 class Playwright(SyncBase):
 
@@ -15718,9 +15657,7 @@ class Playwright(SyncBase):
 
         return mapping.from_maybe_impl(self._sync(self._impl_obj.stop()))
 
-
 mapping.register(PlaywrightImpl, Playwright)
-
 
 class Tracing(SyncBase):
 
@@ -15904,9 +15841,7 @@ class Tracing(SyncBase):
 
         return mapping.from_maybe_impl(self._sync(self._impl_obj.group_end()))
 
-
 mapping.register(TracingImpl, Tracing)
-
 
 class Locator(SyncBase):
 
@@ -18746,9 +18681,7 @@ class Locator(SyncBase):
 
         return mapping.from_maybe_impl(self._sync(self._impl_obj.highlight()))
 
-
 mapping.register(LocatorImpl, Locator)
-
 
 class APIResponse(SyncBase):
 
@@ -18871,9 +18804,7 @@ class APIResponse(SyncBase):
 
         return mapping.from_maybe_impl(self._sync(self._impl_obj.dispose()))
 
-
 mapping.register(APIResponseImpl, APIResponse)
-
 
 class APIRequestContext(SyncBase):
 
@@ -19569,9 +19500,7 @@ class APIRequestContext(SyncBase):
             self._sync(self._impl_obj.storage_state(path=path, indexedDB=indexed_db))
         )
 
-
 mapping.register(APIRequestContextImpl, APIRequestContext)
-
 
 class APIRequest(SyncBase):
 
@@ -19674,9 +19603,7 @@ class APIRequest(SyncBase):
             )
         )
 
-
 mapping.register(APIRequestImpl, APIRequest)
-
 
 class PageAssertions(SyncBase):
 
@@ -19816,9 +19743,7 @@ class PageAssertions(SyncBase):
             )
         )
 
-
 mapping.register(PageAssertionsImpl, PageAssertions)
-
 
 class LocatorAssertions(SyncBase):
 
@@ -21735,9 +21660,7 @@ class LocatorAssertions(SyncBase):
             )
         )
 
-
 mapping.register(LocatorAssertionsImpl, LocatorAssertions)
-
 
 class APIResponseAssertions(SyncBase):
 
@@ -21768,6 +21691,5 @@ class APIResponseAssertions(SyncBase):
         __tracebackhide__ = True
 
         return mapping.from_maybe_impl(self._sync(self._impl_obj.not_to_be_ok()))
-
 
 mapping.register(APIResponseAssertionsImpl, APIResponseAssertions)

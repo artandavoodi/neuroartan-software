@@ -22,7 +22,6 @@ Python 3.13 removed PyThreadState.cframe (GH-108035).
 #    define GREENLET_USE_CFRAME 0
 #endif
 
-
 #if PY_VERSION_HEX >= 0x30B00A4
 /*
 Greenlet won't compile on anything older than Python 3.11 alpha 4 (see
@@ -40,7 +39,6 @@ https://bugs.python.org/issue46090). Summary of breaking internal changes:
 #else
 #    define GREENLET_PY311 0
 #endif
-
 
 #if PY_VERSION_HEX >= 0x30C0000
 #    define GREENLET_PY312 1
@@ -66,7 +64,6 @@ https://bugs.python.org/issue46090). Summary of breaking internal changes:
 #    define GREENLET_PY315 0
 #endif
 
-
 /* _Py_DEC_REFTOTAL macro has been removed from Python 3.9 by:
   https://github.com/python/cpython/commit/49932fec62c616ec88da52642339d83ae719e924
 
@@ -78,9 +75,7 @@ https://bugs.python.org/issue46090). Summary of breaking internal changes:
 #    define GREENLET_Py_DEC_REFTOTAL
 #endif
 
-
 #define G_TPFLAGS_DEFAULT Py_TPFLAGS_DEFAULT | Py_TPFLAGS_HAVE_VERSION_TAG | Py_TPFLAGS_HAVE_GC
-
 
 // bpo-43760 added PyThreadState_EnterTracing() to Python 3.11.0a2
 #if PY_VERSION_HEX < 0x030B00A2 && !defined(PYPY_VERSION)

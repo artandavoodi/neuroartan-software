@@ -28,14 +28,11 @@ from __future__ import annotations
 from . import Image, ImageFile
 from ._binary import i32be as i32
 
-
 def _accept(prefix: bytes) -> bool:
     return len(prefix) >= 8 and i32(prefix, 0) >= 20 and i32(prefix, 4) in (1, 2)
 
-
 ##
 # Image plugin for the GIMP brush format.
-
 
 class GbrImageFile(ImageFile.ImageFile):
     format = "GBR"
@@ -94,10 +91,8 @@ class GbrImageFile(ImageFile.ImageFile):
             self.frombytes(self.fp.read(self._data_size))
         return Image.Image.load(self)
 
-
 #
 # registry
-
 
 Image.register_open(GbrImageFile.format, GbrImageFile, _accept)
 Image.register_extension(GbrImageFile.format, ".gbr")

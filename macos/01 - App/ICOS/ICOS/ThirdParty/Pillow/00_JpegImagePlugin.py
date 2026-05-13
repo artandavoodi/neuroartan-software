@@ -59,12 +59,10 @@ if TYPE_CHECKING:
 #
 # Parser
 
-
 def Skip(self: JpegImageFile, marker: int) -> None:
     assert self.fp is not None
     n = i16(self.fp.read(2)) - 2
     ImageFile._safe_read(self.fp, n)
-
 
 def APP(self: JpegImageFile, marker: int) -> None:
     #
@@ -172,7 +170,6 @@ def APP(self: JpegImageFile, marker: int) -> None:
         # plus constant header size
         self.info["mpoffset"] = self.fp.tell() - n + 4
 
-
 def COM(self: JpegImageFile, marker: int) -> None:
     #
     # Comment marker.  Store these in the APP dictionary.
@@ -183,7 +180,6 @@ def COM(self: JpegImageFile, marker: int) -> None:
     self.info["comment"] = s
     self.app["COM"] = s  # compatibility
     self.applist.append(("COM", s))
-
 
 def SOF(self: JpegImageFile, marker: int) -> None:
     #
@@ -235,7 +231,6 @@ def SOF(self: JpegImageFile, marker: int) -> None:
         # 4-tuples: id, vsamp, hsamp, qtable
         self.layer.append((t[0], t[1] // 16, t[1] & 15, t[2]))
 
-
 def DQT(self: JpegImageFile, marker: int) -> None:
     #
     # Define quantization table.  Note that there might be more
@@ -259,7 +254,6 @@ def DQT(self: JpegImageFile, marker: int) -> None:
             data.byteswap()  # the values are always big-endian
         self.quantization[v & 15] = [data[i] for i in zigzag_index]
         s = s[qt_length:]
-
 
 #
 # JPEG marker table
@@ -330,15 +324,12 @@ MARKER = {
     0xFFFE: ("COM", "Comment", COM),
 }
 
-
 def _accept(prefix: bytes) -> bool:
     # Magic number was taken from https://en.wikipedia.org/wiki/JPEG
     return prefix.startswith(b"\xff\xd8\xff")
 
-
 ##
 # Image plugin for JPEG and JFIF images.
-
 
 class JpegImageFile(ImageFile.ImageFile):
     format = "JPEG"
@@ -531,12 +522,10 @@ class JpegImageFile(ImageFile.ImageFile):
     def _getmp(self) -> dict[int, Any] | None:
         return _getmp(self)
 
-
 def _getexif(self: JpegImageFile) -> dict[int, Any] | None:
     if "exif" not in self.info:
         return None
     return self.getexif()._get_merged_dict()
-
 
 def _getmp(self: JpegImageFile) -> dict[int, Any] | None:
     # Extract MP information.  This method was inspired by the "highly
@@ -613,7 +602,6 @@ def _getmp(self: JpegImageFile) -> dict[int, Any] | None:
     # file and so can't test it.
     return mp
 
-
 # --------------------------------------------------------------------
 # stuff to save JPEG files
 
@@ -645,7 +633,6 @@ samplings = {
 }
 # fmt: on
 
-
 def get_sampling(im: Image.Image) -> int:
     # There's no subsampling when images have only 1 layer
     # (grayscale images) or when they are CMYK (4 layers),
@@ -658,7 +645,6 @@ def get_sampling(im: Image.Image) -> int:
         return -1
     sampling = im.layer[0][1:3] + im.layer[1][1:3] + im.layer[2][1:3]
     return samplings.get(sampling, -1)
-
 
 def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     try:
@@ -848,7 +834,6 @@ def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
         im, fp, [ImageFile._Tile("jpeg", (0, 0) + im.size, 0, rawmode)], bufsize
     )
 
-
 ##
 # Factory for making JPEG and MPO instances
 def jpeg_factory(
@@ -876,7 +861,6 @@ def jpeg_factory(
             "interpreted as a base JPEG file"
         )
     return im
-
 
 # ---------------------------------------------------------------------
 # Registry stuff

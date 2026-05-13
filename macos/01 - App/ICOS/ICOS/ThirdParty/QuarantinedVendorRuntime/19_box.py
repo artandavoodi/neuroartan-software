@@ -1,11 +1,9 @@
 from typing import TYPE_CHECKING, Iterable, List, Literal
 
-
 from ._loop import loop_last
 
 if TYPE_CHECKING:
     from pip._vendor.rich.console import ConsoleOptions
-
 
 class Box:
     """Defines characters to render boxes.
@@ -181,7 +179,6 @@ class Box:
         append(self.bottom_right)
         return "".join(parts)
 
-
 # fmt: off
 ASCII: Box = Box(
     "+--+\n"
@@ -252,7 +249,6 @@ MINIMAL: Box = Box(
     "  ╵ \n"
 )
 
-
 MINIMAL_HEAVY_HEAD: Box = Box(
     "  ╷ \n"
     "  │ \n"
@@ -274,7 +270,6 @@ MINIMAL_DOUBLE_HEAD: Box = Box(
     "  │ \n"
     "  ╵ \n"
 )
-
 
 SIMPLE: Box = Box(
     "    \n"
@@ -298,7 +293,6 @@ SIMPLE_HEAD: Box = Box(
     "    \n"
 )
 
-
 SIMPLE_HEAVY: Box = Box(
     "    \n"
     "    \n"
@@ -309,7 +303,6 @@ SIMPLE_HEAVY: Box = Box(
     "    \n"
     "    \n"
 )
-
 
 HORIZONTALS: Box = Box(
     " ── \n"
@@ -419,7 +412,6 @@ PLAIN_HEADED_SUBSTITUTIONS = {
     MINIMAL_HEAVY_HEAD: MINIMAL,
     ASCII_DOUBLE_HEAD: ASCII2,
 }
-
 
 if __name__ == "__main__":  # pragma: no cover
     from pip._vendor.rich.columns import Columns

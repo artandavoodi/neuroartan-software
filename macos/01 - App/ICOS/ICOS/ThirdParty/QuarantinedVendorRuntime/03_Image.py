@@ -71,20 +71,16 @@ if TYPE_CHECKING:
 
 logger = logging.getLogger(__name__)
 
-
 class DecompressionBombWarning(RuntimeWarning):
     pass
 
-
 class DecompressionBombError(Exception):
     pass
-
 
 WARN_POSSIBLE_FORMATS: bool = False
 
 # Limit to around a quarter gigabyte for a 24-bit (3 bpp) image
 MAX_IMAGE_PIXELS: int | None = int(1024 * 1024 * 1024 // 4 // 3)
-
 
 try:
     # If the _imaging C module is not present, Pillow will not load.
@@ -118,10 +114,8 @@ except ImportError as v:
     # see docs/porting.rst
     raise
 
-
 #
 # Constants
-
 
 # transpose
 class Transpose(IntEnum):
@@ -133,7 +127,6 @@ class Transpose(IntEnum):
     TRANSPOSE = 5
     TRANSVERSE = 6
 
-
 # transforms (also defined in Imaging.h)
 class Transform(IntEnum):
     AFFINE = 0
@@ -141,7 +134,6 @@ class Transform(IntEnum):
     PERSPECTIVE = 2
     QUAD = 3
     MESH = 4
-
 
 # resampling filters (also defined in Imaging.h)
 class Resampling(IntEnum):
@@ -152,7 +144,6 @@ class Resampling(IntEnum):
     BICUBIC = 3
     LANCZOS = 1
 
-
 _filters_support = {
     Resampling.BOX: 0.5,
     Resampling.BILINEAR: 1.0,
@@ -161,7 +152,6 @@ _filters_support = {
     Resampling.LANCZOS: 3.0,
 }
 
-
 # dithers
 class Dither(IntEnum):
     NONE = 0
@@ -169,12 +159,10 @@ class Dither(IntEnum):
     RASTERIZE = 2  # Not yet implemented
     FLOYDSTEINBERG = 3  # default
 
-
 # palettes/quantizers
 class Palette(IntEnum):
     WEB = 0
     ADAPTIVE = 1
-
 
 class Quantize(IntEnum):
     MEDIANCUT = 0
@@ -182,12 +170,10 @@ class Quantize(IntEnum):
     FASTOCTREE = 2
     LIBIMAGEQUANT = 3
 
-
 module = sys.modules[__name__]
 for enum in (Transpose, Transform, Resampling, Dither, Palette, Quantize):
     for item in enum:
         setattr(module, item.name, item.value)
-
 
 if hasattr(core, "DEFAULT_STRATEGY"):
     DEFAULT_STRATEGY = core.DEFAULT_STRATEGY
@@ -195,7 +181,6 @@ if hasattr(core, "DEFAULT_STRATEGY"):
     HUFFMAN_ONLY = core.HUFFMAN_ONLY
     RLE = core.RLE
     FIXED = core.FIXED
-
 
 # --------------------------------------------------------------------
 # Registries
@@ -229,7 +214,6 @@ ENCODERS: dict[str, type[ImageFile.PyEncoder]] = {}
 
 _ENDIAN = "<" if sys.byteorder == "little" else ">"
 
-
 def _conv_type_shape(im: Image) -> tuple[tuple[int, ...], str]:
     m = ImageMode.getmode(im.mode)
     shape: tuple[int, ...] = (im.height, im.width)
@@ -237,7 +221,6 @@ def _conv_type_shape(im: Image) -> tuple[tuple[int, ...], str]:
     if extra != 1:
         shape += (extra,)
     return shape, m.typestr
-
 
 MODES = [
     "1",
@@ -266,7 +249,6 @@ MODES = [
 # may have to modify the stride calculation in map.c too!
 _MAPMODES = ("L", "P", "RGBX", "RGBA", "CMYK", "I;16", "I;16L", "I;16B")
 
-
 def getmodebase(mode: str) -> str:
     """
     Gets the "base" mode for given mode.  This function returns "L" for
@@ -279,7 +261,6 @@ def getmodebase(mode: str) -> str:
     """
     return ImageMode.getmode(mode).basemode
 
-
 def getmodetype(mode: str) -> str:
     """
     Gets the storage type mode.  Given a mode, this function returns a
@@ -290,7 +271,6 @@ def getmodetype(mode: str) -> str:
     :exception KeyError: If the input mode was not a standard mode.
     """
     return ImageMode.getmode(mode).basetype
-
 
 def getmodebandnames(mode: str) -> tuple[str, ...]:
     """
@@ -306,7 +286,6 @@ def getmodebandnames(mode: str) -> tuple[str, ...]:
     """
     return ImageMode.getmode(mode).bands
 
-
 def getmodebands(mode: str) -> int:
     """
     Gets the number of individual bands for this mode.
@@ -316,7 +295,6 @@ def getmodebands(mode: str) -> int:
     :exception KeyError: If the input mode was not a standard mode.
     """
     return len(ImageMode.getmode(mode).bands)
-
 
 # --------------------------------------------------------------------
 # Helpers
@@ -401,7 +379,6 @@ _EXTENSION_PLUGIN: dict[str, str] = {
     ".xpm": "XpmImagePlugin",
 }
 
-
 def _import_plugin_for_extension(ext: str | bytes) -> bool:
     """Import only the plugin needed for a specific file extension."""
     if not ext:
@@ -424,7 +401,6 @@ def _import_plugin_for_extension(ext: str | bytes) -> bool:
     except ImportError as e:
         logger.debug("Image: failed to import %s: %s", plugin, e)
         return False
-
 
 def preinit() -> None:
     """
@@ -470,7 +446,6 @@ def preinit() -> None:
 
     _initialized = 1
 
-
 def init() -> bool:
     """
     Explicitly initializes the Python Imaging Library. This function
@@ -496,10 +471,8 @@ def init() -> bool:
         return True
     return False
 
-
 # --------------------------------------------------------------------
 # Codec factories (used by tobytes/frombytes and ImageFile.load)
-
 
 def _getdecoder(
     mode: str, decoder_name: str, args: Any, extra: tuple[Any, ...] = ()
@@ -525,7 +498,6 @@ def _getdecoder(
         raise OSError(msg) from e
     return decoder(mode, *args + extra)
 
-
 def _getencoder(
     mode: str, encoder_name: str, args: Any, extra: tuple[Any, ...] = ()
 ) -> core.ImagingEncoder | ImageFile.PyEncoder:
@@ -550,10 +522,8 @@ def _getencoder(
         raise OSError(msg) from e
     return encoder(mode, *args + extra)
 
-
 # --------------------------------------------------------------------
 # Simple expression analyzer
-
 
 class ImagePointTransform:
     """
@@ -596,23 +566,19 @@ class ImagePointTransform:
             return NotImplemented
         return ImagePointTransform(self.scale / other, self.offset / other)
 
-
 def _getscaleoffset(
     expr: Callable[[ImagePointTransform], ImagePointTransform | float],
 ) -> tuple[float, float]:
     a = expr(ImagePointTransform(1, 0))
     return (a.scale, a.offset) if isinstance(a, ImagePointTransform) else (0, a)
 
-
 # --------------------------------------------------------------------
 # Implementation wrapper
-
 
 class SupportsGetData(Protocol):
     def getdata(
         self,
     ) -> tuple[Transform, Sequence[int]]: ...
-
 
 class Image:
     """
@@ -3137,10 +3103,8 @@ class Image:
             raise ImportError(msg)
         return ImageQt.toqpixmap(self)
 
-
 # --------------------------------------------------------------------
 # Abstract handlers.
-
 
 class ImagePointHandler(abc.ABC):
     """
@@ -3151,7 +3115,6 @@ class ImagePointHandler(abc.ABC):
     @abc.abstractmethod
     def point(self, im: Image) -> Image:
         pass
-
 
 class ImageTransformHandler(abc.ABC):
     """
@@ -3168,10 +3131,8 @@ class ImageTransformHandler(abc.ABC):
     ) -> Image:
         pass
 
-
 # --------------------------------------------------------------------
 # Factories
-
 
 def _check_size(size: Any) -> None:
     """
@@ -3190,7 +3151,6 @@ def _check_size(size: Any) -> None:
     if size[0] < 0 or size[1] < 0:
         msg = "Width and height must be >= 0"
         raise ValueError(msg)
-
 
 def new(
     mode: str,
@@ -3240,7 +3200,6 @@ def new(
             color = im.palette.getcolor(color_ints)
     return im._new(core.fill(mode, size, color))
 
-
 def frombytes(
     mode: str,
     size: tuple[int, int],
@@ -3285,7 +3244,6 @@ def frombytes(
 
         im.frombytes(data, decoder_name, decoder_args)
     return im
-
 
 def frombuffer(
     mode: str,
@@ -3348,7 +3306,6 @@ def frombuffer(
 
     return frombytes(mode, size, data, decoder_name, args)
 
-
 class SupportsArrayInterface(Protocol):
     """
     An object that has an ``__array_interface__`` dictionary.
@@ -3357,7 +3314,6 @@ class SupportsArrayInterface(Protocol):
     @property
     def __array_interface__(self) -> dict[str, Any]:
         raise NotImplementedError()
-
 
 class SupportsArrowArrayInterface(Protocol):
     """
@@ -3369,7 +3325,6 @@ class SupportsArrowArrayInterface(Protocol):
         self, requested_schema: "PyCapsule" = None  # type: ignore[name-defined]  # noqa: F821, UP037
     ) -> tuple["PyCapsule", "PyCapsule"]:  # type: ignore[name-defined]  # noqa: F821, UP037
         raise NotImplementedError()
-
 
 def fromarray(obj: SupportsArrayInterface, mode: str | None = None) -> Image:
     """
@@ -3457,7 +3412,6 @@ def fromarray(obj: SupportsArrayInterface, mode: str | None = None) -> Image:
 
     return frombuffer(mode, size, obj, "raw", rawmode, 0, 1)
 
-
 def fromarrow(
     obj: SupportsArrowArrayInterface, mode: str, size: tuple[int, int]
 ) -> Image:
@@ -3509,7 +3463,6 @@ def fromarrow(
     msg = "new_arrow returned None without an exception"
     raise ValueError(msg)
 
-
 def fromqimage(im: ImageQt.QImage) -> ImageFile.ImageFile:
     """Creates an image instance from a QImage image"""
     from . import ImageQt
@@ -3519,7 +3472,6 @@ def fromqimage(im: ImageQt.QImage) -> ImageFile.ImageFile:
         raise ImportError(msg)
     return ImageQt.fromqimage(im)
 
-
 def fromqpixmap(im: ImageQt.QPixmap) -> ImageFile.ImageFile:
     """Creates an image instance from a QPixmap image"""
     from . import ImageQt
@@ -3528,7 +3480,6 @@ def fromqpixmap(im: ImageQt.QPixmap) -> ImageFile.ImageFile:
         msg = "Qt bindings are not installed"
         raise ImportError(msg)
     return ImageQt.fromqpixmap(im)
-
 
 _fromarray_typemap = {
     # (shape, typestr) => mode, rawmode, color modes
@@ -3556,7 +3507,6 @@ _fromarray_typemap = {
     ((1, 1), f"{_ENDIAN}f4"): ("F", "F", []),
 }
 
-
 def _decompression_bomb_check(size: tuple[int, int]) -> None:
     if MAX_IMAGE_PIXELS is None:
         return
@@ -3576,7 +3526,6 @@ def _decompression_bomb_check(size: tuple[int, int]) -> None:
             "could be decompression bomb DOS attack.",
             DecompressionBombWarning,
         )
-
 
 def open(
     fp: StrOrBytesPath | IO[bytes],
@@ -3710,10 +3659,8 @@ def open(
     msg = "cannot identify image file %r" % (filename if filename else fp)
     raise UnidentifiedImageError(msg)
 
-
 #
 # Image processing.
-
 
 def alpha_composite(im1: Image, im2: Image) -> Image:
     """
@@ -3727,7 +3674,6 @@ def alpha_composite(im1: Image, im2: Image) -> Image:
     im1.load()
     im2.load()
     return im1._new(core.alpha_composite(im1.im, im2.im))
-
 
 def blend(im1: Image, im2: Image, alpha: float) -> Image:
     """
@@ -3751,7 +3697,6 @@ def blend(im1: Image, im2: Image, alpha: float) -> Image:
     im2.load()
     return im1._new(core.blend(im1.im, im2.im, alpha))
 
-
 def composite(image1: Image, image2: Image, mask: Image) -> Image:
     """
     Create composite image by blending images using a transparency mask.
@@ -3768,7 +3713,6 @@ def composite(image1: Image, image2: Image, mask: Image) -> Image:
     image.paste(image1, None, mask)
     return image
 
-
 def eval(image: Image, *args: Callable[[int], float]) -> Image:
     """
     Applies the function (which should take one argument) to each pixel
@@ -3783,7 +3727,6 @@ def eval(image: Image, *args: Callable[[int], float]) -> Image:
     """
 
     return image.point(args[0])
-
 
 def merge(mode: str, bands: Sequence[Image]) -> Image:
     """
@@ -3811,10 +3754,8 @@ def merge(mode: str, bands: Sequence[Image]) -> Image:
         band.load()
     return bands[0]._new(core.merge(mode, *[b.im for b in bands]))
 
-
 # --------------------------------------------------------------------
 # Plugin registry
-
 
 def register_open(
     id: str,
@@ -3838,7 +3779,6 @@ def register_open(
         ID.append(id)
     OPEN[id] = factory, accept
 
-
 def register_mime(id: str, mimetype: str) -> None:
     """
     Registers an image MIME type by populating ``Image.MIME``. This function
@@ -3853,7 +3793,6 @@ def register_mime(id: str, mimetype: str) -> None:
     """
     MIME[id.upper()] = mimetype
 
-
 def register_save(
     id: str, driver: Callable[[Image, IO[bytes], str | bytes], None]
 ) -> None:
@@ -3865,7 +3804,6 @@ def register_save(
     :param driver: A function to save images in this format.
     """
     SAVE[id.upper()] = driver
-
 
 def register_save_all(
     id: str, driver: Callable[[Image, IO[bytes], str | bytes], None]
@@ -3880,7 +3818,6 @@ def register_save_all(
     """
     SAVE_ALL[id.upper()] = driver
 
-
 def register_extension(id: str, extension: str) -> None:
     """
     Registers an image extension.  This function should not be
@@ -3890,7 +3827,6 @@ def register_extension(id: str, extension: str) -> None:
     :param extension: An extension used for this format.
     """
     EXTENSION[extension.lower()] = id.upper()
-
 
 def register_extensions(id: str, extensions: list[str]) -> None:
     """
@@ -3903,7 +3839,6 @@ def register_extensions(id: str, extensions: list[str]) -> None:
     for extension in extensions:
         register_extension(id, extension)
 
-
 def registered_extensions() -> dict[str, str]:
     """
     Returns a dictionary containing all file extensions belonging
@@ -3911,7 +3846,6 @@ def registered_extensions() -> dict[str, str]:
     """
     init()
     return EXTENSION
-
 
 def register_decoder(name: str, decoder: type[ImageFile.PyDecoder]) -> None:
     """
@@ -3925,7 +3859,6 @@ def register_decoder(name: str, decoder: type[ImageFile.PyDecoder]) -> None:
     """
     DECODERS[name] = decoder
 
-
 def register_encoder(name: str, encoder: type[ImageFile.PyEncoder]) -> None:
     """
     Registers an image encoder.  This function should not be
@@ -3938,10 +3871,8 @@ def register_encoder(name: str, encoder: type[ImageFile.PyEncoder]) -> None:
     """
     ENCODERS[name] = encoder
 
-
 # --------------------------------------------------------------------
 # Simple display support.
-
 
 def _show(image: Image, **options: Any) -> None:
     from . import ImageShow
@@ -3949,10 +3880,8 @@ def _show(image: Image, **options: Any) -> None:
     deprecate("Image._show", 13, "ImageShow.show")
     ImageShow.show(image, **options)
 
-
 # --------------------------------------------------------------------
 # Effects
-
 
 def effect_mandelbrot(
     size: tuple[int, int], extent: tuple[float, float, float, float], quality: int
@@ -3968,7 +3897,6 @@ def effect_mandelbrot(
     """
     return Image()._new(core.effect_mandelbrot(size, extent, quality))
 
-
 def effect_noise(size: tuple[int, int], sigma: float) -> Image:
     """
     Generate Gaussian noise centered around 128.
@@ -3979,7 +3907,6 @@ def effect_noise(size: tuple[int, int], sigma: float) -> Image:
     """
     return Image()._new(core.effect_noise(size, sigma))
 
-
 def linear_gradient(mode: str) -> Image:
     """
     Generate 256x256 linear gradient from black to white, top to bottom.
@@ -3987,7 +3914,6 @@ def linear_gradient(mode: str) -> Image:
     :param mode: Input mode.
     """
     return Image()._new(core.linear_gradient(mode))
-
 
 def radial_gradient(mode: str) -> Image:
     """
@@ -3997,10 +3923,8 @@ def radial_gradient(mode: str) -> Image:
     """
     return Image()._new(core.radial_gradient(mode))
 
-
 # --------------------------------------------------------------------
 # Resources
-
 
 def _apply_env_variables(env: dict[str, str] | None = None) -> None:
     env_dict = env if env is not None else os.environ
@@ -4032,16 +3956,13 @@ def _apply_env_variables(env: dict[str, str] | None = None) -> None:
         except ValueError as e:
             warnings.warn(f"{var_name}: {e}")
 
-
 _apply_env_variables()
 atexit.register(core.clear_cache)
-
 
 if TYPE_CHECKING:
     _ExifBase = MutableMapping[int, Any]
 else:
     _ExifBase = MutableMapping
-
 
 class Exif(_ExifBase):
     """

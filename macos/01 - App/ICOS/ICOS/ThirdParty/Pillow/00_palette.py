@@ -7,7 +7,6 @@ from .color_triplet import ColorTriplet
 if TYPE_CHECKING:
     from pip._vendor.rich.table import Table
 
-
 class Palette:
     """A palette of available colors."""
 
@@ -70,7 +69,6 @@ class Palette:
 
         min_index = min(range(len(self._colors)), key=get_color_distance)
         return min_index
-
 
 if __name__ == "__main__":  # pragma: no cover
     import colorsys

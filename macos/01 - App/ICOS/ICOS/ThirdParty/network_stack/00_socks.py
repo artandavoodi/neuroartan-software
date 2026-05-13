@@ -71,7 +71,6 @@ try:
 except ImportError:
     ssl = None  # type: ignore[assignment]
 
-
 class _TYPE_SOCKS_OPTIONS(typing.TypedDict):
     socks_version: int
     proxy_host: str | None
@@ -79,7 +78,6 @@ class _TYPE_SOCKS_OPTIONS(typing.TypedDict):
     username: str | None
     password: str | None
     rdns: bool
-
 
 class SOCKSConnection(HTTPConnection):
     """
@@ -153,7 +151,6 @@ class SOCKSConnection(HTTPConnection):
 
         return conn
 
-
 # We don't need to duplicate the Verified/Unverified distinction from
 # urllib3/connection.py here because the HTTPSConnection will already have been
 # correctly set to either the Verified or Unverified form by that module. This
@@ -161,14 +158,11 @@ class SOCKSConnection(HTTPConnection):
 class SOCKSHTTPSConnection(SOCKSConnection, HTTPSConnection):
     pass
 
-
 class SOCKSHTTPConnectionPool(HTTPConnectionPool):
     ConnectionCls = SOCKSConnection
 
-
 class SOCKSHTTPSConnectionPool(HTTPSConnectionPool):
     ConnectionCls = SOCKSHTTPSConnection
-
 
 class SOCKSProxyManager(PoolManager):
     """

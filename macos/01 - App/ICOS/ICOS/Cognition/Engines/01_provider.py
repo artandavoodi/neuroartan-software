@@ -48,10 +48,8 @@ _CONFLICT_PRIORITY_THRESHOLD = 5
 # responsible for creating Requirement and Candidate objects, and provides
 # services to those objects (access to pip's finder and preparer).
 
-
 D = TypeVar("D")
 V = TypeVar("V")
-
 
 def _get_with_identifier(
     mapping: Mapping[str, V],
@@ -76,7 +74,6 @@ def _get_with_identifier(
     if open_bracket and name in mapping:
         return mapping[name]
     return default
-
 
 class PipProvider(_ProviderBase):
     """Pip's provider implementation for resolvelib.

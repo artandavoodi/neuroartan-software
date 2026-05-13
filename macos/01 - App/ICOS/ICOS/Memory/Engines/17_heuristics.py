@@ -14,15 +14,12 @@ if TYPE_CHECKING:
 
 TIME_FMT = "%a, %d %b %Y %H:%M:%S GMT"
 
-
 def expire_after(delta: timedelta, date: datetime | None = None) -> datetime:
     date = date or datetime.now(timezone.utc)
     return date + delta
 
-
 def datetime_to_header(dt: datetime) -> str:
     return formatdate(calendar.timegm(dt.timetuple()))
-
 
 class BaseHeuristic:
     def warning(self, response: HTTPResponse) -> str | None:
@@ -56,7 +53,6 @@ class BaseHeuristic:
 
         return response
 
-
 class OneDayCache(BaseHeuristic):
     """
     Cache the response by providing an expires 1 day in the
@@ -76,7 +72,6 @@ class OneDayCache(BaseHeuristic):
             headers["cache-control"] = "public"
         return headers
 
-
 class ExpiresAfter(BaseHeuristic):
     """
     Cache **all** requests for a defined time period.
@@ -92,7 +87,6 @@ class ExpiresAfter(BaseHeuristic):
     def warning(self, response: HTTPResponse) -> str | None:
         tmpl = "110 - Automatically cached for %s. Response might be stale"
         return tmpl % self.delta
-
 
 class LastModified(BaseHeuristic):
     """

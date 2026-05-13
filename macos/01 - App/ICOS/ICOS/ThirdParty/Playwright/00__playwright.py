@@ -19,7 +19,6 @@ from playwright._impl._connection import ChannelOwner, from_channel
 from playwright._impl._fetch import APIRequest
 from playwright._impl._selectors import Selectors
 
-
 class Playwright(ChannelOwner):
     devices: Dict
     selectors: Selectors

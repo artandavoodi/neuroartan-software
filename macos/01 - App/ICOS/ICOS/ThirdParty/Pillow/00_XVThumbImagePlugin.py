@@ -32,14 +32,11 @@ for r in range(8):
                 o8((r * 255) // 7) + o8((g * 255) // 7) + o8((b * 255) // 3)
             )
 
-
 def _accept(prefix: bytes) -> bool:
     return prefix.startswith(_MAGIC)
 
-
 ##
 # Image plugin for XV thumbnail images.
-
 
 class XVThumbImageFile(ImageFile.ImageFile):
     format = "XVThumb"
@@ -76,7 +73,6 @@ class XVThumbImageFile(ImageFile.ImageFile):
         self.tile = [
             ImageFile._Tile("raw", (0, 0) + self.size, self.fp.tell(), self.mode)
         ]
-
 
 # --------------------------------------------------------------------
 

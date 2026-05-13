@@ -1,6 +1,5 @@
 import SwiftUI
 
-
 // MARK: - ICOS Split Layout
 // Company-native persistent split layout for ICOS interface surfaces.
 // Owns proportional resizing, minimum column protection, and adaptive collapse behavior.

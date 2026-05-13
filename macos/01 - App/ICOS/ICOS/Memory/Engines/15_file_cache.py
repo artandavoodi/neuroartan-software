@@ -18,7 +18,6 @@ if TYPE_CHECKING:
 
     from filelock import BaseFileLock
 
-
 class _FileCacheMixin:
     """Shared implementation for both FileCache variants."""
 
@@ -103,7 +102,6 @@ class _FileCacheMixin:
             except FileNotFoundError:
                 pass
 
-
 class FileCache(_FileCacheMixin, BaseCache):
     """
     Traditional FileCache: body is stored in memory, so not suitable for large
@@ -112,7 +110,6 @@ class FileCache(_FileCacheMixin, BaseCache):
 
     def delete(self, key: str) -> None:
         self._delete(key, "")
-
 
 class SeparateBodyFileCache(_FileCacheMixin, SeparateBodyBaseCache):
     """
@@ -134,7 +131,6 @@ class SeparateBodyFileCache(_FileCacheMixin, SeparateBodyBaseCache):
     def delete(self, key: str) -> None:
         self._delete(key, "")
         self._delete(key, ".body")
-
 
 def url_to_file_path(url: str, filecache: FileCache) -> str:
     """Return the file cache path based on the URL.

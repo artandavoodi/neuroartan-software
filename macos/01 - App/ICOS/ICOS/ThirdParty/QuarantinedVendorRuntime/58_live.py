@@ -18,7 +18,6 @@ if TYPE_CHECKING:
     # Can be replaced with `from typing import Self` in Python 3.11+
     from typing_extensions import Self  # pragma: no cover
 
-
 class _RefreshThread(Thread):
     """A thread that calls refresh() at regular intervals."""
 
@@ -36,7 +35,6 @@ class _RefreshThread(Thread):
             with self.live._lock:
                 if not self.done.is_set():
                     self.live.refresh()
-
 
 class Live(JupyterMixin, RenderHook):
     """Renders an auto-updating live display of any given renderable.
@@ -291,7 +289,6 @@ class Live(JupyterMixin, RenderHook):
             renderables = [*renderables, self._live_render]
 
         return renderables
-
 
 if __name__ == "__main__":  # pragma: no cover
     import random

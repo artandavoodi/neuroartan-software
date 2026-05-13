@@ -28,13 +28,11 @@ from typing import Any, Callable, DefaultDict, Dict, List
 
 from collections import defaultdict
 
-
 class EventPriority(str, Enum):
     LOW = "low"
     NORMAL = "normal"
     HIGH = "high"
     CRITICAL = "critical"
-
 
 @dataclass
 class RuntimeEvent:
@@ -44,7 +42,6 @@ class RuntimeEvent:
     payload: Dict[str, Any] = field(default_factory=dict)
     priority: EventPriority = EventPriority.NORMAL
     timestamp: datetime = field(default_factory=datetime.utcnow)
-
 
 class RuntimeEventBus:
     """
@@ -150,7 +147,6 @@ class RuntimeEventBus:
                 for event in self.get_recent_events()
             ],
         }
-
 
 if __name__ == "__main__":
     bus = RuntimeEventBus()

@@ -8,7 +8,6 @@ import json
 import time
 import uuid
 
-
 # ============================================================
 # Sovereign Root
 # ============================================================
@@ -37,7 +36,6 @@ LEARNING_EVENT_STORE = (
 EMOTIONAL_SIGNAL_STORE = (
     EMOTION_ROOT / "emotional_signal_store.json"
 )
-
 
 # ============================================================
 # Token Capture Engine
@@ -77,7 +75,6 @@ class TokenCaptureEngine:
             fallback=[]
         )
 
-
     # ========================================================
     # JSON Loading
     # ========================================================
@@ -102,7 +99,6 @@ class TokenCaptureEngine:
         except Exception:
             return fallback
 
-
     # ========================================================
     # Semantic Density
     # ========================================================
@@ -121,7 +117,6 @@ class TokenCaptureEngine:
             return "medium"
 
         return "low"
-
 
     # ========================================================
     # Emotional Context
@@ -160,7 +155,6 @@ class TokenCaptureEngine:
 
         return "neutral"
 
-
     # ========================================================
     # Learning Value
     # ========================================================
@@ -179,7 +173,6 @@ class TokenCaptureEngine:
             return "medium"
 
         return "low"
-
 
     # ========================================================
     # Token Event Capture
@@ -251,7 +244,6 @@ class TokenCaptureEngine:
 
         return event
 
-
     # ========================================================
     # Runtime Status
     # ========================================================
@@ -266,7 +258,6 @@ class TokenCaptureEngine:
                 self.emotional_signals
             ),
         }
-
 
 # ============================================================
 # Runtime Entry

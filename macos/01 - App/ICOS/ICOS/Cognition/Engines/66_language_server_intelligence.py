@@ -39,17 +39,14 @@ SYMBOL_PATTERNS = {
     "html_class": re.compile(r"class=[\"']([^\"']+)[\"']"),
 }
 
-
 def ignored(path: Path) -> bool:
     return any(part in IGNORE for part in path.parts)
-
 
 def safe_read(path: Path) -> str:
     try:
         return path.read_text(errors="ignore")
     except Exception:
         return ""
-
 
 def classify(path: Path) -> str:
     s = str(path).lower()
@@ -73,7 +70,6 @@ def classify(path: Path) -> str:
 
     return "general"
 
-
 def extract_symbols(path: Path, content: str):
     symbols = []
 
@@ -91,7 +87,6 @@ def extract_symbols(path: Path, content: str):
             })
 
     return symbols
-
 
 def inspect_project():
     files = []
@@ -133,7 +128,6 @@ def inspect_project():
 
     return result
 
-
 def find_symbol(query: str):
     data = inspect_project()
     q = query.lower()
@@ -148,7 +142,6 @@ def find_symbol(query: str):
         "query": query,
         "matches": matches
     }
-
 
 if __name__ == "__main__":
     import sys

@@ -24,17 +24,14 @@ from pip._internal.utils.misc import get_pip_version
 
 logger = logging.getLogger(__name__)
 
-
 def show_value(name: str, value: Any) -> None:
     logger.info("%s: %s", name, value)
-
 
 def show_sys_implementation() -> None:
     logger.info("sys.implementation:")
     implementation_name = sys.implementation.name
     with indent_log():
         show_value("name", implementation_name)
-
 
 def create_vendor_txt_map() -> dict[str, str]:
     with open_text_resource("pip._vendor", "vendor.txt") as f:
@@ -47,7 +44,6 @@ def create_vendor_txt_map() -> dict[str, str]:
     # Transform into "module" -> version dict.
     return dict(line.split("==", 1) for line in lines)
 
-
 def get_module_from_module_name(module_name: str) -> ModuleType | None:
     # Module name can be uppercase in vendor.txt for some reason...
     module_name = module_name.lower().replace("-", "_")
@@ -57,7 +53,6 @@ def get_module_from_module_name(module_name: str) -> ModuleType | None:
 
     __import__(f"pip._vendor.{module_name}", globals(), locals(), level=0)
     return getattr(pip._vendor, module_name)
-
 
 def get_vendor_version_from_module(module_name: str) -> str | None:
     module = get_module_from_module_name(module_name)
@@ -72,7 +67,6 @@ def get_vendor_version_from_module(module_name: str) -> str | None:
             version = str(dist.version)
 
     return version
-
 
 def show_actual_vendor_versions(vendor_txt_versions: dict[str, str]) -> None:
     """Log the actual version and print extra info if there is
@@ -94,14 +88,12 @@ def show_actual_vendor_versions(vendor_txt_versions: dict[str, str]) -> None:
             )
         logger.info("%s==%s%s", module_name, actual_version, extra_message)
 
-
 def show_vendor_versions() -> None:
     logger.info("vendored library versions:")
 
     vendor_txt_versions = create_vendor_txt_map()
     with indent_log():
         show_actual_vendor_versions(vendor_txt_versions)
-
 
 def show_tags(options: Values) -> None:
     tag_limit = 10
@@ -132,7 +124,6 @@ def show_tags(options: Values) -> None:
             msg = f"...\n[First {tag_limit} tags shown. Pass --verbose to show all.]"
             logger.info(msg)
 
-
 def ca_bundle_info(config: Configuration) -> str:
     levels = {key.split(".", 1)[0] for key, _ in config.items()}
     if not levels:
@@ -148,7 +139,6 @@ def ca_bundle_info(config: Configuration) -> str:
     if "global" in levels:
         levels.remove("global")
     return ", ".join(levels)
-
 
 class DebugCommand(Command):
     """

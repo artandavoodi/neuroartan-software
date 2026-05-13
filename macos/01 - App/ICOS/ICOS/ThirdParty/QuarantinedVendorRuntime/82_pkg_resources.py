@@ -35,12 +35,10 @@ logger = logging.getLogger(__name__)
 
 NAME = "pkg_resources"
 
-
 class EntryPoint(NamedTuple):
     name: str
     value: str
     group: str
-
 
 class InMemoryMetadata:
     """IMetadataProvider that reads metadata files from a dictionary.
@@ -75,7 +73,6 @@ class InMemoryMetadata:
 
     def run_script(self, script_name: str, namespace: str) -> None:
         pass
-
 
 class Distribution(BaseDistribution):
     def __init__(self, dist: pkg_resources.Distribution) -> None:
@@ -245,7 +242,6 @@ class Distribution(BaseDistribution):
 
     def iter_provided_extras(self) -> Iterable[NormalizedName]:
         return self._extra_mapping.keys()
-
 
 class Environment(BaseEnvironment):
     def __init__(self, ws: pkg_resources.WorkingSet) -> None:

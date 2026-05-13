@@ -7,7 +7,6 @@ from typing import Any
 import json
 import time
 
-
 # ============================================================
 # Sovereign Root
 # ============================================================
@@ -31,7 +30,6 @@ BRAIN_STATE = (
 CONSENSUS_LOG = (
     REFLECTION_ROOT / "consensus_cognition_log.json"
 )
-
 
 # ============================================================
 # Consensus Cognition Layer
@@ -66,7 +64,6 @@ class ConsensusCognitionLayer:
             fallback=[]
         )
 
-
     # ========================================================
     # JSON Loading
     # ========================================================
@@ -84,7 +81,6 @@ class ConsensusCognitionLayer:
             return json.loads(path.read_text())
         except Exception:
             return fallback
-
 
     # ========================================================
     # Contradiction Detection
@@ -108,7 +104,6 @@ class ConsensusCognitionLayer:
                     })
 
         return contradictions
-
 
     # ========================================================
     # Consensus Synthesis
@@ -153,7 +148,6 @@ class ConsensusCognitionLayer:
 
         return consensus
 
-
     # ========================================================
     # Runtime Status
     # ========================================================
@@ -173,7 +167,6 @@ class ConsensusCognitionLayer:
                 self.learning_log
             ),
         }
-
 
 # ============================================================
 # Runtime Entry

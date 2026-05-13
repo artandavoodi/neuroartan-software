@@ -11,7 +11,6 @@ $arguments = "/i `"$msiInstaller`" /quiet"
 Start-Process msiexec.exe -ArgumentList $arguments -Wait
 Remove-Item $msiInstaller
 
-
 $suffix = "\\Google\\Chrome\\Application\\chrome.exe"
 if (Test-Path "${env:ProgramFiles(x86)}$suffix") {
     (Get-Item "${env:ProgramFiles(x86)}$suffix").VersionInfo

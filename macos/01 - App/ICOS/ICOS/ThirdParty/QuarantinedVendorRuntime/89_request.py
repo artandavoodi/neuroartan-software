@@ -31,10 +31,8 @@ except ImportError:
 else:
     ACCEPT_ENCODING += ",zstd"
 
-
 class _TYPE_FAILEDTELL(Enum):
     token = 0
-
 
 _FAILEDTELL: Final[_TYPE_FAILEDTELL] = _TYPE_FAILEDTELL.token
 
@@ -46,7 +44,6 @@ _TYPE_BODY_POSITION = typing.Union[int, _TYPE_FAILEDTELL]
 # which 'should' have a body is because unknown methods should be
 # treated as if they were 'POST' which *does* expect a body.
 _METHODS_NOT_EXPECTING_BODY = {"GET", "HEAD", "DELETE", "TRACE", "OPTIONS", "CONNECT"}
-
 
 def make_headers(
     keep_alive: bool | None = None,
@@ -129,7 +126,6 @@ def make_headers(
 
     return headers
 
-
 def set_file_position(
     body: typing.Any, pos: _TYPE_BODY_POSITION | None
 ) -> _TYPE_BODY_POSITION | None:
@@ -148,7 +144,6 @@ def set_file_position(
             pos = _FAILEDTELL
 
     return pos
-
 
 def rewind_body(body: typing.IO[typing.AnyStr], body_pos: _TYPE_BODY_POSITION) -> None:
     """
@@ -179,11 +174,9 @@ def rewind_body(body: typing.IO[typing.AnyStr], body_pos: _TYPE_BODY_POSITION) -
             f"body_pos must be of type integer, instead it was {type(body_pos)}."
         )
 
-
 class ChunksAndContentLength(typing.NamedTuple):
     chunks: typing.Iterable[bytes] | None
     content_length: int | None
-
 
 def body_to_chunks(
     body: typing.Any | None, method: str, blocksize: int

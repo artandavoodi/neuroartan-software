@@ -14,9 +14,7 @@ if TYPE_CHECKING:  # pragma: no cover
     from .terminal_theme import TerminalTheme
     from .text import Text
 
-
 WINDOWS = sys.platform == "win32"
-
 
 class ColorSystem(IntEnum):
     """One of the 3 color system supported by terminals."""
@@ -32,7 +30,6 @@ class ColorSystem(IntEnum):
     def __str__(self) -> str:
         return repr(self)
 
-
 class ColorType(IntEnum):
     """Type of color stored in Color class."""
 
@@ -44,7 +41,6 @@ class ColorType(IntEnum):
 
     def __repr__(self) -> str:
         return f"ColorType.{self.name}"
-
 
 ANSI_COLOR_NAMES = {
     "black": 0,
@@ -284,10 +280,8 @@ ANSI_COLOR_NAMES = {
     "gray93": 255,
 }
 
-
 class ColorParseError(Exception):
     """The color could not be parsed."""
-
 
 RE_COLOR = re.compile(
     r"""^
@@ -297,7 +291,6 @@ rgb\(([\d\s,]+)\)$
 """,
     re.VERBOSE,
 )
-
 
 @rich_repr
 class Color(NamedTuple):
@@ -567,7 +560,6 @@ class Color(NamedTuple):
 
         return self
 
-
 def parse_rgb_hex(hex_color: str) -> ColorTriplet:
     """Parse six hex characters in to RGB triplet."""
     assert len(hex_color) == 6, "must be 6 characters"
@@ -575,7 +567,6 @@ def parse_rgb_hex(hex_color: str) -> ColorTriplet:
         int(hex_color[0:2], 16), int(hex_color[2:4], 16), int(hex_color[4:6], 16)
     )
     return color
-
 
 def blend_rgb(
     color1: ColorTriplet, color2: ColorTriplet, cross_fade: float = 0.5
@@ -589,7 +580,6 @@ def blend_rgb(
         int(b1 + (b2 - b1) * cross_fade),
     )
     return new_color
-
 
 if __name__ == "__main__":  # pragma: no cover
     from .console import Console

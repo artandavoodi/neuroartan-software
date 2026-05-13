@@ -7,11 +7,11 @@ public enum RuntimeMode: String, CaseIterable, Identifiable, Codable {
     case local = "local"
     case cloud = "cloud"
     case auto = "auto"
-    
+
     public var id: String { rawValue }
-    
+
     // MARK: - Display
-    
+
     var title: String {
         switch self {
         case .local:
@@ -22,7 +22,7 @@ public enum RuntimeMode: String, CaseIterable, Identifiable, Codable {
             return "Auto"
         }
     }
-    
+
     var description: String {
         switch self {
         case .local:

@@ -1,18 +1,15 @@
 #ifndef PYGREENLET_HPP
 #define PYGREENLET_HPP
 
-
 #include "greenlet.h"
 #include "greenlet_compiler_compat.hpp"
 #include "greenlet_refs.hpp"
-
 
 using greenlet::refs::OwnedGreenlet;
 using greenlet::refs::BorrowedGreenlet;
 using greenlet::refs::BorrowedObject;;
 using greenlet::refs::OwnedObject;
 using greenlet::refs::PyErrPieces;
-
 
 // XXX: These doesn't really belong here, it's not a Python slot.
 static OwnedObject internal_green_throw(BorrowedGreenlet self, PyErrPieces& err_pieces);

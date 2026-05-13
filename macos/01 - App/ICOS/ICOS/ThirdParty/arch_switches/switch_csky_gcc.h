@@ -16,7 +16,6 @@
 #define REGS_TO_SAVE "r9", "r10", "r11", "r12", "r13", "r15"
 #endif
 
-
 static int
 #ifdef __GNUC__
 __attribute__((optimize("no-omit-frame-pointer")))
@@ -36,7 +35,7 @@ slp_switch(void)
                     :
                     : "r" (stsizediff)
                     );
-		
+
                 SLP_RESTORE_STATE();
         }
         __asm__ volatile ("movi %0, 0" : "=r" (result));

@@ -14,7 +14,6 @@
 
 #define REGS_TO_SAVE "r12", "r13", "r14", "r15"
 
-
 static int
 slp_switch(void)
 {

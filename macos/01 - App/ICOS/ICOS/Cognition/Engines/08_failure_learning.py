@@ -45,8 +45,6 @@ FAILURE_PATTERNS = {
     ]
 }
 
-
-
 def load_json(path: Path, fallback: Dict[str, Any]) -> Dict[str, Any]:
     if not path.exists():
         return fallback
@@ -66,12 +64,8 @@ def load_json(path: Path, fallback: Dict[str, Any]) -> Dict[str, Any]:
     except Exception:
         return fallback
 
-
-
 def save_json(path: Path, data: Dict[str, Any]) -> None:
     path.write_text(json.dumps(data, indent=2))
-
-
 
 def default_state() -> Dict[str, Any]:
     return {
@@ -81,8 +75,6 @@ def default_state() -> Dict[str, Any]:
         "adaptive_rules": [],
         "last_update": None
     }
-
-
 
 def classify_failure(event: Dict[str, Any]) -> str:
     combined = json.dumps(event).lower()
@@ -97,16 +89,12 @@ def classify_failure(event: Dict[str, Any]) -> str:
 
     return max(scores, key=scores.get)
 
-
-
 def generate_failure_id(event: Dict[str, Any]) -> str:
     payload = json.dumps(event, sort_keys=True)
 
     digest = hashlib.sha1(payload.encode()).hexdigest()[:10]
 
     return f"FAIL-{digest.upper()}"
-
-
 
 def derive_adaptive_rule(category: str) -> str:
     rules = {
@@ -120,8 +108,6 @@ def derive_adaptive_rule(category: str) -> str:
         category,
         "Increase verification depth before autonomous continuation."
     )
-
-
 
 def learn_failure(event: Dict[str, Any]) -> Dict[str, Any]:
     state = load_json(
@@ -179,8 +165,6 @@ def learn_failure(event: Dict[str, Any]) -> Dict[str, Any]:
         "current_failure_count": len(state["failures"])
     }
 
-
-
 def recent_failures(limit: int = 10) -> List[Dict[str, Any]]:
     state = load_json(
         STATE,
@@ -188,8 +172,6 @@ def recent_failures(limit: int = 10) -> List[Dict[str, Any]]:
     )
 
     return state["failures"][-limit:]
-
-
 
 def failure_summary() -> Dict[str, Any]:
     state = load_json(
@@ -204,7 +186,6 @@ def failure_summary() -> Dict[str, Any]:
         "adaptive_rule_count": len(state["adaptive_rules"]),
         "last_update": state["last_update"]
     }
-
 
 if __name__ == "__main__":
     sample = learn_failure({

@@ -162,7 +162,6 @@ namespace greenlet {
         }
     };
 
-
 };
 #ifdef __clang__
 #    pragma clang diagnostic pop

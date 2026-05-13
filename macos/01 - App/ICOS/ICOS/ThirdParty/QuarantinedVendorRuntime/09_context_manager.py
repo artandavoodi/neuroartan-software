@@ -20,7 +20,6 @@ from playwright._impl._object_factory import create_remote_object
 from playwright._impl._transport import PipeTransport
 from playwright.async_api._generated import Playwright as AsyncPlaywright
 
-
 class PlaywrightContextManager:
     def __init__(self) -> None:
         self._connection: Connection

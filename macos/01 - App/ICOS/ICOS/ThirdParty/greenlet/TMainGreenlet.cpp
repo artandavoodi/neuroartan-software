@@ -35,13 +35,11 @@ void* MainGreenlet::operator new(size_t UNUSED(count))
     return allocator.allocate(1);
 }
 
-
 void MainGreenlet::operator delete(void* ptr)
 {
     return allocator.deallocate(static_cast<MainGreenlet*>(ptr),
                                 1);
 }
-
 
 MainGreenlet::MainGreenlet(PyGreenlet* p, ThreadState* state)
     : Greenlet(p, StackState::make_main()),
@@ -71,7 +69,6 @@ MainGreenlet::thread_state(ThreadState* t) noexcept
     assert(!t);
     this->_thread_state = t;
 }
-
 
 const BorrowedMainGreenlet
 MainGreenlet::main_greenlet() const

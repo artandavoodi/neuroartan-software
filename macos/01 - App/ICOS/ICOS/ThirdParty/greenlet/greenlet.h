@@ -5,7 +5,6 @@
 #ifndef Py_GREENLETOBJECT_H
 #define Py_GREENLETOBJECT_H
 
-
 #include <Python.h>
 
 #ifdef __cplusplus
@@ -27,7 +26,6 @@ typedef struct _greenlet {
 } PyGreenlet;
 
 #define PyGreenlet_Check(op) (op && PyObject_TypeCheck(op, &PyGreenlet_Type))
-
 
 /* C API functions */
 
@@ -143,9 +141,6 @@ static void** _PyGreenlet_API = NULL;
 #     define PyGreenlet_ACTIVE                                       \
     (*(int (*)(PyGreenlet*))                                         \
      _PyGreenlet_API[PyGreenlet_ACTIVE_NUM])
-
-
-
 
 /* Macro that imports greenlet and initializes C API */
 /* NOTE: This has actually moved to ``greenlet._greenlet._C_API``, but we

@@ -58,7 +58,6 @@ from pip._internal.vcs import vcs
 
 logger = logging.getLogger(__name__)
 
-
 class InstallRequirement:
     """
     Represents something that may be installed later on, may have information
@@ -800,7 +799,6 @@ class InstallRequirement:
         )
         self.install_succeeded = True
 
-
 def check_invalid_constraint_type(req: InstallRequirement) -> str:
     # Check for unsupported forms
     problem = ""
@@ -827,7 +825,6 @@ def check_invalid_constraint_type(req: InstallRequirement) -> str:
         )
 
     return problem
-
 
 def _has_option(options: Values, reqs: list[InstallRequirement], option: str) -> bool:
     if getattr(options, option, None):

@@ -4,12 +4,12 @@ import SwiftUI
 // Minimal breathing animation for system "thinking" state
 
 struct ThinkingIndicatorView: View {
-    
+
     @State private var animate = false
-    
+
     var body: some View {
         HStack(spacing: ICOSDeveloperCanvasTokens.thinkingDotSpacing) {
-            
+
             Circle()
                 .fill(ICOSSidebarColors.textSecondary.opacity(ICOSDeveloperCanvasTokens.thinkingDotOpacity))
                 .frame(
@@ -23,7 +23,7 @@ struct ThinkingIndicatorView: View {
                     .repeatForever(autoreverses: true),
                     value: animate
                 )
-            
+
             Circle()
                 .fill(ICOSSidebarColors.textSecondary.opacity(ICOSDeveloperCanvasTokens.thinkingDotOpacity))
                 .frame(
@@ -38,7 +38,7 @@ struct ThinkingIndicatorView: View {
                     .delay(ICOSDeveloperCanvasTokens.thinkingAnimationDelayShort),
                     value: animate
                 )
-            
+
             Circle()
                 .fill(ICOSSidebarColors.textSecondary.opacity(ICOSDeveloperCanvasTokens.thinkingDotOpacity))
                 .frame(

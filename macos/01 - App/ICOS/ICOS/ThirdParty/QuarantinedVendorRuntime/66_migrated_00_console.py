@@ -75,10 +75,8 @@ HighlighterType = Callable[[Union[str, "Text"]], "Text"]
 JustifyMethod = Literal["default", "left", "center", "right", "full"]
 OverflowMethod = Literal["fold", "crop", "ellipsis", "ignore"]
 
-
 class NoChange:
     pass
-
 
 NO_CHANGE = NoChange()
 
@@ -98,13 +96,11 @@ except Exception:
 _STD_STREAMS = (_STDIN_FILENO, _STDOUT_FILENO, _STDERR_FILENO)
 _STD_STREAMS_OUTPUT = (_STDOUT_FILENO, _STDERR_FILENO)
 
-
 _TERM_COLORS = {
     "kitty": ColorSystem.EIGHT_BIT,
     "256color": ColorSystem.EIGHT_BIT,
     "16color": ColorSystem.STANDARD,
 }
-
 
 class ConsoleDimensions(NamedTuple):
     """Size of the terminal."""
@@ -113,7 +109,6 @@ class ConsoleDimensions(NamedTuple):
     """The width of the console in 'cells'."""
     height: int
     """The height of the console in lines."""
-
 
 @dataclass
 class ConsoleOptions:
@@ -248,7 +243,6 @@ class ConsoleOptions:
         options.height = options.max_height = height
         return options
 
-
 @runtime_checkable
 class RichCast(Protocol):
     """An object that may be 'cast' to a console renderable."""
@@ -257,7 +251,6 @@ class RichCast(Protocol):
         self,
     ) -> Union["ConsoleRenderable", "RichCast", str]:  # pragma: no cover
         ...
-
 
 @runtime_checkable
 class ConsoleRenderable(Protocol):
@@ -268,7 +261,6 @@ class ConsoleRenderable(Protocol):
     ) -> "RenderResult":  # pragma: no cover
         ...
 
-
 # A type that may be rendered by Console.
 RenderableType = Union[ConsoleRenderable, RichCast, str]
 """A string or any object that may be rendered by Rich."""
@@ -278,10 +270,8 @@ RenderResult = Iterable[Union[RenderableType, Segment]]
 
 _null_highlighter = NullHighlighter()
 
-
 class CaptureError(Exception):
     """An error in the Capture context manager."""
-
 
 class NewLine:
     """A renderable to generate new line(s)"""
@@ -293,7 +283,6 @@ class NewLine:
         self, console: "Console", options: "ConsoleOptions"
     ) -> Iterable[Segment]:
         yield Segment("\n" * self.count)
-
 
 class ScreenUpdate:
     """Render a list of lines at a given offset."""
@@ -311,7 +300,6 @@ class ScreenUpdate:
         for offset, line in enumerate(self._lines, self.y):
             yield move_to(x, offset)
             yield from line
-
 
 class Capture:
     """Context manager to capture the result of printing to the console.
@@ -345,7 +333,6 @@ class Capture:
             )
         return self._result
 
-
 class ThemeContext:
     """A context manager to use a temporary theme. See :meth:`~rich.console.Console.use_theme` for usage."""
 
@@ -365,7 +352,6 @@ class ThemeContext:
         exc_tb: Optional[TracebackType],
     ) -> None:
         self.console.pop_theme()
-
 
 class PagerContext:
     """A context manager that 'pages' content. See :meth:`~rich.console.Console.pager` for usage."""
@@ -404,7 +390,6 @@ class PagerContext:
                 content = self._console._render_buffer(segments)
             self.pager.show(content)
         self._console._exit_buffer()
-
 
 class ScreenContext:
     """A context manager that enables an alternative screen. See :meth:`~rich.console.Console.screen` for usage."""
@@ -452,7 +437,6 @@ class ScreenContext:
             if self.hide_cursor:
                 self.console.show_cursor(True)
 
-
 class Group:
     """Takes a group of renderables and returns a renderable object that renders the group.
 
@@ -485,7 +469,6 @@ class Group:
     ) -> RenderResult:
         yield from self.renderables
 
-
 def group(fit: bool = True) -> Callable[..., Callable[..., Group]]:
     """A decorator that turns an iterable of renderables in to a group.
 
@@ -507,7 +490,6 @@ def group(fit: bool = True) -> Callable[..., Callable[..., Group]]:
 
     return decorator
 
-
 def _is_jupyter() -> bool:  # pragma: no cover
     """Check if we're running in a Jupyter notebook."""
     try:
@@ -527,7 +509,6 @@ def _is_jupyter() -> bool:  # pragma: no cover
     else:
         return False  # Other type (?)
 
-
 COLOR_SYSTEMS = {
     "standard": ColorSystem.STANDARD,
     "256": ColorSystem.EIGHT_BIT,
@@ -537,7 +518,6 @@ COLOR_SYSTEMS = {
 
 _COLOR_SYSTEMS_NAMES = {system: name for name, system in COLOR_SYSTEMS.items()}
 
-
 @dataclass
 class ConsoleThreadLocals(threading.local):
     """Thread local values for Console context."""
@@ -545,7 +525,6 @@ class ConsoleThreadLocals(threading.local):
     theme_stack: ThemeStack
     buffer: List[Segment] = field(default_factory=list)
     buffer_index: int = 0
-
 
 class RenderHook(ABC):
     """Provides hooks in to the render process."""
@@ -565,9 +544,7 @@ class RenderHook(ABC):
             List[ConsoleRenderable]: A replacement list of renderables.
         """
 
-
 _windows_console_features: Optional["WindowsConsoleFeatures"] = None
-
 
 def get_windows_console_features() -> "WindowsConsoleFeatures":  # pragma: no cover
     global _windows_console_features
@@ -578,11 +555,9 @@ def get_windows_console_features() -> "WindowsConsoleFeatures":  # pragma: no co
     _windows_console_features = get_windows_console_features()
     return _windows_console_features
 
-
 def detect_legacy_windows() -> bool:
     """Detect legacy Windows."""
     return WINDOWS and not get_windows_console_features().vt
-
 
 class Console:
     """A high level console interface.
@@ -2611,7 +2586,6 @@ class Console:
         with open(path, "w", encoding="utf-8") as write_file:
             write_file.write(svg)
 
-
 def _svg_hash(svg_main_code: str) -> str:
     """Returns a unique hash for the given SVG main code.
 
@@ -2622,7 +2596,6 @@ def _svg_hash(svg_main_code: str) -> str:
         str: a hash of the given content
     """
     return str(zlib.adler32(svg_main_code.encode()))
-
 
 if __name__ == "__main__":  # pragma: no cover
     console = Console(record=True)

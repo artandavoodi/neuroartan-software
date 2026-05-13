@@ -8,7 +8,6 @@ import json
 import time
 import uuid
 
-
 # ============================================================
 # Sovereign Root
 # ============================================================
@@ -46,7 +45,6 @@ FAILURE_LESSON_STORE = (
 SEMANTIC_MEMORY_STORE = (
     LEARNING_ROOT / "semantic_memory_store.json"
 )
-
 
 # ============================================================
 # Model Evaluation Engine
@@ -104,7 +102,6 @@ class ModelEvaluationEngine:
             fallback=[]
         )
 
-
     # ========================================================
     # JSON Loading
     # ========================================================
@@ -129,7 +126,6 @@ class ModelEvaluationEngine:
         except Exception:
             return fallback
 
-
     # ========================================================
     # Semantic Evaluation
     # ========================================================
@@ -148,7 +144,6 @@ class ModelEvaluationEngine:
             return 0.60
 
         return 0.25
-
 
     # ========================================================
     # Alignment Evaluation
@@ -169,7 +164,6 @@ class ModelEvaluationEngine:
 
         return 0.30
 
-
     # ========================================================
     # Emotional Evaluation
     # ========================================================
@@ -189,7 +183,6 @@ class ModelEvaluationEngine:
 
         return 0.20
 
-
     # ========================================================
     # Hallucination Resistance
     # ========================================================
@@ -208,7 +201,6 @@ class ModelEvaluationEngine:
             return 0.55
 
         return 0.25
-
 
     # ========================================================
     # Continuity Integrity
@@ -231,7 +223,6 @@ class ModelEvaluationEngine:
             return 0.60
 
         return 0.30
-
 
     # ========================================================
     # Unified Evaluation
@@ -287,7 +278,6 @@ class ModelEvaluationEngine:
 
         return evaluation
 
-
     # ========================================================
     # Evaluation Audit
     # ========================================================
@@ -323,7 +313,6 @@ class ModelEvaluationEngine:
 
         return audit
 
-
     # ========================================================
     # Evaluation Learning Cycle
     # ========================================================
@@ -346,7 +335,6 @@ class ModelEvaluationEngine:
             "evaluation": evaluation,
             "audit": audit,
         }
-
 
     # ========================================================
     # Runtime Status
@@ -371,7 +359,6 @@ class ModelEvaluationEngine:
                 self.failure_lessons
             ),
         }
-
 
 # ============================================================
 # Runtime Entry

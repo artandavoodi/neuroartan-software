@@ -31,7 +31,6 @@ if TYPE_CHECKING:
 
 logger = logging.getLogger(__name__)
 
-
 @lru_cache
 def _create_truststore_ssl_context() -> SSLContext | None:
     try:
@@ -49,7 +48,6 @@ def _create_truststore_ssl_context() -> SSLContext | None:
     ctx = truststore.SSLContext(ssl.PROTOCOL_TLS_CLIENT)
     ctx.load_verify_locations(certifi.where())
     return ctx
-
 
 class SessionCommandMixin(CommandContextMixIn):
     """
@@ -136,7 +134,6 @@ class SessionCommandMixin(CommandContextMixIn):
 
         return session
 
-
 def _pip_self_version_check_fetch(
     session: PipSession, options: Values
 ) -> UpgradePrompt | None:
@@ -144,12 +141,10 @@ def _pip_self_version_check_fetch(
 
     return pip_self_version_check_fetch(session, options)
 
-
 def _pip_self_version_check_emit(upgrade_prompt: UpgradePrompt | None) -> None:
     from pip._internal.self_outdated_check import pip_self_version_check_emit
 
     pip_self_version_check_emit(upgrade_prompt)
-
 
 class IndexGroupCommand(Command, SessionCommandMixin):
     """

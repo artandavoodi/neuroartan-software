@@ -19,8 +19,6 @@ PRIORITY_WEIGHTS = {
     "background": 1
 }
 
-
-
 def load_json(path, fallback):
     if not path.exists():
         return fallback
@@ -30,24 +28,16 @@ def load_json(path, fallback):
     except Exception:
         return fallback
 
-
-
 def save_json(path, data):
     path.write_text(json.dumps(data, indent=2))
 
-
-
 def normalize_priority(priority):
     return PRIORITY_WEIGHTS.get(priority, 3)
-
-
 
 def dependencies_satisfied(task, completed_ids):
     deps = task.get("dependencies", [])
 
     return all(dep in completed_ids for dep in deps)
-
-
 
 def classify_blockers(tasks, completed_ids):
     blocked = []
@@ -65,8 +55,6 @@ def classify_blockers(tasks, completed_ids):
 
     return blocked
 
-
-
 def build_execution_queue(tasks, completed_ids):
     executable = [
         task for task in tasks
@@ -82,8 +70,6 @@ def build_execution_queue(tasks, completed_ids):
 
     return executable[:RESOURCE_LIMITS["execution_slots"]]
 
-
-
 def project_distribution(tasks):
     distribution = {}
 
@@ -93,8 +79,6 @@ def project_distribution(tasks):
         distribution[project] = distribution.get(project, 0) + 1
 
     return distribution
-
-
 
 def generate_schedule():
     ledger = load_json(LEDGER, {
@@ -147,7 +131,6 @@ def generate_schedule():
     save_json(SCHEDULE, state)
 
     return state
-
 
 if __name__ == "__main__":
     print(json.dumps(

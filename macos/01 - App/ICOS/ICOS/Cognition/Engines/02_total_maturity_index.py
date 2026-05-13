@@ -49,12 +49,8 @@ THRESHOLDS = {
     100: "Sovereign Cognitive Operating System"
 }
 
-
-
 def file_operational(path):
     return path.exists() and path.stat().st_size > 0
-
-
 
 def calculate_score():
     score = 0
@@ -78,8 +74,6 @@ def calculate_score():
 
     return score, operational
 
-
-
 def maturity_label(score):
     current = "Uninitialized"
 
@@ -89,15 +83,11 @@ def maturity_label(score):
 
     return current
 
-
-
 def missing_layers(operational):
     return [
         key for key, value in operational.items()
         if not value["active"]
     ]
-
-
 
 def generate_report():
     score, operational = calculate_score()
@@ -130,7 +120,6 @@ def generate_report():
     }
 
     return report
-
 
 if __name__ == "__main__":
     print(json.dumps(

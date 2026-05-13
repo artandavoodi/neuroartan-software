@@ -5,8 +5,6 @@
 #ifndef PY_GREENLET_UNSWITCHABLE_CPP
 #define PY_GREENLET_UNSWITCHABLE_CPP
 
-
-
 #define PY_SSIZE_T_CLEAN
 #include <Python.h>
 #include "structmember.h" // PyMemberDef
@@ -25,7 +23,6 @@
 #include "TGreenletGlobals.cpp"
 #include "TThreadStateDestroy.cpp"
 
-
 using greenlet::LockGuard;
 using greenlet::LockInitError;
 using greenlet::PyErrOccurred;
@@ -40,7 +37,6 @@ using greenlet::MainGreenlet;
 using greenlet::BrokenGreenlet;
 using greenlet::ThreadState;
 using greenlet::PythonState;
-
 
 #include "PyGreenlet.hpp"
 
@@ -145,6 +141,5 @@ PyTypeObject PyGreenletUnswitchable_Type = {
     .tp_is_gc = (inquiry)green_is_gc,
 #endif
 };
-
 
 #endif

@@ -17,7 +17,6 @@ struct _PyMainGreenlet;
 typedef struct _greenlet PyGreenlet;
 extern PyTypeObject PyGreenlet_Type;
 
-
 #ifdef  GREENLET_USE_STDIO
 #include <iostream>
 using std::cerr;
@@ -125,7 +124,6 @@ namespace greenlet
         template<typename T, TypeChecker>
         class OwnedReference;
 
-
         template<typename T, TypeChecker>
         class BorrowedReference;
 
@@ -167,7 +165,6 @@ namespace greenlet
 }
 
 namespace greenlet {
-
 
     namespace refs {
     // A set of classes to make reference counting rules in python
@@ -213,7 +210,6 @@ namespace greenlet {
     // single pointer. Only subclasses with trivial constructors that
     // do nothing but set the single pointer member are safe to use
     // that way.
-
 
     // This is the base class for things that can be done with a
     // PyObject pointer. It assumes nothing about memory management.
@@ -483,7 +479,6 @@ namespace greenlet {
         target = o.relinquish_ownership();
     }
 
-
     class NewReference : public OwnedObject
     {
     private:
@@ -647,7 +642,6 @@ namespace greenlet {
         Py_XINCREF(this->p);
     }
 
-
      class BorrowedMainGreenlet
             : public _BorrowedGreenlet<PyGreenlet, MainGreenletExactChecker>
     {
@@ -665,7 +659,6 @@ namespace greenlet {
     {
         return this->operator=(other.borrow());
     }
-
 
     class ImmortalObject : public PyObjectPointer<>
     {
@@ -1192,7 +1185,6 @@ namespace greenlet {
         };
 
 #endif
-
 
 };};
 

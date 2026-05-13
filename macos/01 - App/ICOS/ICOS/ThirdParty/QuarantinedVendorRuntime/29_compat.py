@@ -6,7 +6,6 @@ from typing import Any, Protocol, cast
 
 from pip._vendor.packaging.utils import NormalizedName, canonicalize_name
 
-
 class BadMetadata(ValueError):
     def __init__(self, dist: importlib.metadata.Distribution, *, reason: str) -> None:
         self.dist = dist
@@ -14,7 +13,6 @@ class BadMetadata(ValueError):
 
     def __str__(self) -> str:
         return f"Bad metadata in {self.dist} ({self.reason})"
-
 
 class BasePath(Protocol):
     """A protocol that various path objects conform.
@@ -35,7 +33,6 @@ class BasePath(Protocol):
     def parent(self) -> BasePath:
         raise NotImplementedError()
 
-
 def get_info_location(d: importlib.metadata.Distribution) -> BasePath | None:
     """Find the path to the distribution's metadata directory.
 
@@ -46,7 +43,6 @@ def get_info_location(d: importlib.metadata.Distribution) -> BasePath | None:
     eliminate this some day.
     """
     return getattr(d, "_path", None)
-
 
 def parse_name_and_version_from_info_directory(
     dist: importlib.metadata.Distribution,
@@ -70,7 +66,6 @@ def parse_name_and_version_from_info_directory(
         return name, None
 
     return None, None
-
 
 def get_dist_canonical_name(dist: importlib.metadata.Distribution) -> NormalizedName:
     """Get the distribution's normalized name.

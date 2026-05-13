@@ -21,7 +21,6 @@ from playwright._impl._helper import Error
 if TYPE_CHECKING:  # pragma: no cover
     from playwright._impl._page import Page
 
-
 class Video:
     def __init__(self, page: "Page", artifact: Optional[Artifact]) -> None:
         self._loop = page._loop

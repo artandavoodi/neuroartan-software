@@ -210,7 +210,6 @@ inline char* StackState::stack_start() const noexcept
     return this->_stack_start;
 }
 
-
 inline StackState StackState::make_main() noexcept
 {
     StackState s;

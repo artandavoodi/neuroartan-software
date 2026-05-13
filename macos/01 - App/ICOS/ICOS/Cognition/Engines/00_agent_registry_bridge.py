@@ -62,8 +62,6 @@ AGENT_REGISTRY = {
     }
 }
 
-
-
 def load_json(path, fallback):
     if not path.exists():
         return fallback
@@ -73,12 +71,8 @@ def load_json(path, fallback):
     except Exception:
         return fallback
 
-
-
 def save_json(path, data):
     path.write_text(json.dumps(data, indent=2))
-
-
 
 def classify_request(request):
     lowered = request.lower()
@@ -92,8 +86,6 @@ def classify_request(request):
         )
 
     return max(scores, key=scores.get)
-
-
 
 def determine_collaboration(primary_agent, request):
     lowered = request.lower()
@@ -126,8 +118,6 @@ def determine_collaboration(primary_agent, request):
         collaborators.insert(0, primary_agent)
 
     return list(dict.fromkeys(collaborators))
-
-
 
 def build_agent_bridge(request):
     memory = load_json(MEMORY, {
@@ -178,7 +168,6 @@ def build_agent_bridge(request):
     save_json(BRIDGE_STATE, bridge)
 
     return bridge
-
 
 if __name__ == "__main__":
     print(json.dumps(

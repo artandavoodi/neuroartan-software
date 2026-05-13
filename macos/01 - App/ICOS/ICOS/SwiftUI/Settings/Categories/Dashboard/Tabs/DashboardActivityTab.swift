@@ -1,9 +1,20 @@
 import SwiftUI
 
-// MARK: - Dashboard Activity Tab
+// MARK: - Activity Tab
 
 struct DashboardActivityTab: View {
     var body: some View {
-        EmptyView()
+        SettingsSectionCard(
+            title: "Activity",
+            subtitle: "Recent activity and operational events."
+        ) {
+            VStack(alignment: .leading, spacing: ICOSSpacing.sm) {
+                Text("Activity")
+                    .font(ICOSSidebarTokens.itemTitleFont)
+                    .foregroundStyle(ICOSSidebarColors.textPrimary)
+                    .font(.system(size: ICOSControlTokens.profileMetaFontSize, weight: .medium))
+                    .foregroundStyle(ICOSSidebarColors.textSecondary)
+            }
+        }
     }
 }

@@ -3,9 +3,9 @@ import Foundation
 // MARK: - System Prompt Builder (Core Cognitive Layer)
 
 final class SystemPromptBuilder {
-    
+
     // MARK: - Build Full Prompt
-    
+
     func build(input: String, appState: ICOSAppState) -> String {
         let userInput: String
         if input.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
@@ -32,9 +32,9 @@ final class SystemPromptBuilder {
         .filter { !$0.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }
         .joined(separator: "\n\n")
     }
-    
+
     // MARK: - Identity
-    
+
     private func systemIdentity() -> String {
         return """
 ICOS Runtime Contract:
@@ -52,9 +52,9 @@ Avoid robotic identity statements, canned slogans, and repeated phrasing.
 Sound calm, personal, and useful without becoming theatrical.
 """
     }
-    
+
     // MARK: - Doctrine
-    
+
     private func doctrineContext() -> String {
         let compiled = DoctrineRegistry.shared.compiledDoctrine()
 
@@ -69,9 +69,9 @@ Use the following doctrine as internal behavioral guidance. Do not quote or repr
 \(compiled)
 """
     }
-    
+
     // MARK: - Session Context
-    
+
     private func sessionContext(_ appState: ICOSAppState) -> String {
         let history = appState.activeSession.messages
             .suffix(8)

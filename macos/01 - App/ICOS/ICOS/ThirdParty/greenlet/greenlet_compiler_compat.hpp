@@ -48,7 +48,6 @@
 #    define G_NO_COPY_CONSTRUCTOR_OF_CLS(Cls) private: \
     Cls(const Cls& other) = delete;
 
-
 // CAUTION: MSVC is stupidly picky:
 //
 // "The compiler ignores, without warning, any __declspec keywords
@@ -93,6 +92,5 @@
 #else
 #     define GREENLET_BROKEN_THREAD_LOCAL_CLEANUP_JUST_LEAK 0
 #endif
-
 
 #endif

@@ -21,7 +21,6 @@ _VP8_MODES_BY_IDENTIFIER = {
     b"VP8L": "RGBA",  # lossless
 }
 
-
 def _accept(prefix: bytes) -> bool | str:
     is_riff_file_format = prefix.startswith(b"RIFF")
     is_webp_file = prefix[8:12] == b"WEBP"
@@ -34,7 +33,6 @@ def _accept(prefix: bytes) -> bool | str:
             )
         return True
     return False
-
 
 class WebPImageFile(ImageFile.ImageFile):
     format = "WEBP"
@@ -143,13 +141,11 @@ class WebPImageFile(ImageFile.ImageFile):
     def tell(self) -> int:
         return self.__logical_frame
 
-
 def _convert_frame(im: Image.Image) -> Image.Image:
     # Make sure image mode is supported
     if im.mode not in ("RGBX", "RGBA", "RGB"):
         im = im.convert("RGBA" if im.has_transparency_data else "RGB")
     return im
-
 
 def _save_all(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     encoderinfo = im.encoderinfo.copy()
@@ -274,7 +270,6 @@ def _save_all(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
 
     fp.write(data)
 
-
 def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     lossless = im.encoderinfo.get("lossless", False)
     quality = im.encoderinfo.get("quality", 80)
@@ -307,7 +302,6 @@ def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
         raise OSError(msg)
 
     fp.write(data)
-
 
 Image.register_open(WebPImageFile.format, WebPImageFile, _accept)
 if SUPPORTED:

@@ -84,7 +84,6 @@ from playwright._impl._waiter import Waiter
 if TYPE_CHECKING:  # pragma: no cover
     from playwright._impl._page import Page
 
-
 class Frame(ChannelOwner):
     def __init__(
         self, parent: ChannelOwner, type: str, guid: str, initializer: Dict

@@ -33,7 +33,6 @@ if TYPE_CHECKING:
 EPSILON = 1e-10
 """"""  # Enable auto-doc for data member
 
-
 def linear(middle: float, pos: float) -> float:
     if pos <= middle:
         if middle < EPSILON:
@@ -48,26 +47,20 @@ def linear(middle: float, pos: float) -> float:
         else:
             return 0.5 + 0.5 * pos / middle
 
-
 def curved(middle: float, pos: float) -> float:
     return pos ** (log(0.5) / log(max(middle, EPSILON)))
-
 
 def sine(middle: float, pos: float) -> float:
     return (sin((-pi / 2.0) + pi * linear(middle, pos)) + 1.0) / 2.0
 
-
 def sphere_increasing(middle: float, pos: float) -> float:
     return sqrt(1.0 - (linear(middle, pos) - 1.0) ** 2)
-
 
 def sphere_decreasing(middle: float, pos: float) -> float:
     return 1.0 - sqrt(1.0 - linear(middle, pos) ** 2)
 
-
 SEGMENTS = [linear, curved, sine, sphere_increasing, sphere_decreasing]
 """"""  # Enable auto-doc for data member
-
 
 class GradientFile:
     gradient: (
@@ -115,7 +108,6 @@ class GradientFile:
             palette.append(r + g + b + a)
 
         return b"".join(palette), "RGBA"
-
 
 class GimpGradientFile(GradientFile):
     """File handler for GIMP's gradient format."""

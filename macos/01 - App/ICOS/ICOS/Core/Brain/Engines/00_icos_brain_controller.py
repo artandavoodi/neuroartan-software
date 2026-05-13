@@ -6,7 +6,6 @@ from pathlib import Path
 from typing import Any
 import json
 
-
 # ============================================================
 # Sovereign Root
 # ============================================================
@@ -26,7 +25,6 @@ IDENTITY_REGISTRY = (
     / "Registries"
     / "identity_registry.json"
 )
-
 
 # ============================================================
 # ICOS Brain Controller
@@ -60,7 +58,6 @@ class ICOSBrainController:
             "execution_active": False,
         }
 
-
     # ========================================================
     # Runtime Loading
     # ========================================================
@@ -74,7 +71,6 @@ class ICOSBrainController:
 
         return self.runtime_registry
 
-
     def load_identity_registry(self) -> dict[str, Any]:
         self.identity_registry = json.loads(
             IDENTITY_REGISTRY.read_text()
@@ -83,7 +79,6 @@ class ICOSBrainController:
         self.runtime_state["identity_loaded"] = True
 
         return self.identity_registry
-
 
     # ========================================================
     # Brain Initialization
@@ -106,7 +101,6 @@ class ICOSBrainController:
 
         return self.runtime_state
 
-
     # ========================================================
     # Identity
     # ========================================================
@@ -118,7 +112,6 @@ class ICOSBrainController:
             "company": self.identity_registry.get("company", "Neuroartan"),
             "model": self.identity_registry.get("model", "WSDA"),
         }
-
 
     # ========================================================
     # Runtime Status
@@ -132,7 +125,6 @@ class ICOSBrainController:
             "interfaces": self.runtime_registry.get("interfaces", {}),
             "policies": self.runtime_registry.get("policies", {}),
         }
-
 
     # ========================================================
     # Cognitive Response Synthesis
@@ -170,7 +162,6 @@ class ICOSBrainController:
             "identity": identity,
             "runtime": "ICOS",
         }
-
 
 # ============================================================
 # Runtime Entry

@@ -1,9 +1,11 @@
 import SwiftUI
 
-// MARK: - Configuration Runtime Tab
+// MARK: - Runtime Tab
 
 struct ConfigurationRuntimeTab: View {
+    @ObservedObject private var runtimeSettings = RuntimeSettingsState.shared
+
     var body: some View {
-        EmptyView()
+        RuntimeSettingsView(runtimeSettings: runtimeSettings)
     }
 }

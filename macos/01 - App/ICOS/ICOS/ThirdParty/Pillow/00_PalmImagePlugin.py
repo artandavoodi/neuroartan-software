@@ -82,7 +82,6 @@ _Palm8BitColormapValues = (
     (0,     0,   0), (0,     0,   0), (0,     0,   0), (0,     0,   0))
 # fmt: on
 
-
 # so build a prototype image to be used for palette resampling
 def build_prototype_image() -> Image.Image:
     image = Image.new("L", (1, len(_Palm8BitColormapValues)))
@@ -93,7 +92,6 @@ def build_prototype_image() -> Image.Image:
     palettedata += (0, 0, 0) * (256 - len(_Palm8BitColormapValues))
     image.putpalette(palettedata)
     return image
-
 
 Palm8BitColormapImage = build_prototype_image()
 
@@ -106,13 +104,11 @@ _FLAGS = {"custom-colormap": 0x4000, "is-compressed": 0x8000, "has-transparent":
 
 _COMPRESSION_TYPES = {"none": 0xFF, "rle": 0x01, "scanline": 0x00}
 
-
 #
 # --------------------------------------------------------------------
 
 ##
 # (Internal) Image save plugin for the Palm format.
-
 
 def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     if im.mode == "P":
@@ -205,7 +201,6 @@ def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
 
     if hasattr(fp, "flush"):
         fp.flush()
-
 
 #
 # --------------------------------------------------------------------

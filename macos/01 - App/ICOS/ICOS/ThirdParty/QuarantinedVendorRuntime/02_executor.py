@@ -10,7 +10,6 @@ Self = Any
 
 __all__ = ["ExecutorEventEmitter"]
 
-
 class ExecutorEventEmitter(EventEmitter):
     """An event emitter class which runs handlers in a `concurrent.futures`
     executor.

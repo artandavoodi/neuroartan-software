@@ -7,7 +7,6 @@ from typing import Any
 import json
 import time
 
-
 # ============================================================
 # Sovereign Root
 # ============================================================
@@ -36,7 +35,6 @@ BRAIN_STATE = (
 LEARNING_LOG = (
     LEARNING_ROOT / "model_learning_log.json"
 )
-
 
 # ============================================================
 # Provider Arbitration Layer
@@ -103,7 +101,6 @@ class ProviderArbitrationLayer:
             },
         }
 
-
     # ========================================================
     # JSON Loading
     # ========================================================
@@ -116,7 +113,6 @@ class ProviderArbitrationLayer:
             return json.loads(path.read_text())
         except Exception:
             return {}
-
 
     # ========================================================
     # Arbitration
@@ -181,7 +177,6 @@ class ProviderArbitrationLayer:
             "timestamp": time.time(),
         }
 
-
     # ========================================================
     # Learning Observation
     # ========================================================
@@ -217,7 +212,6 @@ class ProviderArbitrationLayer:
             )
         )
 
-
     # ========================================================
     # Runtime Status
     # ========================================================
@@ -232,7 +226,6 @@ class ProviderArbitrationLayer:
                 "last_mounted_model"
             ),
         }
-
 
 # ============================================================
 # Runtime Entry

@@ -75,18 +75,15 @@ if TYPE_CHECKING:
         requirement: RequiresPythonRequirement
         parent: Candidate
 
-
 logger = logging.getLogger(__name__)
 
 C = TypeVar("C")
 Cache = dict[Link, C]
 
-
 class CollectedRootRequirements(NamedTuple):
     requirements: list[Requirement]
     constraints: dict[str, Constraint]
     user_requested: dict[str, int]
-
 
 class Factory:
     def __init__(

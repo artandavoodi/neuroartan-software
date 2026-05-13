@@ -33,9 +33,7 @@ namespace greenlet {
     typedef std::vector<ThreadState*> cleanup_queue_t;
 };
 
-
 #define implementation_ptr_t greenlet::Greenlet*
-
 
 #include "greenlet.h"
 
@@ -69,8 +67,6 @@ greenlet::refs::MainGreenletExactChecker(void *p)
     }
 }
 
-
-
 template <typename T, greenlet::refs::TypeChecker TC>
 inline greenlet::Greenlet* greenlet::refs::_OwnedGreenlet<T, TC>::operator->() const noexcept
 {
@@ -86,21 +82,16 @@ inline greenlet::Greenlet* greenlet::refs::_BorrowedGreenlet<T, TC>::operator->(
 #include <memory>
 #include <stdexcept>
 
-
 extern PyTypeObject PyGreenlet_Type;
-
-
 
 /**
   * Forward declarations needed in multiple files.
   */
 static PyObject* green_switch(PyGreenlet* self, PyObject* args, PyObject* kwargs);
 
-
 #ifdef __clang__
 #    pragma clang diagnostic pop
 #endif
-
 
 #endif
 

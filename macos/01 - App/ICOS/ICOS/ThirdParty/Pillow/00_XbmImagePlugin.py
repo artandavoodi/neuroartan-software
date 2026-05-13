@@ -36,14 +36,11 @@ xbm_head = re.compile(
     rb"[\000-\377]*_bits\[]"
 )
 
-
 def _accept(prefix: bytes) -> bool:
     return prefix.lstrip().startswith(b"#define")
 
-
 ##
 # Image plugin for X11 bitmaps.
-
 
 class XbmImageFile(ImageFile.ImageFile):
     format = "XBM"
@@ -69,7 +66,6 @@ class XbmImageFile(ImageFile.ImageFile):
 
         self.tile = [ImageFile._Tile("xbm", (0, 0) + self.size, m.end())]
 
-
 def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     if im.mode != "1":
         msg = f"cannot write mode {im.mode} as XBM"
@@ -88,7 +84,6 @@ def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     ImageFile._save(im, fp, [ImageFile._Tile("xbm", (0, 0) + im.size)])
 
     fp.write(b"};\n")
-
 
 Image.register_open(XbmImageFile.format, XbmImageFile, _accept)
 Image.register_save(XbmImageFile.format, _save)

@@ -33,10 +33,8 @@ from . import (
 from ._binary import o32le
 from ._util import DeferredError
 
-
 def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     JpegImagePlugin._save(im, fp, filename)
-
 
 def _save_all(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     append_images = im.encoderinfo.get("append_images", [])
@@ -94,10 +92,8 @@ def _save_all(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     fp.write(b"II\x2a\x00" + o32le(8) + ifd.tobytes(8))
     fp.seek(0, os.SEEK_END)
 
-
 ##
 # Image plugin for MPO images.
-
 
 class MpoImageFile(JpegImagePlugin.JpegImageFile):
     format = "MPO"
@@ -186,7 +182,6 @@ class MpoImageFile(JpegImagePlugin.JpegImageFile):
         mpo_instance = cast(MpoImageFile, jpeg_instance)
         mpo_instance._after_jpeg_open(mpheader)
         return mpo_instance
-
 
 # ---------------------------------------------------------------------
 # Registry stuff

@@ -36,7 +36,6 @@ else:
     def newlist_hint(size):
         return []
 
-
 from .exceptions import BufferFull, ExtraData, FormatError, OutOfData, StackError
 from .ext import ExtType, Timestamp
 
@@ -54,20 +53,17 @@ TYPE_EXT = 5
 
 DEFAULT_RECURSE_LIMIT = 511
 
-
 def _check_type_strict(obj, t, type=type, tuple=tuple):
     if type(t) is tuple:
         return type(obj) in t
     else:
         return type(obj) is t
 
-
 def _get_data_from_buffer(obj):
     view = memoryview(obj)
     if view.itemsize != 1:
         raise ValueError("cannot unpack from multi-byte object")
     return view
-
 
 def unpackb(packed, **kwargs):
     """
@@ -92,7 +88,6 @@ def unpackb(packed, **kwargs):
     if unpacker._got_extradata():
         raise ExtraData(ret, unpacker._get_extradata())
     return ret
-
 
 _NO_FORMAT_USED = ""
 _MSGPACK_HEADERS = {
@@ -125,7 +120,6 @@ _MSGPACK_HEADERS = {
     0xDE: (2, ">H", TYPE_MAP),
     0xDF: (4, ">I", TYPE_MAP),
 }
-
 
 class Unpacker:
     """Streaming unpacker.
@@ -599,7 +593,6 @@ class Unpacker:
 
     def tell(self):
         return self._stream_offset
-
 
 class Packer:
     """

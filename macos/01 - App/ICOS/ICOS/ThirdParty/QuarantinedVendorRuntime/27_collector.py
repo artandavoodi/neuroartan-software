@@ -42,7 +42,6 @@ logger = logging.getLogger(__name__)
 
 ResponseHeaders = MutableMapping[str, str]
 
-
 def _match_vcs_scheme(url: str) -> str | None:
     """Look for VCS schemes in the URL.
 
@@ -53,13 +52,11 @@ def _match_vcs_scheme(url: str) -> str | None:
             return scheme
     return None
 
-
 class _NotAPIContent(Exception):
     def __init__(self, content_type: str, request_desc: str) -> None:
         super().__init__(content_type, request_desc)
         self.content_type = content_type
         self.request_desc = request_desc
-
 
 def _ensure_api_header(response: Response) -> None:
     """
@@ -82,10 +79,8 @@ def _ensure_api_header(response: Response) -> None:
 
     raise _NotAPIContent(content_type, response.request.method)
 
-
 class _NotHTTP(Exception):
     pass
-
 
 def _ensure_api_response(url: str, session: PipSession) -> None:
     """
@@ -103,7 +98,6 @@ def _ensure_api_response(url: str, session: PipSession) -> None:
     raise_for_status(resp)
 
     _ensure_api_header(resp)
-
 
 def _get_simple_response(url: str, session: PipSession) -> Response:
     """Access an Simple API response with GET, and return the response.
@@ -167,7 +161,6 @@ def _get_simple_response(url: str, session: PipSession) -> Response:
 
     return resp
 
-
 def _get_encoding_from_headers(headers: ResponseHeaders) -> str | None:
     """Determine if we have any encoding information in our headers."""
     if headers and "Content-Type" in headers:
@@ -177,7 +170,6 @@ def _get_encoding_from_headers(headers: ResponseHeaders) -> str | None:
         if charset:
             return str(charset)
     return None
-
 
 class CacheablePageContent:
     def __init__(self, page: IndexContent) -> None:
@@ -190,10 +182,8 @@ class CacheablePageContent:
     def __hash__(self) -> int:
         return hash(self.page.url)
 
-
 class ParseLinks(Protocol):
     def __call__(self, page: IndexContent) -> Iterable[Link]: ...
-
 
 def with_cached_index_content(fn: ParseLinks) -> ParseLinks:
     """
@@ -213,7 +203,6 @@ def with_cached_index_content(fn: ParseLinks) -> ParseLinks:
         return list(fn(page))
 
     return wrapper_wrapper
-
 
 @with_cached_index_content
 def parse_links(page: IndexContent) -> Iterable[Link]:
@@ -243,7 +232,6 @@ def parse_links(page: IndexContent) -> Iterable[Link]:
             continue
         yield link
 
-
 @dataclass(frozen=True)
 class IndexContent:
     """Represents one response (or page), along with its URL.
@@ -263,7 +251,6 @@ class IndexContent:
 
     def __str__(self) -> str:
         return redact_auth_from_url(self.url)
-
 
 class HTMLLinkParser(HTMLParser):
     """
@@ -292,7 +279,6 @@ class HTMLLinkParser(HTMLParser):
                 return value
         return None
 
-
 def _handle_get_simple_fail(
     link: Link,
     reason: str | Exception,
@@ -301,7 +287,6 @@ def _handle_get_simple_fail(
     if meth is None:
         meth = logger.debug
     meth("Could not fetch URL %s: %s - skipping", link, reason)
-
 
 def _make_index_content(
     response: Response, cache_link_parsing: bool = True
@@ -314,7 +299,6 @@ def _make_index_content(
         url=response.url,
         cache_link_parsing=cache_link_parsing,
     )
-
 
 def _get_index_content(link: Link, *, session: PipSession) -> IndexContent | None:
     url = link.url.split("#", 1)[0]
@@ -375,11 +359,9 @@ def _get_index_content(link: Link, *, session: PipSession) -> IndexContent | Non
         return _make_index_content(resp, cache_link_parsing=link.cache_link_parsing)
     return None
 
-
 class CollectedSources(NamedTuple):
     find_links: Sequence[LinkSource | None]
     index_urls: Sequence[LinkSource | None]
-
 
 class LinkCollector:
     """

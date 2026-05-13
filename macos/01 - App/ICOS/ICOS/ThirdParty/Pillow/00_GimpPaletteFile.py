@@ -22,7 +22,6 @@ TYPE_CHECKING = False
 if TYPE_CHECKING:
     from typing import IO
 
-
 class GimpPaletteFile:
     """File handler for GIMP's palette format."""
 

@@ -27,7 +27,6 @@ if TYPE_CHECKING:
     from collections.abc import Callable
     from typing import IO
 
-
 class BoxReader:
     """
     A small helper class to read fields stored in JPEG2000 header boxes
@@ -101,7 +100,6 @@ class BoxReader:
         self.remaining_in_box = lbox - hlen
         return tbox
 
-
 def _parse_codestream(fp: IO[bytes]) -> tuple[tuple[int, int], str]:
     """Parse the JPEG 2000 codestream to extract the size and component
     count from the SIZ marker segment, returning a PIL (size, mode) tuple."""
@@ -132,7 +130,6 @@ def _parse_codestream(fp: IO[bytes]) -> tuple[tuple[int, int], str]:
 
     return size, mode
 
-
 def _res_to_dpi(num: int, denom: int, exp: int) -> float | None:
     """Convert JPEG2000's (numerator, denominator, exponent-base-10) resolution,
     calculated as (num / denom) * 10^exp and stored in dots per meter,
@@ -140,7 +137,6 @@ def _res_to_dpi(num: int, denom: int, exp: int) -> float | None:
     if denom == 0:
         return None
     return (254 * num * (10**exp)) / (10000 * denom)
-
 
 def _parse_jp2_header(
     fp: IO[bytes],
@@ -254,10 +250,8 @@ def _parse_jp2_header(
 
     return size, mode, mimetype, dpi, palette
 
-
 ##
 # Image plugin for JPEG2000 images.
-
 
 class Jpeg2KImageFile(ImageFile.ImageFile):
     format = "JPEG2000"
@@ -368,16 +362,13 @@ class Jpeg2KImageFile(ImageFile.ImageFile):
 
         return ImageFile.ImageFile.load(self)
 
-
 def _accept(prefix: bytes) -> bool:
     return prefix.startswith(
         (b"\xff\x4f\xff\x51", b"\x00\x00\x00\x0cjP  \x0d\x0a\x87\x0a")
     )
 
-
 # ------------------------------------------------------------
 # Save support
-
 
 def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     # Get the keyword arguments
@@ -445,10 +436,8 @@ def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
 
     ImageFile._save(im, fp, [ImageFile._Tile("jpeg2k", (0, 0) + im.size, 0, kind)])
 
-
 # ------------------------------------------------------------
 # Registry stuff
-
 
 Image.register_open(Jpeg2KImageFile.format, Jpeg2KImageFile, _accept)
 Image.register_save(Jpeg2KImageFile.format, _save)

@@ -6,7 +6,6 @@ from pathlib import Path
 from typing import Any
 import json
 
-
 # ============================================================
 # Runtime Paths
 # ============================================================
@@ -18,7 +17,6 @@ CONFIG_ROOT = CONTINUE_ROOT / "Config"
 
 PROVIDER_ROOT = ROOT / "Providers"
 MODEL_ROOT = ROOT / "Models"
-
 
 # ============================================================
 # Continue Provider Adapter
@@ -50,7 +48,6 @@ class ContinueProviderAdapter:
             }
         }
 
-
     # ========================================================
     # Runtime Config
     # ========================================================
@@ -74,7 +71,6 @@ class ContinueProviderAdapter:
 
         return self.runtime_config
 
-
     # ========================================================
     # Provider Access
     # ========================================================
@@ -82,10 +78,8 @@ class ContinueProviderAdapter:
     def get_provider(self, name: str) -> dict[str, Any] | None:
         return self.providers.get(name)
 
-
     def list_providers(self) -> dict[str, Any]:
         return self.providers
-
 
     # ========================================================
     # Runtime Provider
@@ -97,7 +91,6 @@ class ContinueProviderAdapter:
         provider_name = self.runtime_config.get("provider", "lmstudio")
 
         return self.get_provider(provider_name)
-
 
     # ========================================================
     # Runtime Status
@@ -112,7 +105,6 @@ class ContinueProviderAdapter:
             "active_provider": active,
             "provider_count": len(self.providers),
         }
-
 
 # ============================================================
 # Runtime Entry

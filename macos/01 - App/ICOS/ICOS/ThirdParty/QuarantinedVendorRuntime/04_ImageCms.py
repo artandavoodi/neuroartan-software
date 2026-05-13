@@ -107,13 +107,10 @@ pyCMS
 
 _VERSION = "1.0.0 pil"
 
-
 # --------------------------------------------------------------------.
-
 
 #
 # intent/direction values
-
 
 class Intent(IntEnum):
     PERCEPTUAL = 0
@@ -121,16 +118,13 @@ class Intent(IntEnum):
     SATURATION = 2
     ABSOLUTE_COLORIMETRIC = 3
 
-
 class Direction(IntEnum):
     INPUT = 0
     OUTPUT = 1
     PROOF = 2
 
-
 #
 # flags
-
 
 class Flags(IntFlag):
     """Flags and documentation are taken from ``lcms2.h``."""
@@ -190,9 +184,7 @@ class Flags(IntFlag):
         """
         return Flags.NONE | ((n & 0xFF) << 16)
 
-
 _MAX_FLAG = reduce(operator.or_, Flags)
-
 
 _FLAGS = {
     "MATRIXINPUT": 1,
@@ -217,14 +209,12 @@ _FLAGS = {
     "GRIDPOINTS": lambda n: (n & 0xFF) << 16,  # Gridpoints
 }
 
-
 # --------------------------------------------------------------------.
 # Experimental PIL-level API
 # --------------------------------------------------------------------.
 
 ##
 # Profile.
-
 
 class ImageCmsProfile:
     def __init__(self, profile: str | SupportsRead[bytes] | core.CmsProfile) -> None:
@@ -271,7 +261,6 @@ class ImageCmsProfile:
         """
 
         return core.profile_tobytes(self.profile)
-
 
 class ImageCmsTransform(Image.ImagePointHandler):
     """
@@ -331,7 +320,6 @@ class ImageCmsTransform(Image.ImagePointHandler):
         im.info["icc_profile"] = self.output_profile.tobytes()
         return im
 
-
 def get_display_profile(handle: SupportsInt | None = None) -> ImageCmsProfile | None:
     """
     (experimental) Fetches the profile for the current display device.
@@ -352,18 +340,15 @@ def get_display_profile(handle: SupportsInt | None = None) -> ImageCmsProfile | 
         return None
     return ImageCmsProfile(profile)
 
-
 # --------------------------------------------------------------------.
 # pyCMS compatible layer
 # --------------------------------------------------------------------.
-
 
 class PyCMSError(Exception):
     """(pyCMS) Exception class.
     This is used for all errors in the pyCMS API."""
 
     pass
-
 
 def profileToProfile(
     im: Image.Image,
@@ -460,7 +445,6 @@ def profileToProfile(
 
     return imOut
 
-
 def getOpenProfile(
     profileFilename: str | SupportsRead[bytes] | core.CmsProfile,
 ) -> ImageCmsProfile:
@@ -483,7 +467,6 @@ def getOpenProfile(
         return ImageCmsProfile(profileFilename)
     except (OSError, TypeError, ValueError) as v:
         raise PyCMSError(v) from v
-
 
 def buildTransform(
     inputProfile: _CmsProfileCompatible,
@@ -566,7 +549,6 @@ def buildTransform(
         )
     except (OSError, TypeError, ValueError) as v:
         raise PyCMSError(v) from v
-
 
 def buildProofTransform(
     inputProfile: _CmsProfileCompatible,
@@ -680,10 +662,8 @@ def buildProofTransform(
     except (OSError, TypeError, ValueError) as v:
         raise PyCMSError(v) from v
 
-
 buildTransformFromOpenProfiles = buildTransform
 buildProofTransformFromOpenProfiles = buildProofTransform
-
 
 def applyTransform(
     im: Image.Image, transform: ImageCmsTransform, inPlace: bool = False
@@ -739,7 +719,6 @@ def applyTransform(
 
     return imOut
 
-
 def createProfile(
     colorSpace: Literal["LAB", "XYZ", "sRGB"], colorTemp: SupportsFloat = 0
 ) -> core.CmsProfile:
@@ -790,7 +769,6 @@ def createProfile(
     except (TypeError, ValueError) as v:
         raise PyCMSError(v) from v
 
-
 def getProfileName(profile: _CmsProfileCompatible) -> str:
     """
 
@@ -832,7 +810,6 @@ def getProfileName(profile: _CmsProfileCompatible) -> str:
     except (AttributeError, OSError, TypeError, ValueError) as v:
         raise PyCMSError(v) from v
 
-
 def getProfileInfo(profile: _CmsProfileCompatible) -> str:
     """
     (pyCMS) Gets the internal product information for the given profile.
@@ -869,7 +846,6 @@ def getProfileInfo(profile: _CmsProfileCompatible) -> str:
     except (AttributeError, OSError, TypeError, ValueError) as v:
         raise PyCMSError(v) from v
 
-
 def getProfileCopyright(profile: _CmsProfileCompatible) -> str:
     """
     (pyCMS) Gets the copyright for the given profile.
@@ -897,7 +873,6 @@ def getProfileCopyright(profile: _CmsProfileCompatible) -> str:
     except (AttributeError, OSError, TypeError, ValueError) as v:
         raise PyCMSError(v) from v
 
-
 def getProfileManufacturer(profile: _CmsProfileCompatible) -> str:
     """
     (pyCMS) Gets the manufacturer for the given profile.
@@ -924,7 +899,6 @@ def getProfileManufacturer(profile: _CmsProfileCompatible) -> str:
         return (profile.profile.manufacturer or "") + "\n"
     except (AttributeError, OSError, TypeError, ValueError) as v:
         raise PyCMSError(v) from v
-
 
 def getProfileModel(profile: _CmsProfileCompatible) -> str:
     """
@@ -954,7 +928,6 @@ def getProfileModel(profile: _CmsProfileCompatible) -> str:
     except (AttributeError, OSError, TypeError, ValueError) as v:
         raise PyCMSError(v) from v
 
-
 def getProfileDescription(profile: _CmsProfileCompatible) -> str:
     """
     (pyCMS) Gets the description for the given profile.
@@ -982,7 +955,6 @@ def getProfileDescription(profile: _CmsProfileCompatible) -> str:
         return (profile.profile.profile_description or "") + "\n"
     except (AttributeError, OSError, TypeError, ValueError) as v:
         raise PyCMSError(v) from v
-
 
 def getDefaultIntent(profile: _CmsProfileCompatible) -> int:
     """
@@ -1021,7 +993,6 @@ def getDefaultIntent(profile: _CmsProfileCompatible) -> int:
         return profile.profile.rendering_intent
     except (AttributeError, OSError, TypeError, ValueError) as v:
         raise PyCMSError(v) from v
-
 
 def isIntentSupported(
     profile: _CmsProfileCompatible, intent: Intent, direction: Direction

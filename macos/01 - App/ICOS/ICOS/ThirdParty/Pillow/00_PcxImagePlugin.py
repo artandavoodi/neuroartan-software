@@ -37,14 +37,11 @@ from ._binary import o16le as o16
 
 logger = logging.getLogger(__name__)
 
-
 def _accept(prefix: bytes) -> bool:
     return len(prefix) >= 2 and prefix[0] == 10 and prefix[1] in [0, 2, 3, 5]
 
-
 ##
 # Image plugin for Paintbrush images.
-
 
 class PcxImageFile(ImageFile.ImageFile):
     format = "PCX"
@@ -131,10 +128,8 @@ class PcxImageFile(ImageFile.ImageFile):
 
         self.tile = [ImageFile._Tile("pcx", bbox, offset, (rawmode, planes * stride))]
 
-
 # --------------------------------------------------------------------
 # save PCX files
-
 
 SAVE = {
     # mode: (version, bits, planes, raw mode)
@@ -143,7 +138,6 @@ SAVE = {
     "P": (5, 8, 1, "P"),
     "RGB": (5, 8, 3, "RGB;L"),
 }
-
 
 def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     if im.width == 0 or im.height == 0:
@@ -219,10 +213,8 @@ def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
         for i in range(256):
             fp.write(o8(i) * 3)
 
-
 # --------------------------------------------------------------------
 # registry
-
 
 Image.register_open(PcxImageFile.format, PcxImageFile, _accept)
 Image.register_save(PcxImageFile.format, _save)

@@ -13,7 +13,6 @@ from pip._vendor.urllib3 import HTTPResponse
 if TYPE_CHECKING:
     from pip._vendor.requests import PreparedRequest
 
-
 class Serializer:
     serde_version = "4"
 

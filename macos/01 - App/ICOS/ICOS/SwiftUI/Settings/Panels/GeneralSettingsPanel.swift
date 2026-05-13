@@ -22,12 +22,12 @@ struct GeneralSettingsPanel: View {
                 }
             }
             .pickerStyle(.segmented)
+               .frame(maxWidth: .infinity, alignment: .center)
+ .frame(maxWidth: .infinity, alignment: .center)
 
             tabBody
         }
     }
-
-    // MARK: - Header
 
     private var header: some View {
         VStack(alignment: .leading, spacing: scaled(ICOSSpacing.xs)) {
@@ -35,13 +35,11 @@ struct GeneralSettingsPanel: View {
                 .font(.system(size: scaledFont(ICOSControlTokens.rowTitleFontSize), weight: .semibold))
                 .foregroundStyle(ICOSColors.textPrimary)
 
-            Text("Core defaults, launch behavior, and saved runtime state.")
+            Text("Shell behavior, launch posture, and saved runtime summary.")
                 .font(.system(size: scaledFont(ICOSControlTokens.rowSubtitleFontSize), weight: .regular))
                 .foregroundStyle(ICOSColors.textSecondary)
         }
     }
-
-    // MARK: - Tab Body
 
     @ViewBuilder
     private var tabBody: some View {
@@ -59,29 +57,30 @@ struct GeneralSettingsPanel: View {
         }
     }
 
-    // MARK: - Defaults Tab
-
     private var defaultsTab: some View {
-        SettingsSectionCard(title: "Runtime Defaults", icon: .configuration) {
+        SettingsSectionCard(title: "Runtime Summary", icon: .configuration) {
             VStack(alignment: .leading, spacing: scaled(ICOSSpacing.md)) {
-                Picker("App mode", selection: $runtimeSettings.mode) {
-                    ForEach(executionModes) { mode in
-                        Text(mode.title).tag(mode)
-                    }
-                }
-
-                TextField("Selected model ID", text: $runtimeSettings.selectedModelID)
-                    .textFieldStyle(.roundedBorder)
-
-                TextField("Cloud endpoint", text: $runtimeSettings.cloudEndpoint)
-                    .textFieldStyle(.roundedBorder)
-
-                SecureField("API key", text: $runtimeSettings.cloudAPIKey)
-                    .textFieldStyle(.roundedBorder)
+                WorktreeRow(name: "Mode", state: runtimeSettings.mode.title, icon: .configuration)
+                WorktreeRow(name: "Routing", state: runtimeSettings.activeRoutingSummary, icon: .cloud)
+                WorktreeRow(
+                    name: "Selected model",
+                    state: runtimeSettings.selectedModelID.isEmpty ? "Not set" : runtimeSettings.selectedModelID,
+                    icon: .knowledge
+                )
+                WorktreeRow(
+                    name: "Endpoint",
+                    state: runtimeSettings.cloudEndpoint.isEmpty ? "Not set" : runtimeSettings.cloudEndpoint,
+                    icon: .cloud
+                )
 
                 HStack {
                     Spacer(minLength: 0)
-                    Button("Save defaults") {
+                    Button("Reload saved runtime state") {
+                        runtimeSettings.load()
+                    }
+                    .buttonStyle(.bordered)
+
+                    Button("Save runtime snapshot") {
                         runtimeSettings.save()
                     }
                     .buttonStyle(.borderedProminent)
@@ -89,8 +88,6 @@ struct GeneralSettingsPanel: View {
             }
         }
     }
-
-    // MARK: - Startup Tab
 
     private var startupTab: some View {
         SettingsSectionCard(title: "Startup State", icon: .workspace) {
@@ -108,21 +105,19 @@ struct GeneralSettingsPanel: View {
                 )
 
                 WorktreeRow(
-                    name: "Selected model",
-                    state: runtimeSettings.selectedModelID.isEmpty ? "Not set" : runtimeSettings.selectedModelID,
-                    icon: .knowledge
+                    name: "Active provider",
+                    state: runtimeSettings.activeProviderTitle,
+                    icon: .cloud
                 )
 
                 WorktreeRow(
-                    name: "Cloud endpoint",
-                    state: runtimeSettings.cloudEndpoint.isEmpty ? "Not set" : runtimeSettings.cloudEndpoint,
-                    icon: .cloud
+                    name: "Active model",
+                    state: runtimeSettings.activeModelTitle,
+                    icon: .knowledge
                 )
             }
         }
     }
-
-    // MARK: - Behavior Tab
 
     private var behaviorTab: some View {
         SettingsSectionCard(title: "Execution Behavior", icon: .response) {
@@ -140,8 +135,6 @@ struct GeneralSettingsPanel: View {
         }
     }
 
-    // MARK: - Shortcuts Tab
-
     private var shortcutsTab: some View {
         SettingsSectionCard(title: "Quick Routes", icon: .settings) {
             VStack(alignment: .leading, spacing: scaled(ICOSSpacing.xs)) {
@@ -154,17 +147,20 @@ struct GeneralSettingsPanel: View {
         }
     }
 
-    // MARK: - Reset Tab
-
     private var resetTab: some View {
         SettingsSectionCard(title: "Persistence", icon: .update) {
             VStack(alignment: .leading, spacing: scaled(ICOSSpacing.md)) {
-                Text("General state is saved through the runtime owner.")
+                Text("This restores the runtime owner without theatrical placeholders.")
                     .font(.system(size: scaledFont(ICOSControlTokens.rowSubtitleFontSize), weight: .regular))
                     .foregroundStyle(ICOSColors.textSecondary)
 
                 HStack {
                     Spacer(minLength: 0)
+                    Button("Load saved runtime") {
+                        runtimeSettings.load()
+                    }
+                    .buttonStyle(.bordered)
+
                     Button("Save current general state") {
                         runtimeSettings.save()
                     }
@@ -173,8 +169,6 @@ struct GeneralSettingsPanel: View {
             }
         }
     }
-
-    // MARK: - Scaling
 
     private func scaled(_ value: CGFloat) -> CGFloat {
         value * density.spacingScale
@@ -195,6 +189,5 @@ private enum GeneralSettingsTab: String, CaseIterable, Identifiable {
     case reset = "Reset"
 
     var id: String { rawValue }
-
     var title: String { rawValue }
 }

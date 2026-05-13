@@ -17,7 +17,6 @@ from . import RUNNING_ON_FREETHREAD_BUILD
 from .leakcheck import fails_leakcheck
 from .leakcheck import ignores_leakcheck
 
-
 # We manually manage locks in many tests
 # pylint:disable=consider-using-with
 # pylint:disable=too-many-public-methods
@@ -31,7 +30,6 @@ from .leakcheck import ignores_leakcheck
 class SomeError(Exception):
     pass
 
-
 def fmain(seen):
     try:
         greenlet.getcurrent().parent.switch()
@@ -40,7 +38,6 @@ def fmain(seen):
         raise
     raise SomeError
 
-
 def send_exception(g, exc):
     # note: send_exception(g, exc)  can be now done with  g.throw(exc).
     # the purpose of this test is to explicitly check the propagation rules.
@@ -48,7 +45,6 @@ def send_exception(g, exc):
         raise exc
     g1 = RawGreenlet(crasher, parent=g)
     g1.switch(exc)
-
 
 class TestGreenlet(TestCase):
 
@@ -240,7 +236,6 @@ class TestGreenlet(TestCase):
         self.assertEqual(value, 25)
         self.assertEqual(seen, [SomeError])
 
-
     def test_send_exception(self):
         seen = []
         g1 = RawGreenlet(fmain)
@@ -284,7 +279,6 @@ class TestGreenlet(TestCase):
 
         self.assertEqual(len(unraisable_events), 1)
         self.assertIsInstance(unraisable_events[0].exc_value, SomeError)
-
 
     @unittest.skipIf(
         PY313 and RUNNING_ON_MANYLINUX,
@@ -871,10 +865,8 @@ class TestGreenlet(TestCase):
             thread_ready_events.append(event)
             thread.start()
 
-
         for done_event in thread_ready_events:
             done_event.wait(10)
-
 
         del glets[:]
         ref_cleared.set()
@@ -918,7 +910,6 @@ class TestGreenlet(TestCase):
             def __getattribute__(self, name):
                 if name == 'run':
                     raise SomeError
-
 
         parent_never_started = Parent()
         seen = []
@@ -1019,7 +1010,6 @@ class TestGreenlet(TestCase):
         self.assertEqual(frame.f_code.co_name, "outer")
         # The next line crashes on 3.12 if we haven't exposed the frames.
         self.assertIsNone(frame.f_back)
-
 
 class TestGreenletSetParentErrors(TestCase):
     def test_threaded_reparent(self):
@@ -1137,7 +1127,6 @@ class TestGreenletSetParentErrors(TestCase):
             del greenlet.getcurrent().parent
         self.assertEqual(str(exc.exception), "can't delete attribute")
 
-
     def test_main_greenlet_parent_is_none(self):
         # assuming we're in a main greenlet here.
         self.assertIsNone(greenlet.getcurrent().parent)
@@ -1169,7 +1158,6 @@ class TestGreenletSetParentErrors(TestCase):
         # Let it finish
         g.switch()
 
-
     def test_trivial_cycle(self):
         glet = RawGreenlet(lambda: None)
         with self.assertRaises(ValueError) as exc:
@@ -1192,7 +1180,6 @@ class TestGreenletSetParentErrors(TestCase):
         with self.assertRaises(ValueError) as exc:
             g3.parent = g1
         self.assertEqual(str(exc.exception), "cyclic parent chain")
-
 
 class TestRepr(TestCase):
 
@@ -1279,7 +1266,6 @@ class TestRepr(TestCase):
                 str,
             )
 
-
 class TestMainGreenlet(TestCase):
     # Tests some implementation details, and relies on some
     # implementation details.
@@ -1301,8 +1287,6 @@ class TestMainGreenlet(TestCase):
         self._check_current_is_main()
         self.assertIsInstance(greenlet.getcurrent(), RawGreenlet)
 
-
-
 class TestBrokenGreenlets(TestCase):
     # Tests for things that used to, or still do, terminate the interpreter.
     # This often means doing unsavory things.
@@ -1310,7 +1294,6 @@ class TestBrokenGreenlets(TestCase):
     def test_failed_to_initialstub(self):
         def func():
             raise AssertionError("Never get here")
-
 
         g = greenlet._greenlet.UnswitchableGreenlet(func)
         g.force_switch_error = True

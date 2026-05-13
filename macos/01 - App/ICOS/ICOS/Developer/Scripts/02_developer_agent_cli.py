@@ -8,9 +8,7 @@ import sys
 from pathlib import Path
 from typing import Any, Dict
 
-
 RUNTIME_PATH = Path("/Users/artan/Neuroartan-software/macos/01 - App/ICOS/ICOS/Runtime/Engines/01_runtime_relinking_engine.py")
-
 
 def load_runtime_module():
     spec = importlib.util.spec_from_file_location("icos_runtime_relinking_engine", RUNTIME_PATH)
@@ -21,7 +19,6 @@ def load_runtime_module():
     sys.modules["icos_runtime_relinking_engine"] = module
     spec.loader.exec_module(module)
     return module
-
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="ICOS Developer Agent CLI")
@@ -46,7 +43,6 @@ def main() -> int:
 
     print(json.dumps(result, indent=2, sort_keys=True))
     return 0
-
 
 if __name__ == "__main__":
     raise SystemExit(main())

@@ -12,7 +12,6 @@ from pip._internal.utils.misc import format_size
 
 logger = getLogger(__name__)
 
-
 class CacheCommand(Command):
     """
     Inspect and manage pip's wheel cache.

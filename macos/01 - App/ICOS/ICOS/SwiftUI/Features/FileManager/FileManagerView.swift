@@ -232,7 +232,6 @@ struct FileManagerView: View {
     }
 }
 
-
 // MARK: - File Operations
 
 private extension FileManagerView {

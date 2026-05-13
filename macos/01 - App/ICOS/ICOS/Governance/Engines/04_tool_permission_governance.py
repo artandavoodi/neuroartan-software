@@ -29,13 +29,11 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional
 import json
 
-
 class PermissionLevel(str, Enum):
     DENIED = "denied"
     READ_ONLY = "read_only"
     LIMITED_WRITE = "limited_write"
     FULL_ACCESS = "full_access"
-
 
 class RiskLevel(str, Enum):
     LOW = "low"
@@ -43,14 +41,12 @@ class RiskLevel(str, Enum):
     HIGH = "high"
     CRITICAL = "critical"
 
-
 class ToolCategory(str, Enum):
     LOCAL_REPO = "local_repo"
     FILESYSTEM = "filesystem"
     MCP = "mcp"
     WEB = "web"
     UNKNOWN = "unknown"
-
 
 @dataclass
 class ToolPermission:
@@ -62,7 +58,6 @@ class ToolPermission:
     metadata: Dict[str, Any] = field(default_factory=dict)
     category: ToolCategory = ToolCategory.UNKNOWN
 
-
 @dataclass
 class GovernanceDecision:
     tool_id: str
@@ -70,7 +65,6 @@ class GovernanceDecision:
     reason: str
     risk_level: RiskLevel
     metadata: Dict[str, Any] = field(default_factory=dict)
-
 
 class ToolPermissionGovernanceEngine:
     """
@@ -666,7 +660,6 @@ class ToolPermissionGovernanceEngine:
             "workflow_state": self.workflow_state,
             "runtime_state": self.runtime_state,
         }
-
 
 if __name__ == "__main__":
     governance = ToolPermissionGovernanceEngine()

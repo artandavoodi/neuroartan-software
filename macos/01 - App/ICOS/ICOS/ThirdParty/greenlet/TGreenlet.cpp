@@ -14,7 +14,6 @@
 #include "greenlet_internal.hpp"
 #include "TGreenlet.hpp"
 
-
 #include "TGreenletGlobals.cpp"
 #include "TThreadStateDestroy.cpp"
 
@@ -77,7 +76,6 @@ Greenlet::slp_restore_state() noexcept
     this->stack_state.copy_heap_to_stack(
            this->thread_state()->borrow_current()->stack_state);
 }
-
 
 inline int
 Greenlet::slp_save_state(char *const stackref) noexcept
@@ -213,7 +211,6 @@ Greenlet::g_switchstack(void)
     return switchstack_result_t(err, greenlet_that_switched_in, origin);
 }
 
-
 inline void
 Greenlet::check_switch_allowed() const
 {
@@ -305,7 +302,6 @@ Greenlet::context() const
     }
     return result;
 }
-
 
 void
 Greenlet::context(BorrowedObject given)
@@ -413,8 +409,6 @@ g_handle_exit(const OwnedObject& greenlet_result)
 
     return OwnedObject();
 }
-
-
 
 /**
  * May run arbitrary Python code.
@@ -542,7 +536,6 @@ Greenlet::belongs_to_thread(const ThreadState* thread_state) const
     return true;
 }
 
-
 void
 Greenlet::deallocing_greenlet_in_thread(const ThreadState* current_thread_state)
 {
@@ -579,7 +572,6 @@ Greenlet::deallocing_greenlet_in_thread(const ThreadState* current_thread_state)
     }
     return;
 }
-
 
 int
 Greenlet::tp_traverse(visitproc visit, void* arg)

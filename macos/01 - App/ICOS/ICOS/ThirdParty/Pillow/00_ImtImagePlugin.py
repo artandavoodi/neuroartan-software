@@ -24,10 +24,8 @@ from . import Image, ImageFile
 
 field = re.compile(rb"([a-z]*) ([^ \r\n]*)")
 
-
 ##
 # Image plugin for IM Tools images.
-
 
 class ImtImageFile(ImageFile.ImageFile):
     format = "IMT"
@@ -92,7 +90,6 @@ class ImtImageFile(ImageFile.ImageFile):
                     self._size = xsize, ysize
                 elif k == b"pixel" and v == b"n8":
                     self._mode = "L"
-
 
 #
 # --------------------------------------------------------------------

@@ -26,7 +26,6 @@ from datetime import datetime
 from enum import Enum
 from typing import Any, Dict, List, Optional
 
-
 class EmotionalState(str, Enum):
     NEUTRAL = "neutral"
     FOCUSED = "focused"
@@ -37,13 +36,11 @@ class EmotionalState(str, Enum):
     MOTIVATED = "motivated"
     FATIGUED = "fatigued"
 
-
 class EmotionalPriority(str, Enum):
     LOW = "low"
     NORMAL = "normal"
     HIGH = "high"
     CRITICAL = "critical"
-
 
 @dataclass
 class EmotionalContext:
@@ -57,7 +54,6 @@ class EmotionalContext:
     created_at: datetime = field(default_factory=datetime.utcnow)
     metadata: Dict[str, Any] = field(default_factory=dict)
 
-
 @dataclass
 class EmotionalWeighting:
     weighting_id: str
@@ -66,7 +62,6 @@ class EmotionalWeighting:
     priority: EmotionalPriority
     recommendations: List[str] = field(default_factory=list)
     metadata: Dict[str, Any] = field(default_factory=dict)
-
 
 class ContextualEmotionalWeightingEngine:
     """
@@ -216,7 +211,6 @@ class ContextualEmotionalWeightingEngine:
                 for weighting in self.weightings.values()
             ],
         }
-
 
 if __name__ == "__main__":
     engine = ContextualEmotionalWeightingEngine()

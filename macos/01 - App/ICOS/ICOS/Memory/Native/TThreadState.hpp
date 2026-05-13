@@ -25,7 +25,6 @@ using greenlet::refs::CreatedModule;
 using greenlet::refs::PyErrPieces;
 using greenlet::refs::NewReference;
 
-
 namespace greenlet {
 /**
  * Thread-local state of greenlets.
@@ -85,8 +84,6 @@ namespace greenlet {
  * pending call runs.
  */
 
-
-
 class ThreadState {
 private:
     // As of commit 08ad1dd7012b101db953f492e0021fb08634afad
@@ -138,7 +135,6 @@ private:
 
     G_NO_COPIES_OF_CLS(ThreadState);
 
-
     // Allocates a main greenlet for the thread state. If this fails,
     // exits the process. Called only during constructing a ThreadState.
     MainGreenlet* alloc_main()
@@ -157,7 +153,6 @@ private:
         assert(gmain->pimpl == main);
         return main;
     }
-
 
 public:
     // Allocate ThreadState with malloc/free rather than Python's
@@ -401,7 +396,6 @@ public:
         return tracefunc;
     };
 
-
     inline void set_tracefunc(BorrowedObject tracefunc)
     {
         assert(tracefunc);
@@ -617,10 +611,6 @@ std::atomic<std::clock_t> ThreadState::_clocks_used_doing_gc(0);
 #else
 std::clock_t ThreadState::_clocks_used_doing_gc(0);
 #endif
-
-
-
-
 
 }; // namespace greenlet
 

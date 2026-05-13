@@ -33,10 +33,8 @@ if enable_jpeg2k:
 MAGIC = b"icns"
 HEADERSIZE = 8
 
-
 def nextheader(fobj: IO[bytes]) -> tuple[bytes, int]:
     return struct.unpack(">4sI", fobj.read(HEADERSIZE))
-
 
 def read_32t(
     fobj: IO[bytes], start_length: tuple[int, int], size: tuple[int, int, int]
@@ -49,7 +47,6 @@ def read_32t(
         msg = "Unknown signature, expecting 0x00000000"
         raise SyntaxError(msg)
     return read_32(fobj, (start + 4, length - 4), size)
-
 
 def read_32(
     fobj: IO[bytes], start_length: tuple[int, int], size: tuple[int, int, int]
@@ -94,7 +91,6 @@ def read_32(
             im.im.putband(band.im, band_ix)
     return {"RGB": im}
 
-
 def read_mk(
     fobj: IO[bytes], start_length: tuple[int, int], size: tuple[int, int, int]
 ) -> dict[str, Image.Image]:
@@ -105,7 +101,6 @@ def read_mk(
     sizesq = pixel_size[0] * pixel_size[1]
     band = Image.frombuffer("L", pixel_size, fobj.read(sizesq), "raw", "L", 0, 1)
     return {"A": band}
-
 
 def read_png_or_jpeg2000(
     fobj: IO[bytes], start_length: tuple[int, int], size: tuple[int, int, int]
@@ -142,7 +137,6 @@ def read_png_or_jpeg2000(
     else:
         msg = "Unsupported icon subimage format"
         raise ValueError(msg)
-
 
 class IcnsFile:
     SIZES = {
@@ -244,10 +238,8 @@ class IcnsFile:
             pass
         return im
 
-
 ##
 # Image plugin for Mac OS icons.
-
 
 class IcnsImageFile(ImageFile.ImageFile):
     """
@@ -314,7 +306,6 @@ class IcnsImageFile(ImageFile.ImageFile):
 
         return px
 
-
 def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     """
     Saves the image as a series of PNG files,
@@ -374,10 +365,8 @@ def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     if hasattr(fp, "flush"):
         fp.flush()
 
-
 def _accept(prefix: bytes) -> bool:
     return prefix.startswith(MAGIC)
-
 
 Image.register_open(IcnsImageFile.format, IcnsImageFile, _accept)
 Image.register_extension(IcnsImageFile.format, ".icns")

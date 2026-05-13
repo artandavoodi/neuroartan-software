@@ -8,7 +8,6 @@ import json
 import time
 import uuid
 
-
 # ============================================================
 # Sovereign Root
 # ============================================================
@@ -46,7 +45,6 @@ UNIFIED_DATASET_STORE = (
 MODEL_TRAINING_SAFETY_POLICY = (
     SAFETY_ROOT / "model_training_safety_policy.json"
 )
-
 
 # ============================================================
 # Distillation Planner
@@ -119,7 +117,6 @@ class DistillationPlanner:
             }
         )
 
-
     # ========================================================
     # JSON Loading
     # ========================================================
@@ -143,7 +140,6 @@ class DistillationPlanner:
 
         except Exception:
             return fallback
-
 
     # ========================================================
     # Distillation Phase Planning
@@ -192,7 +188,6 @@ class DistillationPlanner:
 
         return phase
 
-
     # ========================================================
     # Training Registry
     # ========================================================
@@ -227,7 +222,6 @@ class DistillationPlanner:
         )
 
         return run
-
 
     # ========================================================
     # Native Model Roadmap
@@ -265,7 +259,6 @@ class DistillationPlanner:
         )
 
         return roadmap
-
 
     # ========================================================
     # Distillation Learning Cycle
@@ -314,7 +307,6 @@ class DistillationPlanner:
             "event": event,
         }
 
-
     # ========================================================
     # Runtime Status
     # ========================================================
@@ -339,7 +331,6 @@ class DistillationPlanner:
                 False,
             ),
         }
-
 
 # ============================================================
 # Runtime Entry

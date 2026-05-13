@@ -50,12 +50,10 @@ from playwright._impl._tracing import Tracing
 if typing.TYPE_CHECKING:
     from playwright._impl._playwright import Playwright
 
-
 FormType = Dict[str, Union[bool, float, str]]
 DataType = Union[Any, bytes, str]
 MultipartType = Dict[str, Union[bytes, bool, float, str, FilePayload]]
 ParamsType = Union[Dict[str, Union[bool, float, str]], str]
-
 
 class APIRequest:
     def __init__(self, playwright: "Playwright") -> None:
@@ -97,7 +95,6 @@ class APIRequest:
         )
         context._timeout_settings.set_default_timeout(timeout)
         return context
-
 
 class APIRequestContext(ChannelOwner):
     def __init__(
@@ -441,14 +438,12 @@ class APIRequestContext(ChannelOwner):
             await async_writefile(path, json.dumps(result))
         return result
 
-
 def file_payload_to_json(payload: FilePayload) -> ServerFilePayload:
     return ServerFilePayload(
         name=payload["name"],
         mimeType=payload["mimeType"],
         buffer=base64.b64encode(payload["buffer"]).decode(),
     )
-
 
 class APIResponse:
     def __init__(self, context: APIRequestContext, initializer: Dict) -> None:
@@ -535,7 +530,6 @@ class APIResponse:
             },
         )
 
-
 def is_json_content_type(headers: network.HeadersArray = None) -> bool:
     if not headers:
         return False
@@ -543,7 +537,6 @@ def is_json_content_type(headers: network.HeadersArray = None) -> bool:
         if header["name"] == "Content-Type":
             return header["value"].startswith("application/json")
     return False
-
 
 def is_json_parsable(value: Any) -> bool:
     if not isinstance(value, str):

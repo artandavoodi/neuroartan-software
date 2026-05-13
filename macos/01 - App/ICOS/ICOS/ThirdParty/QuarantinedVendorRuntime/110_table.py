@@ -34,7 +34,6 @@ if TYPE_CHECKING:
         RenderResult,
     )
 
-
 @dataclass
 class Column:
     """Defines a column within a ~Table.
@@ -128,7 +127,6 @@ class Column:
         """Check if this column is flexible."""
         return self.ratio is not None
 
-
 @dataclass
 class Row:
     """Information regarding a row."""
@@ -139,7 +137,6 @@ class Row:
     end_section: bool = False
     """Indicated end of section, which will force a line beneath the row."""
 
-
 class _Cell(NamedTuple):
     """A single cell in a table."""
 
@@ -149,7 +146,6 @@ class _Cell(NamedTuple):
     """Cell renderable."""
     vertical: VerticalAlignMethod
     """Cell vertical alignment."""
-
 
 class Table(JupyterMixin):
     """A console renderable to draw a table.
@@ -924,7 +920,6 @@ class Table(JupyterMixin):
         if _box and show_edge:
             yield _Segment(_box.get_bottom(widths), border_style)
             yield new_line
-
 
 if __name__ == "__main__":  # pragma: no cover
     from pip._vendor.rich.console import Console

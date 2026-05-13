@@ -40,12 +40,10 @@ logger = getLogger(__name__)
 
 KEYRING_DISABLED = False
 
-
 class Credentials(NamedTuple):
     url: str
     username: str
     password: str
-
 
 class KeyRingBaseProvider(ABC):
     """Keyring base provider interface"""
@@ -58,7 +56,6 @@ class KeyRingBaseProvider(ABC):
     @abstractmethod
     def save_auth_info(self, url: str, username: str, password: str) -> None: ...
 
-
 class KeyRingNullProvider(KeyRingBaseProvider):
     """Keyring null provider"""
 
@@ -69,7 +66,6 @@ class KeyRingNullProvider(KeyRingBaseProvider):
 
     def save_auth_info(self, url: str, username: str, password: str) -> None:
         return None
-
 
 class KeyRingPythonProvider(KeyRingBaseProvider):
     """Keyring interface which uses locally imported `keyring`"""
@@ -101,7 +97,6 @@ class KeyRingPythonProvider(KeyRingBaseProvider):
 
     def save_auth_info(self, url: str, username: str, password: str) -> None:
         self.keyring.set_password(url, username, password)
-
 
 class KeyRingCliProvider(KeyRingBaseProvider):
     """Provider which uses `keyring` cli
@@ -160,7 +155,6 @@ class KeyRingCliProvider(KeyRingBaseProvider):
             check=True,
         )
         return None
-
 
 @cache
 def get_keyring_provider(provider: str) -> KeyRingBaseProvider:
@@ -222,7 +216,6 @@ def get_keyring_provider(provider: str) -> KeyRingBaseProvider:
 
     logger.verbose("Keyring provider set: disabled")
     return KeyRingNullProvider()
-
 
 class MultiDomainBasicAuth(AuthBase):
     def __init__(

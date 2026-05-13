@@ -12,20 +12,17 @@ final class LocalStorageController {
 
     static let shared = LocalStorageController()
 
-
     // ========================================================
     // Database
     // ========================================================
 
     private let database = ICOSDatabase.shared
 
-
     // ========================================================
     // Init
     // ========================================================
 
     private init() {}
-
 
     // ========================================================
     // Conversation Memory
@@ -37,7 +34,6 @@ final class LocalStorageController {
         let role: String
         let content: String
     }
-
 
     func saveConversation(
         role: String,
@@ -60,14 +56,12 @@ final class LocalStorageController {
         )
     }
 
-
     func loadConversations() -> [ConversationRecord] {
         database.load(
             from: database.conversationStoreURL(),
             as: [ConversationRecord].self
         ) ?? []
     }
-
 
     // ========================================================
     // Cognitive Runtime State
@@ -79,7 +73,6 @@ final class LocalStorageController {
         let cognitiveLayer: String
         let timestamp: Date
     }
-
 
     func saveRuntimeState(
         runtimeMode: String,
@@ -99,14 +92,12 @@ final class LocalStorageController {
         )
     }
 
-
     func loadRuntimeState() -> CognitiveRuntimeState? {
         database.load(
             from: database.runtimeStoreURL(),
             as: CognitiveRuntimeState.self
         )
     }
-
 
     // ========================================================
     // Cognitive Memory Snapshot
@@ -119,7 +110,6 @@ final class LocalStorageController {
         let continuityState: String
         let timestamp: Date
     }
-
 
     func saveCognitiveSnapshot(
         semanticNodes: Int,
@@ -141,14 +131,12 @@ final class LocalStorageController {
         )
     }
 
-
     func loadCognitiveSnapshot() -> CognitiveSnapshot? {
         database.load(
             from: database.cognitionStoreURL(),
             as: CognitiveSnapshot.self
         )
     }
-
 
     // ========================================================
     // Reset Runtime
@@ -160,7 +148,6 @@ final class LocalStorageController {
             to: database.conversationStoreURL()
         )
     }
-
 
     // ========================================================
     // Runtime Health

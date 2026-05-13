@@ -9,7 +9,6 @@ import time
 import weakref
 import threading
 
-
 import greenlet
 from . import TestCase
 from . import PY314
@@ -18,7 +17,6 @@ from . import WIN
 from .leakcheck import fails_leakcheck
 from .leakcheck import ignores_leakcheck
 from .leakcheck import RUNNING_ON_MANYLINUX
-
 
 # pylint:disable=protected-access
 
@@ -39,14 +37,12 @@ class HasFinalizerTracksInstances(object):
     def reset(cls):
         cls.EXTANT_INSTANCES.clear()
 
-
 def fails_leakcheck_except_on_free_thraded(func):
     if RUNNING_ON_FREETHREAD_BUILD:
         # These all seem to pass on free threading because
         # of the changes to the garbage collector
         return func
     return fails_leakcheck(func)
-
 
 class TestLeaks(TestCase):
 
@@ -71,7 +67,6 @@ class TestLeaks(TestCase):
         # Python 3.14 elides reference counting operations
         # in some cases. See https://github.com/python/cpython/pull/130708
         self.assertEqual(sys.getrefcount(kwargs), 2 if not PY314 else 1)
-
 
     @staticmethod
     def __recycle_threads():
@@ -201,7 +196,6 @@ class TestLeaks(TestCase):
             # need to run some APIs. See issue 252.
             if manually_collect_background:
                 greenlet.getcurrent()
-
 
         t = threading.Thread(target=background_thread)
         t.start()

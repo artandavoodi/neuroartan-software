@@ -116,7 +116,6 @@ SOVEREIGN_TARGETS = {
     "Experimental": "Runtime/experimental"
 }
 
-
 class RuntimeSemanticClassifier:
     def __init__(self):
         self.executed_at = datetime.now().isoformat(timespec="seconds")
@@ -229,9 +228,7 @@ class RuntimeSemanticClassifier:
 
         return recommendations
 
-
 CLASSIFIER = RuntimeSemanticClassifier()
-
 
 if __name__ == "__main__":
     result = CLASSIFIER.execute()

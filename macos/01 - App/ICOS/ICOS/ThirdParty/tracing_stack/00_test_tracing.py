@@ -41,7 +41,6 @@ class GreenletTracer(object):
     def __exit__(self, *args):
         greenlet.settrace(self.oldtrace)
 
-
 class TestGreenletTracing(TestCase):
     """
     Tests of ``greenlet.settrace()``
@@ -89,7 +88,6 @@ class TestGreenletTracing(TestCase):
         tracer = GreenletTracer()
         with tracer:
             greenlet.settrace(tracer)
-
 
 class PythonTracer(object):
     oldtrace = None
@@ -185,7 +183,6 @@ class TestPythonTracing(TestCase):
             ('call', '__exit__'),
             ('c_call', '__exit__'),
         ])
-
 
     def test_trace_events_from_greenlet_func_sets_profiler(self):
         tracer = PythonTracer()
@@ -292,7 +289,6 @@ class TestPythonTracing(TestCase):
             ('call', '__exit__'),
             ('c_call', '__exit__'),
         ])
-
 
 if __name__ == '__main__':
     unittest.main()

@@ -29,7 +29,6 @@ SAFE_MOVE_PATH = (
     / "09_runtime_safe_move_candidates.json"
 )
 
-
 class RuntimeDependencyGraph:
     def __init__(self):
         self.executed_at = datetime.now().isoformat(timespec="seconds")
@@ -177,9 +176,7 @@ class RuntimeDependencyGraph:
 
         return report
 
-
 GRAPH = RuntimeDependencyGraph()
-
 
 if __name__ == "__main__":
     result = GRAPH.execute()

@@ -23,12 +23,10 @@ logger = logging.getLogger(__name__)
 
 ORIGIN_JSON_NAME = "origin.json"
 
-
 def _hash_dict(d: dict[str, str]) -> str:
     """Return a stable sha224 of a dictionary."""
     s = json.dumps(d, sort_keys=True, separators=(",", ":"), ensure_ascii=True)
     return hashlib.sha224(s.encode("ascii")).hexdigest()
-
 
 class Cache:
     """An abstract class - provides cache directories for data from links
@@ -99,7 +97,6 @@ class Cache:
         """
         raise NotImplementedError()
 
-
 class SimpleWheelCache(Cache):
     """A cache of wheels for future installs."""
 
@@ -169,7 +166,6 @@ class SimpleWheelCache(Cache):
         _, wheel_name, wheel_dir = min(candidates)
         return Link(path_to_url(os.path.join(wheel_dir, wheel_name)))
 
-
 class EphemWheelCache(SimpleWheelCache):
     """A SimpleWheelCache that creates it's own temporary cache directory"""
 
@@ -180,7 +176,6 @@ class EphemWheelCache(SimpleWheelCache):
         )
 
         super().__init__(self._temp_dir.path)
-
 
 class CacheEntry:
     def __init__(
@@ -204,7 +199,6 @@ class CacheEntry:
                     link.filename,
                     e,
                 )
-
 
 class WheelCache(Cache):
     """Wraps EphemWheelCache and SimpleWheelCache into a single Cache

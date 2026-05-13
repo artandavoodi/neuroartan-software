@@ -24,12 +24,10 @@ from dataclasses import dataclass, field
 from enum import Enum
 from typing import Any, Dict, List, Optional
 
-
 class ProviderType(str, Enum):
     LOCAL = "local"
     CLOUD = "cloud"
     HYBRID = "hybrid"
-
 
 @dataclass
 class ProviderCapability:
@@ -39,7 +37,6 @@ class ProviderCapability:
     supports_voice: bool = False
     supports_local_models: bool = False
     max_context_window: Optional[int] = None
-
 
 @dataclass
 class Provider:
@@ -53,7 +50,6 @@ class Provider:
     capability: ProviderCapability = field(
         default_factory=ProviderCapability
     )
-
 
 class SovereignProviderRegistry:
     """
@@ -167,7 +163,6 @@ class SovereignProviderRegistry:
             ],
             "default_provider": self.default_provider,
         }
-
 
 if __name__ == "__main__":
     registry = SovereignProviderRegistry()

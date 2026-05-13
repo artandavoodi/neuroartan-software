@@ -48,14 +48,12 @@ VALID_LOAD_ONLY = kinds.USER, kinds.GLOBAL, kinds.SITE
 
 logger = getLogger(__name__)
 
-
 # NOTE: Maybe use the optionx attribute to normalize keynames.
 def _normalize_name(name: str) -> str:
     """Make a name consistent regardless of source (environment or file)"""
     name = name.lower().replace("_", "-")
     name = name.removeprefix("--")  # only prefer long opts
     return name
-
 
 def _disassemble_key(name: str) -> list[str]:
     if "." not in name:
@@ -65,7 +63,6 @@ def _disassemble_key(name: str) -> list[str]:
         )
         raise ConfigurationError(error_message)
     return name.split(".", 1)
-
 
 def get_configuration_files() -> dict[Kind, list[str]]:
     global_config_files = [
@@ -84,7 +81,6 @@ def get_configuration_files() -> dict[Kind, list[str]]:
         kinds.SITE: [site_config_file],
         kinds.USER: [legacy_config_file, new_config_file],
     }
-
 
 class Configuration:
     """Handles management of configuration.

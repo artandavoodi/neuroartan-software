@@ -28,7 +28,6 @@ from playwright.sync_api._generated import Playwright as SyncPlaywright
 if TYPE_CHECKING:
     from asyncio.unix_events import AbstractChildWatcher
 
-
 class PlaywrightContextManager:
     def __init__(self) -> None:
         self._playwright: SyncPlaywright

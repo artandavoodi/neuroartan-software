@@ -44,7 +44,7 @@ command:
 
 PS C:\> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
-For more information on Execution Policies: 
+For more information on Execution Policies:
 https://go.microsoft.com/fwlink/?LinkID=135170
 
 #>
@@ -162,7 +162,6 @@ function Get-PyVenvConfig(
     }
     return $pyvenvConfig
 }
-
 
 <# Begin Activate script --------------------------------------------------- #>
 

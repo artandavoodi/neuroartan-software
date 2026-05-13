@@ -20,9 +20,7 @@ from .util import cached_property, get_cache_base, Cache
 
 logger = logging.getLogger(__name__)
 
-
 cache = None    # created when needed
-
 
 class ResourceCache(Cache):
     def __init__(self, base=None):
@@ -67,12 +65,10 @@ class ResourceCache(Cache):
                     f.write(resource.bytes)
         return result
 
-
 class ResourceBase(object):
     def __init__(self, finder, name):
         self.finder = finder
         self.name = name
-
 
 class Resource(ResourceBase):
     """
@@ -106,14 +102,12 @@ class Resource(ResourceBase):
     def size(self):
         return self.finder.get_size(self)
 
-
 class ResourceContainer(ResourceBase):
     is_container = True     # Backwards compatibility
 
     @cached_property
     def resources(self):
         return self.finder.get_resources(self)
-
 
 class ResourceFinder(object):
     """
@@ -204,7 +198,6 @@ class ResourceFinder(object):
                         else:
                             yield child
 
-
 class ZipResourceFinder(ResourceFinder):
     """
     Resource finder for resources in .zip files.
@@ -282,7 +275,6 @@ class ZipResourceFinder(ResourceFinder):
             result = False
         return result
 
-
 _finder_registry = {
     type(None): ResourceFinder,
     zipimport.zipimporter: ZipResourceFinder
@@ -302,13 +294,10 @@ try:
 except (ImportError, AttributeError):
     pass
 
-
 def register_finder(loader, finder_maker):
     _finder_registry[type(loader)] = finder_maker
 
-
 _finder_cache = {}
-
 
 def finder(package):
     """
@@ -334,9 +323,7 @@ def finder(package):
         _finder_cache[package] = result
     return result
 
-
 _dummy_module = types.ModuleType(str('__dummy__'))
-
 
 def finder_for_path(path):
     """

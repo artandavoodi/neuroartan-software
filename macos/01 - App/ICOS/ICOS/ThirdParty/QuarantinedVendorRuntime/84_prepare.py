@@ -61,7 +61,6 @@ if TYPE_CHECKING:
 
 logger = getLogger(__name__)
 
-
 def _get_prepared_distribution(
     req: InstallRequirement,
     build_tracker: BuildTracker,
@@ -79,12 +78,10 @@ def _get_prepared_distribution(
             )
     return abstract_dist.get_metadata_distribution()
 
-
 def unpack_vcs_link(link: Link, location: str, verbosity: int) -> None:
     vcs_backend = vcs.get_backend_for_scheme(link.scheme)
     assert vcs_backend is not None
     vcs_backend.unpack(location, url=hide_url(link.url), verbosity=verbosity)
-
 
 @dataclass
 class File:
@@ -99,7 +96,6 @@ class File:
                 self.content_type = mimetypes.guess_type(self.path)[0]
             except OSError:
                 pass
-
 
 def get_http_url(
     link: Link,
@@ -124,7 +120,6 @@ def get_http_url(
 
     return File(from_path, content_type)
 
-
 def get_file_url(
     link: Link, download_dir: str | None = None, hashes: Hashes | None = None
 ) -> File:
@@ -147,7 +142,6 @@ def get_file_url(
     if hashes:
         hashes.check_against_path(from_path)
     return File(from_path, None)
-
 
 def unpack_url(
     link: Link,
@@ -191,7 +185,6 @@ def unpack_url(
 
     return file
 
-
 def _check_download_dir(
     link: Link,
     download_dir: str,
@@ -220,7 +213,6 @@ def _check_download_dir(
             os.unlink(download_path)
             return None
     return download_path
-
 
 class RequirementPreparer:
     """Prepares a Requirement"""

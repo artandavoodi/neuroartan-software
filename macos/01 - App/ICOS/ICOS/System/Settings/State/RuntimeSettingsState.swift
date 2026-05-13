@@ -6,11 +6,11 @@ import Combine
 
 final class RuntimeSettingsState: ObservableObject {
     static let shared = RuntimeSettingsState()
-    
+
     // MARK: - Published State
-    
+
     @Published var mode: RuntimeMode = .local
-    
+
     @Published var cloudAPIKey: String = ""
     @Published var cloudEndpoint: String = ""
     @Published var selectedModelID: String = ""
@@ -25,9 +25,9 @@ final class RuntimeSettingsState: ObservableObject {
     @Published private(set) var activeProviderTitle: String = "Not mounted"
     @Published private(set) var activeModelTitle: String = "No active model"
     @Published private(set) var activeEndpointTitle: String = "No active endpoint"
-    
+
     // MARK: - Persistence Keys
-    
+
     private enum Keys {
         static let mode = "ICOS.RuntimeSettings.Mode"
         static let apiKey = "ICOS.CloudFrontierProvider.APIKey"
@@ -40,21 +40,21 @@ final class RuntimeSettingsState: ObservableObject {
 
     private let defaultChatCompletionsEndpoint = URL(string: "https://api.openai.com/v1/chat/completions")!
     private let modelRegistry = ModelRegistry()
-    
+
     // MARK: - Init
-    
+
     private init() {
         load()
     }
-    
+
     // MARK: - Load / Save
-    
+
     func load() {
         if let raw = UserDefaults.standard.string(forKey: Keys.mode),
            let m = RuntimeMode(rawValue: raw) {
             mode = m
         }
-        
+
         cloudAPIKey = (try? SecureCredentialStore.load(account: Keys.apiKeyCredentialAccount)) ?? nil
             ?? UserDefaults.standard.string(forKey: Keys.apiKey)
             ?? ""
@@ -70,7 +70,7 @@ final class RuntimeSettingsState: ObservableObject {
         refreshLocalModels()
         synchronizeActiveRuntimeSummary()
     }
-    
+
     func save() {
         UserDefaults.standard.set(mode.rawValue, forKey: Keys.mode)
         UserDefaults.standard.set(cloudEndpoint, forKey: Keys.endpoint)
@@ -89,13 +89,13 @@ final class RuntimeSettingsState: ObservableObject {
         }
         synchronizeActiveRuntimeSummary()
     }
-    
+
     // MARK: - Helpers
-    
+
     var isCloudEnabled: Bool {
         externalProviderEnabled && (mode == .cloud || mode == .auto)
     }
-    
+
     var isLocalForced: Bool {
         localProviderEnabled && mode == .local
     }

@@ -30,11 +30,9 @@ from pip._internal.utils.urls import path_to_url, url_to_path
 
 logger = logging.getLogger(__name__)
 
-
 # Order matters, earlier hashes have a precedence over later hashes for what
 # we will pick to use.
 _SUPPORTED_HASHES = ("sha512", "sha384", "sha256", "sha224", "sha1", "md5")
-
 
 @dataclass(frozen=True)
 class LinkHash:
@@ -89,7 +87,6 @@ class LinkHash:
             return False
         return hashes.is_hash_allowed(self.name, hex_digest=self.value)
 
-
 @dataclass(frozen=True)
 class MetadataFile:
     """Information about a core metadata file associated with a distribution."""
@@ -99,7 +96,6 @@ class MetadataFile:
     def __post_init__(self) -> None:
         if self.hashes is not None:
             assert all(name in _SUPPORTED_HASHES for name in self.hashes)
-
 
 def supported_hashes(hashes: dict[str, str] | None) -> dict[str, str] | None:
     # Remove any unsupported hash types from the mapping. If this leaves no
@@ -111,14 +107,12 @@ def supported_hashes(hashes: dict[str, str] | None) -> dict[str, str] | None:
         return None
     return hashes
 
-
 def _clean_url_path_part(part: str) -> str:
     """
     Clean a "part" of a URL path (i.e. after splitting on "@" characters).
     """
     # We unquote prior to quoting to make sure nothing is double quoted.
     return urllib.parse.quote(urllib.parse.unquote(part))
-
 
 def _clean_file_url_path(part: str) -> str:
     """
@@ -136,10 +130,8 @@ def _clean_file_url_path(part: str) -> str:
         ret = ret.removeprefix("//")
     return ret
 
-
 # percent-encoded:                   /
 _reserved_chars_re = re.compile("(@|%2F)", re.IGNORECASE)
-
 
 def _clean_url_path(path: str, is_local_path: bool) -> str:
     """
@@ -162,7 +154,6 @@ def _clean_url_path(path: str, is_local_path: bool) -> str:
 
     return "".join(cleaned_parts)
 
-
 def _ensure_quoted_url(url: str) -> str:
     """
     Make sure a link is fully quoted.
@@ -181,7 +172,6 @@ def _ensure_quoted_url(url: str) -> str:
     ret = result.scheme + ret[4:]  # Restore original scheme.
     return ret
 
-
 def _absolute_link_url(base_url: str, url: str) -> str:
     """
     A faster implementation of urllib.parse.urljoin with a shortcut
@@ -191,7 +181,6 @@ def _absolute_link_url(base_url: str, url: str) -> str:
         return url
     else:
         return urllib.parse.urljoin(base_url, url)
-
 
 @functools.total_ordering
 class Link:
@@ -553,7 +542,6 @@ class Link:
             return False
         return any(hashes.is_hash_allowed(k, v) for k, v in self._hashes.items())
 
-
 class _CleanResult(NamedTuple):
     """Convert link for equivalency check.
 
@@ -585,7 +573,6 @@ class _CleanResult(NamedTuple):
     subdirectory: str
     hashes: dict[str, str]
 
-
 def _clean_link(link: Link) -> _CleanResult:
     parsed = link._parsed_url
     netloc = parsed.netloc.rsplit("@", 1)[-1]
@@ -610,7 +597,6 @@ def _clean_link(link: Link) -> _CleanResult:
         subdirectory=subdirectory,
         hashes=hashes,
     )
-
 
 @functools.cache
 def links_equivalent(link1: Link, link2: Link) -> bool:

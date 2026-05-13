@@ -12,7 +12,6 @@ from .api import PlatformDirsABC
 if TYPE_CHECKING:
     from collections.abc import Callable
 
-
 class Windows(PlatformDirsABC):
     """
     `MSDN on where to store app data files <https://learn.microsoft.com/en-us/windows/win32/shell/knownfolderid>`_.
@@ -139,7 +138,6 @@ class Windows(PlatformDirsABC):
         """:return: runtime directory shared by users, same as `user_runtime_dir`"""
         return self.user_runtime_dir
 
-
 def get_win_folder_from_env_vars(csidl_name: str) -> str:
     """Get folder from environment variables."""
     result = get_win_folder_if_csidl_name_not_env_var(csidl_name)
@@ -160,7 +158,6 @@ def get_win_folder_from_env_vars(csidl_name: str) -> str:
         raise ValueError(msg)
     return result
 
-
 def get_win_folder_if_csidl_name_not_env_var(csidl_name: str) -> str | None:
     """Get a folder for a CSIDL name that does not exist as an environment variable."""
     if csidl_name == "CSIDL_PERSONAL":
@@ -178,7 +175,6 @@ def get_win_folder_if_csidl_name_not_env_var(csidl_name: str) -> str | None:
     if csidl_name == "CSIDL_MYMUSIC":
         return os.path.join(os.path.normpath(os.environ["USERPROFILE"]), "Music")  # noqa: PTH118
     return None
-
 
 def get_win_folder_from_registry(csidl_name: str) -> str:
     """
@@ -214,7 +210,6 @@ def get_win_folder_from_registry(csidl_name: str) -> str:
     key = winreg.OpenKey(hkey, r"Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders")
     directory, _ = winreg.QueryValueEx(key, shell_folder_name)
     return str(directory)
-
 
 def get_win_folder_via_ctypes(csidl_name: str) -> str:
     """Get folder with ctypes."""
@@ -254,7 +249,6 @@ def get_win_folder_via_ctypes(csidl_name: str) -> str:
 
     return buf.value
 
-
 def _pick_get_win_folder() -> Callable[[str], str]:
     try:
         import ctypes  # noqa: PLC0415
@@ -269,7 +263,6 @@ def _pick_get_win_folder() -> Callable[[str], str]:
         return get_win_folder_from_env_vars
     else:
         return get_win_folder_from_registry
-
 
 get_win_folder = lru_cache(maxsize=None)(_pick_get_win_folder())
 

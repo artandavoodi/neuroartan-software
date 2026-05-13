@@ -61,7 +61,6 @@ struct ICOSBootAnimationView: View {
         }
     }
 
-
     private var taglineView: some View {
         HStack(spacing: 0) {
             ForEach(Array(tagline.enumerated()), id: \.offset) { index, character in
@@ -251,7 +250,6 @@ struct ICOSBootAnimationView: View {
     private func launchSoundURL() -> URL? {
         ICOSSoundTokens.launchSoundURL
     }
-
 
     private func finishOnce() {
         guard !didFinish else { return }

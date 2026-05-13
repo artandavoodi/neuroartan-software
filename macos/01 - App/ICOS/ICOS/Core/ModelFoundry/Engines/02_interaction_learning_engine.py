@@ -8,7 +8,6 @@ import json
 import time
 import uuid
 
-
 # ============================================================
 # Sovereign Root
 # ============================================================
@@ -45,7 +44,6 @@ DATASET_MANIFEST = (
 EMOTIONAL_SIGNAL_STORE = (
     EMOTION_ROOT / "emotional_signal_store.json"
 )
-
 
 # ============================================================
 # Interaction Learning Engine
@@ -95,7 +93,6 @@ class InteractionLearningEngine:
             fallback=[]
         )
 
-
     # ========================================================
     # JSON Loading
     # ========================================================
@@ -119,7 +116,6 @@ class InteractionLearningEngine:
 
         except Exception:
             return fallback
-
 
     # ========================================================
     # Concept Extraction
@@ -158,7 +154,6 @@ class InteractionLearningEngine:
                 concepts.append(item)
 
         return list(set(concepts))
-
 
     # ========================================================
     # Semantic Encoding
@@ -201,7 +196,6 @@ class InteractionLearningEngine:
 
         return memory
 
-
     # ========================================================
     # Relationship Construction
     # ========================================================
@@ -240,7 +234,6 @@ class InteractionLearningEngine:
 
         return relationships
 
-
     # ========================================================
     # Emotional Binding
     # ========================================================
@@ -263,7 +256,6 @@ class InteractionLearningEngine:
         }
 
         return binding
-
 
     # ========================================================
     # Learning Cycle
@@ -320,7 +312,6 @@ class InteractionLearningEngine:
             "emotion_binding": emotion,
             "learning_event": learning_event,
         }
-
 
 # ============================================================
 # Runtime Entry

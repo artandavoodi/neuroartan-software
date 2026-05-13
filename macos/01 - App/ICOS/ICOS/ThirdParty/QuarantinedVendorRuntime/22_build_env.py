@@ -44,13 +44,10 @@ if TYPE_CHECKING:
     class ExtraEnviron(TypedDict, total=False):
         extra_environ: dict[str, str]
 
-
 logger = logging.getLogger(__name__)
-
 
 def _dedup(a: str, b: str) -> tuple[str] | tuple[str, str]:
     return (a, b) if a != b else (a,)
-
 
 class _Prefix:
     def __init__(self, path: str) -> None:
@@ -59,7 +56,6 @@ class _Prefix:
         scheme = get_scheme("", prefix=path)
         self.bin_dir = scheme.scripts
         self.lib_dirs = _dedup(scheme.purelib, scheme.platlib)
-
 
 def get_runnable_pip() -> str:
     """Get a file to pass to a Python executable, to run the currently-running pip.
@@ -75,7 +71,6 @@ def get_runnable_pip() -> str:
         return str(source)
 
     return os.fsdecode(source / "__pip-runner__.py")
-
 
 def _get_system_sitepackages() -> set[str]:
     """Get system site packages
@@ -96,7 +91,6 @@ def _get_system_sitepackages() -> set[str]:
         system_sites = [get_purelib(), get_platlib()]
     return {os.path.normcase(path) for path in system_sites}
 
-
 class BuildEnvironmentInstaller(Protocol):
     """
     Interface for installing build dependencies into an isolated build
@@ -111,7 +105,6 @@ class BuildEnvironmentInstaller(Protocol):
         kind: str,
         for_req: InstallRequirement | None,
     ) -> None: ...
-
 
 class SubprocessBuildEnvironmentInstaller:
     """
@@ -261,7 +254,6 @@ class SubprocessBuildEnvironmentInstaller:
                 spinner=spinner,
                 **extra_environ,
             )
-
 
 class InprocessBuildEnvironmentInstaller:
     """
@@ -433,7 +425,6 @@ class InprocessBuildEnvironmentInstaller:
             py_version_info=None,
         )
 
-
 class BuildEnvironment:
     """Creates and manages an isolated environment to install build deps"""
 
@@ -573,7 +564,6 @@ class BuildEnvironment:
         if not requirements:
             return
         self.installer.install(requirements, prefix, kind=kind, for_req=for_req)
-
 
 class NoOpBuildEnvironment(BuildEnvironment):
     """A no-op drop-in replacement for BuildEnvironment"""

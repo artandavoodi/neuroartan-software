@@ -23,7 +23,6 @@ from functools import lru_cache
 
 from . import Image
 
-
 @lru_cache
 def getrgb(color: str) -> tuple[int, int, int] | tuple[int, int, int, int]:
     """
@@ -124,7 +123,6 @@ def getrgb(color: str) -> tuple[int, int, int] | tuple[int, int, int, int]:
     msg = f"unknown color specifier: {repr(color)}"
     raise ValueError(msg)
 
-
 @lru_cache
 def getcolor(color: str, mode: str) -> int | tuple[int, ...]:
     """
@@ -163,7 +161,6 @@ def getcolor(color: str, mode: str) -> int | tuple[int, ...]:
     elif mode[-1] == "A":
         return rgb + (alpha,)
     return rgb
-
 
 colormap: dict[str, str | tuple[int, int, int]] = {
     # X11 colour table from https://drafts.csswg.org/css-color-4/, with

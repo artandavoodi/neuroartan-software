@@ -10,7 +10,6 @@ from .styled import Styled
 
 GuideType = Tuple[str, str, str, str]
 
-
 class Tree(JupyterMixin):
     """A renderable for a tree structure.
 
@@ -199,7 +198,6 @@ class Tree(JupyterMixin):
                 push(iter(tree.children))
                 level += 1
         return Measurement(minimum, maximum)
-
 
 if __name__ == "__main__":  # pragma: no cover
     from pip._vendor.rich.console import Group

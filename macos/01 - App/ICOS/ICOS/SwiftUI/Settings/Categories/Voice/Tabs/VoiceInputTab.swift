@@ -1,9 +1,20 @@
 import SwiftUI
 
-// MARK: - Voice Input Tab
+// MARK: - Input Tab
 
 struct VoiceInputTab: View {
     var body: some View {
-        EmptyView()
+        SettingsSectionCard(
+            title: "Input",
+            subtitle: "Voice input and capture controls."
+        ) {
+            VStack(alignment: .leading, spacing: ICOSSpacing.sm) {
+                Text("Input")
+                    .font(ICOSSidebarTokens.itemTitleFont)
+                    .foregroundStyle(ICOSSidebarColors.textPrimary)
+                    .font(.system(size: ICOSControlTokens.profileMetaFontSize, weight: .medium))
+                    .foregroundStyle(ICOSSidebarColors.textSecondary)
+            }
+        }
     }
 }

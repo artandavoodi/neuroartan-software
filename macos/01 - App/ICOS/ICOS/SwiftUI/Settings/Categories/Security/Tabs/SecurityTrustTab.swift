@@ -1,9 +1,20 @@
 import SwiftUI
 
-// MARK: - Security Trust Tab
+// MARK: - Trust Tab
 
 struct SecurityTrustTab: View {
     var body: some View {
-        EmptyView()
+        SettingsSectionCard(
+            title: "Trust",
+            subtitle: "Trust and verification state."
+        ) {
+            VStack(alignment: .leading, spacing: ICOSSpacing.sm) {
+                Text("Trust")
+                    .font(ICOSSidebarTokens.itemTitleFont)
+                    .foregroundStyle(ICOSSidebarColors.textPrimary)
+                    .font(.system(size: ICOSControlTokens.profileMetaFontSize, weight: .medium))
+                    .foregroundStyle(ICOSSidebarColors.textSecondary)
+            }
+        }
     }
 }

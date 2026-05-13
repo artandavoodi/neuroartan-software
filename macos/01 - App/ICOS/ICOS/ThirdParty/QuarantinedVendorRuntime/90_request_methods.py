@@ -16,7 +16,6 @@ _TYPE_ENCODE_URL_FIELDS = typing.Union[
     typing.Mapping[str, typing.Union[str, bytes]],
 ]
 
-
 class RequestMethods:
     """
     Convenience mixin for classes who implement a :meth:`urlopen` method, such

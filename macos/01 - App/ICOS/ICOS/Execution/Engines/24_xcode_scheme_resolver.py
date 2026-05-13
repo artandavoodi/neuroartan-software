@@ -11,7 +11,6 @@ SUPPORTED_PROJECT_TYPES = [
     ".xcworkspace"
 ]
 
-
 class XcodeSchemeResolver:
     def __init__(self):
         self.resolved_at = datetime.now().isoformat(timespec="seconds")
@@ -169,9 +168,7 @@ class XcodeSchemeResolver:
             ]
         }
 
-
 RESOLVER = XcodeSchemeResolver()
-
 
 if __name__ == "__main__":
     result = RESOLVER.resolve(

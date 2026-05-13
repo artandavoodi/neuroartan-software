@@ -25,7 +25,6 @@ from dataclasses import dataclass, field
 from datetime import datetime
 from typing import Any, Dict, List, Optional
 
-
 @dataclass
 class IdentityMemoryNode:
     node_id: str
@@ -35,7 +34,6 @@ class IdentityMemoryNode:
     metadata: Dict[str, Any] = field(default_factory=dict)
     relationships: List[str] = field(default_factory=list)
 
-
 @dataclass
 class BehavioralPattern:
     pattern_id: str
@@ -43,7 +41,6 @@ class BehavioralPattern:
     occurrences: int = 0
     confidence: float = 0.0
     metadata: Dict[str, Any] = field(default_factory=dict)
-
 
 class PersistentIdentityGraphEngine:
     """
@@ -169,7 +166,6 @@ class PersistentIdentityGraphEngine:
                 for pattern in self.behavioral_patterns.values()
             ],
         }
-
 
 if __name__ == "__main__":
     engine = PersistentIdentityGraphEngine()

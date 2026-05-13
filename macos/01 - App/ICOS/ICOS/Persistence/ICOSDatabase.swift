@@ -12,7 +12,6 @@ final class ICOSDatabase {
 
     static let shared = ICOSDatabase()
 
-
     // ========================================================
     // Storage Root
     // ========================================================
@@ -34,7 +33,6 @@ final class ICOSDatabase {
 
         return root
     }()
-
 
     // ========================================================
     // Stores
@@ -70,7 +68,6 @@ final class ICOSDatabase {
         return url
     }()
 
-
     // ========================================================
     // Init
     // ========================================================
@@ -78,7 +75,6 @@ final class ICOSDatabase {
     private init() {
         bootstrap()
     }
-
 
     // ========================================================
     // Bootstrap
@@ -89,7 +85,6 @@ final class ICOSDatabase {
         _ = cognitionStore
         _ = runtimeStore
     }
-
 
     // ========================================================
     // Directory Creation
@@ -105,7 +100,6 @@ final class ICOSDatabase {
             withIntermediateDirectories: true
         )
     }
-
 
     // ========================================================
     // File Creation
@@ -123,7 +117,6 @@ final class ICOSDatabase {
             contents: emptyObject
         )
     }
-
 
     // ========================================================
     // Generic Save
@@ -144,7 +137,6 @@ final class ICOSDatabase {
         }
     }
 
-
     // ========================================================
     // Generic Load
     // ========================================================
@@ -161,7 +153,6 @@ final class ICOSDatabase {
             return nil
         }
     }
-
 
     // ========================================================
     // Runtime Access

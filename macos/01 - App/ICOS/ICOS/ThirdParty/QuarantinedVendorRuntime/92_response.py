@@ -44,7 +44,6 @@ if typing.TYPE_CHECKING:
 
 log = logging.getLogger(__name__)
 
-
 class ContentDecoder:
     def decompress(self, data: bytes, max_length: int = -1) -> bytes:
         raise NotImplementedError()
@@ -55,7 +54,6 @@ class ContentDecoder:
 
     def flush(self) -> bytes:
         raise NotImplementedError()
-
 
 class DeflateDecoder(ContentDecoder):
     def __init__(self) -> None:
@@ -115,12 +113,10 @@ class DeflateDecoder(ContentDecoder):
     def flush(self) -> bytes:
         return self._obj.flush()
 
-
 class GzipDecoderState:
     FIRST_MEMBER = 0
     OTHER_MEMBERS = 1
     SWALLOW_DATA = 2
-
 
 class GzipDecoder(ContentDecoder):
     def __init__(self) -> None:
@@ -185,7 +181,6 @@ class GzipDecoder(ContentDecoder):
     def flush(self) -> bytes:
         return self._obj.flush()
 
-
 if brotli is not None:
 
     class BrotliDecoder(ContentDecoder):
@@ -229,7 +224,6 @@ if brotli is not None:
             if hasattr(self._obj, "flush"):
                 return self._obj.flush()  # type: ignore[no-any-return]
             return b""
-
 
 try:
     if sys.version_info >= (3, 14):
@@ -290,7 +284,6 @@ else:
                 raise DecodeError("Zstandard data is incomplete")
             return b""
 
-
 class MultiDecoder(ContentDecoder):
     """
     From RFC7231:
@@ -346,7 +339,6 @@ class MultiDecoder(ContentDecoder):
     def has_unconsumed_tail(self) -> bool:
         return any(d.has_unconsumed_tail for d in self._decoders)
 
-
 def _get_decoder(mode: str) -> ContentDecoder:
     if "," in mode:
         return MultiDecoder(mode)
@@ -363,7 +355,6 @@ def _get_decoder(mode: str) -> ContentDecoder:
         return ZstdDecoder()
 
     return DeflateDecoder()
-
 
 class BytesQueueBuffer:
     """Memory-efficient bytes buffer
@@ -440,7 +431,6 @@ class BytesQueueBuffer:
             result = ret.getvalue()
         self._size = 0
         return result
-
 
 class BaseHTTPResponse(io.IOBase):
     CONTENT_DECODERS = ["gzip", "x-gzip", "deflate"]
@@ -678,7 +668,6 @@ class BaseHTTPResponse(io.IOBase):
 
     def geturl(self) -> str | None:
         return self.url
-
 
 class HTTPResponse(BaseHTTPResponse):
     """

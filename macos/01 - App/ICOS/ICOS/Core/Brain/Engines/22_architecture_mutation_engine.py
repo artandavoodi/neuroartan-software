@@ -8,7 +8,6 @@ import json
 import time
 import uuid
 
-
 # ============================================================
 # Sovereign Root
 # ============================================================
@@ -41,7 +40,6 @@ MUTATION_LOG = (
 SAFETY_POLICY = (
     POLICY_ROOT / "self_modification_policy.json"
 )
-
 
 # ============================================================
 # Architecture Mutation Engine
@@ -94,7 +92,6 @@ class ArchitectureMutationEngine:
             }
         )
 
-
     # ========================================================
     # JSON Loading
     # ========================================================
@@ -112,7 +109,6 @@ class ArchitectureMutationEngine:
             return json.loads(path.read_text())
         except Exception:
             return fallback
-
 
     # ========================================================
     # Mutation Proposal
@@ -171,7 +167,6 @@ class ArchitectureMutationEngine:
 
         return mutation
 
-
     # ========================================================
     # Mutation Validation
     # ========================================================
@@ -218,7 +213,6 @@ class ArchitectureMutationEngine:
 
         return validation
 
-
     # ========================================================
     # Runtime Status
     # ========================================================
@@ -247,7 +241,6 @@ class ArchitectureMutationEngine:
                 self.mutation_log
             ),
         }
-
 
 # ============================================================
 # Runtime Entry

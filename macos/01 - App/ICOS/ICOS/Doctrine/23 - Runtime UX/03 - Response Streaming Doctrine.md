@@ -64,7 +64,6 @@ related:
   - "macos/01 - App/ICOS/ICOS/Doctrine/17 - Execution Intelligence/01 - Execution Loop Doctrine.md"
   - "macos/01 - App/ICOS/ICOS/Doctrine/20 - Context Budget System/01 - Context Budget Doctrine.md"
 
-
 tags:
   - "icos"
   - "streaming"
@@ -191,11 +190,11 @@ This doctrine must be included in every prompt before inference.
 
 ## Document Control & Validation
 
-GSA PROTOCOL STATUS: Approved  
-GSA APPROVAL: true  
-DOCUMENT STATUS: Active — Response Streaming Doctrine  
-VISIBILITY: Internal  
-PUBLISH TO WEBSITE: No  
+GSA PROTOCOL STATUS: Approved
+GSA APPROVAL: true
+DOCUMENT STATUS: Active — Response Streaming Doctrine
+VISIBILITY: Internal
+PUBLISH TO WEBSITE: No
 VERSION: 1.0
 
 ---

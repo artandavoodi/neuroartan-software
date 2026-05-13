@@ -51,7 +51,6 @@ WINDOWS = sys.platform == "win32"
 LOCALS_MAX_LENGTH = 10
 LOCALS_MAX_STRING = 80
 
-
 def _iter_syntax_lines(
     start: SyntaxPosition, end: SyntaxPosition
 ) -> Iterable[Tuple[int, int, int]]:
@@ -79,7 +78,6 @@ def _iter_syntax_lines(
             else:
                 yield line_no, 0, -1
 
-
 def install(
     *,
     console: Optional[Console] = None,
@@ -100,7 +98,6 @@ def install(
     """Install a rich traceback handler.
 
     Once installed, any tracebacks will be printed with syntax highlighting and rich formatting.
-
 
     Args:
         console (Optional[Console], optional): Console to write exception to. Default uses internal Console instance.
@@ -210,7 +207,6 @@ def install(
         sys.excepthook = excepthook
         return old_excepthook
 
-
 @dataclass
 class Frame:
     filename: str
@@ -220,7 +216,6 @@ class Frame:
     locals: Optional[Dict[str, pretty.Node]] = None
     last_instruction: Optional[Tuple[Tuple[int, int], Tuple[int, int]]] = None
 
-
 @dataclass
 class _SyntaxError:
     offset: int
@@ -229,7 +224,6 @@ class _SyntaxError:
     lineno: int
     msg: str
     notes: List[str] = field(default_factory=list)
-
 
 @dataclass
 class Stack:
@@ -242,15 +236,12 @@ class Stack:
     is_group: bool = False
     exceptions: List["Trace"] = field(default_factory=list)
 
-
 @dataclass
 class Trace:
     stacks: List[Stack]
 
-
 class PathHighlighter(RegexHighlighter):
     highlights = [r"(?P<dim>.*/)(?P<bold>.+)"]
-
 
 class Traceback:
     """A Console renderable that renders a traceback.
@@ -868,7 +859,6 @@ class Traceback:
                         if frame.locals
                         else syntax
                     )
-
 
 if __name__ == "__main__":  # pragma: no cover
     install(show_locals=True)

@@ -7,7 +7,6 @@ from typing import Any
 import json
 import time
 
-
 # ============================================================
 # Sovereign Root
 # ============================================================
@@ -36,7 +35,6 @@ THOUGHT_LOG = (
 LEARNING_LOG = (
     LEARNING_ROOT / "model_learning_log.json"
 )
-
 
 # ============================================================
 # Active Thought Engine
@@ -76,7 +74,6 @@ class ActiveThoughtEngine:
             fallback=[]
         )
 
-
     # ========================================================
     # JSON Loading
     # ========================================================
@@ -94,7 +91,6 @@ class ActiveThoughtEngine:
             return json.loads(path.read_text())
         except Exception:
             return fallback
-
 
     # ========================================================
     # Thought Expansion
@@ -117,7 +113,6 @@ class ActiveThoughtEngine:
 
         return thoughts
 
-
     # ========================================================
     # Future Simulation
     # ========================================================
@@ -137,7 +132,6 @@ class ActiveThoughtEngine:
             "simulation_timestamp": time.time(),
         }
 
-
     # ========================================================
     # Contradiction Revision
     # ========================================================
@@ -154,7 +148,6 @@ class ActiveThoughtEngine:
                 revised.append(thought)
 
         return revised
-
 
     # ========================================================
     # Active Cognition
@@ -206,7 +199,6 @@ class ActiveThoughtEngine:
         )
 
         return cognition
-
 
 # ============================================================
 # Runtime Entry

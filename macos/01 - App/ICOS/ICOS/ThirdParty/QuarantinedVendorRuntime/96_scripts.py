@@ -67,7 +67,6 @@ if os.name == 'nt' or (os.name == 'java' and os._name == 'nt'):
         if r.name.endswith(".exe")
     }
 
-
 def enquote_executable(executable):
     if ' ' in executable:
         # make sure we quote only the executable in case of env
@@ -83,10 +82,8 @@ def enquote_executable(executable):
                 executable = '"%s"' % executable
     return executable
 
-
 # Keep the old name around (for now), as there is at least one project using it!
 _enquote_executable = enquote_executable
-
 
 class ScriptMaker(object):
     """

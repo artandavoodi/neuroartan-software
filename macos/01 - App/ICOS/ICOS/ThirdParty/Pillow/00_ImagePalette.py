@@ -27,7 +27,6 @@ TYPE_CHECKING = False
 if TYPE_CHECKING:
     from . import Image
 
-
 class ImagePalette:
     """
     Color palette for palette mapped images
@@ -208,10 +207,8 @@ class ImagePalette:
             if open_fp:
                 fp.close()
 
-
 # --------------------------------------------------------------------
 # Internal
-
 
 def raw(rawmode: str, data: Sequence[int] | bytes | bytearray) -> ImagePalette:
     palette = ImagePalette()
@@ -220,10 +217,8 @@ def raw(rawmode: str, data: Sequence[int] | bytes | bytearray) -> ImagePalette:
     palette.dirty = 1
     return palette
 
-
 # --------------------------------------------------------------------
 # Factories
-
 
 def make_linear_lut(black: int, white: float) -> list[int]:
     if black == 0:
@@ -232,16 +227,13 @@ def make_linear_lut(black: int, white: float) -> list[int]:
     msg = "unavailable when black is non-zero"
     raise NotImplementedError(msg)  # FIXME
 
-
 def make_gamma_lut(exp: float) -> list[int]:
     return [int(((i / 255.0) ** exp) * 255.0 + 0.5) for i in range(256)]
-
 
 def negative(mode: str = "RGB") -> ImagePalette:
     palette = list(range(256 * len(mode)))
     palette.reverse()
     return ImagePalette(mode, [i // len(mode) for i in palette])
-
 
 def random(mode: str = "RGB") -> ImagePalette:
     from random import randint
@@ -249,16 +241,13 @@ def random(mode: str = "RGB") -> ImagePalette:
     palette = [randint(0, 255) for _ in range(256 * len(mode))]
     return ImagePalette(mode, palette)
 
-
 def sepia(white: str = "#fff0c0") -> ImagePalette:
     bands = [make_linear_lut(0, band) for band in ImageColor.getrgb(white)]
     return ImagePalette("RGB", [bands[i % 3][i // 3] for i in range(256 * 3)])
 
-
 def wedge(mode: str = "RGB") -> ImagePalette:
     palette = list(range(256 * len(mode)))
     return ImagePalette(mode, [i // len(mode) for i in palette])
-
 
 def load(filename: str) -> tuple[bytes, str]:
     # FIXME: supports GIMP gradients only

@@ -35,15 +35,12 @@ from ._binary import o16le as o16
 #
 # read MSP files
 
-
 def _accept(prefix: bytes) -> bool:
     return prefix.startswith((b"DanM", b"LinS"))
-
 
 ##
 # Image plugin for Windows MSP images.  This plugin supports both
 # uncompressed (Windows 1.0).
-
 
 class MspImageFile(ImageFile.ImageFile):
     format = "MSP"
@@ -73,7 +70,6 @@ class MspImageFile(ImageFile.ImageFile):
             self.tile = [ImageFile._Tile("raw", (0, 0) + self.size, 32, "1")]
         else:
             self.tile = [ImageFile._Tile("MSP", (0, 0) + self.size, 32)]
-
 
 class MspDecoder(ImageFile.PyDecoder):
     # The algo for the MSP decoder is from
@@ -156,13 +152,10 @@ class MspDecoder(ImageFile.PyDecoder):
 
         return -1, 0
 
-
 Image.register_decoder("MSP", MspDecoder)
-
 
 #
 # write MSP files (uncompressed only)
-
 
 def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     if im.mode != "1":
@@ -189,7 +182,6 @@ def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
 
     # image body
     ImageFile._save(im, fp, [ImageFile._Tile("raw", (0, 0) + im.size, 32, "1")])
-
 
 #
 # registry

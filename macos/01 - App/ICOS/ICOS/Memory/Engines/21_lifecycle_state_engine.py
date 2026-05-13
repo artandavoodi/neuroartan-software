@@ -52,7 +52,6 @@ REQUIRED_GOVERNANCE_SECTIONS = [
     "END OF DOCUMENT"
 ]
 
-
 def extract_status(text):
     match = re.search(r'status:\s*["\']?([^"\'\n]+)', text, re.I)
 
@@ -61,23 +60,17 @@ def extract_status(text):
 
     return "Draft"
 
-
-
 def evaluate_governance_completeness(text):
     return {
         section: section in text
         for section in REQUIRED_GOVERNANCE_SECTIONS
     }
 
-
-
 def determine_next_states(current_state):
     return LIFECYCLE_STATES.get(current_state, {}).get(
         "allowed_transitions",
         []
     )
-
-
 
 def evaluate_document(path):
     p = Path(path)
@@ -116,7 +109,6 @@ def evaluate_document(path):
             else lifecycle_state
         )
     }
-
 
 if __name__ == "__main__":
     import sys

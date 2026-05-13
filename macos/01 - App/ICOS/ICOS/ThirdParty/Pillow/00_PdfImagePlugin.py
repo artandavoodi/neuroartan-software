@@ -39,14 +39,11 @@ from . import Image, ImageFile, ImageSequence, PdfParser, features
 #  4. page
 #  5. page contents
 
-
 def _save_all(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     _save(im, fp, filename, save_all=True)
 
-
 ##
 # (Internal) Image save plugin for the PDF format.
-
 
 def _write_image(
     im: Image.Image,
@@ -180,7 +177,6 @@ def _write_image(
 
     return image_ref, procset
 
-
 def _save(
     im: Image.Image, fp: IO[bytes], filename: str | bytes, save_all: bool = False
 ) -> None:
@@ -298,10 +294,8 @@ def _save(
         fp.flush()
     existing_pdf.close()
 
-
 #
 # --------------------------------------------------------------------
-
 
 Image.register_save("PDF", _save)
 Image.register_save_all("PDF", _save_all)

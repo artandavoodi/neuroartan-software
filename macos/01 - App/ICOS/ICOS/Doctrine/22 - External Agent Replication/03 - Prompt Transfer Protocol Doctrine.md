@@ -64,7 +64,6 @@ related:
   - "macos/01 - App/ICOS/ICOS/Doctrine/22 - External Agent Replication/02 - External Model Binding Doctrine.md"
   - "macos/01 - App/ICOS/ICOS/Doctrine/11 - Prompt Architecture/02 - Context Injection Order.md"
 
-
 tags:
   - "icos"
   - "prompt"
@@ -204,11 +203,11 @@ This doctrine must be included in every prompt before inference.
 
 ## Document Control & Validation
 
-GSA PROTOCOL STATUS: Approved  
-GSA APPROVAL: true  
-DOCUMENT STATUS: Active — Prompt Transfer Protocol Doctrine  
-VISIBILITY: Internal  
-PUBLISH TO WEBSITE: No  
+GSA PROTOCOL STATUS: Approved
+GSA APPROVAL: true
+DOCUMENT STATUS: Active — Prompt Transfer Protocol Doctrine
+VISIBILITY: Internal
+PUBLISH TO WEBSITE: No
 VERSION: 1.0
 
 ---

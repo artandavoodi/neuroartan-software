@@ -33,9 +33,7 @@
 
 #ifdef SLP_EVAL
 
-
 #define STACK_MAGIC 0
-
 
 #if defined(__sparcv9)
 #define SLP_FLUSHW __asm__ volatile ("flushw")
@@ -46,7 +44,6 @@
 /* On sparc we need to spill register windows inside save/restore functions */
 #define SLP_BEFORE_SAVE_STATE() SLP_FLUSHW
 #define SLP_BEFORE_RESTORE_STATE() SLP_FLUSHW
-
 
 static int
 slp_switch(void)

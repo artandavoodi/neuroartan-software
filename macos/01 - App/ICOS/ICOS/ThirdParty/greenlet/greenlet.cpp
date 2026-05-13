@@ -11,7 +11,6 @@
 #include <algorithm>
 #include <exception>
 
-
 #define PY_SSIZE_T_CLEAN
 #include <Python.h>
 #include "structmember.h" // PyMemberDef
@@ -59,8 +58,6 @@ using greenlet::BrokenGreenlet;
 using greenlet::ThreadState;
 using greenlet::PythonState;
 
-
-
 // ******* Implementation of things from included files
 template<typename T, greenlet::refs::TypeChecker TC>
 greenlet::refs::_BorrowedGreenlet<T, TC>& greenlet::refs::_BorrowedGreenlet<T, TC>::operator=(const greenlet::refs::BorrowedObject& other)
@@ -95,8 +92,6 @@ inline greenlet::refs::_OwnedGreenlet<T, TC>::operator Greenlet*() const noexcep
     return reinterpret_cast<PyGreenlet*>(this->p)->pimpl;
 }
 
-
-
 #ifdef __clang__
 #    pragma clang diagnostic push
 #    pragma clang diagnostic ignored "-Wmissing-field-initializers"
@@ -107,7 +102,6 @@ inline greenlet::refs::_OwnedGreenlet<T, TC>::operator Greenlet*() const noexcep
 // (The python APIs aren't const correct and accept writable char*)
 #    pragma GCC diagnostic ignored "-Wwrite-strings"
 #endif
-
 
 /***********************************************************
 
@@ -134,7 +128,6 @@ Stack layout for a greenlet:
                |               |
                |  newer data   |
                |     vvv       |
-
 
 Note that a greenlet's stack data is typically partly at its correct
 place in the stack, and partly saved away in the heap, but always in
@@ -163,9 +156,6 @@ States:
 The running greenlet's stack_start is undefined but not NULL.
 
  ***********************************************************/
-
-
-
 
 /***********************************************************/
 
@@ -197,13 +187,9 @@ static void GREENLET_NOINLINE(slp_restore_state_trampoline)()
 }
 }
 
-
 /***********************************************************/
 
-
 #include "PyModule.cpp"
-
-
 
 static PyObject*
 greenlet_internal_mod_init() noexcept

@@ -54,7 +54,6 @@ REQUIRES_GCA_REVIEW = [
     "finance"
 ]
 
-
 def load_graph():
     if not GRAPH.exists():
         return {
@@ -63,7 +62,6 @@ def load_graph():
         }
 
     return json.loads(GRAPH.read_text())
-
 
 def classify_domain(path, text):
     combined = f"{path} {text}".lower()
@@ -89,7 +87,6 @@ def classify_domain(path, text):
 
     return max(scores, key=scores.get)
 
-
 def detect_authority_level(text):
     lowered = text.lower()
 
@@ -114,7 +111,6 @@ def detect_authority_level(text):
 
     return "Office-level"
 
-
 def detect_required_review(domain, text):
     lowered = text.lower()
 
@@ -130,8 +126,6 @@ def detect_required_review(domain, text):
         reviews.append("Governance Synchronization Authority")
 
     return sorted(set(reviews))
-
-
 
 def resolve_routing(path):
     p = Path(path)
@@ -167,7 +161,6 @@ def resolve_routing(path):
         ),
         "graph_loaded": GRAPH.exists()
     }
-
 
 if __name__ == "__main__":
     import sys

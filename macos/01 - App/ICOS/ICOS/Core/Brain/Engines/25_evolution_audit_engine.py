@@ -7,7 +7,6 @@ from typing import Any
 import json
 import time
 
-
 # ============================================================
 # Sovereign Root
 # ============================================================
@@ -39,7 +38,6 @@ AUDIT_STORE = (
 AUDIT_LOG = (
     REFLECTION_ROOT / "evolution_audit_log.json"
 )
-
 
 # ============================================================
 # Evolution Audit Engine
@@ -88,7 +86,6 @@ class EvolutionAuditEngine:
             fallback=[]
         )
 
-
     # ========================================================
     # JSON Loading
     # ========================================================
@@ -106,7 +103,6 @@ class EvolutionAuditEngine:
             return json.loads(path.read_text())
         except Exception:
             return fallback
-
 
     # ========================================================
     # Mutation Lineage Audit
@@ -140,7 +136,6 @@ class EvolutionAuditEngine:
         ] = lineage
 
         return lineage
-
 
     # ========================================================
     # Sandbox Lineage Audit
@@ -177,7 +172,6 @@ class EvolutionAuditEngine:
         ] = lineage
 
         return lineage
-
 
     # ========================================================
     # Recursive Audit
@@ -228,7 +222,6 @@ class EvolutionAuditEngine:
 
         return audit
 
-
     # ========================================================
     # Runtime Status
     # ========================================================
@@ -260,7 +253,6 @@ class EvolutionAuditEngine:
                 )
             ),
         }
-
 
 # ============================================================
 # Runtime Entry

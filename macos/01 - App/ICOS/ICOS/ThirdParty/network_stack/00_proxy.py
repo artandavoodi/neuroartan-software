@@ -7,7 +7,6 @@ from .url import Url
 if typing.TYPE_CHECKING:
     from ..connection import ProxyConfig
 
-
 def connection_requires_http_tunnel(
     proxy_url: Url | None = None,
     proxy_config: ProxyConfig | None = None,

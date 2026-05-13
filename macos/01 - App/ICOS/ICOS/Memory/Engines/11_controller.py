@@ -35,7 +35,6 @@ URI = re.compile(r"^(([^:/?#]+):)?(//([^/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?")
 
 PERMANENT_REDIRECT_STATUSES = (301, 308)
 
-
 def parse_uri(uri: str) -> tuple[str, str, str, str, str]:
     """Parses a URI using the regex given in Appendix B of RFC 3986.
 
@@ -45,7 +44,6 @@ def parse_uri(uri: str) -> tuple[str, str, str, str, str]:
     assert match is not None
     groups = match.groups()
     return (groups[1], groups[3], groups[4], groups[6], groups[8])
-
 
 class CacheController:
     """An interface to see if request should cached or not."""

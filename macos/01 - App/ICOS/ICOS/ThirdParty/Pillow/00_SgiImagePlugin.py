@@ -30,10 +30,8 @@ from . import Image, ImageFile
 from ._binary import i16be as i16
 from ._binary import o8
 
-
 def _accept(prefix: bytes) -> bool:
     return len(prefix) >= 2 and i16(prefix) == 474
-
 
 MODES = {
     (1, 1, 1): "L",
@@ -45,7 +43,6 @@ MODES = {
     (1, 3, 4): "RGBA",
     (2, 3, 4): "RGBA;16B",
 }
-
 
 ##
 # Image plugin for SGI images.
@@ -126,7 +123,6 @@ class SgiImageFile(ImageFile.ImageFile):
                 )
             ]
 
-
 def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     if im.mode not in {"RGB", "RGBA", "L"}:
         msg = "Unsupported SGI image mode"
@@ -194,7 +190,6 @@ def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     if hasattr(fp, "flush"):
         fp.flush()
 
-
 class SGI16Decoder(ImageFile.PyDecoder):
     _pulls_fd = True
 
@@ -216,10 +211,8 @@ class SGI16Decoder(ImageFile.PyDecoder):
 
         return -1, 0
 
-
 #
 # registry
-
 
 Image.register_decoder("SGI16", SGI16Decoder)
 Image.register_open(SgiImageFile.format, SgiImageFile, _accept)

@@ -24,14 +24,11 @@ from . import Image, TiffImagePlugin
 #
 # --------------------------------------------------------------------
 
-
 def _accept(prefix: bytes) -> bool:
     return prefix.startswith(olefile.MAGIC)
 
-
 ##
 # Image plugin for Microsoft's Image Composer file format.
-
 
 class MicImageFile(TiffImagePlugin.TiffImageFile):
     format = "MIC"
@@ -93,7 +90,6 @@ class MicImageFile(TiffImagePlugin.TiffImageFile):
         self.__fp.close()
         self.ole.close()
         super().__exit__()
-
 
 #
 # --------------------------------------------------------------------

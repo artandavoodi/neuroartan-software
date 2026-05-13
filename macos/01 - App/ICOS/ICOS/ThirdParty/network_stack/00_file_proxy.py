@@ -7,7 +7,6 @@ from .text import Text
 if TYPE_CHECKING:
     from .console import Console
 
-
 class FileProxy(io.TextIOBase):
     """Wraps a file (e.g. sys.stdout) and redirects writes to a console."""
 

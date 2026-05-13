@@ -163,14 +163,11 @@ _FORWARD_REF_HAS_CLASS = "__forward_is_class__" in typing.ForwardRef.__slots__
 # The functions below are modified copies of typing internal helpers.
 # They are needed by _ProtocolMeta and they provide support for PEP 646.
 
-
 class _Sentinel:
     def __repr__(self):
         return "<sentinel>"
 
-
 _marker = _Sentinel()
-
 
 # Breakpoint: https://github.com/python/cpython/pull/27342
 if sys.version_info >= (3, 10):
@@ -182,7 +179,6 @@ else:
     def _should_collect_from_parameters(t):
         return isinstance(t, (typing._GenericAlias, _types.GenericAlias))
 
-
 NoReturn = typing.NoReturn
 
 # Some unconstrained type variables.  These are used by the container types.
@@ -192,7 +188,6 @@ KT = typing.TypeVar('KT')  # Key type.
 VT = typing.TypeVar('VT')  # Value type.
 T_co = typing.TypeVar('T_co', covariant=True)  # Any type covariant containers.
 T_contra = typing.TypeVar('T_contra', contravariant=True)  # Ditto contravariant.
-
 
 # Breakpoint: https://github.com/python/cpython/pull/31841
 if sys.version_info >= (3, 11):
@@ -223,7 +218,6 @@ else:
             if cls is Any:
                 raise TypeError("Any cannot be instantiated")
             return super().__new__(cls, *args, **kwargs)
-
 
 ClassVar = typing.ClassVar
 
@@ -272,14 +266,12 @@ class _SpecialForm(typing._Final, _root=True):
     def __getitem__(self, parameters):
         return self._getitem(self, parameters)
 
-
 # Note that inheriting from this class means that the object will be
 # rejected by typing._type_check, so do not use it if the special form
 # is arguably valid as a type by itself.
 class _ExtensionsSpecialForm(typing._SpecialForm, _root=True):
     def __repr__(self):
         return 'typing_extensions.' + self._name
-
 
 Final = typing.Final
 
@@ -321,7 +313,6 @@ else:
             pass
         return f
 
-
 if hasattr(typing, "disjoint_base"):  # 3.15
     disjoint_base = typing.disjoint_base
 else:
@@ -348,10 +339,8 @@ else:
         cls.__disjoint_base__ = True
         return cls
 
-
 def IntVar(name):
     return typing.TypeVar(name)
-
 
 # A Literal bug was fixed in 3.11.0, 3.10.1 and 3.9.8
 # Breakpoint: https://github.com/python/cpython/pull/29334
@@ -427,9 +416,7 @@ else:
                            checking verifying that the parameter is actually a value
                            instead of a type.""")
 
-
 _overload_dummy = typing._overload_dummy
-
 
 if hasattr(typing, "get_overloads"):  # 3.11+
     overload = typing.overload
@@ -496,7 +483,6 @@ else:
         """Clear all overloads in the registry."""
         _overload_registry.clear()
 
-
 # This is not a real generic class.  Don't use outside annotations.
 Type = typing.Type
 
@@ -514,14 +500,12 @@ ChainMap = typing.ChainMap
 Text = typing.Text
 TYPE_CHECKING = typing.TYPE_CHECKING
 
-
 # Breakpoint: https://github.com/python/cpython/pull/118681
 if sys.version_info >= (3, 13, 0, "beta"):
     from typing import AsyncContextManager, AsyncGenerator, ContextManager, Generator
 else:
     def _is_dunder(attr):
         return attr.startswith('__') and attr.endswith('__')
-
 
     class _SpecialGenericAlias(typing._SpecialGenericAlias, _root=True):
         def __init__(self, origin, nparams, *, inst=True, name=None, defaults=()):
@@ -583,7 +567,6 @@ else:
         defaults=(typing.Optional[bool],)
     )
 
-
 _PROTO_ALLOWLIST = {
     'collections.abc': [
         'Callable', 'Awaitable', 'Iterable', 'Iterator', 'AsyncIterable',
@@ -593,12 +576,10 @@ _PROTO_ALLOWLIST = {
     'typing_extensions': ['Buffer'],
 }
 
-
 _EXCLUDED_ATTRS = frozenset(typing.EXCLUDED_ATTRIBUTES) | {
     "__match_args__", "__protocol_attrs__", "__non_callable_proto_members__",
     "__final__",
 }
-
 
 def _get_protocol_attrs(cls):
     attrs = set()
@@ -611,7 +592,6 @@ def _get_protocol_attrs(cls):
                 attrs.add(attr)
     return attrs
 
-
 def _caller(depth=1, default='__main__'):
     try:
         return sys._getframemodulename(depth + 1) or default
@@ -622,7 +602,6 @@ def _caller(depth=1, default='__main__'):
     except (AttributeError, ValueError):  # For platforms without _getframe()
         pass
     return None
-
 
 # `__match_args__` attribute was removed from protocol members in 3.13,
 # we want to backport this change to older Python versions.
@@ -806,7 +785,6 @@ else:
             if cls._is_protocol and cls.__init__ is Protocol.__init__:
                 cls.__init__ = _no_init
 
-
 # Breakpoint: https://github.com/python/cpython/pull/113401
 if sys.version_info >= (3, 13):
     runtime_checkable = typing.runtime_checkable
@@ -862,10 +840,8 @@ else:
 
         return cls
 
-
 # The "runtime" alias exists for backwards compatibility.
 runtime = runtime_checkable
-
 
 # Our version of runtime-checkable protocols is faster on Python <=3.11
 # Breakpoint: https://github.com/python/cpython/pull/112717
@@ -944,7 +920,6 @@ else:
         def __round__(self, ndigits: int = 0) -> T_co:
             pass
 
-
 if hasattr(io, "Reader") and hasattr(io, "Writer"):
     Reader = io.Reader
     Writer = io.Writer
@@ -979,7 +954,6 @@ else:
         def write(self, data: T_contra, /) -> int:
             """Write *data* to the output stream and return the number of items written."""  # noqa: E501
 
-
 _NEEDS_SINGLETONMETA = (
     not hasattr(typing, "NoDefault") or not hasattr(typing, "NoExtraItems")
 )
@@ -991,7 +965,6 @@ if _NEEDS_SINGLETONMETA:
             raise TypeError(
                 f"cannot set {attr!r} attribute of immutable type {cls.__name__!r}"
             )
-
 
 if hasattr(typing, "NoDefault"):
     NoDefault = typing.NoDefault
@@ -1035,7 +1008,6 @@ else:
 
 if _NEEDS_SINGLETONMETA:
     del SingletonMeta
-
 
 # Update this to something like >=3.13.0b1 if and when
 # PEP 728 is implemented in CPython
@@ -1415,7 +1387,6 @@ else:
         """
         return isinstance(tp, _TYPEDDICT_TYPES)
 
-
 if hasattr(typing, "assert_type"):
     assert_type = typing.assert_type
 
@@ -1434,7 +1405,6 @@ else:
         does nothing.
         """
         return val
-
 
 if hasattr(typing, "ReadOnly"):  # 3.13+
     get_type_hints = typing.get_type_hints
@@ -1622,7 +1592,6 @@ else:
             return res
         return ()
 
-
 # 3.10+
 if hasattr(typing, 'TypeAlias'):
     TypeAlias = typing.TypeAlias
@@ -1642,11 +1611,9 @@ else:
         """
         raise TypeError(f"{self} is not subscriptable")
 
-
 def _set_default(type_param, default):
     type_param.has_default = lambda: default is not NoDefault
     type_param.__default__ = default
-
 
 def _set_module(typevarlike):
     # for pickling:
@@ -1654,19 +1621,16 @@ def _set_module(typevarlike):
     if def_mod != 'typing_extensions':
         typevarlike.__module__ = def_mod
 
-
 class _DefaultMixin:
     """Mixin for TypeVarLike defaults."""
 
     __slots__ = ()
     __init__ = _set_default
 
-
 # Classes using this metaclass must provide a _backported_typevarlike ClassVar
 class _TypeVarLikeMeta(type):
     def __instancecheck__(cls, __instance: Any) -> bool:
         return isinstance(__instance, cls._backported_typevarlike)
-
 
 if _PEP_696_IMPLEMENTED:
     from typing import TypeVar
@@ -1708,7 +1672,6 @@ else:
 
         def __init_subclass__(cls) -> None:
             raise TypeError(f"type '{__name__}.TypeVar' is not an acceptable base type")
-
 
 # Python 3.10+ has PEP 612
 if hasattr(typing, 'ParamSpecArgs'):
@@ -1771,7 +1734,6 @@ else:
             if not isinstance(other, ParamSpecKwargs):
                 return NotImplemented
             return self.__origin__ == other.__origin__
-
 
 if _PEP_696_IMPLEMENTED:
     from typing import ParamSpec
@@ -1928,7 +1890,6 @@ else:
         # Hack to get typing._type_check to pass.
         def __call__(self, *args, **kwargs):
             pass
-
 
 # 3.9
 if not hasattr(typing, 'Concatenate'):
@@ -2093,10 +2054,8 @@ else:
                     return tuple(_unpack_args(*(n for n in value)))
                 return value
 
-
 # 3.9.2
 class _EllipsisDummy: ...
-
 
 # <=3.10
 def _create_concatenate_alias(origin, parameters):
@@ -2121,7 +2080,6 @@ def _create_concatenate_alias(origin, parameters):
                                         if p is not _EllipsisDummy)
     return concatenate
 
-
 # <=3.10
 @typing._tp_cache
 def _concatenate_getitem(self, parameters):
@@ -2136,7 +2094,6 @@ def _concatenate_getitem(self, parameters):
     parameters = (*(typing._type_check(p, msg) for p in parameters[:-1]),
                     parameters[-1])
     return _create_concatenate_alias(self, parameters)
-
 
 # 3.11+; Concatenate does not accept ellipsis in 3.10
 # Breakpoint: https://github.com/python/cpython/pull/30969
@@ -2157,7 +2114,6 @@ else:
         See PEP 612 for detailed information.
         """
         return _concatenate_getitem(self, parameters)
-
 
 # 3.10+
 if hasattr(typing, 'TypeGuard'):
@@ -2211,7 +2167,6 @@ else:
         item = typing._type_check(parameters, f'{self} accepts only a single type.')
         return typing._GenericAlias(self, (item,))
 
-
 # 3.13+
 if hasattr(typing, 'TypeIs'):
     TypeIs = typing.TypeIs
@@ -2258,7 +2213,6 @@ else:
         item = typing._type_check(parameters, f'{self} accepts only a single type.')
         return typing._GenericAlias(self, (item,))
 
-
 # 3.14+?
 if hasattr(typing, 'TypeForm'):
     TypeForm = typing.TypeForm
@@ -2292,9 +2246,6 @@ else:
         item = typing._type_check(parameters, f'{self} accepts only a single type.')
         return typing._GenericAlias(self, (item,))
 
-
-
-
 if hasattr(typing, "LiteralString"):  # 3.11+
     LiteralString = typing.LiteralString
 else:
@@ -2317,7 +2268,6 @@ else:
         """
         raise TypeError(f"{self} is not subscriptable")
 
-
 if hasattr(typing, "Self"):  # 3.11+
     Self = typing.Self
 else:
@@ -2337,7 +2287,6 @@ else:
         """
 
         raise TypeError(f"{self} is not subscriptable")
-
 
 if hasattr(typing, "Never"):  # 3.11+
     Never = typing.Never
@@ -2367,7 +2316,6 @@ else:
         """
 
         raise TypeError(f"{self} is not subscriptable")
-
 
 if hasattr(typing, 'Required'):  # 3.11+
     Required = typing.Required
@@ -2410,7 +2358,6 @@ else:  # <=3.10
         item = typing._type_check(parameters, f'{self._name} accepts only a single type.')
         return typing._GenericAlias(self, (item,))
 
-
 if hasattr(typing, 'ReadOnly'):
     ReadOnly = typing.ReadOnly
 else:  # <=3.12
@@ -2432,7 +2379,6 @@ else:  # <=3.12
         """
         item = typing._type_check(parameters, f'{self._name} accepts only a single type.')
         return typing._GenericAlias(self, (item,))
-
 
 _UNPACK_DOC = """\
 Type unpack operator.
@@ -2474,7 +2420,6 @@ everything the runtime allows may be accepted by static type checkers.
 
 For more information, see PEP 646 and PEP 692.
 """
-
 
 # PEP 692 changed the repr of Unpack[]
 # Breakpoint: https://github.com/python/cpython/pull/104048
@@ -2525,7 +2470,6 @@ else:  # <=3.11
     def _is_unpack(obj):
         return isinstance(obj, _UnpackAlias)
 
-
 def _unpack_args(*args):
     newargs = []
     for arg in args:
@@ -2535,7 +2479,6 @@ def _unpack_args(*args):
         else:
             newargs.append(arg)
     return newargs
-
 
 if _PEP_696_IMPLEMENTED:
     from typing import TypeVarTuple
@@ -2682,7 +2625,6 @@ else:  # <=3.10
             if '_root' not in kwds:
                 raise TypeError("Cannot subclass special typing classes")
 
-
 if hasattr(typing, "reveal_type"):  # 3.11+
     reveal_type = typing.reveal_type
 else:  # <=3.10
@@ -2705,12 +2647,10 @@ else:  # <=3.10
         print(f"Runtime type is {type(obj).__name__!r}", file=sys.stderr)
         return obj
 
-
 if hasattr(typing, "_ASSERT_NEVER_REPR_MAX_LENGTH"):  # 3.11+
     _ASSERT_NEVER_REPR_MAX_LENGTH = typing._ASSERT_NEVER_REPR_MAX_LENGTH
 else:  # <=3.10
     _ASSERT_NEVER_REPR_MAX_LENGTH = 100
-
 
 if hasattr(typing, "assert_never"):  # 3.11+
     assert_never = typing.assert_never
@@ -2739,7 +2679,6 @@ else:  # <=3.10
         if len(value) > _ASSERT_NEVER_REPR_MAX_LENGTH:
             value = value[:_ASSERT_NEVER_REPR_MAX_LENGTH] + '...'
         raise AssertionError(f"Expected code to be unreachable, but got: {value}")
-
 
 # dataclass_transform exists in 3.11 but lacks the frozen_default parameter
 # Breakpoint: https://github.com/python/cpython/pull/99958
@@ -2831,7 +2770,6 @@ else:  # <=3.11
             return cls_or_fn
         return decorator
 
-
 if hasattr(typing, "override"):  # 3.12+
     override = typing.override
 else:  # <=3.11
@@ -2871,7 +2809,6 @@ else:  # <=3.11
             # read-only property, TypeError if it's a builtin class.
             pass
         return arg
-
 
 # Python 3.13.3+ contains a fix for the wrapped __new__
 # Breakpoint: https://github.com/python/cpython/pull/132160
@@ -3037,7 +2974,6 @@ else:
             ),
         )
 
-
 # We have to do some monkey patching to deal with the dual nature of
 # Unpack/TypeVarTuple:
 # - We want Unpack to be a kind of TypeVar so it gets accepted in
@@ -3139,7 +3075,6 @@ else:
 if not _PEP_696_IMPLEMENTED:
     typing._check_generic = _check_generic
 
-
 def _has_generic_or_protocol_as_origin() -> bool:
     try:
         frame = sys._getframe(2)
@@ -3158,9 +3093,7 @@ def _has_generic_or_protocol_as_origin() -> bool:
         # throws an error.
         return origin is typing.Generic or origin is Protocol or origin is typing.Protocol
 
-
 _TYPEVARTUPLE_TYPES = {TypeVarTuple, getattr(typing, "TypeVarTuple", None)}
-
 
 def _is_unpacked_typevartuple(x) -> bool:
     if get_origin(x) is not Unpack:
@@ -3171,7 +3104,6 @@ def _is_unpacked_typevartuple(x) -> bool:
         and len(args) == 1
         and type(args[0]) in _TYPEVARTUPLE_TYPES
     )
-
 
 # Python 3.11+ _collect_type_vars was renamed to _collect_parameters
 if hasattr(typing, '_collect_type_vars'):
@@ -3449,7 +3381,6 @@ else:
 
     NamedTuple.__mro_entries__ = _namedtuple_mro_entries
 
-
 if hasattr(collections.abc, "Buffer"):
     Buffer = collections.abc.Buffer
 else:
@@ -3477,7 +3408,6 @@ else:
     Buffer.register(memoryview)
     Buffer.register(bytearray)
     Buffer.register(bytes)
-
 
 # Backport of types.get_original_bases, available on 3.12+ in CPython
 if hasattr(_types, "get_original_bases"):
@@ -3510,7 +3440,6 @@ else:
             raise TypeError(
                 f'Expected an instance of type, not {type(cls).__name__!r}'
             ) from None
-
 
 # NewType is a class on Python 3.10+, making it pickleable
 # The error message for subclassing instances of NewType was improved on 3.11+
@@ -3578,7 +3507,6 @@ else:
             def __ror__(self, other):
                 return typing.Union[other, self]
 
-
 # Breakpoint: https://github.com/python/cpython/pull/124795
 if sys.version_info >= (3, 14):
     TypeAliasType = typing.TypeAliasType
@@ -3631,7 +3559,6 @@ else:
                 if attr in _ATTRIBUTE_DELEGATION_EXCLUSIONS:
                     return object.__getattr__(self, attr)
                 return getattr(self.__origin__, attr)
-
 
     class TypeAliasType:
         """Create named, parameterized type aliases.
@@ -3794,7 +3721,6 @@ else:
                     return NotImplemented
                 return typing.Union[left, self]
 
-
 if hasattr(typing, "is_protocol"):
     is_protocol = typing.is_protocol
     get_protocol_members = typing.get_protocol_members
@@ -3840,7 +3766,6 @@ else:
             return frozenset(tp.__protocol_attrs__)
         return frozenset(_get_protocol_attrs(tp))
 
-
 if hasattr(typing, "Doc"):
     Doc = typing.Doc
 else:
@@ -3875,7 +3800,6 @@ else:
                 return NotImplemented
             return self.documentation == other.documentation
 
-
 _CapsuleType = getattr(_types, "CapsuleType", None)
 
 if _CapsuleType is None:
@@ -3891,7 +3815,6 @@ if _CapsuleType is None:
 if _CapsuleType is not None:
     CapsuleType = _CapsuleType
     __all__.append("CapsuleType")
-
 
 if sys.version_info >= (3, 14):
     from annotationlib import Format, get_annotations
@@ -4034,7 +3957,6 @@ else:
             value if not isinstance(value, str) else eval(value, globals, locals)
             for key, value in ann.items() }
         return return_value
-
 
 if hasattr(typing, "evaluate_forward_ref"):
     evaluate_forward_ref = typing.evaluate_forward_ref
@@ -4206,7 +4128,6 @@ else:
                 recursive_guard=_recursive_guard | {forward_ref.__forward_arg__},
             )
 
-
 class Sentinel:
     """Create a unique sentinel object.
 
@@ -4244,7 +4165,6 @@ class Sentinel:
     def __getstate__(self):
         raise TypeError(f"Cannot pickle {type(self).__name__!r} object")
 
-
 if sys.version_info >= (3, 14, 0, "beta"):
     type_repr = annotationlib.type_repr
 else:
@@ -4263,7 +4183,6 @@ else:
         if value is ...:
             return "..."
         return repr(value)
-
 
 # Aliases for items that are in typing in all supported versions.
 # We use hasattr() checks so this library will continue to import on

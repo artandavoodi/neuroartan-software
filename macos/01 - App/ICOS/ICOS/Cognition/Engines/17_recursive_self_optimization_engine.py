@@ -26,13 +26,11 @@ from datetime import datetime
 from enum import Enum
 from typing import Any, Dict, List, Optional
 
-
 class OptimizationPriority(str, Enum):
     LOW = "low"
     NORMAL = "normal"
     HIGH = "high"
     CRITICAL = "critical"
-
 
 class OptimizationStatus(str, Enum):
     PENDING = "pending"
@@ -40,7 +38,6 @@ class OptimizationStatus(str, Enum):
     OPTIMIZED = "optimized"
     REJECTED = "rejected"
     VERIFIED = "verified"
-
 
 @dataclass
 class OptimizationTarget:
@@ -50,7 +47,6 @@ class OptimizationTarget:
     expected_gain: float
     priority: OptimizationPriority
     metadata: Dict[str, Any] = field(default_factory=dict)
-
 
 @dataclass
 class OptimizationCycle:
@@ -63,7 +59,6 @@ class OptimizationCycle:
     improvement_delta: float = 0.0
     created_at: datetime = field(default_factory=datetime.utcnow)
     metadata: Dict[str, Any] = field(default_factory=dict)
-
 
 class RecursiveSelfOptimizationEngine:
     """
@@ -218,7 +213,6 @@ class RecursiveSelfOptimizationEngine:
                 for cycle in self.cycles.values()
             ],
         }
-
 
 if __name__ == "__main__":
     engine = RecursiveSelfOptimizationEngine()

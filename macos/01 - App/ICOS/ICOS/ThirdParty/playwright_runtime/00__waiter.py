@@ -23,7 +23,6 @@ from pyee import EventEmitter
 from playwright._impl._connection import ChannelOwner
 from playwright._impl._errors import Error, TimeoutError
 
-
 class Waiter:
     def __init__(self, channel_owner: ChannelOwner, event: str) -> None:
         self._result: asyncio.Future = asyncio.Future()
@@ -146,14 +145,12 @@ class Waiter:
         except Exception:
             pass
 
-
 def throw_on_timeout(timeout: float, exception: Exception) -> asyncio.Task:
     async def throw() -> None:
         await asyncio.sleep(timeout / 1000)
         raise exception
 
     return asyncio.create_task(throw())
-
 
 def format_log_recording(log: List[str]) -> str:
     if not log:

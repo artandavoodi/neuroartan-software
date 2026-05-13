@@ -286,10 +286,8 @@ PREFIXES = [
     b"II\x2b\x00",  # BigTIFF with little-endian byte order
 ]
 
-
 def _accept(prefix: bytes) -> bool:
     return prefix.startswith(tuple(PREFIXES))
-
 
 def _limit_rational(
     val: float | Fraction | IFDRational, max_val: int
@@ -297,7 +295,6 @@ def _limit_rational(
     inv = abs(val) > 1
     n_d = IFDRational(1 / val if inv else val).limit_rational(max_val)
     return n_d[::-1] if inv else n_d
-
 
 def _limit_signed_rational(
     val: IFDRational, max_val: int, min_val: int
@@ -314,13 +311,11 @@ def _limit_signed_rational(
 
     return n_d
 
-
 ##
 # Wrapper for TIFF IFDs.
 
 _load_dispatch = {}
 _write_dispatch = {}
-
 
 def _delegate(op: str) -> Any:
     def delegate(
@@ -329,7 +324,6 @@ def _delegate(op: str) -> Any:
         return getattr(self._val, op)(*args)
 
     return delegate
-
 
 class IFDRational(Rational):
     """Implements a rational class where 0/0 is a legal value to match
@@ -468,9 +462,7 @@ class IFDRational(Rational):
     if hasattr(Fraction, "__int__"):
         __int__ = _delegate("__int__")
 
-
 _LoaderFunc = Callable[["ImageFileDirectory_v2", bytes, bool], Any]
-
 
 def _register_loader(idx: int, size: int) -> Callable[[_LoaderFunc], _LoaderFunc]:
     def decorator(func: _LoaderFunc) -> _LoaderFunc:
@@ -483,14 +475,12 @@ def _register_loader(idx: int, size: int) -> Callable[[_LoaderFunc], _LoaderFunc
 
     return decorator
 
-
 def _register_writer(idx: int) -> Callable[[Callable[..., Any]], Callable[..., Any]]:
     def decorator(func: Callable[..., Any]) -> Callable[..., Any]:
         _write_dispatch[idx] = func  # noqa: F821
         return func
 
     return decorator
-
 
 def _register_basic(idx_fmt_name: tuple[int, str, str]) -> None:
     from .TiffTags import TYPES
@@ -509,12 +499,10 @@ def _register_basic(idx_fmt_name: tuple[int, str, str]) -> None:
         b"".join(self._pack(fmt, value) for value in values)
     )
 
-
 if TYPE_CHECKING:
     _IFDv2Base = MutableMapping[int, Any]
 else:
     _IFDv2Base = MutableMapping
-
 
 class ImageFileDirectory_v2(_IFDv2Base):
     """This class represents a TIFF tag directory.  To speed things up, we
@@ -1046,7 +1034,6 @@ class ImageFileDirectory_v2(_IFDv2Base):
         fp.write(result)
         return offset + len(result)
 
-
 ImageFileDirectory_v2._load_dispatch = _load_dispatch
 ImageFileDirectory_v2._write_dispatch = _write_dispatch
 for idx, name in TYPES.items():
@@ -1054,7 +1041,6 @@ for idx, name in TYPES.items():
     setattr(ImageFileDirectory_v2, f"load_{name}", _load_dispatch[idx][1])
     setattr(ImageFileDirectory_v2, f"write_{name}", _write_dispatch[idx])
 del _load_dispatch, _write_dispatch, idx, name
-
 
 # Legacy ImageFileDirectory support.
 class ImageFileDirectory_v1(ImageFileDirectory_v2):
@@ -1147,14 +1133,11 @@ class ImageFileDirectory_v1(ImageFileDirectory_v2):
             val = (val,)
         return val
 
-
 # undone -- switch this pointer
 ImageFileDirectory = ImageFileDirectory_v1
 
-
 ##
 # Image plugin for TIFF files.
-
 
 class TiffImageFile(ImageFile.ImageFile):
     format = "TIFF"
@@ -1672,7 +1655,6 @@ class TiffImageFile(ImageFile.ImageFile):
             palette = [o8(b // 256) for b in self.tag_v2[COLORMAP]]
             self.palette = ImagePalette.raw("RGB;L", b"".join(palette))
 
-
 #
 # --------------------------------------------------------------------
 # Write TIFF files
@@ -1700,7 +1682,6 @@ SAVE_INFO = {
     "LAB": ("LAB", II, 8, 1, (8, 8, 8), None),
     "I;16B": ("I;16B", MM, 1, 1, (16,), None),
 }
-
 
 def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     try:
@@ -2015,7 +1996,6 @@ def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
         # just to access o32 and o16 (using correct byte order)
         setattr(im, "_debug_multipage", ifd)
 
-
 class AppendingTiffWriter(io.BytesIO):
     fieldSizes = [
         0,  # None
@@ -2315,7 +2295,6 @@ class AppendingTiffWriter(io.BytesIO):
             field_size = 0
         return self._fixOffsets(count, field_size)
 
-
 def _save_all(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     append_images = list(im.encoderinfo.get("append_images", []))
     if not hasattr(im, "n_frames") and not append_images:
@@ -2338,7 +2317,6 @@ def _save_all(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
                 ims.encoderinfo = encoderinfo
     finally:
         im.seek(cur_idx)
-
 
 #
 # --------------------------------------------------------------------

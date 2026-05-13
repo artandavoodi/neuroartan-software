@@ -7,7 +7,6 @@ from typing import Any
 import json
 import time
 
-
 # ============================================================
 # Sovereign Root
 # ============================================================
@@ -36,7 +35,6 @@ REFLECTION_LOG = (
 BRAIN_STATE = (
     STATE_ROOT / "brain_state.json"
 )
-
 
 # ============================================================
 # Persistent Cognitive Graph
@@ -82,7 +80,6 @@ class PersistentCognitiveGraph:
             }
         )
 
-
     # ========================================================
     # JSON Loading
     # ========================================================
@@ -100,7 +97,6 @@ class PersistentCognitiveGraph:
             return json.loads(path.read_text())
         except Exception:
             return fallback
-
 
     # ========================================================
     # Provider Graph
@@ -127,7 +123,6 @@ class PersistentCognitiveGraph:
 
         self.graph["providers"] = providers
 
-
     # ========================================================
     # Reflection Graph
     # ========================================================
@@ -144,7 +139,6 @@ class PersistentCognitiveGraph:
             })
 
         self.graph["reflections"] = reflections
-
 
     # ========================================================
     # Identity Continuity
@@ -172,7 +166,6 @@ class PersistentCognitiveGraph:
             "continuity_timestamp": time.time(),
         }
 
-
     # ========================================================
     # Relationship Mapping
     # ========================================================
@@ -193,7 +186,6 @@ class PersistentCognitiveGraph:
 
         self.graph["relationships"] = relationships
 
-
     # ========================================================
     # Persistence
     # ========================================================
@@ -205,7 +197,6 @@ class PersistentCognitiveGraph:
                 indent=2,
             )
         )
-
 
     # ========================================================
     # Graph Construction
@@ -232,7 +223,6 @@ class PersistentCognitiveGraph:
                 self.graph.get("reflections", [])
             ),
         }
-
 
 # ============================================================
 # Runtime Entry

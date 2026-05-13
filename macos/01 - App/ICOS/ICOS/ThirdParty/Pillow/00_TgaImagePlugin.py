@@ -31,7 +31,6 @@ from ._binary import o16le as o16
 # --------------------------------------------------------------------
 # Read RGA file
 
-
 MODES = {
     # map imagetype/depth to rawmode
     (1, 8): "P",
@@ -43,10 +42,8 @@ MODES = {
     (2, 32): "BGRA",
 }
 
-
 ##
 # Image plugin for Targa files.
-
 
 class TgaImageFile(ImageFile.ImageFile):
     format = "TGA"
@@ -176,11 +173,9 @@ class TgaImageFile(ImageFile.ImageFile):
         if self._flip_horizontally:
             self.im = self.im.transpose(Image.Transpose.FLIP_LEFT_RIGHT)
 
-
 #
 # --------------------------------------------------------------------
 # Write TGA file
-
 
 SAVE = {
     "1": ("1", 1, 0, 3),
@@ -190,7 +185,6 @@ SAVE = {
     "RGB": ("BGR", 24, 0, 2),
     "RGBA": ("BGRA", 32, 0, 2),
 }
-
 
 def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     try:
@@ -266,11 +260,9 @@ def _save(im: Image.Image, fp: IO[bytes], filename: str | bytes) -> None:
     # write targa version 2 footer
     fp.write(b"\000" * 8 + b"TRUEVISION-XFILE." + b"\000")
 
-
 #
 # --------------------------------------------------------------------
 # Registry
-
 
 Image.register_open(TgaImageFile.format, TgaImageFile)
 Image.register_save(TgaImageFile.format, _save)

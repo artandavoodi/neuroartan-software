@@ -22,7 +22,6 @@ ID_VAR = ContextVar("id", default=None)
 VAR_VAR = ContextVar("var", default=None)
 ContextVar = None
 
-
 class ContextVarsTests(TestCase):
     def _new_ctx_run(self, *args, **kwargs):
         return copy_context().run(*args, **kwargs)
@@ -92,7 +91,6 @@ class ContextVarsTests(TestCase):
                 self.assertIsNone(let.gr_context)
             else:
                 self.assertIsNotNone(let.gr_context)
-
 
         if propagate_by == "share":
             self.assertEqual(counts, {0: 1, 1: 1, 2: 1, 3: 1, 4: 6})
@@ -276,7 +274,6 @@ class ContextVarsTests(TestCase):
         with self.assertRaisesRegex(TypeError,
                                     "greenlet context must be a contextvars.Context or None"):
             g.gr_context = self
-
 
 if __name__ == '__main__':
     unittest.main()

@@ -7,7 +7,6 @@ from typing import Any
 import json
 import time
 
-
 # ============================================================
 # Sovereign Root
 # ============================================================
@@ -36,7 +35,6 @@ REFLECTION_LOG = (
 BOUNDARY_POLICY = (
     POLICY_ROOT / "llm_boundary_policy.json"
 )
-
 
 # ============================================================
 # Recursive Reflection Engine
@@ -74,7 +72,6 @@ class RecursiveReflectionEngine:
             BOUNDARY_POLICY
         )
 
-
     # ========================================================
     # JSON Loading
     # ========================================================
@@ -92,7 +89,6 @@ class RecursiveReflectionEngine:
             return json.loads(path.read_text())
         except Exception:
             return fallback if fallback is not None else {}
-
 
     # ========================================================
     # Identity Drift Detection
@@ -122,7 +118,6 @@ class RecursiveReflectionEngine:
             "total_events": len(drift_events),
         }
 
-
     # ========================================================
     # Learning Quality
     # ========================================================
@@ -143,7 +138,6 @@ class RecursiveReflectionEngine:
             "providers_observed": providers,
             "learning_events": len(self.learning_log),
         }
-
 
     # ========================================================
     # Runtime Reflection
@@ -180,7 +174,6 @@ class RecursiveReflectionEngine:
         )
 
         return reflection
-
 
 # ============================================================
 # Runtime Entry

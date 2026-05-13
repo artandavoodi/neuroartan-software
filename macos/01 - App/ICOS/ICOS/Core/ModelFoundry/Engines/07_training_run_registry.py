@@ -8,7 +8,6 @@ import json
 import time
 import uuid
 
-
 # ============================================================
 # Sovereign Root
 # ============================================================
@@ -46,7 +45,6 @@ UNIFIED_DATASET_STORE = (
 MODEL_TRAINING_SAFETY_POLICY = (
     SAFETY_ROOT / "model_training_safety_policy.json"
 )
-
 
 # ============================================================
 # Training Run Registry
@@ -100,7 +98,6 @@ class TrainingRunRegistry:
             }
         )
 
-
     # ========================================================
     # JSON Loading
     # ========================================================
@@ -124,7 +121,6 @@ class TrainingRunRegistry:
 
         except Exception:
             return fallback
-
 
     # ========================================================
     # Training Registration
@@ -170,7 +166,6 @@ class TrainingRunRegistry:
 
         return run
 
-
     # ========================================================
     # Training Lineage
     # ========================================================
@@ -203,7 +198,6 @@ class TrainingRunRegistry:
         )
 
         return lineage
-
 
     # ========================================================
     # Training Governance
@@ -239,7 +233,6 @@ class TrainingRunRegistry:
         )
 
         return governance
-
 
     # ========================================================
     # Training Learning Cycle
@@ -289,7 +282,6 @@ class TrainingRunRegistry:
             "event": event,
         }
 
-
     # ========================================================
     # Runtime Status
     # ========================================================
@@ -317,7 +309,6 @@ class TrainingRunRegistry:
                 False,
             ),
         }
-
 
 # ============================================================
 # Runtime Entry

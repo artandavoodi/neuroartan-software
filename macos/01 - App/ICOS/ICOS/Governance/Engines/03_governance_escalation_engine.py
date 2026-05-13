@@ -74,8 +74,6 @@ RISK_SIGNALS = {
     ]
 }
 
-
-
 def load_json(path, fallback):
     if not path.exists():
         return fallback
@@ -85,12 +83,8 @@ def load_json(path, fallback):
     except Exception:
         return fallback
 
-
-
 def save_json(path, data):
     path.write_text(json.dumps(data, indent=2))
-
-
 
 def classify_risk(text):
     lowered = text.lower()
@@ -105,8 +99,6 @@ def classify_risk(text):
 
     return max(scores, key=scores.get)
 
-
-
 def resolve_escalation(category):
     return ESCALATION_RULES.get(category, {
         "escalate_to": [
@@ -114,8 +106,6 @@ def resolve_escalation(category):
         ],
         "severity": "medium"
     })
-
-
 
 def generate_escalation_report(subject, description):
     ledger = load_json(LEDGER, {
@@ -156,7 +146,6 @@ def generate_escalation_report(subject, description):
     save_json(ESCALATION_STATE, report)
 
     return report
-
 
 if __name__ == "__main__":
     print(json.dumps(

@@ -64,7 +64,6 @@ related:
   - "macos/01 - App/ICOS/ICOS/Doctrine/22 - External Agent Replication/03 - Prompt Transfer Protocol Doctrine.md"
   - "macos/01 - App/ICOS/ICOS/Doctrine/17 - Execution Intelligence/01 - Execution Loop Doctrine.md"
 
-
 tags:
   - "icos"
   - "external"
@@ -204,11 +203,11 @@ This doctrine must be included in every prompt before inference.
 
 ## Document Control & Validation
 
-GSA PROTOCOL STATUS: Approved  
-GSA APPROVAL: true  
-DOCUMENT STATUS: Active — External Model Binding Doctrine  
-VISIBILITY: Internal  
-PUBLISH TO WEBSITE: No  
+GSA PROTOCOL STATUS: Approved
+GSA APPROVAL: true
+DOCUMENT STATUS: Active — External Model Binding Doctrine
+VISIBILITY: Internal
+PUBLISH TO WEBSITE: No
 VERSION: 1.0
 
 ---

@@ -8,7 +8,6 @@ import json
 import time
 import uuid
 
-
 # ============================================================
 # Sovereign Root
 # ============================================================
@@ -45,7 +44,6 @@ EMOTIONAL_DATASET_STORE = (
 FAILURE_LESSON_STORE = (
     FEEDBACK_ROOT / "failure_lesson_store.json"
 )
-
 
 # ============================================================
 # Emotional Signal Mapper
@@ -103,7 +101,6 @@ class EmotionalSignalMapper:
             fallback=[]
         )
 
-
     # ========================================================
     # JSON Loading
     # ========================================================
@@ -127,7 +124,6 @@ class EmotionalSignalMapper:
 
         except Exception:
             return fallback
-
 
     # ========================================================
     # Emotional Detection
@@ -160,7 +156,6 @@ class EmotionalSignalMapper:
         )
 
         return best_match, confidence
-
 
     # ========================================================
     # Emotional Signal Encoding
@@ -197,7 +192,6 @@ class EmotionalSignalMapper:
 
         return signal
 
-
     # ========================================================
     # Emotional Profile Construction
     # ========================================================
@@ -228,7 +222,6 @@ class EmotionalSignalMapper:
         )
 
         return profile
-
 
     # ========================================================
     # Emotional Relationship Graph
@@ -263,7 +256,6 @@ class EmotionalSignalMapper:
 
         return relationship
 
-
     # ========================================================
     # Emotional Dataset Generation
     # ========================================================
@@ -294,7 +286,6 @@ class EmotionalSignalMapper:
         )
 
         return dataset_entry
-
 
     # ========================================================
     # Emotional Learning Cycle
@@ -350,7 +341,6 @@ class EmotionalSignalMapper:
                 self.failure_lessons
             ),
         }
-
 
 # ============================================================
 # Runtime Entry

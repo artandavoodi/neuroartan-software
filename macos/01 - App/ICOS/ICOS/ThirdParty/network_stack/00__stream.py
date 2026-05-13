@@ -18,7 +18,6 @@ from typing import Dict, Union
 
 from playwright._impl._connection import ChannelOwner
 
-
 class Stream(ChannelOwner):
     def __init__(
         self, parent: ChannelOwner, type: str, guid: str, initializer: Dict
