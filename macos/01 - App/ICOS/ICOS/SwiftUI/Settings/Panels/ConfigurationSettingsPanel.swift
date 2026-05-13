@@ -10,23 +10,8 @@ struct ConfigurationSettingsPanel: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: scaled(ICOSSpacing.lg)) {
-            header
             RuntimeSettingsView(runtimeSettings: runtimeSettings)
             liveSummary
-        }
-    }
-
-    // MARK: - Header
-
-    private var header: some View {
-        VStack(alignment: .leading, spacing: scaled(ICOSSpacing.xs)) {
-            Text("Configuration")
-                .font(.system(size: scaledFont(ICOSControlTokens.rowTitleFontSize), weight: .semibold))
-                .foregroundStyle(ICOSColors.textPrimary)
-
-            Text("Runtime wiring, execution routing, provider discovery, and model management.")
-                .font(.system(size: scaledFont(ICOSControlTokens.rowSubtitleFontSize), weight: .regular))
-                .foregroundStyle(ICOSColors.textSecondary)
         }
     }
 

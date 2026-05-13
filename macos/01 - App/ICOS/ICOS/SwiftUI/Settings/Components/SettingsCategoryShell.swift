@@ -30,8 +30,6 @@ struct SettingsCategoryShell: View {
 
     var body: some View {
         VStack(alignment: .center, spacing: ICOSSpacing.lg) {
-            header
-
             if tabs.isEmpty {
                 Text("No tabs configured.")
                     .font(.system(size: ICOSControlTokens.rowSubtitleFontSize, weight: .regular))
@@ -51,17 +49,6 @@ struct SettingsCategoryShell: View {
         }
         .padding(.vertical, ICOSSpacing.sm)
     }
-
-    private var header: some View {
-        VStack(alignment: .center, spacing: ICOSSpacing.xs) {
-            Text(title)
-                .font(.system(size: ICOSControlTokens.rowTitleFontSize, weight: .semibold))
-                .foregroundStyle(ICOSColors.textPrimary)
-
-            Text(subtitle)
-                .font(.system(size: ICOSControlTokens.rowSubtitleFontSize, weight: .regular))
-                .foregroundStyle(ICOSColors.textSecondary)
-        }
     }
 
     @ViewBuilder

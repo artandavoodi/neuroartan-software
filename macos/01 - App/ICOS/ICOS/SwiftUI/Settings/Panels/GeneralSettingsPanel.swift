@@ -14,31 +14,17 @@ struct GeneralSettingsPanel: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: scaled(ICOSSpacing.lg)) {
-            header
-
             Picker("General sections", selection: $selectedTab) {
                 ForEach(GeneralSettingsTab.allCases) { tab in
                     Text(tab.title).tag(tab)
                 }
             }
             .pickerStyle(.segmented)
-               .frame(maxWidth: .infinity, alignment: .center)
- .frame(maxWidth: .infinity, alignment: .center)
+            .frame(maxWidth: .infinity, alignment: .center)
 
             tabBody
         }
     }
-
-    private var header: some View {
-        VStack(alignment: .leading, spacing: scaled(ICOSSpacing.xs)) {
-            Text("General")
-                .font(.system(size: scaledFont(ICOSControlTokens.rowTitleFontSize), weight: .semibold))
-                .foregroundStyle(ICOSColors.textPrimary)
-
-            Text("Shell behavior, launch posture, and saved runtime summary.")
-                .font(.system(size: scaledFont(ICOSControlTokens.rowSubtitleFontSize), weight: .regular))
-                .foregroundStyle(ICOSColors.textSecondary)
-        }
     }
 
     @ViewBuilder

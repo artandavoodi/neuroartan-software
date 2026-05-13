@@ -1,0 +1,14 @@
+.git/
+node_modules/
+dist/
+build/
+.vscode/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.mp4
+*.webm
+*.zip
+*.tar.gz

@@ -5,6 +5,7 @@ import SwiftUI
 struct DeveloperRuntimeCanvas: View {
     @Environment(\.icosThemeDensity) private var density
     @Environment(\.icosTypographyScale) private var typographyScale
+    @EnvironmentObject private var services: SystemServices
     @State private var activeMode: DeveloperRuntimeCanvasMode = .workspace
 
     var body: some View {
@@ -78,23 +79,64 @@ struct DeveloperRuntimeCanvas: View {
 
     private var workspaceGrid: some View {
         HStack(alignment: .top, spacing: scaled(ICOSSpacing.md)) {
-            DeveloperRuntimeCanvasCard(title: "Active Workspace", rows: [
-                .init(label: "Project", value: "ICOS"),
-                .init(label: "Root", value: "macOS App"),
-                .init(label: "Tree", value: "Pending filesystem binding")
-            ])
 
-            DeveloperRuntimeCanvasCard(title: "Runtime Tools", rows: [
-                .init(label: "Terminal", value: "Pending process service"),
-                .init(label: "Problems", value: "Pending diagnostics feed"),
-                .init(label: "Output", value: "Pending log stream")
-            ])
+            DeveloperRuntimeCanvasCard(
+                title: "Active Workspace",
+                rows: [
+                    .init(
+                        label: "Project",
+                        value: services.projectManager.activeProject?.name ?? "No Active Project"
+                    ),
+                    .init(
+                        label: "Root",
+                        value: services.workspaceFileService.rootURL?.lastPathComponent ?? "Workspace Not Mounted"
+                    ),
+                    .init(
+                        label: "Tree",
+                        value: services.workspaceFileService.rootNode != nil
+                            ? "Filesystem Indexed"
+                            : "No Indexed Tree"
+                    )
+                ]
+            )
 
-            DeveloperRuntimeCanvasCard(title: "Agent Context", rows: [
-                .init(label: "Agent", value: "Pending registry"),
-                .init(label: "Model", value: "Pending model registry"),
-                .init(label: "Mode", value: activeMode.title)
-            ])
+            DeveloperRuntimeCanvasCard(
+                title: "Runtime Tools",
+                rows: [
+                    .init(
+                        label: "Terminal",
+                        value: services.workspaceFileService.terminalStatus.rawValue
+                    ),
+                    .init(
+                        label: "Problems",
+                        value: "\(services.permissionService.auditLog.count) Events"
+                    ),
+                    .init(
+                        label: "Output",
+                        value: services.workspaceFileService.terminalOutput.isEmpty
+                            ? "Idle"
+                            : "Streaming"
+                    )
+                ]
+            )
+
+            DeveloperRuntimeCanvasCard(
+                title: "Agent Context",
+                rows: [
+                    .init(
+                        label: "Agent",
+                        value: services.agentRuntimeService.selectedAgent?.name ?? "No Active Agent"
+                    ),
+                    .init(
+                        label: "Model",
+                        value: services.runtimeSettings.activeModelTitle
+                    ),
+                    .init(
+                        label: "Mode",
+                        value: activeMode.title
+                    )
+                ]
+            )
         }
     }
 
