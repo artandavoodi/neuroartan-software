@@ -21,6 +21,7 @@ struct ICOSPickerRow<Selection: Hashable, Content: View>: View {
     @Binding var selection: Selection
     @ViewBuilder let content: () -> Content
 
+    @State private var materialEpoch: UInt = 0
     @Environment(\.icosThemeDensity) private var density
     @Environment(\.icosTypographyScale) private var typographyScale
 
@@ -48,6 +49,10 @@ struct ICOSPickerRow<Selection: Hashable, Content: View>: View {
             }
             .padding(.vertical, scaled(ICOSSpacing.md))
             .frame(maxWidth: .infinity, alignment: .leading)
+        }
+        .id(materialEpoch)
+        .onReceive(NotificationCenter.default.publisher(for: .icosMaterialAppearanceDidApply)) { _ in
+            materialEpoch += 1
         }
     }
 
@@ -77,7 +82,8 @@ struct ICOSPickerRow<Selection: Hashable, Content: View>: View {
                 selection: $selection,
                 options: options,
                 controlSize: scaled(ICOSControlTokens.pickerHeight),
-                textChevronSpacing: scaled(ICOSSpacing.md)
+                textChevronSpacing: scaled(ICOSSpacing.md),
+                materialEpoch: materialEpoch
             )
             .fixedSize(horizontal: true, vertical: false)
             .frame(minHeight: scaled(ICOSControlTokens.pickerHeight), alignment: .trailing)
@@ -128,6 +134,7 @@ private struct ICOSAppKitPicker<Selection: Hashable>: NSViewRepresentable {
     let options: [ICOSPickerOption<Selection>]
     let controlSize: CGFloat
     let textChevronSpacing: CGFloat
+    let materialEpoch: UInt
 
     func makeNSView(context: Context) -> NSStackView {
         let stack = NSStackView()
@@ -176,6 +183,13 @@ private struct ICOSAppKitPicker<Selection: Hashable>: NSViewRepresentable {
         guard let label = context.coordinator.label,
               let control = context.coordinator.control else { return }
 
+        // Apply material-aware colors on every update including epoch changes
+        let resolvedTextColor = NSColor(ICOSColors.textPrimary)
+        label.textColor = resolvedTextColor
+        if let cell = control.cell as? NSPopUpButtonCell {
+            cell.arrowPosition = .arrowAtCenter
+        }
+
         let titles = options.map(\.title)
         if control.itemTitles != titles {
             control.removeAllItems()
@@ -190,9 +204,6 @@ private struct ICOSAppKitPicker<Selection: Hashable>: NSViewRepresentable {
         }
 
         control.title = ""
-        if let cell = control.cell as? NSPopUpButtonCell {
-            cell.arrowPosition = .arrowAtCenter
-        }
         context.coordinator.widthConstraint?.constant = controlSize
         context.coordinator.heightConstraint?.constant = controlSize
     }

@@ -11,6 +11,26 @@ struct ICOSTitlebarNavigationHostView: View {
     @State private var settingsSidebarRightEdgeX: CGFloat = 0
     @State private var titlebarHostLeadingX: CGFloat = 0
     @State private var materialRenderEpoch: UInt = 0
+    @State private var isFullscreen = false
+
+    private var resolvedForeground: Color {
+        if ICOSMaterials.mode == .light && isFullscreen {
+            return .white
+        }
+        return ICOSColors.textPrimary
+    }
+
+    private var resolvedTertiaryForeground: Color {
+        if ICOSMaterials.mode == .light && isFullscreen {
+            return .white.opacity(0.4)
+        }
+        return ICOSColors.textTertiary
+    }
+
+    private func syncFullscreenState() {
+        let window = NSApp.keyWindow ?? NSApp.mainWindow
+        isFullscreen = window?.styleMask.contains(.fullScreen) == true
+    }
 
     var body: some View {
         Group {
@@ -19,8 +39,22 @@ struct ICOSTitlebarNavigationHostView: View {
             }
         }
         .id(materialRenderEpoch)
+        .onAppear {
+            syncFullscreenState()
+            NotificationCenter.default.post(
+                name: .icosTitlebarNavigationRefreshRequested,
+                object: nil
+            )
+        }
         .onReceive(NotificationCenter.default.publisher(for: .icosMaterialAppearanceDidApply)) { _ in
             materialRenderEpoch += 1
+            syncFullscreenState()
+        }
+        .onReceive(NotificationCenter.default.publisher(for: NSWindow.didEnterFullScreenNotification)) { _ in
+            syncFullscreenState()
+        }
+        .onReceive(NotificationCenter.default.publisher(for: NSWindow.didExitFullScreenNotification)) { _ in
+            syncFullscreenState()
         }
         .offset(x: settingsSidebarRightEdgeX - titlebarHostLeadingX)
         .background {
@@ -51,12 +85,6 @@ struct ICOSTitlebarNavigationHostView: View {
 
             settingsSidebarRightEdgeX = offset
         }
-        .onAppear {
-            NotificationCenter.default.post(
-                name: .icosTitlebarNavigationRefreshRequested,
-                object: nil
-            )
-        }
     }
 
     // MARK: - Navigation Cluster
@@ -85,7 +113,7 @@ struct ICOSTitlebarNavigationHostView: View {
 
             Text(title)
                 .font(.system(size: ICOSWindowTokens.titlebarNavigationTitleFontSize, weight: .semibold))
-                .foregroundStyle(ICOSColors.textPrimary)
+                .foregroundStyle(resolvedForeground)
                 .lineLimit(1)
                 .frame(
                     maxWidth: .infinity,
@@ -124,7 +152,7 @@ struct ICOSTitlebarNavigationHostView: View {
                 )
         }
         .buttonStyle(.plain)
-        .foregroundStyle(isEnabled ? ICOSColors.textPrimary : ICOSColors.textTertiary)
+        .foregroundStyle(isEnabled ? resolvedForeground : resolvedTertiaryForeground)
         .disabled(!isEnabled)
         .help(label)
     }

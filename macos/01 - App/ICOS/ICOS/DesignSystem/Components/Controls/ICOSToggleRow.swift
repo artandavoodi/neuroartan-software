@@ -7,6 +7,7 @@ struct ICOSToggleRow: View {
     let subtitle: String?
     @Binding var isOn: Bool
 
+    @State private var materialEpoch: UInt = 0
     @Environment(\.icosThemeDensity) private var density
     @Environment(\.icosTypographyScale) private var typographyScale
 
@@ -41,10 +42,13 @@ struct ICOSToggleRow: View {
                 .labelsHidden()
                 .toggleStyle(.switch)
                 .controlSize(.small)
-                .tint(ICOSColors.textPrimary)
         }
         .padding(.vertical, scaled(ICOSSpacing.md))
         .frame(maxWidth: .infinity, alignment: .leading)
+        .id(materialEpoch)
+        .onReceive(NotificationCenter.default.publisher(for: .icosMaterialAppearanceDidApply)) { _ in
+            materialEpoch += 1
+        }
     }
 
     // MARK: - Scaling

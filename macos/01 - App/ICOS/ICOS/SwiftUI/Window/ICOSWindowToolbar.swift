@@ -145,7 +145,6 @@ private struct ICOSTitlebarToolbarSearchControl: View {
         if ICOSMaterials.mode == .light && isFullscreen {
             return .white
         }
-
         return ICOSColors.textPrimary
     }
 
@@ -164,11 +163,21 @@ private struct ICOSTitlebarToolbarSearchControl: View {
             .onTapGesture {
                 NotificationCenter.default.post(name: .icosToggleSearch, object: nil)
             }
-            .foregroundStyle(ICOSColors.textPrimary)
+            .foregroundStyle(resolvedSearchForeground)
             .help("Search")
             .id(materialRenderEpoch)
+            .onAppear {
+                syncFullscreenState()
+            }
             .onReceive(NotificationCenter.default.publisher(for: .icosMaterialAppearanceDidApply)) { _ in
                 materialRenderEpoch += 1
+                syncFullscreenState()
+            }
+            .onReceive(NotificationCenter.default.publisher(for: NSWindow.didEnterFullScreenNotification)) { _ in
+                syncFullscreenState()
+            }
+            .onReceive(NotificationCenter.default.publisher(for: NSWindow.didExitFullScreenNotification)) { _ in
+                syncFullscreenState()
             }
     }
 }

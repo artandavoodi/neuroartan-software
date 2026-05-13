@@ -176,18 +176,20 @@ enum ICOSControlTokens {
     static let buttonHorizontalPadding: CGFloat = buttonHorizontalPaddingMD
     static let buttonCornerRadius: CGFloat = buttonCornerRadiusMD
 
-    // Toggles
-    static let toggleHeight: CGFloat = 26
-    static let toggleWidth: CGFloat = 44
-    static let toggleKnobSize: CGFloat = 20
-    static let togglePadding: CGFloat = 3
-    static let toggleCornerRadius: CGFloat = 13
+    // Toggles — Apple native macOS dimensions
+    static let toggleHeight: CGFloat = 22
+    static let toggleWidth: CGFloat = 38
+    static let toggleKnobSize: CGFloat = 18
+    static let togglePadding: CGFloat = 2
+    static let toggleCornerRadius: CGFloat = 11
     static let toggleFocusRingWidth: CGFloat = 2
     static let toggleTextSpacing: CGFloat = 3
     static let toggleDisabledOpacity: Double = 0.42
     static let toggleTransitionDuration: Double = 0.22
-    static let toggleThumbShadowOpacity: Double = 0.22
-    static let toggleThumbActiveShadowOpacity: Double = 0.16
+    static let toggleThumbShadowOpacity: Double = 0.15
+    static let toggleThumbActiveShadowOpacity: Double = 0.10
+    static let toggleOffTrackOpacityLight: Double = 0.35
+    static let toggleOffTrackOpacityDark: Double = 0.38
 
     // Pickers
     static let pickerHeight: CGFloat = 34
