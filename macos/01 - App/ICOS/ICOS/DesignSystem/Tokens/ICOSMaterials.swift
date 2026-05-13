@@ -115,6 +115,14 @@ enum ICOSMaterials {
     static var strokeWidth: CGFloat { strokeWidthValue(.standard) }
     static var softStrokeWidth: CGFloat { strokeWidthValue(.soft) }
 
+    // MARK: - Controls
+
+    /// Semantic off-state color for toggles. Uses Apple system fill that adapts
+    /// to light and dark automatically — matches native macOS toggle exactly.
+    static var toggleOffTrackColor: Color {
+        Color(NSColor.tertiarySystemFill)
+    }
+
     // MARK: - Text
 
     static var textPrimary: Color { theme.textPrimary }

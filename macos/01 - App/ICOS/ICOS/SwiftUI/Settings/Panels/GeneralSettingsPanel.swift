@@ -3,6 +3,10 @@ import SwiftUI
 struct GeneralSettingsPanel: View {
     @ObservedObject var shellState: ShellState
     @ObservedObject var runtimeSettings: RuntimeSettingsState
+
+    @AppStorage("ICOS.General.ProjectSwitchingEnabled") private var projectSwitchingEnabled = true
+    @AppStorage("ICOS.General.WorktreeManagementEnabled") private var worktreeManagementEnabled = true
+
     private let executionModes = ["Fast", "Balanced", "Deep"]
     private let processingModes = ["Minimal", "Adaptive", "Deliberate"]
 
@@ -38,8 +42,8 @@ struct GeneralSettingsPanel: View {
 
         SettingsSectionCard(title: "Workspace", icon: .projectManagement) {
             ICOSTextInput("Active project", placeholder: "Active project", text: $shellState.activeProject)
-            ICOSToggleRow("Enable project switching controls", isOn: .constant(true))
-            ICOSToggleRow("Show worktree management in shell", isOn: .constant(true))
+            ICOSToggleRow("Enable project switching controls", isOn: $projectSwitchingEnabled)
+            ICOSToggleRow("Show worktree management in shell", isOn: $worktreeManagementEnabled)
         }
     }
 }

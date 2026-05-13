@@ -27,8 +27,6 @@ struct SettingsSectionCard<Content: View>: View {
 
             VStack(alignment: .leading, spacing: .zero) {
                 content()
-                    .font(.system(size: scaledFont(ICOSControlTokens.rowSubtitleFontSize), weight: .regular))
-                    .foregroundStyle(ICOSColors.textSecondary)
             }
             .padding(.horizontal, scaled(ICOSSidebarTokens.contentHorizontalPadding))
             .padding(.vertical, scaled(ICOSSpacing.md))

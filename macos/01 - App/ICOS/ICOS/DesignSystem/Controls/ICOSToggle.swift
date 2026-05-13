@@ -1,3 +1,4 @@
+import AppKit
 import SwiftUI
 
 // MARK: - ICOS Toggle Style
@@ -20,21 +21,13 @@ private struct ICOSToggleTrack: View {
     let configuration: ToggleStyleConfiguration
 
     @Environment(\.isEnabled) private var isEnabled
+    @State private var isAnimating = false
 
     private var trackColor: Color {
         if !isEnabled {
-            return offTrackColor.opacity(ICOSControlTokens.toggleDisabledOpacity)
+            return ICOSMaterials.toggleOffTrackColor.opacity(ICOSControlTokens.toggleDisabledOpacity)
         }
-        return configuration.isOn ? Color.accentColor : offTrackColor
-    }
-
-    private var offTrackColor: Color {
-        switch ICOSMaterials.mode {
-        case .light:
-            return Color.primary.opacity(ICOSControlTokens.toggleOffTrackOpacityLight)
-        case .default, .dark, .system, .custom:
-            return Color.primary.opacity(ICOSControlTokens.toggleOffTrackOpacityDark)
-        }
+        return configuration.isOn ? Color.accentColor : ICOSMaterials.toggleOffTrackColor
     }
 
     private var thumbShadowOpacity: Double {
@@ -85,8 +78,13 @@ private struct ICOSToggleTrack: View {
                 configuration.isOn.toggle()
             }
         }
-        .animation(ICOSMotion.quick, value: configuration.isOn)
-        .animation(ICOSMotion.quick, value: trackColor)
+        .animation(isAnimating ? ICOSMotion.quick : nil, value: configuration.isOn)
+        .animation(isAnimating ? ICOSMotion.quick : nil, value: trackColor)
+        .onAppear {
+            DispatchQueue.main.async {
+                isAnimating = true
+            }
+        }
     }
 }
 
