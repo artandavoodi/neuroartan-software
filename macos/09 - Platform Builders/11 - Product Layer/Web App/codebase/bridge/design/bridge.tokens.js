@@ -32,7 +32,7 @@ export async function loadTokens() {
     if (tokenCache) return tokenCache;
 
     try {
-        const res = await fetch(`${TOKEN_SOURCE.basePath}/tokens.json`);
+        const res = await fetch(TOKEN_SOURCE.basePath + '/tokens.json');
         tokenCache = await res.json();
         return tokenCache;
     } catch (err) {
@@ -97,4 +97,7 @@ export async function initBridge() {
 }
 
 // auto-init
-initBridge();
+
+
+// SAFE_INIT_BRIDGE
+
