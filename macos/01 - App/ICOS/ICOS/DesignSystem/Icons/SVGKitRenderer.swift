@@ -38,23 +38,25 @@ final class SVGKitRenderer {
         return image
     }
 
-    // MARK: - Bundle Path Resolution
+    // MARK: - Registry Path Resolution
     private func resolveIconURL(icon: ICOSIcon) -> URL? {
 
         let normalizedPath = normalizeIconPath(icon.path)
         let normalizedResourceName = normalizeIconPath(icon.resourceName)
-        let iconRootURL = websiteIconRootURL()
+        let iconRootURLs = iconRootCandidates()
 
         let relativeCandidates = [
             normalizedPath,
             normalizedResourceName
         ]
 
-        for candidate in relativeCandidates {
-            let url = iconRootURL.appendingPathComponent(candidate)
+        for rootURL in iconRootURLs {
+            for candidate in relativeCandidates {
+                let url = rootURL.appendingPathComponent(candidate)
 
-            if fileManager.fileExists(atPath: url.path) {
-                return url
+                if fileManager.fileExists(atPath: url.path) {
+                    return url
+                }
             }
         }
 
@@ -74,8 +76,13 @@ final class SVGKitRenderer {
         return path
     }
 
-    private func websiteIconRootURL() -> URL {
-        URL(fileURLWithPath: "/Users/artan/Documents/Neuroartan/website/docs/assets/icons/system")
+    private func iconRootCandidates() -> [URL] {
+        [
+            URL(fileURLWithPath: "/Users/artan/Documents/Neuroartan/control-center/registry/icons/public/assets"),
+            URL(fileURLWithPath: "/Users/artan/Documents/Neuroartan/control-center/registry/icons/source"),
+            URL(fileURLWithPath: "/Users/artan/Documents/Neuroartan/website/docs/registry/icons/public/assets"),
+            URL(fileURLWithPath: "/Users/artan/Documents/Neuroartan/website/docs/assets/icons/system")
+        ]
     }
 
     // MARK: - SVG Rendering
@@ -108,7 +115,10 @@ final class SVGKitRenderer {
 
         print("[SVGKitRenderer] Missing icon resource for: \(icon.resourceName)")
         print("[SVGKitRenderer] ICOSIcon.path: \(icon.path)")
-        print("[SVGKitRenderer] Website icon root: \(websiteIconRootURL().path)")
+        print("[SVGKitRenderer] Icon roots:")
+        iconRootCandidates().forEach { rootURL in
+            print("  - \(rootURL.path)")
+        }
         print("[SVGKitRenderer] Attempted paths:")
 
         attemptedPaths.forEach { path in
