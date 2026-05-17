@@ -75,7 +75,7 @@ final class SVGKitRenderer {
     }
 
     private func websiteIconRootURL() -> URL {
-        URL(fileURLWithPath: "/Users/artan/Documents/Neuroartan/website/docs/assets/icons")
+        URL(fileURLWithPath: "/Users/artan/Documents/Neuroartan/website/docs/assets/icons/system")
     }
 
     // MARK: - SVG Rendering

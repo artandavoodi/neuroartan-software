@@ -16,13 +16,19 @@ struct DeveloperReviewView: View {
             VStack(alignment: .leading, spacing: scaled(ICOSControlTokens.cardSpacing)) {
                 SettingsSectionCard(title: "Local Search", icon: .search) {
                     HStack(spacing: scaled(ICOSControlTokens.gapSM)) {
+                        SVGImageView(icon: .search)
+                            .frame(width: ICOSControlTokens.buttonIconSize, height: ICOSControlTokens.buttonIconSize)
+                            .foregroundStyle(ICOSColors.textSecondary)
+
                         ICOSTextInput(
-                            "Search",
+                            "",
                             placeholder: "Search imported workspace",
                             text: Binding(
                                 get: { developer.searchQuery },
                                 set: { developer.searchQuery = $0 }
-                            )
+                            ),
+                            showBorder: false,
+                            compact: true
                         )
                         .onSubmit { developer.runSearch() }
 

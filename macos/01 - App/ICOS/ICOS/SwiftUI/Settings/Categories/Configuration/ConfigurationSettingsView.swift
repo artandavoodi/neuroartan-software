@@ -8,8 +8,6 @@ struct ConfigurationSettingsView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: ICOSSpacing.lg) {
-            header
-
             Picker("", selection: $selectedTab) {
                 ForEach(ConfigurationSettingsTab.allCases) { tab in
                     Text(tab.title).tag(tab)
@@ -17,25 +15,10 @@ struct ConfigurationSettingsView: View {
             }
             .pickerStyle(.segmented)
                .frame(maxWidth: .infinity, alignment: .center)
- .frame(maxWidth: .infinity, alignment: .center)
 
             tabBody
         }
         .padding(.vertical, ICOSSpacing.sm)
-    }
-
-    // MARK: - Header
-
-    private var header: some View {
-        VStack(alignment: .leading, spacing: ICOSSpacing.xs) {
-            Text("Configuration")
-                .font(.system(size: ICOSControlTokens.rowTitleFontSize, weight: .semibold))
-                .foregroundStyle(ICOSColors.textPrimary)
-
-            Text("")
-                .font(.system(size: ICOSControlTokens.rowSubtitleFontSize, weight: .regular))
-                .foregroundStyle(ICOSColors.textSecondary)
-        }
     }
 
     // MARK: - Tab Body

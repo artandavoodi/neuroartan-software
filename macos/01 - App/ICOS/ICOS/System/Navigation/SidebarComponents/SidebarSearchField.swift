@@ -3,9 +3,11 @@ import SwiftUI
 struct SidebarSearchField: View {
 
     @Binding var text: String
+    @Environment(\.icosThemeDensity) private var density
+    @Environment(\.icosTypographyScale) private var typographyScale
 
     var body: some View {
-        HStack(spacing: ICOSSidebarTokens.searchItemSpacing) {
+        HStack(spacing: scaled(ICOSSidebarTokens.searchItemSpacing)) {
             SVGImageView(icon: .search)
                 .frame(
                     width: ICOSSidebarTokens.iconXS,
@@ -13,7 +15,7 @@ struct SidebarSearchField: View {
                 )
                 .foregroundStyle(ICOSSidebarColors.textSecondary)
 
-            ICOSTextInput("Search", placeholder: "Search", text: $text)
+            ICOSTextInput("", placeholder: "Search", text: $text, showBorder: false, compact: true)
         }
         .padding(.horizontal, ICOSSidebarTokens.searchHorizontalPadding)
         .padding(.vertical, ICOSSidebarTokens.searchVerticalPadding)
@@ -26,6 +28,16 @@ struct SidebarSearchField: View {
                 .fill(ICOSSidebarColors.searchFill)
             }
         }
+    }
+
+    // MARK: - Scaling
+
+    private func scaled(_ value: CGFloat) -> CGFloat {
+        value * density.spacingScale
+    }
+
+    private func scaledFont(_ value: CGFloat) -> CGFloat {
+        value * typographyScale
     }
 }
 

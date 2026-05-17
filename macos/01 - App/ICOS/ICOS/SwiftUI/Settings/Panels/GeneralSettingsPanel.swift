@@ -14,7 +14,7 @@ struct GeneralSettingsPanel: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: scaled(ICOSSpacing.lg)) {
-            Picker("General sections", selection: $selectedTab) {
+            Picker("", selection: $selectedTab) {
                 ForEach(GeneralSettingsTab.allCases) { tab in
                     Text(tab.title).tag(tab)
                 }
@@ -24,7 +24,6 @@ struct GeneralSettingsPanel: View {
 
             tabBody
         }
-    }
     }
 
     @ViewBuilder

@@ -7,6 +7,8 @@ struct ICOSTextInput: View {
     let placeholder: String
     @Binding var text: String
     var validationMessage: String?
+    var showBorder: Bool = true
+    var compact: Bool = false
 
     @Environment(\.icosThemeDensity) private var density
     @Environment(\.icosTypographyScale) private var typographyScale
@@ -15,15 +17,27 @@ struct ICOSTextInput: View {
         _ title: String,
         placeholder: String = "",
         text: Binding<String>,
-        validationMessage: String? = nil
+        validationMessage: String? = nil,
+        showBorder: Bool = true,
+        compact: Bool = false
     ) {
         self.title = title
         self.placeholder = placeholder
         self._text = text
         self.validationMessage = validationMessage
+        self.showBorder = showBorder
+        self.compact = compact
     }
 
     var body: some View {
+        if compact {
+            compactBody
+        } else {
+            standardBody
+        }
+    }
+
+    private var standardBody: some View {
         VStack(alignment: .leading, spacing: scaled(ICOSSpacing.xs)) {
             Text(title)
                 .font(.system(size: scaledFont(ICOSControlTokens.rowTitleFontSize), weight: .medium))
@@ -36,9 +50,11 @@ struct ICOSTextInput: View {
                 .padding(.horizontal, scaled(ICOSControlTokens.fieldHorizontalPadding))
                 .frame(height: scaled(ICOSControlTokens.fieldHeight))
                 .overlay(alignment: .bottom) {
-                    Rectangle()
-                        .fill(validationMessage == nil ? ICOSMaterials.softStroke : ICOSColors.warning)
-                        .frame(height: validationMessage == nil ? ICOSMaterials.softStrokeWidth : ICOSMaterials.strokeWidth)
+                    if showBorder {
+                        Rectangle()
+                            .fill(validationMessage == nil ? ICOSMaterials.softStroke : ICOSColors.warning)
+                            .frame(height: validationMessage == nil ? ICOSMaterials.softStrokeWidth : ICOSMaterials.strokeWidth)
+                    }
                 }
 
             if let validationMessage {
@@ -47,6 +63,15 @@ struct ICOSTextInput: View {
                     .foregroundStyle(ICOSColors.warning)
             }
         }
+    }
+
+    private var compactBody: some View {
+        TextField(placeholder, text: $text)
+            .textFieldStyle(.plain)
+            .font(.system(size: scaledFont(ICOSControlTokens.textInputFontSize), weight: .regular))
+            .foregroundStyle(ICOSColors.textPrimary)
+            .padding(.horizontal, scaled(ICOSControlTokens.fieldHorizontalPadding))
+            .frame(height: scaled(ICOSControlTokens.fieldHeight))
     }
 
     private func scaled(_ value: CGFloat) -> CGFloat {

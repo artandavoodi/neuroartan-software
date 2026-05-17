@@ -24,11 +24,20 @@ struct NavigationShell: View {
                         sidebarWidth: ICOSSidebarTokens.expandedWidth + scaled(ICOSShellTokens.shellSectionSpacing),
                         sectionSpacing: scaled(ICOSShellTokens.shellSectionSpacing),
                         sidebar: {
-                            SidebarView(
-                                router: router,
-                                shellState: shellState
-                            )
-                            .frame(width: ICOSSidebarTokens.expandedWidth)
+                            ZStack {
+                                if ICOSMaterials.showsLayeredSurfaces {
+                                    RoundedRectangle(
+                                        cornerRadius: scaled(ICOSRadius.lg),
+                                        style: .continuous
+                                    )
+                                    .fill(ICOSMaterials.sidebarGlass)
+                                }
+                                SidebarView(
+                                    router: router,
+                                    shellState: shellState
+                                )
+                                .frame(width: ICOSSidebarTokens.expandedWidth)
+                            }
                             .clipShape(
                                 RoundedRectangle(
                                     cornerRadius: scaled(ICOSRadius.lg),
@@ -345,7 +354,7 @@ private struct ICOSSpotlightSearchOverlay: View {
                         )
                         .foregroundStyle(ICOSSidebarColors.textSecondary)
 
-                    ICOSTextInput("Search", placeholder: "Search ICOS", text: $query)
+                    ICOSTextInput("", placeholder: "Search ICOS", text: $query, showBorder: false, compact: true)
                         .focused($isFocused)
 
                     if !query.isEmpty {

@@ -35,7 +35,7 @@ struct SettingsCategoryShell: View {
                     .font(.system(size: ICOSControlTokens.rowSubtitleFontSize, weight: .regular))
                     .foregroundStyle(ICOSColors.textSecondary)
             } else {
-                Picker("Settings sections", selection: $selectedTabID) {
+                Picker("", selection: $selectedTabID) {
                     ForEach(tabs) { tab in
                         Text(tab.title).tag(tab.id)
                     }
@@ -48,7 +48,6 @@ struct SettingsCategoryShell: View {
             }
         }
         .padding(.vertical, ICOSSpacing.sm)
-    }
     }
 
     @ViewBuilder

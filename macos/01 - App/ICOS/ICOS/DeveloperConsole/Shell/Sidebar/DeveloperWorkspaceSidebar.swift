@@ -90,7 +90,7 @@ struct DeveloperWorkspaceSidebar: View {
                 .foregroundStyle(ICOSSidebarColors.textSecondary)
 
             ICOSTextInput(
-                "Search",
+                "",
                 placeholder: "Search",
                 text: Binding(
                     get: { developer.searchQuery },
@@ -99,7 +99,9 @@ struct DeveloperWorkspaceSidebar: View {
                         developer.bindSearchSources(projectManager: projects, appState: appState)
                         developer.runSearch()
                     }
-                )
+                ),
+                showBorder: false,
+                compact: true
             )
             .onSubmit {
                 developer.bindSearchSources(projectManager: projects, appState: appState)
@@ -562,4 +564,5 @@ private struct DeveloperFileNodeRow: View {
             in: RoundedRectangle(cornerRadius: ICOSSidebarTokens.rowCornerRadius, style: .continuous)
         )
     }
+
 }

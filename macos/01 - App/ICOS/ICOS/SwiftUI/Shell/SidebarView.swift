@@ -16,16 +16,12 @@ struct SidebarView: View {
                     recentSessionsBlock
                 }
                 .padding(.horizontal, scaled(ICOSSidebarTokens.contentHorizontalPadding))
-                .padding(.top, scaled(ICOSSidebarTokens.accountOuterPadding))
+                .padding(.top, scaled(ICOSSidebarTokens.accountOuterPadding) + scaled(ICOSSpacing.lg))
                 .padding(.bottom, scaled(ICOSSidebarTokens.contentBottomPadding))
             }
         }
+        .padding(.top, -scaled(ICOSSpacing.lg))
         .frame(width: shellState.isSidebarCollapsed ? ICOSSidebarTokens.collapsedWidth : ICOSSidebarTokens.expandedWidth)
-        .background {
-            if ICOSMaterials.showsLayeredSurfaces {
-                ICOSMaterials.sidebarGlass
-            }
-        }
     }
 
     private var primaryNavigation: some View {

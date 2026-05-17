@@ -20,7 +20,11 @@ struct BrowserUseView: View {
 
             sectionCard(title: "Search Execution") {
                 HStack(spacing: scaled(ICOSSpacing.sm)) {
-                    ICOSTextInput("Search", placeholder: "Search the web", text: $viewModel.query)
+                    SVGImageView(icon: .search)
+                        .frame(width: ICOSControlTokens.buttonIconSize, height: ICOSControlTokens.buttonIconSize)
+                        .foregroundStyle(ICOSColors.textSecondary)
+
+                    ICOSTextInput("", placeholder: "Search the web", text: $viewModel.query, showBorder: false, compact: true)
                         .onSubmit { Task { await viewModel.search() } }
 
                     ICOSButton(

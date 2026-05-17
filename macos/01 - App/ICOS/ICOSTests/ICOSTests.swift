@@ -10,10 +10,44 @@ import Testing
 
 struct ICOSTests {
 
-    @Test func example() async throws {
-        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
-        // Swift Testing Documentation
-        // https://developer.apple.com/documentation/testing
+    @Test func vectorMemoryRetrievalEngineInitialization() async throws {
+        let engine = VectorMemoryRetrievalEngine.shared
+        #expect(engine !== nil)
+    }
+
+    @Test func voiceCognitionServiceInitialization() async throws {
+        let service = VoiceCognitionService.shared
+        #expect(service !== nil)
+    }
+
+    @Test func voicePlaybackServiceInitialization() async throws {
+        let service = VoicePlaybackService.shared
+        #expect(service !== nil)
+    }
+
+    @Test func voiceTranscriptionEngineInitialization() async throws {
+        let engine = VoiceTranscriptionEngine.shared
+        #expect(engine !== nil)
+    }
+
+    @Test func emotionalVoiceInferenceEngineInitialization() async throws {
+        let engine = EmotionalVoiceInferenceEngine.shared
+        #expect(engine !== nil)
+    }
+
+    @Test func inferenceRuntimeEngineInitialization() async throws {
+        let engine = InferenceRuntimeEngine.shared
+        #expect(engine !== nil)
+    }
+
+    @Test func tokenizerStrategyInitialization() async throws {
+        let strategy = TokenizerStrategy.shared
+        #expect(strategy !== nil)
+    }
+
+    @Test func contextManagerInitialization() async throws {
+        let manager = ContextManager.shared
+        #expect(manager !== nil)
     }
 
 }
