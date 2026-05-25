@@ -33,11 +33,10 @@ system: "GSA-Governed"
 
 spine_version: "1.4"
 template_lock: "Global-Metadata-Standard-v1.6"
-version: "2.2"
-
+version: "2.3"
 created_date: "2026-04-28"
-last_updated: "2026-04-29"
-last_reviewed: "2026-04-29"
+last_updated: "2026-05-25"
+last_reviewed: "2026-05-25"
 review_cycle: "Continuous"
 
 effective_date: "2026-04-28"
@@ -322,8 +321,33 @@ Ollama is completely removed and ICOS operates on native runtime architecture. S
 
 ---
 
+---
+
+## FSC-T-0007 — ICOS Model Economy Software Direction Binding
+
+This software direction file is now bound to FSC-T-0007.
+
+The ICOS software architecture must remain compatible with:
+
+- default personal model creation at profile birth;
+- Model Birth Certificate and canonical model identity;
+- public/private model identity separation;
+- API-provider embedding and provider-routing state;
+- model dignity, ownership, security, and continuity custody;
+- monetization eligibility and hiring eligibility states;
+- marketplace visibility, ranking, reputation, and revenue-routing readiness;
+- inter-model hiring permissions where approved;
+- ICOS Ocean-Brain / model population awareness derived from canonical model records.
+
+Implementation boundary:
+
+- do not launch marketplace, payouts, autonomous inter-model hiring, regulated-domain claims, or posthumous economic activity before legal, governance, security, product, and architecture review;
+- do not expose private model identity, private serial identity, source authorization evidence, or provider/API routing data in public UI;
+- preserve the doctrine that AI absorbs operational labor while the human retains sovereign authorship, ownership, and direction.
+
 ## Change Log
 
+- 2026-05-25 — FSC-T-0007 software direction binding added for ICOS Model Economy, personal model birth, model identity registry, API-provider embedding, model dignity, marketplace readiness, inter-model hiring boundary, and ICOS Ocean-Brain / model population awareness. Operator Name: Artan. Operator Personnel ID: CEO-001-01-01. Agent Name: GPT-5.5 Thinking. Agent ID: Pending authoritative registry confirmation.
 - 2026-04-29 — v2.2 Full Ollama removal. Ollama dependency permanently removed from system. Runtime now operates without any Ollama dependency; system in post-removal stabilization phase toward full operational readiness. Operator Name: Artan. Operator Personnel ID: CEO-001-01-01. Agent Name: Vault Governance Agent (VGA). Agent ID: A-2026-0001. Execution Context: Ollama removal finalization during ICOS runtime transition.
 - 2026-04-29 — v2.1 Runtime transition enforcement. Ollama deprecation aligned with ICOS runtime architecture separation (execution vs coordination vs distribution). Cloud execution clarified as external inference infrastructure, not Supabase runtime. Operator Name: Artan. Operator Personnel ID: CEO-001-01-01. Agent Name: Vault Governance Agent (VGA). Agent ID: A-2026-0001. Execution Context: Runtime transition phase during model installation.
 - 2026-04-28 — v2.0 Ollama deprecation and migration strategy defined with phased execution and full runtime sovereignty objective. Operator Name: Artan. Operator Personnel ID: CEO-001-01-01. Agent Name: Website Systems & Development Agent. Agent ID: A-0205-0022. Execution Date: 2026-04-28. Execution Context: Runtime sovereignty expansion.

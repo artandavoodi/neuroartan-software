@@ -33,11 +33,10 @@ system: "GSA-Governed"
 
 spine_version: "1.4"
 template_lock: "Global-Metadata-Standard-v1.6"
-version: "2.3"
-
+version: "2.4"
 created_date: "2026-04-28"
-last_updated: "2026-04-29"
-last_reviewed: "2026-04-29"
+last_updated: "2026-05-25"
+last_reviewed: "2026-05-25"
 review_cycle: "Continuous"
 
 effective_date: "2026-04-28"
@@ -508,8 +507,33 @@ For the active local runtime path, success also requires that embedded GGUF exec
 
 ---
 
+---
+
+## FSC-T-0007 — ICOS Model Economy Software Direction Binding
+
+This software direction file is now bound to FSC-T-0007.
+
+The ICOS software architecture must remain compatible with:
+
+- default personal model creation at profile birth;
+- Model Birth Certificate and canonical model identity;
+- public/private model identity separation;
+- API-provider embedding and provider-routing state;
+- model dignity, ownership, security, and continuity custody;
+- monetization eligibility and hiring eligibility states;
+- marketplace visibility, ranking, reputation, and revenue-routing readiness;
+- inter-model hiring permissions where approved;
+- ICOS Ocean-Brain / model population awareness derived from canonical model records.
+
+Implementation boundary:
+
+- do not launch marketplace, payouts, autonomous inter-model hiring, regulated-domain claims, or posthumous economic activity before legal, governance, security, product, and architecture review;
+- do not expose private model identity, private serial identity, source authorization evidence, or provider/API routing data in public UI;
+- preserve the doctrine that AI absorbs operational labor while the human retains sovereign authorship, ownership, and direction.
+
 ## Change Log
 
+- 2026-05-25 — FSC-T-0007 software direction binding added for ICOS Model Economy, personal model birth, model identity registry, API-provider embedding, model dignity, marketplace readiness, inter-model hiring boundary, and ICOS Ocean-Brain / model population awareness. Operator Name: Artan. Operator Personnel ID: CEO-001-01-01. Agent Name: GPT-5.5 Thinking. Agent ID: Pending authoritative registry confirmation.
 - 2026-04-29 — v2.3 Documented active local gateway direction for RuntimeManager → ModelRegistry → embedded llama.cpp → selected GGUF → streaming response UI; recorded current implementation status, quantized model routing requirement, response delivery requirement, no-user-dependency shipping rule, and UI-visible response success condition. Operator Name: Artan. Operator Personnel ID: CEO-001-01-01. Agent Name: Website Systems & Development Agent. Agent ID: A-0205-0022. Execution Date: 2026-04-29. Execution Context: ICOS local inference gateway and product-runtime hardening.
 - 2026-04-29 — v2.2 Enforcement update. Added explicit failure conditions for unauthorized external APIs and deprecated runtime layers. Strengthened routing and dependency rules to enforce strict execution/coordination/distribution separation. Operator Name: Artan. Operator Personnel ID: CEO-001-01-01. Agent Name: Vault Governance Agent (VGA). Agent ID: A-2026-0001. Execution Context: Runtime transition enforcement during model installation.
 - 2026-04-29 — v2.1 Runtime gateway alignment. Ollama dependency removed from API gateway layer; routing updated to support local runtime and external inference endpoints only. Supabase excluded from execution path. Operator Name: Artan. Operator Personnel ID: CEO-001-01-01. Agent Name: Vault Governance Agent (VGA). Agent ID: A-2026-0001. Execution Context: Runtime transition during model installation.
